@@ -7,8 +7,6 @@ exclude: [
   vendor/Font-Awesome/src
 ]
 
-baseurl: /project-pages-test
-
 # Site data
 superhero_iepd_path: https://github.com/NIEM/Developer-Network-IEPD-Series--SuperHero
 
