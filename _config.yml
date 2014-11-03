@@ -1,0 +1,30 @@
+# Site settings
+title: NIEM
+exclude: [
+  Gemfile,
+  Gemfile.lock,
+  vendor/bootstrap/docs,
+  vendor/Font-Awesome/src
+]
+
+baseurl: /project-pages-test
+
+# Site data
+superhero_iepd_path: https://github.com/NIEM/Developer-Network-IEPD-Series--SuperHero
+
+# Build settings
+markdown: kramdown
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

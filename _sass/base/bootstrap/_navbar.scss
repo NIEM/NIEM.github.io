@@ -1,0 +1,34 @@
+$usa-height: 20px;
+
+.header-nav {
+  min-height: $navbar-height + $usa-height;
+}
+
+.usa {
+  background-color: rgba(0, 0, 0, .5);
+
+  .container {
+    height: $usa-height;
+    overflow: hidden;
+    font-size: 11px;
+    line-height: $usa-height;
+    color: white;
+
+    img {
+      vertical-align: text-top;
+    }
+  }
+}
+
+.footer-nav {
+  margin-bottom: 0;
+  border-top-width: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .navbar-brand {
+    font-size: $font-size-base;
+  }
+}

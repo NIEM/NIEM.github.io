@@ -1,0 +1,20 @@
+<ol class="breadcrumb">
+  <li><a href="{{ site.baseurl }}/">Home</a></li>
+
+  {% assign paths = page.path | remove: '/index.html' | split: '/' %}
+  {% assign paths_size = paths.size | minus: 1 %}
+  {% for i in (1..paths_size) %}
+    {% assign working_path = '' %}
+    {% for path in paths limit:i %}
+      {% assign working_path = working_path | append: path | append: '/' %}
+    {% endfor %}
+    {% assign working_path = working_path | append: 'index.html' %}
+    {% for html_page in site.html_pages %}
+      {% if html_page.path == working_path %}
+        <li><a href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  <li class="active">{{ page.title }}</li>
+</ol>

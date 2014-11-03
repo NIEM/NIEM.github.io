@@ -1,0 +1,11 @@
+@mixin extend-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+  @for $i from (2 + 1) through $grid-columns {
+    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+  #{$list} {
+    // TODO: This seems like the wrong way to do this.
+    // Only applicable on front page?
+    padding-top:  ($grid-gutter-width / 2);
+    padding-bottom: ($grid-gutter-width / 2);
+  }
+}

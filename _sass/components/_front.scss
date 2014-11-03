@@ -1,0 +1,11 @@
+.front-jumbotron {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: url(../images/front/jumbotron-bg.jpg) no-repeat scroll 50% 50% / cover $teal;
+  text-align: center;
+
+  .sharing-spot {
+    // Offset the spot halo
+    max-width: 100%;
+  }
+}

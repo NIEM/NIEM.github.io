@@ -1,0 +1,28 @@
+<div class="section-nav list-group">
+  {% assign paths = page.path | split: '/' %}
+  {% assign section_path = paths[0] | append: '/index.html' %}
+  {% assign html_pages = site.html_pages | sort: 'title' %}
+
+  {% for html_page in site.html_pages %}
+    {% if section_path == html_page.path %}
+      <a class="list-group-item" href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page.title }}</a>
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% for html_page in html_pages %}
+    {% assign html_page_paths = html_page.path | split: '/' %}
+    {% if paths[0] == html_page_paths[0] and html_page_paths.size == 3 %}
+      {% assign link_class = 'list-group-item' %}
+      {% if paths[1] == html_page_paths[1] %}
+        {% assign link_class = link_class | append: ' active' %}
+      {% endif %}
+      <a class="{{ link_class }}" href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page.title }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<a class="btn btn-primary feedback-btn" href="https://github.com/NIEM/NIEM.github.io/issues">
+  <span class="icon fa fa-comments fa-sm"></span>
+  <span class="content">Submit Feedback/Ideas</span>
+</a>

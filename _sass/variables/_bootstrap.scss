@@ -1,0 +1,38 @@
+//== Components
+$component-active-bg: $pale-turquoise;
+
+//== Typography
+$font-family-sans-serif: $ProximaNova;
+$font-size-base:         14px;
+$font-size-h1:           floor(($font-size-base * 3.45)); // ~48px
+$headings-font-weight:    500;
+
+//== Buttons
+$btn-font-weight:    700;
+$btn-default-color:  $charcoal;
+$btn-default-bg:     $gainsboro;
+$btn-default-border: $dark-gray;
+$btn-primary-color:  white;
+$btn-primary-bg:     $turquoise;
+$btn-primary-border: $teal;
+
+//== Navbar
+$navbar-border-radius:               0;
+$navbar-default-color:               $pale-turquoise;
+$navbar-default-bg:                  $slate-blue;
+$navbar-default-border:              $slate-blue;
+$navbar-default-link-color:          $pale-turquoise;
+$navbar-default-link-hover-color:    white;
+$navbar-default-brand-color:         white;
+$navbar-default-toggle-hover-bg:     $dark-slate-blue;
+$navbar-default-toggle-icon-bar-bg:  white;
+$navbar-default-toggle-border-color: $dark-slate-blue;
+
+//== Panels
+$panel-default-text: $slate-blue;
+
+//== Breadcrumbs
+$breadcrumb-padding-vertical: 11px;
+
+//== Type
+$page-header-border-color: $white-smoke;

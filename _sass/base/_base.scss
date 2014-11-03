@@ -1,0 +1,11 @@
+html,
+body {
+  height: 100%;
+}
+
+#page-wrap {
+  padding-top: $navbar-height + $usa-height;
+  padding-bottom: $navbar-height;
+  min-height: 100%;
+  position: relative;
+}

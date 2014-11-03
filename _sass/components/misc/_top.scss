@@ -1,0 +1,9 @@
+.top {
+    text-align: right;
+
+  &.boundary {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $gainsboro;
+  }
+}

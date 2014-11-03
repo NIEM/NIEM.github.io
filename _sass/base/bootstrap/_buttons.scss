@@ -1,0 +1,40 @@
+.btn-default {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: white;
+    background-color: $btn-default-border;
+        border-color: $btn-default-border;
+  }
+}
+
+.button-with-icon {
+  .content,
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.submit-btn {
+  @extend .btn-info;
+  @extend .button-with-icon;
+
+  text-align: left;
+
+  .icon {
+    margin-left: 25px;
+  }
+}
+
+.feedback-btn {
+  @extend .button-with-icon;
+
+  width: 100%;
+
+  .icon {
+    margin-right: 10px;
+  }
+}

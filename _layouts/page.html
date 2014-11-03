@@ -1,0 +1,30 @@
+---
+layout: 'default'
+---
+{% assign section_has_descendants = false %}
+{% assign paths = page.path | split: '/' %}
+{% for html_page in site.html_pages %}
+  {% assign working_path = html_page.path | split: '/' %}
+  {% if paths[0] == working_path[0] and working_path.size > 2 %}
+    {% assign section_has_descendants = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+<div class="container">
+  <div class="row">
+    {% if section_has_descendants %}
+      <div class="col-md-9 col-md-push-3">
+        {% include page/content.html %}
+      </div>
+
+      <div class="col-md-3 col-md-pull-9">
+        {% include page/sidebar.html %}
+      </div>
+    {% else %}
+      <div class="col-md-12">
+        {% include page/content.html %}
+      </div>
+    {% endif %}
+  </div>
+</div>

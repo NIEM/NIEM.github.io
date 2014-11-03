@@ -1,0 +1,13 @@
+dl {
+  dt,
+  dd {
+    margin-left: 40px;
+    padding-left: .5em;
+  }
+
+  dt {
+    margin-top: 1em;
+    display: list-item;
+    list-style-type: disc;
+  }
+}
