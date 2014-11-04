@@ -11,3 +11,31 @@ dl {
     list-style-type: disc;
   }
 }
+
+ul.list-fa-icon {
+  @extend .list-unstyled;
+
+  li:not(:first-child) {
+    margin-top: 1em;
+  }
+
+  .icon {
+    margin-right: .25em;
+    display: inline-block;
+
+    // Icon background
+    .fa-stack-2x {
+      color: $pale-turquoise;
+    }
+
+    // Icon
+    .fa-stack-1x {
+      color: $slate-blue;
+    }
+  }
+
+  .content {
+    font-size: $font-size-h4;
+    font-weight: $headings-font-weight;
+  }
+}

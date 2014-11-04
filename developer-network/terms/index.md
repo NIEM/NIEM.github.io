@@ -8,22 +8,21 @@ top:
   </div>
 
 ---
-<p>This section contains a list of terms with links to their source definitions across the following technical specifications:</p>
+This section contains a list of terms with links to their source definitions across the following technical specifications:
 
-<ul>
-  <li>CTAS: Conformance Targets Attribute Specification v3.0, July 31, 2014</li>
-  <li>HLVA: High Level Version Architecture Specification v3.0alpha1, September 3, 2014</li>
-  <li>MPD: Model Package Description Specification v3.0, August 15, 2014</li>
-  <li>NDR: Naming and Design Rules Specification, v3.0, July 31, 2014</li>
-</ul>
 
-<p>When a term was defined in multiple specifications, a link to each definition was provided.</p>
+* CTAS: Conformance Targets Attribute Specification v3.0, July 31, 2014
+* HLVA: High Level Version Architecture Specification v3.0alpha1, September 3, 2014
+* MPD: Model Package Description Specification v3.0, August 15, 2014
+* NDR: Naming and Design Rules Specification, v3.0, July 31, 2014
 
-<hr />
+When a term was defined in multiple specifications, a link to each definition was provided.
+
+---
 
 <p><a href="#letter_a">A</a> | <a href="#letter_b">B</a> | <a href="#letter_c">C</a> | <a href="#letter_d">D</a> | <a href="#letter_e">E</a> | <a href="#letter_f">F</a> | G | <a href="#letter_h">H</a> | <a href="#letter_i">I</a> | J | K | <a href="#letter_l">L</a> | <a href="#letter_m">M</a> | <a href="#letter_n">N</a> | <a href="#letter_o">O</a> | <a href="#letter_p">P</a> | Q | <a href="#letter_r">R</a> | <a href="#letter_s">S</a> | T | U | <a href="#letter_v">V</a> | W | <a href="#letter_w">X</a> | Y | <a href="#letter_z">Z</a></p>
 
-<hr />
+---
 
 <h3 id="letter_a">A</h3>
 <ul class="list-unstyled">
@@ -44,6 +43,7 @@ top:
 {{ page.top }}
 
 <h3 id="letter_b" style="padding-top: 65px; margin-top: -65px;">B</h3>
+
 <ul class="list-unstyled">
   <li>base type definition: <a href="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/NIEM-NDR-3.0-2014-07-31.html#definition_base_type_definition">NDR Section 3.4.1</a></li>
   <li>beta: <a href="http://reference.niem.gov/niem/specification/high-level-version-architecture/3.0alpha1/high-level-version-architecture-3.0alpha1.html#section_8.1">HLVA Section 8.1</a></li>
