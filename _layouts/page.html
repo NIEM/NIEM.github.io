@@ -2,10 +2,10 @@
 layout: 'default'
 ---
 {% assign section_has_descendants = false %}
-{% assign paths = page.path | split: '/' %}
+{% assign urls = page.url | split: '/' %}
 {% for html_page in site.html_pages %}
-  {% assign working_path = html_page.path | split: '/' %}
-  {% if paths[0] == working_path[0] and working_path.size > 2 %}
+  {% assign working_url = html_page.url | split: '/' %}
+  {% if urls[1] == working_url[1] and working_url.size > 3 %}
     {% assign section_has_descendants = true %}
     {% break %}
   {% endif %}

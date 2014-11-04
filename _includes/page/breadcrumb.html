@@ -1,20 +1,29 @@
 <ol class="breadcrumb">
-  <li><a href="{{ site.baseurl }}/">Home</a></li>
+  {% assign urls = page.url | split: '/' %}
+  {% assign urls_size = urls.size | minus: 1 %}
+  {% for i in (1..urls_size) %}
+    {% assign working_url = '' %}
 
-  {% assign paths = page.path | remove: '/index.html' | split: '/' %}
-  {% assign paths_size = paths.size | minus: 1 %}
-  {% for i in (1..paths_size) %}
-    {% assign working_path = '' %}
-    {% for path in paths limit:i %}
-      {% assign working_path = working_path | append: path | append: '/' %}
+    {% for url in urls limit:i %}
+      {% assign working_url = working_url | append: url | append: '/' %}
     {% endfor %}
-    {% assign working_path = working_path | append: 'index.html' %}
+
+    {% assign working_url = working_url | append: 'index.html' %}
+
     {% for html_page in site.html_pages %}
-      {% if html_page.path == working_path %}
-        <li><a href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page.title }}</a></li>
+      {% if html_page.url == working_url %}
+        {% assign html_page_title = html_page.title %}
+
+        {% if i == 1 %}
+          {% assign html_page_title = 'Home' %}
+        {% endif %}
+
+        {% if i == urls_size %}
+          <li class="active">{{ html_page_title }}</li>
+        {% else %}
+          <li><a href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page_title }}</a></li>
+        {% endif %}
       {% endif %}
     {% endfor %}
   {% endfor %}
-
-  <li class="active">{{ page.title }}</li>
 </ol>

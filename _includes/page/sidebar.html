@@ -1,20 +1,20 @@
 <div class="section-nav list-group">
-  {% assign paths = page.path | split: '/' %}
-  {% assign section_path = paths[0] | append: '/index.html' %}
+  {% assign urls = page.url | split: '/' %}
+  {% assign section_url = urls[0] | append: '/' | append: urls[1] | append: '/index.html' %}
   {% assign html_pages = site.html_pages | sort: 'title' %}
 
   {% for html_page in site.html_pages %}
-    {% if section_path == html_page.path %}
+    {% if html_page.url == section_url %}
       <a class="list-group-item" href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page.title }}</a>
       {% break %}
     {% endif %}
   {% endfor %}
 
   {% for html_page in html_pages %}
-    {% assign html_page_paths = html_page.path | split: '/' %}
-    {% if paths[0] == html_page_paths[0] and html_page_paths.size == 3 %}
+    {% assign html_page_urls = html_page.url | split: '/' %}
+    {% if urls[1] == html_page_urls[1] and html_page_urls.size == 4 %}
       {% assign link_class = 'list-group-item' %}
-      {% if paths[1] == html_page_paths[1] %}
+      {% if urls[2] == html_page_urls[2] %}
         {% assign link_class = link_class | append: ' active' %}
       {% endif %}
       <a class="{{ link_class }}" href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page.title }}</a>
