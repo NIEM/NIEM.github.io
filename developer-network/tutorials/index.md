@@ -9,7 +9,7 @@ The tutorial area will provide step-by-step instructions on how to build a moder
 
 {% assign iepd_url = "http://reference.niem.gov/niem/specification/model-package-description/3.0/model-package-description-3.0.html#definition_information_exchange_package_documentation" %}
 
-The [NIEM](https://www.niem.gov) [IEPD]({{ iepd_url }}) is the primary artifact of a [NIEM](http://NIEM.gov) data exchange, containing all schema necessary to validate the content of a data exchange. It is also contains documentation, business rules, search and discovery metadata, sample instances and any other artifacts included by developers. The [IEPD]({{ iepd_url }}) development process outlined here is a nominal procedure for developers to give an outline of the steps necessary to create an [IEPD]({{ iepd_url }}). It has been written to address the needs of all developers. Some steps may not apply for a specific development team and the process should be customized as required.
+The [NIEM](https://www.niem.gov) [IEPD]({{ iepd_url }}) is the primary artifact of a [NIEM](https://www.niem.gov) data exchange, containing all schema necessary to validate the content of a data exchange. It is also contains documentation, business rules, search and discovery metadata, sample instances and any other artifacts included by developers. The [IEPD]({{ iepd_url }}) development process outlined here is a nominal procedure for developers to give an outline of the steps necessary to create an [IEPD]({{ iepd_url }}). It has been written to address the needs of all developers. Some steps may not apply for a specific development team and the process should be customized as required.
 
 1. Analyze IEPD requirements
 1. Search and generate subset using NIEM SSGT for components that meet the IEPD data requirements.
@@ -27,7 +27,7 @@ Each IEPD stakeholder will have different methods on how to analyze IEPD data re
 Each IEPD stakeholder will have different methods on how to analyze IEPD data requirements, security requiremnts, etc. NIEM does not prescribe how this step should be performed.
 
 
-1. Open the NIEM <a href="http://tools.niem.gov/niemtools/ssgt/index.iepd">SSGT Tool</a>
+1. Open the NIEM [SSGT Tool](http://tools.niem.gov/niemtools/ssgt/index.iepd)
 1. Search for components that meet the IEPD data requirements and add them to the subset.
 1. Generate a subset schema
 1. Save subset in working directory
