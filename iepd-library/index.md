@@ -38,7 +38,7 @@ Be sure to check out the [NIEM Cost Model](https://niem.gov/aboutniem/roadmap/Pa
         <span class="icon fa-stack fa-2x">
           <i class="fa fa-square fa-stack-2x"></i>
           <i class="fa fa-file-text-o fa-stack-1x"></i>
-        </span><span class="content">Search for IEPDs</span>
+        </span><span class="content">Search IEPDs</span>
       </a>
     </li>
   </ul>
