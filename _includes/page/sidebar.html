@@ -1,38 +1,67 @@
+{% comment %}
+  Output a navigation for the current section and all immediate children.
+{% endcomment %}
 <div class="section-nav list-group">
-  {% assign urls = page.url | split: '/' %}
-  {% assign section_url = urls[0] | append: '/' | append: urls[1] | append: '/index.html' %}
-
+  {% assign page_url_parts = page.url | split: '/' %}
+  {% assign section_url = page_url_parts[0] | append: '/' | append: page_url_parts[1] | append: '/index.html' %}
   {% assign html_pages = site.html_pages | sort: 'title' %}
 
-  {% for html_page in site.html_pages %}
+  {% comment %}
+    Output the current section.
+  {% endcomment %}
+  {% for html_page in html_pages %}
     {% if html_page.url == section_url %}
-      <a class="list-group-item" href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page.title }}</a>
+      {% comment %} TODO: Replace with slice when GitHub Pages includes Liquid 3.0.0 {% endcomment %}
+      {% assign html_page_url = html_page.url %}
+      {% assign html_page_url_processed = html_page_url | replace: '/index.html', '' | append: '/index.html' %}
+      {% if html_page_url == html_page_url_processed %}
+        {% assign html_page_url = html_page_url | replace: '/index.html', '/' %}
+      {% endif %}
+
+      <a class="list-group-item" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
       {% break %}
     {% endif %}
   {% endfor %}
 
   {% comment %}
     If the section is using custom navigation, override the html pages array.
+    Custom navigation is defined in /_data/custom-nav/{section-name}.yml
   {% endcomment %}
   {% for nav in site.data.custom-nav %}
-    {% if nav[0] == urls[1] %}
+    {% if nav[0] == page_url_parts[1] %}
       {% assign html_pages = nav[1] %}
       {% break %}
     {% endif %}
   {% endfor %}
 
+  {% comment %}
+    Output the section's immediate children.
+  {% endcomment %}
   {% for html_page in html_pages %}
-    {% assign html_page_urls = html_page.url | split: '/' %}
-    {% if urls[1] == html_page_urls[1] and html_page_urls.size == 4 %}
+    {% assign html_page_url_parts = html_page.url | split: '/' %}
+    {% if page_url_parts[1] == html_page_url_parts[1] and html_page_url_parts.size == 4 %}
       {% assign link_class = 'list-group-item' %}
-      {% if urls[2] == html_page_urls[2] %}
+      {% if page_url_parts[2] == html_page_url_parts[2] %}
         {% assign link_class = link_class | append: ' active' %}
       {% endif %}
 
+      {% comment %}
+        "Link" comes from custom navigation.
+      {% endcomment %}
       {% if html_page.link %}
         <a class="{{ link_class }}" href="{{ html_page.link }}">{{ html_page.title }}</a>
       {% else %}
-        <a class="{{ link_class }}" href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page.title }}</a>
+        {% comment %}
+          Replace /index.html with /
+          TODO: Replace with slice when GitHub Pages includes Liquid 3.0.0
+        {% endcomment %}
+        {% assign html_page_url = html_page.url %}
+        {% assign html_page_url_processed = html_page_url | replace: '/index.html', '' | append: '/index.html' %}
+        {% if html_page_url == html_page_url_processed %}
+          {% assign html_page_url = html_page_url | replace: '/index.html', '/' %}
+        {% endif %}
+
+        <a class="{{ link_class }}" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
       {% endif %}
     {% endif %}
   {% endfor %}

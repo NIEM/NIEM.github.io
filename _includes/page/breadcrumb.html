@@ -1,27 +1,39 @@
+{% comment %}
+  Iterate through the current page's path parts to build the breadcrumb.
+  Requires all pages be rendered to "index.html"
+{% endcomment %}
 <ol class="breadcrumb">
-  {% assign urls = page.url | split: '/' %}
-  {% assign urls_size = urls.size | minus: 1 %}
-  {% for i in (1..urls_size) %}
+  {% assign page_url_parts = page.url | split: '/' %}
+  {% assign page_url_parts_size = page_url_parts.size | minus: 1 %}
+  {% for i in (1..page_url_parts_size) %}
     {% assign working_url = '' %}
 
-    {% for url in urls limit:i %}
-      {% assign working_url = working_url | append: url | append: '/' %}
+    {% for url_part in page_url_parts limit:i %}
+      {% assign working_url = working_url | append: url_part | append: '/' %}
     {% endfor %}
-
     {% assign working_url = working_url | append: 'index.html' %}
 
     {% for html_page in site.html_pages %}
       {% if html_page.url == working_url %}
         {% assign html_page_title = html_page.title %}
-
         {% if i == 1 %}
           {% assign html_page_title = 'Home' %}
         {% endif %}
 
-        {% if i == urls_size %}
+        {% if i == page_url_parts_size %}
           <li class="active">{{ html_page_title }}</li>
         {% else %}
-          <li><a href="{{ site.baseurl }}{{ html_page.url }}">{{ html_page_title }}</a></li>
+          {% comment %}
+            Replace /index.html with /
+            TODO: Replace with slice when GitHub Pages includes Liquid 3.0.0
+          {% endcomment %}
+          {% assign html_page_url = html_page.url %}
+          {% assign html_page_url_processed = html_page_url | replace: '/index.html', '' | append: '/index.html' %}
+          {% if html_page_url == html_page_url_processed %}
+            {% assign html_page_url = html_page_url | replace: '/index.html', '/' %}
+          {% endif %}
+
+          <li><a href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page_title }}</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
