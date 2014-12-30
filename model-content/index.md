@@ -40,7 +40,7 @@ flower_parts:
     coords: '270,191,385,189,366,233,341,266,258,215'
 
   - title: Justice
-    href: http://release.niem.gov/niem/domains/jxdm/5.0
+    href: http://release.niem.gov/niem/domains/jxdm/5.0/namespace
     coords: '252,222,336,273,302,307,263,334,229,239'
 
   - title: Emergency Management
