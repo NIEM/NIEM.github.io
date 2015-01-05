@@ -52,6 +52,7 @@ flower_parts:
     coords: '188,256,162,373,121,373,88,364,163,253'
 
   - title: Future Domains
+    href: https://www.niem.gov/aboutniem/Pages/Domain-Onboarding.aspx
     coords: '138,232,158,251,66,385,42,373,13,347,2,330'
 
   - title: NIEM Core
@@ -63,8 +64,9 @@ flower_parts:
   {% for part in page.flower_parts %}
     {% assign href = '' %}
     {% if part.href %}
-      {% assign part_href_processed = part.href | split: 'http://' %}
-      {% if part_href_processed.size > 1 %}
+      {% assign part_href_http_processed = part.href | split: 'http://' %}
+      {% assign part_href_https_processed = part.href | split: 'https://' %}
+      {% if part_href_http_processed.size > 1 or part_href_https_processed.size > 1 %}
         {% capture href %}href="{{ part.href }}"{% endcapture %}
       {% else %}
         {% capture href %}href="{{ page.release_url }}/{{ part.href }}/{{ page.release_version }}/namespace"{% endcapture %}
