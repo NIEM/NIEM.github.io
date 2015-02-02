@@ -37,6 +37,7 @@ flower_parts:
     coords: '276,156,394,102,397,130,390,182,274,183'
 
   - title: MilOps
+    href: http://release.niem.gov/niem/domains/militaryOperations/3.0/1/namespace
     coords: '270,191,385,189,366,233,341,266,258,215'
 
   - title: Justice
