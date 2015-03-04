@@ -78,7 +78,7 @@ flower_parts:
   {% endfor %}
 </map>
 
-The use of NIEM results in machine-readable, license-free exchanges. NIEM uses eXtensible Markup Language (XML). The NIEM model is defined using [W3C](http://www.w3.org/standards/xml/) XML Schema&mdash;which is technology-and platform-independent. You can also represent NIEM in Unified Modeling Language (UML) with tooling that implements the NIEM-UML profile and automatically produces NIEM-conformant XML schema.
+The use of NIEM results in machine-readable information exchanges. NIEM uses eXtensible Markup Language (XML). The NIEM model is defined using [W3C](http://www.w3.org/standards/xml/) XML Schema&mdash;which is technology-and platform-independent. You can also represent NIEM in Unified Modeling Language (UML) with tooling that implements the NIEM-UML profile and automatically produces NIEM-conformant XML schema.
 
 The NIEM model provides common, agreed-upon terms, definitions, formats, and relationships independent of how information is stored in individual systems.
 
