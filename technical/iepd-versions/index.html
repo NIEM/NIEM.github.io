@@ -1,0 +1,201 @@
+---
+title: NIEM IEPD Versions
+---
+<html>
+  <body>
+
+<h2>FAQ as of 3 March 2015</h2>
+
+<ol>
+  <li>
+    <b>What are the objectives, audience, scope, and intent of this FAQ?</b>
+
+    <p>The objectives of this FAQ are to assist the NTAC to (1) rapidly develop
+      guidelines for IEPD implementers regarding the management of changes and
+      versioning in IEPDs; (2) improve this guidance iteratively by soliciting
+      NIEM community feedback and additional questions; and (3) ultimately
+      produce a NIEM guidance and best practice document for IEPD versioning and
+      change control.  The audience is intended to be NIEM IEPD implementers who
+      share or transmit NIEM IEPs based on one or more IEPDs.  The scope covers
+      all aspects of IEPD change control and versioning based on NIEM releases,
+      including how NIEM releases relate to IEPDs and their implementations,
+      compatibility, and what users and implementers should expect.  The intent
+      is to help the NIEM community to understand how to implement NIEM
+      effectively in the context of annual releases, as well as its limitations
+      and trade-offs.</p>
+  </li>
+  <li>
+    <b>Who is responsible for managing versions of a NIEM IEPD?</b>
+    <p>An IEPD is designed and created independently from NIEM releases (the reference models).  The IEPD author, developer, or sponsor is responsible for managing IEPD versions.</p>
+  </li>
+  <li>
+    <b>Does NIEM support backward compatibility?</b>
+
+    <p>NIEM does not (and cannot) guarantee that an IEPD built from any given
+      major or minor release version will be backward (or forward) compatible
+      with another release.  In fact, once built, an IEPD and an IEPD
+      implementation will not be impacted by new NIEM releases.  Any given IEPD
+      is based on a set of XML data components defined in one or more published
+      NIEM releases.  A correct implementation of that IEPD (a set of XML Schema
+      documents) will send/receive IEPs (XML instances) defined by and that must
+      be schema-valid to that IEPD.  Once designed and implemented, the IEPD is
+      a fixed template for all IEPs that will be exchanged.  New NIEM releases
+      have absolutely no impact on that IEPD or the IEPs that conform to it
+      (until the implementer decides to update the IEPD to use a different
+      release).  If errors occur in the exchange of IEPs, then either something
+      is wrong with your IEPs (e.g., they are not schema-valid to the IEPD
+      schema documents) or you've changed your IEPD (so again, your IEPs are now
+      invalid).</p>
+  </li>
+  <li>
+    <b>What is "backward compatibility", and how is it defined in NIEM?</b>
+    <p>It is NOT!  Officially, backward compatibility is neither defined nor
+      guaranteed in NIEM.  (More required here; need to discuss the elusive
+      definition of "backward compatibility").</p>
+  </li>
+  <li>
+    <b>I've heard that "a NIEM minor release is backward compatible."  Is this
+    true or not?</b>
+
+    <p>There is a bit of truth to this statement.  A NIEM major series of
+      releases is numbered as follows: 3.0, 3.1, 3.2, etc.  One and only one
+      NIEM Core schema document (version 3.0) and <code>targetNamespace</code>
+      is common to all of these releases.  The next NIEM major release (version
+      4.0) will change the NIEM Core schema document.  So, release 4.0 will not
+      use the 3.0 Core schema document.  Thus, one might say that the NIEM 3.0
+      series (i.e., versions 3.0, 3.1, 3.2, etc.) is compatible in terms of Core
+      because all versions in the series use the same NIEM Core schema document.
+      However, domain schema documents may change within each minor release
+      (3.1, 3.2, etc.). </p>
+  </li>
+  <li>
+    <b>What does the following statement mean? ... "An IEPD is the point of NIEM
+      interoperability."</b>
+    <p>Once published, a NIEM release is always available as-is under a unique
+      namespace.  Use of domain updates (DU) and core supplements (CS) published
+      later for that release is optional.  So, once designed and built from a
+      NIEM release, an IEPD implementation establishes interoperability among
+      senders/receivers of XML instance documents (IEPs) that validate to the
+      IEPD's schema document set.  This means that changes to NIEM (including
+      new releases, as well as DUs or CSs to the release in use) have no impact
+      on the IEPD implementation.  It will continue to work as long as IEPs (XML
+      instance documents) are schema-valid to the original IEPD schema document
+      set.</p>
+  </li>
+  <li>
+    <b>Must an IEPD be updated (changed) when a new NIEM release is published?</b>
+    <p>No, an IEPD is not required to change as a result of NIEM evolution.  If
+      the data exchange requirements for which the IEPD was developed are still
+      valid, then there is no reason to update the IEPD (even if new content in
+      a recent NIEM release or domain update is available.</p>
+  </li>
+  <li>
+    <b>When must an IEPD be updated to a new NIEM release version?</b>
+
+    <p>All previously published NIEM releases are always available on the
+      <a href="http://release.niem.gov/">NIEM release site</a>.  Therefore, if
+      an IEPD continues to satisfy its information sharing requirements as
+      designed or implemented, then it is not necessary to update it for a newer
+      NIEM release.  When an IEPD author, sponsor, implementer, or the
+      exchanging parties determine that: (1) data exchange requirements have
+      evolved significantly enough; or (2) newer NIEM content is available and
+      need to use it within data exchanges exists; then, it may also be
+      necessary to consider an update the IEPD and potentially to corresponding
+      implementations.</p>
+  </li>
+  <li>
+    <b>How can two versions of an IEPD be processed?</b>
+
+    <p>A software implementation can process one or more versions of an IEPD.
+      The software should have a set of data structures for the data set defined
+      by each IEPD (for example, a set of Java objects for each IEPD).  The
+      software will associate an incoming IEP (XML instance) with one of two
+      namespaces to determine which set of data structures to use for the
+      incoming IEP.  To do this, it parses the IEP document element to identify
+      the unique namespace of the schema that defines that element.  This
+      namespace identifies which set of data structures to load with the
+      incoming IEP data and subsequently process.</p>
+  </li>
+  <li>
+    <b>How should I make changes to or update my namespaces?</b>
+
+    <p>An important NIEM practice is that once an XML Schema document with
+    a <code>targetNamespace</code> has been established (and especially after it
+    has been published and in use!), it MUST NOT be changed.  Every NIEM XML
+    schema document MUST be assigned a <code>targetNamespace</code>.  Except
+    subset schema documents, a change to any other NIEM schema document forces a
+    change to its <code>targetNamespace</code>.  This ensures each NIEM schema
+    document has a unique <code>targetNamespace</code> that distinguishes it
+    from all others.  Note that a subset schema document is a constrained
+    profile of a NIEM release (reference) schema document, so unlike other
+    schemas it must have the same <code>targetNamespace</code> as the reference
+    schema it subsets.  Note also that some standards development organizations
+    (SDO) do not follow this namespace policy, and instead, change content
+    directly within a published <code>targetNamespace</code>.  Others use a
+    similar technique but add a version identifier that is not a part of the
+    namespace.  In such cases, it can be difficult to know if the content of a
+    namespace has changed (and which version you have).  The NIEM namespace
+    policy ensures absolute transparency of change.  If two NIEM schema
+    documents bear different target namespaces, then their content is different.
+    Furthermore, subset schemas must be explicitly identified within MPDs.</p>
+  </li>
+  <li>
+    <b>What release versions of NIEM are available?</b>
+
+    <p>NIEM release versions currently available are: 1.0, 2.0, 2.1, and 3.0.
+    These are all available for download
+    at <a href="http://release.niem.gov/">http://release.niem.gov/</a>.  There
+    are also a few domain updates and core supplements that can be used in IEPDs
+    available in the NIEM Publication Area at
+    <a href="http://publication.niem.gov/niem/">http://publication.niem.gov/niem/</a>.</p>
+  </li>
+  <li>
+    <b>How can I determine what version of a NIEM release an IEPD uses?</b>
+
+    <p>There are several ways to determine the NIEM release used by an IEPD.
+    (1) IEPD documentation should indicate the NIEM release version (or
+    versions) in use.  (2) The <code>targetNamespace</code> attribute within
+    each NIEM schema document will identify its version.
+    The <code>targetNamespace</code> in <code>niem-core.xsd</code> and in NIEM
+    domain schema documents identify the major (first integer) and minor (second
+    integer) series of the NIEM version respectively.  (3) The namespaces
+    referenced and imported by subset schema documents will also indicate the
+    release version in use.</p>
+  </li>
+  <li>
+    <b>Must an IEPD be based on a single NIEM numbered release, or can it employ
+      XML data components from multiple releases?</b>
+
+    <p>The NIEM
+      <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0/"
+         >Model Package Description Specification v3.0</a> allows an IEPD to
+         employ XML data components from multiple NIEM releases.  This means
+         that schema subsets from multiple releases can be used together in a
+         single IEPD.  That said, mixing releases in an IEPD can introduce
+         multiple versions of the same XML elements and types (sometimes with
+         slight different structures) resulting in semantic duplication,
+         overlap, and potential ambiguity.  On the other hand, each NIEM release
+         has been harmonized to remove as much duplication as possible.
+         Therefore, we prefer and strongly recommend that an IEPD be designed to
+         use a single NIEM release version. This technique is easier to
+         control, less complex, and less error-prone.</p>
+  </li>
+  <li>
+    <b>Can I use NIEM core supplements (CS) and/or domain updates (DU) in my IEPD?</b>
+
+    <p>A NIEM domain update (DU) is a
+    <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0/"
+       >model package description (MPD)</a> containing one or more schema
+       documents that represent changes to one or more domains.  A NIEM core
+       supplement (CS) is a special release MPD containing one or more schema
+       documents that represent additions (only) to a NIEM core.  An IEPD may
+       optionally incorporate DUs and/or CSs associated with a release.  Be
+       aware that a DU or CS can introduce semantic overlap.  An IEPD developer
+       should exercise this option carefully.  To the extent possible, avoid
+       using components from a release and its associated CSs and DUs that
+       together introduce duplicate versions of the same data components.  Use
+       the subset technique where possible to reduce duplication.</p>
+  </li>
+</ol>
+  </body>
+</html>
