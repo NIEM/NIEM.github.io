@@ -16,67 +16,61 @@ title: NIEM IEPD Change Control and Version Management
          (6) How to build/update an IEPD that can maintain backward compatibility with older IEPs 
       -->
 
-    <h3>Introduction</h3>
-    <ol>
+<h3>Introduction</h3>
 
-      <li>
-        <b>What are the objectives, audience, scope, and intent of this FAQ?</b>
-        <p>The objectives of this FAQ are to assist the NIEM Technical
-          Architecture Committee (NTAC) to:</p>
-        <ol>
-	  <li><p>rapidly develop guidelines for IEPD implementers regarding IEPD
-	      change management and versioning;</p></li>
-	  <li><p>improve this guidance iteratively by soliciting NIEM community
-	      feedback and additional questions;</p></li>
-	  <li><p>ultimately produce a NIEM guidance and best practice document
-	      for IEPD change control and versioning.</p></li>
-        </ol>
-        <p>The audience is intended to be NIEM IEPD implementers who transmit or
-          share NIEM IEPs based on one or more IEPDs.  The scope covers all
-          aspects of IEPD change control and versioning based on NIEM releases,
-          including how NIEM releases relate to IEPDs and their implementations,
-          compatibility, and what users and implementers should expect.  The
-          intent is to help the NIEM community understand how to implement NIEM
-          effectively in the context of annual releases, and know the limitations
-          and trade-offs.</p>
-      </li>
+<p>The following is documented guidance and best practices 
+for NIEM IEPD change control and versioning.</p>
 
-      <li>
-        <b>What is the NIEM architecture?</b>
-        <p>As a point of reference, we present a very brief, very simple
-          introduction to the NIEM architecture.  Refer to the figure below.
-          The NIEM reference model (top layer) is a collection of XML Schema
-          data components organized into NIEM Core and more specialized Domains.
-          These components provide the NIEM common vocabulary, structures, and
-          semantics.  (Skip the EIEM layer for the moment.)  An IEPD (layer 3)
-          defines a given recurring information exchange by reusing data
-          components in a <a href="http://release.niem.gov/">release of the NIEM
-          reference model</a>.  A NIEM implementation (layer 4) is the
-          hardware/software/system infrastructure needed to send and receive
-          NIEM IEPs (layer 5).  These are XML instance documents that carry data
-          and are defined by one or more IEPDs.  To design/build an IEPD from a
-          reference model, a developer assembles the required XML Schema data
-          components into a subset of the reference model (reusing only the
-          components needed).  For requirements that NIEM cannot satsify, the
-          developer either extends existing components or creates new components
-          (per
-          the <a href="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/"
-          >NIEM Naming and Design Rules</a>(NDR)).  If a developer must
-          design/build a set of IEPDs, it is sometimes more efficient to employ
-          the EIEM architectural layer (layer 2).  In this approach the
-          developer builds a subset of all the data components needed for the
-          set of IEPDs.  The developer extends or creates as needed to satisfy
-          missing requirements.  Then the developer designs/builds a
-          <i>family</i> of IEPDs reusing the master subset, associated
-          extensions, and possibly external standards.  (Note that the concept
-          of the EIEM layer is still fairly immature and not yet normatively
-          specified in NIEM.  For more information, refer to the 2011 NIEM
-          concept
-          paper <a href="http://reference.niem.gov/niem/guidance/business-information-exchange-components/1.0/"
-          >Business Information Exchange Components</a>).</p>
-        <p><img src="niem-architecture.png" width="100%"/></p>
-      </li>
-    </ol>
+<p>Please help improve this content by providing your feedback and additional questions!</p>
+
+<p>The audience is intended to be NIEM IEPD developers and implementers 
+who transmit or share NIEM IEPs based on one or more IEPDs. 
+The scope covers all aspects of IEPD change control and versioning 
+based on NIEM releases, including how NIEM releases relate to IEPDs and their 
+implementations, compatibility, and what users and implementers should expect. 
+The intent is to help the NIEM community understand how to implement NIEM effectively 
+in the context of annual releases, and know the limitations and trade-offs.</p>
+
+<h3>High-Level Overview of the NIEM Architecture</h3>
+
+<p>As a point of reference, below is a very simple introduction to the NIEM architecture.
+The NIEM reference model (top layer) is a collection of XML Schema data components 
+organized into NIEM Core and more specialized Domains. These components provide 
+the NIEM common vocabulary, structures, and semantics.
+
+<p>(Skip the EIEM layer 2 for the moment.)</p>
+
+<p>An IEPD (layer 3) defines a given recurring information exchange by reusing 
+data components in a release of the NIEM reference model.</p>
+
+<p>A NIEM implementation (layer 4) is the hardware/software/system infrastructure 
+needed to send and receive NIEM IEPs (layer 5). 
+These are XML instance documents that carry data and are defined by one or more IEPDs. 
+To design/build an IEPD from a reference model, a developer assembles the required 
+XML Schema data components into a subset of the reference model 
+(reusing only the components needed). 
+For requirements that NIEM cannot satisfy, the developer 
+either extends existing components or creates new components (per the 
+<a href="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/"
+>NIEM Naming and Design Rules</a> (NDR)).</p>
+
+<p>If a developer must design/build a set of IEPDs, it is sometimes more efficient 
+to employ the EIEM architectural layer (layer 2). In this approach the developer 
+builds a subset of all the data components needed for the set of IEPDs. 
+The developer extends or creates as needed to satisfy missing requirements. 
+Then the developer designs/builds a family of IEPDs reusing the master subset, 
+associated extensions, and possibly external standards. 
+(Note that the concept of the EIEM layer is still fairly 
+immature and not yet normatively specified in NIEM. 
+For more information, refer to the 2011 NIEM concept paper 
+<a href="http://reference.niem.gov/niem/guidance/business-information-exchange-components/1.0/"
+>Business Information Exchange Components</a>).</p>
+
+<p><img src="niem-architecture.png" width="100%"/></p>
+
+
+<h2>IEPD Change Control and Version Management - Guidance and Frequently Asked Questions</h2>
+
 
     <h3>NIEM change control and versioning</h3>
 
@@ -89,6 +83,8 @@ title: NIEM IEPD Change Control and Version Management
           There are also a few domain updates and core supplements that can be
           used in IEPDs available in the NIEM Publication Area at
           <a href="http://publication.niem.gov/niem/">http://publication.niem.gov/niem/</a>.</p>
+	  Domain updates and Core supplements are always in the Publication Area, and 
+	  and 
       </li>
 
       <li>
@@ -123,19 +119,19 @@ title: NIEM IEPD Change Control and Version Management
 
       <li>
         <b>How are NIEM subset schema documents versioned?</b>
-        <p>In NIEM, the <code>targetNamespace</code> of a subset schema document
-          based on a reference schema document (within a release) is never
-          unique.  A subset schema document always takes
-          the <code>targetNamespace</code> of the reference schema document from
-          which it was
-          built. (See <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0.1rc1/model-package-description-3.0.1rc1.html#section_4.2.2"
-          >Model Package Description 3.0.1</a> for subsetting operations.)  This
-          is because a subset schema is essentially a reduced copy (i.e., a
-          subset) of that reference schema document.  So, an XML document
+        <p>In NIEM, the <code>targetNamespace</code> of a subset schema 
+	  document based on a reference schema document (within a release) 
+          is never unique.  A subset schema document always takes the 
+          <code>targetNamespace</code> of the reference schema document 
+          from which it was built. 
+          (See <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0.1rc1/model-package-description-3.0.1rc1.html#section_4.2.2"
+          >Model Package Description 3.0.1</a> for subsetting operations.)  
+          This is because a subset schema is essentially a reduced copy (i.e., 
+          a subset) of that reference schema document.  So, an XML document
           instance defined by a subset schema document is also defined by its
           associated reference schema document.  And in fact, a conformant
           subset schema document must be replaceable by the full reference
-          schema.  This also explains why the <code >targetNamespace</code > for
+          schema.  This also explains why the <code >targetNamespace</code> for
           a subset schema document does not change; each is based on a published
           reference schema document.</p>
       </li>
