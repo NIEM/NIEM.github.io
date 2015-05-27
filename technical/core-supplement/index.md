@@ -1,69 +1,78 @@
 ---
 title: Using a NIEM Core Supplement
 ---
+#### 28 May 2015
 
-## What Is a NIEM *Core Supplement* and Why Is it Necessary?
+#### ________________________________
+   
 
-A NIEM *core supplement* is a special type of NIEM release that is commonly used to apply:
+## What is a NIEM *Core Supplement* and why is it necessary?
 
-  * An additive-only change (i.e., new content) to an existing NIEM core; or
+A NIEM *core supplement* is a special type of NIEM release that is applicable 
+to a previously published NIEM core and is strictly additive in nature. 
+A core supplement (CS) can be issued anytime the NBAC determines
+it is necessary to add content to a published NIEM core.  
+The purposes for issuing a CS may include: 
+to update a code list with new values added by an authoritative source, 
+to correct a significant flaw in a component, to add a new element to a substitution group, 
+and to apply other adjustments by adding content. 
+A CS does not have to be issued within a major or minor release cycle (although it can be).
 
-  * An addition, update, or correction to a NIEM code list associated with a
-    release.
 
-## Are Any Core Supplements Available?
+## What Core Supplements are available?
 
-A relatively simple core supplement for NIEM 3.0 exists that fixes an
-inadvertent omission in the U.S. Postal Service (USPS) list of code values for
-U.S. States.  The core supplement package contains two schemas:
+As of the date of this page, Two core supplements (CS) exist that apply to NIEM Core 3.0. 
 
-  * A small `niem-core.xsd` addendum
+1. CS 3.0.1 - This CS corrects the U.S. Postal Service (USPS) U.S. State code list.  
+It provides a whole new list that includes Alabama (AL) (that was previously missing).  
+Download CS 3.0.1 from one of these locations:
 
-  * A corrected `usps_states.xsd` schema document that incorporates all
-    U.S. State codes including Alabama (AL) (previously omitted).
+    * In the release area:
+[http://release.niem.gov/niem/3.0/du-cs-3.0.html](http://release.niem.gov/niem/3.0/du-cs-3.0.html)
 
-This is the first time NIEM has exercised its new v3.0 architecture that allows
-for easy adjustments to code lists and supplements to a core without the need to
-wait for a major release cycle.  This core supplement package can be downloaded
-from either of these locations:
+    * In the publication area:
+[http://publicataion.niem.gov/niem/niem-core/3.0/1/niem-core-3.0.1.cs.zip](http://publication.niem.gov/niem/niem-core/3.0/1/niem-core-3.0.1.cs.zip)
 
-  * In the release area:  http://release.niem.gov/niem/3.0/du-cs-3.0.html
-  
-  * In the publication area:
-    http://publication.niem.gov/niem/niem-core/3.0/1/niem-core-3.0.1.cs.zip
+    * CS 3.0.1 is also contained within the NIEM 3.1 minor release package:
+[http://release.niem.gov/niem/3.1/niem-3.1.rel.zip](http://release.niem.gov/niem/3.1/niem-3.1.rel.zip)
 
-## Using the Core Supplement for USPS U.S. State Codes
+2. CS 3.0.2 - This CS contains adjustments to the MGRS (Military Grid Reference System) components, 
+constraints on Longitude, Person associations (adds PersonUnionStatus), and the following code lists: 
+`dot_hazmat`, `dod_jcs-pub2.0`, `dea_ctlsub`, and `census_uscounty` (adds new values to all).
+Download CS 3.0.2 from one of these locations:
 
-If you use any of the following NIEM 3.0 components:
+    * In the release area:
+[http://release.niem.gov/niem/3.0/du-cs-3.0.html](http://release.niem.gov/niem/3.0/du-cs-3.0.html)
 
-  * Element nc:JurisdictionUSPostalServiceCode
+    * In the publication area:
+[http://publicataion.niem.gov/niem/niem-core/3.0/2/niem-core-3.0.2.cs.zip](http://publication.niem.gov/niem/niem-core/3.0/2/niem-core-3.0.2.cs.zip)
 
-  * Element nc:LocationStateUSPostalServiceCode
+    * CS 3.0.2 is also contained within the NIEM 3.1 minor release package:
+[http://release.niem.gov/niem/3.1/niem-3.1.rel.zip](http://release.niem.gov/niem/3.1/niem-3.1.rel.zip)
 
-  * Type usps:USStateCodeType
 
-  * Type usps:USStateCodeSimpleType
+## How do I use a Core Supplement?
 
-Then, update your NIEM subset or IEPD with the corresponding components from the 3.0.1 core supplement:
+Although a Core Supplement (CS) may be published outside of the standard release cycle and will be limited 
+in scope and content as compared to its counterparts in a full release, it is still NIEM-conformant content 
+and should be used in a similar manner.  Follow these steps:
 
-  * Element nc-3.0.1:JurisdictionUSPostalServiceCode
+* Determine if there is content in a CS that you need to use.
+If not, no further steps need to be taken and the CS may be ignored.
 
-  * Element nc-3.0.1:LocationStateUSPostalServiceCode
+* Determine if you have any existing IEPDs that need to be updated.
+If so, reopen the IEPD subset wantlist in the Schema Subset Generation Tool (SSGT), 
+remove any old components you wish to replace, add the relevant new CS components, 
+and regenerate the subset.
+Edit the IEPD extension schema document(s) to import the CS schema document(s), 
+reflect the changes made in the subset, and update the IEPD catalog and versioning metadata as needed.
 
-  * Type usps-3.0.1:USStateCodeType
+* To use a CS as part of a new IEPD, include the relevant CS components 
+while creating your NIEM subset and build your IEPD as normal.
 
-  * Type usps-3.0.1:USStateCodeSimpleType
-
-This can be done manually by adding the schemas from the core supplement package
-to your IEPD schema document set.  Since these will be new schemas in your IEPD,
-you must import them at the appropriate location within one or more IEPD
-extension schemas.
-
-You can also add a core supplement to a subset using the [Schema Subset
-Generation Tool (SSGT)](http://tools.niem.gov/niemtools/ssgt/index.iepd).  To do
-this, reload your wantlist (or skip this step if you are building a new subset),
-replace the original components with their new counterparts, and (re)generate
-the subset or wantlist.  In an effort to direct SSGT users to the updated
-components, the original components are marked `deprecated`.  SSGT usage
-information explains which components should be used in their place.
+* Note that you may be able to integrate CS components into your IEPD extension schemas 
+via augmentations and/or element substitutions (especially for code list updates).
+If so, this requires little additional effort beyond making sure the new components are available in the NIEM subset.
+If augmentations and/or element substitutions are not available or appropriate, new components may be referenced 
+and used directly in the extension schema documents.
 
