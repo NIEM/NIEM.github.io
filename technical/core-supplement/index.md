@@ -10,12 +10,17 @@ title: Using a NIEM Core Supplement
 
 A NIEM *core supplement* is a special type of NIEM release that is applicable 
 to a previously published NIEM core and is strictly additive in nature. 
-A core supplement (CS) can be issued anytime the NBAC determines
+A core supplement (CS) can be issued when the 
+NIEM Business Architecture Committee (NBAC) determines
 it is necessary to add content to a published NIEM core.  
 The purposes for issuing a CS may include: 
-to update a code list with new values added by an authoritative source, 
-to correct a significant flaw in a component, to add a new element to a substitution group, 
-and to apply other adjustments by adding content. 
+
+ * To update a code list with new values added by an authoritative source; 
+
+ * To correct a significant flaw in a component, to add a new element to a substitution group; and 
+
+ * To apply other adjustments by adding content. 
+
 A CS does not have to be issued within a major or minor release cycle (although it can be).
 
 
@@ -75,4 +80,27 @@ via augmentations and/or element substitutions (especially for code list updates
 If so, this requires little additional effort beyond making sure the new components are available in the NIEM subset.
 If augmentations and/or element substitutions are not available or appropriate, new components may be referenced 
 and used directly in the extension schema documents.
+ 
+## For example, if you need CS 3.0.1 ...
+
+
+If you use any of the following NIEM 3.0 components:
+
+* Element nc:JurisdictionUSPostalServiceCode
+
+* Element nc:LocationStateUSPostalServiceCode
+
+* Type usps:USStateCodeType
+
+* Type usps:USStateCodeSimpleType
+
+Then, update your NIEM subset or IEPD with the corresponding components from CS 3.0.1:
+
+* Element nc-3.0.1:JurisdictionUSPostalServiceCode
+
+* Element nc-3.0.1:LocationStateUSPostalServiceCode
+
+* Type usps-3.0.1:USStateCodeType
+
+* Type usps-3.0.1:USStateCodeSimpleType
 
