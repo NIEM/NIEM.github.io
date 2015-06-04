@@ -9,6 +9,7 @@ exclude: [
 
 # Site data
 superhero_iepd_path: https://github.com/NIEM/Developer-Network-IEPD-Series--SuperHero
+submit_feedback_link: https://github.com/NIEM/NIEM.github.io/issues
 
 # Build settings
 markdown: kramdown
