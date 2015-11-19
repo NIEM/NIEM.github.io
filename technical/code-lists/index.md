@@ -20,6 +20,8 @@ specifying messages.
 1. [NIEM Code Lists Primer](primer). This document provides a walk-through
 exercising the code lists specification.
 
+1. [NIEM Code Lists FAQ](faq). Frequently asked questions about NIEM code lists.
+
 In addition to these core documents, there are additional resources that may be
 useful to those developing and using code lists:
 
