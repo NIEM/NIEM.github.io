@@ -83,7 +83,7 @@ like added here, please [let us know]({{site.submit_feedback_link}}).
    will I get when a component identifies a code list identifier for which there are
    multiple versions?**
 
-   This is till to-be-decided. It might be best for the SSGT to keep one
+   This is still to be decided. It might be best for the SSGT to keep one
    particular version for a release, or it might be best for the SSGT to provide
    the most recent code list version corresponding to a code list
    identifier. Please [let us know your opinion on
