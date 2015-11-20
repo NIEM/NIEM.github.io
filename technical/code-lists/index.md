@@ -2,7 +2,7 @@
 title: NIEM and Code Lists
 ---
 
-NIEM provides a several techniques for working with code lists. At this time,
+NIEM provides several techniques for working with code lists. At this time,
 there are few documents available:
 
 1. The [NIEM Code Lists Specification](niem-code-lists-specification) is
