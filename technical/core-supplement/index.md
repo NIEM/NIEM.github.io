@@ -1,10 +1,6 @@
 ---
-title: Using a NIEM Core Supplement
+title: NIEM Core Supplements
 ---
-#### 28 May 2015
-
-#### ________________________________
-   
 
 ## What is a NIEM *Core Supplement* and why is it necessary?
 
@@ -81,26 +77,26 @@ If so, this requires little additional effort beyond making sure the new compone
 If augmentations and/or element substitutions are not available or appropriate, new components may be referenced 
 and used directly in the extension schema documents.
  
-## For example, if you need CS 3.0.1 ...
+## For example, if you need CS 3.0.1:
 
 
 If you use any of the following NIEM 3.0 components:
 
-* Element nc:JurisdictionUSPostalServiceCode
+* Element `nc:JurisdictionUSPostalServiceCode`
 
-* Element nc:LocationStateUSPostalServiceCode
+* Element `nc:LocationStateUSPostalServiceCode`
 
-* Type usps:USStateCodeType
+* Type `usps:USStateCodeType`
 
-* Type usps:USStateCodeSimpleType
+* Type `usps:USStateCodeSimpleType`
 
 Then, update your NIEM subset or IEPD with the corresponding components from CS 3.0.1:
 
-* Element nc-3.0.1:JurisdictionUSPostalServiceCode
+* Element `nc-3.0.1:JurisdictionUSPostalServiceCode`
 
-* Element nc-3.0.1:LocationStateUSPostalServiceCode
+* Element `nc-3.0.1:LocationStateUSPostalServiceCode`
 
-* Type usps-3.0.1:USStateCodeType
+* Type `usps-3.0.1:USStateCodeType`
 
-* Type usps-3.0.1:USStateCodeSimpleType
+* Type `usps-3.0.1:USStateCodeSimpleType`
 

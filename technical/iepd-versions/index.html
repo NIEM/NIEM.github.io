@@ -13,6 +13,8 @@ title: NIEM IEPD Change Control and Version Management
          (6) How to build/update an IEPD that can maintain backward compatibility with older IEPs 
       -->
 
+<h2><i>Background</i></h2>
+
 <h3>Introduction</h3>
 
 <p>This FAQ relates best practices for NIEM IEPD change control and versioning.
@@ -23,8 +25,8 @@ with several applicable FAQs about NIEM change control in general.
 
 <p>Please help improve this content by <a href="{{ site.submit_feedback_link }}">sending your feedback and additional questions</a>!</p>
 
-<p>The audience is intended to be NIEM IEPD developers and implementers 
-who transmit or share NIEM IEPs based on one or more IEPDs. 
+<p>The audience is intended to be NIEM Information Exchange Package Documentation (IEPD) developers and implementers 
+who transmit or share NIEM IEPs (Information Exchange Packages, i.e., instance XML documents) based on one or more IEPDs. 
 The scope covers all aspects of IEPD change control and versioning 
 based on NIEM releases, including how NIEM releases relate to IEPDs and their 
 implementations, compatibility, and what users and implementers should expect. 
@@ -35,10 +37,10 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
 
 <p>As a point of reference, below is a very simple introduction to the NIEM architecture.
 The NIEM reference model (top layer) is a collection of XML Schema data components 
-organized into NIEM Core and more specialized Domains. These components provide 
+organized into NIEM Core and more specialized domains. These components provide 
 the NIEM common vocabulary, structures, and semantics.
 
-<p>(Skip the EIEM layer 2 for the moment.)</p>
+<p>(Ignore the EIEM layer 2 for the moment.)</p>
 
 <p>An IEPD (layer 3) defines a given recurring information exchange by reusing 
 data components in a release of the NIEM reference model.</p>
@@ -68,24 +70,24 @@ For more information, refer to the 2011 NIEM concept paper
 
 <p><img src="niem-architecture.png" width="100%"/></p>
 
+<hr/>
 
-<h2>IEPD Change Control and Version Management - Guidance and Frequently Asked Questions</h2>
-
+<h2><i>FAQ and Guidance</i></h2>
 
     <h3>NIEM change control and versioning</h3>
 
     <ol>
       <li>
         <b>What release versions of NIEM are available?</b>
-        <p>NIEM release versions currently available are: 1.0, 2.0, 2.1, and
-          3.0.  These are all available for download
+        <p>NIEM release versions currently available are: 1.0, 2.0, 2.1, 
+          3.0, and 3.1.  These are all available for download
           at <a href="http://release.niem.gov/">http://release.niem.gov/</a>.
           There are also a few domain updates and core supplements that can be
           used in IEPDs available in the NIEM Publication Area at
           <a href="http://publication.niem.gov/niem/">http://publication.niem.gov/niem/</a>.
-	  Original Domain updates and Core supplements are always available in the 
+	  Original domain updates and core supplements are always available in the 
           Publication Area to use with the existing releases to which they apply. 
-          However, Domain updates and Core supplements are also harmonized with 
+          However, domain updates and core supplements are also harmonized with 
           and integrated into the next major or minor release.</p>
       </li>
 
@@ -170,13 +172,13 @@ For more information, refer to the 2011 NIEM concept paper
           this true?</b>
         <p>There is a bit of truth to this statement.  A NIEM major series of
           releases is numbered as follows: 3.0, 3.1, 3.2, etc.  One and only one
-          NIEM Core schema document (version 3.0)
+          NIEM core schema document (version 3.0)
           and <code >targetNamespace</code > is common to all of these releases.
-          The next NIEM major release (version 4.0) will change the NIEM Core
-          schema document.  So, release 4.0 will not use the 3.0 Core schema
+          The next NIEM major release (version 4.0) will change the NIEM core
+          schema document.  So, release 4.0 will not use the 3.0 core schema
           document.  Thus, one might say that the NIEM 3.0 series (i.e.,
           versions 3.0, 3.1, 3.2, etc.)  is compatible in terms of Core because
-          all versions in the series use the same NIEM Core schema document.
+          all versions in the series use the same NIEM core schema document.
           However, domain schema documents may change in ways that prevent
           backward compatibility between minor releases within a major
           series.</p>
@@ -238,7 +240,7 @@ For more information, refer to the 2011 NIEM concept paper
           as <code>niem-core.xsd</code> and <code>structures.xsd</code> can only
           identify the major series (1.0, 2.0, 3.0, etc.).  This is because Core
           does not change from one minor release to the next within a major
-          series.  For example, NIEM 2.0 and 2.1 both contain the same 2.0 Core
+          series.  For example, NIEM 2.0 and 2.1 both contain the same 2.0 core
           schema document with same <code>targetNamespace</code>.  Domain and
           code list schema documents can help to identify the minor release
           series (second integer).  But be sure to compare to the release schema
@@ -267,21 +269,22 @@ For more information, refer to the 2011 NIEM concept paper
       </li>
 
       <li>
-        <b>Can I use NIEM domain updates (DU) and/or core supplements (CS) in my
+        <b>Can I use NIEM domain updates and/or core supplements in my
           IEPD?</b>
-        <p>A NIEM domain update (DU) is a
+        <p>A NIEM domain update is a
           <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_model_package_description"
           >model package description (MPD)</a> that contains one or more schema
           documents representing changes to one or more domains.  A NIEM core
-          supplement (CS) is a special release MPD that contains one or more
+          supplement is a special release MPD that contains one or more
           schema documents representing additive-only changes to a published
-          NIEM Core.  An IEPD may incorporate DUs and CSs.  That said, semantic
-          overlap and duplication that can occur by mixing multiple NIEM
-          releases within an IEPD (See FAQ above), may also happen when using a
-          DU (or CS).  This is because a DU changes a given domain's
+          NIEM Core.  An IEPD may incorporate domain updates and core supplements.  
+          That said, semantic overlap and duplication that can occur by mixing multiple 
+          NIEM releases within an IEPD (See FAQ above), may also happen when using a
+          domain update or core supplement.  
+          This is because a domain update changes a given domain's
           published <code>targetNamespace</code> by creating a
-          new <code>targetNamespace</code> and applying the changes there.  In
-          doing so, it may replicate data components defined by
+          new <code>targetNamespace</code> and applying the changes there. 
+          In doing so, it may replicate data components defined by
           the <code>targetNamespace</code> it changes.
           (See <a href="http://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/"
           >NIEM High Level Version Architecture 3.0</a>.)  Furthermore, the
@@ -289,7 +292,8 @@ For more information, refer to the 2011 NIEM concept paper
           others' data components while also independently publish changes
           outside the regular release cycle, is that over time the level of
           semantic overlap can increase across a given release and its
-          associated DUs and CSs.  To the extent possible, within an IEPD avoid
+          associated domain updates and core supplements.  
+          To the extent possible, within an IEPD avoid
           mixing duplicate versions of the same data component.  Use the subset
           technique where possible to reduce duplication; but realize that some
           level of semantic duplication and overlap may be unavoidable.</p>
@@ -301,11 +305,12 @@ For more information, refer to the 2011 NIEM concept paper
         <p>Once published, a NIEM release is always available as-is under a
           unique <code>targetNamespace</code>.  So, once designed and built from
           an existing NIEM release (and optionally any existing domain updates
-          (DU) or core supplements (CS), an IEPD implementation establishes
+          or core supplements, an IEPD implementation establishes
           interoperability among senders/receivers of XML instance documents
           (IEPs) that validate to the IEPD's schema document set.  This means that
-          a NIEM implementation is immune to NIEM changes (new releases, DUs, and
-          CSs), and will continue to work as long as IEPs (XML instance documents)
+          a NIEM implementation is immune to NIEM changes (new releases, domain updates, 
+          and core supplements), and will continue to work as long as IEPs 
+          (instance XML documents)
           are schema-valid to the original IEPD schema document set.  Furthermore,
           if the IEPD schemas change and the implementation changes accordingly,
           and the changes are such that the schema document set is backward
