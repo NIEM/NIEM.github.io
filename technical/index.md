@@ -10,6 +10,7 @@ and doccuments the technical architecture that governs NIEM. The technical
 architecture includes the technical specifications, the NIEM core structure, and
 processes such as the NIEM release process and domain updates.
 
+* [Differences between NIEM reference and extension schema documents](ref-vs-ext)
 * [NIEM and Code Lists](code-lists)
 * [Using a NIEM Core Supplement](core-supplement)
 * [NIEM IEPD Change Control and Version Management: Frequently Asked Questions](iepd-versions)
