@@ -35,3 +35,7 @@ We are open to creating more of these worked examples from community generated i
 
 [SuperHero Reference]({{ github_link }}/reference)
 : Builds upon SuperHero IEPD demonstrating how to use references in a NIEM IEPD.
+
+[Farmers Market]({{ url }}/developer-network/iepd-series/farmers-market/)
+: Need Description.
+

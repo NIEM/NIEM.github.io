@@ -9,3 +9,16 @@
     max-width: 100%;
   }
 }
+
+.feedback-panel {
+	margin-left: 15px;
+	margin-right: 15px;
+	.btn-primary {
+    color: #FFF;
+    background-color: #005170;
+    border-color: #014954;
+	}
+	a {
+		width: 100%;
+	}
+}

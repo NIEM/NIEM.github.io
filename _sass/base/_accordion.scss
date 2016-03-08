@@ -1,0 +1,105 @@
+.ac-container {
+  max-width: 960px;
+}
+
+.ac-container label {
+  color: #005170;
+  background-color: #F5F5F5;
+  font-size: 20px;
+  font-weight: 600;
+  height: 65px !important;
+  line-height: 57px !important;
+  padding: 5px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid #DDD;
+  height: 30px;
+  line-height: 20px;
+  margin-top: 6px;
+  border-radius: 4px;
+}
+
+.ac-container {
+    width: 100%;
+    margin: 10px auto 30px auto;
+    text-align: left;
+}
+
+.ac-container label:hover {
+    background: #fff;
+}
+
+.ac-container input:checked + label,.ac-container input:checked + label:hover {
+    background: #005170;
+    border-color: #005170;
+    color: #FFF;
+    margin-bottom: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 17px;
+    background: transparent url(../images/arrow_down.png) no-repeat center center;
+}
+
+.ac-container input:checked + label:hover:after {
+    background-image: url(../images/arrow_up.png);
+}
+
+.ac-container input {
+    display: none;
+}
+
+.ac-container article {
+  background: rgba(255,255,255,0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  display: none;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.ac-container article p {
+  padding: 10px;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  font: normal;
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.42857;
+}
+
+.ac-container input:checked ~ article {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  border: 1px solid #DDD;
+}
+
+.ac-container input:checked ~ article.ac-small {
+    display: block;
+    padding: 15px
+  }
+
+.ac-container input:checked ~ article.ac-medium {
+    display: block;
+    padding: 15px
+}
+
+.ac-container input:checked ~ article.ac-large {
+    display: block;
+    padding: 15px
+}
