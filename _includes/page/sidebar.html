@@ -5,7 +5,6 @@
   {% assign page_url_parts = page.url | split: '/' %}
   {% assign section_url = page_url_parts[0] | append: '/' | append: page_url_parts[1] | append: '/index.html' %}
   {% assign html_pages = site.html_pages | sort: 'title' %}
-
   {% comment %}
     Output the current section.
   {% endcomment %}
@@ -17,7 +16,6 @@
       {% if html_page_url == html_page_url_processed %}
         {% assign html_page_url = html_page_url | replace: '/index.html', '/' %}
       {% endif %}
-
       <a class="list-group-item" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
       {% break %}
     {% endif %}
@@ -39,7 +37,8 @@
   {% endcomment %}
   {% for html_page in html_pages %}
     {% assign html_page_url_parts = html_page.url | split: '/' %}
-    {% if page_url_parts[1] == html_page_url_parts[1] and html_page_url_parts.size == 4 %}
+
+    {% if page_url_parts[1] == html_page_url_parts[1] and html_page_url_parts.size == 3 %}
       {% assign link_class = 'list-group-item' %}
       {% if page_url_parts[2] == html_page_url_parts[2] %}
         {% assign link_class = link_class | append: ' active' %}
@@ -62,6 +61,7 @@
         {% endif %}
 
         <a class="{{ link_class }}" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
+
       {% endif %}
     {% endif %}
   {% endfor %}

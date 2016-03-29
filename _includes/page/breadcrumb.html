@@ -4,22 +4,19 @@
 {% endcomment %}
 <ol class="breadcrumb">
   {% assign page_url_parts = page.url | split: '/' %}
-  {% assign page_url_parts_size = page_url_parts.size | minus: 1 %}
+  {% assign page_url_parts_size = page_url_parts.size %}
   {% for i in (1..page_url_parts_size) %}
-    {% assign working_url = '' %}
-
+    {% assign working_url = '' %}    
     {% for url_part in page_url_parts limit:i %}
       {% assign working_url = working_url | append: url_part | append: '/' %}
     {% endfor %}
-    {% assign working_url = working_url | append: 'index.html' %}
-
+    {% assign working_url = working_url %}
     {% for html_page in site.html_pages %}
       {% if html_page.url == working_url %}
         {% assign html_page_title = html_page.title %}
         {% if i == 1 %}
           {% assign html_page_title = 'Home' %}
         {% endif %}
-
         {% if i == page_url_parts_size %}
           <li class="active">{{ html_page_title }}</li>
         {% else %}
@@ -32,7 +29,6 @@
           {% if html_page_url == html_page_url_processed %}
             {% assign html_page_url = html_page_url | replace: '/index.html', '/' %}
           {% endif %}
-
           <li><a href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page_title }}</a></li>
         {% endif %}
       {% endif %}
