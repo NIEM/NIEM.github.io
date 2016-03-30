@@ -1,41 +1,48 @@
 ---
 title: The NIEM Code Lists Specification
-current_code_lists_version: 1.0alpha3
-current_code_lists_date: 2015-11-12
+current_code_lists_version: 1.0beta1
+current_code_lists_date: 2016-03-15
 ---
 
-The NIEM Code Lists Specification is a technical specification currently under
-development by the NIEM Technical Architecture Committee (NTAC). It provides XML
-syntax and rules that support the use of code lists in NIEM XML Schemas and
-information exchange packages (IEPs).
+The NIEM Technical Architecture Committee (NTAC) is actively developing the NIEM
+Code Lists Specification. We are seeking help from the NIEM community to review
+and improve it. Please participate by reviewing the document and sending us
+feedback.
 
-The current version of the specification is {{page.current_code_lists_version}}.
+The NIEM Code Lists Specification is a technical document that provides XML
+syntax and rules that support the use of code lists in NIEM XML Schemas, IEPDs,
+and information exchange packages (IEPs). One major topic for developers and
+users of code lists with NIEM information exchanges is the development,
+distribution, maintenance, and use of code lists. This specification addresses
+this need.
 
-Pre-release versions and the final version of the specification will be posted
-to
-[reference.niem.gov](http://reference.niem.gov/niem/specification/code-lists/)
-as they are vetted by the NTAC. This is a technical specification, which is
-targeted toward tool developers, rather than users and implementors of
-exchanges.
+The specification includes:
 
-The NIEM Code Lists Specification is published at several locations:
+* Additional machine-readable formats for code lists: in addition to XML Schema
+  simple types supported by previous versions of NIEM, this specification
+  provides for using spreadsheets in CSV format (comma-separated values format),
+  as well as Genericode, an OASIS format defining code lists in XML.
+* Methods of using code lists in XML Schemas or in XML messages; this enables
+  code lists to be identified at run-time (as attributes in a message), or at
+  schema-time, as annotations on components of a schema.
+* Use of the XML Catalog format for resolving code list identifiers to actual
+  code lists within an IEPD.
+* Rules for how to match values in messages to values in code lists. This
+  enables validation of messages against code lists, and the use of multiple
+  columns in messages (e.g. county code & state code, or vehicle make & model).
 
-  1. [The NIEM Code Lists Specification, version
-     {{page.current_code_lists_version}} is on
-     reference.niem.gov](http://reference.niem.gov/niem/specification/code-lists/{{page.current_code_lists_version}}/niem-code-lists-{{page.current_code_lists_version}}-{{page.current_code_lists_date}}.html).
+The NIEM Code Lists Specification is published at:
 
-  1. [The complete set of files that accompany the NIEM Code Lists Specification
-     are on
-     reference.niem.gov](http://reference.niem.gov/niem/specification/code-lists/{{page.current_code_lists_version}}).
+1. [The NIEM Code Lists Specification, version
+   {{page.current_code_lists_version}} is on
+   reference.niem.gov](http://reference.niem.gov/niem/specification/code-lists/{{page.current_code_lists_version}}/niem-code-lists-{{page.current_code_lists_version}}-{{page.current_code_lists_date}}.html).
+1. [The complete set of files that accompany the NIEM Code Lists Specification
+   are on reference.niem.gov](http://reference.niem.gov/niem/specification/code-lists/{{page.current_code_lists_version}}), and are [available as a zip file](http://reference.niem.gov/niem/specification/code-lists/{{page.current_code_lists_version}}/niem-code-lists-{{page.current_code_lists_version}}.zip)
+1. [All files are published to a GitHub repository](https://github.com/niem/niem-code-lists-spec).
+   This repository has [drafts of the specifcation](https://github.com/NIEM/niem-code-lists-spec/tree/dev-1.0), [releases](https://github.com/NIEM/niem-code-lists-spec/releases), and an [issue tracker](https://github.com/NIEM/niem-code-lists-spec/issues).
 
-  1. [All versions of the NIEM Code Lists Specification, including pre-release
-     drafts, are published to a
-     GitHub repository](https://github.com/webb/niem-code-lists-spec-artifacts).
-
-  1. [Releases of the specification are published as GitHub
-  releases](https://github.com/webb/niem-code-lists-spec-artifacts/relases), and
-  a [ZIP file distribution of the current draft of the NIEM code lists
-  specification is
-  available](https://github.com/webb/niem-code-lists-spec-artifacts/archive/niem-code-lists-{{page.current_code_lists_version}}.zip).
-
-We encourage you to [submit comments on the NIEM Code Lists Specification]({{site.niem_comments_link}}) or to [submit comments on the content of this website]({{site.submit_feedback_link}}).
+Please review the specification and let us know your thoughts. Comments may be
+emailed to
+[niem-comments@lists.gatech.edu](mailto:niem-comments@lists.gatech.edu?subject=NIEM%20Code%20Lists%20Specification,%20version%20{{page.current_code_lists_version}}&cc=webb.roberts@gtri.gatech.edu), or may
+be [submitted as tracked issues at the GitHub issue
+tracker](https://github.com/NIEM/niem-code-lists-spec/issues).
