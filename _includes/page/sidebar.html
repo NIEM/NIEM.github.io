@@ -3,8 +3,9 @@
 {% endcomment %}
 <div class="section-nav list-group">
   {% assign page_url_parts = page.url | split: '/' %}
-  {% assign section_url = page_url_parts[0] | append: '/' | append: page_url_parts[1] | append: '/index.html' %}
+  {% assign section_url = page_url_parts[0] | append: '/' | append: page_url_parts[1] | append: '/' %}
   {% assign html_pages = site.html_pages | sort: 'title' %}
+
   {% comment %}
     Output the current section.
   {% endcomment %}
@@ -12,23 +13,31 @@
     {% if html_page.url == section_url %}
       {% comment %} TODO: Replace with slice when GitHub Pages includes Liquid 3.0.0 {% endcomment %}
       {% assign html_page_url = html_page.url %}
-      {% assign html_page_url_processed = html_page_url | replace: '/index.html', '' | append: '/index.html' %}
+      {% assign html_page_url_processed = html_page_url %}
       {% if html_page_url == html_page_url_processed %}
-        {% assign html_page_url = html_page_url | replace: '/index.html', '/' %}
+        {% assign html_page_url = html_page_url %}
       {% endif %}
-      <a class="list-group-item" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
+
+      {% assign html_page_url_parts = html_page.url | split: '/' %}
+      
+      {% if page_url_parts[2] == html_page_url_parts[2] %}
+        {% assign link_class = 'active' %}
+      {% endif %}
+      <a class="list-group-item {{link_class}}" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
       {% break %}
     {% endif %}
   {% endfor %}
 
   {% comment %}
-    If the section is using custom navigation, override the html pages array.
-    Custom navigation is defined in /_data/custom-nav/{section-name}.yml
+    If section has an item to be appended in the side navigation, we can just append those items here.
+    The IEPD section appends the "IEPD template at the top" 
   {% endcomment %}
+ 
   {% for nav in site.data.custom-nav %}
     {% if nav[0] == page_url_parts[1] %}
-      {% assign html_pages = nav[1] %}
-      {% break %}
+      {% if nav[0] == "iepd-library" %}
+        <a  class="list-group-item" target="_blank" href="https://github.com/NIEM/Template-IEPD/">Template IEPD</a>
+      {% endif %}   
     {% endif %}
   {% endfor %}
 
@@ -55,16 +64,27 @@
           TODO: Replace with slice when GitHub Pages includes Liquid 3.0.0
         {% endcomment %}
         {% assign html_page_url = html_page.url %}
-        {% assign html_page_url_processed = html_page_url | replace: '/index.html', '' | append: '/index.html' %}
+        {% assign html_page_url_processed = html_page_url | append: '/' %}
         {% if html_page_url == html_page_url_processed %}
-          {% assign html_page_url = html_page_url | replace: '/index.html', '/' %}
+          {% assign html_page_url = html_page_url %}
         {% endif %}
-
         <a class="{{ link_class }}" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
-
       {% endif %}
     {% endif %}
   {% endfor %}
+
+  {% comment %}
+    If section has an item to be appended in the side navigation, we can just append those items here.
+    The technical section has an item to be appeneded in here.  
+  {% endcomment %}
+  {% for nav in site.data.custom-nav %}
+    {% if nav[0] == page_url_parts[1] %}
+      {% if nav[0] == "technical" %}
+        <a  class="list-group-item" target="_blank" href="https://www.niem.gov/technical/Pages/niem-uml.aspx">NIEM-UML</a>
+      {% endif %}      
+    {% endif %}
+  {% endfor %}
+
 </div>
 
 <a class="btn btn-primary feedback-btn" href="{{ site.submit_feedback_link }}">

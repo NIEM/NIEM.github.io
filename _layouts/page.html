@@ -13,7 +13,10 @@ layout: 'default'
     {% break %}
   {% endif %}
 {% endfor %}
-
+{% comment %}
+  Since we have the feed back button on the left now, we need to show the side navigation on every page. Until we take out the feed back button. 
+{% endcomment %}
+{% assign section_has_children = true %}
 <div class="container">
   <div class="row">
     {% if section_has_children %}

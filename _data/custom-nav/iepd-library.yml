@@ -1,9 +1,3 @@
-- url: /iepd-library/--/--
+- url: /iepd-library/
   title: Template IEPD
   link: https://github.com/NIEM/Template-IEPD
-
-- url: /iepd-library/conformance/index.html
-  title: Conformance Validation
-
-- url: /iepd-library/search/index.html
-  title: Search IEPDs

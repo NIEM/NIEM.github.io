@@ -7,9 +7,14 @@
   .sharing-spot {
     // Offset the spot halo
     max-width: 100%;
+    @media screen and (min-width: 720px) {
+      max-width: 60%;
+    }
+    @media screen and (min-width: 960px) {
+      max-width: 50%;
+    }
   }
 }
-
 .feedback-panel {
 	margin-left: 15px;
 	margin-right: 15px;
@@ -21,4 +26,10 @@
 	a {
 		width: 100%;
 	}
+}
+.lead {
+  font-size: 18px;
+  p {
+    margin-top: 10px;
+  }
 }
