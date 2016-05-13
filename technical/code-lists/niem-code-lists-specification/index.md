@@ -1,7 +1,7 @@
 ---
 title: The NIEM Code Lists Specification
-current_code_lists_version: 1.0beta1
-current_code_lists_date: 2016-03-15
+current_code_lists_version: 1.0beta2
+current_code_lists_date: 2016-05-12
 ---
 
 The NIEM Technical Architecture Committee (NTAC) is actively developing the NIEM
