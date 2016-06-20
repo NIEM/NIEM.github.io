@@ -1,10 +1,17 @@
 # Site settings
 title: NIEM
+# Start with excludes that are as general as is reasonable, and we can make them
+# more specific when things don't get exported
+# keep this listed sorted alphabetically
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/Font-Awesome/src
   - vendor/bootstrap/docs
+  - "*/aspell-exceptions.txt"
+  - "*/Makefile"
+  - "*.dot"
+  - technical/country-codes/schema.png
 
 gems:
   - jekyll-mentions

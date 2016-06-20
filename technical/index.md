@@ -12,6 +12,8 @@ processes such as the NIEM release process and domain updates.
 
 * [Differences between NIEM reference and extension schema documents](ref-vs-ext)
 * [NIEM and Code Lists](code-lists)
+* [Using Country Codes in NIEM 4](country-codes): A plan for updating country
+  codes in NIEM 4.
 * [Using a NIEM Core Supplement](core-supplement)
 * [NIEM IEPD Change Control and Version Management: Frequently Asked Questions](iepd-versions)
 * [NIEM and JSON](json)
