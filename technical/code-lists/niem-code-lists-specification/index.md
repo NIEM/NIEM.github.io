@@ -1,15 +1,11 @@
 ---
 title: The NIEM Code Lists Specification
-current_code_lists_version: 1.0beta2
-current_code_lists_date: 2016-05-12
+current_code_lists_version: 1.0
+current_code_lists_date: 2016-06-20
 ---
 
-The NIEM Technical Architecture Committee (NTAC) is actively developing the NIEM
-Code Lists Specification. We are seeking help from the NIEM community to review
-and improve it. Please participate by reviewing the document and sending us
-feedback.
-
-The NIEM Code Lists Specification is a technical document that provides XML
+[The NIEM Code Lists Specification](http://reference.niem.gov/niem/specification/code-lists/{{page.current_code_lists_version}}/niem-code-lists-{{page.current_code_lists_version}}-{{page.current_code_lists_date}}.html)
+is a technical document that provides XML
 syntax and rules that support the use of code lists in NIEM XML Schemas, IEPDs,
 and information exchange packages (IEPs). One major topic for developers and
 users of code lists with NIEM information exchanges is the development,
