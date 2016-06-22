@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>                                  {
+<cyfs:PersonOtherKinAssociation                                           "@context" : {
+  xmlns:cyfs="http://release.niem.gov/niem/domains/cyfs/3.2/"               "cyfs": "http://release.niem.gov/niem/domains/cyfs/3.2/#",
+  xmlns:j="http://release.niem.gov/niem/domains/jxdm/5.2/"                  "j": "http://release.niem.gov/niem/domains/jxdm/5.2/#",
+  xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/">                   "nc": "http://release.niem.gov/niem/niem-core/3.0/#"
+                                                                          },
+                                                                          "cyfs:PersonOtherKinAssociation": {
+  <cyfs:SourcePerson>                                                         "cyfs:SourcePerson": {
+    <nc:PersonAgeMeasure>                                                     "nc:PersonAgeMeasure": {
+      <nc:MeasureIntegerValue>14</nc:MeasureIntegerValue>                       "nc:MeasureIntegerValue": 14,
+      <nc:TimeUnitCode>ANN</nc:TimeUnitCode>                                    "nc:TimeUnitCode": "ANN"
+    </nc:PersonAgeMeasure>                                                    },
+    <j:PersonHairColorCode>BRO</j:PersonHairColorCode>                        "j:PersonHairColorCode": "BRO",
+    <nc:PersonName>                                                           "nc:PersonName": {
+      <nc:PersonGivenName>Mortimer</nc:PersonGivenName>                         "nc:PersonGivenName": "Mortimer",
+      <nc:PersonSurName>Smith</nc:PersonSurName>                                "nc:PersonSurName": "Smith",
+      <nc:PersonNameSuffixText>Sr</nc:PersonNameSuffixText>                     "nc:PersonNameSuffixText": "Sr",
+      <nc:PersonPreferredName>Morty</nc:PersonPreferredName>                    "nc:PersonPreferredName": "Morty"
+    </nc:PersonName>                                                          }
+  </cyfs:SourcePerson>                                                      },
+  <cyfs:TargetPerson>                                                       "cyfs:TargetPerson": {
+    <j:PersonHairColorCode>GRY</j:PersonHairColorCode>                        "j:PersonHairColorCode": "GRY",
+    <nc:PersonName>                                                           "nc:PersonName": {
+      <nc:PersonGivenName>Rick</nc:PersonGivenName>                             "nc:PersonGivenName": "Rick",
+      <nc:PersonSurName>Sanchez</nc:PersonSurName>                              "nc:PersonSurName": "Sanchez"
+    </nc:PersonName>                                                          }
+  </cyfs:TargetPerson>                                                      },
+  <cyfs:PersonOtherKinAssociationCategoryCode                               "cyfs:PersonOtherKinAssociationCategoryCode":
+    >Maternal Grandfather</cyfs:PersonOtherKinAssociationCategoryCode>        "Maternal Grandfather"
+</cyfs:PersonOtherKinAssociation>                                         }
+                                                                        }
