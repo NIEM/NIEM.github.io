@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "exch": "http://example.com/CrashDriver/1.0/#",
+    "j": "http://release.niem.gov/niem/domains/jxdm/5.1/#",
+    "nc": "http://release.niem.gov/niem/niem-core/3.0/#",
+    "geo": "http://release.niem.gov/niem/adapters/geospatial/3.0/#",
+    "gml": "http://www.opengis.net/gml/3.2#",
+    "structures": "http://release.niem.gov/niem/structures/3.0/#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  },
+  "exch:CrashDriverInfo": {
+    "nc:Person": {
+      "@id": "P01",
+      "nc:PersonBirthDate": {
+        "nc:Date": {
+          "rdf:value": "1893-05-04"
+        }
+      },
+      "nc:PersonName": {
+        "nc:personNameCommentText": "copied",
+        "nc:PersonGivenName": {
+          "nc:sequenceID": 1,
+          "rdf:value": "Peter"
+        },
+        "nc:PersonMiddleName": [
+          {
+            "nc:sequenceID": 2,
+            "rdf:value": "Death"
+          },
+          {
+            "nc:sequenceID": 3,
+            "rdf:value": "Bredon"
+          }
+        ],
+        "nc:PersonSurName": {
+          "rdf:value": "Wimsey"
+        }
+      },
+      "exch:PersonFictionalCharacterIndicator": {
+        "rdf:value": true
+      }
+    },
+    "j:Crash": {
+      "nc:IncidentLocation": {
+        "geo:LocationGeospatialPoint": {
+          "gml:Point": {
+            "@id": "PT01",
+            "srsName": "urn:ogc:def:crs:EPSG::4326",
+            "gml:pos": {
+              "rdf:value": "51.835 -0.417"
+            }
+          }
+        }
+      },
+      "j:CrashVehicle": {
+        "j:CrashDriver": {
+          "nc:RoleOfPerson": {
+            "@id": "P01"
+          },
+          "j:DriverLicense": {
+            "j:DriverLicenseCardIdentification": {
+              "nc:IdentificationID": {
+                "rdf:value": "A1234567"
+              }
+            },
+            "nc:ItemLengthMeasure": {
+              "nc:MeasureDecimalValue": {
+                "rdf:value": 9.7
+              }
+            },
+            "nc:LengthUnitCode": {
+              "rdf:value": "CMT"
+            }
+          }
+        }
+      }
+    },
+    "j:PersonChargeAssociation": {
+      "nc:Person": {
+        "@id": "P01"
+      },
+      "j:Charge": {
+        "@id": "CH01"
+      },
+      "j:JuvenileAsAdultIndicator": {
+        "rdf:value": true
+      }
+    },
+    "j:Charge": {
+      "@id": "CH01",
+      "j:JusticeMetadata": {
+        "@id": "MD01",
+        "j:CriminalInformationIndicator": {
+          "rdf:value": true
+        }
+      },
+      "j:ChargeDescriptionText": {
+        "rdf:value": "Wild Driving"
+      },
+      "j:ChargeFelonyIndicator": {
+        "rdf:value": false
+      }
+    }
+  }
+}

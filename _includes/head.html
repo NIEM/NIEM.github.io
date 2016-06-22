@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="{{ site.baseurl }}/vendor/Font-Awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  {% if page.layout == "specification" %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/specification.css">{% endif %}
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
 
   <script>

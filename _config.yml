@@ -1,11 +1,13 @@
 # Site settings
 title: NIEM
-exclude: [
-  Gemfile,
-  Gemfile.lock,
-  vendor/bootstrap/docs,
-  vendor/Font-Awesome/src
-]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/Font-Awesome/src
+  - vendor/bootstrap/docs
+
+gems:
+  - jekyll-mentions
 
 # Site data
 superhero_iepd_path: https://github.com/NIEM/Developer-Network-IEPD-Series--SuperHero
