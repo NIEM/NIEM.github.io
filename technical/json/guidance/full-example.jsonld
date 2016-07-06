@@ -43,6 +43,9 @@
     "j:Crash": {
       "nc:IncidentLocation": {
         "geo:LocationGeospatialPoint": {
+          "@context": {
+            "srsName": "http://www.opengis.net/gml/3.2#srsName"
+          },
           "gml:Point": {
             "@id": "PT01",
             "srsName": "urn:ogc:def:crs:EPSG::4326",
