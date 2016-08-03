@@ -12,9 +12,7 @@
     "nc:Person": {
       "@id": "P01",
       "nc:PersonBirthDate": {
-        "nc:Date": {
-          "rdf:value": "1893-05-04"
-        }
+        "nc:Date": "1893-05-04"
       },
       "nc:PersonName": {
         "nc:personNameCommentText": "copied",
@@ -32,13 +30,9 @@
             "rdf:value": "Bredon"
           }
         ],
-        "nc:PersonSurName": {
-          "rdf:value": "Wimsey"
-        }
+        "nc:PersonSurName": "Wimsey"
       },
-      "exch:PersonFictionalCharacterIndicator": {
-        "rdf:value": true
-      }
+      "exch:PersonFictionalCharacterIndicator": true
     },
     "j:Crash": {
       "nc:IncidentLocation": {
@@ -49,9 +43,7 @@
           "gml:Point": {
             "@id": "PT01",
             "srsName": "urn:ogc:def:crs:EPSG::4326",
-            "gml:pos": {
-              "rdf:value": "51.835 -0.417"
-            }
+            "gml:pos": "51.835 -0.417"
           }
         }
       },
@@ -62,18 +54,12 @@
           },
           "j:DriverLicense": {
             "j:DriverLicenseCardIdentification": {
-              "nc:IdentificationID": {
-                "rdf:value": "A1234567"
-              }
+              "nc:IdentificationID": "A1234567"
             },
             "nc:ItemLengthMeasure": {
-              "nc:MeasureDecimalValue": {
-                "rdf:value": 9.7
-              }
+              "nc:MeasureDecimalValue": 9.7
             },
-            "nc:LengthUnitCode": {
-              "rdf:value": "CMT"
-            }
+            "nc:LengthUnitCode": "CMT"
           }
         }
       }
@@ -85,24 +71,16 @@
       "j:Charge": {
         "@id": "CH01"
       },
-      "j:JuvenileAsAdultIndicator": {
-        "rdf:value": true
-      }
+      "j:JuvenileAsAdultIndicator": true
     },
     "j:Charge": {
       "@id": "CH01",
       "j:JusticeMetadata": {
         "@id": "MD01",
-        "j:CriminalInformationIndicator": {
-          "rdf:value": true
-        }
+        "j:CriminalInformationIndicator": true
       },
-      "j:ChargeDescriptionText": {
-        "rdf:value": "Wild Driving"
-      },
-      "j:ChargeFelonyIndicator": {
-        "rdf:value": false
-      }
+      "j:ChargeDescriptionText": "Wild Driving",
+      "j:ChargeFelonyIndicator": false
     }
   }
 }
