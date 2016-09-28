@@ -7,20 +7,6 @@ json-ld-href: http://www.w3.org/TR/json-ld/
 json-ld-name: "JSON-LD 1.0"
 ---
 
-## Contents
-{:.no_toc}
-
-* This line is a placeholder to generate the table of contents
-{:toc}
-
-## Authors
-{:.no_toc}
-
-* Scott Renner <sar@mitre.org>, @iamdrscott
-* Webb Roberts <webb.roberts@gtri.gatech.edu>, @webb
-* Leila Tite <leila.tite@hennepin.us>, @leilatite
-* Tom Carlson <tom@tomcarlsonconsulting.com>
-
 ## Abstract
 {:.no_toc}
 
@@ -46,6 +32,21 @@ expected. Readers are invited to provide feedback on this document by
 entering an issue at
 [https://github.com/NIEM/NIEM.github.io/issues](https://github.com/NIEM/NIEM.github.io/issues)
 or sending email to <niem-comments@lists.gatech.edu>.
+
+## Authors
+{:.no_toc}
+
+* Scott Renner <sar@mitre.org>, @iamdrscott
+* Webb Roberts <webb.roberts@gtri.gatech.edu>, @webb
+* Leila Tite <leila.tite@hennepin.us>, @leilatite
+* Tom Carlson <tom@tomcarlsonconsulting.com>
+
+## Contents
+{:.no_toc}
+
+* This line is a placeholder to generate the table of contents
+{:toc}
+
 
 <div id="body-start"></div>
 
@@ -89,7 +90,7 @@ later date.
 
 ### Overview
 
-This document is one step in the NTAC technical roadmap for JSON,
+This document is one step in the NTAC technical road map for JSON,
 [Using JSON with NIEM](../using_json_with_niem.pdf).  It describes
 NIEM's methodology for creating consistent, interoperable JSON
 messages that are based on NIEM-conformant XML schemas. Core aspects
@@ -1239,7 +1240,7 @@ See [JSON-LD Specification Section 6.8, &ldquo;Interpreting JSON as JSON-LD&rdqu
 of how to implement this.
 
 
-## Roadmap for future work
+## Road map for future work
 
 ### NIEM Conformance
 
@@ -1293,7 +1294,7 @@ The following JSON data is a compact JSON-LD form of the full example from [Sect
 {% include_relative full-example.jsonld %}
 ```
 
-#### RDF {#thisisanote}
+#### RDF {#rdf}
 
 The [NIEM conceptual model]({{page.ndr-href}}#section_5) is based on
 the RDF data model described in [RDF-Concepts](#bibrdfconcepts). NIEM
@@ -1317,5 +1318,3 @@ This establishes two paths from a NIEM IEP to RDF
 The NTAC intent is that the RDF created by both paths will be
 consistent. This may entail future revisions to the
 [NDR]({{page.ndr-href}}#section_5.6).
-
-

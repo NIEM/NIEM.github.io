@@ -12,6 +12,8 @@ exclude:
   - "*/Makefile"
   - "*.dot"
   - technical/country-codes/schema.png
+  - technical/json/guidance/aux
+  - technical/json/guidance/tmp
 
 gems:
   - jekyll-mentions
