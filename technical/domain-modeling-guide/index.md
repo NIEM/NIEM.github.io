@@ -1,7 +1,7 @@
 ---
 title: Introduction to NIEM Domain Modeling
 ---
-version 29 Oct 2016
+Version: September 29, 2016
 
 ## Table of Contents
 
