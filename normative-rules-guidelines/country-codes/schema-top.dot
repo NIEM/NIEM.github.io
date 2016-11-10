@@ -1,0 +1,24 @@
+digraph G {
+  rankdir = LR;
+  edge [fontname = "Helvetica", fontsize = 10, dir = forward];
+  node [fontname = "Helvetica", fontsize = 10, width = 0, height = 0];
+
+  node [shape=record];
+
+  "nc:LocationType" [label="<top> complexType \N\l | <elcc> &emsp; element nc:LocationCountry\l}"];
+
+  "nc:DocumentType" [label="<top> complexType \N\l | <edcc> &emsp; element nc:DocumentOriginCountry\l}"];
+
+  "nc:CountryType" [label="<top> complexType \N\l | <ecr> &emsp; element nc:CountryRepresentation [1,1]\l}"];
+
+  { "nc:LocationType":elc "nc:DocumentType":edc } -> "nc:CountryType":top [label="type"];
+
+  node [shape=box, style=rounded, fontname="Helvetica bold italic"];
+  option1 [label="Representation 1"];
+  option2 [label="Representation 2"];
+  option3 [label="Representation 3"];
+  option4 [label="&hellip;"];
+
+  "nc:CountryType":ecr -> { option1 } [dir=back,label=substitutionGroup];
+  "nc:CountryType":ecr -> { option2 option3 option4 } [dir=back];
+}

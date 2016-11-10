@@ -45,7 +45,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="https://www.niem.gov/aboutniem/Pages/niem.aspx">About Us</a></li>
-            <li><a href="https://www.niem.gov/technical/Pages/niem.aspx">Tech Overview</a></li>
+            <li><a href="https://www.niem.gov/technical/Pages/niem.aspx">TechHub</a></li>
             <li><a href="https://www.niem.gov/tools-catalog/Pages/tools.aspx">Tools Catalog</a></li>
             <li><a href="https://www.niem.gov/training/Pages/train.aspx">Training</a></li>
             <li><a href="https://www.niem.gov/Pages/contact.aspx">Contact Us</a></li>
@@ -96,82 +96,50 @@
             <section class="ac-container">
               <div>
                 <input id="ac-1" name="accordion-1" type="radio">
-                <label for="ac-1"><i class="fa fa-lg fa-sitemap" style="padding-right:15px"></i>Content</label>
+                <label for="ac-1"><i class="fa fa-lg fa-sitemap" style="padding-right:15px"></i>
+                  IEPD Starter Kit</label>
                 <article class="ac-small">
                   <ul>
-                    <li><a href="/content/model-content/">Model Overview</a></li>
-                    <li><a href="/content/model-management/">Model Management</a></li>
+                    <li><a href="/iepd-starter-kit/">Development Overview</a></li>
+                    <li><a href="/iepd-starter-kit/reusable-xml-snippets/">Reusable XML Snippets</a></li>
+                    <li><a href="/iepd-starter-kit/iepd-series/">IEPD Series</a></li>
+                    <li><a href="/iepd-starter-kit/iepd-tutorials/">IEPD Tutorials</a></li>
+                    <li><a href="/iepd-starter-kit/conformance/">IEPD Conformance</a></li>
+                    <li><a href="/iepd-starter-kit/terms/">Terms</a></li>
+                    <li><a href="https://github.com/NIEM/Template-IEPD/">IEPD Template</a></li>
+                    <li><a href="https://github.com/search?q=NIEM+IEPD&utf8=%E2%9C%93">IEPD Search</a></li>                    
                   </ul>
                 </article>
               </div>
               <div>
                 <input id="ac-2" name="accordion-1" type="radio">
-                <label for="ac-2"><i class="fa fa-lg fa-code" style="padding-right:15px"></i>Technical</label>
-                <article class="ac-medium">
-                <ul>
-                  <li><a href="/technical/">NIEM Technical Guidance</a></li>
-                  <li><a href="/technical/ref-vs-ext/">Differences between NIEM reference and extension schema documents</a></li>
-                  <li><a href="/technical/iepd-versions/">FAQs: IEPD Versioning & Change Management</a></li>
-                  <li><a href="/technical/code-lists/">NIEM and Code Lists</a></li>
-                  <li><a href="/technical/core-supplement/">Using a NIEM Core Supplement</a></li>
-                  <li><a href="/technical/json">NIEM and JSON</a></li>
-                  <li><a href="https://www.niem.gov/technical/Pages/niem-uml.aspx">NIEM-UML</a></li>
+                <label for="ac-2"><i class="fa fa-lg fa-code" style="padding-right:15px"></i>Tips and Tricks</label>
+                <article class="ac-large">
+                  <ul>
+                    <li><a href="/tips-and-tricks/">Tips and Tricks Overview</a></li>
+                    <li><a href="/tips-and-tricks/iepd-versions/">IEPD Change Control and Version Management</a></li>
+                   <li><a href="/tips-and-tricks/ref-vs-ext/">Reference vs. Extension Schema</a></li>            
+                    <li><a href="/tips-and-tricks/domain-modeling-guide/">Introduction to NIEM Domain Modeling</a></li>
+                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Avoid-replicating-data-in-a-NIEM-XML-document">Avoid Replicating Data in a NIEM XML Document</a></li>
+                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Browsing-the-content-of-NIEM">Browsing NIEM Content</a></li>
+                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Efficient-XML-Interchange">Efficient XML Interchange</a></li>
+                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Enterprise-Integration-Patterns">Enterprise Integration Patterns</a></li>
+                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Fast-Infoset">Fast Infoset</a></li>
+                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Server-output-filter">Server Output Filter</a></li>
+                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Size-of-NIEM-XML-documents">Size of NIEM XML Documents</a></li>                    
                 </ul>
                 </article>
               </div>
               <div>
-                <input id="ac-3" name="accordion-1" type="radio">
-                <label for="ac-3"><i class="fa fa-lg fa-comments-o" style="padding-right:15px"></i>Domain Communities</label>
-                <article class="ac-large">
-                  <ul>
-                    <li><a href="https://www.niem.gov/aboutniem/Pages/how-do-i-get-started.aspx">How Do I Establish a New Domain?</a></li>
-                    <li><a href="https://www.niem.gov/communities/biometrics/Pages/about-bm.aspx">Biometrics</a></li>
-                    <li><a href="https://www.niem.gov/communities/cbrn/Pages/about-cbrn.aspx">CBRN</a></li>
-                    <li><a href="https://www.niem.gov/communities/cyfs/Pages/about-cyfs.aspx">CYFS</a></li>
-                    <li><a href="https://www.niem.gov/communities/em/Pages/about-em.aspx">Emergency Management</a></li>
-                    <li><a href="https://www.niem.gov/communities/hs/Pages/about-hs.aspx">Human Services</a></li>
-                    <li><a href="https://www.niem.gov/communities/immigration/Pages/about-immigration.aspx">Immigration</a></li>
-                    <li><a href="https://www.niem.gov/communities/infrastructure/Pages/about-ip.aspx">Infastructor Protection</a></li>
-                    <li><a href="https://www.niem.gov/communities/intelligence/Pages/about-intelligence.aspx">Intelligence</a></li>
-                    <li><a href="https://www.niem.gov/communities/internationaltrade/Pages/about-it.aspx">International Trade</a></li>
-                    <li><a href="https://www.niem.gov/communities/justice/Pages/about-justice.aspx">Justice</a></li>
-                    <li><a href="https://www.niem.gov/communities/maritime/Pages/about-maritime.aspx">Maritime</a></li>
-                    <li><a href="https://www.niem.gov/communities/MilOps/Pages/MilOps.aspx">Military Operations (MilOps)</a></li>
-                    <li><a href="https://www.niem.gov/communities/screening/Pages/about-screening.aspx">Screening</a></li>
-                  </ul>
-                </article>
-              </div>
-              <div>
                 <input id="ac-4" name="accordion-1" type="radio">
-                <label for="ac-4"><i class="fa fa-lg fa-gear" style="padding-right:15px"></i>Developer Network</label>
+                <label for="ac-4"><i class="fa fa-lg fa-gear" style="padding-right:15px"></i>Normative Rules and Guidelines</label>
                 <article class="ac-large">
                   <ul>
-                    <li><a href="/developer-network/">Developer Network Overview</li>
-                    <li><a href="/developer-network/iepd-series/">IEPD Series</li>
-                    <li><a href="/developer-network/tutorials/">Tutorials</li>
-                    <li><a href="/developer-network/normative-rules/">Normative Rules</li>
-                    <li><a href="/developer-network/patterns/">Patterns</a></li>
-                    <li><a href="/developer-network/terms/">Terms</a></li>
-                  </ul>
-                </article>
-              </div>
-              <div>
-                <input id="ac-5" name="accordion-1" type="radio">
-                <label for="ac-5"><i class="fa fa-lg fa-code-fork" style="padding-right:15px"></i>IEPD Templates</label>
-                <article class="ac-large">
-                  <ul>
-                    <li><a href="/iepd-library/">IEPD Library</a></li>
-                    <li><a href="https://github.com/NIEM/Template-IEPD">IEPD Template</a></li>
-                    <li><a href="/iepd-library/search/">IEPD Search</a></li>
-                  </ul>
-                </article>
-              </div>
-              <div>
-                <input id="ac-7" name="accordion-1" type="radio">
-                <label for="ac-7"><i class="fa fa-lg fa-user" style="padding-right:15px"></i>Users</label>
-                <article class="ac-large">
-                  <ul>
-                    <li><a href="/users/implementation-cookbook/">Implementation Cookbook</a></li>
+                    <li><a href="/normative-rules-guidelines/code-lists/">Working with Code Lists</a></li>
+                    <li><a href="/normative-rules-guidelines/core-supplement/">Using Core Supplements</a></li>
+                    <li><a href="/normative-rules-guidelines/country-codes/">Using Country Codes</a></li>
+                    <li><a href="/normative-rules-guidelines/json/">NIEM and JSON</li>
+                    <li><a href="/normative-rules-guidelines/normative-rules/">Normative Rules</li>
                   </ul>
                 </article>
               </div>

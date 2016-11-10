@@ -1,0 +1,32 @@
+digraph G {
+  rankdir = LR;
+  edge [fontname = "Helvetica", fontsize = 10, dir = forward];
+  node [fontname = "Helvetica", fontsize = 10, width = 0, height = 0];
+
+  node [shape=record];
+
+  "nc:LocationType" [label="<top> \N\l | <elcc> &emsp; nc:LocationCountry\l}"];
+
+  "nc:DocumentType" [label="<top> \N\l | <edcc> &emsp; nc:DocumentCountry\l}"];
+
+  "nc:CountryType" [label="<top> \N\l | <ecr> &emsp; nc:CountryRepresentation\l}"];
+
+  { "nc:LocationType":elc "nc:DocumentType":edc } -> "nc:CountryType":top [label="type"];
+
+  "nc:CountryType":ecr -> { "nc:CountryText" "nc:CountryCode" "iso_3166:CountryAlpha2Code":w } [dir=back,label=substitutionGroup];
+  "nc:CountryText" -> "nc:TextType" [label=type];
+  "nc:CountryCode" -> "cli:CodeType":top [label=type];
+
+  "cli:CodeType" [label="<top> \N\l | &emsp; @cli:codeListURI\l | &emsp; @cli:codeListColumnName\l | &emsp; @cli:codeListConstrainingIndicator\l"];
+
+  "iso_3166:CountryAlpha2Code" [label="\N\l"];
+
+  "iso_3166:CountryAlpha2Code" -> "iso_3166:CountryAlpha2CodeType":top [label="type"];
+  "iso_3166:CountryAlpha2CodeType" [label="<top> \N\l
+                                   | &emsp; extends simpleType&hellip;\l
+                                   | &emsp; &emsp; &emsp; AF\l
+                                   | &emsp; &emsp; &emsp; AX\l
+                                   | &emsp; &emsp; &emsp; &hellip;\l"];
+
+
+}

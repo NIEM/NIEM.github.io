@@ -1,0 +1,25 @@
+digraph G {
+  rankdir = LR;
+  edge [fontname = "Helvetica", fontsize = 10, dir = forward];
+  node [fontname = "Helvetica", fontsize = 10, width = 0, height = 0];
+
+  node [shape=record];
+
+  "nc:CountryType" [label="<top> complexType \N\l | <ecr> &emsp; element nc:CountryRepresentation [1,1]\l}"];
+
+  "nc:CountryType":ecr -> { "iso_3166:CountryAlpha2Code":w } [dir=back,label=substitutionGroup];
+
+
+  rank = same {
+  "iso_3166:CountryAlpha2Code" [label="element \N", shape=box, style=rounded];
+  "iso_3166:CountryAlpha2CodeType" [label="complexType \N"];
+  "iso_3166:CountryAlpha2CodeSimpleType" [label="<top> simpleType \N\l
+                                   | &emsp; enumeration AF\l
+                                   | &emsp; enumeration AX\l
+                                   | &emsp; enumeration AL\l
+                                   | &emsp; &hellip;\l"];
+                                   }
+
+  "iso_3166:CountryAlpha2Code" -> "iso_3166:CountryAlpha2CodeType" [label="type"];
+  "iso_3166:CountryAlpha2CodeType" -> "iso_3166:CountryAlpha2CodeSimpleType" [label="extends"];
+}

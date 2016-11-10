@@ -4,7 +4,7 @@
 <div class="section-nav list-group">
   {% assign page_url_parts = page.url | split: '/' %}
   {% assign section_url = page_url_parts[0] | append: '/' | append: page_url_parts[1] | append: '/' %}
-  {% assign html_pages = site.html_pages | sort: 'title' %}
+  {% assign html_pages = site.html_pages | sort: 'weight' %}
 
   {% comment %}
     Output the current section.
@@ -75,12 +75,22 @@
 
   {% comment %}
     If section has an item to be appended in the side navigation, we can just append those items here.
-    The technical section has an item to be appeneded in here.  
+    The tips and tricks section has an item to be appeneded in here.  
   {% endcomment %}
   {% for nav in site.data.custom-nav %}
     {% if nav[0] == page_url_parts[1] %}
-      {% if nav[0] == "technical" %}
-        <a  class="list-group-item" target="_blank" href="https://www.niem.gov/technical/Pages/niem-uml.aspx">NIEM-UML</a>
+      {% if nav[0] == "iepd-starter-kit" %}
+        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Template-IEPD/">IEPD Template</a>
+        <a class="list-group-item" target="_blank" href="https://github.com/search?q=NIEM+IEPD&utf8=%E2%9C%93">IEPD Search</a>
+      {% endif %}  
+      {% if nav[0] == "tips-and-tricks" %}
+        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Avoid-replicating-data-in-a-NIEM-XML-document">Avoid Replicating Data in a NIEM XML Document</a>
+        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Browsing-the-content-of-NIEM">Browsing NIEM Content</a>
+        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Efficient-XML-Interchange">Efficient XML Interchange</a>
+        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Enterprise-Integration-Patterns">Enterprise Integration Patterns</a>
+        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Fast-Infoset">Fast Infoset</a></li>
+        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Server-output-filter">Server Output Filter</a>
+        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Size-of-NIEM-XML-documents">Size of NIEM XML Documents</a>
       {% endif %}      
     {% endif %}
   {% endfor %}
