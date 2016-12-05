@@ -1,6 +1,7 @@
 ---
-title: How to map a database, model, dictionary, etc. to NIEM
+title:  How to map a database, model, dictionary, etc. to NIEM
 ---
+
 Note that this section is NOT meant to be an in-depth treatise on mapping. It is to provide an overview, some guidance, and suggestions for approaching this task. Mapping is usually hard and can be tedious, but it's also necessary for making a legacy system work with NIEM. 
 
 
@@ -122,3 +123,4 @@ For this reason, sometimes treating a partial match as "no match" (and subsequen
 ### <&mdash;&mdash; Return to:  [Table of Contents](./index.html)
 
 ----
+

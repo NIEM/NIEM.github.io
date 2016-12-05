@@ -1,6 +1,7 @@
 ---
-title: Design and build domain content
+title:  Design and build domain content
 ---
+
 ## How to name, define, and structure data components
 
  
@@ -204,3 +205,4 @@ Example: <code>VehicleTrafficControlDeviceCategoryCode</code> &mdash; A data typ
 ### <&mdash;&mdash; Return to: [Table of Contents](./index.html)
 
 ----
+

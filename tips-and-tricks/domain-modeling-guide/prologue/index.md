@@ -1,6 +1,7 @@
 ---
-title: 1.0  Prologue
+title:  1.0  Prologue
 ---
+
 ### 1.1 Background
 
 #### 1.1.1 Purpose of NIEM
@@ -73,3 +74,4 @@ This document is intended for use by technical personnel who support NIEM domain
 ### <&mdash;&mdash; Return to:  [Table of Contents](./index.html)
 
 ----
+

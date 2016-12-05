@@ -1,6 +1,7 @@
 ---
-title: Appendix C. NIEM glossary
+title:  Appendix C. NIEM glossary
 ---
+
 This appendix defines terminology associated with NIEM. The first section defines common terms that are not formally defined in NIEM specifications. Subsequent sections reference the definitions for terms used in the NIEM specifications. Each list is sorted alphabetically. 
 
 ## Common NIEM terms
@@ -475,3 +476,5 @@ This appendix defines terminology associated with NIEM. The first section define
 [code simple type]: https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_code_simple_type
 [content element]: https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_content_element
 [reference element]: https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_reference_element
+
+

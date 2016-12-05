@@ -1,7 +1,6 @@
 ---
-title: Evaluate data component quality
+title:  Evaluate data component quality
 ---
-Version: September 29, 2016
 
 ## Considerations in identifying, designing, defining, and structuring data components
 
@@ -57,3 +56,4 @@ For each potential NIEM Core data component (type/property):
 ### <&mdash;&mdash; Return to: [Table of Contents](./index.html)
 
 ----
+

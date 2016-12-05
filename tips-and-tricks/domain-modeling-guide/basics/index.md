@@ -1,6 +1,7 @@
 ---
-title: Technical basics
+title:  Technical basics
 ---
+
 ## Technical fundamentals of NIEM
 
 ### 5.1 NIEM High-Level Version Architecture (HLVA)
@@ -72,3 +73,4 @@ Under PMO direction and with technical assistance from the lead developer, the N
 ### <&mdash;&mdash; Return to:  [Table of Contents](./index.html)
 
 ----
+

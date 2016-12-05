@@ -1,7 +1,6 @@
 ---
 title: Appendix B - Resources
 ---
-Version: September 29, 2016
 
 ## URLs to releases, technical references, tools, templates, and other aids
 
@@ -77,3 +76,4 @@ Domain Performance Scorecard           | <http://example.com/>       | [ ENTER U
 ### <&mdash;&mdash; Return to: [Table of Contents](./index.html)
 
 ----
+

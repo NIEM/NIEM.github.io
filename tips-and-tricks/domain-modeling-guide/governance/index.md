@@ -1,6 +1,7 @@
 ---
-title: Introduction to NIEM Domain Modeling
+title:  Appendix A - Governance
 ---
+
 ## Meetings, communications, accounts for participation
 
 
@@ -41,3 +42,4 @@ If you are a domain representative developing NIEM content or maintaining your d
 ### <&mdash;&mdash; Return to:  [Table of Contents](./index.html)
 
 ----
+

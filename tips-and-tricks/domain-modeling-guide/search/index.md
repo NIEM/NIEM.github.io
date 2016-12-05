@@ -1,6 +1,7 @@
 ---
-title: Search for NIEM data components
+title:  Search for NIEM data components
 ---
+
 ## How to search for NIEM data components
 
 Although this section does not address NIEM modeling specifically, given the large number of NIEM data components, most modeling efforts will require searching the NIEM model for content to reuse, duplication, examples of content models, points of extension, etc.  This section introduces some basic methods of searching for NIEM content. 
