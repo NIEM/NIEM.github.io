@@ -8,6 +8,6 @@
 	path = vendor/bootstrap-sass
 	url = https://github.com/twbs/bootstrap-sass.git
 [submodule "json-guidance-auxiliary"]
-	path = technical/json/guidance/aux
+	path = normative-rules-guidelines/json/guidance/aux
 	url = https://github.com/webb/niem-json-guidance-auxiliary.git
 	branch = master
