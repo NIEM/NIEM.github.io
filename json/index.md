@@ -1,5 +1,5 @@
 ---
-title: NIEM and JSON
+title: NIEM and JSON Overview
 ---
 
 The NIEM Technical Architecture Committee (NTAC) is in the process of developing
