@@ -69,7 +69,7 @@ with the Core (or with other domains if inputting a domain update).
 
 ### Use reference materials to model various NIEM techniques 
 
-- Simple examples exist as [Developer Network patterns](https://niem.github.io/developer-network/patterns/)
+- Simple examples exist as [IEPD Starter Kit patterns](http://niem.github.io/iepd-starter-kit/reusable-xml-snippets/)
 that illustrate NIEM techniques such as:  augmentation, association, role, references, metadata, abstract elements and substitution groups, type extension, type adapter, etc.
 - Review existing [release reference schemas](https://release.niem.gov/).
 - The [change request](https://reference.niem.gov/niem/resource/change-request/) contains examples.
@@ -88,7 +88,7 @@ or [Change Request](https://reference.niem.gov/niem/resource/change-request/) (X
 - IEPD extensions are candidates for domain content, but each should be evaluated and potentially remodeled.
 - Use IEPD repositories to share IEPDs.
 - Example IEPD:  Cursor-on-Target MilOps Future Namespace.
-- [IEPD versioning](https://niem.github.io/technical/iepd-versions/)
+- [IEPD versioning](http://niem.github.io/tips-and-tricks/iepd-versions/)
 - When building a domain model, concentrate on designing XML data components that can be reused within any IEPD that any domain might build to share data with you. Do NOT build an IEPD for a domain model. To do this, try to design small parts that can be reused independently and are potentially standalone. Do not build a couple of very large monolithic structures. Think in terms of the kinds of small objects you need to represent, so they can be reused in multiple IEPDs. 
 
 
