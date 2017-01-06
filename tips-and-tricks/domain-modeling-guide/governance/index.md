@@ -32,7 +32,7 @@ If you are a domain representative developing NIEM content or maintaining your d
 
   - General technical comments and feedback:  <niem-comments@lists.gatech.edu>
   - NIEM Contact Center:  <information@niem.gov>
-  - NIEM Contact Center:  <https://niem.gov/Pages/contact.aspx>
+  - NIEM Contact Center:  <https://www.niem.gov/contact-us>
   - Lead developer <pgmw-system@gtri.gatech.edu>
 
 ----
