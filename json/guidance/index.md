@@ -12,8 +12,8 @@ json-ld-name: "JSON-LD 1.0"
 
 {% capture abstract-text %}
 This document provides guidance from the [NIEM Technical Architecture
-Committee (NTAC)](https://www.niem.gov/meet-us/ntac) for using the
-National Information Exchange Model ([NIEM](http://niem.gov)) with
+Committee (NTAC)](https://www.niem.gov/about-niem/niem-governance) for using the
+National Information Exchange Model ([NIEM](http://www.niem.gov)) with
 JavaScript Object Notation (JSON).  NIEM provides a well-established
 standard for defining information exchanges. JSON is specified by
 [RFC4627](#bibrfc4627).
