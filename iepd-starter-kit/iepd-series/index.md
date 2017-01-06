@@ -8,7 +8,7 @@ The material in this area is designed to demonstrate various unique aspects of t
 
 These examples presume a familiarity with the NIEM v3.0 technical specifications (i.e., MPD, NDR, etc.) and common XML principles (i.e., root element, complex type, simple type, etc.). If you are not, the latest NIEM technical specifications are accessible from links at [http://reference.niem.gov](http://reference.niem.gov), and knowledge of XML may be acquired from [http://www.w3schools.com/xml/default.asp](http://www.w3schools.com/xml/default.asp) and other online services.
 
-We are open to creating more of these worked examples from community generated ideas. If you have ideas on how to improve or extend the concepts provided here please [contact us](https://niem.gov/Pages/contact.aspx)!
+We are open to creating more of these worked examples from community generated ideas. If you have ideas on how to improve or extend the concepts provided here please [contact us](https://www.niem.gov/contact-us)!
 
 ---
 
