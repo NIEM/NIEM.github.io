@@ -11,7 +11,7 @@ This tutorial area provides step-by-step instructions on how to build a moderate
 
 A NIEM IEPD is a package that describes the construction and content of a NIEM information exchange. It contains all of the schemas necessary to represent and validate the data content of the exchange. It is also contains supplemental artifacts, such as documentation, business rules, search and discovery metadata, and sample instances.
 
-The process described here is a general outline of the steps that may be taken to create an IEPD, but may be adapted or customized as needed.  The 300-series of the [NIEM Training](https://www.niem.gov/training/Pages/train.aspx) describes these steps in greater detail.
+The process described here is a general outline of the steps that may be taken to create an IEPD, but may be adapted or customized as needed.  The 300-series of the [NIEM Training](https://www.niem.gov/training) describes these steps in greater detail.
 
 1.  Scenario Planning
 2.	Analyze exchange requirements
@@ -74,7 +74,7 @@ SSGT searches run on the components names themselves, plus their definitions and
 
 If no match is found, replacing a search term with a common synonym may help.
 
-Another way to discover NIEM components for mapping is by browsing through the [documentation spreadsheet] that is provided with each [NIEM release](https://www.niem.gov/technical/Pages/current-release.aspx). In these spreadsheets, there is a tab for Core and one for each domain, listing each of the components.  It may be useful to skim over the Core tab and any domain tabs that are related to the exchange to get an idea of what kinds of components are available.
+Another way to discover NIEM components for mapping is by browsing through the [documentation spreadsheet] that is provided with each [NIEM release](https://www.niem.gov/techhub/niem-model/current-release). In these spreadsheets, there is a tab for Core and one for each domain, listing each of the components.  It may be useful to skim over the Core tab and any domain tabs that are related to the exchange to get an idea of what kinds of components are available.
 
 ---
 
