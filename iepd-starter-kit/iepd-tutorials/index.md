@@ -74,7 +74,7 @@ SSGT searches run on the components names themselves, plus their definitions and
 
 If no match is found, replacing a search term with a common synonym may help.
 
-Another way to discover NIEM components for mapping is by browsing through the [documentation spreadsheet] that is provided with each [NIEM release](https://www.niem.gov/techhub/niem-model/current-release). In these spreadsheets, there is a tab for Core and one for each domain, listing each of the components.  It may be useful to skim over the Core tab and any domain tabs that are related to the exchange to get an idea of what kinds of components are available.
+Another way to discover NIEM components for mapping is by browsing through the [documentation spreadsheet] that is provided with each [NIEM release](https://release.niem.gov/). In these spreadsheets, there is a tab for Core and one for each domain, listing each of the components.  It may be useful to skim over the Core tab and any domain tabs that are related to the exchange to get an idea of what kinds of components are available.
 
 ---
 
