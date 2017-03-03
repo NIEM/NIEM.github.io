@@ -45,7 +45,63 @@ required.
 
 How to map NIEM complex type extension to JSON schema.
 
-Consider: [StackOverflow: JSON schema : “allof” with “additionalProperties”](http://stackoverflow.com/questions/22689900/json-schema-allof-with-additionalproperties)
+Consider [StackOverflow: JSON schema : “allof” with “additionalProperties”](http://stackoverflow.com/questions/22689900/json-schema-allof-with-additionalproperties)
+
+## Complications
+
+Certain features of JSON Schema make support of the basic NIEM object model
+difficult.
+
+__Data types are expressed as schemas__: JSON Schema does not have a distinct
+concept of *data types* for values. Instead,they are expressed as separate
+schemas.
+
+__Schema composition is via `allOf`__: The
+[JSON Schema `allOf` property](http://json-schema.org/latest/json-schema-validation.html#rfc.section.5.22)
+allows a schema to be constructed that an intersection of a set of schemas.
+
+__Need for *open* versus *closed* types__: In order to be composed using
+`allOf`, every instance of every derived type MUST be compatible with the schema
+of each base type. This means that the base type schemas MUST be *open*:
+additional properties must be allowed on the base types. Unfortunately, open
+definitions don't recognize that unexpected content is invalid. For example, if
+one were to misspell an optional property, it would pass validation.
+
+## What could work: collapsing the type hierarchy
+
+One method that absolutely *can* implement the desired content model is to
+collapse the type hierarchy into a concrete JSON schema.
+
+```javascript
+{
+    "$schema" : "http://json-schema.org/draft-04/schema#",
+    "type" : "object",
+    "additionalProperties" : false,
+    "definitions" : {
+        "BaseType" : {
+            "type" : "object",
+            "additionalProperties" : false,
+            "properties" : {
+                "alpha" : { "type" : "string" }
+            },
+            "required" : [ "alpha" ]
+        },
+        "DerivedType" : {
+            "type" : "object",
+            "additionalProperties" : false,
+            "properties" : {
+                "alpha" : { "type" : "string" },
+                "beta" : { "type" : "string" }
+            },
+            "required" : [ "alpha", "beta" ]
+        }
+    },
+    "properties" : {
+        "Base" : { "$ref" : "#/definitions/BaseType" },
+        "Derived" : { "$ref" : "#/definitions/DerivedType" }
+    }
+}
+```
 
 ## What doesn't work: allOf for base type
 
@@ -61,28 +117,29 @@ DerivedType.
 ```javascript
 {
     "$schema" : "http://json-schema.org/draft-04/schema#",
+    "type" : "object",
+    "additionalProperties" : false,
     "definitions" : {
         "BaseType" : {
             "type" : "object",
-            "additionalProperties" : false,
             "properties" : {
                 "alpha" : { "type" : "string" }
             },
             "required" : [ "alpha" ]
         },
         "DerivedType" : {
-            "allOf" : [
-                { "$ref" : "#/definitions/BaseType" },
-                {
-                    "type" : "object",
-                    "additionalProperties" : false,
-                    "properties" : {
-                        "beta" : { "type" : "string" }
-                    },
-                    "required" : [ "beta" ]
-                }
-            ]
+            "type" : "object",
+            "allOf" : [ { "$ref" : "#/definitions/BaseType" } ],
+            "properties" : {
+                "alpha" : { },
+                "beta" : { "type" : "string" }
+            },
+            "required" : [ "alpha", "beta" ]
         }
+    },
+    "properties" : {
+        "Base" : { "$ref" : "#/definitions/BaseType" },
+        "Derived" : { "$ref" : "#/definitions/DerivedType" }
     }
 }
 ```
