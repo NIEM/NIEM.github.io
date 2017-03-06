@@ -58,7 +58,7 @@ schemas.
 
 __Schema composition is via `allOf`__: The
 [JSON Schema `allOf` property](http://json-schema.org/latest/json-schema-validation.html#rfc.section.5.22)
-allows a schema to be constructed that an intersection of a set of schemas.
+is how a schema is constructed that is an intersection of schemas.
 
 __Need for *open* versus *closed* types__: In order to be composed using
 `allOf`, every instance of every derived type MUST be compatible with the schema
@@ -71,6 +71,18 @@ one were to misspell an optional property, it would pass validation.
 
 One method that absolutely *can* implement the desired content model is to
 collapse the type hierarchy into a concrete JSON schema.
+
+This accurately conveys the desired content model, but the schemas do not
+express the is-a relationship between a base type and a derived type.
+
+* Pros:
+    * Has the right content model.
+    * Property definitions are simple and clear.
+* Cons:
+    * Types don't express is-a relationship between base tyep and derived type.
+    * Type definitions can't be used as a basis for derived types.
+    * Each JSON Schema type definition has to roll up 
+
 
 ```javascript
 {
@@ -103,7 +115,81 @@ collapse the type hierarchy into a concrete JSON schema.
 }
 ```
 
-## What doesn't work: allOf for base type
+## Works but is too complicated: open and closed types
+
+There must be open types, which are used as the basis for derived types. There
+also must be closed types, which are the concrete types of properties, and which
+have `additionalProperties` set to `false`.
+
+* Pros:
+    * Presents the right content model.
+    * Open type definitions are straightforward.
+    * Property defintiions are straightforward.
+* Cons:
+    * Duplicate types are required: there must be an open type and a closed type
+      for each NIEM data type.
+    * The closed type is even more complicated than the open type, even though
+      it's only there to close the open type, and doesn't contribute anything
+      semantically.
+    * There's no clear naming strategy for the open types.
+
+```javascript
+{
+    "$schema" : "http://json-schema.org/draft-04/schema#",
+    "type" : "object",
+    "additionalProperties" : false,
+    "definitions" : {
+        "BaseType_open" : {
+            "type" : "object",
+            "properties" : {
+                "alpha" : { "type" : "string" }
+            },
+            "required" : [ "alpha" ]
+        },
+        "BaseType" : {
+            "allOf" : [
+                { "$ref" : "#/definitions/BaseType_open" },
+                { "type" : "object",
+                  "additionalProperties" : false,
+                  "properties" : {
+                      "alpha" : { }
+                  }
+                }
+            ]
+        },
+        "DerivedType_open" : {
+            "allOf" : [
+                { "$ref" : "#/definitions/BaseType_open" },
+                { "type" : "object",
+                  "properties" : {
+                      "alpha" : { },
+                      "beta" : { "type" : "string" }
+                  },
+                  "required" : [ "beta" ]
+                }
+            ]
+        },
+        "DerivedType" : {
+            "allOf" : [
+                { "$ref" : "#/definitions/DerivedType_open" },
+                { "type" : "object",
+                  "additionalProperties" : false,
+                  "properties" : {
+                      "alpha" : { },
+                      "beta" : { }
+                  }
+                }
+            ]
+        }
+    },
+    "properties" : {
+        "Base" : { "$ref" : "#/definitions/BaseType" },
+        "Derived" : { "$ref" : "#/definitions/DerivedType" }
+    }
+}
+```
+
+## What doesn't work: straightforward `allOf` for base type
 
 The following doesn't work. Why not? We want BaseType and DerivedType to be
 useful types that can be used by properties. We want the types to prohibit
@@ -113,6 +199,13 @@ objects.
 However, the DerivedType can't just "allOf" the base type, since the instance
 fails validation against BaseType when it contains the additional properties of
 DerivedType.
+
+* Pros:
+    * Type definitions are straightforward.
+    * Property definitions are straightforward.
+* Cons:
+    * Presents the wrong content model, which is a deal-breaker.
+
 
 ```javascript
 {
