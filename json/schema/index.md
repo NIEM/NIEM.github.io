@@ -36,10 +36,40 @@ required.
   content. So, we're really not worried about the sequence of elements being
   preserved into the JSON. 
 
-# Basic strategy:
+# Basic design
 
-* Elements are inlined within type definitions
-* Put types in a "definitions" section
+## Names of properties and definitions
+
+Names are given to properties and definitions. Names correspond to URIs of NIEM
+XML Schema components, as defined by a JSON context. This ensure that JSON
+instances can be translated to URIs using JSON-LD.
+
+## Properties are defined where they occur
+
+There aren't useful top-level element declarations. Properties are defined
+within the datatypes that use them.
+
+## Data definitions corresponding to types go into definitions section
+
+The `definitions` section is defined by
+[the JSON Schema specification](http://json-schema.org/latest/json-schema-validation.html#rfc.section.5.26). This could look like:
+
+```javascript
+{
+    "$schema" : "http://json-schema.org/draft-04/schema#",
+    "definitions" : {
+        "BaseType" : {
+            ... /* definition of BaseType */
+        },
+        "DerivedType" : {
+            ... /* definition of DerivedType */
+        }
+    },
+    ... /* other definitions */
+}
+
+```
+
 
 # Complex type extension
 
