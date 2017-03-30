@@ -22,7 +22,7 @@ A CS does not have to be issued within a major or minor release cycle (although 
 
 ## What Core Supplements are available?
 
-As of the date of this page, Two core supplements (CS) exist that apply to NIEM Core 3.0. 
+As of the date of this page, three core supplements (CS) exist that apply to NIEM Core 3.0. 
 
 1. CS 3.0.1 - This CS corrects the U.S. Postal Service (USPS) U.S. State code list.  
 It provides a whole new list that includes Alabama (AL) (that was previously missing).  
@@ -51,6 +51,14 @@ Download CS 3.0.2 from one of these locations:
     * CS 3.0.2 is also contained within the NIEM 3.1 minor release package:
 [http://release.niem.gov/niem/3.1/niem-3.1.rel.zip](http://release.niem.gov/niem/3.1/niem-3.1.rel.zip)
 
+3. CS 3.0.3 - This CS provides updated DEA drug codes, GENC country codes, and new GENC administrative area (international state) codes. 
+Download CS 3.0.3 from one of these locations:
+
+    * In the release area:
+[http://release.niem.gov/niem/3.0/du-cs-3.0.html](http://release.niem.gov/niem/3.0/du-cs-3.0.html)
+
+    * In the publication area:
+[https://release.niem.gov/niem/3.0/niem-core-3.0.3.cs.zip](https://release.niem.gov/niem/3.0/niem-core-3.0.3.cs.zip)
 
 ## How do I use a Core Supplement?
 
