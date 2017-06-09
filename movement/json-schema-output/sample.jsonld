@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "nc:VehicleAxleQuantity": {
+      "description": "A count of common axles of rotation of one or more wheels of a vehicle, whether power driven or freely rotating.",
+      "type": "number"
+    },
+    "nc:Amount": {
+      "description": "An amount of money.",
+      "type": "number"
+    },
+    "nc:CurrencyCode": {
+      "description": "A unit of money or exchange.",
+      "$ref": "#/definitions/iso_4217:CurrencyCodeType"
+    },
+    "nc:IdentificationID": {
+      "description": "An identifier.",
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "iso_4217:CurrencyCodeType": {
+      "description": "A data type for a currency that qualifies a monetary amount.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/iso_4217:CurrencyCodeSimpleType"
+        }
+      ]
+    },
+    "iso_4217:CurrencyCodeSimpleType": {
+      "description": "A data type for a currency that qualifies a monetary amount.",
+      "enum": ["EUR","GBP","USD"]
+    }
+  }
+}
