@@ -10,7 +10,7 @@ Access Tool at: <a href="https://beta.movement.niem.gov">beta.movement.niem.gov<
 
 <i>Movement</i> was built with input from the NIEM community to provide a user-friendly interface, smarter search results, and a streamlined way to build JavaScript Object Notation (JSON) Schema in support of exchanges. Driven by and for users, this tool enables anyone to explore what NIEM has to offer, regardless of model expertise or technical understanding. 
 
-<i>Movement</i> is open source so the community who inspired the creation of the tool can also help drive and contribute to it. It is the first step to enable greater flexibility and simplicity when interacting and leveraging NIEM.
+<i>Movement</i> is open source so the community that helped create it can also contribute to it. It is the first step to enable greater flexibility and simplicity when interacting and leveraging NIEM.
 
 <h3>Search the Business Glossary</h3>
 
