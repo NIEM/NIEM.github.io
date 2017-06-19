@@ -49,7 +49,7 @@ NIEM has created an automated build pipeline to allow developers an easy way to 
 
 <h4>Tool Users</h4>
 
-We are very interested in hearing your vision Movement as well as your general feedback on its capabilities. You can provide your feedback directly on <a href="https://github.com/NIEM/Movement/issues">GitHub</a> or though <a href="https://www.niem.gov/contact-us">NIEM.gov</a>. 
+We are very interested in hearing your vision for Movement as well as your general feedback on its capabilities. You can provide your feedback directly on <a href="https://github.com/NIEM/Movement/issues">GitHub</a> or though <a href="https://www.niem.gov/contact-us">NIEM.gov</a>. 
 
 <h3>Join the Movement</h3>
 Movement is an exciting glimpse into the future of NIEM, and we can’t wait to see what the community accomplishes by using it. Join the movement today—visit <a href="https://beta.movement.niem.gov">beta.movement.niem.gov</a> to access the tool. 
