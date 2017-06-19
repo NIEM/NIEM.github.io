@@ -2,16 +2,16 @@
 title: Movement and JSON Schema
 ---
 
-We’re Looking for **your** Feedback on NIEM JSON.
+We need your feedback on NIEM JSON!
 
 Before we can finalize the NIEM JSON Schema solution, we need to hear from
 actual JSON users. Please review the content on this page and provide your
-feedback on what you see and/or don’t see and want to.
+feedback on what you see, don’t see, and want to see.
 
 We are assuming there are two types of JSON users:
 
-1. Those who would like to leverage only the NIEM terms and definitions when
-   building custom JSON objects for a lightweight exchange.
+1. <b>Those who would like to leverage only the NIEM terms and definitions when
+   building custom JSON objects for a lightweight exchange.</b>
 
    For this user type, we have the current JSON Schema output of the Beta
    Movement Tool. It’s as simple as we can make it—through a lightweight version
@@ -23,31 +23,29 @@ We are assuming there are two types of JSON users:
    broad user feedback. We would like to start the conversation to find out what
    you’d like to add back—it’s in Beta until we do.
 
-2. Those who would like to leverage the content in NIEM as well as its
-   relationships for more complex exchanges that require context.
+2. <b>Those who would like to leverage the content in NIEM as well as its
+   relationships for more complex exchanges that require context.</b>
 
-   This user type requires JSON Schema functionality more reflective of what you
-   can do today with NIEM in XML—it takes into consideration things like
+   This user type requires JSON Schema functionality that is more reflective of what you
+   can do today with NIEM in XML--it takes into consideration things like
    reusability, hierarchy structure, and cardinality. This solution also
    establishes the foundation upon which JSON-Linked Data (JSON-LD) can
-   occur. Ideally, the grand vision for the use of JSON Schema with JSON-LD is
+   occur. Ideally, the vision for the use of JSON Schema with JSON-LD is
    for NIEM to host JSON-LD normative dictionaries online for the schemas to map
-   its terms and definitions to the NIEM JSON-LD established context.  Guidance
-   for this approach can be found here. Please review and provide your
-   feedback. Help us drive this effort forward by telling us what
+   its terms and definitions to the NIEM JSON-LD established context. Help us drive this effort forward by telling us what
    functionalities you will actually use!
 
-We drafted up a sample use case scenario below for you to visualize both
+We drafted up a sample use case scenario for you to visualize both
 approaches to help understand details for each.
 
-This document is one of two. This one describes what Movement does now.
+This document is one of two. This one describes what Movement does now (see below).
 [The other document](../../json/sample-schema/) describes some options for using
 JSON Schema that supports more features of NIEM and JSON-LD.
 
 ## What Movement puts out today
 
-Movement provides standard JSON Schema best practices and types; is human and
-machine readability; and validates your simple type JSON objects while
+Movement provides standard JSON Schema best practices and types, is human and
+machine readable, and validates your simple type JSON objects while
 leveraging NIEM terms and definitions.
 
 Advantages:
@@ -94,7 +92,7 @@ For example:
 
 ### Simple types
 
-Simple types does not take cardinality into consideration. This schema approach allows developers to use single key to single value within their JSON objects.
+Simple types do not take cardinality into consideration. This schema approach allows developers to use single key to single value within their JSON objects.
 
 For example:
 
