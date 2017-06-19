@@ -8,7 +8,9 @@ Access Tool at: <a href="https://beta.movement.niem.gov">beta.movement.niem.gov<
  
 <h3>Discover the possibilities</h3>
 
-Created with input from the NIEM community, Movement provides a user friendly interface, smarter search results, and a streamlined way to build JavaScript Object Notation (JSON) Schema in support of exchanges. Simple and straightforward, Movement removes the added challenge of understanding NIEM’s technical architecture when exploring its common vocabulary, allowing the Program to better support evolving community needs. Movement allows anyone to explore what NIEM has to offer, regardless of model expertise or technical understanding.
+Created with input from the NIEM community, Movement provides a user friendly interface, smarter search results, and a streamlined way to build JavaScript Object Notation (JSON) Schema in support of exchanges. 
+
+Simple and straightforward, Movement removes the added challenge of understanding NIEM’s technical architecture when exploring its common vocabulary, allowing the Program to better support evolving community needs. Movement allows anyone to explore what NIEM has to offer, regardless of model expertise or technical understanding.
 
 Movement is also open source so the community who inspired its creation can contribute to it.
 
