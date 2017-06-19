@@ -1,5 +1,5 @@
 ---
-title: NIEM Movement and JSON Schema
+title: Movement and JSON Schema
 ---
 
 We’re Looking for YOUR Feedback on NIEM JSON 
