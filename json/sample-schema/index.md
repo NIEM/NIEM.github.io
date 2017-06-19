@@ -1,10 +1,10 @@
 ---
-title: JSON Schema with JSON-LD
+title: Sample JSON Schema
 ---
 
 This document is one of two. This one describes some options for using JSON
 Schema that supports features of NIEM and JSON-LD.
-[The other document](./) describes what Movement does now.
+[The other document](../../movement/json-schema-output) describes what Movement does now.
 
 A JSON Schema structure that provides what you would expect from NIEM XML:
 cardinality, enumeration options descriptions, substitution group, and

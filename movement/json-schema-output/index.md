@@ -2,7 +2,7 @@
 title: Movement and JSON Schema
 ---
 
-We’re Looking for YOUR Feedback on NIEM JSON 
+We’re Looking for **your** Feedback on NIEM JSON.
 
 Before we can finalize the NIEM JSON Schema solution, we need to hear from
 actual JSON users. Please review the content on this page and provide your
@@ -41,7 +41,7 @@ We drafted up a sample use case scenario below for you to visualize both
 approaches to help understand details for each.
 
 This document is one of two. This one describes what Movement does now.
-[The other document](json-schema-for-json-ld) describes some options for using
+[The other document](../../json/sample-schema/) describes some options for using
 JSON Schema that supports more features of NIEM and JSON-LD.
 
 ## What Movement puts out today

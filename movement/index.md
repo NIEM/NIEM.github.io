@@ -52,4 +52,3 @@ NIEM has created an automated build pipeline to allow developers an easy way to 
 <h4>Tool Users:</h4>
 
 We are very interested in hearing your vision for future evolution of the tool as well as your general feedback on the capabilities. You can provide your feedback directly on <a href="https://github.com/NIEM/Movement/issues">GitHub</a> or though <a href="https://www.niem.gov/contact-us">NIEM.gov</a>. 
-
