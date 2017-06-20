@@ -85,3 +85,6 @@ placeholder approach will enable eventual JSON-LD context when NTAC establishes
 NIEM JSON-LD normative libraries that will be hosted in NIEM.gov. A JSON-LD
 context is used to map terms (i.e. properties with associated values in a JSON
 document) to URLs—a term is a short word that expands to a URL.
+
+
+Need something simplier? [This other sample](../../movement/json-schema-output) describes what Movement does now, a conventional JSON Schema output.
