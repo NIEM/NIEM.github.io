@@ -45,7 +45,7 @@ User picks 8 complex/simple elements for the exchange:
 {% include_relative sample2.jsonld %}
 ```
 
-## Summary of what you get with each
+## Summary of what you get with this approach
 
 Uses more detailed JSON Schema notation to replicate NIEM simple and complex
 type interactions for substitution groups and parent-child
