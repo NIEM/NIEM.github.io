@@ -7,7 +7,7 @@ title: Movement Overview
 </div>
 <div class="access-tool-here">
 	<a class="btn btn-primary btn" href="https://beta.movement.niem.gov" target="_blank">
-	  <span class="content">Access Tool Here</span>
+	  <span class="content">Visit Movement</span>
 	</a>
 </div>
 <div style="clear:both">
@@ -22,7 +22,7 @@ Movement is also open source so the community who inspired its creation can cont
 
 <div class="movement-video-wrapper">
 	<div class="videoWrapper">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/YuXI1hqcy0Y?rel=0" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/watch?v=hOAfTlpA5tA" frameborder="0" allowfullscreen></iframe>
 	</div>
 </div>
 
