@@ -2,10 +2,16 @@
 title: Movement Overview
 ---
 
-<b>Introducing <i>Movement</i> – an easier, simpler way to explore and use NIEM.</b>
+<div class="introducing-movement">
+	<b>Introducing <i>Movement</i> – an easier, simpler way to explore and use NIEM.</b>
+</div>
+<div class="access-tool-here">
+	<a class="btn btn-primary btn" href="https://beta.movement.niem.gov" target="_blank">
+	  <span class="content">Access Tool Here</span>
+	</a>
+</div>
+<div style="clear:both">
 
-Access Tool at: <a href="https://beta.movement.niem.gov">beta.movement.niem.gov</a>
- 
 <h3>Discover the possibilities</h3>
 
 Created with input from the NIEM community, Movement provides a user friendly interface, smarter search results, and a streamlined way to build JavaScript Object Notation (JSON) Schema in support of exchanges. 
@@ -13,6 +19,12 @@ Created with input from the NIEM community, Movement provides a user friendly in
 Simple and straightforward, Movement removes the added challenge of understanding NIEM’s technical architecture when exploring its common vocabulary, allowing the Program to better support evolving community needs. Movement allows anyone to explore what NIEM has to offer, regardless of model expertise or technical understanding.
 
 Movement is also open source so the community who inspired its creation can contribute to it.
+
+<div class="movement-video-wrapper">
+	<div class="videoWrapper">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/YuXI1hqcy0Y?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
 
 <h3>Search the Business Glossary</h3>
 
