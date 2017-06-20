@@ -22,7 +22,7 @@ Movement leverages <a href="https://github.com/NIEM/NIEM-Releases">NIEM version 
 
 <h3>Build your exchange</h3>
 
-For those who want to take their exploration a step further, users can quickly choose what they need from the search results and add them to Moement’s “My Subset Builder” with just the click of a button. You can store the selected terms locally in your browser and generate/download customized JSON Schema. The JSON Schema formatting and technical dependencies are built into the schema generation functionality, allowing you to leverage NIEM terms and definitions and incorporate them into your JSON exchange technical architecture.
+For those who want to take their exploration a step further, users can quickly choose what they need from the search results and add them to Movement’s “My Subset Builder” with just the click of a button. You can store the selected terms locally in your browser and generate/download customized JSON Schema. The JSON Schema formatting and technical dependencies are built into the schema generation functionality, allowing you to leverage NIEM terms and definitions and incorporate them into your JSON exchange technical architecture.
 
 While building your exchange, you'll notice that Movement only allows you to add certain terms to your subset. Based on user feedback, some business rules are built into the tool. Movement does not allow the selection of NIEM complex types—these cater to the structure and relationship of the model instead of the validation aspects needed from a schema. By allowing the user to only select NIEM simple types, the tool creates a more approachable environment for NIEM users and JSON users alike, while focusing on the intended JSON Schema solution.
 
@@ -43,7 +43,7 @@ We have ideas for additional functionality we’d love to see get implemented in
 * Extension schema functionality for things that are not in NIEM
 *	Have the user interface display the Codelist options 
 *	Export formats other than JSON Schema (XSD, Excel Spreadsheet, Java Library, .NET Library, NIEM UML, etc.)
-*	Implement profiles and dashboards to build you exchanges with a group
+*	Implement profiles and dashboards to build your exchanges with a group
 *	Organizational data dictionary import
 *	Import of existing NIEM exchanges
 
