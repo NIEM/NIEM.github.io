@@ -7,7 +7,7 @@ title: Movement Overview
 </div>
 <div class="access-tool-here">
 	<a class="btn btn-primary btn" href="https://beta.movement.niem.gov" target="_blank">
-	  <span class="content">Access Tool Here</span>
+	  <span class="content">Visit Movement</span>
 	</a>
 </div>
 
