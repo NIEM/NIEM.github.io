@@ -76,7 +76,7 @@ User picks 4 simple elements for the exchange:
 {% include_relative sample.jsonld %}
 ```
 
-## Summary of what you get with each
+## Summary of what you get as the tool output
 
 Uses conventional JSON Schema notation to replicate NIEM simple types.
 
@@ -103,4 +103,9 @@ For example:
 ### JSON-LD features
 
 Does not take into account eventual JSON-LD adaptability or context.
+
+
+Need a more robust solution? [This other sample](../../json/sample-schema/) describes some options for using
+JSON Schema that supports more features of NIEM and JSON-LD.
+
 
