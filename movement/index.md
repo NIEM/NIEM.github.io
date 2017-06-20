@@ -10,7 +10,7 @@ title: Movement Overview
 	  <span class="content">Access Tool Here</span>
 	</a>
 </div>
-<div style="clear:both">
+
 
 <h3>Discover the possibilities</h3>
 
@@ -22,7 +22,7 @@ Movement is also open source so the community who inspired its creation can cont
 
 <div class="movement-video-wrapper">
 	<div class="videoWrapper">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/YuXI1hqcy0Y?rel=0" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/hOAfTlpA5tA?rel=0" frameborder="0" allowfullscreen></iframe>
 	</div>
 </div>
 

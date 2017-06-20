@@ -45,7 +45,7 @@ blockquote {
 }
 .introducing-movement {
   @media screen and (min-width: 720px) {
-    float: left;
+    display: inline-block;
     margin-top: 6px;
   }
   margin-bottom: 16px;     
