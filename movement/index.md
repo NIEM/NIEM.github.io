@@ -44,9 +44,11 @@ To learn more about what NIEM is doing with JSON, the <a href="https://www.niem.
 
 <h3>Got feedback?</h3>
 
-We want to hear from you! If you have a GitHub account, we welcome your input on <a href="https://github.com/NIEM/Movement/issues">Movement's issue tracker</a>. If not, please use our <a href="https://www.niem.gov/contact-us">contact us page on NIEM.gov</a>.  
+We want to hear from you!  
 
 In the spirit of open-source tooling, we have provided a [Scrum board](https://github.com/NIEM/Movement/projects/1) that allows users to keep track of Movement’s issues and enhancements. Anyone can [submit a new issue](https://github.com/NIEM/Movement/issues) for the tool for something they would like to see added or a bug. Once reviewed by the program office, issues will be added to the Scrum board's backlog. Developers and tool contributors can then address issues from the backlog and track their status using the Scrum board—providing an Agile approach to development and complete transparency to users.
+
+Don't have a GitHub account and want to provide input? Please use our <a href="https://www.niem.gov/contact-us">contact us page on NIEM.gov</a>. 
 <h3>How to contribute</h3>
 
 <h4>Tool Developers</h4>
