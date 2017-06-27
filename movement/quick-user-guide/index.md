@@ -4,7 +4,7 @@ title: Movement – Quick User Guide:
 
 The purpose of Movement is to help users navigate the model and create their own subsets to define an organization’s data exchanges.
 
-Below is a <i>draft</i> quick reference for anyone looking to get started using the tool. We welcome your improvements to this content [here](https://github.com/NIEM/NIEM.github.io/blob/master/movement/quick-reference-guide.md). 
+Below is a <i>draft</i> quick reference for anyone looking to get started using the tool. We welcome your improvements to this content [here](https://github.com/NIEM/NIEM.github.io/blob/master/movement/quick-user-guide/index.md). 
 
 ## Landing Page:
 When a user visits [beta.movement.niem.gov](https://beta.movement.niem.gov), they are automatically directed to Movement’s Landing page. 
