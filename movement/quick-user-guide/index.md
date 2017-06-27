@@ -1,5 +1,5 @@
 ---
-title: Movement – Quick User Guide:
+title: Movement – Quick User Guide
 ---
 
 The purpose of Movement is to help users navigate the model and create their own subsets to define an organization’s data exchanges.
