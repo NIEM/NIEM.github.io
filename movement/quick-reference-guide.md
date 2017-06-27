@@ -7,7 +7,7 @@ The purpose of Movement is to help users navigate the model and create their own
 Below is a <i>draft</i> quick reference for anyone looking to get started using the tool. We welcome your improvements to this content [here](https://github.com/NIEM/NIEM.github.io/blob/master/movement/quick-reference-guide.md). 
 
 ## Landing Page:
-When a user visits beta.movement.niem.gov, they are automatically directed to Movement’s Landing page. 
+When a user visits [beta.movement.niem.gov](https://beta.movement.niem.gov), they are automatically directed to Movement’s Landing page. 
 
 Here you can input any keyword into the search bar and start to discover NIEM terms and definitions. If desired, the dropdown next to the keyword search box may be used to filter the results to a specific domain.
 
