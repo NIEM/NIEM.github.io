@@ -4,7 +4,7 @@ title: NIEM Releases
 
 ## NIEM 4.0
 
-NIEM version 4.0 is under development. We encourage members of the community to
+NIEM version 4.0 is **under development**. We encourage members of the community to
 review this pre-release and submit comments.
 
 The current draft of NIEM 4.0 is *NIEM 4.0 release candidate 3*. In the absence
