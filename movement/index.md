@@ -22,7 +22,9 @@ Movement is also open source so the community who inspired its creation can cont
 
 <div class="movement-video-wrapper">
 	<div class="videoWrapper">
-		<iframe width="560" height="315" src="https://www.youtube.com/watch?v=F3ofVeC9tjs&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/F3ofVeC9tjs" frameborder="0" allowfullscreen></iframe>
+		
+		embed/hOAfTlpA5tA?rel=0
 	</div>
 </div>
 
