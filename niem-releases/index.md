@@ -16,9 +16,14 @@ There are several ways to access the release:
   [the complete NIEM 4.0 release candidate 3 schema package as a zip file](https://release.niem.gov/niem/4.0/niem-4.0rc3.rel.zip)
   from [release.niem.gov](https://release.niem.gov/niem/4.0/).
 
-- You may browse the contents of NIEM 4.0 and download schema subsets from
-  [the NIEM Schema Subset Generation Tool (SSGT) pre-release server](http://niemstaging.ittl.gtri.org/niemtools-4.0rc1/ssgt/index.iepd).
+- You may browse the contents of NIEM 4.0 using [Movement](https://beta.movement.niem.gov).
+  Movement has been updated to 4.0rc2. Model content was locked down in rc2 (release candidate 2), so you are essentially searching the production 4.0 release.
+  
+- You may browse the contents of NIEM 4.0 and download schema subsets from the
+  [NIEM Schema Subset Generation Tool (SSGT) pre-release server](http://niemstaging.ittl.gtri.org/niemtools-4.0rc1/ssgt/index.iepd).
   The SSGT is currently hosting version 4.0rc1 (release candidate 1).
+  
+
   
 - The NIEM pre-releases are 
   [published on Github](https://github.com/NIEM/NIEM-Releases/tree/dev-niem-4.0).
