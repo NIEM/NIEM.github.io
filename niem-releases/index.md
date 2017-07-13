@@ -30,6 +30,10 @@ In addition to the schema release, 4.0 incorporates technical updates:
 - An updated version of the
   [NIEM Naming and Design Rules](https://github.com/NIEM/NIEM-NDR), which
   describes how NIEM schemas are constructed, and what NIEM data means.
+  
+  The rules from the NDR are reflected in the [Conformance Testing Assistance
+  (ConTesA) for NIEM](https://tools.niem.gov/contesa/), which includes rules
+  from the NDR v3 and current drafts of the NDR v4.
 
 - An updated
   [Code Lists Specification](https://github.com/NIEM/NIEM-Code-Lists-Spec),
