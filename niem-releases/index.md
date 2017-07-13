@@ -2,7 +2,7 @@
 title: NIEM Releases
 ---
 
-## NIEM 4.0
+### NIEM 4.0 ###
 
 NIEM version 4.0 is has been released. This is the **current version** of NIEM.
 
@@ -23,7 +23,25 @@ There are several ways to access NIEM 4.0:
   and may be
   [downloaded as a zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-4.0.zip).
   
-Please send in any comments as [GitHub issues](https://github.com/NIEM/NIEM-Releases/issues).
+Please send in any comment on the NIEM release as a [GitHub issue](https://github.com/NIEM/NIEM-Releases/issues).
+
+In addition to the schema release, 4.0 incorporates technical updates:
+
+- An updated version of the
+  [NIEM Naming and Design Rules](https://github.com/NIEM/NIEM-NDR), which
+  describes how NIEM schemas are constructed, and what NIEM data means.
+
+- An updated
+  [Code Lists Specification](https://github.com/NIEM/NIEM-Code-Lists-Spec),
+  which describes how to code lists formatted as CSV spreadsheets or Genericode
+  XML documents can be used with NIEM schemas and NIEM XML documents.
+
+- A
+  [default JSON-LD context for NIEM 4.0](https://release.niem.gov/jsonld-context/niem-4.0-context.jsonld):
+  NIEM JSON leverages JSON-LD (JSON for Linked Data), enabling it to maintain
+  consistency and to connect data across exchanges. The JSON-LD context is a
+  JSON file that identifies, for every namespace for NIEM content, the namespace
+  prefix and its corresponding namespace URI.
 
 ## NIEM 3.2
 
