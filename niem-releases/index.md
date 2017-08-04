@@ -2,7 +2,7 @@
 title: NIEM Releases
 ---
 
-### NIEM 4.0 ###
+## NIEM 4.0
 
 NIEM version 4.0 is has been released. This is the **current version** of NIEM.
 
