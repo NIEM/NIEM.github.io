@@ -64,7 +64,7 @@ The [Value of NIEM] page describes the results of using NIEM, which include:
 * Broad software support of technical features of messages
 * The ability to reuse a message format over long periods of time
 
-## What can be NIEM conformant?
+## What can be NIEM-conformant?
 
 There are several pieces that make up information exchange. NIEM has rules for
 each of these, to support understanding of messages and to convey meaning:
@@ -89,7 +89,7 @@ each of these, to support understanding of messages and to convey meaning:
 NIEM has practices that each of these pieces must follow in order to be
 conformant.
 
-## How do I make something NIEM conformant? 
+## How do I make something NIEM-conformant? 
 
 NIEM has practices, methods, and formats for the pieces that compose an
 information exchange. These are expressed as a set of specifications. These
