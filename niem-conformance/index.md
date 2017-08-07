@@ -69,7 +69,7 @@ The [Value of NIEM] page describes the results of using NIEM, which include:
 There are several pieces that make up information exchange. NIEM has rules for
 each of these, to support understanding of messages and to convey meaning:
 
-1. An **IEP** (*information exchange package*): an XML document defining a message,
+1. An **IEP** (*information exchange package*): an XML document that constitutes a message,
    exchange, data item, or payload. An IEP may be transmitted from a sender to a
    receiver, or may be a static document.
 
