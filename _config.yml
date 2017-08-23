@@ -11,10 +11,11 @@ exclude:
   - "*/aspell-exceptions.txt"
   - "*/Makefile"
   - "*.dot"
-  - technical/country-codes/schema.png
-  - technical/json/guidance/aux
-  - technical/json/guidance/tmp
+  - normative-rules-guidance/country-codes/schema.png
+  - json/guidance/aux
+  - json/guidance/tmp
   - site-tools
+  - vendor
 
 gems:
   - jekyll-mentions
