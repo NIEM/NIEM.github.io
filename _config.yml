@@ -15,7 +15,6 @@ exclude:
   - json/guidance/aux
   - json/guidance/tmp
   - site-tools
-  - vendor
 
 gems:
   - jekyll-mentions
