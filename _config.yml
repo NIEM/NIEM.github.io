@@ -4,6 +4,9 @@ title: NIEM
 # more specific when things don't get exported
 # keep this listed sorted alphabetically
 exclude:
+  - /Makefile
+  - /CONTRIBUTING.md
+  - README.md
   - Gemfile
   - Gemfile.lock
   - vendor/Font-Awesome/src
@@ -11,6 +14,8 @@ exclude:
   - "*/aspell-exceptions.txt"
   - "*/Makefile"
   - "*.dot"
+  - "*.dot.m4"
+  - "*/dot_macros.m4"
   - normative-rules-guidance/country-codes/schema.png
   - json/guidance/aux
   - json/guidance/tmp
