@@ -1,6 +1,6 @@
 {
   "cyfs:PersonOtherKinAssociation": {
-      "cyfs:SourcePerson": {
+    "cyfs:SourcePerson": {
       "nc:PersonAgeMeasure": {
         "nc:MeasureIntegerValue": 14,
         "nc:TimeUnitCode": "ANN"
@@ -20,7 +20,6 @@
         "nc:PersonSurName": "Sanchez"
       }
     },
-    "cyfs:PersonOtherKinAssociationCategoryCode":
-      "Maternal Grandfather"
+    "cyfs:PersonOtherKinAssociationCategoryCode": "Maternal Grandfather"
   }
 }

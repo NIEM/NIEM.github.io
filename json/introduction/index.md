@@ -11,14 +11,17 @@ A NIEM exchange defines a simple object model. Here is an example of a simple
 This object model can define the syntax of a JSON message, for example:
 
 ```text
-{% include_relative object-model.json %}
-```
+{% include_relative object-model.json %}```
+
+This JSON is using JSON-LD, and is supported by the following JSON-LD context:
+
+```text
+{% include_relative context.jsonld %}```
 
 This could be represented in JSON or XML. Here is a corresponding XML representation for the same data:
 
 ```text
-{% include_relative object-model.xml %}
-```
+{% include_relative object-model.xml %}```
 
 You can exchange NIEM data either as XML or as JSON. Either way, the data that
 is expected in a message, and the meaning of that data, is defined by NIEM
