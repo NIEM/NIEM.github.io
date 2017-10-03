@@ -2,13 +2,13 @@
 title: Overview of Community Activities 
 ---
 
-### **Join us on October 10th from 2-3pm EST to hear more about this collaborative effort**
+# Join us on October 10th from 2-3pm EST to hear more about this collaborative effort
 
->**Please register here: https://attendee.gotowebinar.com/register/8507422127673395457**
+>Please register here: <a href="https://attendee.gotowebinar.com/register/8507422127673395457">https://attendee.gotowebinar.com/register/8507422127673395457</a>
 
->**After registering, you will receive a confirmation email containing information about joining the webinar. There is no cost to register.**
+>After registering, you will receive a confirmation email containing information about joining the webinar. There is no cost to register.
 
->**PLEASE NOTE: You must attend via the webinar to receive a unique audio ID, if you dial-in without this unique PIN you will attend in listen only mode and will not be able to be unmuted.**
+>PLEASE NOTE: You must attend via the webinar to receive a unique audio ID, if you dial-in without this unique PIN you will attend in listen only mode and will not be able to be unmuted.
 
 ## Overview
 With the adoption of the National Information Exchange Model (NIEM) at all levels of government, there is a growing and unmet demand for clinical health elements to be exchanged outside the typical hospital/clinician setting. For example, domains such as justice, biometrics, agriculture, human services, and emergency response are finding a greater need to standardize the handling of healthcare elements and information. However, the health information technology (HIT) standards are distinctly different from those found in the NIEM. 
