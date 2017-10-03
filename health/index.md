@@ -1,5 +1,5 @@
 ---
-title: Overview of Community Activities 
+title: Community Activities 
 ---
 >**Join us on October 10th from 2-3pm EST to hear more about this collaborative effort**
 >
