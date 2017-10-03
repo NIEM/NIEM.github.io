@@ -47,7 +47,7 @@ The goals of this work are as follows:
 
 The critical stakeholders for this project include NIEM users who have a need to exchange clinical health elements to share health related data outside of the common clinical or emergency care setting.
 
-### Challenges
+#### Challenges
 The HIT community is deeply entrenched in multiple health standards and information models. This minimizes interest for engagement with additional standards or modeling activities. Therefore, the HIT community does not readily recognize a business need for or value to be received from participating in NIEM. This has resulted in limited engagement and development in NIEM Health Domain. From the other point of view, there is a perceived lack of understanding by the HIT community of NIEM and its fundamental design which seeks to build bridges between existing data standards efforts where dictated by real-world data exchange requirements.
 
 As domain steward of the NIEM Health Domain, FHA has allocated resources to advance and formalize the relationship of NIEM with accepted HIT standards. Success will likely be realized by identifying use cases that satisfy the needs of the NIEM community thus demonstrating value to the healthcare community.
