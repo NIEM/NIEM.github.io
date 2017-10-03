@@ -38,12 +38,12 @@ FHA includes more than 20 federal agencies to advance the national agenda for he
 
 ## Goals and Target Audience
 The goals of this work are as follows:
-1) Define and execute a FY18-FY21 NIEM Health Domain strategy which may include but is not limited to:
-* Catalog and prioritize identified use cases for exchanging health related data outside the healthcare system
-* Determine health IT standards/frameworks which are most relevant to high priority exchanges and seek alignment with the NIEM exchange development process
-* Support a community of interest around the sharing of health data with non-traditional partners with a blending of health/non-health and technical/business people to inform and guide project activities and the health domain, as appropriate
-2.	Formalize the alignment between the NIEM and the FHIM, including harmonization of standards where appropriate
-3.	Build the relationship between the NIEM and clinical health communities
+1. Define and execute a FY18-FY21 NIEM Health Domain strategy which may include but is not limited to:
+   * Catalog and prioritize identified use cases for exchanging health related data outside the healthcare system
+   * Determine health IT standards/frameworks which are most relevant to high priority exchanges and seek alignment with the NIEM exchange development process
+    * Support a community of interest around the sharing of health data with non-traditional partners with a blending of health/non-health and technical/business people to inform and guide project activities and the health domain, as appropriate
+1. Formalize the alignment between the NIEM and the FHIM, including harmonization of standards where appropriate
+1. Build the relationship between the NIEM and clinical health communities
 
 The critical stakeholders for this project include NIEM users who have a need to exchange clinical health elements to share health related data outside of the common clinical or emergency care setting.
 
