@@ -2,7 +2,7 @@
 title: Overview of Community Activities 
 ---
 
-# Join us on October 10th from 2-3pm EST to hear more about this collaborative effort
+**Join us on October 10th from 2-3pm EST to hear more about this collaborative effort**
 
 >Please register here: <a href="https://attendee.gotowebinar.com/register/8507422127673395457">https://attendee.gotowebinar.com/register/8507422127673395457</a>
 
