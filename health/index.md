@@ -14,7 +14,7 @@ With the adoption of the National Information Exchange Model (NIEM) at all level
 
 The Federal Health Architecture (FHA) team, as the NIEM Health Domain steward, is seeking to formalize the relationship between NIEM and the standards reflected in the <a href="http://fhims.org/"> Federal Health Information Model (FHIM)</a> by aligning NIEM with the commonly used fields, value sets and codes used in clinical standards (e.g. Health Level Seven’s (HL7) Consolidated- Clinical Document Architecture (C-CDA) and Fast Healthcare Interoperability Resource (FHIR); the International Health Terminology Standards Development Organization’s (IHTSDO) SNOMED; the National Library of Medicine’s (NLM) RxNorm, Regenstrief’s LOINC; and the International Statistical Classification of Diseases and Related Health Problems (ICD) ICD-10, etc). This alignment will better position federal, state, and local agencies to obtain and securely exchange specific, key health information with a greater degree of efficiency, consistency, and access control.
 
-Effective summer 2017, FHA has provided dedicated resources to advance alignment between NIEM standards and the standards commonly used for HIT exchanges. This may also include support for fostering a health-oriented inter-disciplinary community of interest to help guide and potentially govern Health Domain data model content in NIEM.
+Effective summer 2017, FHA has provided dedicated resources to advance alignment between NIEM and the standards commonly used for HIT exchanges. This may also include support for fostering a health-oriented inter-disciplinary community of interest to help guide and potentially govern Health Domain data model content in NIEM.
 
 The FHA team would like to inventory current needs within the NIEM Community and learn about practitioners who have already created Information Exchange Package Documents that use health data elements to ensure the elements and codes are those most commonly used in health IT exchanges.  In addition, it would be useful to better understand where other domain’s requirements overlap with health, but where data exchange is not currently occurring and to identify potential barriers to exchange. 
 
@@ -48,8 +48,6 @@ The goals of this work are as follows:
 The critical stakeholders for this project include NIEM users who have a need to exchange clinical health elements to share health related data outside of the common clinical or emergency care setting.
 
 ### Challenges
-The HIT community is deeply entrenched in multiple health standards and information models. This minimizes interest for engagement with additional standards or modeling activities. Therefore, the HIT community does not readily recognize a business need for or value to be received from participating in NIEM. This has resulted in limited engagement and development in a NIEM Health Domain. From the other point of view, there is a perceived lack of understanding by the HIT community of NIEM and its fundamental design which seeks to build bridges between existing data standards efforts where dictated by real-world data exchange requirements.
-
 As domain steward of the NIEM Health Domain, FHA has allocated resources to advance and formalize the relationship of NIEM with accepted HIT standards. Success will likely be realized by identifying use cases that satisfy the needs of the NIEM community thus demonstrating value to the healthcare community.
 
 ### Get Involved
