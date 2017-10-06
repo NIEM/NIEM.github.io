@@ -8,6 +8,7 @@ exclude:
   - Gemfile.lock
   - vendor/Font-Awesome/src
   - vendor/bootstrap/docs
+  - vendor/cache/ruby/2.4.0/gems/
   - "*/aspell-exceptions.txt"
   - "*/Makefile"
   - "*.dot"
@@ -15,7 +16,6 @@ exclude:
   - json/guidance/aux
   - json/guidance/tmp
   - site-tools
-  - vendor/cache/ruby/2.4.0/gems/
 
 gems:
   - jekyll-mentions
