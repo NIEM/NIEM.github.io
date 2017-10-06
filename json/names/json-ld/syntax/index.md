@@ -1,5 +1,5 @@
 ---
-title: Syntax: objects and arrays
+title: "Syntax: objects and arrays"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices interdum
