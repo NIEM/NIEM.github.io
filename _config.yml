@@ -15,7 +15,7 @@ exclude:
   - json/guidance/aux
   - json/guidance/tmp
   - site-tools
-  - vendor
+  - vendor/cache/ruby/2.4.0/gems/
 
 gems:
   - jekyll-mentions
@@ -30,6 +30,17 @@ niem_comments_link: mailto:niem-comments@lists.gatech.edu
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  # syntax_highlighter_opts:
+  #   block:
+  #     line_numbers: true
+  #     start_line: 1
+
+
 
 # Defaults
 defaults:
