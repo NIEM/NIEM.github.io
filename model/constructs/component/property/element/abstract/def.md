@@ -1,0 +1,1 @@
+a placeholder element defined in a schema that must be replaced with an appropriate substitute in an instance

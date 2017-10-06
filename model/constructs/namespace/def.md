@@ -1,0 +1,1 @@
+a collection of property and type declarations, managed by a common authoritative source

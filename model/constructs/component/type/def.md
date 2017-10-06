@@ -1,0 +1,1 @@
+a data structure that defines a set of allowable values

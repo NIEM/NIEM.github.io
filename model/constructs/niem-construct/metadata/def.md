@@ -1,0 +1,1 @@
+a set of data that describes characteristics of other data

@@ -1,0 +1,1 @@
+a mechanism to add additional properties to an existing type that cannot be modified directly
