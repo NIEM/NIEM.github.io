@@ -19,32 +19,13 @@ This terminology may or may not be familiar, but the concepts behind them are si
 
 The field names in this form correspond to properties; the descriptions of allowable values for each field correspond to types:
 
-<table class="table table-hover table-striped table-bordered">
-<tr>
-  <th>Properties (field names)</th>
-  <th>Types (allowable values)</th>
-</tr>
-<tr>
-  <td>LAST NAME</td>
-  <td>text, up to 20 characters</td>
-</tr>
-<tr>
-  <td>FIRST</td>
-  <td>text, up to 10 characters</td>
-</tr>
-<tr>
-  <td>DRIVER LICENSE/ID CARD NO</td>
-  <td>number, with 8 digits</td>
-</tr>
-<tr>
-  <td>INITIAL</td>
-  <td>text, with 1 character</td>
-</tr>
-<tr>
-  <td>BIRTH DATE</td>
-  <td>date, formatted as MM-DD-YYYY</td>
-</tr>
-</table>
+| Properties (field names) | Types (allowable values) |
+| --- | --- |
+| LAST NAME | text, up to 20 characters |
+| FIRST | text, up to 10 characters |
+| DRIVER LICENSE/ID CARD NO | number, with 8 digits |
+| INITIAL | text, with 1 character |
+| BIRTH DATE | date, formatted as MM-DD-YYYY |
 
 ## Pairing properties with types
 
@@ -85,16 +66,9 @@ The types described above all carried **simple content** - a single value that c
 
 There is one more property and type represented by the form above:
 
-<table class="table table-hover table-striped table-bordered">
-<tr>
-  <th>Properties (field names)</th>
-  <th>Types (allowable values)</th>
-</tr>
-<tr>
-  <td>Personal information</td>
-  <td>A data structure with:<br>- LAST NAME<br>- DRIVER LICENSE/ID CARD NO<br>- FIRST<br>- INITIAL<br>- BIRTH DATE</td>
-</tr>
-</table>
+| Properties (field names) | Types (allowable values) |
+| --- | --- |
+| Personal information | A data structure with:<br>- LAST NAME<br>- DRIVER LICENSE/ID CARD NO<br>- FIRST<br>- INITIAL<br>- BIRTH DATE |
 
 From the context of the form, we can tell that the information that is expected is "Personal Information".  This means that the name fields, birth date, and license number should be those of the person submitting the form and not the information of that person's spouse, child, emergency contact, or insurance agent.
 
