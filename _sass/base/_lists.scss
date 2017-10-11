@@ -39,3 +39,19 @@ ul.list-fa-icon {
     font-weight: $headings-font-weight;
   }
 }
+
+table {
+  ul {
+    padding: 10px;
+
+    li {
+      margin-left: 10px;
+    }
+    
+    lh {
+      text-align: left;
+      font-weight: bold;
+      padding-left: 0;
+    }
+  }
+}
