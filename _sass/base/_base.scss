@@ -25,6 +25,10 @@ blockquote {
   width: auto !important;
 }
 
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(101, 196, 203, 0.5); // 50% of $pale-turquoise
+}
+
 ul {
   // Resetting default from 40px
   -webkit-padding-start: 15px;
