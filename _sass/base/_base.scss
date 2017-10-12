@@ -25,6 +25,11 @@ blockquote {
   width: auto !important;
 }
 
+ul {
+  // Resetting default from 40px
+  -webkit-padding-start: 15px;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
