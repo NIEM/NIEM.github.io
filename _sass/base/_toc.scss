@@ -1,22 +1,18 @@
+
 // Adding 'Contents' headline to the TOC
 #markdown-toc::before {
   content: "Contents";
   font-weight: bold;
 }
 
-// // Use numbers instead of bullets for listing
-// #markdown-toc ul {
-//   list-style: decimal;
-// }
-
-// #markdown-toc ul li {
-//   margin-left: 10px;
-// }
+#markdown-toc li {
+  margin-left: 15px;
+}
 
 #markdown-toc {
   border: 1px solid #aaa;
   padding: 2em;
   // list-style: decimal;
-  display: inline-block;
+  // display: inline-block;
   background-color: $white-smoke;
 }
