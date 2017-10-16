@@ -2,14 +2,15 @@
   title: Releases
 ---
 
-## TODO
+A <strong>NIEM Release</strong> is a {% include_relative def.md %}
 
-- [Current release](http://niem.github.io/niem-releases/)
-- Schedule
-- Development phases and process
-- Release cycle (three-year cycle with annual releases)
-- Domain Updates and Core Supplements
-- Deployment - release.niem.gov and GitHub
-- Persistence
-- [Release history](history.html)
-- Release artifacts
+- TOC
+{:toc}
+
+- [Current release](../../niem-releases/)
+- [Release history](history)
+- Kinds of releases
+- Release development
+- Release cycle
+- Availability
+- [Release artifacts](artifacts/)
