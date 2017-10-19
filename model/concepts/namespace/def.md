@@ -1,1 +1,1 @@
-a collection of property and type declarations, managed by a common authoritative source
+a schema that defines properties and types, managed by a common authoritative source
