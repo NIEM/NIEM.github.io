@@ -9,6 +9,8 @@ title: Health Community Activities
 >
 >PLEASE NOTE: You must attend via the webinar to receive a unique audio ID, if you dial-in without this unique PIN you will attend in listen only mode and will not be able to be unmuted.
 
+<a href="https://www.niem.gov/contact-us" class="btn btn-primary" target="_blank">Submit Your Use Case</a>
+
 ### Overview
 With the adoption of the National Information Exchange Model (NIEM) at all levels of government, there is a growing and unmet demand for clinical health elements to be exchanged outside the typical hospital/clinician setting. For example, domains such as justice, biometrics, agriculture, human services, and emergency response are finding a greater need to standardize the handling of healthcare elements and information. However, the health information technology (HIT) standards are distinctly different from those found in the NIEM. 
 
