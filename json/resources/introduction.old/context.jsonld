@@ -1,0 +1,7 @@
+{
+  "@context" : {
+    "cyfs": "http://release.niem.gov/niem/domains/cyfs/3.2/#",
+    "j": "http://release.niem.gov/niem/domains/jxdm/5.2/#",
+    "nc": "http://release.niem.gov/niem/niem-core/3.0/#"
+  }
+}
