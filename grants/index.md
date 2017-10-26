@@ -2,7 +2,7 @@
 title: Working towards a common understanding of grant data
 ---
 
-## Hoping for…and contributing to a unified grant effort.
+**Hoping for…and contributing to a unified grant effort.**
 
 There are about 20 federal agencies that manage grants that range from health to disasters, to education to financial and so on. 
 
