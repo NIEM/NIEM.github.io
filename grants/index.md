@@ -24,7 +24,7 @@ For over 12 years, NIEM has facilitated information exchanges across a variety o
 Multi-agency data sharing initiatives are becoming increasingly common, yet establishing a framework for coordination, decision making, and standardization remains a time consuming and complex undertaking.  NIEM provides such a framework that is ready-made for reuse, but few are aware of this resource, or misunderstand the purpose.  Rather than specifying a particular standard, NIEM prescribes a community-driven collaboration approach to sharing information, which in turn drives the eventual solution.  In other words, NIEM is designed to be flexible to the unique and ever-evolving data sharing requirements of government, and is looking for opportunities to advance its utilization as part of a larger data-centric movement.  
 
 ### Data Definitions 
-<p>To provide feedback on the data element and definition, please see our <a href="https://github.com/NIEM/NIEM.github.io/issues/39 " title="provide feedback">related issue</a>.</p>
+<p>To provide feedback, please see our <a href="https://github.com/NIEM/NIEM.github.io/issues/39 " title="provide feedback">related issue</a>.</p>
 
 |Name |Definition|
 |-----|----------|
