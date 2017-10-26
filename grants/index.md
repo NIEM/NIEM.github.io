@@ -10,7 +10,7 @@ Within one agency there could multiple grant systems, each with similar function
 
 What we are hoping to do (if nothing else) is to help identify what is common across the systems. This is where NIEM comes.
 
-A team within the NIEM community is working to modernize grants management within a federal agency. The data dictionary and conceptual model on this page represents a portion of their work. 
+A team within the NIEM community is working to modernize grants management within a federal agency. The data dictionary on this page represents a portion of their work. 
 
 To date they have looked at over 64,000 data fields across 9 sytems, and narrowed that down to 3,200 that have a potential play in a grant activity. From there, they narrowed it down some more to about 114 fields that are the most common. Of the 114 most common, they narrowed it down some more to what could be considered the common core for grant data.
 
@@ -25,5 +25,9 @@ Multi-agency data sharing initiatives are becoming increasingly common, yet esta
 
 ### Data Definitions 
 <p>To provide feedback on the data element and definition, please see our <a href="https://github.com/NIEM/NIEM.github.io/issues/39 " title="provide feedback">related issue</a>.</p>
+
+|Name |Definition|
+|-----|----------|
+|ADDRESSES|Addresses is the subject area collection of Address information for applicants, organizations and recipients.  Address information is collected for physical location and mailing purposes.|
 
 
