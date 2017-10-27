@@ -2,7 +2,7 @@
 title: A common understanding of grant data
 ---
 
-There are approximately 24 federal agencies that manage grants ranging from health to disasters to education and many other issue areas. Each of these agencies may use one or more grant management systems. Each system may have similar functions such as pre-award, post-award, and reporting. These systems use terms such as “grantor,” “grantee,” “award process,” “adjudication,” etc.; the definitions of these terms (and the terms themselves) may vary greatly between systems.  
+There are approximately 24 federal agencies that manage grants ranging from health to disasters to education and many other issue areas. Each of these agencies may use one or more grant management systems. These systems use terms such as “grantor,” “grantee,” “award process,” “adjudication,” etc.; the definitions of these terms (and the terms themselves) may vary greatly between systems.  
 
 A team within the NIEM community, led by the NBAC co-chair Kamran Atri, is working to modernize grants management within a federal agency. They are identifying the common terms, standardizing them, and harmonizing/unifying the grants management systems.
 To date, the team has reviewed over 34,000 grant-related data fields scattered across several government systems and narrowed the data fields down to approximately 3,200. This set has been further edited down and categorized into 114 of the most common data subjects. Of the 114 data subjects, some have been down-selected for consideration as common core for grant data. 
