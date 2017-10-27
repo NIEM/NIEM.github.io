@@ -70,8 +70,11 @@ The team is ready to share their work to advance the grant reporting need as wel
 |TECHNOLOGY|Technology is the hardware infrastructure, software processes and delivery services used to support business activities and the supporting data for each business activity.|
 
 ### Conceptual Model
+
 The conceptual model is currently too large to display on this page. 
 [View the conceptual model](GRANT_DOMAIN_INITIAL_CANDIDATES_08232017.jpg).
+
+[![grant domain initial candidates](Icon-GrantDomainCandidtates.jpg)](GRANT_DOMAIN_INITIAL_CANDIDATES_08232017.jpg) [![grant domain initial candidates](Icon-GrantDomainCandidtates-v2.jpg)](GRANT_DOMAIN_INITIAL_CANDIDATES_08232017.jpg)
 
 ### Learn More About NIEM?
 * [What is NIEM?](https://www.niem.gov/about-niem)
