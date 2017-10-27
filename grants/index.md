@@ -2,7 +2,7 @@
 title: Working towards a common understanding of grant data
 ---
 
-**Hoping for…and contributing to a unified grant effort.**
+**Facilitating the drive towards to a unified grant effort.**
 
 From what we know, there are about 24 federal agencies that manage grants that range from health to disasters, to education to financial and so on. 
 
@@ -31,7 +31,7 @@ View the NIEM model content using <a href="https://beta.movement.niem.gov/#/resu
 <p>To provide feedback, please see our <a href="https://github.com/NIEM/NIEM.github.io/issues/39" title="provide feedback">related issue</a>.</p>
 
 |Entity Name             |Definition  |
-|------------------------|------------|
+|-----------------------:|------------|
 |ADDRESSES|Addresses is the subject area collection of Address information for applicants, organizations and recipients.  Address information is collected for physical location and mailing purposes.|
 |ALLOCATIONS|Allocation is a financial transaction in which funds for a grant program or a grant become available.  Establishes amount of funds that can be obligated for a project.|
 |AMENDMENTS|The collection of information detailing post-award changes to be incorporated into a Grant or project.|
