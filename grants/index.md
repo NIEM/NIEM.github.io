@@ -1,5 +1,5 @@
 ---
-title: Working towards a common understanding of grant data
+title: A common understanding of grant data
 ---
 
 **Facilitating the drive towards to a unified grant effort.**
