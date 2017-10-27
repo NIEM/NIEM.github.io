@@ -28,7 +28,7 @@ Multi-agency data sharing initiatives are becoming increasingly common, yet esta
 View the NIEM model content using <a href="https://beta.movement.niem.gov/#/results?q=*">Movement</a>, a user-friendly open source search tool.  <a href="http://niem.github.io/movement">Learn more</a> about Movement.
 
 ### Data Definitions 
-<p>To provide feedback, please see our <a href="https://github.com/NIEM/NIEM.github.io/issues/39 " title="provide feedback">related issue</a>.</p>
+<p>To provide feedback, please see our <a href="https://github.com/NIEM/NIEM.github.io/issues/39" title="provide feedback">related issue</a>.</p>
 
 |Name                    |Definition|
 |------------------------|----------|
