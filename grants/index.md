@@ -91,4 +91,5 @@ View the NIEM model content using <a href="https://beta.movement.niem.gov/#/resu
 ### Conceptual Model
 
 
-![Grants domain initial candidates](GRANT_DOMAIN_INITIAL_CANDIDATES_08232017.jpg "Grants domain initial candidates")
+The conceptual model is currently too large to display on this page. 
+[View the conceptual model](GRANT_DOMAIN_INITIAL_CANDIDATES_08232017.jpg).
