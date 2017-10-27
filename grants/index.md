@@ -2,32 +2,15 @@
 title: A common understanding of grant data
 ---
 
-**Facilitating the drive towards to a unified grant effort.**
+There are approximately 24 federal agencies that manage grants ranging from health to disasters to education and many other issue areas. Each of these agencies may use one or more grant management systems, each with similar functions such as pre-award, post-award, and reporting These systems use terms such as “grantor,” “grantee,” “award process,” “adjudication,” etc.; the definitions of these terms (and the terms themselves) may vary greatly between systems.  
 
-From what we know, there are about 24 federal agencies that manage grants that range from health to disasters, to education to financial and so on. 
+A team within the NIEM community, led by the NBAC co-chair Kamran Atri, is working to modernize grants management within a federal agency. They are identifying the common terms, standardizing them, and harmonizing/unifying the grants management systems.
+To date, the team has reviewed over 34,000 grant-related data fields scattered across several government systems and narrowed the data fields down to approximately 3,200. This set has been further edited down and categorized into 114 of the most common data subjects. Of the 114 data subjects, some have been down-selected for consideration as common core for grant data. 
+The list of data definitions and the conceptual model on this page provide the data subjects that were reviewed with the aim of building initial consensus. 
 
-Within any one of the 20 + agencies there could be multiple grant systems, each with similar grant related functions such as award, pre-award, post-award…and reporting. All have a grantor, grantee, award process, adjudication, etc. There are all kinds of variations of what things are called or how they are described. 
+The team is ready to share their work to advance the grant reporting need as well as help other grant stakeholders work through a unified structure for building standardized data exchanges. If you are interested in joining a tiger team to work with stakeholders on creating a NIEM grant domain, please email [Kamran Atri](mailto:kamran.atri@cse-corp.com).
 
-What we are attempting to do (if nothing else) is to help identify and facilitate what is common across the systems to support data standardization and ultimately system harmonization and/or unification. This is where NIEM comes.
-
-A team within the NIEM community, led by the NBAC co-chair Kamran Atri, is working to modernize grants management within a federal agency. The data dictionary and conceptual model on this page represents a portion of their work. 
-
-To date they have looked at over 34,000 + grants related data fields scattered across several government systems. They narrowed those data fields down to 3,200 + attributes which have a potential play in a grant activity for the purpose of information sharing and data exchange. From there, they narrowed the list down some more and grouped and categorized them to about 114 data subjects that are the most common among the original list of attributes. Of the 114 data subjects, they narrowed that down to what could be considered the common core for grant data (in support of developing the standardized NIEM initial data sets).
-
-Sharing the information below to help build consensus of the data. 
-
-The team is ready to share their work to advance the grant reporting need as well as help other grant stakeholders work through a unified structure in building out standardized data exchanges. Kamran has offered to stand up a tiger team to work with all the necessary stakeholders in building out a NIEM Grant Domain. If you're interested in joining in the collabortion or leveraging the work already done within your organization, you can reach him [here](mailto:kamran.atri@cse-corp.com).
-
-### What is NIEM?
-NIEM is a community-driven, standards-based approach to exchanging information. It’s about 11,000 terms, definitions, relationships, and formats independent of how data is stored in individual systems. It includes two sets of closely related vocabularies, core and individual domains. At the present time, there are 14 specific domains that are self-organized and self-governed. Subject matter experts within each domain develop and manage their content to meet the needs of their community. Collectively, these domains come together to manage core—content that is commonly agreed to and understood by all who use NIEM. 
-
-For over 12 years, NIEM has facilitated information exchanges across a variety of mission spaces and subject areas. What began as a solution for the law enforcement and homeland security communities has since evolved into a wide range of subject matters and areas. What works for the mission side of the house, is very much applicable to administrative functions such as grants.
-
-Multi-agency data sharing initiatives are becoming increasingly common, yet establishing a framework for coordination, decision making, and standardization remains a time consuming and complex undertaking.  NIEM provides such a framework that is ready-made for reuse, but few are aware of this resource, or misunderstand the purpose.  It’s designed to be flexible to the unique and ever-evolving data sharing requirements of government, and is looking for opportunities to advance its utilization as part of a larger data-centric movement. 
-
-View the NIEM model content using <a href="https://beta.movement.niem.gov/#/results?q=*">Movement</a>, a user-friendly open source search tool.  <a href="http://niem.github.io/movement">Learn more</a> about Movement.
-
-### Data Definitions 
+### Data Definitions for Grants
 <p>To provide feedback, please see our <a href="https://github.com/NIEM/NIEM.github.io/issues/39" title="provide feedback">related issue</a>.</p>
 
 |Entity Name             |Definition  |
@@ -84,12 +67,11 @@ View the NIEM model content using <a href="https://beta.movement.niem.gov/#/resu
 |SYSTEMS AND SERVICES|Systems and services is the technology involving the development, maintenance, and use of computer systems, software, data stores, and networks for the processing and distribution of Grants data.|
 |TECHNOLOGY|Technology is the hardware infrastructure, software processes and delivery services used to support business activities and the supporting data for each business activity.|
 
-
- 
-
-
 ### Conceptual Model
-
-
 The conceptual model is currently too large to display on this page. 
 [View the conceptual model](GRANT_DOMAIN_INITIAL_CANDIDATES_08232017.jpg).
+
+### Learn More About NIEM?
+* [What is NIEM?](https://www.niem.gov/about-niem)
+* [The Value of NIEM](https://www.niem.gov/about-niem/value-niem)
+* View the NIEM model content using [Movement](https://beta.movement.niem.gov/#/results?q=*), a user-friendly open source search tool. 
