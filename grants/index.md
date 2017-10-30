@@ -76,7 +76,7 @@ The conceptual model is currently too large to display on this page.
 
 [![grant domain initial candidates](Icon-GrantDomainCandidtates-v2.jpg)](GRANT_DOMAIN_INITIAL_CANDIDATES_08232017.jpg)
 
-### Learn More About NIEM?
+### Learn More About NIEM
 * [What is NIEM?](https://www.niem.gov/about-niem)
 * [The Value of NIEM](https://www.niem.gov/about-niem/value-niem)
 * View the NIEM model content using [Movement](https://beta.movement.niem.gov/#/results?q=*), a user-friendly open source search tool. 
