@@ -41,7 +41,7 @@ ul {
   margin: -80px 0 0; // negative fixed header height
 }
 
-img {
+div[class^="col"] img {
   margin: 20px auto;
   display: block;
 }
