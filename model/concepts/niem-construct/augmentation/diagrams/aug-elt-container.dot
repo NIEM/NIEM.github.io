@@ -1,0 +1,20 @@
+
+digraph {
+
+  rankdir="TB";
+
+  nc [label="Type" shape=rect];
+  augPoint [label="AugmentationPointElement"]
+
+  augElt [label="AugmentationElement" style="filled" fillcolor="paleturquoise"]
+  augType [label="AugmentationType" shape=rect];
+
+  nc -> augPoint [label="  contains"]
+
+  augElt -> augPoint [label="  can replace" style=dashed];
+  augElt -> augType [label="  type"];
+
+  { rank=source nc }
+  augPoint ->
+  { rank=same augElt } [style=invis]
+}

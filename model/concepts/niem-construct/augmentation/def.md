@@ -1,1 +1,1 @@
-a mechanism to add additional properties to an existing type that cannot be modified directly
+a mechanism to add additional local content to NIEM types defined in other namespaces
