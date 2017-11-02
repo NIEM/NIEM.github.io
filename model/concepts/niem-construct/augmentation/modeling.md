@@ -8,7 +8,6 @@
 
 The information below shows rules and guidelines for building an augmentation.
 
-
 ## Augmentation point elements
 
 ![Augmentation point element](diagrams/aug-point.png)

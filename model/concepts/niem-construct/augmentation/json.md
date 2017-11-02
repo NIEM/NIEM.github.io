@@ -3,11 +3,14 @@
   tutorial: json
 ---
 
+- TOC
+{:toc}
+
 Augmentation container elements are important for schema validation, but have no role in the conceptual model, so they do not appear in the JSON representation.  Additional content appears directly on their objects.
 
 ## Examples
 
-### JSON
+### Instance
 
 The examples below show element nc:Person in JSON, with and without augmentations.
 
@@ -51,10 +54,10 @@ The examples below show element nc:Person in JSON, with and without augmentation
 }
 ```
 
-### JSON Schema
+### Schema
 
 TBD
 
-### Template
+## Template
 
 TBD

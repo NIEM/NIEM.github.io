@@ -12,6 +12,8 @@ NIEM developed augmentations because XML Schema element substitution allowed som
 
 ## Augmentation Point Element
 
+![Augmentation point element](diagrams/aug-point.png)
+
 ### XML instance example
 
 There is no XML instance example because augmentation point elements do not appear in instances.  They are abstract and must be omitted or replaced by an augmentation element.
@@ -77,7 +79,9 @@ Note that augmentation point elements are required in NIEM release schemas, but 
 
 {% include copybutton.html id="tutorial-aug-point" %}
 
-## Augmentation Element (container)
+## Augmentation Element and Type (container)
+
+![Augmentation containers](diagrams/aug-elt-type-container.png)
 
 ### XML instance example
 
@@ -186,6 +190,8 @@ This template creates an augmentation container element and type.  The type shou
 {% include copybutton.html id="tutorial-aug-container" %}
 
 ## Augmentation Element (direct substitution)
+
+![Augmentation direct substitution](diagrams/aug-elt-subst.png)
 
 The following example shows a local element `PersonFictionalCharacterIndicator` that is directly substitutable for nc:PersonAugmentationPoint:
 
