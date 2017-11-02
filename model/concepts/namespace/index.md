@@ -111,14 +111,3 @@ This version does not have to correspond with the release version or any version
 ### Definition
 
 Each namespace must have a definition.
-
-## Local terminology
-
-To facilitate better understanding across a broad community, NIEM requires that any acronym, abbreviation, jargon, or other word in a component name or definition that is not defined in the Oxford English Dictionary be documented by the namespace that uses it.  For each term, either a literal or a definition must be provided.
-
-Examples from Core:
-
-| Term | Literal | Definition |
-| ---- | ------- | ---------- |
-| GSM  | Global System for Mobile communication | |
-| Alpha3 | | Three-letter |
