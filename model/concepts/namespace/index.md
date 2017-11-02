@@ -1,5 +1,6 @@
 ---
   title: Namespaces
+  tutorial: overview
 ---
 
 A **namespace** is {% include_relative def.md %}
@@ -16,7 +17,7 @@ Namespaces define properties and types.  They are represented by schemas, which 
 The 4.0 NIEM release has the following namespaces:
 
 | Namespace | Count | Description |
-| --------- |:---------:| ----------- |
+| --------- |:-----:| ----------- |
 | Core      |  1 | Defines general properties and types that do not belong to a specific subject area |
 | Domain    | 14 | Defines properties and types specific to a given subject area |
 | Code      | 36 | Provides NIEM-conformant representations of code sets that are typically defined and managed outside of NIEM |
@@ -25,9 +26,12 @@ The 4.0 NIEM release has the following namespaces:
 | Proxy     |  1 | Defines complex types corresponding to standard XML Schema simple types  |
 | Utility   |  4 | Provides components needed to support NIEM methodologies  |
 
-\* - External standards are sometimes made up of multiple namespaces.  The count above simply lists the number of external standards, not the total number of namespaces they represent.
+\* - External standards are sometimes made up of multiple namespaces.  The count above simply lists the number of external standards in NIEM, not the total number of namespaces they represent.
 
-An IEPD is typically made up of subsetted versions of NIEM release namespaces, plus one or more local namespace containing user-defined properties and types.
+- See the [4.0 NIEM release](https://www.github.com/niem/niem-releases/tree/niem-4.0) on GitHub to review the full set of schemas.
+- See the [training content pages](../../content) to get an overview of the content in these namespaces.
+
+An IEPD is typically made up of subsetted versions of NIEM release namespaces, plus one or more local namespaces containing user-defined properties and types.  These user-defined namespaces are often referred to as extension namespaces.
 
 ### Schema representations
 
@@ -67,7 +71,7 @@ Namespaces are sometimes referred to at a high level (as in "the Core namespace"
 
 ## Namespace characteristics
 
-### Target namespace URI
+### URI
 
 All NIEM-conformant namespaces define a target namespace.  This is an absolute URI that acts as the unique identifier for the namespace.
 
@@ -90,7 +94,7 @@ Examples:
 
 Note that for user-defined namespaces, this URI pattern does not have to be followed and a different base should be chosen.
 
-### Namespace Prefix
+### Prefix
 
 Target namespace URIs uniquely identify a namespace, but they are lengthy and can be awkward to use when referring to component names:
 
@@ -111,3 +115,7 @@ This version does not have to correspond with the release version or any version
 ### Definition
 
 Each namespace must have a definition.
+
+### Content
+
+Namespaces define [properties](../component) and [types](../component).  Details about these components are provided in their own sections.

@@ -1,5 +1,5 @@
 ---
-  title: Namespaces and XML
+  title: Namespaces in XML
 ---
 
 - TOC
@@ -9,19 +9,7 @@
 
 XML Schema has been the typical representation for a NIEM namespace.
 
-## Key rules and guidance
 
-### Each namespace must have its own target namespace
-
-This makes all schemas easy to reference individually and prevents one namespace from being defined across multiple files.
-
-### A target namespace must be an absolute URI
-
-Relative URIs are not allowed. An absolute URI, such as a URL or a URN, is universally identifiable.
-
-### xs:include statements are not allowed
-
-Imports are declared to reuse content from a schema with a target namespace; includes are declared for schemas without a target namespace.  Since NIEM schemas must have a target namespace, include statements may not be used.
 
 - [XML Schema Template](template)
 - [Namespace Basics](basics)
