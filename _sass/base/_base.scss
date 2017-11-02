@@ -34,6 +34,10 @@ ul {
   -webkit-padding-start: 15px;
 }
 
+img {
+  max-width: 100%;
+}
+
 :target:before {
   content: "";
   display: block;
