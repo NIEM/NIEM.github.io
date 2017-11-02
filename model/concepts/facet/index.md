@@ -1,8 +1,9 @@
 ---
-title: Facets Overview
+title: Facets
+tutorial: overview
 ---
 
-A **facet** is {% include_relative def.md %}
+A **facet** is {% include_relative def.md %}.
 
 - TOC
 {:toc}
@@ -51,7 +52,7 @@ Because the word "code" is more well-known, it is sometimes used in place of "fa
 
 ## Multiple facets on a type
 
-Multiple facets may be combined together by a single simple type.
+Multiple facets may be defined by a single simple type.
 
 Examples:
 
@@ -75,17 +76,12 @@ A property does not define facets for itself. A property may have a type that de
 
 For example...
 
-- property nc:TelephoneNumberCategoryCode
+Property nc:TelephoneNumberCategoryCode
 
-- => has type xCard:TelephoneCategoryCodeType
+- has type xCard:TelephoneCategoryCodeType
 
-- => which is based on a simple type that defines nine enumerations, including "cell", "home", and "work"
+- that type is based on a simple type that defines nine enumerations, including "cell", "home", and "work"
 
 The property defined in Core is thus linked to the facets defined in the xCard code set namespace.
 
 In a message instance, only those nine enumerations would be valid values for nc:TelephoneNumberCategoryCode.
-
-## Facets in XML and JSON
-
-- [Facets in XML](./xml.html)
-- Facets in JSON - TBD
