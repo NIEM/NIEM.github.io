@@ -73,6 +73,9 @@ Note that augmentation point elements are required in NIEM release schemas, but 
   </xs:annotation>
 </xs:element>
 ```
+{: #tutorial-aug-point }
+
+{% include copybutton.html id="tutorial-aug-point" %}
 
 ## Augmentation Element (container)
 
@@ -178,6 +181,9 @@ This template creates an augmentation container element and type.  The type shou
   </xs:annotation>
 </xs:element>
 ```
+{: #tutorial-aug-container }
+
+{% include copybutton.html id="tutorial-aug-container" %}
 
 ## Augmentation Element (direct substitution)
 
@@ -217,3 +223,6 @@ The following example shows a local element `PersonFictionalCharacterIndicator` 
   </xs:annotation>
 </xs:element>
 ```
+{: #tutorial-aug-direct }
+
+{% include copybutton.html id="tutorial-aug-direct" %}
