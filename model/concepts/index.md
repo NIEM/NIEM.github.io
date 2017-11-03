@@ -23,10 +23,10 @@ These concepts describe the basics of the NIEM model.  Namespaces provide organi
 
 | Concept | Definition | Overview | Modeling | XML | JSON |
 | ------- | ---------- | -------- | -------- | --- | ---- |
-| Namespace | {% include_relative namespace/def.md %} | [overview](namespace) | [modeling](namespace/modeling) | [xml](namespace/xml) | [json](namespace/json) |
 | Property | {% include_relative component/property/def.md %} | [overview](component) |  | element<br>attribute | [json](../../json/guidance/#element-content-of-an-object-or-association-type) |
 | Type | {% include_relative component/type/def.md %} | [overview](component) |  | xml | json |
 | Facet | {% include_relative facet/def.md %} | [overview](facet/) | [modeling](facet/modeling) | [xml](facet/xml) | [json](facet/json) |
+| Namespace | {% include_relative namespace/def.md %} | [overview](namespace) | [modeling](namespace/modeling) | [xml](namespace/xml) | [json](namespace/json) |
 
 ## NIEM-specific concepts
 
