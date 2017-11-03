@@ -11,7 +11,7 @@
     <th>Major Additions</th>
   </tr>
   <tr>
-    <td>GJXDM 3.0</td>
+    <td><a href="https://it.ojp.gov/initiatives/gjxdm/archive">GJXDM 3.0.3</a></td>
     <td>2003</td>
     <td>2,000</td>
     <td>
@@ -32,7 +32,7 @@
     </td>
   </tr>
   <tr>
-    <td>NIEM 1.0</td>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-1.0">NIEM 1.0</a></td>
     <td>2006</td>
     <td>4,000</td>
     <td>
@@ -67,7 +67,7 @@
     </td>
   </tr>
   <tr>
-    <td>NIEM 2.0</td>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-2.0">NIEM 2.0</a></td>
     <td>2007</td>
     <td>4,000</td>
     <td>
@@ -89,7 +89,7 @@
     </td>
   </tr>
   <tr>
-    <td>NIEM 2.1</td>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-2.1">NIEM 2.1</a></td>
     <td>2009</td>
     <td>6,000</td>
     <td>
@@ -106,7 +106,7 @@
     </td>
   </tr>
   <tr>
-    <td>NIEM 3.0</td>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.0">NIEM 3.0</a></td>
     <td>2013</td>
     <td>8,000</td>
     <td>
@@ -124,7 +124,7 @@
     </td>
   </tr>
   <tr>
-    <td>NIEM 3.1</td>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.1">NIEM 3.1</a></td>
     <td>2015</td>
     <td>8,700</td>
     <td>
@@ -144,7 +144,7 @@
     </td>
   </tr>
   <tr>
-    <td>NIEM 3.2</td>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.2">NIEM 3.2</a></td>
     <td>2016</td>
     <td>10,500</td>
     <td>
@@ -157,7 +157,7 @@
     </td>
   </tr>
   <tr>
-    <td>NIEM 4.0</td>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.0">NIEM 4.0</a></td>
     <td>2017</td>
     <td>11,000</td>
     <td>
