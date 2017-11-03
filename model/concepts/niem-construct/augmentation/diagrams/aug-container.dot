@@ -1,0 +1,40 @@
+
+digraph {
+
+  rankdir="TB";
+
+  nc [label="nc:PersonType" shape=rect style="filled" fillcolor="paleturquoise"];
+  augPoint [label="nc:PersonAugmentationPoint" style="filled" fillcolor="paleturquoise"]
+
+  jAugElt [label="j:PersonAugmentation" style="filled" fillcolor="thistle1"]
+  jAugType [label="j:PersonAugmentationType" shape=rect style="filled" fillcolor="thistle1"];
+  jContent [label="Justice's person\nproperties" style="filled" fillcolor="thistle1"]
+
+  mAugElt [label="m:PersonAugmentation" style="filled" fillcolor="darkseagreen2"]
+  mAugType [label="m:PersonAugmentationType" shape=rect style="filled" fillcolor="darkseagreen2"];
+  mContent [label="Maritime's person\nproperties" style="filled" fillcolor="darkseagreen2"]
+
+  extAugElt [label="ext:PersonAugmentation" style="filled" fillcolor="palegoldenrod"]
+  extAugType [label="ext:PersonAugmentationType" shape=rect style="filled" fillcolor="palegoldenrod"];
+  extContent [label="IEPD's person\nproperties" style="filled" fillcolor="palegoldenrod"]
+
+  nc -> augPoint [label="  contains"]
+
+  jAugElt -> jAugType [label="  type"]
+  jAugElt -> augPoint [label="  can replace" style=dashed]
+  jAugType -> jContent [label="  contains"]
+
+  mAugElt -> mAugType [label="  type"]
+  mAugElt -> augPoint [label="  can replace" style=dashed]
+  mAugType -> mContent [label="  contains"]
+
+  extAugElt -> extAugType [label="  type"]
+  extAugElt -> augPoint [label="  can replace" style=dashed]
+  extAugType -> extContent [label="  contains"]
+
+  { rank=source nc }
+  augPoint ->
+  { rank=same jAugElt mAugElt extAugElt } [style=invis]
+  { rank=same jAugType mAugType extAugType }
+  { rank=same jContent mContent extContent }
+}

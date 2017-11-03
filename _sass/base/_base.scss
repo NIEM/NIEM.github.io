@@ -21,6 +21,43 @@ blockquote {
   font-size: 15px;
 }
 
+.table-auto {
+  width: auto !important;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(101, 196, 203, 0.5); // 50% of $pale-turquoise
+}
+
+ul {
+  // Resetting default from 40px
+  -webkit-padding-start: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 80px;      // fixed header height
+  margin: -80px 0 0; // negative fixed header height
+}
+
+div[class^="col"] img {
+  margin: 20px auto;
+  display: block;
+}
+
+table {
+  margin: 20px auto;
+}
+
+div.btn-copy {
+  margin-top: -10px;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */

@@ -1,0 +1,1 @@
+a mechanism to add additional local content to NIEM types defined in other namespaces
