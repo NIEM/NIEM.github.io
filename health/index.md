@@ -5,12 +5,12 @@ title: Health Community Activities
 >
 >Please register here: <a href="https://attendee.gotowebinar.com/register/8507422127673395457">https://attendee.gotowebinar.com/register/8507422127673395457</a>
 >
->After registering, you will receive a confirmation email containing information about joining the webinar. There is no cost to register.
+>After registering, you will receive a confirmation email containing information about accessing the webinar. There is no cost to register.
 >
 >The first of five scheduled meetings took place on 10 October 2017. [Meetings minutes are now available.](http://niem.github.io/health/10-oct-2017-meeting-minutes/)
 >
 >The remaining meetings are scheduled for: 13 February 2018, 8 May 2018, 29 May 2018, and 14 Auguest 2018.
-
+>
 >PLEASE NOTE: You must attend via the webinar to receive a unique audio ID, if you dial-in without this unique PIN you will attend in listen only mode and will not be able to be unmuted.
 
 <a href="https://www.niem.gov/contact-us" class="btn btn-primary" target="_blank">Submit Your Use Case</a>
