@@ -5,7 +5,7 @@ title: Health Community Activities
 >
 >Please register here: <a href="https://attendee.gotowebinar.com/register/8507422127673395457">https://attendee.gotowebinar.com/register/8507422127673395457</a>
 >
->After registering, you will receive a confirmation email containing information about accessing the webinar. There is no cost to register.
+>After registering, you will receive a confirmation email containing information about how to access the webinar. There is no cost to register.
 >
 >The first of five scheduled meetings took place on 10 October 2017. [Meetings minutes are now available.](http://niem.github.io/health/10-oct-2017-meeting-minutes/)
 >
