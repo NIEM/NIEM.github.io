@@ -1,0 +1,21 @@
+digraph {
+
+  rankdir = BT
+  node [shape=rectangle style=filled fillcolor=lightyellow];
+  labelloc=b;
+
+    nc [label="nc:PersonType"];
+    hs [label="hs:PersonType"];
+
+    {
+      a [label="hs:Eligibility" shape=oval style=filled fillcolor=lavender];
+      b [label="hs:HealthDetails" shape=oval style=filled fillcolor=lavender];
+      rank=min;
+    }
+
+    hs -> nc [label=" extends"];
+
+    hs -> a [label="  contains"];
+    hs -> b;
+
+}

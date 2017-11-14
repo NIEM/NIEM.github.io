@@ -11,6 +11,7 @@ exclude:
   - Gemfile.lock
   - vendor/Font-Awesome/src
   - vendor/bootstrap/docs
+  - vendor/cache/ruby/2.4.0/gems/
   - "*/aspell-exceptions.txt"
   - "*/Makefile"
   - "*.dot"
@@ -34,6 +35,17 @@ niem_comments_link: mailto:niem-comments@lists.gatech.edu
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  # syntax_highlighter_opts:
+  #   block:
+  #     line_numbers: true
+  #     start_line: 1
+
+
 
 # Defaults
 defaults:
