@@ -2,6 +2,9 @@
 title: A common understanding of grant data
 ---
 
+>There is a tremendous opportunity for federal agencies to synchronize and harmonize grants data into what you could call **Grants Common Datasets and Codelists** and **Enterprise level (not agency specific) Conceptual and Logical data models**, ultimately leading to unified data exchanges. 
+>
+
 There are approximately 24 federal agencies that manage grants ranging from health to disasters to education and many other issue areas. Each of these agencies may use one or more grant management systems. These systems use terms such as “grantor,” “grantee,” “award process,” “adjudication,” etc.; the definitions of these terms (and the terms themselves) may vary greatly between systems.  
 
 A team within the NIEM community, led by the NBAC co-chair Kamran Atri, is working to modernize grants management within a federal agency. They are identifying the common terms, standardizing them, and harmonizing/unifying the grants management systems. This is where NIEM comes.
