@@ -1,6 +1,7 @@
 ---
   title: Namespaces
-  tutorial: overview
+  training: overview
+  next: Property
 ---
 
 A **namespace** is {% include_relative def.md %}
@@ -10,11 +11,11 @@ A **namespace** is {% include_relative def.md %}
 
 ## Overview
 
-Namespaces define properties and types.  They are represented by schemas, which are structured in a way to maximize reuse and facilitate governance and version management.  Every NIEM release and IEPD is primarily made up of these schema-defined namespaces.
+{% include_relative intro.md %}
 
 ### Categories
 
-The 4.0 NIEM release has the following namespaces:
+By convention, NIEM categorizes release namespaces.  This makes schemas easier to find in the release packages.  In the 4.0 release, the categories are:
 
 | Namespace | Count | Description |
 | --------- |:-----:| ----------- |
@@ -31,91 +32,84 @@ The 4.0 NIEM release has the following namespaces:
 - See the [4.0 NIEM release](https://www.github.com/niem/niem-releases/tree/niem-4.0) on GitHub to review the full set of schemas.
 - See the [training content pages](../../content) to get an overview of the content in these namespaces.
 
-An IEPD is typically made up of subsetted versions of NIEM release namespaces, plus one or more local namespaces containing user-defined properties and types.  These user-defined namespaces are often referred to as extension namespaces.
+An IEPD is typically made up of subsetted versions of NIEM release namespaces, plus one or more local namespaces containing user-defined properties and types.  These user-defined namespaces are often referred to as **extension** namespaces.
 
-### Schema representations
+### Representations
 
-XML Schema has been the most common representation for NIEM namespaces.  Efforts are currently underway to provide a full JSON schema representation as well, allowing developers to choose the language that bests suits their needs.
+XML Schema has been the traditional representation for NIEM namespaces.  Efforts are currently underway to provide a full JSON schema representation as well, allowing developers to choose the language that bests suits their needs.
 
-### Governance
+### Persistence
 
-Governance is the key factor that determines where properties and types should belong:
+NIEM release namespaces are persistent.  Once a release is published, its schemas will not be overwritten with future changes.  Changes go into new schemas.  This ensures that existing exchanges do not break when NIEM publishes a new release.
 
-- Components that have no clear authoritative source are typically added to the Core namespace, which is managed by a committee made up of domain representatives and NIEM community members.
-- Domain namespaces are made up of components that are best managed by their subject matter experts.
-- Code namespaces tend to be NIEM-conformant representations of code standards governed outside of NIEM.
+An exchange can be updated to use a subsequent release if and when the exchange developer chooses to do so.  Older release schemas can continue to be used indefinitely.  In addition, an IEPD is packaged with its own local, customized subset of its NIEM release, avoiding any potential issues about schema availability and persistence.
 
-Components from any namespace in a NIEM release may be reused in an IEPD. There is no need to limit reuse to just Core and the domain that most closely aligns to the subject area of the exchange.
+### Versions
 
-### Benefits
+Namespaces are sometimes referred to at a high level (as in "the Core namespace") when the version is already known or doesn't matter in the given context.
 
-The use of namespaces to organize components by authoritative source provides several benefits:
-
-**Namespaces distinguish components that share the same name**
-
-The Justice and MilOps domains may both define a Target element, but with different meanings.  Because these elements live in separate namespaces, there are no naming conflicts - j:Target and mo:Target are distinct and can coexist without issue.
-
-**Simplified model management**
-
-All components in a namespace are governed by a designated authoritative source.  This is a clear way to delineate control.
-
-**Modularity**
-
-Each individual namespace may be updated outside the regular release cycle as needed, according to the needs and timeline of the authoritative source.  Coordination with other entities is not required.
-
-### Versioning
-
-A key principle that influences the design of NIEM is namespace persistence.  Published namespaces always remain available, even after newer versions are released.  This ensures that existing exchanges do not break when NIEM publishes a new release.  An exchange can be updated to use a later release if and when the exchange developer chooses to do so - the older schemas will remain available and can continue to be used indefinitely.
-
-Namespaces are sometimes referred to at a high level (as in "the Core namespace") when the version is already known or is not important in the given context.  To refer to a namespace specifically, the version should also be included (e.g., "the Core 4.0 namespace").
+To refer to a specific namespace, the version should also be included (e.g., "the Core 4.0 namespace").
 
 ## Namespace characteristics
+
+A namespace defines content in the form of [properties](../property) and [types](../type).  Details about these components are provided in their own sections.
+
+In addition, a namespace includes the following characteristics:
 
 ### URI
 
 All NIEM-conformant namespaces define a target namespace.  This is an absolute URI that acts as the unique identifier for the namespace.
 
-For NIEM release namespaces, the target namespace URI typically follows the format:
-
-base / (category /) name / version /
-
-The base is https://release.niem.gov/niem/.  The category is included only if there is more than one of that kind of namespace (e.g., the URI for Core does not have a category since there is only one core namespace).
-
-Examples:
-
-| Namespace | Target namespace URI |
-| --------- | -------------------- |
-| Core 3.2 | http://release.niem.gov/niem/niem-core/3.2/ |
-| Core 4.0 | http://release.niem.gov/niem/niem-core/4.0/ |
-| Human Services 4.0 domain | http://release.niem.gov/niem/domains/humanServices/4.0/ |
-| Immigration 4.0 domain | http://release.niem.gov/niem/domains/immigration/4.0/ |
-| ISO 3166 4.0 codes | http://release.niem.gov/niem/codes/iso_3166-1/4.0/ |
-| USPS 4.0 codes | http://release.niem.gov/niem/codes/usps_states/4.0/ |
-
-Note that for user-defined namespaces, this URI pattern does not have to be followed and a different base should be chosen.
-
 ### Prefix
 
 Target namespace URIs uniquely identify a namespace, but they are lengthy and can be awkward to use when referring to component names:
 
-`{http://release.niem.gov/niem/niem-core/4.0/}PersonType`
+> `{http://release.niem.gov/niem/niem-core/4.0/}PersonType`
 
-For simplicity and convenience, NIEM namespace URIs are assigned a namespace prefix that acts as an abbreviation.  This prefix is used together with a property or type name to form a qualified name (or QName) with the format `prefix:name`:
+For simplicity and convenience, NIEM namespace URIs are assigned a namespace prefix that acts as an abbreviation.  This prefix is used together with a property or type name to form a qualified name (or QName) with the format `prefix:name`.
 
-`nc:PersonType`
+> `nc:PersonType`
 
-By itself, a namespace prefix isn't enough to identify a namespace.  NIEM uses "nc" by convention to refer to Core, but this doesn't indicate the specific version.  It's also possible a local schema may assign this prefix to a different namespace.  Make sure to check the namespace prefix declarations to see which URIs the prefixes represent.
+By itself, a namespace prefix isn't enough to identify a specific namespace.  NIEM uses "nc" by convention to refer to Core, but this doesn't indicate which version.
+
+> In the NIEM 3.0 release, namespace prefix "nc" is assigned to the Core namespace. <br> In the NIEM 4.0 release, the same prefix "nc" is assigned to the Core 4.0 namespace.
+
+Reusing the same prefixes across multiple releases simplifies a lot of things (IEPD development and updates, documentation, etc.).  Make sure to check the namespace prefix declarations to see which URIs the prefixes represent.
 
 ### Version
 
-A namespace version field is used to distinguish different drafts or updates of a namespace.
+A namespace version field is used to distinguish different drafts or updates of a namespace.  This version does not have to correspond with the release version or any versioning information in the URI.
 
-This version does not have to correspond with the release version or any versioning information in the URI.  When the 4.0 NIEM schemas were under development, this version attribute was set to the pre-release stage, e.g., "alpha1", "beta1", "rc1".  When the 4.0 schemas were ready to be published, the version attribute was changed to "1" (the first published version of the given namespace).
+When the 4.0 NIEM schemas were under development, this version attribute was set to the pre-release stage, e.g., "alpha1", "beta1", "rc1".
+
+When the 4.0 schemas were ready to be published, the version attribute was changed to "1" (the first published version of the given namespace).  NIEM has not published follow-up versions (e.g., "2") to the same URI, but it is an (unlikely) option for changes that do not affect schema validation or model semantics.
 
 ### Definition
 
-Each namespace must have a definition.
+Each namespace must have a definition that describes what it is.
 
-### Content
+### Conformance Targets
 
-Namespaces define [properties](../component) and [types](../component).  Details about these components are provided in their own sections.
+Each NIEM namespace must define one more conformance targets.  This explicitly identifies which rule sets should be applied for conformance validation.  A conformance target is identified by a URI.
+
+For conformance to the NDR, the target will look like:
+
+`http://reference.niem.gov/niem/specification/naming-and-design-rules/VERSION/#TARGET`
+
+VERSION should be the version of the NDR:
+
+- NIEM 3.0, 3.1, and 3.2 release schemas are based on NDR 3.0 rules.
+- NIEM 4.0 release schemas are based on NDR 4.0 rules.
+
+TARGET should be a target defined by the NDR:
+
+- ReferenceSchemaDocument (stricter rules, required for release schemas)
+- ExtensionSchemaDocument (looser rules)
+
+A NIEM 3.2 schema using NDR extension rules would use the conformance target:
+
+> `http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument`
+
+A NIEM 4.0 schema using the NDR reference rules would use the conformance target:
+
+> `http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument`

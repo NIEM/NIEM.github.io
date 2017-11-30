@@ -1,6 +1,7 @@
 ---
   title: Namespaces in XML
-  tutorial: xml
+  training: xml
+  next: Property
 ---
 
 - TOC
@@ -8,17 +9,124 @@
 
 ## Overview
 
-XML Schema has been the typical representation for a NIEM namespace.
+A NIEM XML Schema follows the general pattern below:
 
-## XML Modeling
+```xml
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema
+  <!-- -->
+  <!-- target namespace URI and version -->
 
-### xs:include statements are not allowed
+  <!-- xsi:schemaLocation assignments -->
 
-Imports are declared to reuse content from a schema with a target namespace; includes are declared for schemas without a target namespace.  Since NIEM schemas must have a target namespace, include statements may not be used.
+  <!-- conformance target(s) -->
 
-## Templates
+  <!-- namespace prefix declarations -->
 
-### Full XML Schema
+  >
+
+  <!-- namespace definition and local terminology -->
+
+  <!-- import statements -->
+
+  <!-- element, attribute, and type declarations -->
+
+</xs:schema>
+```
+
+### Target namespace URI and Version
+
+The target namespace URI and version are declared as schema attributes:
+
+- `targetNamespace="URI"`
+- `version="VERSION"`
+
+Core 4.0 example:
+
+```xml
+<xs:schema targetNamespace="http://release.niem.gov/niem/niem-core/4.0/" version="1">
+  ...
+</xs:schema>
+```
+
+### xsi:SchemaLocation
+
+`xsi:schemaLocation` is used to bind one or more URIs to their locations.  NIEM uses this in places where a namespace is referenced but does not have to be imported (metadata on the schema itself).
+
+In 4.0, this is used for the conformance targets namespace and the appinfo namespace.
+
+The value of the attribute is a string of "URI LOCATION" pairs.
+
+```xml
+<xs:schema
+  xsi:schemaLocation="http://release.niem.gov/niem/appinfo/4.0/ ../niem/utility/appinfo/4.0/appinfo.xsd
+  http://release.niem.gov/niem/conformanceTargets/3.0/ ../niem/utility/conformanceTargets/3.0/conformanceTargets.xsd">
+  ...
+</xs:schema>
+```
+
+### Conformance Targets
+
+Conformance targets are URIs that identify rules to apply to check conformance.
+
+```xml
+<xs:schema
+  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument"
+  >
+  ...
+</xs:schema>
+```
+
+Note that in NIEM 4.0, the conformance targets namespace did not change and remains at 3.0.
+
+### Namespace prefix declarations
+
+Prefixes should be assigned for each namespace that is referenced and for the current namespace.
+
+`xmlns:PREFIX="URI"`
+
+This binds the prefix to the given URI, so the prefix may be used in the schema as an abbreviation for the full URI.
+
+Core 4.0 example:
+
+```xml
+<xs:schema
+  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/">
+  ...
+</xs:schema>
+```
+
+Prefixes should be assigned for:
+
+- the target namespace
+- imported namespaces
+- xsi:schemaLocation namespaces
+- the XML Schema namespace (xs)
+- the XML Schema Instance namespace (xsi)
+
+```xml
+<xs:schema
+  xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/"
+  xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+</xs:schema>
+```
+
+### Definition
+
+A definition for the namespace is required:
+
+```xml
+<xs:schema>
+  <xs:annotation>
+    <xs:documentation>DEFINITION</xs:documentation>
+  </xs:annotation>
+  ...
+</xs:schema>
+```
+
+## Full Template
 
 A template for a 4.0 NIEM namespace is provided below.
 
@@ -63,116 +171,28 @@ Placeholders appear in upper case.  A few common namespace prefixes and import s
 </xs:schema>
 ```
 
-### Target namespace URI
+## NIEM's profile of XML Schema
 
-The target namespace URI is declared as a schema attribute:
+To promote consistency across a broad community, NIEM limits some of the features available in XML Schema that provide flexibility but may hurt interoperability or reusability.
 
-`targetNamespace="URI"`
+A few of the key restrictions on the usage of XML Schema are listed below.  See the NDR for more.
 
-Core 4.0 example:
+### Local elements and attributes are not allowed
 
-```xml
-<xs:schema targetNamespace="http://release.niem.gov/niem/niem-core/4.0/">
-  ...
-</xs:schema>
-```
+Local elements and attributes cannot be reused outside of the type in which they are defined, which conflicts with the NIEM principle of maximizing reusability.
 
-### Target namespace prefix
+### No anonymous types
 
-A prefix for the target namespace must be assigned:
+Types defined anonymously can only be used by the elements that define them, which conflicts with the NIEM principle of maximizing reusability.
 
-`xmlns:PREFIX="URI"`
+### xs:include statements are not allowed
 
-This is a namespace prefix declaration.  It binds the prefix to that URI, so the prefix may be used in the schema as an abbreviation for the full URI.
+Include statements are declared to combine multiple schema files into a single logical namespace with one target namespace.  Import statements are declared to reuse content from a schema with a target namespace.
 
-A namespace prefix declaration is local to the schema that defines it - another schema may assign a different prefix to a URI.  In NIEM, it is customary to use the same set of prefixes for consistency, but it is not required and users may assign their own prefixes in local schemas.
+NIEM requires that each XML Schema must have its own target namespace to provide unambiguous identification of content, so include statements may not be used.
 
-Core 4.0 example:
+### xs:choice statements are not allowed in reference schemas
 
-```xml
-<xs:schema xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/">
-  ...
-</xs:schema>
-```
+The use of `xs:choice` can lead to ambiguity in some circumstances and are thus not allowed in NIEM reference schemas.  Element substitution is a common alternative.  
 
-Note that this URI is the same as the target namespace URI.
-
-### Version
-
-Version is a schema attribute that distinguishes different versions of a schema with the same URI and filename:
-
-`version="VERSION"`
-
-Alpha 1 pre-release example:
-
-```xml
-<xs:schema version="alpha1">
-  ...
-</xs:schema>
-```
-
-Release example:
-
-```xml
-<xs:schema version="1">
-  ...
-</xs:schema>
-```
-
-### Definition
-
-A definition for the namespace is required:
-
-```xml
-<xs:schema>
-  <xs:annotation>
-    <xs:documentation>DEFINITION</xs:documentation>
-  </xs:annotation>
-  ...
-</xs:schema>
-```
-
-Screening 4.0 domain example:
-
-```xml
-<xs:schema>
-  <xs:annotation>
-    <xs:documentation>The People Screening domain provides harmonized information sharing content within the Screening Portfolio of DHS. The Screening namespace is initially being populated with person screening information for immigrant and non-immigrant person types who have been encountered and identified by the Screening Portfolio Components. Screening expands on encounter-related NIEM elements currently included in the Immigration and Intelligence domains.</xs:documentation>
-  </xs:annotation>
-  ...
-</xs:schema>
-```
-
-## XML instance
-
-### Example
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<ext:SampleReport
-  xmlns:ext="http://example.com/sample/extension/1.1/"
-  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://example.com/sample/extension/1.1/ ../xsd/extension/TemplateExtension.xsd">
-  <nc:DateTime>2006-05-04T18:13:51.0Z</nc:DateTime>
-</ext:SampleReport>
-```
-
-Namespace prefix declarations are made for the schema that the given instance is based on.  The URI of that schema must be link to a file path via `xsi:schemaLocation`, or alternatively, a XML catalog file must be used to specify this binding.
-
-TODO: XML Catalog example
-
-### Template
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<PREFIX:ROOT_ELEMENT_NAME
-  xmlns:PREFIX="URI"
-  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="URI PATH">
-
-  <!-- instance content -->
-
-</PREFIX:ROOT_ELEMENT_NAME>
-```
+Extension schemas are allowed to use `xs:choice`.
