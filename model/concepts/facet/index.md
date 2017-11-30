@@ -27,7 +27,7 @@ The kind of facet must be chosen from the list provided below; the facet value a
 ## Kinds of Facets
 
 | Facet | Description | Text | Num | Date |
-| --------- | ----------- |:----:|:---:|:----:|
+| ----- | ----------- |:----:|:---:|:----:|
 | enumeration | A code; an allowable value | X | X | X |
 | fractionDigits | The maximum number of decimal places allowed |  | X |   |
 | length | The exact number of characters for a value | X |   |   |
