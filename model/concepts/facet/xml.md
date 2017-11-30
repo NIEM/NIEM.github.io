@@ -1,6 +1,7 @@
 ---
   title: Facets in XML
-  tutorial: xml
+  training: xml
+  next: Adapter
 ---
 
 - TOC
@@ -11,7 +12,7 @@
 The template below defines a simple type with two facets.
 
 - Common base types are "xs:token" (a string that does not allow irregular whitespace), "xs:decimal", and "xs:integer".
-- Typical kinds of facets are "xs:enumeration", "xs:pattern", "xs:minInclusive, xs:minExclusive, xs:maxInclusive, or xs:maxExclusive.  See the [full list](.#kinds-of-facets).
+- Common kinds of facets are "xs:enumeration", "xs:pattern", "xs:minInclusive, xs:minExclusive, xs:maxInclusive, or xs:maxExclusive.  See the [full list](.#kinds-of-facets).
 - Facet values and definitions must be provided by the data modeler.
 
 ``` xml
@@ -33,15 +34,18 @@ The template below defines a simple type with two facets.
   </xs:restriction>
 </xs:simpleType>
 ```
-{: #tutorial-facet-generic }
+{: #training-facet-generic-xml }
 
-{% include copybutton.html id="tutorial-facet-generic" %}
+{% include copybutton.html id="training-facet-generic-xml" %}
 
 ## Common Templates
 
 ### Enumerations
 
-This template shows a simple type with a single enumeration.  Repeat the `xs:enumeration` block for each code value for this type.
+This template shows a simple type with a single enumeration.
+
+- Because these facets are enumerations, the type name must end with `CodeSimpleType`.
+- Repeat the `xs:enumeration` block for each code value for this type.
 
 ```xml
 <xs:simpleType name="NAMECodeSimpleType">
@@ -57,38 +61,37 @@ This template shows a simple type with a single enumeration.  Repeat the `xs:enu
   </xs:restriction>
 </xs:simpleType>
 ```
-{: #tutorial-facet-enum }
+{: #training-facet-enum-xml }
 
-{% include copybutton.html id="tutorial-facet-enum" %}
+{% include copybutton.html id="training-facet-enum-xml" %}
 
 ### Numeric Range
 
 This template shows a numeric simple type with a minimum and a maximum value.
 
+- The `xs:restriction base` may be replaced with any numeric simple type
+- The `minInclusive` may be replaced with `minExclusive`
+- The `maxInclusive` may be replaced with `maxExclusive`
+
 ```xml
-<xs:simpleType name="{$Name}SimpleType">
+<xs:simpleType name="NAMESimpleType">
    <xs:annotation>
     <xs:documentation>A data type for a(n) {$TypeDefinition}</xs:documentation>
   </xs:annotation>
   <xs:restriction base="xs:decimal">
-    <xs:minInclusive value="{$MinFacetValue}">
+    <xs:minInclusive value="MIN_FACET_VALUE}">
      <xs:annotation>
-      <xs:documentation>{$MinFacetDefinition}</xs:documentation>
+      <xs:documentation>MIN_FACET_DEFINITION</xs:documentation>
       </xs:annotation>
     </xs:minInclusive>
-    <xs:maxInclusive value="{$MaxFacetValue}">
+    <xs:maxInclusive value="MAX_FACET_VALUE">
      <xs:annotation>
-      <xs:documentation>{$MaxFacetDefinition}</xs:documentation>
+      <xs:documentation>MAX_FACET_DEFINITION</xs:documentation>
       </xs:annotation>
     </xs:maxInclusive>
   </xs:restriction>
 </xs:simpleType>
 ```
-{: #tutorial-facet-range }
+{: #training-facet-range-xml }
 
-{% include copybutton.html id="tutorial-facet-range" %}
-
-
-- The `xs:restriction base` may be replaced with any numeric simple type
-- The `minInclusive` may be replaced with `minExclusive`
-- The `maxInclusive` may be replaced with `maxExclusive`
+{% include copybutton.html id="training-facet-range-xml" %}

@@ -1,6 +1,7 @@
 ---
 title: Facets
-tutorial: overview
+training: overview
+next: Adapter
 ---
 
 A **facet** is {% include_relative def.md %}.
@@ -10,9 +11,7 @@ A **facet** is {% include_relative def.md %}.
 
 ## Overview
 
-Simple types in NIEM are types that define a value, like strings, numbers and dates.  In some cases, it may be useful to further constrain those values.
-
-Facets restrict a simple type, so that, for example, a number must fall within a given range or a string must match a certain pattern.
+{% include_relative intro.md %}
 
 Example uses:
 
@@ -28,7 +27,7 @@ The kind of facet must be chosen from the list provided below; the facet value a
 ## Kinds of Facets
 
 | Facet | Description | Text | Num | Date |
-| ----- | ----------- |:----:|:---:|:----:|
+| --------- | ----------- |:----:|:---:|:----:|
 | enumeration | A code; an allowable value | X | X | X |
 | fractionDigits | The maximum number of decimal places allowed |  | X |   |
 | length | The exact number of characters for a value | X |   |   |
