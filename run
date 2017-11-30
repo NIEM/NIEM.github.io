@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+url="http://127.0.0.1:4000"
+
+if (( $# == 0 ))
+then fail no args
+else case $1 in
+         serve )
+             cd "$(dirname "$0")"
+             bundle exec jekyll serve --incremental
+             ;;
+         build )
+             cd "$(dirname "$0")"
+             rm -rf "$HOME"/tmp/site
+             bundle exec jekyll build --verbose --destination "$HOME"/tmp/site
+             ;;
+         valid )
+             if ! curl --silent --output /dev/null "$url" 
+                then printf 'Nothing running at %s\n' "$url" >&2
+                     exit 1
+             fi
+             wget --span-hosts --no-config --no-verbose --spider --recursive --page-requisites "$url"
+             ;;
+         valid-page )
+             wget --span-hosts --no-config --no-verbose --spider --page-requisites "$url/json/overview"
+             ;;
+                
+     esac
+fi
