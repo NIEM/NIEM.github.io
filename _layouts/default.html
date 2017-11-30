@@ -10,19 +10,21 @@
 
       {{ content }}
 
-      {% if page.tutorial == "overview" %}
-        {% include tutorial/overview.html %}
+      {% if page.training == "overview" %}
+        {% include training-nav.html overview="disabled" %}
 
-      {% elsif page.tutorial == "modeling" %}
-        {% include tutorial/modeling.html %}
+      {% elsif page.training == "modeling" %}
+        {% include training-nav.html modeling="disabled" %}
 
-      {% elsif page.tutorial == "xml" %}
-        {% include tutorial/xml.html %}
+      {% elsif page.training == "xml" %}
+        {% include training-nav.html xml="disabled" %}
 
-      {% elsif page.tutorial == "json" %}
-        {% include tutorial/json.html %}
+      {% elsif page.training == "json" %}
+        {% include training-nav.html json="disabled" %}
       
       {% endif %}
+
+      {% include next.html %}
 
       {% include footer.html %}
 

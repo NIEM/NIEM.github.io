@@ -1,0 +1,21 @@
+
+{% if page.next %}
+
+  {% capture url %}
+    {% if page.nextlink %}
+      {{ page.nextlink }}
+    {% else %}
+      ../{{ page.next }}
+    {% endif %}
+  {% endcapture %}
+  
+  <br>
+  <div class="text-center">
+    <a class="btn btn-lg btn-primary" href="{{ url }}">
+      <span class="content">Next section: {{ page.next}} </span>
+      <span class="icon fa fa-forward"></span>
+    </a>
+  </div>
+  <br>
+
+  {% endif %}
