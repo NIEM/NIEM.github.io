@@ -23,6 +23,22 @@ blockquote {
   font-size: 15px;
 }
 
+.valid {
+  background: rgba(101, 196, 203, 0.2);
+}
+
+blockquote.valid {
+  border-left-color: seagreen;
+}
+
+.invalid {
+  background: #ffcccc59; 
+}
+
+blockquote.invalid {
+  border-left-color: crimson;
+}
+
 .table-auto {
   width: auto !important;
 }
