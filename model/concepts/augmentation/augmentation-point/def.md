@@ -1,0 +1,1 @@
+a special substitution group created to allow the substitution of additional content by other namespaces

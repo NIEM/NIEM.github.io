@@ -1,16 +1,16 @@
 ---
-  title: Augmentations and JSON
-  tutorial: json
+  title: Augmentation Elements in JSON
+  training: json
+  next: Local Terminology
+  nextlink: ../../local-term
 ---
 
 - TOC
 {:toc}
 
-Augmentation container elements are important for schema validation, but have no role in the conceptual model, so they do not appear in the JSON representation.  Additional content appears directly on their objects.
+Augmentation container elements are important for XML schema validation, but have no role in the conceptual model, so they do not appear in the JSON representation.  Additional content appears directly on their objects.
 
-## Examples
-
-### Instance
+## Instance examples
 
 The examples below show element nc:Person in JSON, with and without augmentations.
 
@@ -53,11 +53,3 @@ The examples below show element nc:Person in JSON, with and without augmentation
   }
 }
 ```
-
-### Schema
-
-TBD
-
-## Template
-
-TBD

@@ -1,89 +1,18 @@
 ---
-  title: Augmentations and XML
-  tutorial: xml
+  title: Augmentation Elements in XML
+  training: xml
+  next: Local Terminology
+  nextlink: ../../local-term
 ---
 
 - TOC
 {:toc}
 
-## Overview
+## Containers
 
-NIEM developed augmentations because XML Schema element substitution allowed some things that type extension did not: the ability to use multiple substitutions together (rather than derive from just a single type) and to easily insert substitutions among existing types.
+![Augmentation containers](images/aug-elt-type-container.png)
 
-## Augmentation Point Element
-
-![Augmentation point element](diagrams/aug-point.png)
-
-### XML instance example
-
-There is no XML instance example because augmentation point elements do not appear in instances.  They are abstract and must be omitted or replaced by an augmentation element.
-
-### XML Schema example
-
-This snippet, from a subset of Core, shows how augmentation point element `nc:PersonAugmentationPoint` is defined and referenced by `nc:PersonType`:
-
-```xml
-<xs:complexType name="PersonType">
-  <xs:annotation>
-    <xs:documentation>A data type for a human being.</xs:documentation>
-  </xs:annotation>
-  <xs:complexContent>
-    <xs:extension base="structures:ObjectType">
-      <xs:sequence>
-        <xs:element ref="nc:PersonBirthDate" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="nc:PersonName" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="nc:PersonAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
-
-<xs:element name="PersonAugmentationPoint" abstract="true">
-  <xs:annotation>
-    <xs:documentation>An augmentation point for PersonType.</xs:documentation>
-  </xs:annotation>
-</xs:element>
-```
-
-### Template
-
-This template shows the declaration of a complex type with sub-elements and its augmentation point element.  The augmentation point element is the last element referenced in the type.
-
-Note that augmentation point elements are required in NIEM release schemas, but not for IEPDs.
-
-```xml
-<!-- NIEM reference type with sub-elements, like nc:PersonType -->
-<xs:complexType name="NAMEType">
-  <xs:annotation>
-    <xs:documentation>A data type for a(n) {$Definition}</xs:documentation>
-  </xs:annotation>
-  <xs:complexContent>
-    <xs:extension base="PARENT_TYPE">
-      <xs:sequence>
-        <xs:element ref="ELEMENT1" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="ELEMENT2" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="NAMEAugmentationPoint" minOccurs="0" maxOccurs="unbounded"/>
-      </xs:sequence>
-    </xs:extension>
-  </xs:complexContent>
-</xs:complexType>
-
-<!-- Augmentation Point Element, like nc:PersonAugmentationPoint -->
-<xs:element name="NAMEAugmentationPoint" abstract="true">
-  <xs:annotation>
-    <xs:documentation>An augmentation point for NAMEType</xs:documentation>
-  </xs:annotation>
-</xs:element>
-```
-{: #tutorial-aug-point }
-
-{% include copybutton.html id="tutorial-aug-point" %}
-
-## Augmentation Element and Type (container)
-
-![Augmentation containers](diagrams/aug-elt-type-container.png)
-
-### XML instance example
+### XML example
 
 The examples below show element nc:Person in an XML instance, with and without augmentations.
 
@@ -134,7 +63,9 @@ The examples below show element nc:Person in an XML instance, with and without a
 
 ### XML Schema example
 
-This snippet, from a subset of the Maritime domain, shows how an augmentation container element and type are defined.  The augmentation container element is designated as substitutable for `nc:PersonAugmentationPoint`, defined in the Core snippet above.
+This snippet, from a subset of the Maritime domain, shows how an augmentation container element and type are defined.
+
+- The augmentation container element is designated as substitutable for `nc:PersonAugmentationPoint`, defined in the Core snippet above.
 
 ```xml
 <xs:complexType name="PersonAugmentationType">
@@ -157,9 +88,12 @@ This snippet, from a subset of the Maritime domain, shows how an augmentation co
 </xs:element>
 ```
 
-### Template
+### XML Schema template
 
-This template creates an augmentation container element and type.  The type should contain references to the new content to add.  The element should be substitutable for an augmentation point element.
+This template creates an augmentation container element and type.
+
+- The type should contain references to the additional content.
+- The element should be substitutable for an augmentation point element.
 
 ```xml
 <!-- Augmentation type, like j:PersonAugmentationType -->
@@ -185,17 +119,17 @@ This template creates an augmentation container element and type.  The type shou
   </xs:annotation>
 </xs:element>
 ```
-{: #tutorial-aug-container }
+{: #training-aug-container }
 
-{% include copybutton.html id="tutorial-aug-container" %}
+{% include copybutton.html id="training-aug-container" %}
 
-## Augmentation Element (direct substitution)
+## Direct substitutions
 
-![Augmentation direct substitution](diagrams/aug-elt-subst.png)
+![Augmentation direct substitution](images/aug-elt-subst.png)
 
 The following example shows a local element `PersonFictionalCharacterIndicator` that is directly substitutable for nc:PersonAugmentationPoint:
 
-### XML instance
+### XML example
 
 ```xml
 <nc:Person>
@@ -205,11 +139,15 @@ The following example shows a local element `PersonFictionalCharacterIndicator` 
   <nc:PersonBirthDate>
     <nc:Date>1950-01-01</nc:Date>
   </nc:PersonBirthDate>
+
+  <!-- The augmentation element, substituted directly for nc:PersonAugmentationPoint -->
   <ext:PersonFictionalCharacterIndicator>true</ext:PersonFictionalCharacterIndicator>
 </nc:Person>
 ```
 
-### XML schema
+### XML Schema example
+
+The only thing that distinguishes an augmentation element that is a direct substitution is its substitution group.
 
 ```xml
 <xs:element name="PersonFictionalCharacterIndicator" type="niem-xs:boolean"
@@ -220,7 +158,7 @@ The following example shows a local element `PersonFictionalCharacterIndicator` 
 </xs:element>
 ```
 
-### Template
+### XML Schema template
 
 ```xml
 <xs:element name="ELEMENT_NAME" type="ELEMENT_TYPE" substitutionGroup="NAMEAugmentationPoint">
@@ -229,6 +167,6 @@ The following example shows a local element `PersonFictionalCharacterIndicator` 
   </xs:annotation>
 </xs:element>
 ```
-{: #tutorial-aug-direct }
+{: #training-aug-direct }
 
-{% include copybutton.html id="tutorial-aug-direct" %}
+{% include copybutton.html id="training-aug-direct" %}
