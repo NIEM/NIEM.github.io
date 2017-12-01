@@ -1,7 +1,7 @@
 ---
   title: Local Terminology Modeling
   training: modeling
-  next: Metadata
+  next: metadata
 ---
 
 - TOC

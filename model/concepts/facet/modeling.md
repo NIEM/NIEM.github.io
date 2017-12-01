@@ -1,7 +1,7 @@
 ---
   title: Modeling Facets
   training: modeling
-  next: Adapter
+  next: adapter
 ---
 
 - TOC

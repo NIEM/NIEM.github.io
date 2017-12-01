@@ -1,7 +1,7 @@
 ---
   title: Facets in XML
   training: xml
-  next: Adapter
+  next: adapter
 ---
 
 - TOC

@@ -1,7 +1,7 @@
 ---
   title: Namespaces
   training: overview
-  next: Property
+  next: property
 ---
 
 A **namespace** is {% include_relative def.md %}

@@ -1,7 +1,7 @@
 ---
   title: Modeling Metadata
   training: modeling
-  next: Reference
+  next: reference
 ---
 
 - TOC

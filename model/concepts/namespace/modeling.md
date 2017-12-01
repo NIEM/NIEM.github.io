@@ -1,7 +1,7 @@
 ---
   title: Modeling Namespaces
   training: modeling
-  next: Property
+  next: property
 ---
 
 - TOC

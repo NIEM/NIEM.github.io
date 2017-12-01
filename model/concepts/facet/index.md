@@ -1,7 +1,7 @@
 ---
 title: Facets
 training: overview
-next: Adapter
+next: adapter
 ---
 
 A **facet** is {% include_relative def.md %}.

@@ -1,7 +1,7 @@
 ---
   title: Metadata in JSON
   training: json
-  next: Reference
+  next: reference
 ---
 
 - TOC

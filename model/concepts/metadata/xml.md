@@ -1,7 +1,7 @@
 ---
   title: Metadata in XML
   training: xml
-  next: Reference
+  next: reference
 ---
 
 - TOC

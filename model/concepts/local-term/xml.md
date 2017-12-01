@@ -1,7 +1,7 @@
 ---
   title: Local Terminology and XML
   training: xml
-  next: Metadata
+  next: metadata
 ---
 
 - TOC

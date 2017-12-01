@@ -1,7 +1,7 @@
 ---
   title: Namespaces in XML
   training: xml
-  next: Property
+  next: property
 ---
 
 - TOC

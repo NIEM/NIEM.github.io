@@ -1,7 +1,7 @@
 ---
   title: Facets in JSON
   training: json
-  next: Adapter
+  next: adapter
 ---
 
 - TOC

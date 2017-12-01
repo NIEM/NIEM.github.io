@@ -58,4 +58,4 @@ Because IEPDs do not have to be built with the same degree of flexibility and re
 
 ## See more
 
-This section is split into two sub-sections.  Continue on for more information about augmentation points.  The augmentation elements section will follow.
+This section is split into two sub-sections.  Continue on for more information about [augmentation points](augmentation-point).  The [augmentation elements](augmentation-element) section will follow.

@@ -1,7 +1,7 @@
 ---
   title: Metadata
   training: overview
-  next: Reference
+  next: reference
 ---
 
 **Metadata** is {% include_relative def.md %}
