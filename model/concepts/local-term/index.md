@@ -1,6 +1,7 @@
 ---
   title: Local Terminology
-  tutorial: overview
+  training: overview
+  next: Metadata
 ---
 
 **Local terminology** is {% include_relative def.md %}

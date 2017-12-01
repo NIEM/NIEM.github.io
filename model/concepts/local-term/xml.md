@@ -1,16 +1,17 @@
 ---
   title: Local Terminology and XML
-  tutorial: xml
+  training: xml
+  next: Metadata
 ---
 
 - TOC
 {:toc}
 
-## Overview
+## XML instances
 
-Local terminology is declared on the annotation element for the schema.  Either a literal or a definition is required for each term.
+Local terminology does not appear in instances.  It provides additional context to help understand the properties and types defined by the schemas.
 
-## Example schema
+## XML Schema example
 
 The snippet below is an extract from Core 4.0:
 
@@ -28,7 +29,7 @@ The snippet below is an extract from Core 4.0:
 </xs:schema>
 ```
 
-This example also includes the namespace definition in the same `xs:annotation` block via `xs:documentation`.
+This example also includes the namespace definition.  Both are defined in the same schema-level `xs:annotation` block.
 
 ## Templates
 
@@ -45,6 +46,9 @@ This template shows how to define local terminology on the schema's annotation n
   </xs:annotation>
 </xs:schema>
 ```
+{: #training-term-both }
+
+{% include copybutton.html id="training-term-both" %}
 
 ### Literal
 
@@ -55,9 +59,9 @@ This template shows how to define a term with its literal translation:
   <term:LocalTerm term="TERM" literal="LITERAL"/>
 </xs:appinfo>
 ```
-{: #tutorial-term-literal }
+{: #training-term-literal }
 
-{% include copybutton.html id="tutorial-term-literal" %}
+{% include copybutton.html id="training-term-literal" %}
 
 ### Definition
 
@@ -68,6 +72,6 @@ This template shows how to define a term with its definition:
   <term:LocalTerm term="TERM" definition="DEFINITION"/>
 </xs:appinfo>
 ```
-{: #tutorial-term-def }
+{: #training-term-def }
 
-{% include copybutton.html id="tutorial-term-def" %}
+{% include copybutton.html id="training-term-def" %}
