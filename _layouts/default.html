@@ -9,23 +9,7 @@
       {% include header.html %}
 
       {{ content }}
-
-      {% if page.training == "overview" %}
-        {% include training-nav.html overview="disabled" %}
-
-      {% elsif page.training == "modeling" %}
-        {% include training-nav.html modeling="disabled" %}
-
-      {% elsif page.training == "xml" %}
-        {% include training-nav.html xml="disabled" %}
-
-      {% elsif page.training == "json" %}
-        {% include training-nav.html json="disabled" %}
       
-      {% endif %}
-
-      {% include next.html %}
-
       {% include footer.html %}
 
     </div>

@@ -3,19 +3,19 @@
 
   {% capture url %}
     {% if page.nextlink %}
-      {{ page.nextlink }}
+      {{ page.nextlink | strip }}
     {% else %}
-      ../{{ page.next }}
+      ../{{ page.next | strip }}
     {% endif %}
   {% endcapture %}
   
   <br>
   <div class="text-center">
     <a class="btn btn-lg btn-primary" href="{{ url }}">
-      <span class="content">Next section: {{ page.next}} </span>
+      <span class="content">Next section: {{ page.next | strip }} </span>
       <span class="icon fa fa-forward"></span>
     </a>
   </div>
   <br>
 
-  {% endif %}
+{% endif %}
