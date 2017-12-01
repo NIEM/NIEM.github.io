@@ -1,43 +1,102 @@
 ---
   title: Concepts
+  next: Namespace
+  nextlink: namespace
 ---
 
-The architecture of NIEM is based on an underlying conceptual model, with XML and JSON-based implementations.  To promote consistency across a broad NIEM community, NIEM limits some of the features available in standard XML Schema and JSON that provide flexibility but may hurt interoperability, and adds additional rules, guidelines, and features of its own.
+- TOC
+{:toc}
 
-The first table below describes fundamental concepts that form the basis of the NIEM model.  These concepts can be found in most modeling languages, with variations in names and syntax.  This is a great starting place to learn about the basic building blocks of NIEM.
+## The Basics
 
-The second table describes special concepts and features NIEM has added specifically to support the conceptual model and well-defined information exchanges.
+Fundamentally, a NIEM release consists of a set of namespaces, each of which define properties and types (referred to more generally as components).  An IEPD reuses components from a release that meet its requirements, and creates new properties and types in local namespaces as needed.  These namespaces, properties, and types are basic building blocks of NIEM.
 
-Information about the different concepts are broken out into separate pages.  This is to make it easier for readers to find the content that is relevant to them.
+### Namespaces
 
-- Overview pages should be suitable for all readers looking for a general understanding of NIEM.
-- Modeling pages describe rules and guidelines for building those concepts.
-- XML and JSON pages show how NIEM concepts are represented in those languages.
-  - Note that these pages do not provide training on XML or JSON itself - there are many resources available that do this already.
+{% include_relative namespace/intro.md %}
 
-The tables currently provide direct links to the available pages for each concept.  The layout of the website is also under development at this time; it is expected that page navigation will become simpler and more intuitive in the near future.
+[more...](namespace)
 
-## General concepts
+### Properties
 
-These concepts describe the basics of the NIEM model.  Namespaces provide organization and modularity for the content defined by the model.  Properties and types make up that content.  Properties (or elements and attributes) provide semantic meaning and are the fields that show up in instance documents.  Types define the structures of those properties, and what values are allowed.  Facets are one way of further constraining allowable values in a type.
+Properties may be more commonly known as as elements, attributes, keys, and/or fields.  They define specific semantics and appear in exchanges as the tag or field names, but they have no inherent structure without a type.
 
-| Concept | Definition | Overview | Modeling | XML | JSON |
-| ------- | ---------- | -------- | -------- | --- | ---- |
-| Property | {% include_relative component/property/def.md %} | [overview](component) |  | element<br>attribute | [json](../../json/guidance/#element-content-of-an-object-or-association-type) |
-| Type | {% include_relative component/type/def.md %} | [overview](component) |  | xml | json |
-| Facet | {% include_relative facet/def.md %} | [overview](facet/) | [modeling](facet/modeling) | [xml](facet/xml) | [json](facet/json) |
-| Namespace | {% include_relative namespace/def.md %} | [overview](namespace) | [modeling](namespace/modeling) | [xml](namespace/xml) | [json](namespace/json) |
+> An example of a property is `PersonBirthDate`.  The name itself conveys the concept it represents, but on its own, any date format - or any value at all - would be possible.
 
-## NIEM-specific concepts
+<!-- [more...](property) -->
 
-The concepts below are more advanced and may or may not have logical counterparts in other modeling languages.  They describe things like how NIEM allows for the use of non-conformant external standards, how to specify metadata, and define and use additional content with existing types.
+### Types
 
-| Concept | Definition | Overview | Modeling | XML | JSON |
-| ------- | ---------- | -------- | -------- | --- | ---- |
-| Adapter | {% include_relative niem-construct/adapter/def.md %} |  |  |  | [json](../../json/guidance/#adapter-elements) |
-| Association | {% include_relative niem-construct/association/def.md %} |  |  |  | [json](../../json/guidance/#element-content-of-an-object-or-association-type) |
-| Augmentation | {% include_relative niem-construct/augmentation/def.md %} | [overview](niem-construct/augmentation) | [modeling](niem-construct/augmentation/modeling) | [xml](niem-construct/augmentation/xml) | [json](niem-construct/augmentation/json) |
-| Local Terminology | {% include_relative niem-construct/local-term/def.md %} | [overview](niem-construct/local-term) | [modeling](niem-construct/local-term/modeling) | [xml](niem-construct/local-term/xml) | [json](niem-construct/local-term/json) |
-| Metadata | {% include_relative niem-construct/metadata/def.md %} |  |  |  | [json](../../json/guidance/#metadata) |
-| References | | | | |
-| Role | {% include_relative niem-construct/role/def.md %} |  |  |  | [json](../../json/guidance/#references-and-idref-attributes) |
+Types define structures - the allowable set of values.  They tend to be less specific than properties, and that is by design.  It increases reusability.
+
+> Rather than creating a `PersonBirthDateType` to define a specific date format, a more generic `DateType` is created and reused by multiple properties.
+
+Pairing a property (a specific concept) with a type (the set of allowable values) creates a component with both clear semantics and a well-defined structure.
+
+Types can define complex or simple content.  Complex content defines a set of sub-properties, like a type defining a person containing name, birth date, and address properties.  Simple content defines a single value, like a string, date, number, or boolean.
+
+<!-- [more...](type) -->
+
+### Facets
+
+{% include_relative facet/intro.md %}
+
+[more...](facet)
+
+## Advanced and NIEM-specific concepts
+
+In addition to the basic concepts described above, NIEM defines additional concepts to reflect its conceptual model, improve reusability, and support well-defined information exchanges.
+
+### Adapters
+
+Adapters are the mechanism NIEM uses to allow content from external standards without causing conformance validation errors.
+
+An adapter is a type that contains an external property.  It is marked as an adapter in the schema, so NIEM conformance rules are not applied to any of its contents.  Otherwise, it acts like a standard NIEM type.
+
+> For example, geo:SurfaceType is an adapter type in NIEM that contains element "Surface" from GML, an external standard.  This adapter type can be used normally by other NIEM components.
+
+<!-- [more...](adapter) -->
+
+### Associations
+
+Associations are relationships between properties.  An association may have additional characteristics that further describe the relationship.
+
+> A marriage can be an association between two people, with additional characteristics like marriage date.
+
+<!-- [more...](association) -->
+
+### Augmentations
+
+{% include_relative augmentation/intro.md %}
+
+[more...](augmentation)
+
+### Local Terminology
+
+{% include_relative local-term/intro.md %}
+
+[more...](local-term)
+
+### Metadata
+
+{% include_relative metadata/intro.md %}
+
+[more...](metadata)
+
+### References
+
+References are used in instances or messages to point to content defined elsewhere.
+
+A common reason to use references is to avoid repeating data.  In addition to avoiding duplication, it clearly links multiple occurrences to the same object.  Just because two properties have the same content (e.g., the same name), they are not necessarily the same.
+
+In order to use references, a unique ID must first be assigned to where the content is defined.  That ID can then be references elsewhere.  Almost all properties in NIEM (those with complex types) carry attributes that let you define an ID or a reference.
+
+<!-- [more...](reference) -->
+
+<!-- ### Roles
+
+A role is a function or responsibility of someone and/or something.
+
+Like augmentations, roles are implemented without type extension due to the limitations of single inheritance.  A type may be the role of 
+
+[more...](role) -->

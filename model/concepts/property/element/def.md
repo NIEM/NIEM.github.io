@@ -1,0 +1,1 @@
+a container that may carry either a simple value or sub-elements, and optionally attributes

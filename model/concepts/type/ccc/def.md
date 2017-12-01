@@ -1,0 +1,1 @@
+a structure that may contain elements and attributes
