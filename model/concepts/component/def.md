@@ -1,1 +1,0 @@
-a property or a type

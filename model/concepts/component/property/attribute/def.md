@@ -1,1 +1,0 @@
-a container that may carry a simple value only
