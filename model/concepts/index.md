@@ -22,6 +22,7 @@ Fundamentally, a NIEM release consists of a set of namespaces, each of which def
 Properties may be more commonly known as as elements, attributes, keys, and/or fields.  They define specific semantics and appear in exchanges as the tag or field names, but they have no inherent structure without a type.
 
 > An example of a property is `PersonBirthDate`.  The name itself conveys the concept it represents, but on its own, any date format - or any value at all - would be possible.
+{:.example}
 
 <!-- [more...](property) -->
 
@@ -30,6 +31,7 @@ Properties may be more commonly known as as elements, attributes, keys, and/or f
 Types define structures - the allowable set of values.  They tend to be less specific than properties, and that is by design.  It increases reusability.
 
 > Rather than creating a `PersonBirthDateType` to define a specific date format, a more generic `DateType` is created and reused by multiple properties.
+{:.example}
 
 Pairing a property (a specific concept) with a type (the set of allowable values) creates a component with both clear semantics and a well-defined structure.
 
@@ -58,6 +60,7 @@ In addition to the basic concepts described above, NIEM defines additional conce
 Associations are relationships between properties.  An association may have additional characteristics that further describe the relationship.
 
 > A marriage can be an association between two people, with additional characteristics like marriage date.
+{:.example}
 
 <!-- [more...](association) -->
 

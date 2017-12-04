@@ -73,9 +73,6 @@ This template shows the declaration of a complex type that references its augmen
   </xs:annotation>
 </xs:element>
 ```
-{: #training-aug-point }
-
-{% include copybutton.html id="training-aug-point" %}
 
 ## XML Schema partial template
 
@@ -95,8 +92,5 @@ Without the rest of the type declaration, the template would look like:
   </xs:annotation>
 </xs:element>
 ```
-{: #training-aug-point-partial }
-
-{% include copybutton.html id="training-aug-point-partial" %}
 
 This is much simpler: one new augmentation point element, and one reference to it from its type.

@@ -46,9 +46,6 @@ This template shows how to define local terminology on the schema's annotation n
   </xs:annotation>
 </xs:schema>
 ```
-{: #training-term-both }
-
-{% include copybutton.html id="training-term-both" %}
 
 ### Literal
 
@@ -59,9 +56,6 @@ This template shows how to define a term with its literal translation:
   <term:LocalTerm term="TERM" literal="LITERAL"/>
 </xs:appinfo>
 ```
-{: #training-term-literal }
-
-{% include copybutton.html id="training-term-literal" %}
 
 ### Definition
 
@@ -72,6 +66,3 @@ This template shows how to define a term with its definition:
   <term:LocalTerm term="TERM" definition="DEFINITION"/>
 </xs:appinfo>
 ```
-{: #training-term-def }
-
-{% include copybutton.html id="training-term-def" %}

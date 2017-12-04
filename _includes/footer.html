@@ -23,8 +23,26 @@
 <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
 <script type="text/javascript">
+
+  // Add bootstrap classes for table formatting
   $("table").addClass("table");
   $("table").addClass("table-bordered");
   $("table").addClass("table-hover");
   $("table").addClass("table-striped");
+
+  // Add a new copy button to each code block
+  $(".highlight").each( function() {
+    
+    // New copy button and event handler (local copy-to-clipboard function)
+    let $copyBtn = $(`<button class="clipboard"">Copy</button>`).click( copyToClipboard );
+
+    // New div for copy button (helps for styling)
+    let $copyDiv = $(`<div class="clipboard">`);
+    $copyDiv.append($copyBtn);
+
+    // Add div before the code block
+    $(this).before( $copyDiv );
+  });
+
 </script>
+

@@ -96,6 +96,3 @@ The following is a subset from the Geospatial adapter schema in the NIEM 4.0 rel
 
 </xs:schema>
 ```
-{: #training-adapter-template }
-
-{% include copybutton.html id="training-adapter-template" %}

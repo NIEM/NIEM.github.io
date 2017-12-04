@@ -119,9 +119,6 @@ This template creates an augmentation container element and type.
   </xs:annotation>
 </xs:element>
 ```
-{: #training-aug-container }
-
-{% include copybutton.html id="training-aug-container" %}
 
 ## Direct substitutions
 
@@ -167,6 +164,3 @@ The only thing that distinguishes an augmentation element that is a direct subst
   </xs:annotation>
 </xs:element>
 ```
-{: #training-aug-direct }
-
-{% include copybutton.html id="training-aug-direct" %}

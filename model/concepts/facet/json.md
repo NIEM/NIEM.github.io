@@ -43,9 +43,6 @@ Enumerations are defined within a simple type declaration in the `oneOf` array. 
   ]
 }
 ```
-{: #training-enum-example-json }
-
-{% include copybutton.html id="training-enum-example-json" %}
 
 ### Example
 
@@ -102,9 +99,6 @@ This template shows a simple type with two enumerations.
   }
 }
 ```
-{: #training-enum-template-json }
-
-{% include copybutton.html id="training-enum-template-json" %}
 
 ## Numeric Range Example
 
@@ -125,9 +119,6 @@ This example shows a numeric simple type with a minimum and a maximum value.
   }
 }
 ```
-{: #training-facet-range-json }
-
-{% include copybutton.html id="training-facet-range-json" %}
 
 ## Other Facets
 
@@ -150,9 +141,6 @@ This template shows the definition of a simple type with a base.
   }
 }
 ```
-{: #training-generic-template-json }
-
-{% include copybutton.html id="training-generic-template-json" %}
 
 ### Example
 
@@ -167,6 +155,3 @@ This template shows the definition of a simple type with a base.
   }
 }
 ```
-{: #training-generic-example-json }
-
-{% include copybutton.html id="training-generic-example-json" %}

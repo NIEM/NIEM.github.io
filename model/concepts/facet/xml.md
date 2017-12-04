@@ -18,7 +18,7 @@ The template below defines a simple type with two facets.
 ``` xml
 <xs:simpleType name="NAMESimpleType">
    <xs:annotation>
-    <xs:documentation>A data type for a(n) TYPE_DEFINITION</xs:documentation>
+    <xs:documentation>A data type for a(n) ...</xs:documentation>
   </xs:annotation>
   <xs:restriction base="BASE_TYPE">
     <xs:FACET_KIND_1 value="FACET_VALUE_1">
@@ -34,9 +34,6 @@ The template below defines a simple type with two facets.
   </xs:restriction>
 </xs:simpleType>
 ```
-{: #training-facet-generic-xml }
-
-{% include copybutton.html id="training-facet-generic-xml" %}
 
 ## Common Templates
 
@@ -50,7 +47,7 @@ This template shows a simple type with a single enumeration.
 ```xml
 <xs:simpleType name="NAMECodeSimpleType">
    <xs:annotation>
-    <xs:documentation>A data type for a(n) TYPE_DEFINITION</xs:documentation>
+    <xs:documentation>A data type for a(n) ...</xs:documentation>
   </xs:annotation>
   <xs:restriction base="xs:token">
     <xs:enumeration value="FACET_VALUE">
@@ -61,9 +58,6 @@ This template shows a simple type with a single enumeration.
   </xs:restriction>
 </xs:simpleType>
 ```
-{: #training-facet-enum-xml }
-
-{% include copybutton.html id="training-facet-enum-xml" %}
 
 ### Numeric Range
 
@@ -76,10 +70,10 @@ This template shows a numeric simple type with a minimum and a maximum value.
 ```xml
 <xs:simpleType name="NAMESimpleType">
    <xs:annotation>
-    <xs:documentation>A data type for a(n) {$TypeDefinition}</xs:documentation>
+    <xs:documentation>A data type for a(n) ...</xs:documentation>
   </xs:annotation>
   <xs:restriction base="xs:decimal">
-    <xs:minInclusive value="MIN_FACET_VALUE}">
+    <xs:minInclusive value="MIN_FACET_VALUE">
      <xs:annotation>
       <xs:documentation>MIN_FACET_DEFINITION</xs:documentation>
       </xs:annotation>
@@ -92,6 +86,3 @@ This template shows a numeric simple type with a minimum and a maximum value.
   </xs:restriction>
 </xs:simpleType>
 ```
-{: #training-facet-range-xml }
-
-{% include copybutton.html id="training-facet-range-xml" %}

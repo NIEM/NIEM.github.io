@@ -90,6 +90,35 @@ div.btn-copy {
   margin-top: -10px;
 }
 
+div.clipboard {
+  display: block;
+  position: relative;
+  float: right;
+}
+
+button.clipboard {
+  content: "Copy";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 10;
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: $dark-gray;
+  background-color: transparent;
+  border: 1px solid $gainsboro;
+  border-radius: 0.25rem;
+}
+
+button.clipboard:hover {
+  background-color: rgba($pale-turquoise, 0.75);
+  color: white;
+}
+
+button.clipboard:active {
+  background-color: $pale-turquoise;
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
