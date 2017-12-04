@@ -13,30 +13,44 @@ body {
 }
 
 code {
-	font-family: "Courier New";
+  font-family: "Courier New";
+  font-size: 15px;
   color: #000;
-  background-color: #fff;
-  border-radius: 0px;
+  // background-color: #fff;
+  background-color: inherit;
+  border-radius: 1px;
 }
 
 blockquote {
   font-size: 15px;
+  border-left-color: $turquoise;
+  background: rgba($pale-turquoise, 0.2);
 }
 
-.valid {
-  background: rgba(101, 196, 203, 0.2);
+blockquote::before {
+  font-weight: 500;
 }
 
 blockquote.valid {
   border-left-color: seagreen;
+  background: rgba(101, 196, 203, 0.2);
 }
 
-.invalid {
-  background: #ffcccc59; 
+blockquote.valid::before {
+  content: "Valid example";
 }
 
 blockquote.invalid {
   border-left-color: crimson;
+  background: #ffcccc59; 
+}
+
+blockquote.invalid::before {
+  content: "Invalid example";
+}
+
+blockquote.example::before {
+  content: "Example";
 }
 
 .table-auto {
@@ -44,7 +58,7 @@ blockquote.invalid {
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: rgba(101, 196, 203, 0.5); // 50% of $pale-turquoise
+  background-color: rgba($pale-turquoise, 0.4);
 }
 
 ul {
