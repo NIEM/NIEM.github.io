@@ -3,6 +3,7 @@ body {
   height: 100%;
   font-size: 16px;
   font-weight: 400;
+  position: relative;
 }
 
 #page-wrap {
@@ -11,6 +12,31 @@ body {
   min-height: 100%;
   position: relative;
 }
+
+// Styling for sidebar navigation scrollspy
+#page-nav {
+
+  #markdown-toc {
+    padding: 5px;
+  }
+
+  a {
+    color: #555;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .active > a {
+    font-weight: bold;
+  }
+
+  li a {
+    padding: 5px;
+  }
+
+} 
 
 code {
   font-family: "Courier New";
@@ -21,19 +47,63 @@ code {
   border-radius: 1px;
 }
 
-blockquote {
-  font-size: 15px;
-  border-left-color: $turquoise;
-  background: rgba($pale-turquoise, 0.2);
+.tips, .example, .note, .box {
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 0 20px;
 }
 
-blockquote::before {
-  font-weight: 500;
+ul.tips, ul.example, ul.note, ul.box {
+  li {
+    margin-left: 30px;
+  }
+}
+
+ul.tips::before {
+  content: "Tips";
+}
+
+ul.note::before, blockquote.note::before {
+  content: "Note";
+}
+
+blockquote {
+  font-size: 15px;
+  border: 0;
+  border-left: solid 5px rgba($turquoise, 0.5);
+  background: rgba($pale-turquoise, 0.15);
+}
+
+.box {
+  font-size: 15px;
+  // border-left: solid 5px $turquoise;
+  border: solid 1px rgba($turquoise, 0.3);
+  background: rgba($pale-turquoise, 0.15);
+  border-radius: 3px;
+}
+.tips, .example, .note {
+  @extend .box;
+}
+
+.note {
+  // border-color: blanchedalmond;
+  // background: cornsilk;
+  
+  // border-color: peachpuff;
+  // background: papayawhip;
+
+  border-color: blanchedalmond;
+  background: rgba(papayawhip, 0.5); // Half of papayawhip
+}
+
+blockquote::before, ul::before {
+  font-weight: bolder;
 }
 
 blockquote.valid {
-  border-left-color: seagreen;
-  background: rgba(101, 196, 203, 0.2);
+  border: 0;
+  border-left: solid 5px seagreen;
+  background: rgba(143, 230, 172, 0.2);
 }
 
 blockquote.valid::before {
@@ -41,7 +111,8 @@ blockquote.valid::before {
 }
 
 blockquote.invalid {
-  border-left-color: crimson;
+  border: 0;
+  border-left: solid 5px crimson;
   background: #ffcccc59; 
 }
 
@@ -49,7 +120,7 @@ blockquote.invalid::before {
   content: "Invalid example";
 }
 
-blockquote.example::before {
+.example::before {
   content: "Example";
 }
 
@@ -70,6 +141,7 @@ img {
   max-width: 100%;
 }
 
+// Fixes link targets disappearing under the navbar
 :target:before {
   content: "";
   display: block;
@@ -99,11 +171,11 @@ div.clipboard {
 button.clipboard {
   content: "Copy";
   position: absolute;
-  top: 0.5rem;
+  top: 0.4rem;
   right: 0.5rem;
   z-index: 10;
   display: block;
-  padding: 0.25rem 0.5rem;
+  padding: 0.15rem 0.25rem;
   color: $dark-gray;
   background-color: transparent;
   border: 1px solid $gainsboro;
@@ -117,6 +189,21 @@ button.clipboard:hover {
 
 button.clipboard:active {
   background-color: $pale-turquoise;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+
+#sidebar-wrapper {
+  position: relative;
+  margin-top: 15px;
+}
+
+// Placing a fixed div (#sidebar) inside of a relative container
+// (#sidebar-wrapper) allows it to stay fixed while remaining
+// inside the parent container
+#sidebar {
+  position: fixed;
 }
 
 .videoWrapper {
