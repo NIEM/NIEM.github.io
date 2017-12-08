@@ -25,7 +25,7 @@ body {
   }
 
   ul {
-    list-style: none;
+    // list-style: none;
   }
 
   .active > a {
@@ -197,6 +197,7 @@ button.clipboard:active {
 #sidebar-wrapper {
   position: relative;
   margin-top: 15px;
+  width: min-content;
 }
 
 // Placing a fixed div (#sidebar) inside of a relative container
@@ -204,6 +205,7 @@ button.clipboard:active {
 // inside the parent container
 #sidebar {
   position: fixed;
+  width: inherit;
 }
 
 .videoWrapper {
