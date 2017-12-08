@@ -43,14 +43,19 @@ Relative protocol URL:
 
 ### Pattern conventions
 
-For NIEM release namespaces, the target namespace URI typically follows the format: 
+For NIEM release namespaces, the target namespace URI typically follows the format:
 
-> base / (category /) name / version /
+{: .box}
+> `base / category / name / version /`
 
-- The base is `http://release.niem.gov/niem/`.
-- The category is included only if there is more than one of that kind of namespace (e.g., the URI for Core does not have a category since there is only one core namespace).
+{: .example}
+> `http://release.niem.gov/niem/domains/immigration/4.0/`<br>
+> `-------------base-----------/--cat--/---name----/ver/`
 
-Examples:
+{: .note}
+> The category is included only if there are multiple schemas for that kind of namespace. <br> Since there is only one Core namespace, the URI for Core omits the category.
+
+More examples:
 
 | Namespace | Target namespace URI |
 | --------- | -------------------- |
@@ -63,6 +68,7 @@ User-defined namespaces can follow different conventions for their URIs.
 
 ### URI bases
 
-For user-defined namespaces, a different URI base should be chosen - a domain that the user has authority over.
+For user-defined namespaces, a different URI base should be chosen - preferably a domain that the user controls.
 
-Replace `http://release.niem.gov/niem/` with a different domain.
+{: .box}
+> Replace `http://release.niem.gov/niem/` with a different domain.

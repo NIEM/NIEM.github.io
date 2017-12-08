@@ -38,8 +38,13 @@ A NIEM XML Schema follows the general pattern below:
 
 The target namespace URI and version are declared as schema attributes:
 
-- `targetNamespace="URI"`
-- `version="VERSION"`
+```xml
+targetNamespace="URI"
+```
+
+```xml
+version="VERSION"
+```
 
 Core 4.0 example:
 
@@ -53,9 +58,13 @@ Core 4.0 example:
 
 `xsi:schemaLocation` is used to bind one or more URIs to their locations.  NIEM uses this in places where a namespace is referenced but does not have to be imported (metadata on the schema itself).
 
-In 4.0, this is used for the conformance targets namespace and the appinfo namespace.
+The value of the attribute is a string of one or more "URI LOCATION" pairs.
 
-The value of the attribute is a string of "URI LOCATION" pairs.
+```xml
+xsi:schemaLocation="URI1 LOC1 URI2 LOC2 ..."
+```
+
+In 4.0, `xsi:schemaLocation` is used for the conformance targets namespace and the appinfo namespace.
 
 ```xml
 <xs:schema
@@ -70,6 +79,23 @@ The value of the attribute is a string of "URI LOCATION" pairs.
 Conformance targets are URIs that identify rules to apply to check conformance.
 
 ```xml
+ct:conformanceTargets="URI"
+```
+
+If there are multiple conformance targets, separate each URI with a space.
+
+```xml
+ct:conformanceTargets="URI1 URI2 ..."
+```
+
+The namespace prefix `ct` corresponds to URI `http://release.niem.gov/niem/conformanceTargets/3.0/`
+
+{: .note}
+> The conformance targets namespace did not change in the NIEM 4.0 release, so it remains at version 3.0.
+
+NIEM 4.0-based example of a namespace targeting the NDR 4.0 reference rules:
+
+```xml
 <xs:schema
   ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument"
   >
@@ -77,17 +103,27 @@ Conformance targets are URIs that identify rules to apply to check conformance.
 </xs:schema>
 ```
 
-Note that in NIEM 4.0, the conformance targets namespace did not change and remains at 3.0.
+NIEM 4.0-based example of a namespace (like an extension schema) targeting the NDR 4.0 extension rules:
+
+```xml
+<xs:schema
+  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument"
+  >
+  ...
+</xs:schema>
+```
 
 ### Namespace prefix declarations
 
-Prefixes should be assigned for each namespace that is referenced and for the current namespace.
+Prefixes should be assigned for each namespace that is referenced, and also for the current namespace.
 
-`xmlns:PREFIX="URI"`
+```xml
+xmlns:PREFIX="URI"
+```
 
-This binds the prefix to the given URI, so the prefix may be used in the schema as an abbreviation for the full URI.
+This statement binds the prefix to the given URI, so the prefix may be used in the schema as an abbreviation for the full URI.
 
-Core 4.0 example:
+Core 4.0 namespace prefix example:
 
 ```xml
 <xs:schema
@@ -104,10 +140,21 @@ Prefixes should be assigned for:
 - the XML Schema namespace (xs)
 - the XML Schema Instance namespace (xsi)
 
+NIEM namespaces that are not required but that are commonly used include:
+
+- Core
+- niem-xs
+- structures
+
+The target and imported namespaces will vary based on the given schema, but the remaining ones from the lists above appear as the following in NIEM 4.0:
+
 ```xml
 <xs:schema
   xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/"
   xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+  xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
+  xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 </xs:schema>
@@ -115,12 +162,22 @@ Prefixes should be assigned for:
 
 ### Definition
 
-A definition for the namespace is required:
+A definition for the namespace is required.
+
+```xml
+<xs:annotation>
+  <xs:documentation>DEFINITION</xs:documentation>
+</xs:annotation>
+```
+
+The definition is represented as annotation documentation on the xs:schema root node.
+
+CBRN 4.0 domain example:
 
 ```xml
 <xs:schema>
   <xs:annotation>
-    <xs:documentation>DEFINITION</xs:documentation>
+    <xs:documentation>Chemical, Biological, Radiological, and Nuclear Domain</xs:documentation>
   </xs:annotation>
   ...
 </xs:schema>
@@ -170,6 +227,9 @@ Placeholders appear in upper case.  A few common namespace prefixes and import s
 
 </xs:schema>
 ```
+
+{: .note}
+Local terminology, which appears in the template above, is described in its own [section](../local-term).
 
 ## NIEM's profile of XML Schema
 
