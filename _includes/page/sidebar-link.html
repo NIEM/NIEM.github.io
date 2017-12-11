@@ -36,7 +36,7 @@
 {% endif %}
 
 
-<a href="{{ include.url }}" class=" {{ classes }}">
+<a href="{{ include.url | relative_url }}" class=" {{ classes }}">
   <i class="fa {{ icon }} fa-fw"></i>
   <span class="content"> {{ title }}</span>
 </a>

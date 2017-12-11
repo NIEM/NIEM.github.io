@@ -1,7 +1,7 @@
     <nav class="navbar navbar-default navbar-fixed-top header-nav" role="navigation">
       <div class="usa">
         <div class="container">
-          <img alt="US flag" src="{{ site.baseurl }}/assets/images/us-flag.png" style="margin-right: 5px; height: 13px;" /> An official website of the United States Government
+          <img alt="US flag" src="{{ '/assets/images/us-flag.png' | relative_url }}" style="margin-right: 5px; height: 13px;" /> An official website of the United States Government
         </div>
       </div>
       <div class="container">
@@ -13,8 +13,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/">
-            <img src="{{ site.baseurl }}/assets/images/logo.png" alt="NIEM" />
+          <a class="navbar-brand" href="{{'/' | relative_url }}">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="NIEM" />
           </a>
         </div>
         <div class="navbar-collapse collapse">
