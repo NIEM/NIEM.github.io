@@ -26,7 +26,7 @@ gems:
   - jekyll-mentions
   - jekyll-redirect-from
 
-repository: NIEM/niem.github.io
+repository: cdmgtri/niem.github.io
 
 # Site data
 superhero_iepd_path: https://github.com/NIEM/Developer-Network-IEPD-Series--SuperHero
