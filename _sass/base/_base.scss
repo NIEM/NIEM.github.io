@@ -18,7 +18,6 @@ body {
 
   #markdown-toc {
     padding: 5px;
-    font-size: smaller;
   }
 
   a {
@@ -37,6 +36,10 @@ body {
     padding: 5px;
   }
 
+}
+
+#sidebar {
+  font-size: smaller;
 }
 
 a.list-group-item.grandparent::before {
