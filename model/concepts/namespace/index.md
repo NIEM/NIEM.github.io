@@ -1,10 +1,16 @@
 ---
   title: Namespaces
+  icon: fa-files-o
+  description: A collection of properties and types, managed by a common authoritative source
+  links:
+    - url: /model/concepts/namespace/modeling/
+    - url: /model/concepts/namespace/xml/
+    - url: /model/concepts/namespace/json/
   training: overview
   next: property
 ---
 
-A **namespace** is {% include_relative def.md %}
+{{ page.description }}
 
 - TOC
 {:toc}

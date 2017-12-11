@@ -1,4 +1,4 @@
 
 make:
-	cp ../../../json/guidance/full-example.jsonld samples/instance.jsonld
-	cp ../../../json/sample-schema/sample2.jsonld samples/schema.jsonld
+	cp ../../../json/guidance/full-example.jsonld json/examples/instance.jsonld
+	cp ../../../json/sample-schema/sample2.jsonld json/examples/schema.jsonld

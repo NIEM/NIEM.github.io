@@ -1,5 +1,7 @@
 ---
 title: Reusable XML Snippets
+icon: fa-database
+description: Reusable XML snippets of the various NIEM XML components. These snippets could also be called patterns or templates.
 ---
 Contained below are reusable XML snippets of the various NIEM XML components. These snippets could also be called patterns or templates. They are available for NIEM developers to cut and paste directly into their integrated development environment to save development time. Examples from the “Hello World” IEPD series are provided so developers can see an actual worked example.
 

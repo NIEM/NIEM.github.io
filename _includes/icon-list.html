@@ -1,0 +1,18 @@
+
+{% comment %}
+  ***
+  Outputs a list of links with icons and descriptions
+  ***
+{% endcomment %}
+
+{% assign links = include.links %}
+
+<div>
+  <ul class="list-fa-icon">
+    {% for link in links %}
+      <li>
+        {% include icon-link.html link=link %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

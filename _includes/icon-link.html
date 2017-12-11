@@ -1,0 +1,70 @@
+
+{% comment %}
+***
+Outputs a link with its title, icon and description.
+
+- The link must come with a url property.
+- If title, icon, and/or description are not provided, checks the 
+  front matter of the corresponding page.  If not there either,
+  defaults are provided for icon and title (page name).
+- External links are set to open in a new tab.
+***
+{% endcomment %}
+
+{% assign link = include.link %}
+
+{% assign linkPage = site.pages | where: "url", link.url | first %}
+
+{% comment %} 
+  Assign the icon, from input parameter, link's page, or default 
+{% endcomment %}
+{% assign icon = link.icon %}
+{% unless icon %}
+  {% assign icon = linkPage.icon %}
+  {% unless icon %}
+    {% assign icon = "fa-star" %}
+  {% endunless %}
+{% endunless %}
+
+{% comment %} 
+  Assign the title, from input parameter, link's page, or default 
+{% endcomment %}
+{% assign title = link.title %}
+{% unless title %}
+  {% assign title = linkPage.title %}
+  {% unless title %}
+    {% capture title %}
+      {% include functions/getFilename.html url=link.url %}
+    {% endcapture %}
+    {% assign title = title | strip %}
+  {% endunless %}
+{% endunless %}
+
+{% comment %}
+  Assign the description, from input parameter, link's page, or nothing
+{% endcomment %}
+{% assign description = link.description %}
+{% unless description %}
+  {% assign description = linkPage.description %}
+{% endunless %}
+{% if description %}
+  {% assign description = description | prepend: "<br>" %}
+{% endif %}
+    
+{% comment %}
+  Set link to open in new tab if external to site (url contains http or www)
+{% endcomment %}
+{% if link.url contains "http" %}
+  {% assign target = "target='_blank'" %}
+{% elsif link.url contains "www" %}
+  {% assign target = "target='_blank'" %}
+{% endif %}
+
+<a {{ target }} href="{{ link.url }}">
+  <span class="icon fa-stack fa-2x">
+    <i class="fa fa-square fa-stack-2x"></i>
+    <i class="fa {{ icon }} fa-stack-1x"></i>
+  </span>
+  <span class="content">{{ title }}</span>
+</a>
+{{ description }}

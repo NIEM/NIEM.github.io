@@ -1,0 +1,16 @@
+
+{% assign adj_url = include.url %}
+{% assign adj_links = include.links %}
+{% assign adj_increment = include.increment %}
+
+{% for link in adj_links %}
+  {% if link.url == adj_url %}
+    {% assign index = forloop.index0 %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if index %}
+  {% assign adjacentIndex = index | plus: adj_increment %}
+  {{ adj_links[adjacentIndex].url }}  
+{% endif %}

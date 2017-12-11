@@ -1,5 +1,11 @@
 ---
   title: Local Terminology
+  icon: fa-book
+  links:
+    - url: /model/concepts/local-term/modeling/
+    - url: /model/concepts/local-term/xml/
+    - url: /model/concepts/local-term/json/
+  group: Advanced
   training: overview
   next: metadata
 ---

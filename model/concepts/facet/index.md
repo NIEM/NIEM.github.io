@@ -1,7 +1,13 @@
 ---
-title: Facets
-training: overview
-next: adapter
+  title: Facets
+  icon: fa-list
+  links:
+    - url: /model/concepts/facet/modeling/
+    - url: /model/concepts/facet/xml/
+    - url: /model/concepts/facet/json/
+  group: Basic
+  training: overview
+  next: adapter
 ---
 
 A **facet** is {% include_relative def.md %}.

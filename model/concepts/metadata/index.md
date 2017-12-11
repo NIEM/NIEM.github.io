@@ -1,5 +1,11 @@
 ---
   title: Metadata
+  icon: fa-info
+  links:
+    - url: /model/concepts/metadata/modeling/
+    - url: /model/concepts/metadata/xml/
+    - url: /model/concepts/metadata/json/
+  group: Advanced
   training: overview
   next: reference
 ---

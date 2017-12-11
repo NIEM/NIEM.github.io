@@ -1,5 +1,7 @@
 ---
 title: IEPD Tutorials
+icon: fa-database
+description: Step-by-step instructions on how to build a moderately complex IEPD.
 ---
 This tutorial area provides step-by-step instructions on how to build a moderately complex IEPD. Material from the “Hello World” IEPD series, reusable XML snippets, and other parts of NIEM's GitHub site is used in the tutorials.
 

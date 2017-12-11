@@ -1,5 +1,7 @@
 ---
   title: Releases
+  icon: fa-files-o
+  description: A package of schemas and supporting artifacts.
 ---
 
 A <strong>NIEM Release</strong> is a {% include_relative def.md %}

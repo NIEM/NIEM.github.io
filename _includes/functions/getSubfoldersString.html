@@ -1,0 +1,47 @@
+
+{% comment %}
+  ***
+  Given a "url", returns a comma-separated string of immediate subfolders,
+  excluding the list in _data/custom-nav/settings.yml (e.g., assets, images)
+  ***
+{% endcomment %}
+
+{% assign clause = "page.url contains '" | append: include.url | append: "'" %}
+{% assign get_subfolders = site.pages | where_exp: "page", clause | map: "url" | sort %}
+
+
+{% assign returnString = "" %}
+
+{% if get_subfolders.size > 0 %}
+  {% assign targetLevels = include.url | split: "/" | size | plus: 1 %}
+
+  {% for fldr in get_subfolders %}
+    {% unless fldr == include.url %}
+      {% assign fldrLevels = fldr | split: "/" | size %}
+
+      {% if fldrLevels == targetLevels %}
+
+        {% comment %} Make sure folder name is not in the exclude list {% endcomment %}
+        {% assign folderName = fldr | split: "/" | last %}
+        {% unless site.data.custom-nav.settings.exclude contains folderName %}
+
+          {% comment %} 
+            Make sure the root of the subfolder matches include.url.
+            The contains filter above gets any match, not just a "begins-with" match.
+          {% endcomment %}
+          {% assign leftString = fldr | truncate: include.url.size, "" %}    
+          {% if leftString == include.url %}
+
+            {% assign returnString = returnString
+                | append: include.url | append: folderName | append: "/," %}
+            
+          {% endif %}
+        {% endunless %}
+      {% endif %}
+      
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+
+{{ returnString }}

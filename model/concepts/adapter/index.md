@@ -1,5 +1,12 @@
 ---
   title: Adapters
+  icon: fa-wrench
+  icon-new: fa-plug
+  links:
+    - url: /model/concepts/adapter/modeling/
+    - url: /model/concepts/adapter/xml/
+    - url: /model/concepts/adapter/json/
+  group: Advanced
   training: overview
   next: association
 ---

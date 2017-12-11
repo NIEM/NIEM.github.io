@@ -1,7 +1,12 @@
 ---
-  title: Augmentation
+  title: Augmentations
+  icon: fa-plus
+  group: Advanced
+  links:
+    - url: /model/concepts/augmentation/point/
+    - url: /model/concepts/augmentation/element/
   next: Augmentation Point
-  nextlink: augmentation-point
+  nextlink: point
 ---
 
 An **augmentation** is {% include_relative def.md %}.
@@ -58,4 +63,4 @@ Because IEPDs do not have to be built with the same degree of flexibility and re
 
 ## See more
 
-This section is split into two sub-sections.  Continue on for more information about [augmentation points](augmentation-point).  The [augmentation elements](augmentation-element) section will follow.
+This section is split into two sub-sections.  Continue on for more information about [augmentation points](point).  The [augmentation elements](element) section will follow.

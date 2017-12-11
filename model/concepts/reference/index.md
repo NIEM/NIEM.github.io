@@ -1,5 +1,7 @@
 ---
   title: References
+  icon: fa-share
+  group: Advanced
   training: overview
 ---
 

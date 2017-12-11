@@ -1,101 +1,65 @@
-{% comment %}
-  Output a navigation for the current section and all immediate children.
-{% endcomment %}
+
+{% assign thisPage = site.pages | where: "url", page.url | first %}
+
+{% capture parentURL %}
+  {% include functions/getParentURL.html url=page.url %}
+{% endcapture %}
+{% assign parentURL = parentURL | strip %}
+
+
+{% capture grandparentURL %}
+  {% include functions/getParentURL.html url=parentURL %}
+{% endcapture %}
+{% assign grandparentURL = grandparentURL | strip %}
+
+
 <div class="section-nav list-group">
-  {% assign page_url_parts = page.url | split: '/' %}
-  {% assign section_url = page_url_parts[0] | append: '/' | append: page_url_parts[1] | append: '/' %}
-  {% assign html_pages = site.html_pages | sort: 'weight' %}
 
-  {% comment %}
-    Output the current section.
-  {% endcomment %}
-  {% for html_page in html_pages %}
-    {% if html_page.url == section_url %}
-      {% comment %} TODO: Replace with slice when GitHub Pages includes Liquid 3.0.0 {% endcomment %}
-      {% assign html_page_url = html_page.url %}
-      {% assign html_page_url_processed = html_page_url %}
-      {% if html_page_url == html_page_url_processed %}
-        {% assign html_page_url = html_page_url %}
-      {% endif %}
+  {% if grandparentURL.size > 0 %}
+  
+    {% comment %} Grandparent and Parent links {% endcomment%}
+    {% include page/sidebar-link.html url=grandparentURL class="grandparent" %}
+    {% include page/sidebar-link.html url=parentURL class="parent" %}
 
-      {% assign html_page_url_parts = html_page.url | split: '/' %}
-      
-      {% if page_url_parts[2] == html_page_url_parts[2] %}
-        {% assign link_class = 'active' %}
-      {% endif %}
-      <a class="list-group-item {{link_class}}" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
-      {% break %}
-    {% endif %}
-  {% endfor %}
+  {% else %}
+    
+    {% comment %} Parent link formatted as grandparent / toplevel {% endcomment%}
+    {% include page/sidebar-link.html url=parentURL class="grandparent" %}
 
-  {% comment %}
-    If section has an item to be appended in the side navigation, we can just append those items here.
-    The IEPD section appends the "IEPD template at the top" 
-  {% endcomment %}
- 
-  {% for nav in site.data.custom-nav %}
-    {% if nav[0] == page_url_parts[1] %}
-      {% if nav[0] == "iepd-library" %}
-        <a  class="list-group-item" target="_blank" href="https://github.com/NIEM/Template-IEPD/">Template IEPD</a>
-      {% endif %}   
-    {% endif %}
-  {% endfor %}
+  {% endif %}
 
-  {% comment %}
-    Output the section's immediate children.
-  {% endcomment %}
-  {% for html_page in html_pages %}
-    {% assign html_page_url_parts = html_page.url | split: '/' %}
 
-    {% if page_url_parts[1] == html_page_url_parts[1] and html_page_url_parts.size == 3 %}
-      {% assign link_class = 'list-group-item' %}
-      {% if page_url_parts[2] == html_page_url_parts[2] %}
-        {% assign link_class = link_class | append: ' active' %}
-      {% endif %}
+  {% capture hasChildren %}
+    {% include functions/getURLHasChildren.html url=thisPage.url %}
+  {% endcapture %}
+  {% assign hasChildren = hasChildren | strip %}
 
-      {% comment %}
-        "Link" comes from custom navigation.
-      {% endcomment %}
-      {% if html_page.link %}
-        <a class="{{ link_class }}" href="{{ html_page.link }}">{{ html_page.title }}</a>
-      {% else %}
-        {% comment %}
-          Replace /index.html with /
-          TODO: Replace with slice when GitHub Pages includes Liquid 3.0.0
-        {% endcomment %}
-        {% assign html_page_url = html_page.url %}
-        {% assign html_page_url_processed = html_page_url | append: '/' %}
-        {% if html_page_url == html_page_url_processed %}
-          {% assign html_page_url = html_page_url %}
-        {% endif %}
-        <a class="{{ link_class }}" href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page.title }}</a>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
+  {% if hasChildren == "true" %}
 
-  {% comment %}
-    If section has an item to be appended in the side navigation, we can just append those items here.
-    The tips and tricks section has an item to be appeneded in here.  
-  {% endcomment %}
-  {% for nav in site.data.custom-nav %}
-    {% if nav[0] == page_url_parts[1] %}
-      {% if nav[0] == "iepd-starter-kit" %}
-        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Template-IEPD/">IEPD Template</a>
-        <a class="list-group-item" target="_blank" href="https://github.com/search?q=NIEM+IEPD&utf8=%E2%9C%93">IEPD Search</a>
-      {% endif %}  
-      {% if nav[0] == "tips-and-tricks" %}
-        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Avoid-replicating-data-in-a-NIEM-XML-document">Avoid Replicating Data in a NIEM XML Document</a>
-        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Browsing-the-content-of-NIEM">Browsing NIEM Content</a>
-        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Efficient-XML-Interchange">Efficient XML Interchange</a>
-        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Enterprise-Integration-Patterns">Enterprise Integration Patterns</a>
-        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Fast-Infoset">Fast Infoset</a></li>
-        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Server-output-filter">Server Output Filter</a>
-        <a class="list-group-item" target="_blank" href="https://github.com/NIEM/Implementation-Cookbook/wiki/Size-of-NIEM-XML-documents">Size of NIEM XML Documents</a>
-      {% endif %}      
-    {% endif %}
-  {% endfor %}
+    {% comment %} List Current Page and Children {% endcomment %}
+    {% include page/sidebar-link.html url=page.url class="current" currentURL=page.url %}
+    {% include page/sidebar-list.html url=page.url class="sub" %}
+
+  {% else %}
+    
+    {% comment %} List Current Page with Siblings {% endcomment %}
+    {% include page/sidebar-list.html url=parentURL class="sibling" currentURL=page.url%}
+
+  {% endif %}
+
+
+{% comment %}
+{% include functions/getNext.html url=page.url %}
+
+    {% capture next %}
+      {% include functions/getNext.html url=page.url %}
+    {% endcapture %}
+    {% assign next = next | strip | split: "," %}
+      <a href="{{ next[0] }}" class="list-group-item"> NEXT: {{ next[1] }}</a>
+{% endcomment %}
 
 </div>
+
 
 <a class="btn btn-primary feedback-btn" href="{{ site.submit_feedback_link }}">
   <span class="icon fa fa-comments fa-sm"></span>

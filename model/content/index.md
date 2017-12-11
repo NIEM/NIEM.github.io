@@ -1,5 +1,7 @@
 ---
   title: Content
+  icon: fa-sitemap
+  description: A high-level introduction to the content in the model.
 ---
 
 - TOC

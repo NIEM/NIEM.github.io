@@ -18,6 +18,7 @@ body {
 
   #markdown-toc {
     padding: 5px;
+    font-size: smaller;
   }
 
   a {
@@ -36,7 +37,38 @@ body {
     padding: 5px;
   }
 
-} 
+}
+
+a.list-group-item.grandparent::before {
+  font-family: FontAwesome;
+  content: "\f0c9 ";
+}
+
+a.list-group-item.parent::before {
+  font-family: FontAwesome;
+  content: "\f0d7 ";
+}
+
+a.list-group-item.current::before {
+  font-family: FontAwesome;
+  content: "\f0da ";
+}
+
+a.list-group-item.sibling::before {
+  font-family: FontAwesome;
+  content: "\f0d8 ";
+}
+
+a.list-group-item.sub::before {
+  font-family: FontAwesome;
+  // content: "\f152 ";
+  content: "\f18e ";
+}
+
+a.list-group-item.external::before {
+  font-family: FontAwesome;
+  content: "\f045 ";
+}
 
 code {
   font-family: "Courier New";
