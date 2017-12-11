@@ -21,7 +21,7 @@ has two pairs: the string "haircolor", with the value "red", and the
 string "name" with a value that is another object.  In
 [NIEM-JSON](tbd), we treat "haircolor" and "name" as the name of two
 data elements, which are two properties of the outer object.  We use
-JSON-LD to interpret these key strings as URIs for the data
+JSON-LD contexts to interpret these key strings as URIs for the data
 elements. We have a standards-based naming convention for canonical
 data element names, and a documentation requirement for each element
 definition.  When you put all that together, it seems reasonable to talk
