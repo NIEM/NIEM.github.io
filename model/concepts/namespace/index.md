@@ -1,13 +1,11 @@
 ---
   title: Namespaces
   icon: fa-files-o
-  description: A collection of properties and types, managed by a common authoritative source
+  description: A collection of properties and types, managed by a common authoritative source.
   links:
     - url: /model/concepts/namespace/modeling/
     - url: /model/concepts/namespace/xml/
     - url: /model/concepts/namespace/json/
-  training: overview
-  next: property
 ---
 
 {{ page.description }}
@@ -57,7 +55,7 @@ Namespaces are sometimes referred to at a high level (like "Core") when the rele
 
 If necessary to be specific, the version should also be included (like "Core 4.0").
 
-## Namespace characteristics
+## Characteristics
 
 A namespace defines content in the form of [properties](../property) and [types](../type).  Details about these components are provided in their own sections.
 

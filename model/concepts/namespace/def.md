@@ -1,1 +1,0 @@
-a collection of properties and types, managed by a common authoritative source

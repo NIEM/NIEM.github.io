@@ -1,8 +1,6 @@
 ---
   title: Modeling Namespaces
   short: Modeling
-  training: modeling
-  next: property
 ---
 
 - TOC
@@ -10,15 +8,11 @@
 
 A namespace should be designed so that its components are consistent, may be used together, and may be updated at the same time.
 
-## Target Namespace
+## Unique URI
 
-A target namespace acts as the unique ID for a namespace.
+A target namespace acts as the unique ID for a namespace.  Each namespace must have its own target namespace.  This makes all schemas easy to reference individually and prevents one namespace from being defined across multiple files.
 
-### Unique
-
-Each namespace must have its own target namespace.  This makes all schemas easy to reference individually and prevents one namespace from being defined across multiple files.
-
-### Absolute URI
+## Absolute URI
 
 A target namespace must be an absolute URI.  Relative URIs are not allowed. An absolute URI, such as a URL or a URN, is universally identifiable.
 
@@ -42,7 +36,7 @@ Relative protocol URL:
 > //niem/niem-core/3.2/
 {:.invalid}
 
-### Pattern conventions
+## URI conventions
 
 For NIEM release namespaces, the target namespace URI typically follows the format:
 
@@ -67,7 +61,7 @@ More examples:
 
 User-defined namespaces can follow different conventions for their URIs.
 
-### URI bases
+## URI bases
 
 For user-defined namespaces, a different URI base should be chosen - preferably a domain that the user controls.
 

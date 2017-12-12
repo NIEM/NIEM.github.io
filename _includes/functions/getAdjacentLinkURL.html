@@ -1,16 +1,68 @@
 
-{% assign adj_url = include.url %}
-{% assign adj_links = include.links %}
-{% assign adj_increment = include.increment %}
+{% comment %}
+  ***
+  Given a "url" and "increment" (1 or -1), returns the next or previous link
+  based on front matter links.
 
-{% for link in adj_links %}
-  {% if link.url == adj_url %}
-    {% assign index = forloop.index0 %}
-    {% break %}
+  --"matchURL" - If given, searches for the next link before/after this url
+
+  ***
+{% endcomment %}
+
+
+{% assign thisPage = site.pages | where: "url", include.url | first %}
+
+{% if include.url == "/" %}
+  
+  {% comment %} Terminate a recursive loop by returning first-level section {% endcomment %}
+  {{ include.matchURL | split: "/" | first | prepend: "/"}}
+  
+{% elsif thisPage.links and include.matchURL.size > 0 %}
+
+  {% comment %} Compare the links in this page relative to matchURL {% endcomment %}
+  {% assign i = -2 %}
+
+  {% for link in thisPage.links %}
+    {% if link.url == include.matchURL %}
+      {% assign i = forloop.index0 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign i = i | plus: include.increment %}
+
+  {% if i == -1 %}
+
+    {% comment %} Matched first link so no previous sibling; return self {% endcomment %}
+    {{ thisPage.url }}
+
+  {% elsif i >= 0 and i < thisPage.links.size %}
+
+    {% comment %} Adjacent sibling found on this page {% endcomment %}
+    {{ thisPage.links[i].url }}      
+    
+  {% else %}
+  
+    {% comment %} Adjacent link not found; recurse on parent {% endcomment %}  
+    {% include functions/getParentAdjacentLinkURL.html
+          url=thisPage.url increment=include.increment matchURL=thisPage.url %}
+
   {% endif %}
-{% endfor %}
 
-{% if index %}
-  {% assign adjacentIndex = index | plus: adj_increment %}
-  {{ adj_links[adjacentIndex].url }}  
+{% elsif thisPage.links and include.increment == 1 %}
+  
+  {% comment %} Return the first url in this page's front matter links {% endcomment %}
+  {{ thisPage.links[0].url }}
+
+{% elsif thisPage.links %}
+    
+  {% comment %} Return the parent as the previous link {% endcomment %}
+  {% include functions/getParentURL.html url=thisPage.url %}
+
+{% else %}
+
+  {% comment %} Return the sibling from the parent front matter {% endcomment %}
+  {% include functions/getParentAdjacentLinkURL.html
+        url=thisPage.url increment=include.increment %}
+
 {% endif %}

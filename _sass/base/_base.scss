@@ -42,6 +42,21 @@ body {
   font-size: smaller;
 }
 
+// Previous and next navigation buttons
+
+div.prev-next {
+  padding: 20px 0;
+  display: block;
+}
+
+a.previous {
+  float: left;
+}
+
+a.next {
+  float: right;
+}
+
 a.list-group-item.grandparent::before {
   font-family: FontAwesome;
   content: "\f0c9 ";

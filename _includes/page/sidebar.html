@@ -47,17 +47,6 @@
 
   {% endif %}
 
-
-{% comment %}
-{% include functions/getNext.html url=page.url %}
-
-    {% capture next %}
-      {% include functions/getNext.html url=page.url %}
-    {% endcapture %}
-    {% assign next = next | strip | split: "," %}
-      <a href="{{ next[0] }}" class="list-group-item"> NEXT: {{ next[1] }}</a>
-{% endcomment %}
-
 </div>
 
 

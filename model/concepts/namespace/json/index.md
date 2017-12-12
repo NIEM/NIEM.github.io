@@ -1,8 +1,6 @@
 ---
   title: Namespaces in JSON
   short: JSON
-  training: json
-  next: property
 ---
 
 - TOC
