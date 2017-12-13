@@ -1,7 +1,6 @@
 ---
   title: Modeling ...
-  training: modeling
-  next:
+  short: Modeling
 ---
 
 - TOC

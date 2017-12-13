@@ -1,16 +1,14 @@
 ---
   title: Metadata in XML
   short: XML
-  training: xml
-  next: reference
 ---
 
 - TOC
 {:toc}
 
-An element links to metadata by referencing each applicable metadata element's ID (`structures:id`) in inherited attribute `structures:metadata`.
+## Instance example
 
-## XML example
+An element links to metadata by referencing each applicable metadata element's ID (`structures:id`) in inherited attribute `structures:metadata`.
 
 In the example below, a person is defined with two sub-properties: nc:PersonBirthDate and nc:PersonName.  Each of these elements reference metadata IDs via their `structures:metadata` attribute.
 
@@ -35,12 +33,13 @@ In the example below, a person is defined with two sub-properties: nc:PersonBirt
 </nc:Metadata>
 ```
 
-## XML Schema example
+## Schema example
 
 This example shows a subset of metadata type `nc:MetadataType` and metadata element `nc:Metadata` in NIEM Core 4.0:
 
+{: .note}
 - The metadata type extends `structures:MetadataType`.
-- The metadata element defines applicability to types `structures:ObjectType` and `structures:AssociationType`.  This enables applicability from any element with a type derived from either of these.
+- The metadata element defines an attribute to specify what types may reference this element.  Specifying `structures:ObjectType` and `structures:AssociationType` enables applicability from any element with a type derived from either of these.
 
 ```xml
 <xs:schema>
@@ -77,7 +76,7 @@ This example shows a subset of metadata type `nc:MetadataType` and metadata elem
 </xs:element>
 ```
 
-## XML Schema template
+## Schema template
 
 ```xml
 <xs:schema>

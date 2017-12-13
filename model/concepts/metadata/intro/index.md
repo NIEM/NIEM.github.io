@@ -5,4 +5,5 @@ Because this is data that could potentially be provided about any and every prop
 
 Almost all properties in NIEM (those with complex types) have the ability to reference one or more metadata properties.
 
-> For example, Core defines `nc:Metadata`, which contains properties like `nc:ReportedDate` and `nc:SourceText`.  Any element, like `nc:Person`, `j:PersonEmploymentIndicator`, or an element defined in an IEPD, may link to this metadata.
+{: .example}
+> Core defines metadata element `nc:Metadata`, which contains properties like `nc:ReportedDate` and `nc:SourceText`.  Any element, like `nc:Person`, `j:PersonEmploymentIndicator`, or an element defined in an IEPD, may use this to provide metadata.

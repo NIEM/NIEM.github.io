@@ -1,25 +1,22 @@
 ---
   title: Augmentation Elements
   icon: fa-retweet
+  description: An augmentation element is additional content that replaces an augmentation point defined in another namespace.
   links:
     - url: /model/concepts/augmentation/element/modeling/
-    - url: /model/concepts/augmentation/element/xml/
+    - url: /model/concepts/augmentation/element/xml-container/
+    - url: /model/concepts/augmentation/element/xml-direct/
     - url: /model/concepts/augmentation/element/json/
-  training: overview
-  next: Local Terminology
-  nextlink: ../../local-term
 ---
-
-An **augmentation element** is {% include_relative def.md %}.
 
 - TOC
 {:toc}
 
-![Basic augmentation elements](images/aug-elt-basic.png)
-
 ## Overview
 
-{% include_relative intro.md %}
+{% include_relative intro/index.md %}
+
+![Basic augmentation elements](images/aug-elt-basic.png)
 
 ## Containers
 

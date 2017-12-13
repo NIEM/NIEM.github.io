@@ -5,25 +5,21 @@
     - url: /model/concepts/augmentation/point/modeling/
     - url: /model/concepts/augmentation/point/xml/
     - url: /model/concepts/augmentation/point/json/
-  training: overview
-  next: Augmentation Element
-  nextlink: ../element
+  description: An augmentation point is a special substitution group to allow for later replacement by additional content from other namespaces.
 ---
-
-An **augmentation point** is {% include_relative def.md %}.
 
 - TOC
 {:toc}
 
 ## Overview
 
-![Basic augmentation](images/aug-point-basic.png)
+{% include_relative intro/index.md %}
 
-{% include_relative intro.md %}
+![Basic augmentation](images/aug-point-basic.png)
 
 ## Examples
 
-Each of the types in the table of examples below contain the augmentation point element listed next to it.
+Each of the types in the table of examples below contain the augmentation point element listed next to it.  The names and definitions follow a regular pattern.
 
 | Type | Augmentation Point Element | Definition of Augmentation Point Element |
 | ---- | -------------------------- | ---------------------------------------- |

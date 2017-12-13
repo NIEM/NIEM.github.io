@@ -1,14 +1,14 @@
 ---
   title: 
-  training: overview
-  next:
+  icon: fa-
+  description: 
+  links:
+  - url: 
 ---
-
-A **** is a {% include_relative def.md %}
 
 - TOC
 {:toc}
 
 ## Overview
 
-{% include_relative intro.md %}
+{% include_relative intro/index.md %}

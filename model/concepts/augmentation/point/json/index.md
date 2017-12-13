@@ -1,9 +1,6 @@
 ---
   title: Augmentations Points in JSON
   short: JSON
-  training: json
-  next: Augmentation Element
-  nextlink: ../augmentation-element
 ---
 
 - TOC

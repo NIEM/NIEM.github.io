@@ -1,7 +1,6 @@
 ---
   title: ... in XML
-  training: xml
-  next:
+  short: XML
 ---
 
 - TOC

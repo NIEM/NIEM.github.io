@@ -1,8 +1,6 @@
 ---
   title: Modeling Facets
   short: Modeling
-  training: modeling
-  next: adapter
 ---
 
 - TOC
@@ -10,29 +8,24 @@
 
 ## Basics
 
-Facet declarations follow a similar pattern:
+Facets do not exist independently.  They are defined as part of the simple type that they constrain.
 
-- A simple type is declared with a name, definition, base type, and one or more facet declarations.
-- Each facet declaration specifies a facet kind, a value, and a definition.
+- Each facet will have a kind.
+- Each facet will have a value.
+- Enumeration facets must have a definition.
 
-Keep in mind that overly-restrictive facets limit reusability, particularly in NIEM release schemas.  Facets that restrict a string to the number of characters allowed in a corresponding database field, for example, may limit other users with different systems.
+{: .example}
+- A simple type that defines month codes will declare 12 facets:
+- The facet kinds will each be "enumeration".
+- The facet values will be "JAN", "FEB", "MAR", etc.
+- The facet definitions will be "January", "February", "March", etc.
 
-## Facet
+{: .tip}
+> Keep in mind that overly-restrictive facets limit reusability, particularly in NIEM release schemas.  For example, facets that restrict a string to the number of characters allowed in a corresponding database field may limit other users with different systems.
 
-### Kind
+## Simple type names
 
-- The kind of facet must be chosen from a valid set of values.  See the [full list](.#kinds-of-facets).
-- Most XML Schema facets have translations for JSON Schema.
+For any simple type that declares a facet...
 
-## Simple Type
-
-For the simple type that contains the facet, the following applies:
-
-### Name
-
-- The name of a type with enumerations must end with "CodeSimpleType".
-- All other faceted types must have names that end with with "SimpleType".
-
-### Base type
-
-- The base type is the type to be constrained by the facets.  This is typically a string or numeric type.
+- If the type contains enumerations, the name of the type must end with `CodeSimpleType`.
+- All other simple types must have names that end with with `SimpleType`.

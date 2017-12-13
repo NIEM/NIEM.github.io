@@ -1,7 +1,7 @@
 ---
   title: Associations
   icon: fa-share-alt
-  group: Advanced
+  description: An association is a complex relationship between objects, with optional additional characteristics.
 ---
 
-{% include_relative def.md %}
+{% include_relative intro/index.md %}

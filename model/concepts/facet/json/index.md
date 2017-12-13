@@ -1,8 +1,6 @@
 ---
   title: Facets in JSON
   short: JSON
-  training: json
-  next: adapter
 ---
 
 - TOC
@@ -10,7 +8,7 @@
 
 ## Kinds of Facets
 
-See the [XML list with definitions](.#kinds-of-facets).
+See the corresponding [XML list](.#kinds-of-facets) for definitions.
 
 | XML Facet      | JSON Facet | Text | Num | Date |
 | -------------- | ---------- |:----:|:---:|:----:|
@@ -26,6 +24,7 @@ See the [XML list with definitions](.#kinds-of-facets).
 | pattern        | pattern    |   X  |     |      |
 | totalDigits    | n/a        |      |     |      |
 | whiteSpace     | n/a        |      |     |      |
+{: .table-auto}
 
 Note that Draft 6 of the JSON Schema specification changes the types of `exclusiveMinimum` and `exclusiveMaximum` from booleans to numbers so that they may be used without also requiring `minimum` and `maximum`.
 
@@ -33,7 +32,8 @@ Note that Draft 6 of the JSON Schema specification changes the types of `exclusi
 
 Enumerations are defined within a simple type declaration in the `oneOf` array.  Each enumeration is defined as an object with `enum` and `description` properties.
 
-- Defining enums in an array is a JSON Schema requirement, to allow for defining all enumerations together.  Since NIEM requires definitions on enumerations, the enum keyword is repeated, with only a single enumeration in each array.
+{: .note}
+> Defining enums in an array is a JSON Schema requirement.  Since NIEM requires definitions for enumerations, the object must be repeated, with a single enumeration in each `enum` array and a corresponding `description`.
 
 ```json
 {
@@ -44,8 +44,6 @@ Enumerations are defined within a simple type declaration in the `oneOf` array. 
   ]
 }
 ```
-
-### Example
 
 The example below shows the definition of iso_4217:CurrencyCodeSimpleType, with three enumerations.
 
@@ -74,39 +72,9 @@ The example below shows the definition of iso_4217:CurrencyCodeSimpleType, with 
 }
 ```
 
-### Template
-
-This template shows a simple type with two enumerations.
-
-- The type name should be qualified, and it should end with "CodeSimpleType" since it defines enumerations.
-
-```json
-{
-  "definitions": {
-    "PREFIX:NAMECodeSimpleType": {
-      "type": "string",
-      "description": "TYPE_DEFINITION",
-      "oneOf": [
-        {
-          "enum": [ "ENUM_1" ],
-          "description": "DEFINITION_1"
-        },
-        {
-          "enum": [ "ENUM_2" ],
-          "description": "DEFINITION_2"
-        }
-      ]
-    }
-  }
-}
-```
-
-## Numeric Range Example
+## Numeric Range
 
 This example shows a numeric simple type with a minimum and a maximum value.
-
-- The base type may be set to `number` instead of `integer` to allow for decimal values.
-- Add the properties `exclusiveMinimum: true` and `exclusiveMaximum: true` to make the range exclusive of the edge values.
 
 ```json
 {
@@ -121,34 +89,37 @@ This example shows a numeric simple type with a minimum and a maximum value.
 }
 ```
 
-## Other Facets
+{: .note}
+- The base type may be set to `number` instead of `integer` to allow for decimal values.
+- Add the properties `exclusiveMinimum: true` and `exclusiveMaximum: true` to make the range exclusive of the edge values.
 
-### Generic Template
+## Generic Template
 
 This template shows the definition of a simple type with a base.
-
-- The type name should be a qualified name that ends with "SimpleType".
-- The base type should be either "string", "number", or "integer".
-- The facet kind should be one of the values defined in the JSON facets table above.
 
 ```json
 {
   "definitions": {
-    "PREFIX:NAMESimpleType": {
+    "SIMPLE_TYPE": {
       "description": "TYPE_DEFINITION",
-      "type": "PREFIX:BASE_TYPE",
+      "type": "BASE_TYPE",
       "FACET_KIND": "FACET_VALUE"
     },
   }
 }
 ```
 
-### Example
+{: .note}
+- SIMPLE_TYPE: This should be a qualified name that ends with "SimpleType".
+- BASE_TYPE: This should be either "string", "number", or "integer".
+- FACET_KIND: The should be one of the values defined in the JSON facets table above.
+
+Example of a string type with a maximum length:
 
 ```json
 {
   "definitions": {
-    "my:NonNegativeIntegerSimpleType": {
+    "ext:NAMESimpleType": {
       "description": "A data type for...",
       "type": "string",
       "maxLength": 20

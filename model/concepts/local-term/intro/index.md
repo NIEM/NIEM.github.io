@@ -3,6 +3,7 @@ Local terminology is a word, phrase, acronym, jargon, or other string of charact
 
 Because NIEM is designed to be widely reusable, it is important to make sure semantics are clear, even outside of the given subject matter area.
 
-> For example, Core defines "GSM" as a local term with literal "Global System for Mobile communication".
+{: .example}
+> Core defines "GSM" as a local term with literal "Global System for Mobile communication".
 
 Once defined at the namespace level, local terminology does not need to be redefined each time it is used.

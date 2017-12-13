@@ -1,14 +1,12 @@
 ---
   title: Local Terminology Modeling
   short: Modeling
-  training: modeling
-  next: metadata
 ---
 
 - TOC
 {:toc}
 
-## Enhance understanding
+## Purpose
 
 Local terminology is provided to improve the understanding of terms by those who do not share the same organization or subject matter background.
 
@@ -19,7 +17,7 @@ Local terminology declarations apply to the entire namespace in which they are d
 This means that:
 
 - A term that is used in multiple properties and/or types in a namespace is only defined once.
-- Each namespace must define its own terminology - terminology from Core or other domains cannot be reused.
+- Each namespace must define its own terminology - terminology from Core or other domains cannot be imported or reused.
 
 ## Literal or definition
 

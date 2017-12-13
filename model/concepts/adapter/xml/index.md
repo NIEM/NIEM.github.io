@@ -1,8 +1,6 @@
 ---
   title: Adapters in XML
   short: XML
-  training: xml
-  next: association
 ---
 
 - TOC
@@ -15,9 +13,9 @@ Adapters appear in XML instances like other content.
 ```xml
 <nc:LocationArea>
   <nc:LocationArea>
-    <geo:Ellipse>    <!-- element with adapter type -->
-      <xls:Ellipse>  <!-- external content from GML -->
-        ...
+    <geo:Ellipse>    <!-- NIEM element with an adapter type -->
+      <xls:Ellipse>  <!-- External element from GML -->
+        <!-- GML content -->
       </xls:Ellipse>
     </geo:Ellipse>
   </nc:LocationArea>
@@ -28,11 +26,11 @@ Adapters appear in XML instances like other content.
 
 The following is a subset from the Geospatial adapter schema in the NIEM 4.0 release.
 
-- The import statement of the GML external namespace includes a definition
-- The complex type declaration is an adapter type
-  - it has attribute `appinfo:externalAdapterTypeIndicator="true`
-  - the reference to the external element `gml:AbstractGeometry` also includes a definition
-- Nothing special is required by the element below that uses this adapter type.  It is defined like any other NIEM element.
+{: .note}
+- The import statement of the GML external namespace includes a definition and attribute `appinfo:externalImportIndicator="true"`.
+- The complex type declaration is an adapter type, with attribute `appinfo:externalAdapterTypeIndicator="true`.
+- The reference to the external element `gml:AbstractGeometry` also includes a definition.
+- Nothing special is required by the element below that uses this adapter type.  The type can now be used like any other type.
 
 ```xml
 <xs:schema xmlns:gml="http://www.opengis.net/gml/3.2" ...>
@@ -72,7 +70,7 @@ The following is a subset from the Geospatial adapter schema in the NIEM 4.0 rel
 
 ```xml
 <xs:schema>
-  <xs:import schemaLocation="SCHEMA_LOC" namespace="URI" appinfo:externalImportIndicator="true">
+  <xs:import schemaLocation="PATH" namespace="URI" appinfo:externalImportIndicator="true">
     <xs:annotation>
       <xs:documentation>EXTERNAL NAMESPACE DEFINITION</xs:documentation>
     </xs:annotation>

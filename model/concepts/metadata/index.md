@@ -1,31 +1,30 @@
 ---
   title: Metadata
   icon: fa-info
+  description: Metadata is a set of data that describes characteristics of other data.
   links:
     - url: /model/concepts/metadata/modeling/
     - url: /model/concepts/metadata/xml/
     - url: /model/concepts/metadata/json/
-  group: Advanced
-  training: overview
-  next: reference
 ---
-
-**Metadata** is {% include_relative def.md %}
 
 - TOC
 {:toc}
 
 ## Overview
 
-{% include_relative intro.md %}
+{% include_relative intro/index.md %}
 
 ## Using metadata
 
-As stated above, metadata should not be embedded in the primary content.  All elements in NIEM inherit attribute `structures:metadata`.  This attribute can carry a list of ID references, meaning each element can link to one or more metadata elements, as applicable.
+Metadata should not be embedded in the primary content.  All elements in NIEM inherit attribute `structures:metadata`.  This attribute can carry a list of ID references, meaning each element can link to one or more metadata elements, as applicable.
 
-Elements and metadata have a many-to-many relationship.  One element can link to multiple metadata elements if each apply.  One metadata element can be referenced by many elements if each apply.
+Elements and metadata have a many-to-many relationship.
 
-## Metadata represents a set of elements
+1. One element can link to multiple metadata elements.  This means that metadata elements from Core, one or more domains, and/or an extension namespace may all be used, if needed.
+2. One metadata element can be referenced by many elements.  This means that if there are multiple elements that share the same metadata in an instance (for example, if they all come from the same database record that will have the same update date), then they can all link to the same metadata value(s) rather than duplicating the information.
+
+## Metadata is a set
 
 A metadata element in NIEM has a metadata type that bundles up one or more informational properties, such as `nc:EffectiveDate` and `nc:LastUpdatedDate`.  This simplifies the usage - an element references a metadata bundle once, rather than each of its contents individually.
 
@@ -33,12 +32,4 @@ NIEM's rules and guidance about metadata applies to those elements and types tha
 
 ## Where to reference metadata
 
-Metadata can be referenced from any element.  It is not necessary though to repeat the same references on each element in an instance.  Metadata on a higher level element, like `nc:Person`, may be considered to carry through to children elements, such as `nc:PersonBirthDate`, unless specifically overridden.
-
-## Applicability
-
-A metadata element may be able to be used by any NIEM element or type, or it may be constrained to only certain ones.
-
-If a metadata element is constrained to a given type, then any element of that type or of a type that extends from that type may reference it.  For example, a metadata element constrained to type `structures:AssociationType` may be used by any association element.
-
-Use the attributes `appinfo:appliesToElements` and  `appinfo:appliesToTypes` to limit the metadata element to one or more elements and/or types.
+Metadata can be referenced from any element.  It may not be necessary though to repeat the same references on each element in an instance.  Metadata on a higher level element, like `nc:Person`, may be considered to carry through to children elements, such as `nc:PersonBirthDate`, unless specifically overridden.

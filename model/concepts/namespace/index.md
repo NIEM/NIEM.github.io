@@ -1,21 +1,19 @@
 ---
   title: Namespaces
   icon: fa-files-o
-  description: A collection of properties and types, managed by a common authoritative source.
+  description: A namespace is a collection of properties and types, managed by a common authoritative source.
   links:
     - url: /model/concepts/namespace/modeling/
     - url: /model/concepts/namespace/xml/
     - url: /model/concepts/namespace/json/
 ---
 
-{{ page.description }}
-
 - TOC
 {:toc}
 
 ## Overview
 
-{% include_relative intro.md %}
+{% include_relative intro/index.md %}
 
 ### Categories
 

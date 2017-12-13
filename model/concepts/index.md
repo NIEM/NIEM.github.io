@@ -1,7 +1,7 @@
 ---
   title: Concepts
   icon: fa-cog
-  description: The basic building blocks used to construct the model.
+  description: This section describes the building blocks used to construct the model.
   links:
   - url: /model/concepts/namespace/
     group: Basics
@@ -21,14 +21,21 @@
     group: Advanced
   - url: /model/concepts/metadata/
     group: Advanced
+  later:
   - url: /model/concepts/reference/
+    group: Basics
+  - url: /model/concepts/code-lists/
     group: Advanced
-  next: Namespace
-  nextlink: namespace
+  - url: /model/concepts/security-markup/
+    group: Advanced
 ---
 
 - TOC
 {:toc}
+
+{{ page.description }}
+
+[Click here](overview) for a one-page overview of each of the major concepts; otherwise continue on to go through the concepts one-by-one - or jump directly to the one you need more information about.
 
 ## The Basics
 
@@ -39,7 +46,7 @@ Fundamentally, a NIEM release consists of a set of namespaces, each of which def
 
 ## Advanced
 
-In addition to the basic concepts described above, NIEM defines additional concepts to reflect its conceptual model, improve reusability, and support well-defined information exchanges.
+In addition to the basic concepts described above, NIEM defines or uses additional concepts to reflect its conceptual model, improve reusability, and support well-defined information exchanges.
 
 {% assign advancedLinks = page.links | where: "group", "Advanced" %}
 {% include icon-list.html links=advancedLinks %}

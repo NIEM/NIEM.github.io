@@ -1,19 +1,14 @@
 ---
-  title: Augmentation Elements in XML
-  short: XML
-  training: xml
-  next: Local Terminology
-  nextlink: ../../local-term
+  title: Augmentation Container Elements in XML
+  short: XML Containers
 ---
 
 - TOC
 {:toc}
 
-## Containers
+![Augmentation containers](../images/aug-elt-type-container.png)
 
-![Augmentation containers](images/aug-elt-type-container.png)
-
-### XML example
+## Instance example
 
 The examples below show element nc:Person in an XML instance, with and without augmentations.
 
@@ -62,11 +57,15 @@ The examples below show element nc:Person in an XML instance, with and without a
 </nc:Person>
 ```
 
-### XML Schema example
+{: .note}
+> Element substitution allows us to easily use properties from outside namespaces as part of `nc:Person`.
+
+## Schema example
 
 This snippet, from a subset of the Maritime domain, shows how an augmentation container element and type are defined.
 
-- The augmentation container element is designated as substitutable for `nc:PersonAugmentationPoint`, defined in the Core snippet above.
+{: .note}
+> The augmentation container element is designated as substitutable for `nc:PersonAugmentationPoint`, defined in the Core snippet above.
 
 ```xml
 <xs:complexType name="PersonAugmentationType">
@@ -89,12 +88,13 @@ This snippet, from a subset of the Maritime domain, shows how an augmentation co
 </xs:element>
 ```
 
-### XML Schema template
+## Schema template
 
 This template creates an augmentation container element and type.
 
-- The type should contain references to the additional content.
-- The element should be substitutable for an augmentation point element.
+{: .note}
+- The augmentation type should contain references to the additional content.
+- The augmentation element should be substitutable for an augmentation point.
 
 ```xml
 <!-- Augmentation type, like j:PersonAugmentationType -->
@@ -117,51 +117,6 @@ This template creates an augmentation container element and type.
 <xs:element name="NAMEAugmentation" type="NAMEAugmentationType" substitutionGroup="NAMEAugmentationPoint">
   <xs:annotation>
     <xs:documentation>Additional information about NAME</xs:documentation>
-  </xs:annotation>
-</xs:element>
-```
-
-## Direct substitutions
-
-![Augmentation direct substitution](images/aug-elt-subst.png)
-
-The following example shows a local element `PersonFictionalCharacterIndicator` that is directly substitutable for nc:PersonAugmentationPoint:
-
-### XML example
-
-```xml
-<nc:Person>
-  <nc:PersonName>
-    <nc:PersonFullName>John Smith</nc:PersonFullName>
-  </nc:PersonName>
-  <nc:PersonBirthDate>
-    <nc:Date>1950-01-01</nc:Date>
-  </nc:PersonBirthDate>
-
-  <!-- The augmentation element, substituted directly for nc:PersonAugmentationPoint -->
-  <ext:PersonFictionalCharacterIndicator>true</ext:PersonFictionalCharacterIndicator>
-</nc:Person>
-```
-
-### XML Schema example
-
-The only thing that distinguishes an augmentation element that is a direct substitution is its substitution group.
-
-```xml
-<xs:element name="PersonFictionalCharacterIndicator" type="niem-xs:boolean"
-  substitutionGroup="nc:PersonAugmentationPoint">
-    <xs:annotation>
-      <xs:documentation>True if this person is a fictional character; false otherwise.</xs:documentation>
-    </xs:annotation>
-</xs:element>
-```
-
-### XML Schema template
-
-```xml
-<xs:element name="ELEMENT_NAME" type="ELEMENT_TYPE" substitutionGroup="NAMEAugmentationPoint">
-  <xs:annotation>
-    <xs:documentation>ELEMENT_DEFINITION</xs:documentation>
   </xs:annotation>
 </xs:element>
 ```

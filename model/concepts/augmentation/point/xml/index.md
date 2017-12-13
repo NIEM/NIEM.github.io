@@ -1,9 +1,6 @@
 ---
   title: Augmentation Points in XML
   short: XML
-  training: xml
-  next: Augmentation Element
-  nextlink: ../augmentation-element
 ---
 
 - TOC
@@ -11,11 +8,11 @@
 
 ![Augmentation point element](../images/aug-point.png)
 
-## XML instances
+## Instances
 
-Augmentation point elements do not appear in XML instances because they are abstract.  They may only be omitted or replaced by their concrete substitutions.
+Augmentation point elements do not appear in XML instances because they are abstract.  They may only be omitted or replaced by their concrete substitutions. See [Augmentation Elements in XML](../../element/xml) for an example of how augmentation elements replace an augmentation point in an instance.
 
-## XML Schema example
+## Schema example
 
 This snippet, from a subset of Core, shows how augmentation point element `nc:PersonAugmentationPoint` is defined and referenced by `nc:PersonType`:
 
@@ -42,13 +39,13 @@ This snippet, from a subset of Core, shows how augmentation point element `nc:Pe
 </xs:element>
 ```
 
-Note that augmentation point elements are required in NIEM release schemas, but not for IEPDs.
+{: .note}
+- `nc:PersonType` includes a reference to its augmentation point (`nc:PersonAugmentationPoint`) as its last sub-element.
+- The augmentation point element is abstract and has no type.
 
-## XML Schema template
+## Schema template
 
 This template shows the declaration of a complex type that references its augmentation point, and the declaration of the augmentation point element itself.
-
-- The augmentation point element is the last element referenced in the type.
 
 ```xml
 <!-- NIEM type with sub-elements, like nc:PersonType -->
@@ -75,7 +72,7 @@ This template shows the declaration of a complex type that references its augmen
 </xs:element>
 ```
 
-## XML Schema partial template
+## Partial template
 
 Augmentation points do not actually require that many lines to create.  The majority of the template above shows how to create a type.  Only one line in the type declaration actually involves the augmentation point.
 

@@ -1,9 +1,6 @@
 ---
   title: Augmentation Elements in JSON
   short: JSON
-  training: json
-  next: Local Terminology
-  nextlink: ../../local-term
 ---
 
 - TOC

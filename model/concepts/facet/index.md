@@ -5,26 +5,15 @@
     - url: /model/concepts/facet/modeling/
     - url: /model/concepts/facet/xml/
     - url: /model/concepts/facet/json/
-  group: Basic
-  training: overview
-  next: adapter
+  description: A facet is a constraint on a simple type that limits the set of allowable values.
 ---
-
-A **facet** is {% include_relative def.md %}.
 
 - TOC
 {:toc}
 
 ## Overview
 
-{% include_relative intro.md %}
-
-Example uses:
-
-- A type for a telephone number might be a string that must match the **pattern**: (ddd) ddd-dddd
-- A type for a birthday might be a date **no earlier than** 1/1/1900
-- A type for a day-of-week value might be a text field limited to **allowable values** "MON", TUES", "WED", etc.
-- A type for latitude might be a number **between** -90 and 90
+{% include_relative intro/index.md %}
 
 A facet is defined by a simple type by specifying its **kind**, **value**, and **definition**.
 
@@ -49,20 +38,22 @@ The kind of facet must be chosen from the list provided below; the facet value a
 
 These kinds of facets and the term "facet" itself are taken from XML Schema: [Constraining or Non-fundamental facets](https://www.w3.org/TR/xmlschema-2/#non-fundamental).
 
-### Enumerations (most common)
+## Enumerations (*)
 
 In NIEM, the overwhelming majority (99%+) of facets that are created are **enumerations** (codes).
 
-Because the word "code" is more well-known, it is sometimes used in place of "facet" or "enumeration" in high-level contexts.
+Because the word "code" is more well-known, it is sometimes used in place of "facet" or "enumeration".
+
+A type creating a code set for days of the week might be based on a string and then define seven enumerations - "MON", "TUE", "WED", etc.  Each enumeration constrains that string to a valid option.  That one type will have seven valid options for its value.
 
 ## Multiple facets on a type
 
 Multiple facets may be defined by a single simple type.
 
-Examples:
-
 - A simple type that defines a code set must add one enumeration facet per code value.
 - A simple type that defines a numeric range must add one minInclusive (or minExclusive) facet to specify the lower bound, and one maxInclusive (or maxExclusive) facet to specify the upper bound.
+
+Examples:
 
 | Type | Facet Kind | Facet Value | Facet Definition |
 | ---- | ---------- | ----------- | ---------------- |
@@ -79,14 +70,10 @@ Examples:
 
 A property does not define facets for itself. A property may have a type that defines facets.
 
-For example...
-
-Property nc:TelephoneNumberCategoryCode
+For example, property nc:TelephoneNumberCategoryCode
 
 - has type xCard:TelephoneCategoryCodeType
 
 - that type is based on a simple type that defines nine enumerations, including "cell", "home", and "work"
 
-The property defined in Core is thus linked to the facets defined in the xCard code set namespace.
-
-In a message instance, only those nine enumerations would be valid values for nc:TelephoneNumberCategoryCode.
+The property defined in Core is thus linked to the facets defined in the xCard code set namespace.  In a message instance, only those nine enumerations would be valid values for nc:TelephoneNumberCategoryCode.

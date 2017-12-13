@@ -1,7 +1,7 @@
 ---
   title: ... in JSON
-  training: json
-  next:
+  short: JSON
+  description: 
 ---
 
 - TOC

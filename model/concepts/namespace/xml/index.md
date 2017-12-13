@@ -39,8 +39,8 @@ Placeholders appear in upper case.  A few common namespace prefixes and import s
   <xs:annotation>
     <xs:documentation>NAMESPACE_DEFINITION</xs:documentation>
     <xs:appinfo>
-      <term:LocalTerm term="TERM1" literal="LITERAL1"/>
-      <term:LocalTerm term="TERM2" definition="DEFINITION2"/>
+      <appinfo:LocalTerm term="TERM1" literal="LITERAL1"/>
+      <appinfo:LocalTerm term="TERM2" definition="DEFINITION2"/>
     </xs:appinfo>
   </xs:annotation>
 
