@@ -54,11 +54,6 @@
   {% comment %} Return the first url in this page's front matter links {% endcomment %}
   {{ thisPage.links[0].url }}
 
-{% elsif thisPage.links %}
-    
-  {% comment %} Return the parent as the previous link {% endcomment %}
-  {% include functions/getParentURL.html url=thisPage.url %}
-
 {% else %}
 
   {% comment %} Return the sibling from the parent front matter {% endcomment %}

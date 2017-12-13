@@ -34,7 +34,12 @@
   {% endcapture %}
   {% assign hasChildren = hasChildren | strip %}
 
-  {% if hasChildren == "true" %}
+  {% if thisPage.links == "current" %}
+
+    {% comment %} List Current Page only {% endcomment %}
+    {% include page/sidebar-link.html url=page.url class="current" currentURL=page.url %}
+
+  {% elsif hasChildren == "true" %}
 
     {% comment %} List Current Page and Children {% endcomment %}
     {% include page/sidebar-link.html url=page.url class="current" currentURL=page.url %}
