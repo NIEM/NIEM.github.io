@@ -1,0 +1,38 @@
+
+// Styles for the button that copies the text of code blocks to the clipboard
+
+div.btn-copy {
+  margin-top: -10px;
+}
+
+div.clipboard {
+  display: block;
+  position: relative;
+  float: right;
+}
+
+button.clipboard {
+  content: "Copy";
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  z-index: 10;
+  display: block;
+  padding: 0.15rem 0.25rem;
+  color: $dark-gray;
+  background-color: transparent;
+  border: 1px solid $gainsboro;
+  border-radius: 0.25rem;
+}
+
+button.clipboard:hover {
+  background-color: rgba($pale-turquoise, 0.75);
+  color: white;
+}
+
+button.clipboard:active {
+  background-color: $pale-turquoise;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}

@@ -1,0 +1,93 @@
+
+// Styles for the navigation sidebar and previous / next navigation buttons
+
+#sidebar-wrapper {
+  position: relative;
+  margin-top: 15px;
+  width: min-content;
+}
+
+// Placing a fixed div (#sidebar) inside of a relative container
+// (#sidebar-wrapper) allows it to stay fixed while remaining
+// inside the parent container
+#sidebar {
+  position: fixed;
+  width: inherit;
+}
+
+#sidebar {
+  font-size: smaller;
+}
+
+// Previous and next navigation buttons
+
+div.prev-next {
+  padding: 20px 0;
+  display: block;
+}
+
+a.previous {
+  float: left;
+}
+
+a.next {
+  float: right;
+}
+
+a.list-group-item.grandparent::before {
+  font-family: FontAwesome;
+  content: "\f0c9 ";
+}
+
+a.list-group-item.parent::before {
+  font-family: FontAwesome;
+  content: "\f0d7 ";
+}
+
+a.list-group-item.current::before {
+  font-family: FontAwesome;
+  content: "\f0da ";
+}
+
+a.list-group-item.sibling::before {
+  font-family: FontAwesome;
+  content: "\f0d8 ";
+}
+
+a.list-group-item.sub::before {
+  font-family: FontAwesome;
+  // content: "\f152 ";
+  content: "\f18e ";
+}
+
+a.list-group-item.external::before {
+  font-family: FontAwesome;
+  content: "\f045 ";
+}
+
+
+// Styling for sidebar navigation scrollspy
+#page-nav {
+  
+    #markdown-toc {
+      padding: 5px;
+    }
+  
+    a {
+      color: #555;
+    }
+  
+    ul {
+      // list-style: none;
+    }
+  
+    .active > a {
+      font-weight: bold;
+    }
+  
+    li a {
+      padding: 5px;
+    }
+  
+  }
+  

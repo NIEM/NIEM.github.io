@@ -8,84 +8,9 @@ body {
 
 #page-wrap {
   padding-top: $navbar-height + $usa-height;
-  padding-bottom: $navbar-height;
+  padding-bottom: $navbar-height + 50px;
   min-height: 100%;
   position: relative;
-}
-
-// Styling for sidebar navigation scrollspy
-#page-nav {
-
-  #markdown-toc {
-    padding: 5px;
-  }
-
-  a {
-    color: #555;
-  }
-
-  ul {
-    // list-style: none;
-  }
-
-  .active > a {
-    font-weight: bold;
-  }
-
-  li a {
-    padding: 5px;
-  }
-
-}
-
-#sidebar {
-  font-size: smaller;
-}
-
-// Previous and next navigation buttons
-
-div.prev-next {
-  padding: 20px 0;
-  display: block;
-}
-
-a.previous {
-  float: left;
-}
-
-a.next {
-  float: right;
-}
-
-a.list-group-item.grandparent::before {
-  font-family: FontAwesome;
-  content: "\f0c9 ";
-}
-
-a.list-group-item.parent::before {
-  font-family: FontAwesome;
-  content: "\f0d7 ";
-}
-
-a.list-group-item.current::before {
-  font-family: FontAwesome;
-  content: "\f0da ";
-}
-
-a.list-group-item.sibling::before {
-  font-family: FontAwesome;
-  content: "\f0d8 ";
-}
-
-a.list-group-item.sub::before {
-  font-family: FontAwesome;
-  // content: "\f152 ";
-  content: "\f18e ";
-}
-
-a.list-group-item.external::before {
-  font-family: FontAwesome;
-  content: "\f045 ";
 }
 
 code {
@@ -97,81 +22,11 @@ code {
   border-radius: 1px;
 }
 
-.tips, .example, .note, .box {
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 0 0 20px;
-}
-
-ul.tips, ul.example, ul.note, ul.box {
-  li {
-    margin-left: 30px;
-  }
-}
-
-ul.tips::before {
-  content: "Tips";
-}
-
-ul.note::before, blockquote.note::before {
-  content: "Note";
-}
-
 blockquote {
   font-size: 15px;
   border: 0;
   border-left: solid 5px rgba($turquoise, 0.5);
   background: rgba($pale-turquoise, 0.15);
-}
-
-.box {
-  font-size: 15px;
-  // border-left: solid 5px $turquoise;
-  border: solid 1px rgba($turquoise, 0.3);
-  background: rgba($pale-turquoise, 0.15);
-  border-radius: 3px;
-}
-.tips, .example, .note {
-  @extend .box;
-}
-
-.note {
-  // border-color: blanchedalmond;
-  // background: cornsilk;
-  
-  // border-color: peachpuff;
-  // background: papayawhip;
-
-  border-color: blanchedalmond;
-  background: rgba(papayawhip, 0.5); // Half of papayawhip
-}
-
-blockquote::before, ul::before {
-  font-weight: bolder;
-}
-
-blockquote.valid {
-  border: 0;
-  border-left: solid 5px seagreen;
-  background: rgba(143, 230, 172, 0.2);
-}
-
-blockquote.valid::before {
-  content: "Valid example";
-}
-
-blockquote.invalid {
-  border: 0;
-  border-left: solid 5px crimson;
-  background: #ffcccc59; 
-}
-
-blockquote.invalid::before {
-  content: "Invalid example";
-}
-
-.example::before {
-  content: "Example";
 }
 
 .table-auto {
@@ -205,57 +60,7 @@ div[class^="col"] img {
 }
 
 table {
-  margin: 20px auto;
-}
-
-div.btn-copy {
-  margin-top: -10px;
-}
-
-div.clipboard {
-  display: block;
-  position: relative;
-  float: right;
-}
-
-button.clipboard {
-  content: "Copy";
-  position: absolute;
-  top: 0.4rem;
-  right: 0.5rem;
-  z-index: 10;
-  display: block;
-  padding: 0.15rem 0.25rem;
-  color: $dark-gray;
-  background-color: transparent;
-  border: 1px solid $gainsboro;
-  border-radius: 0.25rem;
-}
-
-button.clipboard:hover {
-  background-color: rgba($pale-turquoise, 0.75);
-  color: white;
-}
-
-button.clipboard:active {
-  background-color: $pale-turquoise;
-  color: white;
-  font-weight: bold;
-  outline: none;
-}
-
-#sidebar-wrapper {
-  position: relative;
-  margin-top: 15px;
-  width: min-content;
-}
-
-// Placing a fixed div (#sidebar) inside of a relative container
-// (#sidebar-wrapper) allows it to stay fixed while remaining
-// inside the parent container
-#sidebar {
-  position: fixed;
-  width: inherit;
+  margin: 20px 0;
 }
 
 .videoWrapper {
