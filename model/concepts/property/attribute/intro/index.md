@@ -1,21 +1,3 @@
----
-  title: Properties
-  icon: fa-lightbulb-o
-  description: A property represents a concept, idea, or thing.
-  links:
-    - url: /model/concepts/property/modeling/
-    - url: /model/concepts/property/element/
-    - url: /model/concepts/property/abstract/
-    - url: /model/concepts/property/substitutable/
-    - url: /model/concepts/property/attribute/
----
-
-- TOC
-{:toc}
-
-{% include_relative intro/index.md %}
-
-## Kinds
 
 In NIEM, there are two basic kinds of properties: elements and attributes.
 
