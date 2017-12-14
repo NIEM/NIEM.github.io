@@ -4,7 +4,14 @@
 #sidebar-wrapper {
   position: relative;
   margin-top: 15px;
+  // width: auto;
   width: min-content;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #sidebar {
+     max-width: 200px;
+  }
 }
 
 // Placing a fixed div (#sidebar) inside of a relative container
@@ -13,6 +20,7 @@
 #sidebar {
   position: fixed;
   width: inherit;
+  // max-width: 225px;   // Caps sidebar on IE
 }
 
 #sidebar {

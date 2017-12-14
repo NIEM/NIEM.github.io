@@ -60,7 +60,7 @@ blockquote::before, ul::before, p::before {
 .invalid {
   border: 0;
   border-left: solid 5px crimson;
-  background: #ffcccc59; 
+  background: #fce3e3; 
   ::before {
     content: "Invalid example ";
   }
