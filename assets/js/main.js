@@ -40,3 +40,24 @@
 }());
 
 })(jQuery);
+
+function copy(id) {
+  
+  // Create a "hidden" input
+  let tmpNode = document.createElement("textarea");
+
+  // Copy the text from the element with the given id
+  tmpNode.value = document.getElementById(id).innerText;
+
+  // Append it to the body
+  document.body.appendChild(tmpNode);
+
+  // Highlight its content
+  tmpNode.select();
+
+  // Copy the highlighted text
+  document.execCommand("copy");
+
+  // Remove it from the body
+  document.body.removeChild(tmpNode);
+}

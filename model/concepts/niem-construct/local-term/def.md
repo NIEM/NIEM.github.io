@@ -1,0 +1,1 @@
+a word, phrase, abbreviation, acronym, jargon, or other string of characters defined via `appinfo:LocalTerm` in a NIEM schema because no definition or literal exists in a standard dictionary.

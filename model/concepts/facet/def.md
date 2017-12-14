@@ -1,0 +1,1 @@
+a constraint on a simple type that restricts the set of allowable values

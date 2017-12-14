@@ -1,0 +1,1 @@
+a mechanism to use components from a non-conformant external standard within a NIEM-conformant namespace

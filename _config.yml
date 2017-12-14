@@ -8,16 +8,18 @@ exclude:
   - Gemfile.lock
   - vendor/Font-Awesome/src
   - vendor/bootstrap/docs
+  - vendor/cache/ruby/2.4.0/gems/
   - "*/aspell-exceptions.txt"
   - "*/Makefile"
   - "*.dot"
-  - technical/country-codes/schema.png
-  - technical/json/guidance/aux
-  - technical/json/guidance/tmp
+  - normative-rules-guidance/country-codes/schema.png
+  - json/guidance/aux
+  - json/guidance/tmp
   - site-tools
 
 gems:
   - jekyll-mentions
+  - jekyll-redirect-from
 
 repository: NIEM/niem.github.io
 
@@ -28,6 +30,17 @@ niem_comments_link: mailto:niem-comments@lists.gatech.edu
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  # syntax_highlighter_opts:
+  #   block:
+  #     line_numbers: true
+  #     start_line: 1
+
+
 
 # Defaults
 defaults:

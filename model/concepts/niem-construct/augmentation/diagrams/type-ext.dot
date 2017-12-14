@@ -1,0 +1,37 @@
+digraph {
+
+  rankdir = BT
+  node [shape=rectangle style=filled fillcolor=lightyellow];
+  labelloc=b;
+  style="filled,solid";
+
+  subgraph cluster_release {
+    label = "NIEM Release";
+    style=filled;
+    fillcolor=paleturquoise;
+    nc [label="nc:PersonType"];
+
+    im [label="im:PersonType"];
+    j [label="j:PersonType" ];
+    mo [label="mo:PersonType"];
+
+  }
+  im -> nc [label="extends"];
+  j -> nc [label="  extends"];
+  mo -> nc [label="extends"];
+
+  subgraph cluster_iepd {
+    label = "IEPD";
+    labelloc=t;
+    style=filled;
+    fillcolor=thistle1;
+    rank = min;
+
+    ext [label="ext:PersonType"];
+
+  }
+  ext -> im [label=" extends?" style=dashed fontcolor=red color=red];
+  ext -> j [label="  extends?" style=dashed fontcolor=red color=red];
+  ext -> mo [label=" extends?" style=dashed fontcolor=red color=red];
+
+}

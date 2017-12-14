@@ -1,0 +1,33 @@
+
+digraph {
+
+  rankdir="TB";
+
+  nc [label="nc:PersonType" shape=rect style="filled" fillcolor="paleturquoise"];
+  augPoint [label="nc:PersonAugmentationPoint" style="filled" fillcolor="paleturquoise"]
+
+  augElt1 [label="ext:PersonFirstGradeTeacher" style="filled" fillcolor="palegoldenrod"]
+  augType1 [label="nc:PersonType" shape=rect style="filled" fillcolor="palegoldenrod"];
+
+  augElt2 [label="ext:PersonFavoriteCerealName" style="filled" fillcolor="palegoldenrod"]
+  augType2 [label="nc:TextType" shape=rect style="filled" fillcolor="palegoldenrod"];
+
+  augElt3 [label="ext:PersonPetQuantity" style="filled" fillcolor="palegoldenrod"]
+  augType3 [label="nc:QuantityType" shape=rect style="filled" fillcolor="palegoldenrod"];
+
+  nc -> augPoint [label="  contains"]
+
+  augElt1 -> augType1 [label="  type"]
+  augElt1 -> augPoint [label="  can replace" style=dashed]
+
+  augElt2 -> augType2 [label="  type"]
+  augElt2 -> augPoint [label="  can replace" style=dashed]
+
+  augElt3 -> augType3 [label="  type"]
+  augElt3 -> augPoint [label="  can replace" style=dashed]
+
+  { rank=source nc }
+  augPoint ->
+  { rank=same augElt1 augElt2 augElt3 } [style=invis]
+  { rank=same augType1 augType2 augType3 }
+}

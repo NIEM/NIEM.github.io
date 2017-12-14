@@ -1,0 +1,1 @@
+a function or responsibility of someone or something
