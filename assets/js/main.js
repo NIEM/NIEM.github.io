@@ -61,3 +61,9 @@ function copy(id) {
   // Remove it from the body
   document.body.removeChild(tmpNode);
 }
+
+
+(function() {
+  // document is ready
+  $("#page-wrap .container table").addClass("table table-bordered table-hover table-striped"); // make all interior tables have pretty classing
+})(jQuery);
