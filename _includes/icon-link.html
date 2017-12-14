@@ -34,7 +34,7 @@ Outputs a link with its title, icon and description.
   {% assign title = linkPage.title %}
   {% unless title %}
     {% capture title %}
-      {% include functions/getFilename.html url=link.url %}
+      {% include functions/getFolderName.html url=link.url %}
     {% endcapture %}
     {% assign title = title | strip %}
   {% endunless %}
@@ -56,13 +56,22 @@ Outputs a link with its title, icon and description.
 {% endcomment %}
 {% if link.url contains "http" %}
   {% unless link contains "http://127.0" %}
-    {% assign target = "target='_blank'" %}
+    {% assign external = true %}
   {% endunless %}
 {% elsif link.url contains "www" %}
-  {% assign target = "target='_blank'" %}
+  {% assign external = true %}
+{% elsif link.external == true %}
+  {% assign external = true %}
 {% endif %}
 
-<a {{ target }} href="{{ link.url | relative_url }}">
+{% if external == true %}
+  {% assign target = "target='_blank'" %}
+  {% assign url = link.url %}
+{% else %}
+  {% assign url = link.url | relative_url %}
+{% endif %}
+
+<a {{ target }} href="{{ url }}">
   <span class="icon fa-stack fa-2x">
     <i class="fa fa-square fa-stack-2x"></i>
     <i class="fa {{ icon }} fa-stack-1x"></i>
