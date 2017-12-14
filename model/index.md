@@ -1,6 +1,7 @@
 ---
   title: The Model
   icon: fa-sitemap
+  description: Learn about the NIEM data model, including the conceptual building blocks, the content, and releases.
   links:
     - url: /model/concepts/
     - url: /model/content/

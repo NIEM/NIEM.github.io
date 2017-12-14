@@ -1,7 +1,7 @@
 ---
   title: Local Terminology
   icon: fa-book
-  description: Local terminology is a word, phrase, abbreviation, acronym, jargon, or other string of characters defined via `appinfo:LocalTerm` in a NIEM schema because no definition or literal exists in a standard dictionary.
+  description: Local terminology is a word, phrase, abbreviation, acronym, jargon, or other string of characters specially documented in a namespace because no definition or literal exists in a standard dictionary.
   links:
     - url: /model/concepts/local-term/modeling/
     - url: /model/concepts/local-term/xml/

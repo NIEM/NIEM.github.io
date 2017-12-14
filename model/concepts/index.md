@@ -13,18 +13,21 @@
     group: Basics
   - url: /model/concepts/adapter/
     group: Advanced
-  - url: /model/concepts/association/
-    group: Advanced
   - url: /model/concepts/augmentation/
     group: Advanced
   - url: /model/concepts/local-term/
     group: Advanced
   - url: /model/concepts/metadata/
     group: Advanced
-  later:
+  todo: Additional sections
+  future:
   - url: /model/concepts/reference/
     group: Basics
+  - url: /model/concepts/association/
+    group: Advanced
   - url: /model/concepts/code-lists/
+    group: Advanced
+  - url: /model/concepts/representation/
     group: Advanced
   - url: /model/concepts/security-markup/
     group: Advanced

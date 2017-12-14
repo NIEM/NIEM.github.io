@@ -1,1 +1,0 @@
-a package of schemas and supporting artifacts

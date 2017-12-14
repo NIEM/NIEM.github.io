@@ -1,10 +1,12 @@
 ---
   title: Releases
   icon: fa-files-o
-  description: A package of schemas and supporting artifacts.
+  description: A release is a package of schemas and supporting artifacts.
+  links:
+  - url: /model/releases/history/
+  - url: /model/releases/artifacts/
+  todo: Release section
 ---
-
-A <strong>NIEM Release</strong> is a {% include_relative def.md %}
 
 - TOC
 {:toc}
