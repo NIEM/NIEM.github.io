@@ -4,9 +4,9 @@
   description: A domain modeler creates and manages the content in a NIEM domain.
   links:
   - url: /model/
-    external: true
+    newtab: true
   - url: /tips-and-tricks/domain-modeling-guide/
-    external: true
+    newtab: true
 ---
 
 {{ page.description}}

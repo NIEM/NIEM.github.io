@@ -4,9 +4,9 @@
   description: An IEPD developer designs and manages the specification of an information exchange.
   links:
   - url: /model/
-    external: true
+    newtab: true
   - url: /iepd-starter-kit/
-    external: true
+    newtab: true
   - url: https://www.niem.gov/techhub/iepd-resources
     title: TechHub IEPD Resources
     description: Resources for IEPD developers on our TechHub site.

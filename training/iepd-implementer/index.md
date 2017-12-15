@@ -4,9 +4,9 @@
   description: An IEPD implementer exchanges information based on the format, rules, and guidance provided by an existing IEPD specification.
   links:
   - url: /iepd-starter-kit/
-    external: true
+    newtab: true
   - url: /tips-and-tricks/
-    external: true
+    newtab: true
   - url: https://www.niem.gov/techhub/iepd-resources
     title: TechHub IEPD Resources
     description: Resources for IEPD developers on our TechHub site.
