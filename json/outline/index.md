@@ -1,12 +1,12 @@
 ---
-title: NIEM and JSON Overview
+title: NIEM and JSON site outline
 ---
 
 This page provides a map to the pages and topics covered by the NIEM JSON
 guidance.
 
 - [JSON home](..)
-    - [This page: Overview](.): A version of the outline, which links to all
+    - [This page: outline](.): A version of the outline, which links to all
       the pages in the JSON guidance, summarizes what they're about, and describes why
     - [data](../data): Overview of JSON Data
         - [data/simple](../data/simple): Simple flat JSON
