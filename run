@@ -1,16 +1,28 @@
 #!/usr/bin/env bash
 
+set -o nounset -o errexit -o pipefail
+unset CDPATH
+
 url="http://127.0.0.1:4000"
+
+root_dir=$(cd "$(dirname "$0")" && pwd)
+command_name=$root_dir/$(basename "$0")
+
+fail () {
+    printf "%s: Error: %s\n" "$command_name" "$*" >&2
+    exit 1
+}
+
 
 if (( $# == 0 ))
 then fail no args
 else case $1 in
          serve )
-             cd "$(dirname "$0")"
+             cd "$root_dir"
              bundle exec jekyll serve --incremental
              ;;
          build )
-             cd "$(dirname "$0")"
+             cd "$root_dir"
              rm -rf "$HOME"/tmp/site
              bundle exec jekyll build --verbose --destination "$HOME"/tmp/site
              ;;
@@ -24,6 +36,7 @@ else case $1 in
          valid-page )
              wget --span-hosts --no-config --no-verbose --spider --page-requisites "$url/json/overview"
              ;;
+         * ) fail Unknown command: "$1";;
                 
      esac
 fi
