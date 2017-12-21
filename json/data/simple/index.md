@@ -1,8 +1,56 @@
 ---
-title: Simple flat JSON data
+title: Simple, flat JSON data
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices interdum
-tincidunt. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci
-luctus et ultrices posuere cubilia Curae; Nulla ultricies ornare congue. Sed
-adipiscing elementum magna, vel fringilla orci vulputate ut.
+JSON data, at its simplest, can be a single object composed of fields, with each
+field having a simple value.
+
+Some terminology:
+
+* A *value* can be a simple value, or an array, or an object.
+
+* A simple value can be a string, a number, or a Boolean value `true` or
+  `false`, or `null`.
+
+    * A *string* is a quoted series of Unicode characters, and may contain escaped
+      special characters (e.g., backspace or newline) or hexadecimal codes for
+      characters.
+
+    * A *number* is an integer (e.g., 43, -271), a decimal value (e.g., 3.026,
+      -0.0328), or exponential notation (e.g., 2.3e14, 2.7E-12).
+      
+    * The values `true` and `false` are simple values, and refect their Boolean
+      meaning.
+      
+    * The value `null` can be used many different ways, but generally reflects
+      the usual concept of a *value for no value*.
+
+* An *array* is an ordered list of values, separated by commas. An array is enclosed in square brackets. For example: 
+
+    * An array with 3 values: `[ "one", 1, true ]`
+    
+    * An array with a single value: `[ true ]`
+    
+    * An array containing no values: `[ ]`
+    
+* An object is a set of `"name" : value` pairs. 
+
+    * The name of a pair is referred to as a *key*. The key of a pair is a *string*. 
+
+    * The value of a pair may be any type of value: a simple value, an array, or an object.
+    
+    * Pairs are separated by commas
+    
+    * For example:
+    
+    * An empty object: `{ }`
+    
+    * An object with a single pair: `{ "GivenName": "Morty" }`
+    
+    * An object with simple values:
+
+```text
+{% include_relative simple.json %}
+```
+
+
