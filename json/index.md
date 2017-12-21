@@ -1,5 +1,5 @@
 ---
-title: NIEM and JSON Overview
+title: JSON for NIEM
 ---
 
 The [Overview](overview) provides a map for the JSON pages, with a description of what the pages cover and why.
