@@ -8,19 +8,20 @@ guidance.
 - [JSON home](..)
     - [This page: outline](.): A version of the outline, which links to all
       the pages in the JSON guidance, summarizes what they're about, and describes why
+
     - [data](../data): Overview of JSON Data
-        - [data/simple](../data/simple): Simple flat JSON
-            - "FName" etc
-            - Order of keys not significant
-        - [data/complex](../data/complex): Complex and Hierarchical JSON data
-        - [data/concepts](../data/concepts): Concepts of JSON data; how we think about JSON data
-            - objects
-            - properties
-            - values
-            - objects
-            - text
-            - names
-            - arrays
+        - Simple flat JSON
+        - "FName" etc
+        - Order of keys not significant
+            - [data/complex](../data/complex): Complex and Hierarchical JSON data
+            - [data/concepts](../data/concepts): Concepts of JSON data; how we think about JSON data
+                - objects
+                - properties
+                - values
+                - objects
+                - text
+                - names
+                - arrays
 - [names](../names): Names for data
     - [names/reuse](../names/reuse): Reuse of names and definitions
     - [names/syntax](../names/syntax): Descriptive naming

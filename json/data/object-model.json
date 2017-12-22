@@ -1,0 +1,26 @@
+{
+  "cyfs:PersonOtherKinAssociation": {
+      "cyfs:SourcePerson": {
+      "nc:PersonAgeMeasure": {
+        "nc:MeasureIntegerValue": 14,
+        "nc:TimeUnitCode": "ANN"
+      },
+      "j:PersonHairColorCode": "BRO",
+      "nc:PersonName": {
+        "nc:PersonGivenName": "Mortimer",
+        "nc:PersonSurName": "Smith",
+        "nc:PersonNameSuffixText": "Sr",
+        "nc:PersonPreferredName": "Morty"
+      }
+    },
+    "cyfs:TargetPerson": {
+      "j:PersonHairColorCode": "GRY",
+      "nc:PersonName": {
+        "nc:PersonGivenName": "Rick",
+        "nc:PersonSurName": "Sanchez"
+      }
+    },
+    "cyfs:PersonOtherKinAssociationCategoryCode":
+      "Maternal Grandfather"
+  }
+}
