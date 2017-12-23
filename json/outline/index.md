@@ -13,21 +13,19 @@ guidance.
         - Simple flat JSON
         - "FName" etc
         - Order of keys not significant
-            - [data/complex](../data/complex): Complex and Hierarchical JSON data
-            - [data/concepts](../data/concepts): Concepts of JSON data; how we think about JSON data
-                - objects
-                - properties
-                - values
-                - objects
-                - text
-                - names
-                - arrays
+        - values:
+            - objects
+                - keys & values
+            - text
+            - names
+            - arrays
+            - numbers
+            - booleans & null
 - [names](../names): Names for data
     - [names/reuse](../names/reuse): Reuse of names and definitions
     - [names/syntax](../names/syntax): Descriptive naming
         - including names based on ISO-11179 
-    - [names/domains](../names/domains): Domain-based naming (NIEM domains)
-        - maybe this should be namespaces?
+    - [names/namespaces](../names/namespaces): Domain-based naming (NIEM domains)
 - [json-ld](../json-ld): JSON-LD
     - [json-ld/context](../json-ld/context): JSON-LD contexts for namespaces and short names
     - [json-ld/identifiers](../json-ld/identifiers): Identifiers in JSON-LD: use of `@id`, URIs, and names of individuals

@@ -39,17 +39,23 @@ Some terminology:
     * The name of a pair is referred to as a **key**. The key of a pair is a
       string.
 
-    * The value of a pair may be any type of value: a simple value, an array, or an object.
+    * The value of a pair may be any type of value: a simple value, an array, or
+      an object.
     
     * Pairs are separated by commas
     
+    * A given key should appear only once within an object.
+    
+    * The order of keys within an object should not be considered
+      significant. Keys may appear within an object in any order.
+    
     * For example:
     
-    * An empty object: `{ }`
+        * An empty object: `{ }`
     
-    * An object with a single pair: `{ "GivenName": "Morty" }`
+        * An object with a single pair: `{ "GivenName": "Morty" }`
     
-    * An object with simple values:
+        * An object with simple values:
 
 ```javascript
 {% include_relative simple.json %}
