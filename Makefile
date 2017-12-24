@@ -1,8 +1,7 @@
 
-no_trailing_newline_files = \
-  json/data/simple.json \
-  json/data/object-model.json \
-  json/names/short-names.json \
+no_trailing_newline_files_default := ${shell find json -type f -name '*.json'}
+
+no_trailing_newline_files = ${no_trailing_newline_files_default}
 
 targets = \
   ${no_trailing_newline_files:%=tmp/no-newline/%}

@@ -1,0 +1,13 @@
+{
+  "http://release.niem.gov/niem/domains/jxdm/6.0/#PersonHairColorCode": "BRO",
+  "http://release.niem.gov/niem/niem-core/4.0/#PersonAgeMeasure": {
+    "http://release.niem.gov/niem/niem-core/4.0/#MeasureIntegerValue": 14,
+    "http://release.niem.gov/niem/niem-core/4.0/#TimeUnitCode": "ANN"
+  },
+  "http://release.niem.gov/niem/niem-core/4.0/#PersonName": {
+    "http://release.niem.gov/niem/niem-core/4.0/#PersonGivenName": "Mortimer",
+    "http://release.niem.gov/niem/niem-core/4.0/#PersonNameSuffixText": "Sr",
+    "http://release.niem.gov/niem/niem-core/4.0/#PersonPreferredName": "Morty",
+    "http://release.niem.gov/niem/niem-core/4.0/#PersonSurName": "Smith"
+  }
+}
