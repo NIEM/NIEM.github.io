@@ -1,0 +1,13 @@
+{
+  "age": {
+    "value": 14,
+    "units": "ANN"
+  },
+  "hairColor": "BRO",
+  "name": {
+    "given": "Mortimer",
+    "surname": "Smith",
+    "suffix": "Sr",
+    "nickname": "Morty"
+  }
+}
