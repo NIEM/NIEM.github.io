@@ -30,7 +30,7 @@ This example can be seen at [the JSON-LD Playground](http://tinyurl.com/ycws5yz7
 
 The
 [result of expanding the JSON file using the context is provided as a separate page](../expanded).
-The page on [JSON-LD processing](processing) discusses expansion and compaction,
+The page on [JSON-LD processing](../processing) discusses expansion and compaction,
 two of the standard JSON-LD processing algorithms that can transform JSON-LD
 data in useful ways.
 

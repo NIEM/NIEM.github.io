@@ -22,9 +22,8 @@ XML. The short names can have used XML qualified name syntax (e.g.,
 (e.g., `vehicle`). These names are specified by [a JSON-LD context](context),
 which is a JSON document (or part of a JSON-LD document).
 
-JSON-LD provides a simple way of [expressing the identifier of an object, using a
-construct called `@id`](identifiers). These identifiers handle the
-identification and referencing that are handled by NIEM's `structures:id`,
-`structures:ref`, and `structures:uri` attrributes.
+JSON-LD provides a simple way of expressing the identifier of an object, using a
+construct called `@id`. These identifiers handle the identification and
+referencing that are handled by NIEM's `structures:id`, `structures:ref`, and
+`structures:uri` attrributes.
 
-NEXT: [NIEM content](models)

@@ -28,8 +28,11 @@ guidance.
     - [names/namespaces](../names/namespaces): Domain-based naming (NIEM domains)
 - [json-ld](../json-ld): JSON-LD
     - [json-ld/context](../json-ld/context): JSON-LD contexts for namespaces and short names
-    - [json-ld/identifiers](../json-ld/identifiers): Identifiers in JSON-LD: use of `@id`, URIs, and names of individuals
-    - [json-ld/syntax](../json-ld/syntax): Syntax of objects and arrays
+    - json-ld/identifiers: Identifiers in JSON-LD: use of `@id`, URIs, and names
+      of individuals
+    - json-ld/syntax: Syntax of objects and arrays: JSON-LD allows for flexible
+      representation, and compaction and expansion can create or suppress the
+      appearance of arrays and objects.
     - [json-ld/expanded](../json-ld/expanded): An example of JSON-LD expansion.
     - [json-ld/processing](../json-ld/processing): Processing JSON-LD using
       standard operations, including expansion, compaction, contexts, and
@@ -41,28 +44,28 @@ INSTANCES ONLY ABOVE HERE. NO CLASSES ABOVE HERE
 
 <hr/>
 
-- [models](../models): Content models
-    - [models/categories](../models/categories): Schemas and instances (JSON schema)
+- models: Content models
+    - models/categories: Schemas and instances (JSON schema)
         - IEPD vs IEP
         - categories vs. individuals
         - templates vs. instances
-    - [models/reuse](../models/reuse): Reusable data definitions
+    - models/reuse: Reusable data definitions
         - classes & properties
         - global data definitions
-    - [models/has-a](../models/has-a): Hierarchical models
+    - models/has-a: Hierarchical models
         - Hierarchical models 
         - JSON properties
         - Cardinality (minItems, maxItems)
-    - [models/releases](./models/releases): The NIEM model
+    - models/releases: The NIEM model
         - Spreadsheets
         - Movement
         - XML Schemas
         - The structures need to match what's in the NIEM model
         - Field values need to match what's in the NIEM model
 
-    - [subset](../subset): Strategies, justification, rationale for subsetting NIEM release
+    - subset: Strategies, justification, rationale for subsetting NIEM release
 
-        - [subset/attributes](../subset/attributes): Reusing attributes vs. omitting attributes
+        - subset/attributes: Reusing attributes vs. omitting attributes
             - rdf:value vs simple-typed properties
             - if reusing attributes on a complex type with simple content
                 - the property would have a value that's an object
@@ -80,30 +83,29 @@ NO JSON SCHEMA ABOVE HERE
 
 <hr/>
 
-- [json-schema](../json-schema)
+- json-schema
     - In-schema references (JSON identifiers)
         - not really references
         - URIs
     - Cross-schema references (JSON pointers)
-- [rdf-schema](../rdf-schema)
-- [xml](../xml)
+- rdf-schema
+- xml
     - NIEM JSON's relationship to XML
     - content from old guidance doc
     - XML details
     - XSD details
     - augmentations
-- [exchange-specification](../exchange-specification)
+- exchange-specification
     - How to specify an exchange for JSON
     - Determine business data content
     - Specify JSON representation of content
     - human readable documentation
     - JSON schema
     - Document the JSON information exchange
-- [advanced](../advanced)
+- advanced
     - Advanced NIEM concepts
     - Associations
     - Augmentations
     - Metadata
     - Roles
     - Advanced JSON LD
-    - putting `@context` in a HTTP header

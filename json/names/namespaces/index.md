@@ -19,7 +19,7 @@ are organized into namespaces. These bodies, and their namespaces, include:
 * Domains are communities of interest, each managing components addressing a
   specific topic or line of business. 
   
-[Core and domains, and their namespaces](../../model/content), are outline
+[Core and domains, and their namespaces](../../../model/content/), are outline
 elsewhere on this site.
 
 Each namespace has:

@@ -40,7 +40,7 @@ has a few common characteristics:
 
 * A **local name**, which is a meaningful term that concisely identifies what a
   thing is, what it is for, and what it might hold. NIEM has [a syntax
-  for local names](syntax).
+  for local names](../syntax).
   
 * A **definition**, which is a descriptive statement that provides a detailed
   meaning for a thing. The criteria of what makes a good definition are

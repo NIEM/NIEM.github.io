@@ -75,12 +75,12 @@ case $command in
         then printf 'Nothing running at %s\n' "$url" >&2
              exit 1
         fi
-        wget --nd --span-hosts --no-config --no-verbose --spider --recursive --page-requisites "$url"
+        wget --no-parent --no-directories --no-config --no-verbose --spider --recursive --page-requisites "$url/json/"
         ;;
     #HELP:  valid-page $local-path...: Identify orphaned refs on a single page
     valid-page )
         for path in "$@"
-        do wget --no-directories --span-hosts --no-config --no-verbose --spider --page-requisites "$url/$path"
+        do wget --no-parent --no-directories --span-hosts --no-config --no-verbose --spider --page-requisites "$url/$path"
         done
         ;;
     #HELP:  remove-trailing-newline $file...: remove trailing newline from file
