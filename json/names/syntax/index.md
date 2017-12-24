@@ -10,12 +10,12 @@ name are:
 
 * An **object class term** identifies a category of real-world things:
 
-      * For a property (an element or attribute), the object class term
-        identifies the cateogry of thing that can have this characteristic, or
-        which is the subject of this relationship.
+  * For a property (an element or attribute), the object class term
+    identifies the cateogry of thing that can have this characteristic, or
+    which is the subject of this relationship.
 
-      * For a type (simple or complex), the object class term identifies the
-        category of things that the type represents.
+  * For a type (simple or complex), the object class term identifies the
+    category of things that the type represents.
   
 * A **property term** describes a characteristic, relationship, or subpart of
   something.

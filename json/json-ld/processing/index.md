@@ -85,7 +85,7 @@ simplified form:
 }
 ```
 
-The data could be compacted against a context the provides a short local name
+The data could be compacted against a context that provides a short local name
 for the term:
 
 ```json
