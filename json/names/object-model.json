@@ -1,0 +1,13 @@
+{
+  "nc:PersonAgeMeasure": {
+    "nc:MeasureIntegerValue": 14,
+    "nc:TimeUnitCode": "ANN"
+  },
+  "j:PersonHairColorCode": "BRO",
+  "nc:PersonName": {
+    "nc:PersonGivenName": "Mortimer",
+    "nc:PersonSurName": "Smith",
+    "nc:PersonNameSuffixText": "Sr",
+    "nc:PersonPreferredName": "Morty"
+  }
+}

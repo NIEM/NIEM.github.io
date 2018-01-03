@@ -1,6 +1,8 @@
 ---
-title: NIEM and JSON Overview
+title: JSON for NIEM
 ---
+
+The [Outline](outline) provides a map for the JSON pages, with a description of what the pages cover and why.
 
 The NIEM Technical Architecture Committee (NTAC) is in the process of developing
 guidelines and specifications supporting the use of JSON with NIEM.

@@ -1,0 +1,13 @@
+{
+  "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+  "j": "http://release.niem.gov/niem/domains/jxdm/6.0/#",
+  "age": "nc:PersonAgeMeasure",
+  "value": "nc:MeasureIntegerValue",
+  "units": "nc:TimeUnitCode",
+  "hairColor": "j:PersonHairColorCode",
+  "name": "nc:PersonName",
+  "given": "nc:PersonGivenName",
+  "surname": "nc:PersonSurName",
+  "suffix": "nc:PersonNameSuffixText",
+  "nickname": "nc:PersonPreferredName"
+}

@@ -4,6 +4,7 @@ title: NIEM
 # more specific when things don't get exported
 # keep this listed sorted alphabetically
 exclude:
+  - /run
   - /Makefile
   - /CONTRIBUTING.md
   - README.md
