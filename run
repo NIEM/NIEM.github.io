@@ -1,0 +1,97 @@
+#!/usr/bin/env bash
+
+#HELP:COMMAND_NAME: run supporting utilities for the website
+
+set -o nounset -o errexit -o pipefail
+unset CDPATH
+
+root_dir=$(cd "$(dirname "$0")" && pwd)
+command_path=$root_dir/$(basename "$0")
+command_name=$(basename "$0")
+
+url="http://127.0.0.1:4000"
+
+#HELP:Options:
+
+print_help () {
+    (( $# == 0 )) || fail "function $FUNCNAME must have 0 arguments (got $#)"
+    sed -e "s/.*#""HELP://p;d" "$command_path" | m4 -P -DCOMMAND_NAME="$command_name"
+}
+
+#HELP:  --help | -h: Print this help
+opt_help () {
+    (( $# == 0 )) || fail "function $FUNCNAME must have 0 arguments (got $#)"
+    print_help
+    exit 0
+}
+
+fail () {
+    printf "%s: Error: %s\n" "$command_name" "$*" >&2
+    exit 1
+}
+
+OPTIND=1
+while getopts :h-: option
+do case $option in
+       h ) opt_help;;
+       - ) case "$OPTARG" in
+               help ) opt_help;;
+               help=* ) fail "Long option \"${OPTARG%%=*}\" has unexpected argument";;
+               * ) fail "Unknown long option \"${OPTARG%%=*}\"";;
+            esac;;
+        '?' ) fail "Unknown short option \"$OPTARG\"";;
+        : ) fail "Short option \"$OPTARG\" missing argument";;
+        * ) fail_assert "Bad state in getopts (OPTARG=\"$OPTARG\")";;
+   esac
+done
+shift $((OPTIND-1))
+
+#HELP:Commands:
+if (( $# == 0 ))
+then fail no args
+else command=$1
+     shift
+fi
+
+case $command in
+    #HELP:  help: Print this help
+    help )
+        opt_help
+        ;;
+    #HELP:  serve: Run a local Jekyll server
+    serve )
+        cd "$root_dir"
+        bundle exec jekyll serve
+        ;;
+    #HELP:  build: Build the Jekyll site to a temporary directory (~/tmp/site)
+    build )
+        cd "$root_dir"
+        rm -rf "$HOME"/tmp/site
+        bundle exec jekyll build --verbose --destination "$HOME"/tmp/site
+        ;;
+    #HELP:  valid: Identify orphaned hrefs
+    valid )
+        if ! curl --silent --output /dev/null "$url" 
+        then printf 'Nothing running at %s\n' "$url" >&2
+             exit 1
+        fi
+        wget --no-parent --no-directories --no-config --no-verbose --spider --recursive --page-requisites "$url/json/"
+        ;;
+    #HELP:  valid-page $local-path...: Identify orphaned refs on a single page
+    valid-page )
+        for path in "$@"
+        do wget --no-parent --no-directories --span-hosts --no-config --no-verbose --spider --page-requisites "$url/$path"
+        done
+        ;;
+    #HELP:  remove-trailing-newline $file...: remove trailing newline from file
+    remove-trailing-newline )
+        for file in "$@"
+        do
+            temp=$(mktemp)
+            awk '{q=p;p=$0}NR>1{print q}END{ORS = ""; print p}' "$file" > "$temp"
+            cat "$temp" > "$file"
+            rm -f "$temp"
+        done
+        ;;
+    * ) fail Unknown command: "$command";;
+esac

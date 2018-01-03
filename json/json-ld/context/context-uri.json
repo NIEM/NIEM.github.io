@@ -1,0 +1,4 @@
+{
+  "@context" : "https://example.org/my/context.json",
+  "nc:PersonPreferredName": "Morty"
+}
