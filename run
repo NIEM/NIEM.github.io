@@ -61,7 +61,7 @@ case $command in
     #HELP:  serve: Run a local Jekyll server
     serve )
         cd "$root_dir"
-        bundle exec jekyll serve
+        bundle exec jekyll serve --baseurl ''
         ;;
     #HELP:  build: Build the Jekyll site to a temporary directory (~/tmp/site)
     build )
