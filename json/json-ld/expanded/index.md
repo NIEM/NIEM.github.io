@@ -1,5 +1,6 @@
 ---
 title: "An example of JSON-LD expansion"
+short: JSON-LD expansion
 ---
 
 This example is available at [the JSON-LD Playground](http://tinyurl.com/ycws5yz7).

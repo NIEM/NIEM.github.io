@@ -1,5 +1,6 @@
 ---
 title: NIEM and JSON site outline
+short: Site outline
 ---
 
 This page provides a map to the pages and topics covered by the NIEM JSON

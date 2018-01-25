@@ -1,5 +1,6 @@
 ---
 title: Property (Attribute) Pattern
+short: Attribute Pattern
 ---
 
 ## Variable Replacement Table

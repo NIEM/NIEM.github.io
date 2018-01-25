@@ -28,22 +28,23 @@
   {% assign classes = classes | append: " active" %}
   {% assign icon = icons.current %}
 
-{% elsif include.url contains "http" or include.url contains "www" %}
+{% elsif include.url contains "http" or include.url contains "www" or include.external == true %}
   {% assign icon = icons.external %}
+  {% assign target = "target='_blank'" %}
 
 {% else %}
   {% assign icon = icons[include.class]  %}
 
 {% endif %}
 
-{% if icon == icons.external or include.external == true %}
+{% if include.url contains "http" %}
   {% assign url = include.url %}  
 {% else %}
   {% assign url = include.url | relative_url %}  
 {% endif %}
 
 
-<a href="{{ url }}" class=" {{ classes }}">
+<a {{ target }} href="{{ url }}" class=" {{ classes }}">
   <i class="fa {{ icon }} fa-fw"></i>
   <span class="content"> {{ title }}</span>
 </a>

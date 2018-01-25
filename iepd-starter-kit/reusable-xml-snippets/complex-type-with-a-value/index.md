@@ -1,5 +1,6 @@
 ---
 title: Complex Type with a Value Pattern
+short: Complex Type (value) Pattern
 ---
 
 ## Variable Replacement Table

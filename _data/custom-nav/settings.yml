@@ -6,9 +6,8 @@ sidebar:
   grandparent: fa-bars
   parent: fa-caret-down
   current: fa-caret-right
-  sub: fa-info
-  # sub: fa-arrow-circle-o-right
-  sibling: fa-caret-up
+  sub: fa-plus
+  sibling: fa-plus
   external: fa-share
 next:
   icon: fa-forward

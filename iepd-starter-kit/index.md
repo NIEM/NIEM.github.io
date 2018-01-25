@@ -6,14 +6,8 @@ links:
   - url: /iepd-starter-kit/conformance/
   - url: /iepd-starter-kit/terms/
   - url: /iepd-starter-kit/reusable-xml-snippets/
-  - url: https://github.com/NIEM/Template-IEPD/
-    title: IEPD Template
-    icon: fa-file-code-o
-    description: An template on GitHub that can be used as a starting point for creating a new IEPD.
-  - url: https://github.com/search?q=NIEM+IEPD&utf8=%E2%9C%93
-    title: Search IEPDs
-    icon: fa-file-text-o
-    description: Search GitHub for NIEM IEPDs.
+  - url: /iepd-starter-kit/iepd-template/
+  - url: /iepd-starter-kit/iepd-search/
 ---
 
 To use NIEM, you normally build an Information Exchange Package Documentation (IEPD). An IEPD defines a recurring message in XML and is built to satisfy information exchange business requirements. A developer builds an IEPD by incorporating the necessary NIEM core and domain model content. The [subset schema generation tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) can aid in the process of developing this NIEM subset. The developer may also extend that content as needed to account for information requirements that are not yet addressed in NIEM. The IEPD will ultimately define XML instance documents that will contain the information to be exchanged. Extended and new content developed in IEPD extension schema documents should be considered for future model updates. In turn, domain and core model updates will be harmonized and integrated into future NIEM releases. In this way, NIEM evolves with new and changing needs.

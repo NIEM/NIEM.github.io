@@ -5,6 +5,8 @@ ndr-href: https://reference.niem.gov/niem/specification/naming-and-design-rules/
 json-ld-api-href: http://www.w3.org/TR/json-ld-api/
 json-ld-href: http://www.w3.org/TR/json-ld/
 json-ld-name: "JSON-LD 1.0"
+short: Guidance
+external: true
 ---
 
 ## Abstract

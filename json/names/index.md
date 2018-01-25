@@ -1,5 +1,9 @@
 ---
 title: Names for JSON data
+links:
+  - url: /json/names/reuse/
+  - url: /json/names/syntax/
+  - url: /json/names/namespaces/
 ---
 
 An object within a JSON document is composed of keys with corresponding values,

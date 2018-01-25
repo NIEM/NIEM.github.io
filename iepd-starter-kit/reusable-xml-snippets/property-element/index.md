@@ -1,5 +1,6 @@
 ---
 title: Property (Element) Pattern
+short: Element Pattern
 ---
 
 ## Variable Replacement Table

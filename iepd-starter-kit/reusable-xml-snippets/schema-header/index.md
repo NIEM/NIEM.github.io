@@ -1,5 +1,6 @@
 ---
-title: Schema Header
+title: Schema Header Pattern
+short: Schema Pattern
 ---
 
 ## Variable Replacement Table

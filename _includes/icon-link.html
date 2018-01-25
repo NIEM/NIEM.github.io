@@ -23,7 +23,11 @@ Outputs a link with its title, icon and description.
 {% unless icon %}
   {% assign icon = linkPage.icon %}
   {% unless icon %}
-    {% assign icon = "fa-star" %}
+    {% if link.url contains "http" %}
+      {% assign icon = "fa-share" %}
+    {% else %}
+      {% assign icon = "fa-cog" %}
+    {% endif %}
   {% endunless %}
 {% endunless %}
 

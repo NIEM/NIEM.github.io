@@ -1,5 +1,8 @@
 ---
 title: Movement Overview
+links:
+  - url: /movement/quick-user-guide/
+  - url: /movement/json-schema-output/
 ---
 
 <div class="introducing-movement">

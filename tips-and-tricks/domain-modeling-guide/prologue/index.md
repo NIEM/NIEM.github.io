@@ -1,5 +1,5 @@
 ---
-title:  1.0  Prologue
+title:  Prologue
 ---
 
 ### 1.1 Background
