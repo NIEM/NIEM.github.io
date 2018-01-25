@@ -33,9 +33,6 @@
     group: Advanced
 ---
 
-- TOC
-{:toc}
-
 {{ page.description }}
 
 [Click here](overview) for a one-page overview of each of the major concepts; otherwise continue on to go through the concepts one-by-one - or jump directly to the one you need more information about.

@@ -2,10 +2,9 @@
   title: Content
   icon: fa-sitemap
   description: A high-level introduction to the content in the model.
+  links:
+  - url: /model/content/codes/
 ---
-
-- TOC
-{:toc}
 
 ## Overview
 
@@ -20,7 +19,3 @@ A good way to begin is to browse through the lists below to get a very high leve
 ## Domains
 
 {% include_relative domain-summary.md %}
-
-## Code tables
-
-[Click here](codes/index.md) for the list of namespaces representing code standards.

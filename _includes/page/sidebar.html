@@ -43,7 +43,12 @@
 
     {% comment %} List Current Page and Children {% endcomment %}
     {% include page/sidebar-link.html url=page.url class="current" currentURL=page.url %}
+
+
+    {% comment %} TODO: Do not hard code the exclusion {% endcomment %}
+    {% if thisPage.url != "/model/content/codes/" %}
     {% include page/sidebar-list.html url=page.url class="sub" %}
+    {% endif %}
 
   {% else %}
     
