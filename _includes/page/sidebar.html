@@ -46,14 +46,16 @@
 
 
     {% comment %} TODO: Do not hard code the exclusion {% endcomment %}
-    {% if thisPage.url != "/model/content/codes/" %}
-    {% include page/sidebar-list.html url=page.url class="sub" %}
-    {% endif %}
+    {% unless thisPage.url contains "/model/content/codes/" %}
+      {% include page/sidebar-list.html url=page.url class="sub" %}
+    {% endunless %}
 
   {% else %}
     
     {% comment %} List Current Page with Siblings {% endcomment %}
-    {% include page/sidebar-list.html url=parentURL class="sibling" currentURL=page.url%}
+    {% unless thisPage.url contains "/model/content/codes/" %}
+      {% include page/sidebar-list.html url=parentURL class="sibling" currentURL=page.url%}
+    {% endunless %}
 
   {% endif %}
 
