@@ -1,5 +1,7 @@
 ---
 title: IEPD Series
+icon: fa-graduation-cap
+description: Examples designed to demonstrate various unique aspects of the NIEM technical framework.
 ---
 
 {% capture github_link %}{{ site.superhero_iepd_path }}/tree/master{% endcapture %}

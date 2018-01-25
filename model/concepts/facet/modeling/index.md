@@ -1,0 +1,31 @@
+---
+  title: Modeling Facets
+  short: Modeling
+---
+
+- TOC
+{:toc}
+
+## Basics
+
+Facets do not exist independently.  They are defined as part of the simple type that they constrain.
+
+- Each facet will have a kind.
+- Each facet will have a value.
+- Enumeration facets must have a definition.
+
+{: .example}
+- A simple type that defines month codes will declare 12 facets:
+- The facet kinds will each be "enumeration".
+- The facet values will be "JAN", "FEB", "MAR", etc.
+- The facet definitions will be "January", "February", "March", etc.
+
+{: .tip}
+> Keep in mind that overly-restrictive facets limit reusability, particularly in NIEM release schemas.  For example, facets that restrict a string to the number of characters allowed in a corresponding database field may limit other users with different systems.
+
+## Simple type names
+
+For any simple type that declares a facet...
+
+- If the type contains enumerations, the name of the type must end with `CodeSimpleType`.
+- All other simple types must have names that end with with `SimpleType`.

@@ -29,6 +29,9 @@ gems:
 
 repository: NIEM/niem.github.io
 
+# Uncomment this to view as a forked repo (e.g., http://$user.github.io/NIEM.github.io/).
+# baseurl: "NIEM.github.io"
+
 # Site data
 superhero_iepd_path: https://github.com/NIEM/Developer-Network-IEPD-Series--SuperHero
 submit_feedback_link: https://github.com/NIEM/NIEM.github.io/issues

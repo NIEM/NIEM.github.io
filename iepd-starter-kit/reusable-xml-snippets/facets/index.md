@@ -1,5 +1,5 @@
 ---
-title: Facets
+title: Facet Pattern
 ---
 
 A facet constrains the range of allowable values for simple content.

@@ -1,5 +1,6 @@
 ---
 title: Abstract and Substitutable Elements Pattern
+short: Abstract and Substitution Pattern
 ---
 
 ## Variable Replacement Table

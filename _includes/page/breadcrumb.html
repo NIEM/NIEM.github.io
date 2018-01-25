@@ -29,7 +29,7 @@
           {% if html_page_url == html_page_url_processed %}
             {% assign html_page_url = html_page_url | replace: '/index.html', '/' %}
           {% endif %}
-          <li><a href="{{ site.baseurl }}{{ html_page_url }}">{{ html_page_title }}</a></li>
+          <li><a href="{{ html_page_url | relative_url }}">{{ html_page_title }}</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}

@@ -1,0 +1,106 @@
+
+{% comment %}
+  ***
+  For the given "url"...
+
+  (0) Return current link if url is at a top-level subdirectory
+      (final break for recursion in #3)
+  (1) Check for next info explicitly set
+  (2) Else check the corresponding index page for a list of links
+  (3) Else go to the parent and get the next link after the current index page
+
+  If found, returns "url,title" (cannot pass back an array or object)
+  ***
+{% endcomment %}
+
+{% assign n_url = include.url %}
+{% assign n_thisPage = site.pages | where: "url", n_url | first %}
+
+
+{% comment %}
+  (0) Return current link if url is at a top-level subdirectory
+{% endcomment %}
+
+{% assign n_path = n_url | split: "/" %}
+{% if n_path.size <= 1 %}
+  {% assign n_nextURL = n_url %}
+{% endif %}
+
+
+{% comment %}
+  (1) Check for next info explicitly set
+{% endcomment %}
+
+{% unless n_nextURL %}
+  {% if n_thisPage.next %}
+    {% assign n_nextURL = n_thisPage.next.url %}
+    {% assign n_nextTitle = n_thisPage.next.title %}
+  {% endif %}
+{% endunless %}
+
+
+{% comment %}
+  (2) Else check the corresponding index page for a list of links
+{% endcomment %}
+
+{% assign n_indexPage = site.pages | where: "url", n_url | first %}
+
+{% unless n_nextURL %}
+
+  {% if n_indexPageURL == n_url %}
+    {% assign n_nextURL = n_indexPage.links[0].url %}
+    {% assign n_nextTitle = n_indexPage.links[0].title %}
+
+  {% else %}
+
+    {% capture n_nextURL %}
+      {% include functions/getAdjacentLinkURL.html
+            url=n_url links=n_indexPage.links increment=1 %}
+    {% endcapture %}
+    {% assign n_nextURL = n_nextURL | strip %}
+
+  {% endif %}
+{% endunless %}
+
+
+{% comment %}
+  (3) Else go to the parent and get the next link after the current index page
+{% endcomment %}
+
+{% unless n_nextURL %}
+  {% capture n_parentPageURL %}
+    {% include functions/getParentURL.html url=n_indexPageURL %}
+  {% endcapture %}
+  {% assign n_parentPageURL = n_parentPageURL | strip %}
+  {% assign n_parentPage = site.pages | where: "url", n_parentPageURL | first %}
+  
+[INDEX URL {{n_indexPageURL}}]
+[PARENT URL {{n_parentPageURL}}]
+[PARENT Title {{n_parentPage.title}}]
+[PARENT Links size {{n_parentPage.links.size}}]
+
+
+  {% capture n_nextURL %}
+    {% include functions/getAdjacentLinkURL.html
+          url=n_indexPageURL links=n_parentPage.links increment=1 %}
+  {% endcapture %}
+  {% assign n_nextURL = n_nextURL | strip %}
+
+{% endunless %}
+
+
+{% comment %}
+  Grab the title if not yet set
+{% endcomment %}
+
+{% if n_nextURL %}
+  {% unless n_nextTitle %}
+    {% capture n_nextTitle %}
+      {% include functions/getLinkTitle.html url=n_nextURL %}
+    {% endcapture %}
+    {% assign n_nextTitle = n_nextTitle | strip %}
+  {% endunless %}
+{% endif %}
+
+
+{{ n_nextURL }},{{ n_nextTitle }}

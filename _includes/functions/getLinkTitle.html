@@ -1,0 +1,76 @@
+
+{% comment %}
+  ***
+  Calculates the title for the given "url".
+
+  (1) Check the url page for front matter "short" variable
+  (2) Else check that url page for front matter "title" variable
+  (3) Else check the url to see if it is the home page and assign "Home"
+  (4) Else check the parent index page for "short" (in case of external links)
+  (5) Else check the parent index page for "title" (in case of external links)
+  (6) Else return the last subfolder of the URL.
+  ***
+{% endcomment %}
+
+
+{% comment %}
+  (1) Check the url page for front matter "short" variable
+{% endcomment %}
+
+{% assign lt_thisPage = site.pages | where: "url", include.url | first %}
+{% assign lt_title = lt_thisPage.short %}
+
+
+{% comment %}
+  (2) Else check that url page for front matter "title" variable
+{% endcomment %}
+
+{% unless lt_title %}
+  {% assign lt_title = lt_thisPage.title %}
+{% endunless %}
+
+
+{% comment %}
+  (3) Check the url to see if it is the home page and assign "Home"
+{% endcomment %}
+
+{% unless lt_title %}
+  {% if include.url == "/" %}
+    {% assign lt_title = "Home" %}
+  {% endif %}
+{% endunless %}
+
+
+{% comment %}
+  (4) Else check the parent index page for "short" (in case of external links)
+  (5) Else check the parent index page for "title" (in case of external links)
+{% endcomment %}
+
+{% unless lt_title %}
+  {% capture lt_parentURL %}
+    {% include functions/getParentURL.html url=include.url %}
+  {% endcapture %}
+  {% assign lt_parentURL = lt_parentURL | strip %}
+  {% assign lt_parentPage = site.pages | where: "url", lt_parentURL | first %}
+
+  {% assign lt_title = lt_parentPage.short %}
+
+  {% unless lt_title %}
+    {% assign lt_title = lt_parentPage.title %}  
+  {% endunless %}
+
+{% endunless %}
+
+
+{% comment %}
+  (6) Else return the last subfolder of the URL.
+{% endcomment %}
+
+{% unless lt_title %}
+  {% capture lt_folderName %}
+    {% include functions/getFolderName.html url=urlCopy %}
+  {% endcapture %}
+  {% assign lt_title = lt_folderName | strip %}
+{% endunless %}
+
+{{ lt_title }}

@@ -1,0 +1,22 @@
+
+digraph {
+
+  rankdir="TB";
+
+  nc [label="nc:PersonType" shape=rect style="filled" fillcolor="paleturquoise"];
+  augPoint [label="nc:PersonAugmentationPoint" style="filled" fillcolor="paleturquoise"]
+
+  jAugElt [label="j:PersonAugmentation" style="filled" fillcolor="thistle1"]
+  mAugElt [label="m:PersonAugmentation" style="filled" fillcolor="darkseagreen2"]
+  extAugElt [label="ext:PersonAugmentation" style="filled" fillcolor="palegoldenrod"]
+
+  nc -> augPoint [label="  contains"]
+
+  jAugElt -> augPoint [label="  can replace" style=dashed]
+  mAugElt -> augPoint [label="  can replace" style=dashed]
+  extAugElt -> augPoint [label="  can replace" style=dashed]
+
+  { rank=source nc }
+  augPoint ->
+  { rank=same jAugElt mAugElt extAugElt } [style=invis]
+}

@@ -1,0 +1,67 @@
+
+// Styles for boxes like blockquotes, examples, notes, tips
+
+.box {
+  font-size: 15px;
+  // border-left: solid 5px $turquoise;
+  border: solid 1px rgba($turquoise, 0.3);
+  background: rgba($pale-turquoise, 0.15);
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 0 0 20px;
+}
+
+.tip, .example, .note {
+  @extend .box;
+}
+
+ul.tip, ul.example, ul.note, ul.box {
+  li {
+    margin-left: 30px;
+  }
+}
+
+.example::before {
+  content: "Example ";
+}
+
+.tip::before {
+  content: "Tip ";
+}
+
+.note::before {
+  content: "Note ";
+}
+
+.note, .tip {
+  // border-color: blanchedalmond;
+  // background: cornsilk;
+  
+  // border-color: peachpuff;
+  // background: papayawhip;
+
+  border-color: blanchedalmond;
+  background: rgba(papayawhip, 0.5);
+}
+
+blockquote::before, ul::before, p::before {
+  font-weight: bolder;
+}
+
+.valid {
+  border: 0;
+  border-left: solid 5px seagreen;
+  background: rgba(143, 230, 172, 0.2);
+  ::before {
+    content: "Valid example ";
+  }
+}
+
+.invalid {
+  border: 0;
+  border-left: solid 5px crimson;
+  background: #fce3e3; 
+  ::before {
+    content: "Invalid example ";
+  }
+}

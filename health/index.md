@@ -1,5 +1,7 @@
 ---
-title: Health Community Activities 
+title: Health Community Activities
+links:
+  - url: /health/10-oct-2017-meeting-minutes/
 ---
 >**Join to hear more about this collaborative effort**
 >

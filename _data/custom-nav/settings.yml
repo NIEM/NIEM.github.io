@@ -1,0 +1,15 @@
+exclude:
+  images
+  assets
+  examples
+sidebar:
+  grandparent: fa-bars
+  parent: fa-caret-down
+  current: fa-caret-right
+  sub: fa-plus
+  sibling: fa-plus
+  external: fa-share
+next:
+  icon: fa-forward
+previous:
+  icon: fa-backward

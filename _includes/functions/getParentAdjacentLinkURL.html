@@ -1,0 +1,35 @@
+
+{% comment %}
+  ***
+  Given a "url" and an "increment" (1 or -1), grabs the url's parent and 
+  returns the link before or after the url.  Recurses if not found.
+  ***
+{% endcomment %}
+
+{% assign path = include.url | split: "/" %}
+{% if path.size >= 1 %}
+  
+  {% capture parentURL %}
+    {% include functions/getParentURL.html url=thisPage.url %}
+  {% endcapture %}
+  {% assign parentURL = parentURL | strip %}
+
+  {% capture adjacentLink %}
+    {% comment %} Look for an adjacent link on the parent page {% endcomment %}
+    {% include functions/getAdjacentLinkURL.html 
+          url=parentURL increment=include.increment matchURL=include.url %}
+  {% endcapture %}
+  {% assign adjacentLink = adjacentLink | strip %}
+
+  {% if adjacentLink.size > 0 %}
+    {% comment %} Link found {% endcomment %}
+    {{ adjacentLink }}
+    
+  {% else %}
+    {% comment %} Link not found, recurse up to its parent {% endcomment %}
+    {% include functions/getParentAdjacentLinkURL.html
+          url=parentURL increment=include.increment %}
+    
+  {% endif %}
+
+{% endif %}

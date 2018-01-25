@@ -1,1 +1,0 @@
-a complex relationship between objects, with optional additional characteristics

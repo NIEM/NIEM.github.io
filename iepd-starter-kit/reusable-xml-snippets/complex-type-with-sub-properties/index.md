@@ -1,5 +1,6 @@
 ---
 title: Complex Type with Sub-Properties
+short: Complex Type (sub-properties) Pattern
 ---
 
 ## Variable Replacement Table

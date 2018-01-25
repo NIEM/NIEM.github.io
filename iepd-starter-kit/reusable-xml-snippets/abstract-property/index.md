@@ -1,5 +1,6 @@
 ---
-title: Abstract Property
+title: Abstract Property Pattern
+short: Abstract Pattern
 ---
 
 **Patterns** provide a basic framework for developers to quickly build NIEM conformant schema snippets for NIEM modeling concepts. A *Pattern* can be used to create a fully functional instance of the concept that can be further customized as required.  The pattern contains replacement variables, designated by `{$Variable}`, which should be replaced with an appropriate value as per the **Replace With** column of the **Variable Replacement Table** below. Unless a variable is designated as *(Required)* in the **Default Value** column, the default value for the variable may be used when a specific value is not desired. Each variable is also governed by a set of NDR rules. To view the rules applicable to the variable, simply click the link(s) in the **Related NDR Rules** column. To use the pattern:

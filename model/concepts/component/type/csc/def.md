@@ -1,1 +1,0 @@
-a structure that contains a simple value and that may optionally contain attributes

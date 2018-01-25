@@ -1,1 +1,0 @@
-a structure that represents a simple value only

@@ -19,12 +19,52 @@
   </div>
 </div>
 
-<script src="{{ site.baseurl }}/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<script src="{{ '/vendor/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+{% if page.url contains "model/" %}
+  <script type="text/javascript">
+    // Find the TOC and active navigation item
+    let $toc = $("#markdown-toc");
+    let $activeNav = $("div.section-nav a.active");
+
+    // Create a new nav wrapper for the TOC ul
+    let $nav = $("<nav id='page-nav'></nav>");
+    $nav.append($toc);
+
+    // Move TOC to navbar under the active element
+    $toc.addClass("nav list-group-item");
+    $nav.insertAfter($activeNav);
+
+    // Add scrollspy and adjust offset to account for top menu bar
+    // allowing for a few lines above from the previous section
+    $("body").scrollspy({
+      target: "#page-nav",
+      offset: 150
+    });
+
+  </script>
+{% endif %}
+
 
 <script type="text/javascript">
-  $("table").addClass("table");
-  $("table").addClass("table-bordered");
-  $("table").addClass("table-hover");
-  $("table").addClass("table-striped");
+
+  // Add bootstrap classes for table formatting
+  $("table").addClass("table table-bordered table-hover table-striped");
+
+  // Add a new copy button to each code block
+  $(".highlight").each( function() {
+    
+    // New copy button and event handler (local copy-to-clipboard function)
+    let $copyBtn = $(`<button class="clipboard"">Copy</button>`).click( copyToClipboard );
+
+    // New div for copy button (helps for styling)
+    let $copyDiv = $(`<div class="clipboard">`);
+    $copyDiv.append($copyBtn);
+
+    // Add div before the code block
+    $(this).before( $copyDiv );
+  });
+
 </script>
+

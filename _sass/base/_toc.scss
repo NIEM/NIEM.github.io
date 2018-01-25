@@ -1,18 +1,4 @@
 
-// Adding 'Contents' headline to the TOC
-#markdown-toc::before {
-  content: "Contents";
-  font-weight: bold;
-}
-
 #markdown-toc li {
-  margin-left: 15px;
-}
-
-#markdown-toc {
-  border: 1px solid #aaa;
-  padding: 2em;
-  // list-style: decimal;
-  // display: inline-block;
-  background-color: $white-smoke;
+  margin-left: 5px;
 }

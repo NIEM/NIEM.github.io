@@ -1,1 +1,0 @@
-a schema that defines properties and types, managed by a common authoritative source

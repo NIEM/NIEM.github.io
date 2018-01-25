@@ -1,9 +1,30 @@
 ---
 title: Reusable XML Snippets
+icon: fa-database
+description: Reusable XML snippets of the various NIEM XML components. These snippets could also be called patterns or templates.
+links:
+- url: /iepd-starter-kit/reusable-xml-snippets/schema-header/
+- url: /iepd-starter-kit/reusable-xml-snippets/property-element/
+- url: /iepd-starter-kit/reusable-xml-snippets/property-attribute/
+- url: /iepd-starter-kit/reusable-xml-snippets/complex-type-with-sub-properties/
+- url: /iepd-starter-kit/reusable-xml-snippets/complex-type-with-a-value/
+- url: /iepd-starter-kit/reusable-xml-snippets/simple-type/
+- url: /iepd-starter-kit/reusable-xml-snippets/abstract-and-substitutable/
+- url: /iepd-starter-kit/reusable-xml-snippets/code-set-basic/
+- url: /iepd-starter-kit/reusable-xml-snippets/code-set-substitution/
+- url: /iepd-starter-kit/reusable-xml-snippets/facets/
+- url: /iepd-starter-kit/reusable-xml-snippets/association/
+- url: /iepd-starter-kit/reusable-xml-snippets/augmentation/
+- url: /iepd-starter-kit/reusable-xml-snippets/augmentation-points/
+- url: /iepd-starter-kit/reusable-xml-snippets/metadata/
+- url: /iepd-starter-kit/reusable-xml-snippets/role/
+- url: /iepd-starter-kit/reusable-xml-snippets/external-standards-and-adapters/
+- url: /iepd-starter-kit/reusable-xml-snippets/representation-terms-and-phrases/
 ---
 Contained below are reusable XML snippets of the various NIEM XML components. These snippets could also be called patterns or templates. They are available for NIEM developers to cut and paste directly into their integrated development environment to save development time. Examples from the “Hello World” IEPD series are provided so developers can see an actual worked example.
 
 <div class="col-md-6" markdown="1">
+
 ### Schema
 * [Header Info](./schema-header/) (namespace prefixes, imports, local terminology, etc.)
 
@@ -19,6 +40,7 @@ Contained below are reusable XML snippets of the various NIEM XML components. Th
 </div>
 
 <div class="col-md-6" markdown="1">
+
 ### Code Sets
 * [Code Set (basic)](./code-set-basic/ "Pattern/code-set-basic")
 * [Code Set with Substitution Group](./code-set-substitution/ "Pattern/code-set-substitution")

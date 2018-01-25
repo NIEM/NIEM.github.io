@@ -1,0 +1,31 @@
+
+{% comment %}
+  ***
+  Given a "url", outputs the contents from the file.
+
+  For each link, outputs the corresponding intro.md page.
+  ***
+{% endcomment %}
+
+{% assign thisPage = site.pages | where: "url", include.url | first %}
+{% assign links = thisPage.links %}
+{% assign headerLevel = "h2" %}
+
+{% if include.group %}
+  {% assign links = links | where: "group", include.group %}
+  {% assign headerLevel = "h3" %}
+{% endif %}
+
+{% for link in links %}
+
+  {% assign linkPage = site.pages | where: "url", link.url | first %}
+
+  {% assign file = link.url | append: "intro/" %}
+  {% assign linkIntro = site.pages | where: "url", file | first %}
+
+  <{{ headerLevel }}>{{ linkPage.title }}</{{ headerLevel }}>
+  {{ linkIntro.content }}
+
+  [more...]({{link.url}})
+
+{% endfor %}

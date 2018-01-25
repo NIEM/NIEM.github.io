@@ -1,5 +1,7 @@
 ---
 title: Terms
+icon: fa-file-code-o
+description: A list of terms with links to their source definitions across the following technical specifications.
 top:
   <div class="top boundary">
     <a href="#page-wrap">

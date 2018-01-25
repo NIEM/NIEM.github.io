@@ -1,1 +1,0 @@
-a representation of an idea; a field with meaningful semantics

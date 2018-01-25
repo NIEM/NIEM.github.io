@@ -1,24 +1,32 @@
 html,
 body {
   height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
 }
 
 #page-wrap {
   padding-top: $navbar-height + $usa-height;
-  padding-bottom: $navbar-height;
+  padding-bottom: $navbar-height + 50px;
   min-height: 100%;
   position: relative;
 }
 
 code {
-	font-family: "Courier New";
+  font-family: "Courier New";
+  font-size: 15px;
   color: #000;
-  background-color: #fff;
-  border-radius: 0px;
+  // background-color: #fff;
+  background-color: inherit;
+  border-radius: 1px;
 }
 
 blockquote {
   font-size: 15px;
+  border: 0;
+  border-left: solid 5px rgba($turquoise, 0.5);
+  background: rgba($pale-turquoise, 0.15);
 }
 
 .table-auto {
@@ -26,7 +34,7 @@ blockquote {
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: rgba(101, 196, 203, 0.5); // 50% of $pale-turquoise
+  background-color: rgba($pale-turquoise, 0.4);
 }
 
 ul {
@@ -38,6 +46,7 @@ img {
   max-width: 100%;
 }
 
+// Fixes link targets disappearing under the navbar
 :target:before {
   content: "";
   display: block;
@@ -51,11 +60,7 @@ div[class^="col"] img {
 }
 
 table {
-  margin: 20px auto;
-}
-
-div.btn-copy {
-  margin-top: -10px;
+  margin: 20px 0;
 }
 
 .videoWrapper {
