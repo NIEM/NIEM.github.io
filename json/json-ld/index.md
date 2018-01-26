@@ -31,3 +31,4 @@ construct called `@id`. These identifiers handle the identification and
 referencing that are handled by NIEM's `structures:id`, `structures:ref`, and
 `structures:uri` attrributes.
 
+{% include icon-list.html links=page.links %}

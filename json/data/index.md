@@ -2,6 +2,12 @@
 title: Plain JSON data
 ---
 
+JSON is defined by [RFC 4627](http://www.ietf.org/rfc/rfc4627.txt):
+
+> JavaScript Object Notation (JSON) is a lightweight, text-based,
+language-independent data interchange format.  JSON defines a small set of
+formatting rules for the portable representation of structured data.
+
 JSON data, at its simplest, can be a single object composed of fields, with each
 field having a simple value. 
 
@@ -67,3 +73,5 @@ object, possibly containing other objects. For example:
 ```json
 {% include_relative object-model.json %}
 ```
+
+{% include icon-list.html links=page.links %}

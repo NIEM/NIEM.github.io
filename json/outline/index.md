@@ -6,22 +6,24 @@ short: Site outline
 This page provides a map to the pages and topics covered by the NIEM JSON
 guidance.
 
-- [JSON home](..)
-    - [This page: outline](.): A version of the outline, which links to all
-      the pages in the JSON guidance, summarizes what they're about, and describes why
+- [JSON home](..): A starting page for NIEM JSON
 
-    - [data](../data): Overview of JSON Data
-        - Simple flat JSON
-        - "FName" etc
-        - Order of keys not significant
-        - values:
-            - objects
-                - keys & values
-            - text
-            - names
-            - arrays
-            - numbers
-            - booleans & null
+- [This page: outline](.): A version of the outline, which links to all
+  the pages in the JSON guidance, summarizes what they're about, and describes why
+
+- [data](../data): Overview of JSON Data
+    - Simple flat JSON
+    - "FName" etc
+    - Order of keys not significant
+    - values:
+        - objects
+            - keys & values
+        - text
+        - names
+        - arrays
+        - numbers
+        - booleans & null
+
 - [names](../names): Names for data
     - [names/reuse](../names/reuse): Reuse of names and definitions
     - [names/syntax](../names/syntax): Descriptive naming

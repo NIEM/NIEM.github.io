@@ -28,4 +28,4 @@ NIEM names are [grouped by namespaces](namespaces), distinguishing names that wo
 be ambiguous or conflicting, and identifying names from specific versions of
 vocabularies.
 
-Next: [JSON-LD](../json-ld)
+{% include icon-list.html links=page.links %}
