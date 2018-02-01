@@ -1,0 +1,44 @@
+{
+	"schedulerequest:GetCourtScheduleRequestMessage": {
+		"ecf:ParticipantID": {
+			"nc:IdentificationID": "10"
+		},
+		"ecf:SendingMDELocationID": {
+			"nc:IdentificationID": "https://efilingprovider.com:8000"
+		},
+		"ecf:ServiceInteractionProfileCode": "urn:oasis:names:tc:legalxml-courtfiling:schema:json:JsonMessaging-5.0",
+		"j:CaseCourt": {
+			"nc:OrganizationIdentification": {
+				"nc:IdentificationID": "10"
+			},
+			"j:CourtName": "Circuit Court"
+		},
+		"j:Judge": {
+			"nc:RoleOfPerson": {
+				"nc:PersonName": {
+					"nc:PersonFullName": "John Smith"
+				}
+			},
+			"j:JudicialOfficialRegistrationIdentification": {
+				"nc:IdentificationID": "100"
+			}
+		},
+		"ecf:CaseTypeCode": "civil",
+		"ecf:CourtEventTypeCode": "hearing",
+		"nc:DocumentIdentification": [
+			{
+				"nc:IdentificationID": "001-f786e6d6-558c-448f-b249-067002d716a0"
+			}
+		],
+		"nc:DocumentPostDate": {
+		},
+		"nc:DateRange": {
+			"nc:StartDate": {
+				"nc:Date": "2019-01-01"
+			},
+			"nc:EndDate": {
+				"nc:Date": "2019-01-03"
+			}
+		}
+	}
+}
