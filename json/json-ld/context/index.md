@@ -26,16 +26,15 @@ This may be interpreted against the following JSON-LD context:
 {% include_relative qname-context.json %}
 ```
 
-This example can be seen at [the JSON-LD Playground](http://tinyurl.com/ycws5yz7).
+This example and expanded and compacted version can be seen at [the JSON-LD Playground](http://tinyurl.com/ycws5yz7).
 
-The
-[result of expanding the JSON file using the context is provided as a separate page](../expanded).
-The page on [JSON-LD processing](../processing) discusses expansion and compaction,
+The page on [JSON-LD processing](../processing) discusses [expansion](https://json-ld.org/spec/latest/json-ld-api/#expansion) and [compaction](https://json-ld.org/spec/latest/json-ld-api/#compaction),
 two of the standard JSON-LD processing algorithms that can transform JSON-LD
 data in useful ways.
 
-Compaction is another JSON-LD processing algorithm. When compacted with an empty
-context, the structure of the data, and the complete URIs for keys are plainly visible:
+## Compaction
+
+When compacted with an empty context, the structure of the data, and the complete URIs for keys are plainly visible:
 
 ```json
 {% include_relative compact-with-empty-context.json %}
@@ -65,7 +64,7 @@ This example can be seen at [the JSON-LD Playground](http://tinyurl.com/yb7m7chr
 
 
 When interpreted against the right JSON-LD contexts, both JSON documents
-evaluate to [the same expanded data](../expanded/).
+evaluate to [the same expanded data](http://tinurl.com/y7w3tqpd).
 
 Developers of exchanges may use contexts to greatly simplify their JSON files,
 while maintaining the meaning of the data across all users and communities.

@@ -6,12 +6,12 @@ links:
   - url: /json/json-ld/processing/
 ---
 
-NIEM JSON documents are expressed using JSON-LD. JSON-LD is a method of using
-JSON to expressed lined data, including RDF and OWL data. There are tools
-available that transform JSON-LD data in various ways.
+NIEM JSON documents are expressed using [JSON-LD](https://json-ld.org), a method of using
+JSON to expressed lined data, including [Resource Description Framework(RDF)](https://www.w3.org/RDF) and [Web Ontology Language(OWL)](https://www.w3.org/OWL/) data.
+There are tools available that transform JSON-LD data in various ways.
 
-JSON-LD is a pattern of using JSON that maps to Resource Description Format
-(RDF). NIEM has a mapping to RDF, as described by
+JSON-LD is a pattern of using JSON that maps to 
+RDF. NIEM has a mapping to RDF, as described by
 [the NIEM Naming and Design Rules, section 5, *The NIEM conceptual model*](https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_5).
 The expression of NIEM data in JSON-LD is, basically, the JSON-LD form of the
 RDF data that NIEM XML data would represent. 
