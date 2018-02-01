@@ -2,12 +2,13 @@
 title: JSON-LD
 links:
   - url: /json/json-ld/context/
+  - url: /json/json-ld/identifiers/
   - url: /json/json-ld/expanded/
   - url: /json/json-ld/processing/
 ---
 
 NIEM JSON documents are expressed using [JSON-LD](https://json-ld.org), a method of using
-JSON to expressed lined data, including [Resource Description Framework(RDF)](https://www.w3.org/RDF) and [Web Ontology Language(OWL)](https://www.w3.org/OWL/) data.
+JSON to expressed lined data, including [Resource Description Framework (RDF)](https://www.w3.org/RDF) and [Web Ontology Language (OWL)](https://www.w3.org/OWL/) data.
 There are tools available that transform JSON-LD data in various ways.
 
 JSON-LD is a pattern of using JSON that maps to 
@@ -29,6 +30,6 @@ which is a JSON document (or part of a JSON-LD document).
 JSON-LD provides a simple way of expressing the identifier of an object, using a
 construct called `@id`. These identifiers handle the identification and
 referencing that are handled by NIEM's `structures:id`, `structures:ref`, and
-`structures:uri` attrributes.
+`structures:uri` attributes.
 
 {% include icon-list.html links=page.links %}

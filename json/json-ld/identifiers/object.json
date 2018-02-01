@@ -1,0 +1,13 @@
+{
+  "nc:Person" : {
+    "@id" : "P01",
+    "nc:PersonBirthDate": {
+      "nc:Date": "1893-05-04"
+    },
+    "nc:PersonName": {
+      "nc:personNameCommentText" : "copied",
+      ...
+    },
+    "exch:PersonFictionalCharacterIndicator": true
+  }
+}

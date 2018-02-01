@@ -31,7 +31,7 @@ guidance.
     - [names/namespaces](../names/namespaces): Domain-based naming (NIEM domains)
 - [json-ld](../json-ld): JSON-LD
     - [json-ld/context](../json-ld/context): JSON-LD contexts for namespaces and short names
-    - json-ld/identifiers: Identifiers in JSON-LD: use of `@id`, URIs, and names
+    - [json-ld/identifiers](../json-ld/identifiers): Identifiers in JSON-LD: use of `@id`, URIs, and names
       of individuals
     - json-ld/syntax: Syntax of objects and arrays: JSON-LD allows for flexible
       representation, and compaction and expansion can create or suppress the
