@@ -79,6 +79,8 @@ key URIs; techniques are detailed in the JSON-LD specification's sections on
 
 ### Compact IRIs: mapping qualified names to IRIs/URIs
 
+Contexts use [Internationalized Resource Identifiers (IRIs)](https://tools.ietf.org/html/rfc3987) to uniquely identify resources.
+
 The use of contexts to define prefixes is described by
 [the JSON-LD specification's section on compact IRIs](https://json-ld.org/spec/latest/json-ld/#compact-iris),
 which is JSON-LD's name for colon-separated qualified names.
@@ -89,7 +91,7 @@ which describes the mapping from an XML qualified name to a URI. In short, any
 namespace that does not end in an octothorp/hash/pound sign (<q>`#`</q>) has a
 <q>`#`</q> character appended to it. So, since the namespace URI for the NIEM
 Core namespace (nc) is `http://release.niem.gov/niem/niem-core/4.0/`, it would
-be property defined to the following part of a context:
+be defined in the following part of a context:
 
 ```json
 {
