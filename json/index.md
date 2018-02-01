@@ -4,6 +4,8 @@ links:
   - url: /json/data/
   - url: /json/names/
   - url: /json/json-ld/
+  - url: /json/models/
+  - url: /json/schema/
   - url: /json/guidance/
   - url: /json/outline/
 ---
