@@ -1,7 +1,5 @@
 ---
-title: Example Complete JSON Schema
-short: Complete JSON Schema
-
+title: Example JSON Schema
 ---
 The OASIS LegalXML Electronic Court Filing (ECF) 5.0 specification defines a number of NIEM 4.0 information
 exchanges with courts.
