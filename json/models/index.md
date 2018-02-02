@@ -6,10 +6,10 @@ Content models define the structure and content of data objects in a formal way 
 content (properties) can be understood, used and validated in a consistent and repeatable way.  
 
 The structure and content of data objects is defined in **schema**.  Messages that contain
-objects that conform to **schema** are **instances** of that **schema**.  Typically, one or more **schema**
-are defined first, and then many **instances** are generated and validated according to the **schema**.
-However, **schema** can also be reverse-engineered from sample **instances** if the content is 
-consistent.
+objects that conform to **schema** are **instances** of that **schema**.  Typically, **schema**
+are defined when the information exchange is being designed (or redesigned), and  **instances**
+are generated from the **schema** to implement the information exchanges. At any time, if needed, 
+**instances** may be validated against the **schema** by either the sender or receiver of the exchange.
 
 In NIEM information exchanges, **instances** are referred to as **Information Exchange
 Packages (IEPs)** and **schemas** are essential artifacts of an **Information Exchange Package
