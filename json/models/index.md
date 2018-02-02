@@ -16,7 +16,7 @@ Packages (IEPs)** and **schemas** are essential artifacts of an **Information Ex
 Documentation (IEPD)** that describes an information exchange. Other artifacts in an **IEPD** typically include
 sample **instances**, use cases, business rules, and other business and technical documentation 
 guiding the implementation of the information exchange.  Each **IEPD** should also include metadata about the 
-exchange including the creator the current version and the change history.
+exchange including the creator, the current version and the change history.
 
 NIEM supports JSON information exchanges including **IEPs** in JSON format and **IEPDs** that include [JSON Schema](../schema)
 
