@@ -47,7 +47,7 @@ INSTANCES ONLY ABOVE HERE. NO CLASSES ABOVE HERE
 
 <hr/>
 
-- models: Content models
+- [models](../modules): Content models
     - models/categories: Schemas and instances (JSON schema)
         - IEPD vs IEP
         - categories vs. individuals
@@ -86,7 +86,7 @@ NO JSON SCHEMA ABOVE HERE
 
 <hr/>
 
-- json-schema
+- [json-schema](../schema)
     - In-schema references (JSON identifiers)
         - not really references
         - URIs
