@@ -1,7 +1,7 @@
 ---
 title: NIEM Roles
 ---
-Roles are temporary functions played by objects (e.g. the person that is the subject of a case).
+Roles are temporary functions played by objects (e.g. the person that is the arresting officer or the subject in a law enforcement case).
 
 Each role references the base object with the `@id` keyword from JSON-LD.
 
