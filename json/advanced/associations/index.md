@@ -1,5 +1,5 @@
 ---
-title: NIEM Associations
+title: Associations
 ---
 Associations are relationships between objects.
 Each association references the associated objects with the `@id` keyword from JSON-LD.

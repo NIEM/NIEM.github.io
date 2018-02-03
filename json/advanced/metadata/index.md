@@ -1,5 +1,5 @@
 ---
-title: NIEM Metadata
+title: Metadata
 ---
 Metadata is information about objects or properties (e.g. the source or security level of the information).
 

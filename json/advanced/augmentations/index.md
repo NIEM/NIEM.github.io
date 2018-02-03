@@ -1,5 +1,5 @@
 ---
-title: NIEM Augmentations
+title: Augmentations
 ---
 Augmentations are extensions (additional properties) added to an object.
 

@@ -1,5 +1,5 @@
 ---
-title: NIEM Roles
+title: Roles
 ---
 Roles are temporary functions played by objects (e.g. the person that is the arresting officer or the subject in a law enforcement case).
 
