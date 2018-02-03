@@ -109,6 +109,6 @@ NO JSON SCHEMA ABOVE HERE
     - Advanced NIEM concepts
     - [Associations](../advanced/associations)
     - [Augmentations](../advanced/augmentations)
-    - [Metadata](../advanced/roles)
-    - Roles
+    - [Metadata](../advanced/metadata)
+    - [Roles](../advanced/roles)
     - Advanced JSON LD
