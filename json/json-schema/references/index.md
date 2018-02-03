@@ -8,7 +8,7 @@ A JSON pointer takes the form of *A*`#`*B* in which:
 Otherwise, the reference is to a different schema, a **cross-schema reference**.
 * *B* is the complete path from the root of the schema to a type or property in the schema. If `#` in not included or *B* is empty, the reference is to an entire schema.
 
-Both *A* and *B* consist of successive components of the path (folder, type or property name) each separated by a `/`.
+Both *A* and *B* consist of successive components of the path (folder, type or property names) each separated by a `/`.
 
 To demonstrate, here is a example JSON schema `xs.schema.json` that will be the target of **cross-schema references**:
 
