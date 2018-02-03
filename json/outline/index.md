@@ -105,10 +105,10 @@ NO JSON SCHEMA ABOVE HERE
     - human readable documentation
     - JSON schema
     - Document the JSON information exchange
-- advanced
+- [advanced](../advanced)
     - Advanced NIEM concepts
-    - Associations
-    - Augmentations
-    - Metadata
+    - [Associations](../advanced/associations)
+    - [Augmentations](../advanced/augmentations)
+    - [Metadata](../advanced/roles)
     - Roles
     - Advanced JSON LD

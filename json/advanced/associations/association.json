@@ -1,0 +1,27 @@
+{
+  "j:Offense": {
+    "@id": "Offense1",
+    "nc:ActivityDate": {
+      "nc:DateTime": "2018-01-01"
+    },
+    "nc:ActivityDescriptionText": "Vandalism"
+  },
+  "nc:Location": {
+    "@id": "Location1",
+    "nc:Address": {
+      "nc:AddressFullText": "100 Main St.",
+      "nc:LocationCityName": "Springfield",
+      "nc:LocationStateName": "Illinois"
+    },
+    "nc:LocationDescriptionText": "Residence"
+  },
+  "j:OffenseLocationAssociation": {
+    "j:Offense": {
+      "@id": "Offense1"
+    },
+    "nc:Location": {
+      "@id": "Location1"
+    },
+    "nc:AssociationDescriptionText": "The location the offense occured"
+  }
+}

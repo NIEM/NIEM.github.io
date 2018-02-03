@@ -1,0 +1,71 @@
+{
+  "$id": "http://release.niem.gov/niem/domains/jxdm/6.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.0/#",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "j:Offense": {
+      "$ref": "#/definitions/j:OffenseType",
+      "description": "An act or a course of action which may constitute a violation of a criminal statute, ordinance or rule that occurred during an incident."
+    },
+    "j:OffenseLocationAssociation": {
+      "$ref": "#/definitions/j:OffenseLocationAssociationType",
+      "description": "A relationship between an offense and a location at which the offense occurred."
+    },
+    "j:OffenseLocationAssociationType": {
+      "additionalProperties": false,
+      "description": "A data type for a relationship between an offense and a location at which the offense occurred.",
+      "properties": {
+        "j:Offense": {
+          "description": "An act or a course of action which may constitute a violation of a criminal statute, ordinance or rule that occurred during an incident.",
+          "$ref": "#/definitions/j:Offense"
+        },
+        "nc:AssociationDescriptionText": {
+          "description": "A description of an association.",
+          "$ref": "./nc.schema.json#/definitions/nc:AssociationDescriptionText"
+        },
+        "nc:Location": {
+          "description": "A geospatial location.",
+          "$ref": "./nc.schema.json#/definitions/nc:Location"
+        }
+      },
+      "type": "object"
+    },
+    "j:OffenseType": {
+      "additionalProperties": false,
+      "description": "A data type for an alleged violation of a statute, ordinance, or rule.",
+      "properties": {
+        "nc:ActivityDate": {
+          "description": "A date of an activity.",
+          "$ref": "./nc.schema.json#/definitions/nc:ActivityDate"
+        },
+        "nc:ActivityDescriptionText": {
+          "description": "A description of an activity.",
+          "$ref": "./nc.schema.json#/definitions/nc:ActivityDescriptionText"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "properties": {
+    "j:Offense": {
+      "$ref": "#/definitions/j:Offense",
+      "description": "An act or a course of action which may constitute a violation of a criminal statute, ordinance or rule that occurred during an incident."
+    },
+    "nc:Location": {
+      "$ref": "./nc.schema.json#/definitions/nc:LocationType",
+      "description": "A geospatial location."
+    },
+    "j:OffenseLocationAssociation": {
+      "$ref": "#/definitions/j:OffenseLocationAssociationType",
+      "description": "A relationship between an offense and a location at which the offense occurred."
+    }
+  },
+  "required": [
+  ]
+}

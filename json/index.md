@@ -6,6 +6,7 @@ links:
   - url: /json/json-ld/
   - url: /json/models/
   - url: /json/json-schema/
+  - url: /json/advanced/
   - url: /json/guidance/
   - url: /json/outline/
 ---
