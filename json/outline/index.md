@@ -87,10 +87,10 @@ NO JSON SCHEMA ABOVE HERE
 <hr/>
 
 - [json-schema](../schema)
-    - In-schema references (JSON identifiers)
+    - [In-schema references](../json-schema/in-schema) (JSON identifiers)
         - not really references
         - URIs
-    - Cross-schema references (JSON pointers)
+    - [Cross-schema references](../json-schema/cross-schema) (JSON pointers)
 - rdf-schema
 - xml
     - NIEM JSON's relationship to XML
