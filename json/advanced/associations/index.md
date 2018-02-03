@@ -2,7 +2,7 @@
 title: Associations
 ---
 Associations are relationships between objects.
-Each association references the associated objects with the `@id` keyword from JSON-LD.
+Each association references the associated objects with the `@id` keyword from [JSON-LD](../../json-ld).
 
 Here is an example of a NIEM association `j:OffenseLocationAssociation` in JSON schema:
 
