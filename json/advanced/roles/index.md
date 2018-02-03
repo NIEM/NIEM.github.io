@@ -3,11 +3,17 @@ title: NIEM Roles
 ---
 Roles are temporary functions played by objects (e.g. the person that is the subject of a case).
 
-Here is an example of a NIEM role in JSON schema:
+Each role references the base object with the `@id` keyword from JSON-LD.
 
-{%include_relative roles.schema.json %}
+Here is an example of a NIEM role `j:ArrestOfficial` in JSON schema:
+
+```json
+{%include_relative j.schema.json %}
+```
 
 Here is a JSON instance of that role:
 
+```json
 {%include_relative roles.json %}
+```
 

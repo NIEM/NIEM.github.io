@@ -1,0 +1,18 @@
+{
+  "j:ArrestOfficial": {
+    "j:EnforcementOfficialBadgeIdentification": {
+      "nc:IdentificationID": "100",
+      "nc:IdentificationSourceText": "Springfield Police Department"
+    },
+    "nc:RoleOfPerson": {
+      "@id": "Person1"
+    }
+  },
+  "nc:Person": {
+    "@id": "Person1",
+    "nc:PersonName": {
+      "nc:PersonFullName": "John Smith"
+    }
+  }
+}
+
