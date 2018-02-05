@@ -1,0 +1,74 @@
+{
+  "$id": "http://release.niem.gov/niem/structures/4.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "structures": "http://release.niem.gov/niem/structures/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "structures:@SimpleObjectAttributeGroup": {
+      "additionalProperties": false,
+      "properties": {
+        "@id": {
+          "$ref": "./xs.schema.json#/definitions/xs:NCName"
+        },
+        "structures:metadata": {
+          "$ref": "#/definitions/structures:metadata"
+        },
+        "structures:relationshipMetadata": {
+          "$ref": "#/definitions/structures:relationshipMetadata"
+        },
+        "structures:uri": {
+          "$ref": "#/definitions/structures:uri"
+        }
+      },
+      "type": "object"
+    },
+    "structures:AssociationType": {
+      "additionalProperties": false,
+      "properties": {
+      },
+      "type": "object"
+    },
+    "structures:AugmentationType": {
+      "additionalProperties": false,
+      "properties": {
+      },
+      "type": "object"
+    },
+    "structures:MetadataType": {
+      "additionalProperties": false,
+      "properties": {
+      },
+      "type": "object"
+    },
+    "structures:ObjectType": {
+      "additionalProperties": false,
+      "properties": {
+      },
+      "type": "object"
+    },
+    "structures:id": {
+      "$ref": "./xs.schema.json#/definitions/xs:ID"
+    },
+    "structures:metadata": {
+      "$ref": "./xs.schema.json#/definitions/xs:IDREFS"
+    },
+    "structures:ref": {
+      "$ref": "./xs.schema.json#/definitions/xs:IDREF"
+    },
+    "structures:relationshipMetadata": {
+      "$ref": "./xs.schema.json#/definitions/xs:IDREFS"
+    },
+    "structures:uri": {
+      "$ref": "./xs.schema.json#/definitions/xs:anyURI"
+    }
+  },
+  "properties": {
+  },
+  "required": [
+  ]
+}
+
