@@ -15,6 +15,7 @@ Here is an example of another JSON schema with the augmentation extending`nc:Cas
 ```json
 {%include_relative nc.schema.json %}
 ```
+These schemas reference another schema: [xs](xs.schema.json)
 
 Here is a JSON instance of `nc:Case` extended with the augmentation:
 
