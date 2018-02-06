@@ -1,7 +1,11 @@
 {
-  "nc:CaseTitleText": "Smith v. Jones",
+  "nc:Case": {
+    "@id": "Case1",
+    "structures:metadata": "Metadata1 ",
+    "nc:CaseTitleText": "Smith v Jones"
+  },
   "nc:Metadata": {
-    "structures:id": "Metdata1",
+    "@id": "Metdata1",
     "nc:EffectiveDate": {
       "nc:Date": "2018-01-31"
     },
@@ -10,9 +14,5 @@
       "nc:Date": "2018-01-31"
     },
     "nc:SensitivityText": "Public"
-  },
-  "nc:MetadataAssociation": {
-    "@id": "?? How to identify CaseTitleText ??",
-    "structures:metadata": "Metadata1 "
   }
 }
