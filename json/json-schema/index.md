@@ -4,7 +4,7 @@ links:
   - url: /json/json-schema/references/
   - url: /json/json-schema/sample/
 ---
-[JSON schema](https://json-schema.org) provides  a JSON vocabulary for defining and validating 
+[JSON schema](http://json-schema.org) provides  a JSON vocabulary for defining and validating 
 JSON **instances**.  Each schema includes **defined types** and **properties**, defined using 
 JSON objects with one or more key-value pairs or *keywords*.
 
@@ -12,7 +12,7 @@ JSON objects with one or more key-value pairs or *keywords*.
 * *simple types*
 	* `null`
 	* `boolean`: either `true` or `false`
-	* `number` or `integer`: e.g., `42` or `3.14.15926`
+	* `number` or `integer`: e.g., `42` or `3.1415926`
 	* `string`: e.g., `"This is a string"`
 * *complex types*
 	* `array` : e.g., `["first", 2, "third"]`
