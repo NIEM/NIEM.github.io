@@ -31,7 +31,7 @@ guidance.
     - [names/namespaces](../names/namespaces): Domain-based naming (NIEM domains)
 - [json-ld](../json-ld): JSON-LD
     - [json-ld/context](../json-ld/context): JSON-LD contexts for namespaces and short names
-    - json-ld/identifiers: Identifiers in JSON-LD: use of `@id`, URIs, and names
+    - [json-ld/identifiers](../json-ld/identifiers): Identifiers in JSON-LD: use of `@id`, URIs, and names
       of individuals
     - json-ld/syntax: Syntax of objects and arrays: JSON-LD allows for flexible
       representation, and compaction and expansion can create or suppress the
@@ -47,7 +47,7 @@ INSTANCES ONLY ABOVE HERE. NO CLASSES ABOVE HERE
 
 <hr/>
 
-- models: Content models
+- [models](../models): Content models
     - models/categories: Schemas and instances (JSON schema)
         - IEPD vs IEP
         - categories vs. individuals
@@ -86,11 +86,11 @@ NO JSON SCHEMA ABOVE HERE
 
 <hr/>
 
-- json-schema
-    - In-schema references (JSON identifiers)
+- [json-schema](../schema)
+    - [In-schema references](../json-schema/references) (JSON identifiers)
         - not really references
         - URIs
-    - Cross-schema references (JSON pointers)
+    - [Cross-schema references](../json-schema/references) (JSON pointers)
 - rdf-schema
 - xml
     - NIEM JSON's relationship to XML
@@ -105,10 +105,10 @@ NO JSON SCHEMA ABOVE HERE
     - human readable documentation
     - JSON schema
     - Document the JSON information exchange
-- advanced
+- [advanced](../advanced)
     - Advanced NIEM concepts
-    - Associations
-    - Augmentations
-    - Metadata
-    - Roles
+    - [Associations](../advanced/associations)
+    - [Augmentations](../advanced/augmentations)
+    - [Metadata](../advanced/metadata)
+    - [Roles](../advanced/roles)
     - Advanced JSON LD

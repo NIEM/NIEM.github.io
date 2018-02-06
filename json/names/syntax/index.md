@@ -11,7 +11,7 @@ name are:
 * An **object class term** identifies a category of real-world things:
 
   * For a property (an element or attribute), the object class term
-    identifies the cateogry of thing that can have this characteristic, or
+    identifies the category of thing that can have this characteristic, or
     which is the subject of this relationship.
 
   * For a type (simple or complex), the object class term identifies the
@@ -27,5 +27,13 @@ name are:
 Any of the above terms may have any number of **qualifier terms**, which modify
 the term, to increase semantic precision or to reduce ambiguity. A qualifier term
 usually precedes the term it modifies.
+
+For example, the parts of the NIEM element `nc:PersonPhysicalDisabilityText` are:
+
+* `nc`         - a **namespace prefix** (see [NIEM Namespaces](../namespaces))
+* `Person`     - an **object class term**
+* `Physical`   - a **qualifier term**
+* `Disability` - a **property term**
+* `Text`       - a **representation term**
 
 Next: [NIEM Namespaces](../namespaces)

@@ -48,7 +48,7 @@ Some terminology:
     * The value of a pair may be any type of value: a simple value, an array, or
       an object.
     
-    * Pairs are separated by commas
+    * Pairs are separated by commas.
     
     * A given key should appear only once within an object.
     

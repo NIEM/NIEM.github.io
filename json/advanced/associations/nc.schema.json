@@ -1,0 +1,112 @@
+{
+  "$id": "http://release.niem.gov/niem/niem-core/4.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "nc:ActivityDate": {
+      "$ref": "#/definitions/nc:DateType",
+      "description": "A date of an activity."
+    },
+    "nc:ActivityDescriptionText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A description of an activity."
+    },
+    "nc:Address": {
+      "$ref": "#/definitions/nc:AddressType",
+      "description": "A postal location to which paper mail can be directed."
+    },
+    "nc:AddressFullText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A complete address."
+    },
+    "nc:AddressType": {
+      "additionalProperties": false,
+      "description": "A data type for a geophysical location described by postal information.",
+      "properties": {
+        "nc:AddressFullText": {
+          "description": "A complete address.",
+          "$ref": "#/definitions/nc:AddressFullText"
+        },
+        "nc:LocationCityName": {
+          "description": "A name of a city or town.",
+          "$ref": "#/definitions/nc:LocationCityName"
+        },
+        "nc:LocationStateName": {
+          "description": "A name of a state, commonwealth, province, or other such geopolitical subdivision of a country.",
+          "$ref": "#/definitions/nc:LocationStateName"
+        }
+      },
+      "type": "object"
+    },
+    "nc:AssociationDescriptionText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A description of an association."
+    },
+    "nc:AssociationType": {
+      "additionalProperties": false,
+      "description": "A data type for an association, connection, relationship, or involvement somehow linking people, things, and/or activities together.",
+      "properties": {
+        "nc:AssociationDescriptionText": {
+          "description": "A description of an association.",
+          "$ref": "#/definitions/nc:AssociationDescriptionText"
+        }
+      },
+      "type": "object"
+    },
+    "nc:DateTime": {
+      "$ref": "./xs.schema.json#/definitions/xs:dateTime",
+      "description": "A full date and time."
+    },
+    "nc:DateType": {
+      "additionalProperties": false,
+      "description": "A data type for a calendar date.",
+      "properties": {
+        "nc:DateTime": {
+          "description": "A full date and time.",
+          "$ref": "#/definitions/nc:DateTime"
+        }
+      },
+      "type": "object"
+    },
+    "nc:Location": {
+      "$ref": "#/definitions/nc:LocationType",
+      "description": "A geospatial location."
+    },
+    "nc:LocationCityName": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A name of a city or town."
+    },
+    "nc:LocationDescriptionText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A description of a location."
+    },
+    "nc:LocationStateName": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A name of a state, commonwealth, province, or other such geopolitical subdivision of a country."
+    },
+    "nc:LocationType": {
+      "additionalProperties": false,
+      "description": "A data type for geospatial location.",
+      "properties": {
+        "nc:Address": {
+          "description": "A postal location to which paper mail can be directed.",
+          "$ref": "#/definitions/nc:Address"
+        },
+        "nc:LocationDescriptionText": {
+          "description": "A description of a location.",
+          "$ref": "#/definitions/nc:LocationDescriptionText"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "properties": {
+  },
+  "required": [
+  ]
+}

@@ -12,7 +12,7 @@ are organized into namespaces. These bodies, and their namespaces, include:
   broadly-applicable data definitions which need to be managed across the entire
   NIEM enterprise.
 
-* The NIEM Technical Architecture Committee (NTAC) governs the techincal
+* The NIEM Technical Architecture Committee (NTAC) governs the technical
   architecture and manages the foundational namespaces **structures** and
   **appinfo**.
   
@@ -24,18 +24,18 @@ elsewhere on this site.
 
 Each namespace has:
 
-* an **XML namespace**, which is a URI
+* an **XML namespace name**, which is a URI
 * a commonly-used **namespace prefix**, which is a short label that stands for the full
   namespace URI in instances and schemas. 
   
 Examples:
 
-* NIEM core uses the prefix `nc`, and in NIEM 4.0 has the XML namespace `http://release.niem.gov/niem/niem-core/4.0/`.
+* NIEM core uses the prefix `nc`, and in NIEM 4.0 has the XML namespace name`http://release.niem.gov/niem/niem-core/4.0/`.
 
-* The Justice domain uses the prefix `j`, and in NIEM 4.0 has the XML namespace
+* The Justice domain uses the prefix `j`, and in NIEM 4.0 has the XML namespace name
   `http://release.niem.gov/niem/domains/jxdm/6.0/`.
   
-The *namespace* plus the *local name* for a component is the qualified name for
+The **namespace prefix** plus the **local name** for a component is the **qualified name** for
 a component. For example:
 
 * The `PersonBirthDate` element defined by NIEM Core would be expressed as a

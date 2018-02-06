@@ -9,8 +9,8 @@ NIEM defines a methodology for broad communities to agree on:
 * Value constraints on data
 
 Every name, structure, and set of data constraints has a single authoritative
-reprsentation, defined by a set of XML Schema documents. See
-http://niem.github.io/niem-releases/ for new and old NIEM releases. These
+representation, defined by a set of XML Schema documents. See
+[http://niem.github.io/niem-releases/](http://niem.github.io/niem/releases) for new and old NIEM releases. These
 schemas define base definitions, which can be refined, specialized, and
 extended, to define specific exchanges.
 
@@ -51,9 +51,8 @@ has a few common characteristics:
   which a set of data components are grouped. Each governance body, and each
   NIEM version, has unique namespaces that are assigned to it. 
   
-The name of a data component is the *namespace* and *local name*
-together. Together, these are referred to as a the **qualified name** of a
-component.
+The **qualified name** of a data component is the **namespace** and **local name**
+together. 
 
 The reuse of these qualified names in exchange definitions, extensions, and
 messages allows the parts of the messages to be understood, and for similar
