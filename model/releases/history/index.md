@@ -1,5 +1,10 @@
 ---
   title: Release History
+  short: History
+  icon: fa-history
+  description: A timeline of NIEM releases and significant features.
+  links:
+  - url: /model/releases/history/domain/
 ---
 
 <table>
