@@ -4,28 +4,19 @@ links:
   - url: /json/json-schema/references/
   - url: /json/json-schema/sample/
 ---
-[JSON schema](http://json-schema.org) provides  a JSON vocabulary for defining and validating 
-JSON **instances**.  Each schema includes **defined types** and **properties**, defined using 
-JSON objects with one or more key-value pairs or *keywords*.
+[JSON schema](https://json-schema.org) provides  a JSON vocabulary for defining and validating 
+JSON **instances**.
 
-**Defined types** are JSON objects with a `type` keyword set to one of the **JSON types**:
-* *simple types*
-	* `null`
-	* `boolean`: either `true` or `false`
-	* `number` or `integer`: e.g., `42` or `3.1415926`
-	* `string`: e.g., `"This is a string"`
-* *complex types*
-	* `array` : e.g., `["first", 2, "third"]`
-	* `object`: e.g., `{ "key1": "value1", "key2": "value2" }", "key2": "value2" }`
+Each schema includes one or more key-value pairs or **keywords**, including 
+a `type` keyword set to a JSON simple value (`null`, `boolean`, `number`, `integer` or `string`), 
+`array` or `object` as defined in [JSON data](../data):
 
-**properties** are key-value pairs with a `type` keyword set to one of the **JSON types** or a **defined type**.
-
-All **defined types** or **properties** may include the following keywords:
+All schemas may include the following keywords:
 * A`description` keyword to provide a definition for this type or property.
 * An `$id` keyword to provide a base URL for referencing this schema, type or property.
 * A `$ref` keyword to provide a [JSON pointer](./references) to another schema, type or property, 
 
-Other keywords are specific to the base **JSON type** as follows:
+Other keywords are specific to the `type` as follows:
 * Numbers and integers may be restricted with the following keywords:
 	* `multipleOf`: limit the value to be a multiple of a given number
 	* `minimum`,`exclusiveMinimum`, `maximum`,`exclusiveMaximum`: restrict the range of values
