@@ -11,10 +11,10 @@ JSON. It is intended for
 
 * Developers who know JSON but know nothing of NIEM
 * Developers familiar with NIEM XML
-  - Who want a JSON version of an existing NIEM XML exchange
+  - Who want a JSON version of an existing NIEM XML data exchange
   - Who only want to compare NIEM JSON with NIEM XML
-* Data scientists wanting to easily understand and wrangle their sources
-* Data stewards wanting to provide sources that are easily understood
+* Data scientists wanting to easily understand and wrangle their data sources
+* Data stewards wanting to provide data sources that are easily understood
   and wrangled
 * Managers wondering if NIEM JSON is right for their project
 
@@ -24,11 +24,11 @@ rest. The starting choices are:
 - [What is NIEM?](./whatis) NIEM is best understood as an organization
   with a standards-based process for creating community-agreed
   reusable data definitions and for assembling those definitions into
-  machine-to-machine data exchange specifications. This section
+  data resource specifications. This section
   describes;
   
   - Reusable definitions and the NIEM data model
-  - Data exchange specifications
+  - Data resource specifications
   - NIEM technical specifications
   - NIEM governance
   - Different ways to use and participate in NIEM
@@ -43,7 +43,7 @@ rest. The starting choices are:
   
   - Meaningful data names and machine-readable documentation
   - Global identifiers for data components
-  - Self-documenting data
+  - Self-describing data
 
 ^
 - [What is NIEM JSON data?](./data) What does it mean, what does it

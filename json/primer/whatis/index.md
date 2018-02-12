@@ -40,7 +40,7 @@ data type). For example:
 machine-readable data element definitions in different languages; XML
 Schema, JSON Schema, and RDF. These components are like LEGO(tm)
 blocks for data; developers choose the blocks they want and assemble
-them into the structure they are trying to create.
+them into the data structure they are trying to create.
 
 ### The NIEM data model
 
@@ -69,15 +69,15 @@ domains. (More on the model management process in [NIEM
 governance](#gov).)
 
 The NIEM model is published in two forms. The normative model is
-published as a collection of XML Schema documents. There is also a
-spreadsheet version. Plans to publish the model as JSON Schema and RDF
-are on the drawing board.
+currently published as a collection of XML Schema documents. There is
+also a spreadsheet version. Plans to publish the model as JSON Schema
+and RDF are on the drawing board.
 
 ### The NIEM process
 
 Developers use the NIEM process to define the syntax and semantics of
-some data resource. That resource can be data passed through an API,
-or messages sent from one system to another, or a data document
+some data resource. That resource can be the data passed through an
+API, or messages sent from one system to another, or a data document
 published on the web. The process is:
 
 1. Determine the information requirements. What are the facts to be
@@ -101,12 +101,12 @@ published on the web. The process is:
 3. Have new or modified information requirements been revealed?
    Change the requirements in step #1 accordingly and repeat.
    
-4. When there is a data component for each concept in the information
-   requirements, assemble the selected data components into a schema
-   that specifies the data resource. This schema documents the meaning
-   of each data component, defines which components are mandatory and
-   optional, and may be used to validate individual instances of the
-   resource during development or operations.
+4. When all of the information requirements are satisfied, assemble
+   the selected data components into a schema that specifies the data
+   resource. This schema documents the meaning of each data component,
+   defines which components are mandatory and optional, and may be
+   used to validate individual instances of the resource during
+   development or operations.
    
 The schema is the central component of a NIEM-based data resource
 specification, for historical reasons called the *Information Exchange
@@ -132,11 +132,11 @@ into a single schema.
 At present most of the NIEM technical specifications are written
 assuming XML as the data syntax and XML Schema as the primary
 specification language.  There are many, many different ways to
-represent information with XML.  Some consistency is needed in order
-to compose many XML data components into a single resource
-specification.
+represent information with XML.  A certain level of consistency is
+required needed in order to compose many separately-designed XML data
+components into a single resource specification that makes sense.
 
-This is accomplished by the [NIEM Naming and Design Rules
+This consistency is accomplished by the [NIEM Naming and Design Rules
 (NDR)](https://reference.niem.gov/niem/specification/naming-and-design-rules/),
 which constrains the use of XML and XML Schema within NIEM.  Most of
 the NDR rules are written in Schematron, and can be used to
@@ -147,8 +147,8 @@ XML elements and attributes equate to RDF resources, properties of
 those resources, and values of those properties.
 
 The technical specifications for NIEM JSON are now on the drawing
-board. One thing already known: the NDR for NIEM JSON, if one is
-actually required, can be much simpler than the XML rules. This is
+board. One thing already known: the NDR for NIEM JSON (if one is
+actually required) can be much simpler than the XML rules. This is
 because NIEM JSON is based on the
 [JSON-LD](https://www.w3.org/TR/json-ld/) specification, which already
 does for JSON much of what the existing NIEM NDR does for XML.
@@ -198,13 +198,13 @@ Secure Alarm Protocol
 an ANSI standard that is used for machine-to-machine communication
 data between alarm monitoring companies and 911 centers. Its data
 format is NIEM-conforming and was created through the NIEM process,
-but sSoftware developers building applications for the protocol do not
+but software developers building applications for the protocol do not
 have to know or care about that. They only have to produce or consume
 data that conforms to the specification.
 
 The next level of NIEM use is to reuse NIEM components for one portion
 of a data resource. This treats the NIEM model as just another data
-vocabulary among others such as Dublin Core and schema.org.
+vocabulary among others, such as Dublin Core and schema.org.
 
 Scientists and developers may create their own NIEM-based 
 specification to document a data resource they produce. In this case
