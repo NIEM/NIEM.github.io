@@ -1,4 +1,9 @@
 {
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "structures": "http://release.niem.gov/niem/structures/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
   "nc:Case": {
     "@id": "Case1",
     "structures:metadata": "Metadata1 ",

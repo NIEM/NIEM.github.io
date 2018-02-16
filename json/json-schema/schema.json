@@ -3,9 +3,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,
-  "@context": {
-    "request": "https://example.com/request#"
-  },
   "definitions": {
     "request:RequestMessage": {
       "$ref": "#/definitions/request:RequestMessageType",

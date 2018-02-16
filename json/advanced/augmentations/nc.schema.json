@@ -3,20 +3,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,
-  "@context": {
-    "clsa": "http://reference.niem.gov/niem/specification/code-lists/1.0/code-lists-schema-appinfo/#",
-    "ct": "http://release.niem.gov/niem/conformanceTargets/3.0/#",
-    "iso_3166": "http://release.niem.gov/niem/codes/iso_3166-1/4.0/#",
-    "iso_4217": "http://release.niem.gov/niem/codes/iso_4217/4.0/#",
-    "iso_639-3": "http://release.niem.gov/niem/codes/iso_639-3/4.0/#",
-    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-    "niem-xs": "http://release.niem.gov/niem/proxy/xsd/4.0/#",
-    "structures": "http://release.niem.gov/niem/structures/4.0/#",
-    "term": "http://release.niem.gov/niem/localTerminology/3.0/#",
-    "unece": "http://release.niem.gov/niem/codes/unece_rec20/4.0/#",
-    "usps": "http://release.niem.gov/niem/codes/usps_states/4.0/#",
-    "xs": "http://www.w3.org/2001/XMLSchema#"
-  },
   "definitions": {
     "nc:ActivityDate": {
       "$ref": "#/definitions/nc:DateType",

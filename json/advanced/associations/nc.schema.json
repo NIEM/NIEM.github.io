@@ -3,10 +3,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,
-  "@context": {
-    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-    "xs": "http://www.w3.org/2001/XMLSchema#"
-  },
   "definitions": {
     "nc:ActivityDate": {
       "$ref": "#/definitions/nc:DateType",
