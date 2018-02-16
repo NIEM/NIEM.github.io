@@ -52,14 +52,14 @@ INSTANCES ONLY ABOVE HERE. NO CLASSES ABOVE HERE
         - IEPD vs IEP
         - categories vs. individuals
         - templates vs. instances
-    - models/reuse: Reusable data definitions
+    - [models/reuse](/model/concepts/property): Reusable data definitions
         - classes & properties
         - global data definitions
-    - models/has-a: Hierarchical models
+    - [models/has-a](/model/concepts/type): Hierarchical models
         - Hierarchical models 
         - JSON properties
         - Cardinality (minItems, maxItems)
-    - models/releases: The NIEM model
+    - [models/releases](/model/releases): The NIEM model
         - Spreadsheets
         - Movement
         - XML Schemas
@@ -98,7 +98,7 @@ NO JSON SCHEMA ABOVE HERE
     - XML details
     - XSD details
     - augmentations
-- exchange-specification
+- [exchange-specification](/iepd-starter-kit)
     - How to specify an exchange for JSON
     - Determine business data content
     - Specify JSON representation of content
