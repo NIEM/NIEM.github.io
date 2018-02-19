@@ -8,7 +8,7 @@ links:
 ---
 
 NIEM JSON documents are expressed using [JSON-LD](https://json-ld.org), a method of using
-JSON to expressed lined data, including [Resource Description Framework (RDF)](https://www.w3.org/RDF) and [Web Ontology Language (OWL)](https://www.w3.org/OWL/) data.
+JSON to express linked data, including [Resource Description Framework (RDF)](https://www.w3.org/RDF) and [Web Ontology Language (OWL)](https://www.w3.org/OWL/) data.
 There are tools available that transform JSON-LD data in various ways.
 
 JSON-LD is a pattern of using JSON that maps to 
