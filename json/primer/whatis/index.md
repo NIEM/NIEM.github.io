@@ -77,8 +77,8 @@ and RDF are on the drawing board.
 
 Developers use the NIEM process to define the syntax and semantics of
 some data resource. That resource can be the data passed through an
-API, or messages sent from one system to another, or a data document
-published on the web. The process is:
+API, or messages sent from one system to another, a data document
+published on the web, etc. The process is:
 
 1. Determine the information requirements. What are the facts to be
    conveyed in the data resource?
@@ -133,7 +133,7 @@ At present most of the NIEM technical specifications are written
 assuming XML as the data syntax and XML Schema as the primary
 specification language.  There are many, many different ways to
 represent information with XML.  A certain level of consistency is
-required needed in order to compose many separately-designed XML data
+required in order to compose many separately-designed XML data
 components into a single resource specification that makes sense.
 
 This consistency is accomplished by the [NIEM Naming and Design Rules
@@ -169,11 +169,11 @@ The NIEM Technical Architecture Committee (NTAC) defines and supports
 the technical architecture that governs NIEM; it documents,
 implements, and maintains NIEM’s technical specifications.
 
-Those bodies, the NTAC, NBAC, and the Domains, comprise a voluntary
+Those bodies, the NTAC, the NBAC, and the Domains, comprise a voluntary
 consensus standards body for the NIEM standards. They operate
 according to the principles of openness, balance of interest, due
-process, an appeals process, and consensus, as defined in *ANSI
-Essential Requirements*.
+process, an appeals process, and consensus, as defined in [*ANSI
+Essential Requirements*](https://share.ansi.org/shared%20documents/Standards%20Activities/American%20National%20Standards/Procedures,%20Guides,%20and%20Forms/2016_ANSI_Essential_Requirements.pdf).
 
 ![NIEM Governance Diagram](governance.png)
 
@@ -222,10 +222,11 @@ existing domain, but is not required to do so.
 
 Scientists and developers can participate in a NIEM domain's
 activities, proposing new and modified data elements in the domain
-submodel for use in multiple specifications. They If elected as a domain
-co-chair, they 
+submodel for use in multiple specifications. If elected as a domain
+co-chair, they will vote on changes to NIEM Core at the NBAC. They may
+also participate at the NBAC as a non-voting observer.
 
-Finally, scientists and developers might participate in the NIEM
+Finally, scientists and developers might participate in the NTAC
 Technical Architecture Committee (NTAC), which governs the NIEM core
 model; work here often involves harmonizing data definitions among
 the domain models to create elements that can be used in any domain.

@@ -39,8 +39,8 @@ what it means. This involves answers to questions like:
 
 Such questions are easily answered when the JSON data is only
 exchanged between instances of the same program, or only processed by
-software written by a single small team of developers, or is one of
-very few sources accessed by the data scientists. In these cases there
+software written by a single small team of developers, or is one of a
+few sources accessed by the data scientists. In these cases there
 is little difficulty in understanding the JSON data, and little need
 for NIEM.
 
@@ -49,7 +49,7 @@ when the developer team is large, or when there are many independent
 teams, or when the members of a team change over time -- in short,
 when *developer cohesion* is low. Also, data understanding takes more
 work when scientists and developers work with many data resources (all
-at once, or over time) that have many different data element
+at once, or over time) that have different data element
 definitions for the same shared concept (`fname`, `gname`,
 `givenname`) -- in short, when *data resource overlap* is high. These
 conditions -- low cohesion, high overlap -- are almost always found in
@@ -70,9 +70,9 @@ applied to JSON data offers:
   within a data resource).
 
 These three combine to make [NIEM JSON data](../njdata)
-*self-documenting* to the extent that any data scientist or software
-developer can look at any key-value pair and find out how it is
-defined. In addition, the NIEM approach also offers:
+*self-documenting*, at least to the extent that any data scientist or
+software developer can look at any key-value pair and find out how it
+is defined. In addition, the NIEM approach also offers:
 
 * A simple way for developers who are creating a resource to
   reuse data elements defined by others, instead of creating new
