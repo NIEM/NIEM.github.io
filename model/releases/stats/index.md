@@ -22,7 +22,7 @@ The table below breaks down property, type, and code counts by namespace group.
 - The "Domain" and "Code Set" groups combine the counts from multiple namespaces and are broken out in the subsequent tables.
 
 {% include csv-table.html
-      csv=site.data.stats.4_0.summary
+      csv=site.data.model.stats.4_0.summary
       classes="table-auto"
       right=page.right
       widths=page.widths
@@ -33,7 +33,7 @@ The table below breaks down property, type, and code counts by namespace group.
 The counts in the following table represent the namespaces that make up the "Domain" group in the summary table above.
 
 {% include csv-table.html
-      csv=site.data.stats.4_0.domains
+      csv=site.data.model.stats.4_0.domains
       classes="table-auto"
       right=page.right
       widths=page.widths
@@ -44,7 +44,7 @@ The counts in the following table represent the namespaces that make up the "Dom
 The counts in the following table represent the namespaces that make up the "Code Set" group in the summary table above.
 
 {% include csv-table.html
-      csv=site.data.stats.4_0.codes
+      csv=site.data.model.stats.4_0.codes
       classes="table-auto"
       right=page.right
       widths=page.widths
