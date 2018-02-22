@@ -11,7 +11,7 @@
   margin: 0 0 20px;
 }
 
-.tip, .example, .note {
+.tip, .example, .note, .ndr {
   @extend .box;
 }
 
@@ -64,4 +64,9 @@ blockquote::before, ul::before, p::before {
   ::before {
     content: "Invalid example ";
   }
+}
+
+.ndr {
+  background: whitesmoke;
+  border-color: gainsboro;
 }

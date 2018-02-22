@@ -64,6 +64,20 @@ a.list-group-item.external::before {
   content: "\f045 ";
 }
 
+.sidebar-sibling, .sidebar-current, .sidebar-sub {
+  padding-left: 25px;
+}
+
+#page-nav ul#markdown-toc li {
+  padding-left: 15px;
+
+  ul li {
+    padding-left: 0;
+    a {
+      padding-left: 0;
+    }
+  }
+}
 
 // Styling for sidebar navigation scrollspy
 #page-nav {
@@ -87,6 +101,6 @@ a.list-group-item.external::before {
     li a {
       padding: 5px;
     }
-  
+
   }
   

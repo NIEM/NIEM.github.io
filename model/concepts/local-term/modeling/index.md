@@ -1,6 +1,14 @@
 ---
   title: Local Terminology Modeling
   short: Modeling
+  ndr:
+    rules:
+    - number: 10-51
+    - number: 10-52
+    - number: 10-75
+    - number: 10-76
+    sections:
+    - number: 10.9.2
 ---
 
 - TOC
@@ -22,3 +30,7 @@ This means that:
 ## Literal or definition
 
 Each local term must have a literal translation or a definition.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}
