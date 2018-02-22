@@ -1,6 +1,19 @@
 ---
   title: Modeling Augmentation Points
   short: Modeling
+  ndr:
+    rules:
+    - number: 10-25
+    - number: 10-26
+    - number: 10-27
+    - number: 10-28
+    - number: 10-29
+    - number: 10-30
+    - number: 10-31
+    - number: 11-29
+    sections:
+    - number: 10.4.2
+    - number: 10.4.3
 ---
 
 - TOC
@@ -32,3 +45,7 @@ The augmentation point element must appear as the final sub-element in its type.
 Augmentation point elements are required in NIEM release schemas, but not for IEPDs.
 
 NIEM releases are required to define augmentation points in order to make it as easy as possible for IEPDs to later add additional content.  IEPDs may, but are not required to, provide this same level of support.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}

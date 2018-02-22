@@ -1,6 +1,24 @@
 ---
   title: Modeling Metadata
   short: Modeling
+  ndr:
+    rules:
+    - number: 10-38
+    - number: 10-39
+    - number: 10-40
+    - number: 10-41
+    - number: 11-31
+    - number: 11-43
+    - number: 12-10
+    - number: 12-11
+    - number: 12-12
+    - number: 12-13
+    - number: 12-14
+    - number: 12-15
+    - number: 12-16
+    - number: 12-17
+    sections:
+    - number: 10.5
 ---
 
 - TOC
@@ -43,3 +61,7 @@ There is no need to extend other metadata types in the model.  Elements can link
 ### No augmentation points
 
 Metadata types should not contain augmentation points.  Other namespaces can define their own metadata elements and types and create references to them in NIEM release elements.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}

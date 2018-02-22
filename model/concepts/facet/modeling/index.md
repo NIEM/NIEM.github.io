@@ -1,6 +1,16 @@
 ---
   title: Modeling Facets
   short: Modeling
+  ndr:
+    rules:
+    - number: 9-14
+    - number: 9-13
+    - number: 10-17
+    - number: 10-18
+    - number: 11-7
+    - number: 11-8
+    sections:
+    - number: 11.1.2.3
 ---
 
 - TOC
@@ -29,3 +39,7 @@ For any simple type that declares a facet...
 
 - If the type contains enumerations, the name of the type must end with `CodeSimpleType`.
 - All other simple types must have names that end with with `SimpleType`.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}

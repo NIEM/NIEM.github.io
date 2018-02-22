@@ -1,6 +1,19 @@
 ---
   title: Modeling Augmentation Elements
   short: Modeling
+  ndr:
+    rules:
+    - number: 10-32
+    - number: 10-33
+    - number: 10-34
+    - number: 10-35
+    - number: 10-36
+    - number: 10-37
+    - number: 11-30
+    - number: 11-42
+    sections:
+    - number: 10.4.4
+    - number: 10.4.5
 ---
 
 - TOC
@@ -52,3 +65,7 @@ Each augmentation element should replace the augmentation point of the original 
 {: .example}
 - Augmentation type `im:PersonAugmentationType` should not contain its own augmentation point element like `im:PersonAugmentationPoint`.
 - Any substitutions from other namespaces should be made directly on the original augmentation point element for `nc:PersonType` - `nc:PersonAugmentationPoint`.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}
