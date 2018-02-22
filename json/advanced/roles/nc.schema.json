@@ -1,0 +1,77 @@
+{
+  "$id": "http://release.niem.gov/niem/niem-core/4.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "nc:IdentificationID": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "An identifier."
+    },
+    "nc:IdentificationSourceText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A person, organization, or locale which issues an identification."
+    },
+    "nc:IdentificationType": {
+      "additionalProperties": false,
+      "description": "A data type for a representation of an identity.",
+      "properties": {
+        "nc:IdentificationID": {
+          "description": "An identifier.",
+          "$ref": "#/definitions/nc:IdentificationID"
+        },
+        "nc:IdentificationSourceText": {
+          "description": "A person, organization, or locale which issues an identification.",
+          "$ref": "#/definitions/nc:IdentificationSourceText"
+        }
+      },
+      "type": "object"
+    },
+    "nc:Person": {
+      "$ref": "#/definitions/nc:PersonType",
+      "description": "A human being."
+    },
+    "nc:PersonFullName": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A complete name of a person."
+    },
+    "nc:PersonName": {
+      "$ref": "#/definitions/nc:PersonNameType",
+      "description": "A combination of names and/or titles by which a person is known."
+    },
+    "nc:PersonNameType": {
+      "additionalProperties": false,
+      "description": "A data type for a combination of names and/or titles by which a person is known.",
+      "properties": {
+        "nc:PersonFullName": {
+          "description": "A complete name of a person.",
+          "$ref": "#/definitions/nc:PersonFullName"
+        }
+      },
+      "type": "object"
+    },
+    "nc:PersonType": {
+      "additionalProperties": false,
+      "description": "A data type for a human being.",
+      "properties": {
+        "nc:PersonName": {
+          "description": "A combination of names and/or titles by which a person is known.",
+          "$ref": "#/definitions/nc:PersonName"
+        }
+      },
+      "type": "object"
+    },
+    "nc:RoleOfPerson": {
+      "$ref": "#/definitions/nc:PersonType",
+      "description": "A person of whom the role object is a function."
+    }
+  },
+  "properties": {
+  },
+  "required": [
+  ]
+}

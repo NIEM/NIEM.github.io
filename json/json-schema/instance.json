@@ -1,0 +1,9 @@
+{
+  "request:RequestMessage": {
+    "request:CaseTypeCode": "civil",
+    "request:CourtID": 3,
+    "request:CourtName": "Springfield Circuirt Court",
+    "request:HearingDate": "2019-01-02",
+    "request:InitialApperanceIndicator": true
+  }
+}

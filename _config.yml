@@ -22,6 +22,7 @@ exclude:
   - json/guidance/aux
   - json/guidance/tmp
   - site-tools
+  - "*/tmp.*"
 
 gems:
   - jekyll-mentions
@@ -29,6 +30,7 @@ gems:
 
 repository: NIEM/niem.github.io
 
+# Uncomment this to view as a forked repo (e.g., http://$user.github.io/NIEM.github.io/).
 baseurl: "NIEM.github.io"
 
 # Site data

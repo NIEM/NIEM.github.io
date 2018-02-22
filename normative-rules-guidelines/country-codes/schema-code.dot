@@ -9,13 +9,13 @@ digraph G {
   "nc:CountryCode" [label="element \N", shape=box, style=rounded];
 
   "nc:CountryType":ecr -> { "nc:CountryCode" } [dir=back,label=substitutionGroup];
-  "nc:CountryCode" -> "cli:CodeType":top [label=type];
+  "nc:CountryCode" -> "nc:CodeType":top [label=type];
 
   rank = same {
-  "cli:CodeType" [label="<top> complexType \N\l | &emsp; attribute cli:codeListURI [1,1]\l | &emsp; attribute cli:codeListColumnName [0,1]\l | &emsp; attribute cli:codeListConstrainingIndicator [0,1]\l"];
+  "nc:CodeType" [label="<top> complexType \N\l | &emsp; attribute cli:codeListURI [1,1]\l | &emsp; attribute cli:codeListColumnName [0,1]\l | &emsp; attribute cli:codeListConstrainingIndicator [0,1]\l"];
   "xs:token" [label="simpleType \N"];
   }
 
-  "cli:CodeType" -> "xs:token" [label="extends"];
+  "nc:CodeType" -> "xs:token" [label="extends"];
 
 }

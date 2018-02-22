@@ -26,16 +26,15 @@ This may be interpreted against the following JSON-LD context:
 {% include_relative qname-context.json %}
 ```
 
-This example can be seen at [the JSON-LD Playground](http://tinyurl.com/ycws5yz7).
+This example and expanded and compacted version can be seen at [the JSON-LD Playground](http://tinyurl.com/ycws5yz7).
 
-The
-[result of expanding the JSON file using the context is provided as a separate page](../expanded).
-The page on [JSON-LD processing](../processing) discusses expansion and compaction,
+The page on [JSON-LD processing](../processing) discusses [expansion](https://json-ld.org/spec/latest/json-ld-api/#expansion) and [compaction](https://json-ld.org/spec/latest/json-ld-api/#compaction),
 two of the standard JSON-LD processing algorithms that can transform JSON-LD
 data in useful ways.
 
-Compaction is another JSON-LD processing algorithm. When compacted with an empty
-context, the structure of the data, and the complete URIs for keys are plainly visible:
+## Compaction
+
+When compacted with an empty context, the structure of the data, and the complete URIs for keys are plainly visible:
 
 ```json
 {% include_relative compact-with-empty-context.json %}
@@ -65,7 +64,7 @@ This example can be seen at [the JSON-LD Playground](http://tinyurl.com/yb7m7chr
 
 
 When interpreted against the right JSON-LD contexts, both JSON documents
-evaluate to [the same expanded data](../expanded/).
+evaluate to [the same expanded data](http://tinurl.com/y7w3tqpd).
 
 Developers of exchanges may use contexts to greatly simplify their JSON files,
 while maintaining the meaning of the data across all users and communities.
@@ -80,6 +79,8 @@ key URIs; techniques are detailed in the JSON-LD specification's sections on
 
 ### Compact IRIs: mapping qualified names to IRIs/URIs
 
+Contexts use [Internationalized Resource Identifiers (IRIs)](https://tools.ietf.org/html/rfc3987) to uniquely identify resources.
+
 The use of contexts to define prefixes is described by
 [the JSON-LD specification's section on compact IRIs](https://json-ld.org/spec/latest/json-ld/#compact-iris),
 which is JSON-LD's name for colon-separated qualified names.
@@ -90,7 +91,7 @@ which describes the mapping from an XML qualified name to a URI. In short, any
 namespace that does not end in an octothorp/hash/pound sign (<q>`#`</q>) has a
 <q>`#`</q> character appended to it. So, since the namespace URI for the NIEM
 Core namespace (nc) is `http://release.niem.gov/niem/niem-core/4.0/`, it would
-be property defined to the following part of a context:
+be defined in the following part of a context:
 
 ```json
 {

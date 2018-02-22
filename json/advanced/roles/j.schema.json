@@ -1,0 +1,47 @@
+{
+  "$id": "http://release.niem.gov/niem/domains/jxdm/6.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.0/#",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "j:EnforcementOfficialBadgeIdentification": {
+      "$ref": "./nc.schema.json#/definitions/nc:IdentificationType",
+      "description": "An identification used to refer to an enforcement official."
+    },
+    "j:EnforcementOfficialType": {
+      "additionalProperties": false,
+      "description": "A data type for a person involved in the enforcement of law.",
+      "properties": {
+        "j:EnforcementOfficialBadgeIdentification": {
+          "description": "An identification used to refer to an enforcement official.",
+          "$ref": "#/definitions/j:EnforcementOfficialBadgeIdentification"
+        },
+        "nc:RoleOfPerson": {
+          "description": "A person of whom the role object is a function.",
+          "$ref": "./nc.schema.json#/definitions/nc:RoleOfPerson"
+        }
+      },
+      "required": [
+        "nc:RoleOfPerson"
+      ],
+      "type": "object"
+    }
+  },
+  "properties": {
+    "j:ArrestOfficial": {
+      "$ref": "#/definitions/j:EnforcementOfficialType",
+      "description": "A peace official who makes an arrest."
+    },
+    "nc:Person": {
+      "$ref": "./nc.schema.json#/definitions/nc:PersonType",
+      "description": "A human being."
+    }
+  },
+  "required": [
+  ]
+}

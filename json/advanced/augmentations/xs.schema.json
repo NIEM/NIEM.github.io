@@ -1,0 +1,30 @@
+{
+  "$id": "http://www.w3.org/2001/XMLSchema",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "clsa": "http://reference.niem.gov/niem/specification/code-lists/1.0/code-lists-schema-appinfo/#",
+    "ct": "http://release.niem.gov/niem/conformanceTargets/3.0/#",
+    "structures": "http://release.niem.gov/niem/structures/4.0/#",
+    "term": "http://release.niem.gov/niem/localTerminology/3.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "xs:date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "xs:dateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "xs:string": {
+      "type": "string"
+    }
+  },
+  "properties": {
+  },
+  "required": [
+  ]
+}

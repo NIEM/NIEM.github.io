@@ -1,0 +1,122 @@
+{
+  "$id": "http://release.niem.gov/niem/niem-core/4.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "structures": "http://release.niem.gov/niem/structures/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "nc:CaseTitleText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "An official name of a case."
+    },
+    "nc:CaseType": {
+      "additionalProperties": false,
+      "description": "A data type for an aggregation of information about a set of related activities and events.",
+      "properties": {
+        "structures:metadata": {
+          "$ref": "./structures.schema.json#/definitions/structures:metadata"
+        },
+        "structures:relationshipMetadata": {
+          "$ref": "./structures.schema.json#/definitions/structures:relationshipMetadata"
+        },
+        "structures:uri": {
+          "$ref": "./structures.schema.json#/definitions/structures:uri"
+        },
+        "nc:CaseTitleText": {
+          "description": "An official name of a case.",
+          "$ref": "#/definitions/nc:CaseTitleText"
+        }
+      },
+      "type": "object"
+    },
+    "nc:Date": {
+      "$ref": "./xs.schema.json#/definitions/xs:date",
+      "description": "A full date."
+    },
+    "nc:DateTime": {
+      "$ref": "./xs.schema.json#/definitions/xs:dateTime",
+      "description": "A full date and time."
+    },
+    "nc:DateType": {
+      "additionalProperties": false,
+      "description": "A data type for a calendar date.",
+      "properties": {
+        "nc:Date": {
+          "description": "A full date.",
+          "$ref": "#/definitions/nc:Date"
+        },
+        "nc:DateTime": {
+          "description": "A full date and time.",
+          "$ref": "#/definitions/nc:DateTime"
+        }
+      },
+      "type": "object"
+    },
+    "nc:EffectiveDate": {
+      "$ref": "#/definitions/nc:DateType",
+      "description": "A date that information take effect."
+    },
+    "nc:ExpirationDate": {
+      "$ref": "#/definitions/nc:DateType",
+      "description": "A date after which information is no longer valid."
+    },
+    "nc:LanguageCode": {
+      "$ref": "./xs.schema.json#/definitions/xs:token",
+      "description": "A system of words or symbols used for communication."
+    },
+    "nc:LastUpdatedDate": {
+      "$ref": "#/definitions/nc:DateType",
+      "description": "A date information was last modified."
+    },
+    "nc:MetadataType": {
+      "additionalProperties": false,
+      "description": "A data type for information that further qualifies primary data; data about data.",
+      "properties": {
+        "structures:id": {
+          "$ref": "./xs.schema.json#/definitions/xs:ID"
+        },
+        "nc:EffectiveDate": {
+          "description": "A date that information take effect.",
+          "$ref": "#/definitions/nc:EffectiveDate"
+        },
+        "nc:ExpirationDate": {
+          "description": "A date after which information is no longer valid.",
+          "$ref": "#/definitions/nc:ExpirationDate"
+        },
+        "nc:LanguageCode": {
+          "description": "A system of words or symbols used for communication.",
+          "$ref": "#/definitions/nc:LanguageCode"
+        },
+        "nc:LastUpdatedDate": {
+          "description": "A date information was last modified.",
+          "$ref": "#/definitions/nc:LastUpdatedDate"
+        },
+        "nc:SensitivityText": {
+          "description": "A sensitivity level of the information.",
+          "$ref": "#/definitions/nc:SensitivityText"
+        }
+      },
+      "type": "object"
+    },
+    "nc:SensitivityText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A sensitivity level of the information."
+    }
+  },
+  "properties": {
+    "nc:Case": {
+      "$ref": "#/definitions/nc:CaseType",
+      "description": "An aggregation of information about a set of related activities and events."
+    },
+    "nc:Metadata": {
+      "$ref": "#/definitions/nc:MetadataType",
+      "description": "Information that further qualifies primary data; data about data."
+    }
+  },
+  "required": [
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "$id": "http://release.niem.gov/niem/niem-core/4.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "clsa": "http://reference.niem.gov/niem/specification/code-lists/1.0/code-lists-schema-appinfo/#",
+    "ct": "http://release.niem.gov/niem/conformanceTargets/3.0/#",
+    "iso_3166": "http://release.niem.gov/niem/codes/iso_3166-1/4.0/#",
+    "iso_4217": "http://release.niem.gov/niem/codes/iso_4217/4.0/#",
+    "iso_639-3": "http://release.niem.gov/niem/codes/iso_639-3/4.0/#",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "niem-xs": "http://release.niem.gov/niem/proxy/xsd/4.0/#",
+    "structures": "http://release.niem.gov/niem/structures/4.0/#",
+    "term": "http://release.niem.gov/niem/localTerminology/3.0/#",
+    "unece": "http://release.niem.gov/niem/codes/unece_rec20/4.0/#",
+    "usps": "http://release.niem.gov/niem/codes/usps_states/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "nc:ActivityDate": {
+      "$ref": "#/definitions/nc:DateType",
+      "description": "A date of an activity."
+    },
+    "nc:ActivityDescriptionText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A description of an activity."
+    },
+    "nc:CaseTitleText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "An official name of a case."
+    },
+    "nc:CaseType": {
+      "additionalProperties": false,
+      "description": "A data type for an aggregation of information about a set of related activities and events.",
+      "properties": {
+        "j:CaseAugmentation": {
+          "description": "Additional information about a case.",
+          "items": {
+            "$ref": "./j.schema.json#/definitions/j:CaseAugmentation"
+          },
+          "minItems": 0,
+          "type": "array"
+        },
+        "nc:ActivityDate": {
+          "description": "A date of an activity.",
+          "$ref": "#/definitions/nc:ActivityDate"
+        },
+        "nc:ActivityDescriptionText": {
+          "description": "A description of an activity.",
+          "$ref": "#/definitions/nc:ActivityDescriptionText"
+        },
+        "nc:CaseTitleText": {
+          "description": "An official name of a case.",
+          "$ref": "#/definitions/nc:CaseTitleText"
+        }
+      },
+      "type": "object"
+    },
+    "nc:Date": {
+      "$ref": "./xs.schema.json#/definitions/xs:date",
+      "description": "A full date."
+    },
+    "nc:DateTime": {
+      "$ref": "./xs.schema.json#/definitions/xs:dateTime",
+      "description": "A full date and time."
+    },
+    "nc:DateType": {
+      "additionalProperties": false,
+      "description": "A data type for a calendar date.",
+      "properties": {
+        "nc:Date": {
+          "description": "A full date.",
+          "$ref": "#/definitions/nc:Date"
+        },
+        "nc:DateTime": {
+          "description": "A full date and time.",
+          "$ref": "#/definitions/nc:DateTime"
+        }
+      },
+      "type": "object"
+    },
+    "nc:IdentificationID": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "An identifier."
+    },
+    "nc:IdentificationType": {
+      "additionalProperties": false,
+      "description": "A data type for a representation of an identity.",
+      "properties": {
+        "nc:IdentificationID": {
+          "description": "An identifier.",
+          "$ref": "#/definitions/nc:IdentificationID"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "properties": {
+    "nc:Case": {
+      "$ref": "#/definitions/nc:CaseType",
+      "description": "An aggregation of information about a set of related activities and events."
+    }
+  },
+  "required": [
+  ]
+}

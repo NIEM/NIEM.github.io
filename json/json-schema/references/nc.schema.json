@@ -1,0 +1,50 @@
+{
+  "$id": "http://release.niem.gov/niem/niem-core/4.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "nc:Amount": {
+      "$ref": "./xs.schema.json#/definitions/xs:decimal",
+      "description": "An amount of money."
+    },
+    "nc:AmountType": {
+      "additionalProperties": false,
+      "description": "A data type for an amount of money.",
+      "properties": {
+        "nc:Amount": {
+          "description": "An amount of money.",
+          "$ref": "#/definitions/nc:Amount"
+        },
+        "nc:CurrencyCode": {
+          "description": "A unit of money or exchange.",
+          "$ref": "#/definitions/nc:CurrencyCode"
+        },
+        "nc:CurrencyText": {
+          "description": "A unit of money or exchange.",
+          "$ref": "#/definitions/nc:CurrencyText"
+        }
+      }
+    },
+    "nc:CurrencyCode": {
+      "$ref": "./xs.schema.json#/definitions/xs:token",
+      "description": "A unit of money or exchange."
+    },
+    "nc:CurrencyText": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A unit of money or exchange."
+    }
+  },
+  "properties": {
+    "nc:ItemValueAmount": {
+      "$ref": "#/definitions/nc:AmountType",
+      "description": "A monetary value of an item."
+    }
+  },
+  "required": [
+  ]
+}

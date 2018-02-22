@@ -1,0 +1,97 @@
+{
+  "$id": "http://release.niem.gov/niem/domains/jxdm/6.0/",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "@context": {
+    "aamva_d20": "http://release.niem.gov/niem/codes/aamva_d20/4.0/#",
+    "clsa": "http://reference.niem.gov/niem/specification/code-lists/1.0/code-lists-schema-appinfo/#",
+    "ct": "http://release.niem.gov/niem/conformanceTargets/3.0/#",
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.0/#",
+    "mmucc": "http://release.niem.gov/niem/codes/mmucc/4.0/#",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "ncic": "http://release.niem.gov/niem/codes/fbi_ncic/4.0/#",
+    "niem-xs": "http://release.niem.gov/niem/proxy/xsd/4.0/#",
+    "structures": "http://release.niem.gov/niem/structures/4.0/#",
+    "term": "http://release.niem.gov/niem/localTerminology/3.0/#",
+    "ucr": "http://release.niem.gov/niem/codes/fbi_ucr/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "definitions": {
+    "j:CaseAugmentation": {
+      "$ref": "#/definitions/j:CaseAugmentationType",
+      "description": "Additional information about a case."
+    },
+    "j:CaseAugmentationType": {
+      "additionalProperties": false,
+      "description": "A data type for additional information about a case.",
+      "properties": {
+        "j:CaseCourt": {
+          "description": "A court of law in which the case is being tried.",
+          "$ref": "#/definitions/j:CaseCourt"
+        },
+        "j:CaseLineageCase": {
+          "description": "A description of a case at a previous stage.",
+          "$ref": "#/definitions/j:CaseLineageCase"
+        },
+        "j:CaseOfficial": {
+          "description": "A justice official's involvement in a court case.",
+          "items": {
+            "$ref": "#/definitions/j:CaseOfficial"
+          },
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "j:CaseLineageCase": {
+      "$ref": "./nc.schema.json#/definitions/nc:CaseType",
+      "description": "A description of a case at a previous stage."
+    },
+    "j:CaseCourt": {
+      "$ref": "#/definitions/j:CourtType",
+      "description": "A court of law in which the case is being tried."
+    },
+    "j:CaseOfficial": {
+      "$ref": "#/definitions/j:CaseOfficialType",
+      "description": "A justice official's involvement in a court case."
+    },
+    "j:CaseOfficialType": {
+      "additionalProperties": false,
+      "description": "A data type for an official's involvement in a case.",
+      "properties": {
+        "j:JudicialOfficialRegistrationIdentification": {
+          "description": "An identification assigned to a judicial official after registering within a state or region.",
+          "$ref": "#/definitions/j:JudicialOfficialRegistrationIdentification"
+        }
+      },
+      "required": [
+      ],
+      "type": "object"
+    },
+    "j:CourtName": {
+      "$ref": "./xs.schema.json#/definitions/xs:string",
+      "description": "A name of a unit of a court."
+    },
+    "j:CourtType": {
+      "additionalProperties": false,
+      "description": "A data type for a court or a unit of a court responsible for trying justice proceedings.",
+      "properties": {
+        "j:CourtName": {
+          "description": "A name of a unit of a court.",
+          "$ref": "#/definitions/j:CourtName"
+        }
+      },
+      "type": "object"
+    },
+    "j:JudicialOfficialRegistrationIdentification": {
+      "$ref": "./nc.schema.json#/definitions/nc:IdentificationType",
+      "description": "An identification assigned to a judicial official after registering within a state or region."
+    }
+  },
+  "properties": {
+  },
+  "required": [
+  ]
+}

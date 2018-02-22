@@ -1,0 +1,18 @@
+{
+  "nc:Case": {
+    "@id": "Case1",
+    "structures:metadata": "Metadata1 ",
+    "nc:CaseTitleText": "Smith v Jones"
+  },
+  "nc:Metadata": {
+    "@id": "Metdata1",
+    "nc:EffectiveDate": {
+      "nc:Date": "2018-01-31"
+    },
+    "nc:LanguageCode": "en",
+    "nc:LastUpdatedDate": {
+      "nc:Date": "2018-01-31"
+    },
+    "nc:SensitivityText": "Public"
+  }
+}

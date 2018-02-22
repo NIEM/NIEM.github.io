@@ -13,7 +13,7 @@ for example:
 {% include_relative short-names.json %}
 ```
 
-In this example, each key is a string. When exchanging data with in JSON, each
+In this example, each key is a string. When exchanging data in JSON, each
 participant needs to agree on basic facts about the data:
 
 * What are the allowed names for values and objects within the JSON document?
@@ -28,4 +28,4 @@ NIEM names are [grouped by namespaces](namespaces), distinguishing names that wo
 be ambiguous or conflicting, and identifying names from specific versions of
 vocabularies.
 
-Next: [JSON-LD](../json-ld)
+{% include icon-list.html links=page.links %}

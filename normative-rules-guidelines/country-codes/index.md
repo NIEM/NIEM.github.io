@@ -1,37 +1,29 @@
 ---
 title: Using Country Codes in NIEM 4
-href_code_lists_spec: https://reference.niem.gov/niem/specification/code-lists/1.0/niem-code-lists-1.0-2016-06-20.html
+href_code_lists_spec: https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html
 ---
-
-## Status of this document
-
-The NIEM community is in the process of updating the NIEM schemas and related
-resources for the NIEM 4.0 release. This document reflects the current thinking
-on how NIEM 4 will be updated to best express and convey identification of
-countries, using standard country codes. This document should be considered a
-draft, subject to comment and revision. Comments are welcome, and should be
-submitted via [a Github issue](https://github.com/niem/niem.github.io/issues).
 
 ## Abstract
 
-The NIEM 4 release will incorporate updates to the way several code lists are
+The NIEM 4 release incorporates updates to the way several code lists are
 distributed, and how they are used. The
-[NIEM Code Lists Specification](http://niem.github.io/technical/code-lists/niem-code-lists-specification/)
-was published in June 2016. It provides:
+[NIEM Code Lists Specification]({{page.href_code_lists_spec}})
+was published in June 2016 and updated in November 2017. It provides:
 
 * Methods for leveraging the spreadsheet CSV (comma-separated values) and Genericode XML
   formats for conveying and distributing code lists.
 * Methods for using code lists in XML Schemas to support their use in exchanged messages.
 * XML Schema components and methods for run-time exchange of code values.
 
-This document describes how NIEM 4 will be updated to integrate these code list
+This document describes how NIEM 4 integrates these code list
 methodologies for the use and exchange of country codes using public standard
 country code lists, specifically GENC (Geopolitical Entities, Names, and Codes)
 and ISO 3166-1.
 
-This approach has several parts. The NIEM 4 release will include:
+This approach has several parts. The NIEM 4 release includes:
 
-* CSV versions of country code lists for GENC and ISO 3166-1.
+* CSV versions of country code lists for GENC.
+* XML Schema versions of country code lists for ISO 3166-1.
 * XML Schema components that may be used in messages for identifying countries
   using code values from code lists.
 * XML Schema annotations and XML Catalogs that tie the message components to the code lists.
@@ -62,14 +54,14 @@ In NIEM 4.0, the following representations of country are explicitly represented
   * 2-character
   * 3-character
   * Numeric
-* GENC (latest version, 3-3)
+* GENC
   * 2-character
   * 3-character
   * Numeric
 
 In addition to these representations, other representations may be used with
 NIEM 4, either by additional substitutions for `nc:CountryRepresentation`, or by
-providing additional code list URIs with `cli:CodeType`.
+providing additional code list URIs with `nc:CodeType`.
 
 An IEPD (information exchange package definition), which specifies a message,
 may include one or more of these representations to convey countries. Which
@@ -79,7 +71,7 @@ the message specification.
 The following sections show how these representations of country identifiers are
 built and expressed in NIEM 4.
 
-### Text representation of country ###
+### Text representation of country
 
 Representing country by a text value is the simplest method, but provides
 minimal interoperability, as sender and receiver must somehow agree on what any
@@ -108,7 +100,7 @@ A text representation of the United States of America may appear in an XML messa
 </nc:Document>
 ```
 
-### ISO 3166-1 country code ###
+### ISO 3166-1 country code
 
 ISO represents country codes via the ISO 3166-1 standard, which incorporates 3
 different representations for each country:
@@ -122,7 +114,7 @@ encodes the available code values using `xs:enumeration`, as is done in NIEM 3
 for most codes, including for ISO 3166-1. The following pattern will be used for
 each of ISO 3166-1's encodings; this example just shows the Alpha-2 encoding.
 
-#### ISO 3166-1 Alpha-2 ####
+#### ISO 3166-1 Alpha-2
 
 Although this example shows only the Alpha-2 encoding, this pattern will be
 followed for ISO-3166-1's Alpha-2 encoding, its Alpha-3 encoding, and its
@@ -146,7 +138,7 @@ An XML message instance using these components appears as follows:
 </nc:Document>
 ```
 
-#### Alternative and rationale ####
+#### Alternative and rationale
 
 An encoding similar to the way we represent GENC, below, was considered for
 representing ISO 3166-1 in NIEM 4, but was rejected because of issues specific
@@ -161,7 +153,7 @@ to ISO 3166-1, which include:
 1. NIEM 3 used simple type enumerations for ISO 3166-1 code lists, and no issues
    have been submitted that indicate a problem with that representation.
 
-### GENC codes ###
+### GENC codes
 
 The following pattern is used to represent the GENC codes in NIEM. This includes
 the representations of country codes shown below, but is also extended for
@@ -176,9 +168,9 @@ This is made more convenient by:
 1. GENC documents describe messages that use the code list URI along with code
    values.
 
-#### GENC 3-character country code ####
+#### GENC 3-character country code
 
-GENC encodings of country codes use the generic code type `cli:CodeType`
+GENC encodings of country codes use the generic code type `nc:CodeType`
 described by
 [The NIEM Code Lists Specification]({{page.href_code_lists_spec}}#appendix_B). This
 allows for run-time-specified code list
@@ -204,12 +196,12 @@ is used for each encoding, and the column name is not used. A sample instance, u
 </nc:Document>
 ```
 
-This uses the generic code type `cli:CodeType`, provided as part of the NIEM
+This uses the generic code type `nc:CodeType`, provided as part of the NIEM
 Code Lists Specification, described by the following diagram:
 
 ![GENC 3-character representation of country](schema-code.png)
 
-Here we see that `nc:CountryCode` uses the generic `cli:CodeType`, requiring it
+Here we see that `nc:CountryCode` uses the generic `nc:CodeType`, requiring it
 to have a code list URI and optional column name and constraining
 indicator. 
 
@@ -227,8 +219,8 @@ ALB | ALBANIA | Albania | Republic of Albania
 
 This CSV code list file is provided in a sub-directory of the NIEM release,
 along with CSVs for the other encodings of the Geopolitical Entities code list,
-as well as the Geopolitical Subdivisions code list. These CSV code list files
-are identified by XML catalog documents provided as part of the NIEM release.
+as well as the Geopolitical Subdivisions code list (`niem/codes/genc`). These CSV code list files
+are identified by XML catalog documents provided as part of the NIEM release (`niem/xml-catalog.xml`).
 
 Users and exchange developers who must (1) update to newer versions of GENC
 code lists, or (2) incorporate exchanges using older versions of GENC code
