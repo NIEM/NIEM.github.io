@@ -70,6 +70,13 @@ a.list-group-item.external::before {
 
 #page-nav ul#markdown-toc li {
   padding-left: 15px;
+
+  ul li {
+    padding-left: 0;
+    a {
+      padding-left: 0;
+    }
+  }
 }
 
 // Styling for sidebar navigation scrollspy
@@ -94,6 +101,6 @@ a.list-group-item.external::before {
     li a {
       padding: 5px;
     }
-  
+
   }
   

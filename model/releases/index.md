@@ -24,7 +24,7 @@ A NIEM release is a coherent set of schemas and supporting artifacts representin
 
 ## Kinds of releases
 
-A release can be a major or minor release.  
+A release can be a major or minor release.
 
 A **major release** may include architectural changes, as well as content changes to any namespace.
 
