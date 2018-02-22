@@ -1,0 +1,41 @@
+
+{% comment%}
+  ***
+  Given a list of rule numbers, outputs a table with external links to the NDR.
+
+  - list: Required list of NDR rule numbers and/or sections
+
+  Example call: {% include ndr-rule-table.html list=page.ndr %}
+  ***
+{% endcomment%}
+
+{% if include.list.sections %}
+  <ul>
+    {% for item in include.list.sections %}
+      {% assign section = site.data.ndr-sections | where: "number", item.number | first %}
+      {% assign link = site.data.links.ndr | append: "#section_" | append: section.number %}
+      <li><a href="{{ link }}">NDR Section {{ section.number }}</a> - {{ section.title }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if include.list.rules %}
+  <table>
+    <thead>
+      <th>Rule</th>
+      <th>Applicability</th>
+      <th>Title</th>
+    </thead>
+
+    {% for item in include.list.rules %}
+      {% assign rule = site.data.ndr-rules | where: "number", item.number | first %}
+      {% assign link = site.data.links.ndr | append: "#rule_" | append: rule.number %}
+
+      <tr>
+        <td><a href="{{ link }}" target="_blank">NDR {{ rule.number }}</a></td>
+        <td>{{ rule.applicability }}</td>
+        <td>{{ rule.title }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+{% endif %}

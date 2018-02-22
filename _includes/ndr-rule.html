@@ -1,0 +1,18 @@
+
+{% comment%}
+***
+  Given a rule number, outputs an external link to the NDR.
+
+  - number: Required rule number
+
+  Example call: {% include ndr-rule.html number="12-15" %}
+***
+{% endcomment%}
+
+{% assign rule = site.data.ndr-rules | where: "number", include.number | first %}
+
+{% assign header = "**NDR Rule " | append: rule.number | append: "** (" | append: rule.applicability | append: ")" %}
+{% assign link = site.data.links.ndr | append: "#rule_" | append: rule.number %}
+
+> {{ header }}<br>[{{ rule.title }}]({{ link }}){:target="_blank"}
+{:.ndr}
