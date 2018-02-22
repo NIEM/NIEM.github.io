@@ -42,6 +42,10 @@
 - TOC
 {:toc}
 
+### Name
+
+The name of a type must end with the representation term "Type".
+
 ### Parent
 
 CCC types may only extend other CCC types.
@@ -54,6 +58,14 @@ For a type that is not metadata, an association, or an augmentation, the default
 
 In reference schemas, a CCC type's elements must be represented as a sequence, rather than a choice.
 
-## References
+### Default cardinality
+
+The default usage of properties in a type from a NIEM release should be optional and over-inclusive.  In XML, this would be represented as `minOccurs="0"` and `maxOccurs="0"`.
+
+Individual information exchanges can and often should have very precise cardinality requirements.  Because these vary across different use cases, and because cardinality restrictions can be tightened but not loosened in a subset, cardinality should be set as flexibly as possible in the release schemas.
+
+### References
+
+See additional guidance for [names](../../property/modeling/names/){:target="_blank"} and [definitions](../../property/modeling/definitions/){:target="_blank"}.
 
 {% include ndr-references.html list=page.ndr %}
