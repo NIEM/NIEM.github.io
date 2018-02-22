@@ -44,7 +44,7 @@
 {% endif %}
 
 
-<a {{ target }} href="{{ url }}" class=" {{ classes }}">
+<a {{ target }} href="{{ url }}" class=" {{ classes }} {{ "sidebar-" | append: include.class }}">
   <i class="fa {{ icon }} fa-fw"></i>
   <span class="content"> {{ title }}</span>
 </a>

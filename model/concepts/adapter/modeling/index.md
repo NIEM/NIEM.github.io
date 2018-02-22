@@ -1,6 +1,24 @@
 ---
   title: Modeling Adapters
   short: Modeling
+  ndr:
+    rules:
+    - number: 10-8
+    - number: 10-9
+    - number: 10-10
+    - number: 10-11
+    - number: 10-12
+    - number: 10-13
+    - number: 10-14
+    - number: 10-15
+    - number: 10-16
+    - number: 10-70
+    - number: 10-71
+    - number: 10-72
+    - number: 10-73
+    - number: 10-74
+    sections:
+    - number: 10.2.3
 ---
 
 - TOC
@@ -37,3 +55,7 @@ NIEM defines structures:id to enable references between components.  For consist
 ### External attributes
 
 In an extension namespace, a non-adapter type is allowed to directly contain a reference to an external attribute as long as a definition is also provided with the reference.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}

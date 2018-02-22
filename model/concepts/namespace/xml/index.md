@@ -1,6 +1,37 @@
 ---
   title: Namespaces in XML
   short: XML
+  ndr:
+    rules:
+    - number: 4-1
+    - number: 4-2
+    - number: 4-3
+    - number: 4-4
+    - number: 4-5
+    - number: 4-6
+    - number: 7-1
+    - number: 7-2
+    - number: 7-3
+    - number: 7-4
+    - number: 9-75
+    - number: 9-76
+    - number: 9-77
+    - number: 9-78
+    - number: 9-79
+    - number: 9-80
+    - number: 9-81
+    - number: 9-86
+    - number: 9-87
+    - number: 9-88
+    - number: 9-89
+    - number: 9-90
+    - number: 9-91
+    - number: 9-92
+    - number: 9-93
+    - number: 9-94
+    - number: 9-95
+    - number: 9-96
+    - number: 9-97
 ---
 
 - TOC
@@ -251,3 +282,7 @@ NIEM requires that each XML Schema must have its own target namespace to provide
 The use of `xs:choice` can lead to ambiguity in some circumstances and are thus not allowed in NIEM reference schemas.  Element substitution is a common alternative.
 
 Extension schemas are allowed to use `xs:choice`.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}

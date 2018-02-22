@@ -1,0 +1,454 @@
+- number: 1
+  title: Introduction
+- number: 1.1
+  title: Scope
+- number: 1.2
+  title: Audience
+- number: 2
+  title: Document conventions and normative content
+- number: 2.1
+  title: Document references
+- number: 2.2
+  title: Clark notation and qualified names
+- number: 2.3
+  title: Use of namespaces and namespace prefixes
+- number: 2.4
+  title: Normative and informative content
+- number: 2.4.1
+  title: Rules
+- number: 2.4.2
+  title: Use of normative Schematron
+- number: 2.4.3
+  title: Normative XPath functions
+- number: 2.4.4
+  title: Normative Schematron namespace declarations
+- number: 2.5
+  title: Additional formatting
+- number: 3
+  title: Terminology
+- number: 3.1
+  title: IETF Best Current Practice 14 terminology
+- number: 3.2
+  title: XML terminology
+- number: 3.3
+  title: XML Information Set terminology
+- number: 3.4
+  title: XML Schema terminology
+- number: 3.4.1
+  title: Schema components
+- number: 3.4.2
+  title: Schema information set contributions
+- number: 3.5
+  title: XML Namespaces terminology
+- number: 3.6
+  title: Conformance Targets Attribute Specification terminology
+- number: 4
+  title: Conformance targets
+- number: 4.1
+  title: Conformance targets defined
+- number: 4.1.1
+  title: Reference schema document
+- number: 4.1.2
+  title: Extension schema document
+- number: 4.1.3
+  title: Schema document set
+- number: 4.1.4
+  title: Instance documents and elements
+- number: 4.2
+  title: Applicability of rules to conformance targets
+- number: 4.3
+  title: Conformance target identifiers
+- number: 5
+  title: The NIEM conceptual model
+- number: 5.1
+  title: Purpose of the NIEM conceptual model
+- number: 5.2
+  title: The RDF model
+- number: 5.3
+  title: NIEM in terms of RDF
+- number: 5.4
+  title: Unique identification of data objects
+- number: 5.5
+  title: NIEM data is explicit, not implicit
+- number: 5.6
+  title: Mapping of NIEM concepts to RDF concepts
+- number: 5.6.1
+  title: Resource IRIs for XML Schema components and information items
+- number: 5.6.2
+  title: RDF Literals
+- number: 5.6.3
+  title: NIEM instance mappings to RDF
+- number: 5.6.3.1
+  title: XML document mapping
+- number: 5.6.3.2
+  title: Element instance
+- number: 5.6.3.3
+  title: Element as a property with unknown context
+- number: 5.6.3.4
+  title: Element as a simple property of an object or association
+- number: 5.6.3.5
+  title: Attribute as a simple property of an object or association
+- number: 5.6.3.6
+  title: Elements via an augmentation type
+- number: 5.6.3.7
+  title: Attributes via an augmentation type
+- number: 5.6.4
+  title: NIEM complex type definitions to RDF
+- number: 5.6.5
+  title: NIEM element declaration mappings to RDF
+- number: 5.6.6
+  title: NIEM attribute declarations to RDF
+- number: 6
+  title: Guiding principles
+- number: 6.1
+  title: Specification guidelines
+- number: 6.1.1
+  title: Keep specification to a minimum
+- number: 6.1.2
+  title: Focus on rules for schemas
+- number: 6.1.3
+  title: Use specific, concise rules
+- number: 6.2
+  title: XML Schema design guidelines
+- number: 6.2.1
+  title: Purpose of XML Schemas
+- number: 6.2.2
+  title: Prohibit XML parsing from constructing values
+- number: 6.2.3
+  title: Use XML validating parsers for content validation
+- number: 6.2.4
+  title: Validate for conformance to schema
+- number: 6.2.5
+  title: Allow multiple schemas for XML constraints
+- number: 6.2.6
+  title: Define one reference schema per namespace
+- number: 6.2.7
+  title: Disallow mixed content
+- number: 6.2.8
+  title: Specify types for all constructs
+- number: 6.2.9
+  title: Avoid wildcards in reference schemas
+- number: 6.2.10
+  title: Schema locations provided in schema documents are hints
+- number: 6.2.11
+  title: Use open standards
+- number: 6.3
+  title: Modeling design guidelines
+- number: 6.3.1
+  title: Namespaces enhance reuse
+- number: 6.3.2
+  title: Design NIEM for extensibility
+- number: 6.4
+  title: Implementation guidelines
+- number: 6.4.1
+  title: Avoid displaying raw XML data
+- number: 6.4.2
+  title: Leave implementation decisions to implementers
+- number: 6.5
+  title: Modeling guidelines
+- number: 6.5.1
+  title: Documentation
+- number: 6.5.2
+  title: Consistent naming
+- number: 6.5.3
+  title: Reflect the real world
+- number: 6.5.4
+  title: Be consistent
+- number: 6.5.5
+  title: Reserve inheritance for specialization
+- number: 6.5.6
+  title: Do not duplicate definitions
+- number: 6.5.7
+  title: Keep it simple
+- number: 6.5.8
+  title: Be aware of scope
+- number: 6.5.9
+  title: Be mindful of namespace cohesion
+- number: 7
+  title: Conformance to standards
+- number: 7.1
+  title: Conformance to XML
+- number: 7.2
+  title: Conformance to XML Namespaces
+- number: 7.3
+  title: Conformance to XML Schema
+- number: 7.4
+  title: ISO 11179 Part 4
+- number: 7.5
+  title: ISO 11179 Part 5
+- number: 7.6
+  title: IC-ISM and IC-NTK
+- number: 8
+  title: Strategy for a NIEM profile of XML Schema
+- number: 8.1
+  title: Wildcards
+- number: 8.2
+  title: Components are globally reusable
+- number: 8.3
+  title: Avoid recursive model groups
+- number: 8.4
+  title: Ensure XML parsing does not construct values
+- number: 8.5
+  title: Use namespaces rigorously
+- number: 8.6
+  title: Documentation is for people; appinfo is for machines
+- number: 9
+  title: Rules for a NIEM profile of XML Schema
+- number: 9.1
+  title: Type definition components
+- number: 9.1.1
+  title: Type definition hierarchy
+- number: 9.1.1.1
+  title: Types prohibited as base types
+- number: 9.1.2
+  title: Simple type definition
+- number: 9.1.2.1
+  title: Simple types prohibited as list item types
+- number: 9.1.2.2
+  title: Simple types prohibited as union member types
+- number: 9.1.3
+  title: Complex type definition
+- number: 9.1.3.1
+  title: No mixed content
+- number: 9.1.3.2
+  title: Complex content
+- number: 9.1.3.2.1
+  title: Base type of complex type with complex content has complex content
+- number: 9.1.3.3
+  title: Simple content
+- number: 9.2
+  title: Declaration components
+- number: 9.2.1
+  title: Element declaration
+- number: 9.2.1.1
+  title: No element value constraints
+- number: 9.2.2
+  title: Element substitution group
+- number: 9.2.3
+  title: Attribute declaration
+- number: 9.2.3.1
+  title: Prohibited attribute types
+- number: 9.2.3.2
+  title: No attribute value constraints
+- number: 9.2.4
+  title: Notation declaration
+- number: 9.3
+  title: Model group components
+- number: 9.3.1
+  title: Model group
+- number: 9.3.1.1
+  title: Sequence
+- number: 9.3.1.2
+  title: Choice
+- number: 9.3.2
+  title: Particle
+- number: 9.3.2.1
+  title: Sequence cardinality
+- number: 9.3.2.2
+  title: Choice cardinality
+- number: 9.3.3
+  title: Attribute use
+- number: 9.3.4
+  title: Wildcard
+- number: 9.4
+  title: Identity-constraint definition components
+- number: 9.5
+  title: Group definition components
+- number: 9.5.1
+  title: Model group definition
+- number: 9.5.2
+  title: Attribute group definition
+- number: 9.6
+  title: Annotation components
+- number: 9.6.1
+  title: Application information annotation
+- number: 9.7
+  title: Schema as a whole
+- number: 9.8
+  title: Schema assembly
+- number: 9.8.1
+  title: Namespaces for referenced components are imported
+- number: 10
+  title: Rules for NIEM modeling, by NIEM concept
+- number: 10.1
+  title: Categories of NIEM type definitions
+- number: 10.2
+  title: Object
+- number: 10.2.1
+  title: General object types
+- number: 10.2.1.1
+  title: Object types with complex content
+- number: 10.2.2
+  title: Role types and roles
+- number: 10.2.3
+  title: External adapter types and external components
+- number: 10.2.3.1
+  title: Import of external namespace
+- number: 10.2.3.2
+  title: External adapter types
+- number: 10.2.3.3
+  title: External attribute use
+- number: 10.2.3.4
+  title: External element use
+- number: 10.2.4
+  title: Code types
+- number: 10.2.5
+  title: Proxy types
+- number: 10.3
+  title: Associations
+- number: 10.3.1
+  title: Association types
+- number: 10.3.2
+  title: Association element declarations
+- number: 10.4
+  title: Augmentations
+- number: 10.4.1
+  title: Augmentable types
+- number: 10.4.2
+  title: Augmentation point element declarations
+- number: 10.4.3
+  title: Augmentation point element use
+- number: 10.4.4
+  title: Augmentation types
+- number: 10.4.5
+  title: Augmentation element declarations
+- number: 10.5
+  title: Metadata
+- number: 10.5.1
+  title: Metadata types
+- number: 10.5.2
+  title: Metadata element declarations
+- number: 10.6
+  title: Container elements
+- number: 10.7
+  title: The Representation pattern
+- number: 10.8
+  title: Naming rules
+- number: 10.8.1
+  title: Character case
+- number: 10.8.2
+  title: Use of acronyms and abbreviations
+- number: 10.8.2.1
+  title: Use of Acronyms, Initialisms, Abbreviations, and Jargon
+- number: 10.8.3
+  title: Word forms
+- number: 10.8.4
+  title: Object-class term
+- number: 10.8.5
+  title: Property term
+- number: 10.8.6
+  title: Qualifier terms
+- number: 10.8.7
+  title: Representation terms
+- number: 10.9
+  title: Machine-readable annotations
+- number: 10.9.1
+  title: The NIEM appinfo namespace
+- number: 10.9.1.1
+  title: Deprecation
+- number: 10.9.1.2
+  title: External adapters
+- number: 10.9.1.3
+  title: appinfo:appliesToTypes annotation
+- number: 10.9.1.4
+  title: appinfo:appliesToElements annotation
+- number: 10.9.2
+  title: Local terminology
+- number: 10.10
+  title: NIEM structural facilities
+- number: 11
+  title: Rules for NIEM modeling, by XML Schema component
+- number: 11.1
+  title: Type definition components
+- number: 11.1.1
+  title: Type definition hierarchy
+- number: 11.1.2
+  title: Simple type definition
+- number: 11.1.2.1
+  title: Derivation by list
+- number: 11.1.2.2
+  title: Derivation by union
+- number: 11.1.2.3
+  title: Code simple types
+- number: 11.1.3
+  title: Complex type definition
+- number: 11.2
+  title: Declaration components
+- number: 11.2.1
+  title: Element declaration
+- number: 11.2.1.1
+  title: Object element declarations
+- number: 11.2.2
+  title: Element substitution group
+- number: 11.2.3
+  title: Attribute declaration
+- number: 11.2.4
+  title: Notation declaration
+- number: 11.3
+  title: Model group components
+- number: 11.3.1
+  title: Model group
+- number: 11.3.2
+  title: Particle
+- number: 11.3.2.1
+  title: Element use
+- number: 11.3.3
+  title: Attribute use
+- number: 11.3.3.1
+  title: Attribute group use
+- number: 11.3.4
+  title: Wildcard
+- number: 11.4
+  title: Identity-constraint definition components
+- number: 11.5
+  title: Group definition components
+- number: 11.5.1
+  title: Model group definition
+- number: 11.5.2
+  title: Attribute group definition
+- number: 11.6
+  title: Annotation components
+- number: 11.6.1
+  title: Human-readable documentation
+- number: 11.6.1.1
+  title: Data definition opening phrases
+- number: 11.6.1.1.1
+  title: Element and attribute opening phrases
+- number: 11.6.1.1.2
+  title: Complex type opening phrases
+- number: 11.7
+  title: Schema as a whole
+- number: 11.7.1
+  title: xs:schema document element restrictions
+- number: 11.8
+  title: Schema assembly
+- number: 11.8.1
+  title: Supporting namespaces are imported as conformant
+- number: 12
+  title: XML instance document rules
+- number: 12.1
+  title: The meaning of NIEM data
+- number: 12.2
+  title: Identifiers and references
+- number: 12.2.1
+  title: Local identifiers and references
+- number: 12.2.2
+  title: Uniform resource identifiers in NIEM data
+- number: 12.2.3
+  title: Differentiating reference-to-identifier links and use of URIs
+- number: 12.2.4
+  title: Reference and content elements have same meaning
+- number: 12.3
+  title: Instance metadata
+- number: Appendix A
+  title: References
+- number: Appendix B
+  title: Structures namespace
+- number: Appendix C
+  title: Appinfo namespace
+- number: Appendix D
+  title: Index of definitions
+- number: Appendix E
+  title: Index of rules
+- number: Appendix F
+  title: General index

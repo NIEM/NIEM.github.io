@@ -1,6 +1,26 @@
 ---
   title: Modeling Namespaces
   short: Modeling
+  ndr:
+    rules:
+    - number: 9-82
+    - number: 9-83
+    - number: 9-84
+    - number: 9-85
+    - number: 10-67
+    - number: 10-68
+    - number: 10-69
+    - number: 10-77
+    - number: 11-46
+    - number: 11-47
+    - number: 11-48
+    - number: 11-49
+    - number: 11-50
+    - number: 11-51
+    - number: 11-52
+    - number: 11-53
+    - number: 12-1
+    - number: 12-2
 ---
 
 - TOC
@@ -67,3 +87,11 @@ For user-defined namespaces, a different URI base should be chosen - preferably 
 
 {: .box}
 > Replace `http://release.niem.gov/niem/` with a different domain.
+
+## Definition
+
+A namespace-level definition is required.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}

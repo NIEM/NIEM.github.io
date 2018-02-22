@@ -1,32 +1,26 @@
 
 {% assign thisPage = site.pages | where: "url", page.url | first %}
 
-{% capture parentURL %}
-  {% include functions/getParentURL.html url=page.url %}
-{% endcapture %}
-{% assign parentURL = parentURL | strip %}
-
-
-{% capture grandparentURL %}
-  {% include functions/getParentURL.html url=parentURL %}
-{% endcapture %}
-{% assign grandparentURL = grandparentURL | strip %}
-
+{% assign pathSegments = thisPage.url | split: "/" %}
+{% assign tmpURL = "" %}
 
 <div class="section-nav list-group">
 
-  {% if grandparentURL.size > 0 %}
   
-    {% comment %} Grandparent and Parent links {% endcomment%}
-    {% include page/sidebar-link.html url=grandparentURL class="grandparent" %}
-    {% include page/sidebar-link.html url=parentURL class="parent" %}
-
-  {% else %}
+  {% comment %} 
+    Loop through each segment of the URI to generate links to parent pages.
+  {% endcomment %}
     
-    {% comment %} Parent link formatted as grandparent / toplevel {% endcomment%}
-    {% include page/sidebar-link.html url=parentURL class="grandparent" %}
+  {% for segment in pathSegments %}
+    {% assign tmpURL = tmpURL | append: segment | append: "/" %}
 
-  {% endif %}
+    {% if forloop.first == true %}
+      {% include page/sidebar-link.html url=tmpURL class="grandparent" %}
+    {% elsif forloop.last == false %}
+      {% include page/sidebar-link.html url=tmpURL class="parent" %}
+    {% endif %}
+
+  {% endfor %}
 
 
   {% capture hasChildren %}
@@ -54,6 +48,12 @@
     
     {% comment %} List Current Page with Siblings {% endcomment %}
     {% unless thisPage.url contains "/model/content/codes/" %}
+    
+      {% capture parentURL %}
+        {% include functions/getParentURL.html url=page.url %}
+      {% endcapture %}
+      {% assign parentURL = parentURL | strip %}
+
       {% include page/sidebar-list.html url=parentURL class="sibling" currentURL=page.url%}
     {% endunless %}
 

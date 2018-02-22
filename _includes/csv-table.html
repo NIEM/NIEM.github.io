@@ -1,0 +1,58 @@
+
+{% comment %}
+  ***
+  Imports the given CSV from _data and outputs a table.
+  First CSV row is used as the table header row.
+
+  Required parameters
+  "csv" - csv data
+        - If referencing site.data, do not wrap value in quotes 
+          or include the ".csv" extension.
+
+  Optional parameters:
+  "classes" - Additional classes to apply to the table
+  "right" - Array of column indexes that should be aligned right.
+  "widths" - Array of column widths
+
+  Example call:
+  {% include csv-table.html csv=site.data.stats.4_0.codes %}
+  {% include csv-table.html csv=site.data.stats.4_0.codes classes="table-auto" %}
+  ***
+{% endcomment %}
+
+{% assign table = include.csv %}
+
+<table class="table {{ include.classes }}">
+  <thead>
+    {% for col in table[0] %}
+      {% if include.widths.size >= forloop.index %}
+        {% assign width = "style='width: " | append: include.widths[forloop.index0] | append: "'" %}
+      {% else %}
+        {% assign width = "" %}
+      {% endif %}
+
+      {% if include.right contains forloop.index0 %}
+        {% assign right = "class='text-right'" %}
+      {% else %}
+        {% assign right = "" %}
+      {% endif %}
+        
+      <th {{ right }} {{ width }}>{{ col[0] }}</th>
+    {% endfor %}
+  </thead>
+
+    {% for row in table %}
+      <tr>
+      {% for cell in row %}
+
+        {% if include.right contains forloop.index0 %}
+          {% assign right = "class='text-right'" %}
+        {% else %}
+          {% assign right = "" %}
+        {% endif %}
+        
+        <td {{ right }}>{{ cell[1] }}</td>
+      {% endfor %}
+      </tr>
+    {% endfor %}
+</table>
