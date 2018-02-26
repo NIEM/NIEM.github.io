@@ -69,7 +69,7 @@ applied to JSON data offers:
   as JSON key strings (while still permitting local names like `lat`
   within a data resource).
 
-These three combine to make [NIEM JSON data](../njdata)
+These three combine to make [NIEM JSON data](../data)
 *self-documenting*, at least to the extent that any data scientist or
 software developer can look at any key-value pair and find out how it
 is defined. In addition, the NIEM approach also offers:
@@ -79,10 +79,10 @@ is defined. In addition, the NIEM approach also offers:
   defintions. This encourages a degree of harmonization between
   different resources.
 
-* A [NIEM data model](tbd), partitioned into a [NIEM core](tbd) of
+* A [NIEM data model](../whatis#model), partitioned into a NIEM core of
   concepts that might be reused in any exchange, plus several
   submodels extending the core, each defined by a subject-area or
-  functional [NIEM domain](tbd) community. This zlso encourages
+  functional NIEM domain community. This zlso encourages
   harmonization among resources partly defined in terms of that model.
 
 * A governance approach in which the NIEM core is controlled by

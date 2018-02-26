@@ -11,24 +11,23 @@ guidance.
 - [This page: outline](.): A version of the outline, which links to all
   the pages in the JSON guidance, summarizes what they're about, and describes why
 
-- [data](../data): Overview of JSON Data
-    - Simple flat JSON
-    - "FName" etc
-    - Order of keys not significant
-    - values:
-        - objects
-            - keys & values
-        - text
-        - names
-        - arrays
-        - numbers
-        - booleans & null
+- [What is NIEM?](../whatis): Describes the NIEM organization, its
+  processes, and specifications
+  
+- [Why use NIEM?](../whyuse): Problems that NIEM addresses, and people
+  likely to have those problems
 
+- [What is NIEM JSON data?](../data) JSON-LD plus conceptual model plus
+  content model
+  - [plain JSON](../data/simple): Overview of JSON Data
+
+^
 - [names](../names): Names for data
     - [names/reuse](../names/reuse): Reuse of names and definitions
     - [names/syntax](../names/syntax): Descriptive naming
         - including names based on ISO-11179 
     - [names/namespaces](../names/namespaces): Domain-based naming (NIEM domains)
+^
 - [json-ld](../json-ld): JSON-LD
     - [json-ld/context](../json-ld/context): JSON-LD contexts for namespaces and short names
     - [json-ld/identifiers](../json-ld/identifiers): Identifiers in JSON-LD: use of `@id`, URIs, and names

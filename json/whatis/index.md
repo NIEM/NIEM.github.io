@@ -1,5 +1,5 @@
 ---
-title: What Is NIEM?
+title: What is NIEM?
 ---
 
 NIEM is the acronym for the *National Information Exchange
@@ -13,11 +13,11 @@ section will describe:
 * NIEM technical specifications
 * NIEM governance
 
-It is best, then, to think of NIEM as a community and standards
-organization like the World Wide Web Consortium (W3C) or Open
-Geospatial Consortium (OGC), one whose members voluntarily cooperate
-to define and employ its technical specifications, data model,
-etc. Some illustrative parallels are:
+It is best to think of NIEM as a community and standards organization
+like the World Wide Web Consortium (W3C) or Open Geospatial Consortium
+(OGC), one whose members voluntarily cooperate to define and employ
+its technical specifications, data model, etc. While there are of
+course important differences, some illustrative parallels are:
 
 | **Organization** | [NIEM](http://www.niem.gov) | [OGC](http://www.opengeospatial.org) |
 | **Technical specifications** | [NIEM Naming and Design Rules](https://reference.niem.gov/niem/specification/naming-and-design-rules/), etc. | [Geography Markup Language (GML) Encoding Standard](http://portal.opengeospatial.org/files/?artifact_id=20509), etc. |
@@ -42,15 +42,15 @@ Schema, JSON Schema, and RDF. These components are like LEGO(tm)
 blocks for data; developers choose the blocks they want and assemble
 them into the data structure they are trying to create.
 
-### The NIEM data model
+### The NIEM data model {#model}
 
-Following the LEGO analogy, then, the
-NIEM data model is a generic box of LEGO blocks that can be used to
-create many different LEGO structures. The NIEM model is the
-collection of data components created by the NIEM community, created
-because they will be useful in many different data
-resources. Developers look through the box, choose those components
-that satisfy their business need, and leave the rest.
+Following the LEGO analogy, the NIEM data model is a generic box of
+LEGO blocks that can be used to create many different LEGO
+structures. The NIEM model is the collection of data components
+created by the NIEM community, each created because it will be useful
+in many different data resources. Developers look through the box,
+choose those components that satisfy their business need, and leave
+the rest behind.
 
 ![Ref](refmodel.png){: .callout} The NIEM data model is not supposed
 to be comprehensive. It is not the uber-model of everything for
@@ -69,9 +69,11 @@ domains. (More on the model management process in [NIEM
 governance](#gov).)
 
 The NIEM model is published in two forms. The normative model is
-currently published as a collection of XML Schema documents. There is
-also a spreadsheet version. Plans to publish the model as JSON Schema
-and RDF are on the drawing board.
+currently published as a [collection of XML Schema
+documents](https://release.niem.gov/niem/4.0/schemas.html ). There is
+also a [spreadsheet
+version](https://release.niem.gov/niem/4.0). Plans to
+publish the model as JSON Schema and RDF are on the drawing board.
 
 ### The NIEM process
 
@@ -103,9 +105,10 @@ published on the web, etc. The process is:
    
 4. When all of the information requirements are satisfied, assemble
    the selected data components into a schema that specifies the data
-   resource. This schema documents the meaning of each data component,
-   defines which components are mandatory and optional, and may be
-   used to validate individual instances of the resource during
+   resource. This schema represents the resource's [content
+   model](../models), which documents the meaning of each data
+   component, defines which components are mandatory and optional, and
+   may be used to validate individual instances of the resource during
    development or operations.
    
 The schema is the central component of a NIEM-based data resource
