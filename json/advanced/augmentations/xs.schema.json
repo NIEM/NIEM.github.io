@@ -1,0 +1,23 @@
+{
+  "$id": "http://www.w3.org/2001/XMLSchema",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "xs:date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "xs:dateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "xs:string": {
+      "type": "string"
+    }
+  },
+  "properties": {
+  },
+  "required": [
+  ]
+}

@@ -1,6 +1,23 @@
 ---
   title: Property Definitions
   short: Definitions
+  ndr:
+    rules:
+    - number: 11-23
+    - number: 11-24
+    - number: 11-25
+    - number: 11-26
+    - number: 11-27
+    - number: 11-28
+    - number: 11-34
+    - number: 11-35
+    - number: 11-36
+    - number: 11-37
+    - number: 11-38
+    - number: 11-39
+    - number: 11-40
+    sections:
+    - number: 11.6
 ---
 
 - TOC
@@ -59,3 +76,7 @@ Property definitions almost always begin with an indefinite article (i.e., "a" o
 ### Follow ISO 11179-4
 
 Definitions must follow [11179-4](http://metadata-standards.org/11179/) requirements, and should follow its recommendations.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}

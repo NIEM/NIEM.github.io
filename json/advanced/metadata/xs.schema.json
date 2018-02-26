@@ -1,0 +1,46 @@
+{
+  "$id": "http://www.w3.org/2001/XMLSchema",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "xs:anyURI": {
+      "type": "string",
+      "format": "uri"
+    },
+    "xs:date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "xs:dateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "xs:ID": {
+      "type": "string",
+      "pattern": "^[_A-Za-z][-._A-Za-z0-9]*$"
+    },
+    "xs:IDREF": {
+      "type": "string",
+      "pattern": "^[_A-Za-z][-._A-Za-z0-9]*$"
+    },
+    "xs:IDREFS": {
+      "type": "string",
+      "pattern": "^([_A-Za-z][-._A-Za-z0-9]*\\s)*$"
+    },
+    "xs:NCName": {
+      "type": "string"
+    },
+    "xs:string": {
+      "type": "string"
+    },
+    "xs:token": {
+      "type": "string",
+      "pattern": "^\\S*$"
+    }
+  },
+  "properties": {
+  },
+  "required": [
+  ]
+}

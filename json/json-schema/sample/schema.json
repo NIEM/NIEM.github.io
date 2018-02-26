@@ -3,17 +3,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "additionalProperties": false,
-  "@context": {
-    "clsa": "http://reference.niem.gov/niem/specification/code-lists/1.0/code-lists-schema-appinfo/#",
-    "ct": "http://release.niem.gov/niem/conformanceTargets/3.0/#",
-    "ecf": "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf#",
-    "j": "http://release.niem.gov/niem/domains/jxdm/6.0/#",
-    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
-    "schedulerequest": "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/schedulerequest#",
-    "structures": "http://release.niem.gov/niem/structures/4.0/#",
-    "term": "http://release.niem.gov/niem/localTerminology/3.0/#",
-    "xs": "http://www.w3.org/2001/XMLSchema#"
-  },
   "definitions": {
     "schedulerequest:GetCourtScheduleRequestMessage": {
       "$ref": "#/definitions/schedulerequest:GetCourtScheduleRequestMessageType",

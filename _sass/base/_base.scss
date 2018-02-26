@@ -46,6 +46,10 @@ img {
   max-width: 100%;
 }
 
+p.bordered img {
+  border: solid 1px $gainsboro;
+}
+
 // Fixes link targets disappearing under the navbar
 :target:before {
   content: "";

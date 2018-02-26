@@ -9,6 +9,7 @@ Here is an example of a NIEM association `j:OffenseLocationAssociation` in JSON 
 ```json
 {%include_relative j.schema.json %}
 ```
+This schema references 2 other schemas: [nc](nc.schema.json) and [xs](xs.schema.json)
 
 Here is a JSON instance of that association:
 

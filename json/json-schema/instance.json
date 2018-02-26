@@ -1,4 +1,7 @@
 {
+  "@context": {
+    "request": "https://example.com/request#"
+  },
   "request:RequestMessage": {
     "request:CaseTypeCode": "civil",
     "request:CourtID": 3,

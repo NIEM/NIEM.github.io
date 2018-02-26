@@ -1,4 +1,9 @@
 {
+  "@context": {
+    "j": "http://release.niem.gov/niem/domains/jxdm/6.0/#",
+    "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
+    "xs": "http://www.w3.org/2001/XMLSchema#"
+  },
   "j:ArrestOfficial": {
     "j:EnforcementOfficialBadgeIdentification": {
       "nc:IdentificationID": "100",

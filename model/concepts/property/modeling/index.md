@@ -4,6 +4,12 @@
   - url: /model/concepts/property/modeling/names/
   - url: /model/concepts/property/modeling/definitions/
   - url: /model/concepts/property/modeling/table/
+  ndr:
+    rules:
+    - number: 7-5
+    sections:
+    - number: 9.2
+    - number: 11.2
 ---
 
 - TOC
@@ -20,3 +26,7 @@ All properties must be declared globally, as top-level elements in a schema.  On
 A property type must be NIEM-conformant.
 
 Note: An abstract element (only) may be defined without a type.
+
+## References
+
+{% include ndr-references.html list=page.ndr %}

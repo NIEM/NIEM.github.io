@@ -10,6 +10,7 @@ Here is an example of a NIEM role `j:ArrestOfficial` in JSON schema:
 ```json
 {%include_relative j.schema.json %}
 ```
+This schema references other schemas: [nc](nc.schema.json) and [xs](xs.schema.json)
 
 Here is a JSON instance of that role:
 
