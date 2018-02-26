@@ -68,4 +68,6 @@ Since it is often the case that a type and an element of that type can be define
 
 ## References
 
+See additional guidance for [names](../../property/modeling/names/){:target="_blank"} and [definitions](../../property/modeling/definitions/){:target="_blank"}.
+
 {% include ndr-references.html list=page.ndr %}

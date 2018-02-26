@@ -36,4 +36,6 @@ A CSC type that is based on a simple type with enumerations (codes) must have a 
 
 ## References
 
+See additional guidance for [names](../../../property/modeling/names/){:target="_blank"} and [definitions](../../../property/modeling/definitions/){:target="_blank"}.
+
 {% include ndr-references.html list=page.ndr %}

@@ -23,4 +23,6 @@ A simple type name must with with the representation term "SimpleType".
 
 ## References
 
+See additional guidance for [names](../../../property/modeling/names/){:target="_blank"} and [definitions](../../../property/modeling/definitions/){:target="_blank"}.
+
 {% include ndr-references.html list=page.ndr %}
