@@ -15,12 +15,8 @@ the reasons to use NIEM with JSON data, and the developer knowledge needed to
 put NIEM JSON into practice. They are intended for:
 
 * Developers who know JSON but know nothing of NIEM or XML
-* Developers familiar with NIEM XML
-  - Who want a JSON version of an existing NIEM XML data exchange
-  - Who only want to compare NIEM JSON with NIEM XML
-* Data scientists wanting to easily understand and wrangle their data sources
-* Data stewards wanting to provide data sources that are easily understood
-  and wrangled
+* Developers familiar with NIEM XML who need a JSON version of a data exchange
+* Data scientists wanting to understand or provide JSON data sources
 * Managers wondering if NIEM JSON is right for their project
 
 This is the starting page for learning about NIEM and JSON. Readers will

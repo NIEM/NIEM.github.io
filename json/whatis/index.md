@@ -7,11 +7,11 @@ Model*. This implies that NIEM is a data model. While NIEM does in
 fact have a data model, there is much more to NIEM than that. This
 section will describe:
 
-* NIEM-based reusable data components
-* the NIEM data model
-* the NIEM process
-* NIEM technical specifications
-* NIEM governance
+* [NIEM-based reusable data components](#components)
+* the [NIEM data model](#model)
+* the [NIEM process](#process)
+* [NIEM technical specifications](#specifications)
+* [NIEM governance](#gov)
 
 It is best to think of NIEM as a community and standards organization
 like the World Wide Web Consortium (W3C) or Open Geospatial Consortium
@@ -27,7 +27,7 @@ There are several ways to be a part of NIEM, ranging from merely using
 a NIEM-based data resource specification, to participating in the
 committees that create and control the NIEM standards.
 
-### Reusable data components
+### Reusable data components {#components}
 
 A data element combines a name, a definition, and a value domain (or
 data type). For example:
@@ -75,7 +75,7 @@ also a [spreadsheet
 version](https://release.niem.gov/niem/4.0). Plans to
 publish the model as JSON Schema and RDF are on the drawing board.
 
-### The NIEM process
+### The NIEM process {#process}
 
 Developers use the NIEM process to define the syntax and semantics of
 some data resource. That resource can be the data passed through an
@@ -119,7 +119,7 @@ developers and analysts.  Any number of consumers can use the
 specification to understand what to expect in the resource; any number
 of producers to know what they are expected to provide.
 
-### NIEM Technical Specifications
+### NIEM Technical Specifications {#specifications}
 
 LEGO blocks snap together only because of the precise size and
 location of each block's pegs and cylinders. If the NIEM model is the
@@ -190,7 +190,7 @@ Steering Council (ESC), while managing the day-to-day operations of
 NIEM. The office encourages the adoption and use of NIEM and oversees
 all working group and committee activities
 
-### Ways To Use And Participate In NIEM
+### Ways To Use And Participate In NIEM {#participate}
 
 At the simplest level, data scientists and software developers use a
 specification constructed through the NIEM process as documentation
