@@ -11,32 +11,35 @@ guidance.
 - [This page: outline](.): A version of the outline, which links to all
   the pages in the JSON guidance, summarizes what they're about, and describes why
 
-- [What is NIEM?](../whatis): Describes the NIEM organization, its
+- [NIEM and JSON Frequently Asked Questions](../faq): Explains what NIEM and JSON each are
+and do and why they are useful together.
+  - [What is NIEM?](../whatis): Describes the NIEM organization, its
   processes, and specifications
   
-- [Why use NIEM?](../whyuse): Problems that NIEM addresses, and people
+  - [Why use NIEM?](../whyuse): Problems that NIEM addresses, and people
   likely to have those problems
 
-- [What is NIEM JSON data?](../data) JSON-LD plus conceptual model plus
+  - [What is NIEM JSON data?](../data) JSON-LD plus conceptual model plus
   content model
-  - [plain JSON](../data/simple): Overview of JSON Data
+    - [plain JSON](../data/simple): Overview of JSON Data
 
 ^
-- [names](../names): Names for data
+- [How to use NIEM and JSON](../howto): Provides normative and non-normative guidance on
+ how NIEM and JSON are used, including examples.
+  - [names](../names): Names for data
     - [names/reuse](../names/reuse): Reuse of names and definitions
     - [names/syntax](../names/syntax): Descriptive naming
-        - including names based on ISO-11179 
+      - including names based on ISO-11179 
     - [names/namespaces](../names/namespaces): Domain-based naming (NIEM domains)
-^
-- [json-ld](../json-ld): JSON-LD
-    - [json-ld/context](../json-ld/context): JSON-LD contexts for namespaces and short names
-    - [json-ld/identifiers](../json-ld/identifiers): Identifiers in JSON-LD: use of `@id`, URIs, and names
+    - [json-ld](../json-ld): JSON-LD
+      - [json-ld/context](../json-ld/context): JSON-LD contexts for namespaces and short names
+      - [json-ld/identifiers](../json-ld/identifiers): Identifiers in JSON-LD: use of `@id`, URIs, and names
       of individuals
-    - json-ld/syntax: Syntax of objects and arrays: JSON-LD allows for flexible
+      - json-ld/syntax: Syntax of objects and arrays: JSON-LD allows for flexible
       representation, and compaction and expansion can create or suppress the
       appearance of arrays and objects.
-    - [json-ld/expanded](../json-ld/expanded): An example of JSON-LD expansion.
-    - [json-ld/processing](../json-ld/processing): Processing JSON-LD using
+      - [json-ld/expanded](../json-ld/expanded): An example of JSON-LD expansion.
+      - [json-ld/processing](../json-ld/processing): Processing JSON-LD using
       standard operations, including expansion, compaction, contexts, and
       optional use of arrays
                     
