@@ -5,6 +5,7 @@
   description: The representation pattern is a mechanism to support multiple representations of a concept, along with additional properties.
   links:
   - url: /model/concepts/representation/modeling/
+  - url: /model/concepts/representation/country-codes/
   - url: /model/concepts/representation/xml/
   - url: /model/concepts/representation/json/
 ---
