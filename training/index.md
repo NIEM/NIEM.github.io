@@ -1,11 +1,16 @@
 ---
   title: Training
   links:
+  - url: /model/
   - url: /training/domain-modeler/
   - url: /training/iepd-developer/
   - url: /training/iepd-implementer/
   topics:
   - url: /model/
+  tracks:
+  - url: /training/domain-modeler/
+  - url: /training/iepd-developer/
+  - url: /training/iepd-implementer/
   todo: Elaborate on intro and roles; add old training materials
 ---
 
