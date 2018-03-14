@@ -1,5 +1,6 @@
 ---
-title: NIEM Code Lists Frequently Asked Questions (FAQ)
+title: NIEM Code Lists FAQ
+short: FAQ
 ---
 
 These are some questions that have been frequently asked about code lists,

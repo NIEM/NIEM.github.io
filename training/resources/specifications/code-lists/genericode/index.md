@@ -1,6 +1,9 @@
 ---
-title: "Genericode: A Code List Representation Format"
+title: Genericode
 ---
+
+- TOC
+{:toc}
 
 Genericode is a XML representation for code lists defined by OASIS in 2007. The
 [NIEM Code Lists Specification](../niem-code-lists-specification) leverages
@@ -13,7 +16,7 @@ defines the Genericode XML format.
 
 ## Tools
 
-Since Genericode is an XML syntax, a person use any standard XML tools to work
+Since Genericode is an XML syntax, a person may use any standard XML tools to work
 with Genericode. In addition, some tools provide specific support for Genericode
 code lists.
 
@@ -35,4 +38,3 @@ Unix/Linux/Mac command-line tools that:
 
 You can download a [complete release of Webb's code list
 tools](https://github.com/webb/code-list-tools/releases).
-
