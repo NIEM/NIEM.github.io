@@ -2,8 +2,17 @@
 niem_governance: https://www.niem.gov/about-niem/niem-governance
 nbac: https://www.niem.gov/about-niem/niem-governance
 ntac: https://www.niem.gov/about-niem/niem-governance
+
 ndr: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html
+ndr_repo:   https://github.com/NIEM/NIEM-NDR/
 ndr_issues: https://github.com/NIEM/NIEM-NDR/issues
-release_repo: https://github.com/NIEM/NIEM-Releases
+
+release_repo:   https://github.com/NIEM/NIEM-Releases
 release_issues: https://github.com/NIEM/NIEM-Releases/issues
+
 niem_comments: mailto:niem-comments@lists.gatech.edu
+
+code_list_spec:           https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html
+code_list_spec_folder:    https://reference.niem.gov/niem/specification/code-lists/4.0/
+code_list_spec_base_name: https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0
+code_list_spec_repo:      https://github.com/NIEM/niem-code-lists-spec/
