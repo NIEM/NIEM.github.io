@@ -24,7 +24,7 @@ exclude:
   - site-tools
   - "*/tmp.*"
 
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-redirect-from
 
