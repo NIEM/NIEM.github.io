@@ -30,15 +30,17 @@ We are assuming there are two types of JSON users:
    can do today with NIEM in XML--it takes into consideration things like
    reusability, hierarchy structure, and cardinality. This solution also
    establishes the foundation upon which JSON-Linked Data (JSON-LD) can
-   occur. Ideally, the vision for the use of JSON Schema with JSON-LD is
-   for NIEM to host JSON-LD normative dictionaries online for the schemas to map
-   its terms and definitions to the NIEM JSON-LD established context. Help us drive this effort forward by telling us what
+   occur. To learn more about this appraoch and access guidance for how to use it, visit <a href="http://niem.github.io/json">our JSON landing page on GitHub</a>. 
+   
+   In addition, with the latest model release, version 4.0, NIEM has provided a default <a href="http://release.niem.gov/jsonld-context/niem-4.0-context.jsonldJSON-LD">JSON-LD context for NIEM 4.0 namespaces</a>. The JSON-LD context is a JSON file that identifies, for every namespace for NIEM content, the namespace prefix and its corresponding namespace URI.
+   
+  Help us drive this effort forward by telling us what
    functionalities you will actually use!
 
 We drafted up a sample use case scenario for you to visualize both
 approaches to help understand details for each.
 
-This document is one of two. This one describes what Movement does now (see below).
+   This document is one of two. This one describes what Movement does now (see below).
 [The other document](../../json/sample-schema/) describes some options for using
 JSON Schema that supports more features of NIEM and JSON-LD.
 
