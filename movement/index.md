@@ -35,7 +35,7 @@ Movement is also open source so the community who inspired its creation can cont
 
 The Business Glossary—a lightweight, language-agnostic version of NIEM’s 10,000+ terms, definitions, and relationships—powers Movement’s search functionality. Movement also offers more personalized, laser-focused search results—including options to filter, search by keyword, or sort by relevance—so that users can find what they’re looking for faster. 
 
-Movement leverages <a href="http://niem.github.io/niem-releases">NIEM version 4.0</a>. NIEM 4.0 is currently being finalized for public release in the mid-July timeframe, but the model content is locked down...which means we can update the tooling. So, you're getting a sneak peak into 4.0 content by using Movement!
+Movement leverages the current release, <a href="http://niem.github.io/niem-releases">NIEM version 4.0</a>. 
 
 <h3>Build your exchange</h3>
 
