@@ -30,7 +30,7 @@
         "request:HearingDate": {
           "description": "The requested date of the hearing.",
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         },
         "request:InitialApperanceIndicator": {
           "description": "Indicates whether this will be an initial appearance in this case.",
@@ -51,9 +51,11 @@
     "request:RequestMessage": {
       "$ref": "#/definitions/request:RequestMessageType",
       "description": "A request for the schedule of upcoming events in a court"
-    }
+    },
+    "@context": { }
   },
   "required": [
+    "@context",
     "request:RequestMessage"
   ]
 }
