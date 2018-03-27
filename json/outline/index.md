@@ -88,7 +88,7 @@ NO JSON SCHEMA ABOVE HERE
 
 <hr/>
 
-- [json-schema](../schema)
+- [json-schema](../json-schema)
     - [In-schema references](../json-schema/references) (JSON identifiers)
         - not really references
         - URIs
