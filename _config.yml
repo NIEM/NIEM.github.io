@@ -21,6 +21,7 @@ exclude:
   - normative-rules-guidance/country-codes/schema.png
   - json/guidance/aux
   - json/guidance/tmp
+  - json/outline
   - site-tools
   - "*/tmp.*"
 

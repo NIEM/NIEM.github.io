@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@context": { "$ref": "#/definitions/@context" },
+    "j:Crash": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/j:CrashType" },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "@context",
+    "j:Crash"
+  ],
+  "definitions": {
+    "@context": {
+      "type": "object"
+    },
+    "j:CrashType": {
+      "type": "object",
+      "properties": {
+        "j:CrashVehicle": { "$ref": "#/definitions/j:CrashVehicleType" }
+      },
+      "additionalProperties": false,
+      "required": [ "j:CrashVehicle" ]
+    },
+    "j:CrashVehicleType": {
+      "type": "object",
+      "properties": {
+        "nc:RoleOfItem": { "$ref": "#/definitions/nc:VehicleType" },
+        "j:CrashDriver": { "$ref": "#/definitions/j:CrashDriverType" }
+      },
+      "additionalProperties": false,
+      "required": [ "nc:RoleOfItem", "j:CrashDriver" ]
+    },
+    "j:CrashDriverType": {
+      "type": "object",
+      "properties": {
+        "nc:RoleOfPerson": { "$ref": "#/definitions/nc:PersonType" }
+      },
+      "additionalProperties": false,
+      "required": [ "nc:RoleOfPerson" ]
+    },
+    "nc:PersonType": {
+      "type": "object",
+      "properties": {
+        "nc:PersonName": { "$ref": "#/definitions/nc:PersonNameType" }
+      },
+      "additionalProperties": false,
+      "required": [ "nc:PersonName" ]
+    },
+    "nc:PersonNameType": {
+      "type": "object",
+      "properties": {
+        "nc:PersonFullName": { "$ref": "#/definitions/nc:PersonNameTextType" }
+      },
+      "additionalProperties": false,
+      "required": [ "nc:PersonFullName" ]
+    },
+    "nc:PersonNameTextType": {
+      "type": "string"
+    },
+    "nc:VehicleType": {
+      "type": "object",
+      "properties": {
+        "@type": { "type": "string" },
+        "nc:VehicleIdentification": { "$ref": "#/definitions/nc:IdentificationType" }
+      },
+      "additionalProperties": false,
+      "required": [ "@type", "nc:VehicleIdentification" ]
+    },
+    "nc:IdentificationType": {
+      "type": "object",
+      "properties": {
+        "nc:IdentificationID": { "$ref": "#/definitions/niem-xs:string" }
+      },
+      "additionalProperties": false,
+      "required": [ "nc:IdentificationID" ]
+    },
+    "niem-xs:string": {
+      "type": "string"
+    }
+  }
+}

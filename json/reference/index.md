@@ -1,5 +1,5 @@
 ---
-title: How to use NIEM and JSON
+title: A NIEM-JSON Reference Guide
 links:
   - url: /json/names/
   - url: /json/json-ld/
@@ -8,6 +8,7 @@ links:
   - url: /json/advanced/
   - url: /json/guidance/
 ---
+
 Use of NIEM JSON does not require any use of XML; NIEM JSON exchanges are pure
 JSON, with [JSON-LD](../json-ld) providing some features of XML and [JSON
 Schema](../json-schema) providing some features of XML Schema. For users

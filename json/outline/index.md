@@ -24,8 +24,8 @@ and do and why they are useful together.
     - [plain JSON](../data/simple): Overview of JSON Data
 
 ^
-- [How to use NIEM and JSON](../howto): Provides normative and non-normative guidance on
- how NIEM and JSON are used, including examples.
+- [A reference on NIEM and JSON](../reference): Provides normative and
+ non-normative guidance on how NIEM and JSON are used, including examples.
   - [names](../names): Names for data
     - [names/reuse](../names/reuse): Reuse of names and definitions
     - [names/syntax](../names/syntax): Descriptive naming
