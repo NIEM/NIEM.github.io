@@ -133,8 +133,8 @@ development of conformant artifacts. Relevant specifications include:
 [SSGT]: https://tools.niem.gov/niemtools/ssgt/index.iepd
 [IEPD tool]: https://tools.niem.gov/niemtools/iepdt/index.iepd
 [contesa]: https://tools.niem.gov/contesa/
-[ndr xml doc]: https://rawgit.com/NIEM/NIEM-NDR/niem-ndr-4.0beta2/niem-ndr-4.0beta2.html#section_12
-[ndr]: https://rawgit.com/NIEM/NIEM-NDR/niem-ndr-4.0beta2/niem-ndr-4.0beta2.html
+[ndr xml doc]: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_12
+[ndr]: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html
 [mpd spec]: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html
-[code lists spec]: https://rawgit.com/NIEM/NIEM-Code-Lists-Spec/4.0beta1/niem-code-lists-spec.html
+[code lists spec]: https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html
 [conformance spec]: https://reference.niem.gov/niem/specification/conformance/3.0/conformance-3.0.html
