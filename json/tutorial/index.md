@@ -2,7 +2,7 @@
 title: A NIEM-JSON tutorial
 ---
 
-This page walks through a simple of example of implementing an exchange using NIEM-JSON.
+This page walks through a simple example of implementing an exchange using NIEM-JSON.
 
 ## Define data requirements
 
@@ -18,11 +18,11 @@ is a property of whatever contains it. The top concept is a motor vehicle crash.
         
 ## Define a NIEM exchange model
 
-Next, we search for these data requirements in
-[the NIEM SSGT](https://tools.niem.gov/niemtools/ssgt/SSGT-Search.iepd),
+Next, we search for these data requirements in the
+[NIEM Subset Schema Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/SSGT-Search.iepd),
 yielding a NIEM object model. This step requires familiarity with the SSGT tool,
 as well as an understanding of how NIEM's data model works. See NIEM's
-[reference documentation](../../model) and [training](../../training) to learn
+[model reference documentation](../../model) and [training](../../training) to learn
 more.
 
 We have searched for these data requirements in the SSGT and found corresponding
