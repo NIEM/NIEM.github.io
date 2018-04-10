@@ -223,15 +223,14 @@ resource. This is very similar to a NIEM domain's activity. The new
 community may seek recognition as a new domain, or affiliation with an
 existing domain, but is not required to do so.
 
-Scientists and developers can participate in a NIEM domain's
-activities, proposing new and modified data elements in the domain
-submodel for use in multiple specifications. If elected as a domain
-representative, they will vote on changes to NIEM Core at the NBAC. They may
-also participate at the NBAC as a non-voting observer.
-
-Finally, scientists and developers might participate in the NTAC, which governs the NIEM core
-model; work here often involves harmonizing data definitions among
-the domain models to create elements that can be used in any domain.
+Scientists and developers can participate in a NIEM domain's activities,
+proposing new and modified data elements in the domain submodel for use in
+multiple specifications. A representative from a NIEM domain will act as a
+voting member of the NIEM Business Architecture Committee (NBAC). The NBAC
+governs the NIEM core model; work here often involves harmonizing data
+definitions among the domain models to create elements that can be used in any
+domain. An individual may also be invited to participate in the NBAC as a
+non-voting observer.
 
 ### Summary
 
