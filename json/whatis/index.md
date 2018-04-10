@@ -13,9 +13,9 @@ section will describe:
 * [NIEM technical specifications](#specifications)
 * [NIEM governance](#gov)
 
-It is best to think of NIEM as a community and standards organization
-like the World Wide Web Consortium (W3C) or Open Geospatial Consortium
-(OGC), one whose members voluntarily cooperate to define and employ
+It is best to think of NIEM as a community and standards-like organization
+similar to the World Wide Web Consortium (W3C) or Open Geospatial Consortium
+(OGC), whose members voluntarily cooperate to define and employ
 its technical specifications, data model, etc. While there are of
 course important differences, some illustrative parallels are:
 
@@ -25,7 +25,7 @@ course important differences, some illustrative parallels are:
 
 There are several ways to be a part of NIEM, ranging from merely using
 a NIEM-based data resource specification, to participating in the
-committees that create and control the NIEM standards.
+committees that create and control the NIEM products.
 
 ### Reusable data components {#components}
 
@@ -97,7 +97,7 @@ published on the web, etc. The process is:
    Geographic Markup Language (GML).
    
    2.3 Define a new data component for the missing concept, if there
-   is no component suitable for reuse.. Developers may share their new
+   is no component suitable for reuse. Developers may share their new
    component for reuse by others, but are not obligated to do so.
    
 3. Have new or modified information requirements been revealed?
@@ -113,11 +113,11 @@ published on the web, etc. The process is:
    
 The schema is the central component of a NIEM-based data resource
 specification, for historical reasons called the *Information Exchange
-Package Documentation (IEPD)*. NIEM supplies a IEPD framework for
+Package Documentation (IEPD)*. NIEM supplies an IEPD framework for
 arranging documentation and gathering all of the artifacts needed by
-developers and analysts.  Any number of consumers can use the
+developers and analysts. Any number of consumers can use the
 specification to understand what to expect in the resource; any number
-of producers to know what they are expected to provide.
+of producers can use it to know what they are expected to provide.
 
 ### NIEM Technical Specifications {#specifications}
 
@@ -134,8 +134,8 @@ into a single schema.
 
 At present most of the NIEM technical specifications are written
 assuming XML as the data syntax and XML Schema as the primary
-specification language.  There are many, many different ways to
-represent information with XML.  A certain level of consistency is
+specification language. There are many, many different ways to
+represent information with XML. A certain level of consistency is
 required in order to compose many separately-designed XML data
 components into a single resource specification that makes sense.
 
@@ -166,7 +166,7 @@ harmonization as the community thinks worth doing. Domains are
 organized by subject area, and are open to all interested parties,
 with participation from US federal, state, local, and tribal
 government, plus international and commercial members. The NBAC is
-comprised of the domain co-chairs and governs the NIEM core model.
+comprised of domain representatives who govern the NIEM core model.
 
 The NIEM Technical Architecture Committee (NTAC) defines and supports
 the technical architecture that governs NIEM; it documents,
@@ -215,22 +215,21 @@ all of the data components will be NIEM-conforming, whether reused
 from the NIEM model, adapted from another standard, or created from
 scratch.
 
-Several scientist/developer teams may form a community to create an
+Several scientist/developer teams may form a community to create a
 data resource specification as the standard for data they all produce
 and consume. Or they may agree on a set of data components they will
 all use, while not attempting to standardize each complete
-resource. This is very similar to a NIEM domain's activity; the new
+resource. This is very similar to a NIEM domain's activity. The new
 community may seek recognition as a new domain, or affiliation with an
 existing domain, but is not required to do so.
 
 Scientists and developers can participate in a NIEM domain's
 activities, proposing new and modified data elements in the domain
 submodel for use in multiple specifications. If elected as a domain
-co-chair, they will vote on changes to NIEM Core at the NBAC. They may
+representative, they will vote on changes to NIEM Core at the NBAC. They may
 also participate at the NBAC as a non-voting observer.
 
-Finally, scientists and developers might participate in the NTAC
-Technical Architecture Committee (NTAC), which governs the NIEM core
+Finally, scientists and developers might participate in the NTAC, which governs the NIEM core
 model; work here often involves harmonizing data definitions among
 the domain models to create elements that can be used in any domain.
 
