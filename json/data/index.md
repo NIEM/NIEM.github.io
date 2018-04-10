@@ -10,7 +10,7 @@ A summary answer, one that is unpacked below, is:
    meaning. That content model is based on the [NIEM conceptual model](#concept).
 3. It is [JSON-LD data](../json-ld). It has a JSON-LD context,
    which connects key strings in the data to the data elements
-   that provide their meaning
+   that provide their meaning.
 
 NIEM JSON data might look like *Example 1* below, with simple *ad hoc*
 key strings:
@@ -136,7 +136,7 @@ context for *Example 2* is:
 ```
 
 Interpreted against that context, the key string `nc:PersonSurName`
-expands to the absolute URI
+expands to the absolute URI:
 
 ```
 http://release.niem.gov/niem/niem-core/4.0/#PersonSurName
@@ -194,7 +194,7 @@ NIEM JSON data will often use the names of NIEM data elements (such as
 `nc:PersonGiveName`) for key strings. However, sometimes people 
 prefer simple *ad hoc* key strings such as `gname` instead. These
 simple keys may be used in NIEM JSON data if their mapping is included
-in the JSON-LD context. For example, the context for *Example 1* is
+in the JSON-LD context. For example, the context for *Example 1* is:
 
 ```
 "@context": {
@@ -253,7 +253,7 @@ the context object is embedded within the NIEM JSON data.  For
 
 Sometimes, NIEM JSON data simply includes the URI of its context
 resource. (This is especially useful when the context object is
-large.) With this approach, the data in *Example 2* might be
+large.) With this approach, the data in *Example 2* might be:
 
 ```
 {
@@ -272,7 +272,7 @@ large.) With this approach, the data in *Example 2* might be
 }
 ```
 
-Where `http://example.com/myIEPD` is the URI for the context resource
+Where `http://example.com/myIEPD` is the URI for the context resource:
 
 ```
 {
@@ -303,10 +303,10 @@ of relying on any kind of run-time network resolution of contexts.
 
 NIEM JSON is self-describing because:
 
-* It is always associated with a JSON-LD context
-* That context maps each key string to a URI for a data element
+* It is always associated with a JSON-LD context.
+* That context maps each key string to a URI for a data element.
 * The resource for that URI is machine-readable documentation of the
-  data element's meaning
+  data element's meaning.
   
 This means that developers and data scientists can always tell whether
 a key in one resource has the same meaning as a key in another
