@@ -56,7 +56,7 @@ conditions -- low cohesion, high overlap -- are almost always found in
 large enterprises with many participants or extensive data sharing
 needs.
 
-NIEM is especially useful in those circumstances.  The NIEM approach
+NIEM is especially useful in those circumstances. The NIEM approach
 applied to JSON data offers:
 
 * A mapping between each JSON key string and a global identifier for
@@ -82,23 +82,23 @@ is defined. In addition, the NIEM approach also offers:
 * A [NIEM data model](../whatis#model), partitioned into a NIEM core of
   concepts that might be reused in any exchange, plus several
   submodels extending the core, each defined by a subject-area or
-  functional NIEM domain community. This zlso encourages
+  functional NIEM domain community. This also encourages
   harmonization among resources partly defined in terms of that model.
 
 * A governance approach in which the NIEM core is controlled by
   the entire NIEM community, while each submodel is independently
   controlled by its domain, and which allows any community to create
-  and control its own extension of the NIEM model
+  and control its own extension of the NIEM model.
 
 * A version-control architecture that encourages reuse by
   insulating each community from external changes; this allows each
   community to change at its own pace, deciding if and when it will
-  adopt changes made by others
+  adopt changes made by others.
 
 * A framework for data resource specifications that contain all
   the artifacts required to document the required and optional
   elements that may appear in a conforming resource,
-  together with the meaning of those elements
+  together with the meaning of those elements.
 
 These features of NIEM combine to form a standards-based approach for
 constructing any number of data resource specifications, which
@@ -107,7 +107,7 @@ understanding of that data among the scientists and developers who
 work with it.
 
 Although NIEM was first created to work with XML-based data exchange,
-it can now be applied to JSON data -- without requiring knowledge of
+it can now be applied to JSON data, without requiring knowledge of
 the XML technology originally used. Data exchange designers can use
 NIEM to create a resource specification that is all-JSON, or one that
 is all-XML, or one that defines both a JSON and an XML serialization,
