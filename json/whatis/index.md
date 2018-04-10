@@ -52,7 +52,7 @@ in many different data resources. Developers look through the box,
 choose those components that satisfy their business need, and leave
 the rest behind.
 
-![Ref](refmodel.png){: .callout} The NIEM data model is not supposed
+![Ref](niem-4.0-release-domains-medium.png){: .callout} The NIEM data model is not supposed
 to be comprehensive. It is not the uber-model of everything for
 everybody. Developers always leave some part of the NIEM model unused,
 and developers almost always need to define data components of their
