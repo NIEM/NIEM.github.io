@@ -31,7 +31,7 @@ NIEM elements.
 {: .note}
 > You may [download and save the resulting list of components](wantlist.xml) as a NIEM wantlist, which you may [load into the SSGT](https://tools.niem.gov/niemtools/ssgt/SSGT-Options.iepd). 
 
-Th NIEM representation of these data requirements contains more components than
+The NIEM representation of these data requirements contains more components than
 the list of source requirements above, due to the way NIEM structures its data:
 A crash vehicle is represented as a *role* of a vehicle, a crash driver is
 represented as a *role* of a person, and a person's name and a vehicle
