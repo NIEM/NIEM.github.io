@@ -20,10 +20,15 @@ is a property of whatever contains it. The top concept is a motor vehicle crash.
 
 Next, we search for these data requirements in the
 [NIEM Subset Schema Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/SSGT-Search.iepd),
-yielding a NIEM object model. This step requires familiarity with the SSGT tool,
-as well as an understanding of how NIEM's data model works. See NIEM's
-[model reference documentation](../../model) and [training](../../training) to learn
-more.
+yielding a NIEM object model.
+
+{:.note}
+> The SSGT is a tool that enables users to search through the NIEM data model
+> and build a NIEM subset. There are other ways to search the model, including
+> [NIEM Movement](https://beta.movement.niem.gov/#/). If you are new to NIEM, it
+> is recommended that you take some time to understand how the data model
+> works. See NIEM’s [model reference documentation](../../model) to learn
+> more. Additional training is forthcoming.
 
 We have searched for these data requirements in the SSGT and found corresponding
 NIEM elements. 
