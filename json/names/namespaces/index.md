@@ -7,7 +7,7 @@ responsible for its own data definitions, and is encouraged to reuse the
 definitions of others. As [described earlier](../reuse), NIEM data definitions
 are organized into namespaces. These bodies, and their namespaces, include:
 
-* The NIEM Business Architecture Committee (NBAC), which governs the central
+* The NIEM Business Architecture Committee (NBAC) governs the central
   namespace of NIEM, called NIEM Core. NIEM Core covers a large number of
   broadly-applicable data definitions which need to be managed across the entire
   NIEM community.
