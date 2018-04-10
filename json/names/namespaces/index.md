@@ -10,7 +10,7 @@ are organized into namespaces. These bodies, and their namespaces, include:
 * The NIEM Business Architecture Committee (NBAC), which governs the central
   namespace of NIEM, called NIEM Core. NIEM Core covers a large number of
   broadly-applicable data definitions which need to be managed across the entire
-  NIEM enterprise.
+  NIEM community.
 
 * The NIEM Technical Architecture Committee (NTAC) governs the technical
   architecture and manages the foundational namespaces **structures** and
@@ -24,7 +24,7 @@ elsewhere on this site.
 
 Each namespace has:
 
-* an **XML namespace name**, which is a URI
+* an **XML namespace name**, which is a URI.
 * a commonly-used **namespace prefix**, which is a short label that stands for the full
   namespace URI in instances and schemas. 
   
