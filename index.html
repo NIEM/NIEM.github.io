@@ -22,206 +22,239 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
   <body>
-    <div id="page-wrap">
-        <nav class="navbar navbar-default navbar-fixed-top header-nav" role="navigation">
-      <div class="usa">
-        <div class="container">
-          <img alt="US flag" src="assets/images/us-flag.png" style="margin-right: 5px; height: 13px;" /> An official website of the United States Government
-        </div>
-      </div>
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-fixed-top .navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ '/' | relative_url }}'">
-            <img src="assets/images/logo.png" alt="NIEM" />
-          </a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.niem.gov/about-niem">About Us</a></li>
-            <li><a href="https://www.niem.gov/techhub">TechHub</a></li>
-            <li><a href="https://www.niem.gov/tools-catalog">Tools Catalog</a></li>
-            <li><a href="https://www.niem.gov/training">Training</a></li>
-            <li><a href="https://www.niem.gov/contact-us">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="jumbotron front-jumbotron">
-      <img class="sharing-spot" src="assets/images/front/sharing-spot.png" alt="Our Sharing Spot" />
-    </div>
-      <!-- Page Content -->
-      <div class="container" style="max-width:960px">
-        <div class="row">
-          <div class="announcement-block">
-            <div class="col-lg-12">
-              <div class="announcement-content">
-                <strong>NIEM 4.0 has been released</strong><br>
-                See our <a href="niem-releases">NIEM Releases</a> page for details
-              </div>
-            </div>            
-          </div>
-           <div class="col-md-8">
-            <div class="well lead">
-              <div class="home-top-content-wrapper">
-                <div class="home-top-content-left">The National Information Exchange Model (NIEM) is a community-driven, common vocabulary that enables efficient information exchange across diverse public and private organizations. NIEM can save time and money by providing consistent, reusable data terms and definitions and repeatable processes.</div>
+    <div id="page-wrap" class="front">
 
-                <p style="margin-bottom: 0;">This <strong>Sharing Spot</strong> is for the community to have access to resources that will help them use NIEM and make NIEM easier for others to use.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" style="padding: 0px;">
-            <div class="panel panel-default feedback-panel">
-              <div class="panel-heading">
-                <i class="fa fa-lg fa-comments"></i> &nbsp;Feedback &amp; Ideas
-              </div>
-              <div class="panel-body">
-                <p>We’re just starting out on GitHub and greatly appreciate your feedback! Share a thought. Brainstorm ideas. Submit an issue.</p>
-                <a href="https://github.com/NIEM/NIEM.github.io/issues" class="btn btn-primary" target="_blank">Submit Your Feedback</a>
-              </div>
-            </div>
+      <!-- ========= HEADER  ========= -->
+
+      <nav class="navbar navbar-default header-nav" role="navigation">
+        <div class="usa">
+          <div class="container">
+            <div class="niem-tag-line">NATIONAL INFORMATION EXCHANGE MODEL</div><div class="official-usa-gov-site-tag"><img alt="US flag" src="assets/images/us-flag.png" style="margin-right: 15px; margin-left: 15px; height: 13px;" /> An official website of the United States Government</div>
           </div>
         </div>
-      </div>
-      <div class="container"  style="max-width:960px">
-        <div class="row">
-          <div class="col-lg-12">
-            <section class="ac-container">
-              <div>
-                <input id="ac-1" name="accordion-1" type="radio">
-                <label for="ac-1"><i class="fa fa-lg fa-sitemap" style="padding-right:15px"></i>
-                  IEPD Starter Kit</label>
-                <article class="ac-small">
-                  <ul>
-                    <li><a href="iepd-starter-kit/">Development Overview</a></li>
-                    <li><a href="iepd-starter-kit/reusable-xml-snippets/">Reusable XML Snippets</a></li>
-                    <li><a href="iepd-starter-kit/iepd-series/">IEPD Series</a></li>
-                    <li><a href="iepd-starter-kit/iepd-tutorials/">IEPD Tutorials</a></li>
-                    <li><a href="iepd-starter-kit/conformance/">IEPD Conformance</a></li>
-                    <li><a href="iepd-starter-kit/terms/">Terms</a></li>
-                    <li><a href="https://github.com/NIEM/Template-IEPD/">IEPD Template</a></li>
-                    <li><a href="https://github.com/search?q=NIEM+IEPD&utf8=%E2%9C%93">IEPD Search</a></li>                    
-                  </ul>
-                </article>
-              </div>
-              <div>
-                <input id="ac-2" name="accordion-1" type="radio">
-                <label for="ac-2"><i class="fa fa-lg fa-code" style="padding-right:15px"></i>Tips and Tricks</label>
-                <article class="ac-large">
-                  <ul>
-                    <li><a href="tips-and-tricks/">Tips and Tricks Overview</a></li>
-                    <li><a href="tips-and-tricks/iepd-versions/">IEPD Change Control and Version Management</a></li>
-                    <li><a href="tips-and-tricks/ref-vs-ext/">Reference vs. Extension Schema</a></li>            
-                    <li><a href="tips-and-tricks/domain-modeling-guide/">Introduction to NIEM Domain Modeling</a></li>
-                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Avoid-replicating-data-in-a-NIEM-XML-document">Avoid Replicating Data in a NIEM XML Document</a></li>
-                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Browsing-the-content-of-NIEM">Browsing NIEM Content</a></li>
-                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Efficient-XML-Interchange">Efficient XML Interchange</a></li>
-                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Enterprise-Integration-Patterns">Enterprise Integration Patterns</a></li>
-                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Fast-Infoset">Fast Infoset</a></li>
-                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Server-output-filter">Server Output Filter</a></li>
-                    <li><a href="https://github.com/NIEM/Implementation-Cookbook/wiki/Size-of-NIEM-XML-documents">Size of NIEM XML Documents</a></li>                    
-                </ul>
-                </article>
-              </div>
-              <div>
-                <input id="ac-4" name="accordion-1" type="radio">
-                <label for="ac-4"><i class="fa fa-lg fa-gear" style="padding-right:15px"></i>Normative Rules and Guidelines</label>
-                <article class="ac-large">
-                  <ul>
-                    <li><a href="normative-rules-guidelines/code-lists/">Working with Code Lists</a></li>
-                    <li><a href="normative-rules-guidelines/core-supplement/">Using Core Supplements</a></li>
-                    <li><a href="normative-rules-guidelines/country-codes/">Using Country Codes</a></li>
-                    <li><a href="normative-rules-guidelines/normative-rules/">Normative Rules</a></li>
-                  </ul>
-                </article>
-              </div>
-              <div>
-                <input id="ac-5" name="accordion-1" type="radio">
-                <label for="ac-5"><i class="fa fa-lg fa-file-code-o" style="padding-right:15px"></i>
-                  JSON</label>
-                <article class="ac-small">
-                  <ul>
-                    <li><a href="json">NIEM and JSON Overview</a></li>    
-                    <li><a href="json/guidance">Non-Normative Guidance in Using NIEM with JSON</a></li>               
-                    <li><a href="json/sample-schema">Sample JSON Schema</a></li>               
-                  </ul>
-                </article>
-              </div>
-              <div>
-                <input id="ac-6" name="accordion-1" type="radio">
-                <label for="ac-6"><i class="fa fa-lg fa-search" style="padding-right:15px"></i>
-                  Movement</label>
-                <article class="ac-small">
-                  <ul>
-                    <li><a href="movement">Movement Overview</a></li>
-                    <li><a href="movement/json-schema-output">Movement and JSON Schema</a></li>
-                    <li><a href="movement/quick-user-guide">Movement Quick User Guide</a></li>
-                  </ul>
-                </article>
-              </div>               
-            <div>
-                <input id="ac-7" name="accordion-1" type="radio">
-                <label for="ac-7"><i class="fa fa-lg fa-search" style="padding-right:15px"></i>
-                  Use of Clinical Health Content in a NIEM exchange</label>
-                <article class="ac-small">
-                  <ul>
-                    <li><a href="health">Health Community Activities</a></li>                              
-                  </ul>
-                </article>
-              </div>
-          <div>
-                <input id="ac-8" name="accordion-1" type="radio">
-                <label for="ac-8"><i class="fa fa-lg fa-search" style="padding-right:15px"></i>
-                  Common Understanding of Grant Data</label>
-                <article class="ac-small">
-                  <ul>
-                    <li><a href="grants">Grant Community Activities</a></li>                              
-                  </ul>
-                </article>
-              </div>
-              
-            </section>
-          </div>
-        </div>
-      </div>
-      <div style="background-color: #D9E0E1; padding-bottom: 50px; margin-top: 30px;">
         <div class="container">
-          <!-- Links Section -->
-          <div class="row">
-            <div class="col-lg-12" style="text-align: center;">
-              <h2>Additional Resources</h2>
-            </div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".top-nav.navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img src="assets/images/logo.png" alt="NIEM" />
+            </a>
+            <div id="NIEM-Github-logo"><a href="/" class="active">GitHub</a></div>
           </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  Tools Catalog
+          <div class="top-nav navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://www.niem.gov/about-niem">About Us</a></li>
+              <li><a href="https://www.niem.gov/techhub">TechHub</a></li>
+              <li><a href="https://www.niem.gov/tools-catalog">Tools Catalog</a></li>
+              <li><a href="https://www.niem.gov/training">Training</a></li>
+              <li><a href="https://www.niem.gov/contact-us">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ========= BLUE HIGHLIGHT BAR ========= -->
+
+      <div class="jumbotron front-jumbotron">
+        <div><strong>NIEM 4.0 has been released.</strong> See our <a href="niem-releases/">NIEM Releases</a> page for details.</div>
+      </div>
+      
+      <!-- ========= PAGE CONTENT ========= -->
+
+      <div class="container" style="max-width:1200px">
+        <div class="row">
+
+          <!-- ==== TOP PARAGRAPH ==== -->
+
+          <div class="herosection">
+            <div class="col-lg-12">
+              <div class="herosection-content">
+                The National Information Exchange Model (NIEM) is a community-driven, common vocabulary that enables efficient information exchange across diverse public and private organizations. NIEM can save time and money by providing consistent, reusable data terms and definitions and repeatable processes. This GitHub site is for the community to have access to resources that will help them use NIEM and make NIEM easier for others to use.
+              </div>
+            </div>
+            <div style="clear:both"></div>  
+          </div>
+
+          <!-- ==== ALERT BANNER ==== -->
+
+          <!--<div class="hero-banner">
+            <div class="hero-banner-content">
+              <div class="col-lg-7 col-md-7 blocks-center-align">
+                <div class="hero-banner-title">Access to Training and Tools Catalog</div>
+                <div class="hero-banner-text">Learn how to use NIEM and the tools that support defined NIEM capabilities.</div>
+              </div>
+              <div class="col-lg-5 col-md-5 blocks-right-align">
+                <div class="hero-banner-button">
+                  <a href="https://www.niem.gov/training" class="button">Training</a>
                 </div>
-                <div class="panel-body">
-                  <div class="media">
-                    <a target="_blank" class="pull-right" href="https://www.niem.gov/tools-catalog">
-                      <img class="media-object" src="assets/images/front/tools.png" alt="Tools">
-                    </a>
-                    <div class="media-body">
-                      The NIEM Tools Catalog is a convenient location for the NIEM community to identify tools available that support defined NIEM capabilities. Have a NIEM tool? Submit it to the catalog!
+                <div class="hero-banner-button">
+                  <a href="https://www.niem.gov/tools-catalog" class="button">Tools Catalog</a>
+                </div>
+              </div> 
+              <div style="clear:both"></div>             
+            </div>
+          </div> -->
+
+          <!-- ==== TILE SECTION ==== -->
+
+          <div class="hero-wrapper"> 
+
+            <!-- ==== TILE 1 ==== -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="hero-list">
+                <div class="hero-item">
+                  <a href="iepd-starter-kit/">
+                    <div class="hero-item-container white">
+                      <img class="img-responsive" src="assets/images/front/iepd_starter_kit_icon.png" width="166" height="166" alt="IEPD Starter Kit Icon">
+                      <h3>IEPD Starter Kit </h3>
+                      <p>To use NIEM, you normally build an Information Exchange Package Documentation (IEPD).</p>
+
+                      <div class="button">Learn more </div>
                     </div>
+                  </a>                   
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== TILE 2 ==== -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="hero-list">
+                <div class="hero-item">
+                  <a href="training/">
+                    <div class="hero-item-container white">
+                      <img class="img-responsive" src="assets/images/front/training-icon.png" width="166" height="166" alt="Training Icon">
+                      <h3>Training</h3>
+                      <p>We are starting to evolve the NIEM training curriculum to GitHub pages.</p>
+
+                      <div class="button">Learn more</div>
+                    </div>
+                  </a>                   
+                </div>
+              </div>
+            </div>  
+
+            <!-- ==== TILE 3 ==== -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="hero-list">
+                <div class="hero-item">
+                  <a href="tips-and-tricks/">
+                    <div class="hero-item-container white">
+                      <img class="img-responsive" src="assets/images/front/tips_tricks_icon.png" width="166" height="166" alt="Tips &amp; Tricks Icon">
+                      <h3>Tips &amp; Tricks</h3>
+                      <p>Helpful tips &amp; tricks, frequently asked questions, and other information related to the use of NIEM.</p>
+
+                      <div class="button">Learn more</div>
+                    </div>
+                  </a>                   
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== TILE 4 ==== -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="hero-list">
+                <div class="hero-item">
+                  <a href="json/">
+                    <div class="hero-item-container white">
+                      <img class="img-responsive" src="assets/images/front/json_icon.png" width="166" height="166" alt="JSON Icon">
+                      <h3>JSON</h3>
+                      <p>The NIEM NTAC is developing guidelines supporting the use of JSON with NIEM.</p>
+
+                      <div class="button">Learn more </div>
+                    </div>
+                  </a>                   
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== TILE 5 ==== -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="hero-list">
+                <div class="hero-item">
+                  <a href="movement/">
+                    <div class="hero-item-container white">
+                      <img class="img-responsive" src="assets/images/front/movement_icon.png" width="166" height="166" alt="Movement Icon">
+                      <h3>Movement</h3>
+                      <p>Introducing Movement—an easier, simpler way to explore and use NIEM.</p>
+
+                      <div class="button">Learn more </div>
+                    </div>
+                  </a>                   
+                </div>
+              </div>
+            </div>
+
+            <!-- ==== TILE 6 ==== -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="hero-list">
+                <div class="hero-item">
+                  <div class="hero-item-container white">
+                    <img class="img-responsive" src="assets/images/front/community-icon.png" width="166" height="166" alt="Community Activities Icon">
+                    <h3>Community Activities:</h3>
+                    <div class="home-light-button first-button"><a href="grants">Grants</a></div>
+                    <div class="home-light-button"><a href="health/">Health</span></a></div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- ==== TILE 7 ==== -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="hero-list">
+                <div class="hero-item">
+                  <a href="normative-rules-guidelines/">
+                    <div class="hero-item-container white">
+                      <img class="img-responsive" src="assets/images/front/normative_rules_icons.png" width="166" height="166" alt="Normative Rules &amp; Guidelines Icon">
+                      <h3>Normative Rules &amp; Guidelines</h3>
+                      <p>Helpful guidance and quick links to technical specifications.</p>
+
+                      <div class="button">Learn more </div>
+                    </div>
+                  </a>                   
+                </div>
+              </div>
+            </div> 
+
+            <!-- ==== TILE 8 ==== -->
+            <div class="col-lg-3 col-md-6">
+              <div class="hero-list">
+                <div class="hero-item">
+                  <a href="https://github.com/NIEM/NIEM.github.io/issues">
+                    <div class="hero-item-container green">
+                      <img class="img-responsive" src="assets/images/front/feedback_icon.png" width="166" height="166" alt="Feedback &amp; Ideas Icon">
+                      <h3>Feedback &amp; Ideas</h3>
+                      <p>We greatly appreciate feedback, thoughts, ideas, and issue submission.</p>
+
+                      <div class="button">Submit feedback</div>
+                    </div>
+                  </a>                   
+                </div>
+              </div>
+            </div> 
+                                               
           </div>
+
+          <!-- ==== END TILES ==== -->
+
         </div>
       </div>
+
+
       <div class="navbar navbar-default footer-nav" role="navigation">
         <div class="container">
-          <div class="navbar-header">
+          <div class="navbar-footer">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".footer-nav .navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -241,6 +274,6 @@
       </div>
       <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="assets/js/main.js"></script>
-    </div>
+    </div>    
   </body>
 </html>
