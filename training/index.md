@@ -17,7 +17,7 @@ The content in development will address the two types of training audiences we h
 1.	Someone who is already familiar with NIEM and is looking for quick reference material to determine or verify how to do something.
 2.	Someone who is a newcomer to NIEM and needs to get up to speed on how to do things. This could include managing domain model content, developing an exchange, implementing an exchange, publishing a data set, or reusing the vocabulary.
 
-This section represents our in progress work. As we knock out content, we push it out to the user community for feedback and use. 
+This section represents our *in progress* work. As we knock out content, we push it out to the user community for feedback and use. 
 
 ## What is NIEM?
 
