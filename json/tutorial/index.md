@@ -2,6 +2,33 @@
 title: A NIEM-JSON tutorial
 ---
 
+<style type="text/css"> 
+ul { margin-left: 1em; }
+</style>
+
+<style type="text/css"> 
+body{counter-reset: index2}
+h2{counter-reset: index3}
+h3{counter-reset: index4}
+h4{counter-reset: index5}
+h2:before {
+  counter-increment: index2;
+  content: counter(index2) ". ";
+}
+h3:before {
+  counter-increment: index3;
+  content: counter(index2) "." counter(index3) ". ";
+}
+h4:before {
+  counter-increment: index4;
+  content: counter(index2) "." counter(index3) "." counter(index4) ". ";
+}
+h5:before {
+  counter-increment: index5;
+  content: counter(index2) "." counter(index3) "." counter(index4) "." counter(index5) ". ";
+}
+</style>
+
 This page walks through a simple example of implementing an exchange using NIEM-JSON.
 
 ## Define data requirements
@@ -27,7 +54,7 @@ yielding a NIEM object model.
 > and build a NIEM subset. There are other ways to search the model, including
 > [NIEM Movement](https://beta.movement.niem.gov/#/). If you are new to NIEM, it
 > is recommended that you take some time to understand how the data model
-> works. See NIEM’s [model reference documentation](../../model) to learn
+> works. See NIEM's [model reference documentation](../../model) to learn
 > more. Additional training is forthcoming.
 
 We have searched for these data requirements in the SSGT and found corresponding
@@ -88,6 +115,21 @@ element here needs only a simple value:
 "nc:PersonFullName": "Gerry H. Everett"
 ```
 
+If a property occurs more than once, then it must appear as a property with a
+value that is an array; each value of the array is a separate value of the
+property. For example, if an organization has 3 employees, it may appear as an
+"nc:Employee" property with a value of an array containing 3 objects, each
+representing a person (e.g., an object representing an instance of NIEM type
+`nc:PersonType`).
+
+```text
+"nc:Employee": [
+  { "nc:PersonFullName": "Gerry H. Everett" },
+  { "nc:PersonFullName": "Floyd Q. Halverson" },
+  { "nc:PersonFullName": "Malcolm P. Smith" }
+]
+```
+
 ### Use JSON-LD features as needed
 
 NIEM JSON leverages JSON-LD to provide features not present in plain
@@ -103,6 +145,24 @@ both attributes and a simple value.
 * You may use the JSON-LD property `@id` to perform the function of NIEM XML's
 `structures:id`, `structures:ref`, and `structures:uri`. 
 
+* JSON-LD allows arrays to be used in instances very freely; it does not
+  distinguish between an array with 1 entry and a single value. This is a
+  property with a value that is a single string:
+  
+  ```text
+  "nc:PersonFullName": "Gerry H. Everett"
+  ```
+    
+  This is a property whose value is *an array* containing one string:
+  
+  ```text
+  "nc:PersonFullName": [ "Gerry H. Everett" ]
+  ```
+
+  Under JSON-LD, these two examples have the same meaning. A developer needs to
+  decide what syntax they want in instances, including how and when arrays will
+  appear. These decisions may be enforced using a JSON schema.
+
 * Every property in NIEM has a type. In some instances, the actual value of a
 property is not fully specified by the type defined for the property in the NIEM
 data model. In the example above, the property `nc:RoleOfItem` has type
@@ -114,13 +174,13 @@ property's value, as shown below.
 ### A complete sample instance
 
 As described above, we walk through the NIEM exchange model, adding each NIEM
-property as a JSON property, with 
+property as a JSON property. This results in the following JSON document:
 
 ```json
 {% include_relative instance.json %}
 ```
 
-This example is available in the [JSON-LD Playground](http://tinyurl.com/y9smedna).
+This example is available in the [JSON-LD Playground](http://tinyurl.com/y96znvok).
 
 ## If needed, construct a JSON schema for your instances
 
@@ -131,6 +191,8 @@ creation of a JSON schema for JSON data like the sample above. Note that there's
 nothing *normative* about this schema; this walkthrough is merely laying out one
 way to build a JSON schema from a NIEM exchange model. There are many schemas
 you could create for the same model.
+
+### Framework for an instance
 
 First, we lay out the basic structure of the JSON schema. This does not have any
 content; there's nothing from the NIEM exchange model we defined above.  It's a
@@ -158,76 +220,91 @@ The JSON Schema properties we are using here are:
 * `properties`: Describes all the properties that are allowed by this piece of the schema
 * `additionalProperties`: Indicates that this piece of the schema *only* allows properties that are listed under `properties`.
 * `required`: Lists all properties that *must* occur in an object matching this piece of schema.
-* `definitions`: A holding place for pieces of schemas, so that they can be reused.
+* `definitions`: A holding place for pieces of schemas which can be reused.
+
+### Top-level properties
 
 We know that we require `@context` and `j:Crash` at the top, so we add them to `required`:
 
 ```json
-  "required": [
-    "@context",
-    "j:Crash"
-  ],
+"required": [
+  "@context",
+  "j:Crash"
+],
 ```
 
 We also need these to be available as properties of the top level object, so
-we'll add them to `properties`. Rather than define their structure within
-`properties`, we'll point them to a defintion within `definitions`. The
-definition of `@context` is simpler than that of `j:Crash`, since `j:Crash` can
-occur 1-n times within its object. To accommodate the number of occurrences of
-`j:Crash`, we must define `j:Crash` as an array. This yields the following for
-`properties`:
+we'll add them to `properties`. Rather than define their *structure* within
+`properties`, we'll point them to a defintion within the `definitions` section
+of the schema. The properties `@context` and `j:Crash` are both simple; each
+references its definition in the `definitions` section of the schema.
 
 ```json
-  "properties": {
-    "@context": { "$ref": "#/definitions/@context" },
-    "j:Crash": {
-      "type": "array",
-      "items": { "$ref": "#/definitions/j:CrashType" },
-      "minItems": 1
-    }
+"properties": {
+  "@context": { "$ref": "#/definitions/@context" },
+  "j:Crash": { "$ref": "#/definitions/j:CrashType" },
+},
+```
+
+### Definitions
+
+Next, we write definitions for the content of the top-level properties. These
+definitions will be small schemas within a `definitions` section of the JSON
+schema document. First, we add the definition for `@context`, which will accept
+any object:
+
+```
+"@context": {
+    "type": "object"
   },
 ```
 
-Each of these properties has its content defined within the `definitions`
-section: `@context` has a simple definition that will take any object. All the
-other properties have definitions named after their NIEM types. The NIEM element
-`j:Crash` is an array with items matching the definition for type
-`j:CrashType`. The properties defining `j:Crash` are:
+The rest of the work will be adding NIEM types for `j:Crash` and recursively for
+all of its children; this will define the rest of the exchange model.  Each
+definition (besides `@context`) is named after its NIEM type. We start with
+`j:CrashType`. This type adds a bit of complexity, since its property
+`j:CrashVehicle` can occur 1-n times (at least once, with no fixed maximum on
+the number of times it may occur). This means that `j:CrashVehicle` must be
+defined as an array:
+
+```json
+"j:CrashType": {
+  "type": "object",
+  "properties": {
+    "j:CrashVehicle": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/j:CrashVehicleType" },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false,
+  "required": [ "j:CrashVehicle" ]
+},
+```
+
+`j:CrashVehicle` is an array with items matching the definition for type
+`j:CrashVehicleType`. The properties defining `j:CrashVehicle` are:
 
 * `type`: Defines this property as an array.
 * `items`: Indicates that each item of the array must match the definition for
-`j:CrashType`.
+  `j:CrashVehicleType`.
 * `minItems`: Directs that there must be at least one object within the array,
-matching the cardinality in the exchange model of 1-n.
-
-Next, we lay out definitions, which is where all the rest of the exchange model
-is defined. First, `j:CrashType`:
-
-```json
-    "j:CrashType": {
-      "type": "object",
-      "properties": {
-        "j:CrashVehicle": { "$ref": "#/definitions/j:CrashVehicleType" }
-      },
-      "additionalProperties": false,
-      "required": [ "j:CrashVehicle" ]
-    },
-```
+  matching the cardinality in the exchange model of 1-n.
 
 This defines a piece of a schema that matches an object with a single property,
 `j:CrashVehicle`. As above, the definition used for the child element is named
 for the type of the element, in this case, `j:CrashVehicleType`:
 
 ```json
-    "j:CrashVehicleType": {
-      "type": "object",
-      "properties": {
-        "nc:RoleOfItem": { "$ref": "#/definitions/nc:VehicleType" },
-        "j:CrashDriver": { "$ref": "#/definitions/j:CrashDriverType" }
-      },
-      "additionalProperties": false,
-      "required": [ "nc:RoleOfItem", "j:CrashDriver" ]
-    },
+"j:CrashVehicleType": {
+  "type": "object",
+  "properties": {
+    "nc:RoleOfItem": { "$ref": "#/definitions/nc:VehicleType" },
+    "j:CrashDriver": { "$ref": "#/definitions/j:CrashDriverType" }
+  },
+  "additionalProperties": false,
+  "required": [ "nc:RoleOfItem", "j:CrashDriver" ]
+},
 ```
 
 We continue like this through the object model, adding only what we need to
@@ -236,9 +313,9 @@ make the schema validate the sample instance. When we get to the definition for
 which has a string value. This appears in the JSON schema as:
 
 ```json
-    "nc:PersonNameTextType": {
-      "type": "string"
-    },
+"nc:PersonNameTextType": {
+  "type": "string"
+},
 ```
 
 ### Resulting schema
@@ -249,4 +326,3 @@ schema. This validates the above sample instance.
 ```json
 {% include_relative schema.json %}
 ```
-

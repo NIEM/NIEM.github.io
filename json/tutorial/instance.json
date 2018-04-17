@@ -3,9 +3,9 @@
     "j": "http://release.niem.gov/niem/domains/jxdm/6.0/",
     "nc": "http://release.niem.gov/niem/niem-core/4.0/"
   },
-  "j:Crash": [
-    {
-      "j:CrashVehicle": {
+  "j:Crash": {
+    "j:CrashVehicle": [
+      {
         "nc:RoleOfItem": {
           "@type": "nc:VehicleType",
           "nc:VehicleIdentification": {
@@ -19,9 +19,7 @@
             }
           }
         }
-      }
-    }, {
-      "j:CrashVehicle": {
+      }, {
         "nc:RoleOfItem": {
           "@type": "nc:VehicleType",
           "nc:VehicleIdentification": {
@@ -36,6 +34,6 @@
           }
         }
       }
-    }
-  ]
+    ]
+  }
 }

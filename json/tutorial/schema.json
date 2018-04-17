@@ -3,11 +3,7 @@
   "type": "object",
   "properties": {
     "@context": { "$ref": "#/definitions/@context" },
-    "j:Crash": {
-      "type": "array",
-      "items": { "$ref": "#/definitions/j:CrashType" },
-      "minItems": 1
-    }
+    "j:Crash": { "$ref": "#/definitions/j:CrashType" }
   },
   "additionalProperties": false,
   "required": [
@@ -21,7 +17,11 @@
     "j:CrashType": {
       "type": "object",
       "properties": {
-        "j:CrashVehicle": { "$ref": "#/definitions/j:CrashVehicleType" }
+        "j:CrashVehicle": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/j:CrashVehicleType" },
+          "minItems": 1
+        }
       },
       "additionalProperties": false,
       "required": [ "j:CrashVehicle" ]

@@ -63,6 +63,11 @@ case $command in
         cd "$root_dir"
         bundle exec jekyll serve --baseurl ''
         ;;
+    #HELP:  serve: Run a local Jekyll server
+    serve-incremental )
+        cd "$root_dir"
+        bundle exec jekyll serve --incremental --baseurl ''
+        ;;
     #HELP:  build: Build the Jekyll site to a temporary directory (~/tmp/site)
     build )
         cd "$root_dir"
