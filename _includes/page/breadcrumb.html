@@ -5,7 +5,7 @@
 <ol class="breadcrumb">
   {% assign page_url_parts = page.url | split: '/' %}
   {% assign page_url_parts_size = page_url_parts.size %}
-  {% for i in (1..page_url_parts_size) %}
+  {% for i in (0..page_url_parts_size) %}
     {% assign working_url = '' %}    
     {% for url_part in page_url_parts limit:i %}
       {% assign working_url = working_url | append: url_part | append: '/' %}

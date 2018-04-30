@@ -19,7 +19,9 @@ layout: 'default'
 {% assign section_has_children = true %}
 <div class="container">
   <div class="row">
-    {% if section_has_children %}
+      <div class="col-md-12 col-lg-12">
+        {% include page/breadcrumb.html %}
+      </div>
       <div class="col-md-9 col-md-push-3">
         {% include page/content.html %}
       </div>
@@ -28,10 +30,5 @@ layout: 'default'
           {% include page/sidebar.html %}
         </div>
       </div>
-    {% else %}
-      <div class="col-md-12">
-        {% include page/content.html %}
-      </div>
-    {% endif %}
   </div>
 </div>

@@ -1,63 +1,101 @@
 
 {% assign thisPage = site.pages | where: "url", page.url | first %}
+{% comment %} 
+  TODO: Shouldn't be hard coded.
+  This is to avoid the listing of the code pages on the side menu
+{% endcomment %}
+{% if thisPage.url contains "/reference/content/codes/" %}
+  {% assign pageUrl = "/reference/content/codes/" %}
+{% elsif thisPage.url contains "/model/content/codes/" %}
+  {% assign pageUrl = "/model/content/codes/" %}
+{% else %}
+  {% assign pageUrl = thisPage.url %}
+{% endif %}
 
-{% assign pathSegments = thisPage.url | split: "/" %}
+{% assign pathSegments = pageUrl | split: "/" %}
 {% assign tmpURL = "" %}
+{% comment %} Determine when the side menu starts {% endcomment %}
+{% assign menuDepth = 1 %}
+{% assign pathSegmentsCount = pathSegments.size %}
+{% assign reverseMenuDepth = pathSegmentsCount | minus:menuDepth %}
 
 <div class="section-nav list-group">
 
-  
-  {% comment %} 
-    Loop through each segment of the URI to generate links to parent pages.
-  {% endcomment %}
-    
+  {% assign tmpURL = "" %}
+
+  {% comment %} Opening tags loop {% endcomment %}
   {% for segment in pathSegments %}
+    {% assign parentURL = tmpURL %}
     {% assign tmpURL = tmpURL | append: segment | append: "/" %}
+    {% if forloop.index > menuDepth %}
+      <ul class="nav-ul-start">
+      {% assign liClass = "" %}
 
-    {% if forloop.first == true %}
-      {% include page/sidebar-link.html url=tmpURL class="grandparent" %}
-    {% elsif forloop.last == false %}
-      {% include page/sidebar-link.html url=tmpURL class="parent" %}
-    {% endif %}
+      {% capture menuHasChildren %}
+        {% include functions/getURLHasChildren.html url=tmpURL %}
+      {% endcapture %}
+      {% assign menuHasChildren = menuHasChildren | strip %}  
 
+      {% if menuHasChildren == "true" %}
+        {% assign liClass = liClass | append: " expand" %}
+      {% endif %}
+      {% if forloop.last %}
+        {% assign liClass = liClass | append: " active" %}
+      {% endif %}
+        {% capture hasYoungerSibilings %}
+          {% include functions/getURLHasChildren.html url=parentURL %}
+        {% endcapture %}
+        {% assign hasYoungerSibilings = hasYoungerSibilings | strip %}   
+        {% if hasYoungerSibilings == "true" %}
+          {% include page/sidebar-younger-sibilings.html url=parentURL class="sub" urlToExclude=tmpURL %}
+        {% endif %}
+        <li class=" {{ liClass }} ">
+        {% include page/sidebar-link-tag.html url=tmpURL %}
+        {% if forloop.last %}
+          {% capture hasChildren %}
+            {% include functions/getURLHasChildren.html url=pageUrl %}
+          {% endcapture %}
+          {% assign hasChildren = hasChildren | strip %}  
+
+          {% if hasChildren == "true" %}
+            {% comment %} TODO: Do not hard code the exclusion {% endcomment %}
+            {% unless pageUrl contains "/reference/content/codes/" or pageUrl contains "/model/content/codes/" %}
+              {% include page/sidebar-children.html url=pageUrl class="sub" %}
+            {% endunless %}
+          {% endif %}
+        {% endif %}
+    {% endif %} 
   {% endfor %}
 
-
-  {% capture hasChildren %}
-    {% include functions/getURLHasChildren.html url=thisPage.url %}
-  {% endcapture %}
-  {% assign hasChildren = hasChildren | strip %}
-
-  {% if thisPage.links == "current" %}
-
-    {% comment %} List Current Page only {% endcomment %}
-    {% include page/sidebar-link.html url=page.url class="current" currentURL=page.url %}
-
-  {% elsif hasChildren == "true" %}
-
-    {% comment %} List Current Page and Children {% endcomment %}
-    {% include page/sidebar-link.html url=page.url class="current" currentURL=page.url %}
-
-
-    {% comment %} TODO: Do not hard code the exclusion {% endcomment %}
-    {% unless thisPage.url contains "/model/content/codes/" %}
-      {% include page/sidebar-list.html url=page.url class="sub" %}
-    {% endunless %}
-
-  {% else %}
-    
-    {% comment %} List Current Page with Siblings {% endcomment %}
-    {% unless thisPage.url contains "/model/content/codes/" %}
-    
-      {% capture parentURL %}
-        {% include functions/getParentURL.html url=page.url %}
-      {% endcapture %}
-      {% assign parentURL = parentURL | strip %}
-
-      {% include page/sidebar-list.html url=parentURL class="sibling" currentURL=page.url%}
-    {% endunless %}
-
-  {% endif %}
+  {% comment %} Closing tags loop {% endcomment %}
+  {% assign reverseUrl = pageUrl %}
+  {% for segment in pathSegments reversed %}
+    {% if forloop.index < reverseMenuDepth %}
+        </li>
+        {% comment %} 
+          urlToExclude is used to avoid multiple rendering of the parent menu 
+        {% endcomment %}
+        {% assign urlToExclude = reverseUrl %} 
+        {% comment %} 
+          This is just to ensure similar segments don't get truncated all together 
+        {% endcomment %}
+        {% assign reverseUrlSafety = reverseUrl | append: '*@*' %}  
+        {% comment %} 
+          Define what to truncate from the url 
+        {% endcomment %} 
+        {% assign sectionToRemove = {{segment}} | append: '/*@*'  %}
+        {% assign reverseUrl = reverseUrlSafety | replace: sectionToRemove, ""  %}   
+        {% capture hasOlderSibilings %}
+          {% include functions/getURLHasChildren.html url=reverseUrl %}
+        {% endcapture %}
+        {% assign hasOlderSibilings = hasOlderSibilings | strip %}   
+        
+        {% if hasOlderSibilings == "true" %}
+          {% include page/sidebar-older-sibilings.html url=reverseUrl class="sub" urlToExclude=urlToExclude %}
+        {% endif %}
+      </ul>
+    {% endif %} 
+  {% endfor %}
 
 </div>
 
@@ -65,4 +103,4 @@
 <a class="btn btn-primary feedback-btn" href="{{ site.submit_feedback_link }}">
   <span class="icon fa fa-comments fa-sm"></span>
   <span class="content">Submit Feedback/Ideas</span>
-</a>
+</a> 

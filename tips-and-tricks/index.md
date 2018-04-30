@@ -1,5 +1,6 @@
 ---
 title: Tips and Tricks Overview
+layout: 'landing_page'
 links:
   - url: /tips-and-tricks/domain-modeling-guide/
   - url: /tips-and-tricks/iepd-versions/
