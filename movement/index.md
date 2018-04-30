@@ -1,5 +1,6 @@
 ---
 title: Movement Overview
+layout: 'landing_page'
 links:
   - url: /movement/quick-user-guide/
   - url: /movement/json-schema-output/

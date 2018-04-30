@@ -1,0 +1,18 @@
+
+{% comment %}
+  ***
+  Outputs a list of sections with descriptions and call to action button 
+  ***
+{% endcomment %}
+
+{% assign sections = include.sections %}
+
+<div>
+  <ul class="list-fa-icon section">
+    {% for section in sections %}
+      <li>
+        {% include single-section.html section=section %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

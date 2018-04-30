@@ -1,11 +1,17 @@
 ---
   title: Training
+  layout: 'landing_page'
   links:
   - url: /training/domain-modeler/
+    button: 'Begin training'
   - url: /training/iepd-developer/
+    button: 'Begin training'
   - url: /training/iepd-implementer/
+    button: 'Begin training'
   topics:
   - url: /model/
+    button: 'Begin training'
+
   todo: Elaborate on intro and roles; add old training materials
 ---
 
@@ -29,10 +35,10 @@ If you are just getting started, please head over to the main site at [niem.gov]
 
 ## Reference Material (General topics) 
 
-{% include icon-list.html links=page.topics %}
+{% include section-list.html sections=page.topics %}
 
 ## Training tracks
 
 Choose from below for the kind of materials that will best fit your role in using NIEM:
 
-{% include icon-list.html links=page.links %}
+{% include section-list.html sections=page.links %}

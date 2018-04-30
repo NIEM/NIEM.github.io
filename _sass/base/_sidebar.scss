@@ -104,3 +104,135 @@ a.list-group-item.external::before {
 
   }
   
+// New Side bar design Apr 2017 
+#sidebar {
+  max-width: 223px;
+  width: auto;
+  position: relative;
+}
+.section-nav{
+  &.list-group{
+    ul {
+      list-style: none; 
+      padding: 0 0px;
+      margin: 0;
+      li {
+        a{
+          display: block;
+          padding: 12px 5px 12px 15px;
+          color: #fff;
+          font-weight: 700;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+        &.active {
+          &:hover {
+            background: #1486b8;
+          }      
+          a {
+            color: #fff;
+            &:after {
+              content: '\f105';
+              font-family: FontAwesome;
+              font-weight: normal;
+              font-style: normal;
+              margin:0px 0px 0px 10px;
+              text-decoration:none;
+              right: 3px;
+              padding-right: 7px;  
+              position: absolute;        
+            }
+          }
+          li {
+            a {
+              &:after {
+                content: '';
+              }
+              color: #01445D;
+            }
+          }
+        }
+        background: #01445D;
+        &:hover {
+          background: #016b92;
+        }
+        border-top: 1px solid #fff;
+        &.expand {
+          padding-bottom: 0;
+        }
+        ul {
+          li {
+            &.active {
+              background: #1486b8; 
+            }
+            background: #D7D7D7;
+            &:hover {
+              background: #bfbebe;
+            }              
+            a{
+              color: #01445D;
+              padding-left: 25px;
+              font-weight: 600;
+            }
+
+            &.lastChildren {
+              li {
+                a {
+                  font-weight: 600;
+                  color: #01445D;
+                }
+              }
+            }
+            ul {
+              li {
+                background: #e7e7e7;
+                &:hover {
+                  background: #D7D7D7;
+                }
+                a{
+                  padding-left: 35px;
+                  font-weight: 400;
+                }
+                &.lastChildren {
+                  li {
+                    a {
+                      font-weight: 400;
+                      color: #1486B8;
+                    }
+                  }
+                }                
+                ul {
+                  li {
+                    background: #f7f7f7;
+                    &:hover {
+                      background: #e7e7e7;
+                    }
+                    a {
+                      padding-left: 45px;
+                    }
+                    ul {
+                      li {
+                        background: #fff;
+                        a {
+                          padding-left: 55px;
+                        }
+                        ul {
+                          li {
+                            a {
+                              padding-left: 65px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

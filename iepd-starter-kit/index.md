@@ -1,7 +1,9 @@
 ---
 title: Development Overview
+layout: 'landing_page'
 links:
   - url: /iepd-starter-kit/iepd-series/
+    button: 'Begin training'
   - url: /iepd-starter-kit/iepd-tutorials/
   - url: /iepd-starter-kit/conformance/
   - url: /iepd-starter-kit/terms/
@@ -18,4 +20,4 @@ In an era when return on investment has never been more important to government 
 
 Be sure to check out the [NIEM Cost Model](https://www.niem.gov/about-niem/niem-cost-model), which allows users to quantify the associated costs of adopting NIEM.
 
-{% include icon-list.html links=page.links %}
+{% include section-list.html sections=page.links %}

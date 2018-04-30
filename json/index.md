@@ -1,5 +1,6 @@
 ---
 title: NIEM and JSON
+layout: 'landing_page'
 links:
   - url: /json/tutorial/
   - url: /json/faq/
@@ -46,4 +47,4 @@ provide precise definitions of data available through any sort of API,
 or to document and harmonize published data resources for data
 analytics. 
 
-{% include icon-list.html links=page.links %}
+{% include section-list.html sections=page.links %}
