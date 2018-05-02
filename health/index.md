@@ -10,7 +10,7 @@ links:
 >On 13 February 2018 FHA provided a status update and recap of their work to date.
 >
 >The next meeting is scheduled for 29 May 2018. 
-
+>
 >A schedule of meetings for the remainder of the year is currently being developed. The FHA team is also working to decide how to best leverage these meetings going forward. One thought is to hold “office hour” type meetings where they can answer questions from the community and offer guidance with their scenarios/use cases.
 
 <a href="https://www.niem.gov/contact-us" class="btn btn-primary" target="_blank">Submit Your Use Case</a>
