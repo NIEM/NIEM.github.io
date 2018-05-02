@@ -10,7 +10,7 @@ An Overview
 
 NIEM is the National Information Exchange Model, a collaborative project to aid
 information exchange across a broad community, to ensure that data in motion
-works with a broad array of tools, and retains its meaning across organzational
+works with a broad array of tools, and retains its meaning across organizational
 boundaries. The NIEM community brings together state, local, tribal, and federal
 government organizations within the United States, along with international
 partners, to define reusable data structures and rules for their use.
