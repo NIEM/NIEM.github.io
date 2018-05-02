@@ -5,15 +5,13 @@ links:
 ---
 >**Join to hear more about this collaborative effort**
 >
->Please register here: <a href="https://attendee.gotowebinar.com/register/8507422127673395457">https://attendee.gotowebinar.com/register/8507422127673395457</a>
+>The first meeting took place on 10 October 2017. [Meetings minutes are now available.](http://niem.github.io/health/10-oct-2017-meeting-minutes/)
 >
->After registering, you will receive a confirmation email containing information about how to access the webinar. There is no cost to register.
+>On 13 February 2018 FHA provided a status update and recap of their work to date.
 >
->The first of five scheduled meetings took place on 10 October 2017. [Meetings minutes are now available.](http://niem.github.io/health/10-oct-2017-meeting-minutes/)
->
->The remaining meetings are scheduled for: 13 February 2018, 8 May 2018, 29 May 2018, and 14 Auguest 2018.
->
->PLEASE NOTE: You must attend via the webinar to receive a unique audio ID, if you dial-in without this unique PIN you will attend in listen only mode and will not be able to be unmuted.
+>The next meeting is scheduled for 29 May 2018. 
+
+>A schedule of meetings for the remainder of the year is currently being developed. The FHA team is also working to decide how to best leverage these meetings going forward. One thought is to hold “office hour” type meetings where they can answer questions from the community and offer guidance with their scenarios/use cases.
 
 <a href="https://www.niem.gov/contact-us" class="btn btn-primary" target="_blank">Submit Your Use Case</a>
 
