@@ -6,9 +6,9 @@ links:
 ---
 >**Join to hear more about this collaborative effort**
 >
->The first meeting took place on 10 October 2017. [Meetings minutes are now available.](http://niem.github.io/health/10-oct-2017-meeting-minutes/)
+>The first meeting took place on 10 October 2017. [Meeting minutes are now available.](http://niem.github.io/health/10-oct-2017-meeting-minutes/)
 >
->On 13 February 2018 FHA provided a status update and recap of their work to date. [Meetings minutes are now available.](http://niem.github.io/health/13-feb-2018-meeting-minutes/)
+>On 13 February 2018 FHA provided a status update and recap of their work to date. [Meeting minutes are now available.](http://niem.github.io/health/13-feb-2018-meeting-minutes/)
 >
 >The next meeting is scheduled for 29 May 2018. 
 >
