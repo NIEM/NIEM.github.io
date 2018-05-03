@@ -30,7 +30,6 @@
 
 <ul class="lastChildren">
 	{% for link in links %}
-
 	  {% comment %} Grab title from links in case of external links {% endcomment %}
 	  {% assign tmp = thisPage.links | where: "url", link | first %}
 	  {% assign title = tmp.short %}
@@ -38,6 +37,5 @@
 	    {% assign title = tmp.title %}
 	  {% endunless %}
 	  <li>{% include page/sidebar-link-tag.html url=link title=title external=link.newtab %}</li>
-	    
 	{% endfor %}
 </ul>

@@ -47,4 +47,4 @@ provide precise definitions of data available through any sort of API,
 or to document and harmonize published data resources for data
 analytics. 
 
-{% include section-list.html sections=page.links %}
+{% include icon-list.html links=page.links %}
