@@ -8,7 +8,7 @@ A summary answer, one that is unpacked below, is:
    specification.
 2. It is NIEM data. It has a [content model](#content), which provides its
    meaning. That content model is based on the [NIEM conceptual model](#concept).
-3. It is [JSON-LD data](../json-ld). It has a JSON-LD context,
+3. It is [JSON-LD data](../../reference/json-ld). It has a JSON-LD context,
    which connects key strings in the data to the data elements
    that provide their meaning.
 
@@ -59,23 +59,23 @@ Informally, both of those JSON objects have the following meaning:
   - Who has a name
     - That has a surname of *Wimsey*
     - That has three given names: *Peter*, *Death*, and *Bredon*.
-    
+
 That meaning is supplied in three steps:
 
 1. The NIEM conceptual model relates the components of NIEM JSON data
    to statements that make claims about the world.
-   
+
 2. The NIEM conceptual model also maps each key string in NIEM JSON
    data to a global identifier for a data element that defines its
    meaning and value domain.
 
 3. The content model for each NIEM JSON data resource provides those
    data elements, and specifies which are mandatory and optional.
-   
+
 ### The NIEM Conceptual Model {#concept}
 
 According to the NIEM conceptual model, each object in the JSON data
-is 
+is
 
 > a collection of statements that make claims about some object in the
 > world: that a person has a name, a residence location, a spouse,
@@ -92,10 +92,10 @@ be:
 
 * A string. In the top example, the value of the `lname` property
   is the string "Wimsey".
-  
+
 * A number. In the top example, the value of the `val` property is
   the number 163.
-  
+
 * An object, like the value of the `name` property. This object has
   two properties of its own, `lname` and `fname`.
 
@@ -104,7 +104,7 @@ be:
   repeated in a NIEM JSON object. The `gname` property has three
   values: the strings "Peter", "Death", and "Bredon". The order of the
   array elements is not significant.
-  
+
 * The special tokens `true` and `false`.
 
 * The special token `null` is not used in NIEM JSON data.
@@ -143,17 +143,17 @@ http://release.niem.gov/niem/niem-core/4.0/#PersonSurName
 ```
 
 Which is the global identifier for the data element defined as "A last
-name or family name of a person". 
+name or family name of a person".
 
 ### NIEM Content Models {#content}
 
-NIEM data always has a [content model](../models), which includes all
+NIEM data always has a [content model](../../reference/models), which includes all
 of the data elements that may appear in the data resource. These
 elements will be a subset of the NIEM core and domain models, possibly
 augmented by data elements defined specially for the resource. In
-addtion to providing the meaning of each object property, the content
+addition to providing the meaning of each object property, the content
 model defines which elements are mandatory and optional in the
-resource; NIEM JSON uses [JSON Schema](../json-schema) for this.
+resource; NIEM JSON uses [JSON Schema](../../reference/json-schema) for this.
 
 The data elements
 for the content model of *Example 2* include:
@@ -168,7 +168,7 @@ for the content model of *Example 2* include:
 | j:PersonHairColorCode | A color of the hair of a person |
 
 Every NIEM data element belongs to a
-[namespace](../names/namespaces).  Each namespace is uniquely
+[namespace](../../reference/names/namespaces).  Each namespace is uniquely
 identified by an absolute URI. Each namespace has a commonly-used
 *namespace prefix*, such as `nc`. The name of each data element is
 composed of the namespace prefix plus a *local name*, such as
@@ -191,7 +191,7 @@ encodings in JSON Schema or RDF are possible.
 ### Equivalence Of *Ad Hoc* Key Strings {#equiv}
 
 NIEM JSON data will often use the names of NIEM data elements (such as
-`nc:PersonGiveName`) for key strings. However, sometimes people 
+`nc:PersonGiveName`) for key strings. However, sometimes people
 prefer simple *ad hoc* key strings such as `gname` instead. These
 simple keys may be used in NIEM JSON data if their mapping is included
 in the JSON-LD context. For example, the context for *Example 1* is:
@@ -307,7 +307,7 @@ NIEM JSON is self-describing because:
 * That context maps each key string to a URI for a data element.
 * The resource for that URI is machine-readable documentation of the
   data element's meaning.
-  
+
 This means that developers and data scientists can always tell whether
 a key in one resource has the same meaning as a key in another
 resource. It also means they can learn that meaning by obtaining the

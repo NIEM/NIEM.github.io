@@ -1,9 +1,9 @@
 ---
 title: Names for JSON data
 links:
-  - url: /json/names/reuse/
-  - url: /json/names/syntax/
-  - url: /json/names/namespaces/
+- url: /json/reference/names/reuse/
+- url: /json/reference/names/syntax/
+- url: /json/reference/names/namespaces/
 ---
 
 An object within a JSON document is composed of keys with corresponding values,
@@ -18,7 +18,7 @@ participant needs to agree on basic facts about the data:
 
 * What are the allowed names for values and objects within the JSON document?
 * What do the various names mean?
-* What are the allowed values for a given name? 
+* What are the allowed values for a given name?
 
 NIEM defines a methodology for [defining and reusing names for data](reuse).
 
@@ -27,5 +27,3 @@ NIEM data names follow [a specific syntax](syntax), based on the ISO 11179 stand
 NIEM names are [grouped by namespaces](namespaces), distinguishing names that would otherwise
 be ambiguous or conflicting, and identifying names from specific versions of
 vocabularies.
-
-{% include icon-list.html links=page.links %}

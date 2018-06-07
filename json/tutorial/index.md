@@ -1,12 +1,14 @@
 ---
 title: A NIEM-JSON tutorial
+short: Tutorial
+description: This tutorial walks the reader through a small example of implementing an information exchange using NIEM-JSON. It begins with a small set of data requirements, constructs a NIEM information exchange model, expresses data for that model as JSON, then constructs a JSON schema for that data.
 ---
 
-<style type="text/css"> 
+<style type="text/css">
 ul { margin-left: 1em; }
 </style>
 
-<style type="text/css"> 
+<style type="text/css">
 body{counter-reset: index2}
 h2{counter-reset: index3}
 h3{counter-reset: index4}
@@ -42,7 +44,7 @@ is a property of whatever contains it. The top concept is a motor vehicle crash.
     * vehicle identifier number (VIN) : identifier [1]
     * driver : person [1]
       * name : string [1]
-        
+
 ## Define a NIEM exchange model
 
 Next, we search for these data requirements in the
@@ -58,10 +60,10 @@ yielding a NIEM object model.
 > more. Additional training is forthcoming.
 
 We have searched for these data requirements in the SSGT and found corresponding
-NIEM elements. 
+NIEM elements.
 
 {: .note}
-> You may [download and save the resulting list of components](wantlist.xml) as a NIEM wantlist, which you may [load into the SSGT](https://tools.niem.gov/niemtools/ssgt/SSGT-Options.iepd). 
+> You may [download and save the resulting list of components](wantlist.xml) as a NIEM wantlist, which you may [load into the SSGT](https://tools.niem.gov/niemtools/ssgt/SSGT-Options.iepd).
 
 The NIEM representation of these data requirements contains more components than
 the list of source requirements above, due to the way NIEM structures its data:
@@ -73,7 +75,7 @@ simple value.
 ![model](model.png "Resulting NIEM object model")
 
 The above object model shows type information and cardinality, which won't
-appear in a resulting message. 
+appear in a resulting message.
 
 ## Define a JSON-LD context
 
@@ -95,7 +97,7 @@ sign) appended, if one is not already present. Here is the resulting context:
 ## Construct a sample JSON file
 
 Next, we construct a corresponding JSON file. To do this, we walk through the
-above object model, adding the NIEM property names as JSON properties. 
+above object model, adding the NIEM property names as JSON properties.
 
 Every property that does not have a simple value (such as a string or a number)
 is represented as an object. For example, the `j:Crash` element is represented
@@ -137,24 +139,24 @@ JSON. For example:
 
 * JSON-LD contexts are used to provide namespace features. Contexts have many
 features this walkthrough doesn't exercise. See the page on
-[JSON-LD contexts](../json-ld/context/)* for more information.
+[JSON-LD contexts](../reference/json-ld/context/)* for more information.
 
 * You may use the property `rdf:value` to represent an object that has a
 both attributes and a simple value.
 
 * You may use the JSON-LD property `@id` to perform the function of NIEM XML's
-`structures:id`, `structures:ref`, and `structures:uri`. 
+`structures:id`, `structures:ref`, and `structures:uri`.
 
 * JSON-LD allows arrays to be used in instances very freely; it does not
   distinguish between an array with 1 entry and a single value. This is a
   property with a value that is a single string:
-  
+
   ```text
   "nc:PersonFullName": "Gerry H. Everett"
   ```
-    
+
   This is a property whose value is *an array* containing one string:
-  
+
   ```text
   "nc:PersonFullName": [ "Gerry H. Everett" ]
   ```
@@ -168,7 +170,7 @@ property is not fully specified by the type defined for the property in the NIEM
 data model. In the example above, the property `nc:RoleOfItem` has type
 `nc:ItemType`, but the instance requires the value to have type
 `nc:VehicleType`, which is derived from `nc:ItemType`. In this case, and similar
-cases, you may use the JSON-LD property `@type` to identify the type of the 
+cases, you may use the JSON-LD property `@type` to identify the type of the
 property's value, as shown below.
 
 ### A complete sample instance
@@ -216,7 +218,7 @@ exchange model.
 The JSON Schema properties we are using here are:
 
 * `$schema`: Indicates the JSON Schema version being used by this schema.
-* `type`: Directs that this piece of a schema will only match a JSON object. 
+* `type`: Directs that this piece of a schema will only match a JSON object.
 * `properties`: Describes all the properties that are allowed by this piece of the schema
 * `additionalProperties`: Indicates that this piece of the schema *only* allows properties that are listed under `properties`.
 * `required`: Lists all properties that *must* occur in an object matching this piece of schema.

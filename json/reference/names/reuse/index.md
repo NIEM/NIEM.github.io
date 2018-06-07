@@ -10,7 +10,7 @@ NIEM defines a methodology for broad communities to agree on:
 
 Every name, structure, and set of data constraints has a single authoritative
 representation, defined by a set of XML Schema documents. See
-[http://niem.github.io/niem-releases/](http://niem.github.io/niem/releases) for new and old NIEM releases. These
+[http://niem.github.io/niem-releases/](http://niem.github.io/niem-releases) for new and old NIEM releases. These
 schemas define base definitions, which can be refined, specialized, and
 extended, to define specific exchanges.
 
@@ -29,7 +29,7 @@ NIEM defines the following kinds of data components:
   characteristics it has, or relationships that it participates in.
 
 * **Elements** describe uses of an object, or relationships that objects
-  participate in, or characteristics of objects. 
+  participate in, or characteristics of objects.
 
 * **Attributes** describe characteristics of objects, with values that are
   always simple types.
@@ -41,18 +41,18 @@ has a few common characteristics:
 * A **local name**, which is a meaningful term that concisely identifies what a
   thing is, what it is for, and what it might hold. NIEM has [a syntax
   for local names](../syntax).
-  
+
 * A **definition**, which is a descriptive statement that provides a detailed
   meaning for a thing. The criteria of what makes a good definition are
   identified in
   [the NIEM Naming and Design Rules, section 7.4](https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_7.4).
-  
+
 * A **namespace**, which is a URL that acts as a universal identifier under
   which a set of data components are grouped. Each governance body, and each
-  NIEM version, has unique namespaces that are assigned to it. 
-  
+  NIEM version, has unique namespaces that are assigned to it.
+
 The **qualified name** of a data component is the **namespace** and **local name**
-together. 
+together.
 
 The reuse of these qualified names in exchange definitions, extensions, and
 messages allows the parts of the messages to be understood, and for similar

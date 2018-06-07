@@ -1,20 +1,20 @@
 ---
 title: JSON Schema
 links:
-  - url: /json/json-schema/references/
-  - url: /json/json-schema/sample/
+  - url: /json/reference/json-schema/references/
+  - url: /json/reference/json-schema/sample/
 ---
-[JSON schema](https://json-schema.org) provides  a JSON vocabulary for defining and validating 
+[JSON schema](https://json-schema.org) provides  a JSON vocabulary for defining and validating
 JSON **instances**.
 
-Each schema includes one or more key-value pairs or **keywords**, including 
-a `type` keyword set to a JSON simple value (`null`, `boolean`, `number`, `integer` or `string`), 
-`array` or `object` as defined in [JSON data](../data):
+Each schema includes one or more key-value pairs or **keywords**, including
+a `type` keyword set to a JSON simple value (`null`, `boolean`, `number`, `integer` or `string`),
+`array` or `object` as defined in [JSON data](../../faq/data):
 
 All schemas may include the following keywords:
 * A`description` keyword to provide a definition for this type or property.
 * An `$id` keyword to provide a base URL for referencing this schema, type or property.
-* A `$ref` keyword to provide a [JSON pointer](./references) to another schema, type or property, 
+* A `$ref` keyword to provide a [JSON pointer](./references) to another schema, type or property,
 
 Other keywords are specific to the `type` as follows:
 * Numbers and integers may be restricted with the following keywords:

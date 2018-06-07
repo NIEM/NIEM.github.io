@@ -33,8 +33,8 @@ A data element combines a name, a definition, and a value domain (or
 data type). For example:
 
 * **Name**: PersonGivenName
-* **Definition**: A first name of a person 
-* **Value domain**: *character string* 
+* **Definition**: A first name of a person
+* **Value domain**: *character string*
 
 ![Block](block.png){: .callout} NIEM's reusable data components are
 machine-readable data element definitions in different languages; XML
@@ -84,7 +84,7 @@ published on the web, etc. The process is:
 
 1. Determine the information requirements. What are the facts to be
    conveyed in the data resource?
-   
+
 2. For each concept in the information requirements
 
    2.1 Search for and select a data component in the NIEM model to
@@ -95,22 +95,22 @@ published on the web, etc. The process is:
    there is no suitable component in the NIEM model. For example, the
    NIEM model provides several geospatial components adapted from
    Geographic Markup Language (GML).
-   
+
    2.3 Define a new data component for the missing concept, if there
    is no component suitable for reuse. Developers may share their new
    component for reuse by others, but are not obligated to do so.
-   
+
 3. Have new or modified information requirements been revealed?
    Change the requirements in step #1 accordingly and repeat.
-   
+
 4. When all of the information requirements are satisfied, assemble
    the selected data components into a schema that specifies the data
    resource. This schema represents the resource's [content
-   model](../models), which documents the meaning of each data
+   model](../../reference/models), which documents the meaning of each data
    component, defines which components are mandatory and optional, and
    may be used to validate individual instances of the resource during
    development or operations.
-   
+
 The schema is the central component of a NIEM-based data resource
 specification, for historical reasons called the *Information Exchange
 Package Documentation (IEPD)*. NIEM supplies an IEPD framework for
@@ -128,7 +128,7 @@ rules which ensure that separately-developed blocks can be composed
 into a single schema.
 
 > XML is very flexible. Everyone can do their own thing, and, by
-> golly, everyone is!  
+> golly, everyone is!
 > -- Steve McVey at [XML '99](http://www.xml.com/pub/a/2000/02/23/ebiz/index.html)
 {: .text-right}
 
@@ -209,7 +209,7 @@ The next level of NIEM use is to reuse NIEM components for one portion
 of a data resource. This treats the NIEM model as just another data
 vocabulary among others, such as Dublin Core and schema.org.
 
-Scientists and developers may create their own NIEM-based 
+Scientists and developers may create their own NIEM-based
 specification to document a data resource they produce. In this case
 all of the data components will be NIEM-conforming, whether reused
 from the NIEM model, adapted from another standard, or created from
@@ -237,16 +237,16 @@ non-voting observer.
 This page describes those aspects of the NIEM organization, model,
 process, and technical specifications that are most relevant to NIEM
 JSON. Much more information about NIEM is available at the
-[niem.gov](niem.gov) website.
+[niem.gov](https://www.niem.gov) website.
 
-<style type="text/css"> 
-    .callout{ 
-        float: right; 
+<style type="text/css">
+    .callout{
+        float: right;
     }
 </style>
-<style type="text/css"> 
+<style type="text/css">
     .text-right{
         text-align: right;
     }
 </style>
-        
+
