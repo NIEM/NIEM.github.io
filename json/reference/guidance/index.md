@@ -93,7 +93,7 @@ later date.
 ### Overview
 
 This document is one step in the NTAC technical road map for JSON,
-[Using JSON with NIEM](../using_json_with_niem.pdf).  It describes
+[Using JSON with NIEM](../../using_json_with_niem.pdf).  It describes
 NIEM's methodology for creating consistent, interoperable JSON
 messages that are based on NIEM-conformant XML schemas. Core aspects
 of this guidance are:
