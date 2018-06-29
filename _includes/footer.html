@@ -22,7 +22,7 @@
 <script src="{{ '/vendor/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
-{% if page.url contains "model/" %}
+{% if page.url contains "model/" or page.url contains "training/" %}
   <script type="text/javascript">
     // Find the TOC and active navigation item
     let $toc = $("#markdown-toc");

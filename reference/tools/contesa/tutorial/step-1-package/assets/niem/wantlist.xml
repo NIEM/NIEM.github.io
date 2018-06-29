@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:WantList w:release="4.0" w:product="NIEM" w:nillableDefault="true"
+  xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/"
+  xmlns:w="http://niem.gov/niem/wantlist/2.2" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/">
+  <w:Element w:name="j:CrashDriver" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="j:CrashVehicle" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:IdentificationID" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonFullName" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:PersonName" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:RoleOfItem" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:RoleOfPerson" w:isReference="false" w:nillable="true"/>
+  <w:Element w:name="nc:VehicleIdentification" w:isReference="false" w:nillable="true"/>
+  <w:Type w:name="nc:VehicleType" w:isRequested="true"/>
+</w:WantList>

@@ -31,6 +31,8 @@ plugins:
 
 repository: NIEM/niem.github.io
 
+excerpt_separator: <!--more-->
+
 # Uncomment this to view as a forked repo (e.g., http://$user.github.io/NIEM.github.io/).
 # baseurl: "NIEM.github.io"
 
@@ -42,6 +44,7 @@ niem_comments_link: mailto:niem-comments@lists.gatech.edu
 # Build settings
 markdown: kramdown
 highlighter: rouge
+incremental: true
 
 kramdown:
   input: GFM

@@ -21,5 +21,5 @@ exchange including the creator, the current version and the change history.
 
 NIEM supports JSON information exchanges including **IEPs** in JSON format and **IEPDs** that include [JSON Schema](../json-schema)
 
-More detail on NIEM [models](../../../model){:target="_blank"} and their implementations in XML and JSON, including NIEM [concepts](../../../model/concepts){:target="_blank"},  [content](../../../model/content){:target="_blank"},  and [releases](../../../model/releases){:target="_blank"}, is available.
+More detail on NIEM [models](/reference){:target="_blank"} and their implementations in XML and JSON, including NIEM [concepts](/reference/concepts){:target="_blank"},  [content](/reference/content){:target="_blank"},  and [releases](/reference/releases){:target="_blank"}, is available.
 

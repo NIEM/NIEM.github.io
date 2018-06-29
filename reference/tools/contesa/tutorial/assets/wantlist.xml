@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:WantList xmlns:w="http://niem.gov/niem/wantlist/2.2"
+  w:product="NIEM" w:release="4.0" w:nillableDefault="true"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+  xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/">
+
+  <w:Element w:name="nc:Date" w:isReference="false" w:nillable="false"/>
+  
+  <w:Type w:name="j:CrashPersonType" w:isRequested="false">
+    <w:ElementInType w:name="nc:RoleOfPerson" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  
+  <w:Type w:name="j:CrashType" w:isRequested="true">
+    <w:ElementInType w:name="j:CrashVehicle" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:CrashPerson" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  
+  <w:Type w:name="j:CrashVehicleType" w:isRequested="false">
+    <w:ElementInType w:name="nc:RoleOfItem" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="j:CrashDriver" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  
+  <w:Type w:name="nc:IncidentType" w:isRequested="false">
+    <w:ElementInType w:name="nc:IncidentLocation" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  
+  <w:Type w:name="nc:PersonNameTextType" w:isRequested="false">
+    <w:AttributeInType w:name="nc:sequenceID" w:minOccurs="0" w:maxOccurs="1"/>
+  </w:Type>
+  
+  <w:Type w:name="nc:PersonNameType" w:isRequested="false">
+    <w:ElementInType w:name="nc:PersonGivenName" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonMiddleName" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+    <w:ElementInType w:name="nc:PersonSurName" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+  
+  <w:Type w:name="nc:PersonType" w:isRequested="false">
+    <w:ElementInType w:name="nc:PersonName" w:isReference="false"
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
+  </w:Type>
+
+</w:WantList>

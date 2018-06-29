@@ -20,12 +20,27 @@
 
   {% assign linkPage = site.pages | where: "url", link.url | first %}
 
-  {% assign file = link.url | append: "intro/" %}
-  {% assign linkIntro = site.pages | where: "url", file | first %}
-
   <{{ headerLevel }}>{{ linkPage.title }}</{{ headerLevel }}>
-  {{ linkIntro.content }}
 
-  [more...]({{link.url}})
+  {% comment %}
+    {{ linkPage.except }} isn't grabbing anything, so manually splitting the page on
+    the excerpt separator.
+  {% endcomment %}
+
+  {% assign page_array = linkPage.content | split: site.excerpt_separator %}
+
+  {% comment %}
+    Use description front matter (if available) if page does not have an excerpt
+  {% endcomment %}
+
+  {% if page_array.size >= 2 %}
+    {% assign excerpt = page_array | first %}
+  {% else %}
+    {% assign excerpt = linkPage.description %}
+  {% endif %}
+
+  {{ excerpt }}
+
+  [more...]({{ link.url }})
 
 {% endfor %}

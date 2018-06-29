@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1"
+  targetNamespace="http://release.niem.gov/tutorials/crash/4.0/"
+  xmlns:exch="http://release.niem.gov/tutorials/crash/4.0/"
+  xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+  xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/"
+  xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
+  xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+  xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument"
+  xmlns:geo="http://release.niem.gov/niem/adapters/geospatial/4.0/"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  elementFormDefault="qualified"> 
+
+  <xs:annotation>
+    <xs:documentation>
+      NIEM conformant extension schema for the Crash model example.
+    </xs:documentation>
+  </xs:annotation>
+    
+  <xs:import namespace="http://release.niem.gov/niem/domains/jxdm/6.0/"/>
+  <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"/>
+  <xs:import namespace="http://release.niem.gov/niem/adapters/geospatial/4.0/"/>
+  <xs:import namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"/>
+  <xs:import namespace="http://release.niem.gov/niem/structures/4.0/"/>
+
+  <xs:element name="CrashInfo" type="exch:CrashInfoType">
+    <xs:annotation>
+      <xs:documentation>
+        Root node of the Crash Info IEP.
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="CrashInfoType">
+    <xs:annotation>
+      <xs:documentation>
+        The CrashInfo element.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="structures:ObjectType">
+        <xs:all>
+          <xs:element ref="nc:Person" minOccurs="1" maxOccurs="unbounded"/>
+          <xs:element ref="j:Crash" minOccurs="1" maxOccurs="1"/>
+          <xs:element ref="j:Charge" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element ref="j:PersonChargeAssociation" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+ 
+</xs:schema>

@@ -2,8 +2,42 @@
 niem_governance: https://www.niem.gov/about-niem/niem-governance
 nbac: https://www.niem.gov/about-niem/niem-governance
 ntac: https://www.niem.gov/about-niem/niem-governance
-ndr: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html
-ndr_issues: https://github.com/NIEM/NIEM-NDR/issues
-release_repo: https://github.com/NIEM/NIEM-Releases
+
+release_repo:   https://github.com/NIEM/NIEM-Releases
 release_issues: https://github.com/NIEM/NIEM-Releases/issues
+
 niem_comments: mailto:niem-comments@lists.gatech.edu
+
+# Specifications
+
+ndr: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html
+ndr_repo:   https://github.com/NIEM/NIEM-NDR/
+ndr_issues: https://github.com/NIEM/NIEM-NDR/issues
+
+code_list_spec:           https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html
+code_list_spec_folder:    https://reference.niem.gov/niem/specification/code-lists/4.0/
+code_list_spec_base_name: https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0
+code_list_spec_repo:      https://github.com/NIEM/niem-code-lists-spec/
+
+ctas: https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html
+
+conformance: https://reference.niem.gov/niem/specification/conformance/3.0/conformance-3.0.html
+
+hlva: https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/high-level-version-architecture-3.0.html
+
+mpd: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html
+
+six: https://reference.niem.gov/niem/specification/sch-in-xsd/1.0alpha4/niem-schematron-in-xsd-1.0alpha4-2016-03-16.html
+
+# Tools
+
+tools_catalog: "https://www.niem.gov/tools-catalog"
+
+ssgt: https://tools.niem.gov/niemtools/ssgt/index.iepd
+ssgt_api: https://reference.niem.gov/niem/specification/web-services-api/
+
+movement: https://beta.movement.niem.gov/#/
+
+migration: https://tools.niem.gov/niemtools/migration/index.iepd
+
+contesa: https://tools.niem.gov/contesa/

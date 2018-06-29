@@ -54,14 +54,14 @@ INSTANCES ONLY ABOVE HERE. NO CLASSES ABOVE HERE
         - IEPD vs IEP
         - categories vs. individuals
         - templates vs. instances
-    - [models/reuse](/model/concepts/property): Reusable data definitions
+    - [models/reuse](/reference/concepts/property): Reusable data definitions
         - classes & properties
         - global data definitions
-    - [models/has-a](/model/concepts/type): Hierarchical models
+    - [models/has-a](/reference/concepts/type): Hierarchical models
         - Hierarchical models 
         - JSON properties
         - Cardinality (minItems, maxItems)
-    - [models/releases](/model/releases): The NIEM model
+    - [models/releases](/reference/releases): The NIEM model
         - Spreadsheets
         - Movement
         - XML Schemas

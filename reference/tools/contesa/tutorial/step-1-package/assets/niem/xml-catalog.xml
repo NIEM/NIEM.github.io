@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/" uri="utility/code-lists-spec/4.0/code-lists-instance.xsd"/>
+  <uri name="http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-schema-appinfo/" uri="utility/code-lists-spec/4.0/code-lists-schema-appinfo.xsd"/>
+  <uri name="http://release.niem.gov/niem/appinfo/4.0/" uri="utility/appinfo/4.0/appinfo.xsd"/>
+  <uri name="http://release.niem.gov/niem/conformanceTargets/3.0/" uri="utility/conformanceTargets/3.0/conformanceTargets.xsd"/>
+  <uri name="http://release.niem.gov/niem/domains/jxdm/6.0/" uri="domains/jxdm/6.0/jxdm.xsd"/>
+  <uri name="http://release.niem.gov/niem/niem-core/4.0/" uri="niem-core/4.0/niem-core.xsd"/>
+  <uri name="http://release.niem.gov/niem/proxy/xsd/4.0/" uri="proxy/xsd/4.0/xs.xsd"/>
+  <uri name="http://release.niem.gov/niem/structures/4.0/" uri="utility/structures/4.0/structures.xsd"/>
+</catalog>

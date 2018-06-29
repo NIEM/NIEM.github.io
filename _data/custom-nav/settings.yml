@@ -2,6 +2,7 @@ exclude:
   images
   assets
   examples
+  intro
 sidebar:
   grandparent: fa-bars
   parent: fa-caret-down

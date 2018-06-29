@@ -11,7 +11,7 @@
   margin: 0 0 20px;
 }
 
-.tip, .example, .note, .ndr {
+.tip, .example, .note, .ndr, .features {
   @extend .box;
 }
 
@@ -33,13 +33,11 @@ ul.tip, ul.example, ul.note, ul.box {
   content: "Note ";
 }
 
-.note, .tip {
-  // border-color: blanchedalmond;
-  // background: cornsilk;
-  
-  // border-color: peachpuff;
-  // background: papayawhip;
+.features::before {
+  content: "Features ";
+}
 
+.note, .tip {
   border-color: blanchedalmond;
   background: rgba(papayawhip, 0.5);
 }

@@ -9,8 +9,6 @@ root_dir=$(cd "$(dirname "$0")" && pwd)
 command_path=$root_dir/$(basename "$0")
 command_name=$(basename "$0")
 
-url="http://127.0.0.1:4000"
-
 #HELP:Options:
 
 print_help () {
@@ -74,13 +72,17 @@ case $command in
         rm -rf "$HOME"/tmp/site
         bundle exec jekyll build --verbose --destination "$HOME"/tmp/site
         ;;
-    #HELP:  valid: Identify orphaned hrefs
+    #HELP:  valid: Identify orphaned hrefs (requires URL argument)
     valid )
-        if ! curl --silent --output /dev/null "$url" 
-        then printf 'Nothing running at %s\n' "$url" >&2
+        if (( $# != 1 ))
+        then printf "valid needs one arg, a URL (got $#)\n"
              exit 1
         fi
-        wget --no-parent --no-directories --no-config --no-verbose --spider --recursive --page-requisites "$url/json/"
+        if ! curl --silent --output /dev/null "$@"
+        then printf 'Nothing running at %s\n' "$@" >&2
+             exit 1
+        fi
+        wget --no-parent --no-directories --no-config --no-verbose --spider --recursive --page-requisites "$@"
         ;;
     #HELP:  valid-page $local-path...: Identify orphaned refs on a single page
     valid-page )

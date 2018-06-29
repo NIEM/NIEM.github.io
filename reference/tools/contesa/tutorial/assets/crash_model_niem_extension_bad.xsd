@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1"
+  targetNamespace="http://release.niem.gov/niem/tutorial/contesa/"
+  xmlns:exch="http://release.niem.gov/niem/tutorial/contesa/"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+  xmlns:appinfo="http://release.niem.gov/niem/appinfo/4.0/"
+  xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/4.0/"
+  xmlns:structures="http://release.niem.gov/niem/structures/4.0/"
+  xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+  xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.0/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://release.niem.gov/niem/conformanceTargets/3.0/
+                      ../../utility/conformanceTargets/3.0/conformanceTargets.xsd"
+  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument"
+  elementFormDefault="qualified">
+
+  <xs:annotation>
+    <xs:documentation>
+      A NIEM Extension Schema for the Crash data model.
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:import schemaLocation="../niem/domains/jxdm/6.0/jxdm.xsd"
+             namespace="http://release.niem.gov/niem/domains/jxdm/6.0/"/>
+  <xs:import schemaLocation="../niem/niem-core/4.0/niem-core.xsd"
+             namespace="http://release.niem.gov/niem/niem-core/4.0/"/>
+  <xs:import schemaLocation="../niem/proxy/xsd/4.0/xs.xsd"
+             namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"/>
+  <xs:import schemaLocation="../niem/structures/4.0/structures.xsd"
+             namespace="http://release.niem.gov/niem/structures/4.0/"/>
+
+  <xs:element
+    name="CrashDriverInfo"
+    type="exch:CrashDriverInfoType">
+    <xs:annotation>
+      <xs:documentation>
+        The root node of the Crash data model.
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="CrashDriverInfoType">
+    <xs:annotation>
+      <xs:documentation>
+        The type description of the CrashDriverInfo element.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element ref="nc:Person"/>
+      <xs:element ref="j:Crash"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:element
+    name="PersonFictionalCharacterIndicator"
+    type="niem-xs:boolean"
+    substitutionGroup="nc:PersonAugmentationPoint">
+    <xs:annotation>
+      <xs:documentation>
+        An augmentation to the NIEM Person data object. True if
+        this person is a fictional character.
+      </xs:documentation>
+    </xs:annotation>   
+  </xs:element>
+  
+  <xs:element
+    name="LicenseAugmentation"
+    type="exch:LicenseAugmentationType"
+    substitutionGroup="j:DriverLicenseAugmentationPoint">
+    <xs:annotation>
+      <xs:documentation>
+        An augmentation to the NIEM Driver License data object.
+        Tells the unit type of length measurements.
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="LicenseAugmentationType">
+    <xs:annotation>
+      <xs:documentation>
+        The type description of the LicenseAugmentation element.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element ref="nc:ItemLengthMeasure"/>
+    </xs:sequence>
+  </xs:complexType>
+ 
+</xs:schema>
