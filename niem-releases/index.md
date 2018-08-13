@@ -57,7 +57,9 @@ There are several ways to access NIEM 4.0:
   and may be
   [downloaded as a zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-4.0.zip).
 
-In addition to the schema release, 4.0 incorporates technical updates:
+In addition to the schema release, NIEM 4.0 incorporates technical updates. A
+[summary of technical updates](v4.0-technical-changes) is provided on its own
+page.
 
 - An updated version of the
   [NIEM Naming and Design Rules](https://github.com/NIEM/NIEM-NDR), which
