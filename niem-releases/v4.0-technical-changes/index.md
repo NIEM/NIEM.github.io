@@ -1,5 +1,5 @@
 ---
-title: NIEM Technical Architecture Changes for NIEM v4
+title: NIEM Technical Architecture Changes for NIEM v4.0
 description: What was changed in the NIEM technical architecture from NIEM version 3.* to version 4.0.
 ---
 
