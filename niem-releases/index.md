@@ -16,6 +16,8 @@ There are several ways to access NIEM 4.1:
   [the complete NIEM 4.1 schema package as a zip file](https://release.niem.gov/niem/4.1/niem-4.1.rel.zip)
   from [release.niem.gov](https://release.niem.gov/niem/4.1/).
 
+- You may search the contents of NIEM 4.1 using [Movement](https://beta.movement.niem.gov).
+
 - You may browse the contents of NIEM 4.1 and download schema subsets from the
   [NIEM Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd).
 
@@ -48,8 +50,6 @@ There are several ways to access NIEM 4.0:
   [NIEM Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd).
   NIEM 4.0 may be selected in [the SSGT's options](https://tools.niem.gov/niemtools/ssgt/SSGT-Options.iepd),
   next to <q>Change Release to</q>.
-
-- You may browse the contents of NIEM 4.0 using [Movement](https://beta.movement.niem.gov).
 
 - NIEM releases are
   [published on Github](https://github.com/NIEM/NIEM-Releases). NIEM 4.0 is
