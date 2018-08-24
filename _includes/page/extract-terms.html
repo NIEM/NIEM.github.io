@@ -1,0 +1,61 @@
+
+{% comment %}
+***
+Given a "url", outputs the contents from the file.
+
+For each link, outputs the corresponding intro.md page.
+***
+{% endcomment %}
+
+{% comment %}
+***
+TODO: Parse site pages for terms defined in front matter with format
+  terms:
+    - name: bla
+      def: bla bla bla
+      def: bla bla bla
+      ref: <spec, number>
+    - name: bla
+      def: bla bla bla
+      def: bla bla bla
+      ref: <spec, number>
+***
+
+{% assign thisPage = site.pages | where: "url", include.url | first %}
+{% assign links = thisPage.links %}
+{% assign headerLevel = "h2" %}
+
+{% if include.group %}
+{% assign links = links | where: "group", include.group %}
+{% assign headerLevel = "h3" %}
+{% endif %}
+
+{% for link in links %}
+
+{% assign linkPage = site.pages | where: "url", link.url | first %}
+
+<{{ headerLevel }}>{{ linkPage.title }}</{{ headerLevel }}>
+
+{% comment %}
+  {{ linkPage.except }} isn't grabbing anything, so manually splitting the page on
+  the excerpt separator.
+{% endcomment %}
+
+{% assign page_array = linkPage.content | split: site.excerpt_separator %}
+
+{% comment %}
+  Use description front matter (if available) if page does not have an excerpt
+{% endcomment %}
+
+{% if page_array.size >= 2 %}
+  {% assign excerpt = page_array | first %}
+{% else %}
+  {% assign excerpt = linkPage.description %}
+{% endif %}
+
+{{ excerpt }}
+
+[more...]({{ link.url }})
+
+{% endfor %}
+{% endcomment %}

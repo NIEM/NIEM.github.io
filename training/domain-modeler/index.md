@@ -25,6 +25,8 @@
 
 ## Tools for Domain Modelers
 
+See the [NIEM Tools Catalog](https://www.niem.gov/tools-catalog) for information about community and commercially-available tools.
+
 | Tool | Domain Uses |
 | ---- | ----------- |
 | **[SSGT](../../reference/tools/ssgt)** | Search and view the content of the model. |

@@ -1,7 +1,7 @@
 ---
 title: IEPD Starter Kit
 layout: 'landing_page'
-description: Get started with IEPDs.
+description: Learn about NIEM IEPD conformance, view sample IEPDs, and more.
 links:
   - url: /iepd-starter-kit/iepd-series/
     button: 'Begin training'

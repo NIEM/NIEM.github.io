@@ -1,4 +1,5 @@
 ---
+redirect_to: /reference/conformance/
 title: IEPD Conformance
 icon: fa-gavel
 description: NIEM has developed a set of rules for various pieces that make up an information exchange. Something that follows these rules is called NIEM-conformant.

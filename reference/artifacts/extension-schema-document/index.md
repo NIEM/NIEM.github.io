@@ -13,6 +13,9 @@ are a fundamental part of NIEM model design. They contain components that
 use, or are derived from, the components in REFs and express additional
 vocabulary above and beyond the vocabulary available from REFs.
 
+{:.note}
+>An IEPD developer creates new data types or elements needed for the specific exchange with an extension schema document.
+
 {:.features}
 >
 > - Use explicit Conformance Target specified in the [Naming and Design Rules (NDR)]({{site.data.links.ndr}}).

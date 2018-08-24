@@ -12,6 +12,9 @@ Code List Artifacts (Code Lists) provide a method to specify categorical
 descriptors for data used within exchanges and IEPs. Code Lists in NIEM
 use one of two formats: Comma-Separated Values (CSV), or Genericode.
 
+{:.note}
+>An IEPD developer can define enhanced code lists for an exchange and specify static bindings for NIEM code lists (e.g., GENC).
+
 {:.features}
 >
 >- simple machine-readable formats (CSV or Genericode)

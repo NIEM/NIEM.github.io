@@ -10,66 +10,40 @@ description: The analyze requirements phase is the next step you take in IEPD de
 
 You have graphically defined your scenario, and now you need to define your business rules and requirements, which define the exchange as well as the expectations of the exchange.
 
-## Business Rules
+## Business Case Example
 
-Business rules are specific qualifications for data that refer to how it should be structured (e.g., field length, constraints).
+Currently, the only means a city has to process school meal program applications is through paper-based applications at the city Human Services Agency office. Once approved, the Human Services Agency faxes approved applications to the particular school where the child attends. It is a primarily manual process that inhibits timely delivery of citizen services.
 
-{:.example}
->
-> A student’s enrollment status is not available or is unknown. The assumption is they are not enrolled, and an information-needed flag will be added by setting X element to the value of 1.
+The city government identifies the need to create a series of information exchanges:
 
-## Business Requirements
+- Exchanges that allow resident parents to apply online for their children’s school meals program.
+- Exchanges that automate the processing of the parent's request between the Human Services Agency and the school.
+- Exchanges that implement a web-based service that, upon submission, automatically checks the city’s Human Services Agency database to ensure the applicant is from a low-income family and qualifies for the school meals program. If qualified, the web-based service notifies the respective school to add the child to the meal program.
 
-Business requirements are the drivers for an information exchange that are primarily operational or functional requirements.
+Your scenario diagram may look like this:
 
-{:.example}
->
-> The verification service shall respond only to search requests issued by the client application, the Verification Information System (VIS).
+![School Meals](assets/businessprocessdiagram03.png "School Meals")
 
-Follow a formal process to define and validate business requirements and accurately document an information exchange:
-
-1. Initiate the requirements process.
-- Prepare and plan.
-- Perform analysis.
-
-1. Define the exchange requirements.
-- Gather user requirements.
-- Define security and privacy requirements.
-- Specify exchange requirements.
-
-1. Prepare requirements for design.
-- Analyze requirements.
-- Verify and validate requirements.
-
-### Business Case Example
-
-The exchange goal is to acquire the information in an immigrating traveler's passport. Make a list of the types of data available and what you want to include in the exchange.
-
-### Create Effective Requirements
+## Create Effective Requirements
 
 Results can vary between individuals and groups. Examples of good requirements could be the following:
 
-#### Candidate Message Exchange Packages
+### Candidate Message Exchange Packages
 
-- Traveler requests entry to country.
-- Request from immigration to screening services for data on traveler.
+- Request from Parent to meal program eligibility system
+- Eligibility reply from Human Services Agency to eligibility system
+- Notification to add child to meal program from eligibility system to school
+- Notification to add child to meal program from eligibility system to parent
 
-#### Performance Requirements
+### Performance Requirements
 
-Screening services returns data on traveler within seconds.
+- The web-based service notifies parents via email whether or not their child qualifies for the school meals program ten minutes after receiving their application.
+- A school receives notification within 24 hours of a new qualified child within their school.
 
-#### Reporting Requirements
+### Reporting Requirements
 
-Immigration receives daily reports on potential denials of entry.
+Each school in the city receives a monthly report of every child in their school who is currently enrolled in the school meals program.
 
-#### Data Quality Requirements
+### Data Quality Requirements
 
-The data that is processed should take into consideration the preceding requirements. For example, the data may consist of the following:
-
-| Parent Data Item | Child Data Items | Notes |
-| --- | --- | --- | --- |
-| Name | GivenName<br>MiddleName<br>FamilyName | Do we want more than one middle name?<br>Is the order of Family Name and Given Name important? |
-| Country of Origin |  | How many characters for country code? Determines the code list that may be used. |
-| Issuing Authority |  |  |
-| Birth Date | BirthCentury<br>BirthYear<br>BirthMonth<br>BirthDay | Order? Dd Mmmm Yyyy? |
-| Sex |  | Assume F or M? |
+Data Quality Requirements should be taken into consideration once above requirements are discussed.

@@ -13,6 +13,11 @@ of a subset of the schema components defined with a given namespace.
 They are used in place of larger or more verbose [Reference Schema
 Documents (REFs)](/reference/artifacts/reference-schema-document).
 
+{:.note}
+>An IEPD developer creates a smaller, self-consistent, schema document as the basis for extensions or data within an exchange with a subset schema document.
+
+![Subset Schema](assets/subsetschema.png "Subset Schema")
+
 {:.features}
 >
 > - Use same conformance target as Reference Schema Documents.

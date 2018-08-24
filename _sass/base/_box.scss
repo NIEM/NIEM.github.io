@@ -11,11 +11,11 @@
   margin: 0 0 20px;
 }
 
-.tip, .example, .note, .ndr, .features {
+.tip, .example, .note, .ndr, .features, .quiz {
   @extend .box;
 }
 
-ul.tip, ul.example, ul.note, ul.box {
+ul.tip, ul.example, ul.note, ul.box, ul.quiz {
   li {
     margin-left: 30px;
   }
@@ -35,6 +35,15 @@ ul.tip, ul.example, ul.note, ul.box {
 
 .features::before {
   content: "Features ";
+}
+
+.quiz::before {
+  content: "Knowledge Check ";
+}
+
+.quiz {
+    background: rgb(239, 224, 219);
+    border-color:  rgb(219, 186, 175);
 }
 
 .note, .tip {

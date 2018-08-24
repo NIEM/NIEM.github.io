@@ -7,7 +7,7 @@
     - url: /training/iepd-implementer/
 ---
 
-Information Exchange Package (IEPs) are derived from superceding
+Information Exchange Packages (IEPs) are derived from superceding
 Information Exchange Package Documentation (IEPD) and define the exchange
 of information as NIEM artifacts. They are the messages exchanged between
 the stakeholders in the information exchange.
@@ -16,19 +16,20 @@ the stakeholders in the information exchange.
 >
 > - Explicit Conformance Target specified in the Model Package Description Specification (MPD-Spec)
 > - The definitive artifact of an information exchange
-> - Provide consitent form of data
+> - Provide consistent forms of data
 > - Self-documenting NIEM artifact
 
 {:.note}
-> The rules for constructing IEPs are defined by the Model Package Description
-> Specification (MPD-Spec). IEPs are a kind of MPD derived from a subperceding
+> The rules for constructing IEPs are defined by the [Model Package Description
+> Specification (MPD-Spec)](https://reference.niem.gov/niem/specification/model-package-description/3.0.1).
+> IEPs are a kind of MPD derived from a superceding
 > IEPD. IEPs, by the MPD-Spec, must be self-documenting.
 
 <!--more-->
 
-## Why IEPDs
+## Why IEPs
 
-An Information Exchnage Package (IEP) is a NIEM message. It carries exchange data. The format, rules, and documentation for the message are defined by its IEPD, or NIEM message specification.
+An Information Exchange Package (IEP) is a NIEM message. It carries exchange data. The format, rules, and documentation for the message are defined by its IEPD, or NIEM message specification.
 
 In NIEM, an information exchange instance is an IEP. An IEP is an XML instance XML document that conforms to the conformance target defined by a `c:IEPConformanceTarget` element in the MPD catalog document of a model package description. An IEP is a MPD that satisfies all the validity constraints for its class as defined by its superceding IEPD, and that has an XML document root element that is declared in either a NIEM Reference or Extension Schema Document.
 

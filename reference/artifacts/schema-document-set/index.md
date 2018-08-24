@@ -12,6 +12,9 @@ artifact composes exactly one *Schema*, which is the sum rules
 and definitions defined within the set capable of validating
 Schema Instance Documents.
 
+{:.note}
+>An IEPD developer creates a collection of schema documents necessary for validating IEPs derived from the conformant IEPD.
+
 {:.features}
 >
 > - Explicit Conformance Target specified in the [Naming and Design Rules (NDR)]({{site.data.links.ndr}})

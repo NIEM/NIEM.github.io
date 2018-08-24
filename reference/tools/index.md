@@ -7,6 +7,7 @@
   - url: /reference/tools/contesa/
   - url: /reference/tools/movement/
   - url: /reference/tools/migration/
+  - url: /reference/tools/tools-catalog/
   todo:
   - Set standard table widths for consistency
 ---
