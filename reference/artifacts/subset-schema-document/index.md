@@ -16,7 +16,7 @@ Documents (REFs)](/reference/artifacts/reference-schema-document).
 {:.note}
 >An IEPD developer creates a smaller, self-consistent, schema document as the basis for extensions or data within an exchange with a subset schema document.
 
-![Subset Schema](assets/subsetschema.png "Subset Schema")
+![Subset Schema](/reference/artifacts/subset-schema-document/assets/subsetschema.png "Subset Schema")
 
 {:.features}
 >

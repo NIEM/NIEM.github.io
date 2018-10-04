@@ -29,7 +29,7 @@ Look for an appropriate tool at the [NIEM Tools Catalog]({{ site.data.links.tool
 
 ### Code List Artifact
 
-A code list is a file that consists of comma-separated variable (csv), tabular data, which makes the list suitable for an IEPD schema:
+A code list is a file that consists of comma-separated value (csv), tabular data, which makes the list suitable for an IEPD schema:
 
 - Each row is a "distinct entry" or set of code values.
 - Each cell in the row has a value identified by its column header. 

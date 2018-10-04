@@ -87,7 +87,7 @@ Placeholders appear in upper case.  A few common namespace prefixes and import s
 ```
 
 {: .note}
-[Local terminology](../local-term), [elements](../property/element), [attributes](../property/attribute), and [types](../type), which appear in the template above, are described in their own sections.
+[Local terminology](../../local-term), [elements](../../property/element), [attributes](../../property/attribute), and [types](../../type), which appear in the template above, are described in their own sections.
 
 ## The Pieces
 

@@ -1,5 +1,4 @@
 ---
-  redirect_from: /iepd-starter-kit/conformance/
   title: NIEM Conformance
   short: Conformance
   icon: fa-sitemap

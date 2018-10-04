@@ -65,24 +65,26 @@ The following example shows a recommended IEPD folder structure and file locatio
 >
 >my-iepd-4.0-rev-04
 >
+>- base-xsd
+>   - extension
+>      - *extension.xsd
+>   - niem
+>      - niem-core/4.0
+>      - proxy/xsd/4.0
+>      - utility
+>         - appinfo/4.0
+>         - conformanceTargets/3.0
+>         - structures/4.0
+>      - wantlist.xml
+>      - xml-catalog.xml
+>   - xml-catalog.xml (references extension uri and nextCatalog niem/xml-catalog.xml)
 >- documentation (miscellaneous, binaries)
->- iep-samples
->- xsd
->   - wantlist.xml
->   - xml-catalog.xml
->- extension
->- niem
->   - appinfo/4.0
->   - conformanceTargets/4.0
->   - localTerminology/4.0
->   - niem-core/4.0
->   - proxy/xsd/4.0
->   - structures/4.0
->- schematron (if Schematron is used)
->- changelog.txt (.md, .htm, .pdf; should be in root directory)
->- conformance-assertion.txt (.md, .htm, .pdf; should be in root directory)
+>- iep-sample (contains sample xml instances; must be in root directory)
 >- mpd-catalog.xml (must be in root directory)
->- readme.txt (.md, .htm,  .pdf; should be in root directory)
+>- changelog.txt (.md, .htm, .pdf; must be in root directory)
+>- readme.txt (.md, .htm, .pdf; must be in root directory)
+>- conformance-assertion.txt (.md, .htm, .pdf; should be in root directory)
+>- schematron (if Schematron is used; should be in root directory)
 
 ## Review the IEPD
 

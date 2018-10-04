@@ -25,5 +25,5 @@ If a data requirement isn't already found in the overall NIEM model and is appli
 
 Harmonization is an ongoing process to reduce duplication in the model as updates are made and it evolves to accommodate new community business requirements. The harmonization process integrates these new requirements while still ensuring data elements exist only once in the model.
 
-> The purpose of harmonization is to reduce duplication, but not necessarily to reduce cross-domain dependencies.  Domains can and should reuse content from another domain if it  is considered to be the authoritative source for the information.  Content should only be refactored into Core if there is no clear authoritative source for it and would be better managed by the [NBAC](site.data.links.nbac).
+> The purpose of harmonization is to reduce duplication, but not necessarily to reduce cross-domain dependencies.  Domains can and should reuse content from another domain if it  is considered to be the authoritative source for the information.  Content should only be refactored into Core if there is no clear authoritative source for it and would be better managed by the [NBAC]({{site.data.links.nbac}}).
 {:.note}

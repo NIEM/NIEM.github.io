@@ -4,7 +4,7 @@
 
 A **Core Supplement** is a special type of NIEM release that can be used in addition to a corresponding release.  It is strictly additive in nature.
 
-A core supplement can be issued when the [NIEM Business Architecture Committee](site.data.links.nbac) (NBAC) determines it is necessary to add content to a published NIEM core.  The purposes for issuing a CS may include:
+A core supplement can be issued when the [NIEM Business Architecture Committee]({{site.data.links.nbac}}) (NBAC) determines it is necessary to add content to a published NIEM core.  The purposes for issuing a CS may include:
 
 - To update a code list with the latest values
 - To publish bug fixes

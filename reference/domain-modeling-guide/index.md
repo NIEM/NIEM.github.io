@@ -3,15 +3,15 @@ title: NIEM Domain Modeling
 description: How to design a Community of Interest
 short: Domain Modeling Guide
 links:
-  - url: /tips-and-tricks/domain-modeling-guide/prologue/
-  - url: /tips-and-tricks/domain-modeling-guide/basics/
-  - url: /tips-and-tricks/domain-modeling-guide/content/
-  - url: /tips-and-tricks/domain-modeling-guide/search/
-  - url: /tips-and-tricks/domain-modeling-guide/map/
-  - url: /tips-and-tricks/domain-modeling-guide/quality/
-  - url: /tips-and-tricks/domain-modeling-guide/governance/
-  - url: /tips-and-tricks/domain-modeling-guide/resources/
-  - url: /tips-and-tricks/domain-modeling-guide/glossary/
+  - url: /reference/domain-modeling-guide/prologue/
+  - url: /reference/domain-modeling-guide/basics/
+  - url: /reference/domain-modeling-guide/content/
+  - url: /reference/domain-modeling-guide/search/
+  - url: /reference/domain-modeling-guide/map/
+  - url: /reference/domain-modeling-guide/quality/
+  - url: /reference/domain-modeling-guide/governance/
+  - url: /reference/domain-modeling-guide/resources/
+  - url: /reference/domain-modeling-guide/glossary/
 ---
 Version: September 29, 2016
 

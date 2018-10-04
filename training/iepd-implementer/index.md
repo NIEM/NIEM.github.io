@@ -6,7 +6,7 @@
   - url: /training/iepd-implementer/implementation-cookbook/
   - url: /training/iepd-implementer/java-bindings/
   - url: /training/iepd-implementer/techhub-iepd/
-  - url: /iepd-starter-kit/
+  - url: /reference/iepd/iepd-starter-kit/
   - url: /reference/artifacts/
 ---
 

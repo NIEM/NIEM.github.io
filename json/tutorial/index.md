@@ -56,7 +56,7 @@ yielding a NIEM object model.
 > and build a NIEM subset. There are other ways to search the model, including
 > [NIEM Movement](https://beta.movement.niem.gov/#/). If you are new to NIEM, it
 > is recommended that you take some time to understand how the data model
-> works. See NIEM's [model reference documentation](../../model) to learn
+> works. See NIEM's [model reference documentation](/reference/concepts/) to learn
 > more. Additional training is forthcoming.
 
 We have searched for these data requirements in the SSGT and found corresponding

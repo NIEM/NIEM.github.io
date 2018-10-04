@@ -17,7 +17,7 @@
 
 ## Overview
 
-A NIEM release is a coherent set of schemas and supporting artifacts representing a specific version of the NIEM data model.  Each release is produced in collaboration with the [NIEM Business Architecture Committee](site.data.links.nbac) (NBAC), the [NIEM Technical Architecture Committee](site.data.links.ntac) (NTAC), and the general NIEM community.
+A NIEM release is a coherent set of schemas and supporting artifacts representing a specific version of the NIEM data model.  Each release is produced in collaboration with the [NIEM Business Architecture Committee]({{site.data.links.nbac}}) (NBAC), the [NIEM Technical Architecture Committee]({{site.data.links.ntac}}) (NTAC), and the general NIEM community.
 
 > Visit [this link](../../niem-releases/) to find out more about the current release.
 {:.note}
@@ -48,6 +48,6 @@ A key feature of NIEM releases is that they are **persistent**.  Information exc
 
 ## Feedback
 
-To submit comments or suggestions about the content of a release, please [file a new issue](site.data.links.release_issues) at the [NIEM Releases repo](site.data.links.release_repo) or [send an email](mailto:niem-comments@lists.gatech.edu).
+To submit comments or suggestions about the content of a release, please [file a new issue]({{site.data.links.release_issues}}) at the [NIEM Releases repo]({{site.data.links.release_repo}}) or [send an email]({{site.data.links.niem_comments}}).
 
-Note that architectural feedback or issues should be submitted to the [NDR issue tracker](site.data.links.ndr_issues).
+Note that architectural feedback or issues should be submitted to the [NDR issue tracker]({{site.data.links.ndr_issues}}).

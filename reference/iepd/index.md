@@ -6,7 +6,7 @@ description: Description of Information Exchange Package Documentation (IEPD).
 links:
 - url: /reference/iepd/lifecycle/
 - url: /reference/iepd/structure/
-- url: /iepd-starter-kit/
+- url: /reference/iepd/iepd-starter-kit/
 - url: /reference/iepd/iepd-versions/
 ---
 
@@ -23,13 +23,13 @@ information exchanges.
 
 {:.note}
 > The rules for constructing IEPDs are defined by the [Model Package Description
-> Specification (MPD-Spec)]({{ site.data.links.mpd }}).
+> Specification (MPD-Spec)](https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html).
 > IEPDs are a kind of MPD composed from other NIEM
 > artifacts including, but not limited to Code Lists, Extension Schema Documents,
 > and Subset Schema Documents. IEPDs provide a self-contained definition for
 > derived information exchanges, thus they must be self documenting.
 
-![IEPD Content](assets/iepdcontent.png "IEPD Content")
+![IEPD Content](/reference/iepd/assets/iepdcontent.png "IEPD Content")
 
 <!--more-->
 

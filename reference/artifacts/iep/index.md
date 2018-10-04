@@ -21,7 +21,7 @@ the stakeholders in the information exchange.
 
 {:.note}
 > The rules for constructing IEPs are defined by the [Model Package Description
-> Specification (MPD-Spec)](https://reference.niem.gov/niem/specification/model-package-description/3.0.1).
+> Specification (MPD-Spec)]({{site.data.links.mpd_spec}}).
 > IEPs are a kind of MPD derived from a superceding
 > IEPD. IEPs, by the MPD-Spec, must be self-documenting.
 

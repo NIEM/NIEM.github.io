@@ -287,11 +287,11 @@ A data type for drug codes.
 | 4000 | Drostanolone (17beta-hydroxy-2alpha-methyl-5alpha-androstan-3-one) |
 | 6250 | JWH-250 (1-Pentyl-3-(2-methoxyphenylacetyl) indole) |
 | 7008 | SR-18 (Also known as RCS-8) (1-Cyclohexylethyl-3-(2methoxyphenylacetyl) indole) |
-| 7011 | 5-Flouro-UR-144 and XLR11 [1-(5-Fluoro-pentyl)1Hindol-3-yl](2,2,3,3-tetramethylcyclopropyl)methanone |
+| 7011 | 5-Flouro-UR-144 and XLR11 [1-(5-Fluoro-pentyl)1Hindol-3-yl]\(2,2,3,3-tetramethylcyclopropyl\)methanone |
 | 7012 | AB-FUBINACA (N-(1-amino-3-methyl-1-oxobutan-2-yl)1-(4-fluorobenzyl)-1H-indazole-3-carboxamide) |
 | 7019 | JWH-019 (1-Hexyl-3-(1-naphthoyl)indole) |
 | 7023 | AB-PINACA (N-(1-amino-3-methyl1-oxobutan-2-yl)-1-pentyl-1H-indazole3-carboxamide) |
-| 7024 | THJ-2201 [1-(5-fluoropentyl)-1H-indazol-3yl](naphthalen-1-yl)methanone |
+| 7024 | THJ-2201 [1-(5-fluoropentyl)-1H-indazol-3yl]\(naphthalen-1-yl\)methanone |
 | 7031 | AB-CHMINACA (N-(1-amino-3-methyl-1oxobutan-2-yl)-1-(cyclohexylmethyl)1H-indazole-3-carboxamide |
 | 7032 | MAB-CHMINACA (N-(1-amino-3,3dimethyl-1oxobutan-2-yl)-1-(cyclohexylmethyl)-1H-indazole-3carboxamide) |
 | 7035 | ADB-PINACA (N-(1-amino-3,3-dimethyl-1-oxobutan-2yl)-1-pentyl-1H-indazole-3-carboxamide) |

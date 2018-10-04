@@ -10,12 +10,6 @@ links:
 - url: /reference/iepd/lifecycle/build-and-validate/
 - url: /reference/iepd/lifecycle/assemble-and-document/
 - url: /reference/iepd/lifecycle/publish-and-implement/
-resources:
-- url: /reference/
-- url: /iepd-starter-kit/
-- url: https://www.niem.gov/techhub/iepd-resources
-  title: IEPD Resources
-  description: Resources for IEPD developers on our TechHub site.
 ---
 
 {{ page.description}}

@@ -25,9 +25,9 @@
 
 `additionalProperties` specifies whether or not properties in addition to the ones defined in this schema are allowed in instances.
 
-`properties` contains the NIEM property declarations.  See more in the [Properties section](../property).
+`properties` contains the NIEM property declarations.  See more in the [Properties section](../../property).
 
-`definitions` contains the NIEM type declarations.  See more in the [Types section](../type).
+`definitions` contains the NIEM type declarations.  See more in the [Types section](../../type).
 
 ## Schema example
 

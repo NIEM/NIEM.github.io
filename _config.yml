@@ -34,6 +34,7 @@ repository: NIEM/niem.github.io
 excerpt_separator: <!--more-->
 
 # Uncomment this to view as a forked repo (e.g., http://$user.github.io/NIEM.github.io/).
+# baseurl should NOT be set on the master branch.
 # baseurl: "NIEM.github.io"
 
 # Site data

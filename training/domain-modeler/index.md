@@ -10,7 +10,7 @@
   - url: https://www.niem.gov/communities/domain-governance
     title: Domain Governance
     description: Learn about governance committees and domain content management on niem.gov.
-  - url: /tips-and-tricks/domain-modeling-guide/
+  - url: /reference/domain-modeling-guide/
     description: Learn how to start a domain and manage its content.
   - url: https://www.niem.gov/techhub/niem-model
     title: About the NIEM Model
