@@ -2,12 +2,12 @@
 title: Simple IEPD Tutorial
 short: Simple IEPD Tutorial
 icon: fa-envelope-o
-description: This tutorial shows you how to create a very simple [IEPD](/reference/iepd/ "IEPD"). Once you are comfortable with the process and output, you can move on to more complex IEPDs.
+description: This tutorial shows you how to create a very simple [IEPD](../../../reference/artifacts/messages/iepd/ "IEPD"). Once you are comfortable with the process and output, you can move on to more complex IEPDs.
 ---
 
 {{ page.description}}
 
-In this tutorial we are going to walk through the creation of a simple IEPD using the [IEPD Lifecycle](/reference/iepd/lifecycle/ "IEPD Lifecycle"). These steps include:
+In this tutorial we are going to walk through the creation of a simple IEPD using the [IEPD Lifecycle]({{ site.data.pages.iepd-lifecycle | relative_url }} "IEPD Lifecycle"). These steps include:
 
 1. Scenario Planning - decide what information to include in your exchange
 2. Analyze Requirements - break down business context and data requirements
@@ -86,11 +86,11 @@ The other requirements of the exchange (e.g., technical, security and privacy, p
 
 ## Map and Model Requirements
 
-After you have analyzed and determined your exchange requirements, you proceed to [map and model](/reference/iepd/lifecycle/map-and-model/) them for the next step in the IEPD development process.
+After you have analyzed and determined your exchange requirements, you proceed to [map and model]({{ site.data.pages.iepd-lifecycle | append: "map-and-model" | relative_url }}) them for the next step in the IEPD development process.
 
 A common way begin the creation of IEPD components for your exchange is to create a mapping document. This is typically a spreadsheet, which maps your local exchange data elements to the NIEM data model. You can [download a sample spreadsheet](../map-and-model/assets/SampleEmptyMappingDocument.xlsx "Sample Mapping Document") and modify it to suit your requirements.
 
-The [Schema Subset Generation Tool (SSGT)](/reference/tools/ssgt "Schema Subset Generation Tool (SSGT)") is a good tool to use to map your exchange to NIEM. If you are unfamiliar with the SSGT, refer to [Map and Model Training](../map-and-model/ "Map and Model Training"), "What is a Mapping Document." The SSGT's advantage lies in that you can extract just what you need from NIEM, i.e., create a subset.
+The [Schema Subset Generation Tool (SSGT)]({{ site.data.pages.ssgt | relative_url }} "Schema Subset Generation Tool (SSGT)") is a good tool to use to map your exchange to NIEM. If you are unfamiliar with the SSGT, refer to [Map and Model Training](../map-and-model/ "Map and Model Training"), "What is a Mapping Document." The SSGT's advantage lies in that you can extract just what you need from NIEM, i.e., create a subset.
 
 {:.tip}
 >To find matches for your local components, use common words or acronyms in the search box.  Local names will be much less likely to return results.  A search term like "FirstName" or "First_Name" will return empty because these exact terms do not appear in any NIEM names or definitions; a search for "First Name" will return the matching component, `nc:PersonGivenName`, based on a match in the definition.
@@ -193,7 +193,7 @@ With the mapping components handy, create an instance schema XML document so tha
 
 ## Assemble and Document
 
-You prepare and package all related files for the IEPD into a single, self‐contained, self-documented, portable archive file (e.g., zip) according to the [recommended file-and-folder structure](../assemble-and-document/#assemble-the-iepd). The following example shows where to place relevant artifacts under the root directory.  
+You prepare and package all related files for the IEPD into a single, self‐contained, self-documented, portable archive file (e.g., zip) according to the [recommended file-and-folder structure](../assemble-and-document/#assemble-the-iepd). The following example shows where to place relevant artifacts under the root directory.
 
 {:.example}
 >
@@ -223,10 +223,10 @@ Additional artifacts are required in an IEPD. An mpd-catalog is required and mus
 - **NIEM schema subset** (required) – The output from the SSGT from the Map and Model step.
 
 - **[mpd-catalog]({{site.data.links.mpd_spec}}#section_5.1)** (required) – A specially-formatted XML instance that contains metadata about the IEPD.
-   - Catalog metadata includes: 
+   - Catalog metadata includes:
       - IEPD unique identification
       - Conformance targets
-      - Basic information about the IEPD 
+      - Basic information about the IEPD
       - Key artifacts and directory structure
       - Relationships to other MPDs and their artifacts
 
@@ -263,5 +263,5 @@ You may also wish to publish your IEPD on a service such as [github](https://git
 - [Model Package Description Specification 3.0.1]({{site.data.links.mpd_spec}})
 - [NIEM Naming and Design Rules 4.0]({{site.data.links.ndr}})
 - [Optional IEPD Artifacts]({{site.data.links.mpd_spec}}#section_6)
-- [IEPD SuperHero Series](/reference/iepd/iepd-starter-kit/iepd-series/)
-- [NIEM Reusable XML Snippets](/reference/iepd/iepd-starter-kit/reusable-xml-snippets/)
+- [IEPD SuperHero Series]({{ site.data.pages.iepd-starter-kit | append: "iepd-series/" | relative_url }})
+- [NIEM Reusable XML Snippets]({{ site.data.pages.iepd-starter-kit | append: "reusable-xml-snippets/" | relative_url }})

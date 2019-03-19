@@ -36,18 +36,98 @@
 Click here for a [one-page summary](overview) of each of the major concepts.
 
 {: .note}
-> The concepts below have NIEM-specific representations in XML and JSON.  Each section has pages that demonstrate how to define these concepts in a schema and how sample data would appear in an instance.  For a basic introduction to XML or JSON, there are many resources available online, including W3 Schools [XML Tutorial](https://www.w3schools.com/xml/default.asp) and [XML Schema Tutorial](https://www.w3schools.com/xml/schema_intro.asp), and the Space Telescope Science Institute [Understanding JSON Schema](https://spacetelescope.github.io/understanding-json-schema/).
+> The concepts below have NIEM-specific representations in XML and JSON.  Each section has pages that demonstrate how to define these concepts in a schema and how sample data would appear in an instance.  For a basic introduction to XML or JSON, there are many resources available online, including the W3 Schools [XML Tutorial](https://www.w3schools.com/xml/default.asp) and [XML Schema Tutorial](https://www.w3schools.com/xml/schema_intro.asp), and the json-schema.org tutorial [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/index.html).
 
 ## The Basics
 
 Fundamentally, a NIEM release consists of a set of namespaces, each of which define properties and types (referred to more generally as components).  An IEPD reuses components from a release that meet its requirements, and creates new properties and types in local namespaces as needed.  These namespaces, properties, and types are basic building blocks of NIEM.
 
-{% assign basicLinks = page.links | where: "group", "Basics" %}
-{% include icon-list.html links=basicLinks %}
+### Namespaces
 
-## Advanced
+Learn about namespaces in NIEM and see schema examples and templates with header information at the XML and JSON links below.
 
-In addition to the basic concepts described above, NIEM defines or uses additional concepts to reflect its conceptual model, improve reusability, and support well-defined information exchanges.
+<table>
+  {% include functions/getPatternRow.html url="/reference/concepts/namespace/" %}
+</table>
 
-{% assign advancedLinks = page.links | where: "group", "Advanced" %}
-{% include icon-list.html links=advancedLinks %}
+### Properties
+
+{% assign property = site.pages | where: "url", "/reference/concepts/property/" | first %}
+
+{{ property.description}}
+
+<table>
+  {% include functions/getPatternRow.html url="/reference/concepts/property/element/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/property/attribute/" %}
+</table>
+
+{:.tip}
+> See the pages under the [Modeling Properties](property/modeling) section for guidance on **[Names](property/modeling/names)**, **[Definitions](property/modeling/definitions)**, and **[Representation terms + Standard Opening Phrases](property/modeling/table)**.
+
+### Types
+
+{% assign type = site.pages | where: "url", "/reference/concepts/type/" | first %}
+
+{{ type.description}}
+
+<table>
+  {% include functions/getPatternRow.html url="/reference/concepts/type/ccc/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/type/csc/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/type/simple/" %}
+</table>
+
+### Substitution Groups
+
+Substitution groups are typically used in NIEM to support alternate representations of a property (like multiple sources for country codes or multiple representations for a date format) and to support augmentations (described later in the "NIEM-Specific Techniques" section).
+
+<table>
+  {% include functions/getPatternRow.html url="/reference/concepts/property/abstract/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/property/substitutable/" %}
+</table>
+
+### Code Sets and other Facets
+
+Facets let you constrain the allowable values for a string, number, date, or other simple type.  Codes (enumerations) are the most commonly used facet in NIEM.  Other facets include patterns, length, and maxExclusive.
+
+<table>
+  {% include functions/getPatternRow.html url="/reference/concepts/facet/" %}
+</table>
+
+### Other
+
+<table>
+  {% include functions/getPatternRow.html url="/reference/concepts/reference/" %}
+</table>
+
+## NIEM-Specific Techniques
+
+In addition to the basic concepts described above, NIEM defines or uses additional concepts to reflect its conceptual model, improve reusability, and support well-defined information exchanges.  These topics are defined by the NIEM [Naming and Design Rules (NDR)]({{ site.data.pages.ndr | relative_url }}).
+
+<table>
+  {% include functions/getPatternRow.html url="/reference/concepts/adapter/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/association/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/augmentation/point/" %}
+
+  <!-- Augmentation elements do not follow the same pattern and have two XML syntaxes -->
+  {% assign page = site.pages | where: "url", "/reference/concepts/augmentation/element/" | first %}
+  <tr>
+    <td><strong>
+      <a href="{{ '/reference/concepts/augmentation/element/' | relative_url }}">Augmentation Element</a>
+    </strong></td>
+    <td>{{ page.description }}</td>
+    <td><a href="{{ '/reference/concepts/augmentation/element/modeling/' | relative_url }}">Tips</a></td>
+    <td>
+      <a title="Container"
+         href="{{ '/reference/concepts/augmentation/element/xml-container/' | relative_url }}" >XML1</a>
+      <br />
+      <a title="Direct"
+         href="{{ '/reference/concepts/augmentation/element/xml-direct/' | relative_url }}">XML2</a>
+    </td>
+    <td><a href="{{ '/reference/concepts/augmentation/element/json/' | relative_url }}">JSON</a></td>
+  </tr>
+
+  {% include functions/getPatternRow.html url="/reference/concepts/local-term/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/metadata/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/role/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/representation/" %}
+</table>

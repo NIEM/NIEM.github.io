@@ -34,7 +34,7 @@ The following shows an example of a property with a value based on a simple type
 }
 ```
 
-See [Facets in JSON](/reference/concepts/facet/json) for examples of simple types with other kinds of facets.
+See [Facets in JSON]({{ "/reference/concepts/facet/json" | relative_url }}) for examples of simple types with other kinds of facets.
 
 ## Schema templates
 

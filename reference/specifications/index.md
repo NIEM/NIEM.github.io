@@ -2,51 +2,32 @@
 title: Specifications
 short: Specifications
 icon: fa-book
-description: NIEM specifications provide rules and guidance in order to facilitate consistent and well-defined information exchanges.
+description: NIEM specifications provide rules and guidance in order to design consistent and well-defined information exchanges.
 links:
+- url: /reference/specifications/normative-rules/
+  group: other
+- url: /reference/specifications/ndr/
+  group: specs
+- url: /reference/specifications/mpd/
+  group: specs
+- url: /reference/specifications/conformance/
+  group: specs
+- url: /reference/specifications/conformance-targets/
+  group: specs
 - url: /reference/specifications/code-lists/
+  group: specs
+- url: /reference/specifications/hlva/
+  group: specs
 todo:
-- Conformance
-- CTAS
 - HLVA
-- MPD
-- NDR
-- Fix bug in function below that breaks imported URLs
 deferred:
 - SIX
 - UML Profile
 ---
 
-The NIEM specification provide the rules and guidance for facilitating development and maintaince of consistent and well-defined information exchanges. The set of specifications can be divided into two groups: Processes and Artifacts. In combination, these groups of specifcations define NIEM-conformance, design, and maintaince.
+{{ page.description }}
 
-<!--
+See the [Normative Rules](normative-rules) section for a compiled list of the normative rules from NIEM specifications, including the NDR and the MPD Specification.
 
-Main Specifications
-- Conformance (internal organization link)
-- Conformance Targets Attribute (internal organization link)
-- HLVA (internal organization link)
-- MPD (internal organization link) 
-- NDR (internal organization link)
-- Schematron in XML (internal organization link)
-
-Artifact Specifications
-- Code List
-- Extension Schema
-- Subset Schema
-- Schema Document Set
-
--->
-
-## Artifact Specifications
-
-The artifact specifications define the normative rules through which individual artifacts are classified as NIEM-conformant.
-
-{:.note}
->
-> An artifact is a NIEM-conformant artifact if and only if it
->
->- has a Conformance Target defined within a NIEM specification,
->- adheres to all normative rules applicable to its Conformance Target, and
->- references the namespaces of any NIEM components used within its definition.
-
-{% include page/intros.html url="/reference/specifications/" %}
+{% assign specs = page.links | where: "group", "specs" %}
+{% include icon-list.html links=specs %}

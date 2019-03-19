@@ -42,7 +42,7 @@ For consistency, words should use the preferred U.S. spelling as defined in the 
 Additional terms that may be used are:
 - `ID`, the authorized abbreviation for `Identifier`
 - `URI`, the authorized abbreviation for `Uniform Resource Identifier`
-- [Local terminology](/reference/concepts/local-term), defined by a NIEM namespace.
+- [Local terminology]({{ "/reference/concepts/local-term" | relative_url }}), defined by a NIEM namespace.
 
 ## Parts of a name
 
@@ -93,7 +93,7 @@ A representation term indicates the kind of value a property carries.
 - Representation terms are required for properties that carry a simple value, like a string or a number.
 - Representation terms are required for other properties with specific types.
 
-See the [Reference Table](/reference/concepts/property/modeling/table) for the list of representation terms.
+See the [Reference Table]({{ "/reference/concepts/property/modeling/table" | relative_url }}) for the list of representation terms.
 
 {: .example}
 >

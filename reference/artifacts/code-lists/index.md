@@ -1,16 +1,13 @@
 ---
   title: Code Lists
-  short: Code Lists
   icon: fa-sitemap
-  description: Code Lists
+  description: NIEM Code Lists are special files that support the use of enhanced code lists in NIEM, beyond the basic capabilities provided by XML and JSON schema enumerations.
   links:
     - url: /reference/artifacts/code-lists/structure/
     - url: /reference/artifacts/code-lists/usage/
 ---
 
-Code List Artifacts (Code Lists) provide a method to specify categorical
-descriptors for data used within exchanges and IEPs. Code Lists in NIEM
-use one of two formats: Comma-Separated Values (CSV), or Genericode.
+Code List Artifacts (Code Lists) provide a method to specify categorical descriptors for data used within exchanges and IEPs. Code Lists in NIEM use one of two formats: Comma-Separated Values (CSV), or Genericode.
 
 {:.note}
 >An IEPD developer can define enhanced code lists for an exchange and specify static bindings for NIEM code lists (e.g., GENC).
@@ -32,7 +29,7 @@ use one of two formats: Comma-Separated Values (CSV), or Genericode.
 
 In general, data exchanged between senders and receivers tend to be categorical or
 have distinct value ranges. One method of specifying that data within an exchange is
-by codifying them into [NIEM Enumeration Facets](/reference/concepts/facet/#enumerations-). However, it might be easier to create a self-contained artifact to hold the associations. We call this artifact a Code List.
+by codifying them into [NIEM Enumeration Facets]({{ "/reference/concepts/facet/#enumerations" | relative_url }}). However, it might be easier to create a self-contained artifact to hold the associations. We call this artifact a Code List.
 
 "Codes" is the general term NIEM uses to identify associative identifiers with more
 verbose data or data ranges (e.g., MON for Monday; 2000-3000 for sets of numbers).

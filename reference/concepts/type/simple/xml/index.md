@@ -40,7 +40,7 @@ This example shows a subset of `nc:AddressCategoryCodeSimpleType`.
 
 ## Schema template
 
-This template shows the creation of a simple type with an enumeration.  Other kinds of [facets](/reference/concepts/facet) could be used instead.
+This template shows the creation of a simple type with an enumeration.  Other kinds of [facets]({{ "/reference/concepts/facet" | relative_url }}) could be used instead.
 
 ```xml
 <xs:simpleType name="NAMESimpleType">

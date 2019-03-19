@@ -10,7 +10,7 @@ title: Country Codes
 Country codes in NIEM 4.0 provide a good example of different representations of code lists in NIEM.  ISO 3166 codes are represented as schema enumerations, and GENC codes are represented by CSV files as described by the [Code Lists Specification]({{ site.data.links.code_list_spec }}).
 
 {:.note}
-> In addition to using a CSV representation, [country codes in NIEM 4.0](/reference/concepts/representation/country-codes/) also follow the [representation pattern](/reference/concepts/representation/) to enable better reuse.
+> In addition to using a CSV representation, [country codes in NIEM 4.0]({{ "/reference/concepts/representation/country-codes/" | relative_url }}) also follow the [representation pattern]({{ "/reference/concepts/representation/" | relative_url }}) to enable better reuse.
 
 Country representations in NIEM:
 

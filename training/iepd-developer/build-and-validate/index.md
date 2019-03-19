@@ -23,16 +23,16 @@ It is recommended that you start with tools and modify as needed.
 
 ### The NIEM Tools Catalog
 
-The NIEM Tools catalog is a collection of different tools that aid in schema generation. For example, the Subset Schema Generation Tool ([SSGT](/reference/tools/ssgt/)) is often used to start schema development because it is easy to use and produces subset schemas and wantlists for use within an exchange. The SSGT can also be used for searching and browsing the NIEM data model and generating Wantlists.
+The NIEM Tools catalog is a collection of different tools that aid in schema generation. For example, the Subset Schema Generation Tool ([SSGT]({{ site.data.pages.ssgt | relative_url }})) is often used to start schema development because it is easy to use and produces subset schemas and wantlists for use within an exchange. The SSGT can also be used for searching and browsing the NIEM data model and generating Wantlists.
 
-Look for an appropriate tool at the [NIEM Tools Catalog]({{ site.data.links.tools_catalog }} "NIEM Tools Catalog").
+Look for an appropriate tool at the [NIEM Tools Catalog]({{ site.data.links.tools_catalog | relative_url }} "NIEM Tools Catalog").
 
 ### Code List Artifact
 
 A code list is a file that consists of comma-separated value (csv), tabular data, which makes the list suitable for an IEPD schema:
 
 - Each row is a "distinct entry" or set of code values.
-- Each cell in the row has a value identified by its column header. 
+- Each cell in the row has a value identified by its column header.
 
 The following table is an example of a code list for vehicle makes and models:
 
@@ -57,13 +57,13 @@ Schemas must conform to predefined rules and guidelines as defined in the NIEM N
 
 ### XML Instance Validation
 
-Schemas must be validated to prove conformance. Validation is the process of testing XML to ensure well-formed and NIEM-conformant schemas. You can leverage [NIEM tools]({{ site.data.links.tools_catalog }}) to make the validation process easier. Each XML element must validate against the schema definition of that element. XML instances may be validated through multiple schema validation passes, using multiple schemas for a single namespace.
+Schemas must be validated to prove conformance. Validation is the process of testing XML to ensure well-formed and NIEM-conformant schemas. You can leverage [NIEM tools]({{ site.data.links.tools_catalog | relative_url }}) to make the validation process easier. Each XML element must validate against the schema definition of that element. XML instances may be validated through multiple schema validation passes, using multiple schemas for a single namespace.
 
 Resolve errors with tools as far as they are capable; the remainder must be resolved manually.
 
 #### NIEM Conformance Tool
 
-The [NIEM Conformance Tool](https://tools.niem.gov/contesaNIEM/ "NIEM Conformance Tool"), based on the [Conformance Testing Assistant (ConTesA)](/reference/tools/contesa/  "Conformance Testing Assistant (ConTesA)"), is an available option to validate schema. This tool allows you to upload an IEPD, a set of schemas in a zip file, or an individual schema, and provides a summary report that lists the NDR rules that were checked with those that passed and those that failed. The NIEM Conformance Tool does not check all NDR rules as some rules are subject to interpretation and then must be manually checked.
+The [NIEM Conformance Tool]({{ site.data.links.contesa }} "NIEM Conformance Tool"), based on the [Conformance Testing Assistant (ConTesA)]({{ site.data.pages.contesa | relative_url }}  "Conformance Testing Assistant (ConTesA)"), is an available option to validate schema. This tool allows you to upload an IEPD, a set of schemas in a zip file, or an individual schema, and provides a summary report that lists the NDR rules that were checked with those that passed and those that failed. The NIEM Conformance Tool does not check all NDR rules as some rules are subject to interpretation and then must be manually checked.
 
 {:.note}
 >

@@ -1,7 +1,7 @@
 ---
-  title: SSGT - Schema Subset Generation Tool
+  title: Schema Subset Generation Tool (SSGT)
   short: SSGT
-  description: The SSGT enables users to search and view the content of the NIEM model, and build XML Schema subsets for use in exchanges.
+  description: The Schema Subset Generation Tool (SSGT) enables users to search and view the content of the NIEM model, and build XML Schema subsets for use in exchanges.
   links:
   - url: /reference/tools/ssgt/search/
   - url: /reference/tools/ssgt/results/
@@ -9,14 +9,7 @@
   - url: /reference/tools/ssgt/options/
 ---
 
-The **S**chema **S**ubset **G**eneration **T**ool **([SSGT]({{ site.data.links.ssgt }}))**
-enables you to search and explore the
-content of the NIEM model. Additionally, you have the option of
-building XML Schema subsets of a NIEM release for use in NIEM XML
-exchanges. Based on the list of components selected by you
-for the subset, the tool will calculate dependencies and generate
-a valid set of schemas that are a subset of a release for
-download as a zip file.
+The **[Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }})** enables you to search and explore the content of the NIEM model. Additionally, you have the option of building XML Schema subsets of a NIEM release for use in NIEM XML exchanges. Based on the list of components selected by you for the subset, the tool will calculate dependencies and generate a valid set of schemas that are a subset of a release for download as a zip file.
 
 {:.features}
 - Search and explore the content of NIEM
@@ -27,10 +20,7 @@ download as a zip file.
 - API for selecting NIEM subset components (wantlist)
 
 {:.note}
-> A NIEM subset will contain only the user-selected elements and
-> types from a release, plus any required dependencies. The
-> subset will likely be much smaller than the corresponding full
-> NIEM release.
+> A NIEM subset will contain only the user-selected elements and types from a release, plus any required dependencies. The subset will likely be much smaller than the corresponding full NIEM release.
 
 <!--more-->
 

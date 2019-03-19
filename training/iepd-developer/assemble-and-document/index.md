@@ -58,7 +58,7 @@ A standardized file structure promotes consistency and creates logical navigatio
 The following example shows a recommended IEPD folder structure and file location.
 
 {:.note}
->The documentation produced by the [SSGT](/reference/tools/ssgt/) creates some of the structure for you.
+>The documentation produced by the [SSGT]({{ site.data.pages.ssgt | relative_url }}) creates some of the structure for you.
 
 {:.example}
 >The root directory name should be meaningful and include the NIEM version and a revision number.

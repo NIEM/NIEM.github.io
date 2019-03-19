@@ -77,5 +77,5 @@ The template below defines a simple type with a facet.
 {: .note}
 >
 >- Common base types are `xs:token` (a string that does not allow irregular whitespace), `xs:decimal`, and `xs:integer`.
->- Common kinds of facets are `xs:enumeration`, `xs:pattern`, `xs:minInclusive`, `xs:minExclusive`, `xs:maxInclusive`, and `xs:maxExclusive`.  See the [full list](/reference/concepts/facet/json/#kinds-of-facets).
+>- Common kinds of facets are `xs:enumeration`, `xs:pattern`, `xs:minInclusive`, `xs:minExclusive`, `xs:maxInclusive`, and `xs:maxExclusive`.  See the [full list](../json/#kinds-of-facets).
 >- Names, values, and definitions must be provided by the data modeler.

@@ -65,7 +65,7 @@ There may be a few cases where providing such information is essential to the se
 ### Standard opening phrases
 
 Definitions of properties with simple content or designated types should use a standard opening phrase as defined by the NDR.
-See the [Reference Table](/reference/concepts/property/modeling/table) for more.
+See the [Reference Table]({{ "/reference/concepts/property/modeling/table" | relative_url }}) for more.
 
 ### Begin with "A(n)"
 

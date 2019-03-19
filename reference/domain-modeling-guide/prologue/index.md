@@ -12,9 +12,9 @@ The primary purpose for the NIEM is to exchange information and data at the mess
 
 #### 1.1.2 NIEM *Domains*
 
-A NIEM *domain* is a Community of Interest (CoI) aligned around a common interest.  For NIEM the common interest is generally based on a Line of Business (LoB) (or related group of such) for which information must be shared or exchanged. 
+A NIEM *domain* is a Community of Interest (CoI) aligned around a common interest.  For NIEM the common interest is generally based on a Line of Business (LoB) (or related group of such) for which information must be shared or exchanged.
 
-A NIEM *domain steward* is responsible to ensure a given domain model (namespace or namespaces) is governed and maintained under the NIEM specifications.  To do this effectively, the domain steward should commission team of subject matter experts with technical skills that collectively represent various levels of government for that CoI or LoB.  However, the reality is that a domain is sometimes sponsored and governed by one organization because it may be difficult to identify volunteers from various levels of government within the CoI or LoB who can or will participate.  These are usually the smaller domains with less content to govern. 
+A NIEM *domain steward* is responsible to ensure a given domain model (namespace or namespaces) is governed and maintained under the NIEM specifications.  To do this effectively, the domain steward should commission team of subject matter experts with technical skills that collectively represent various levels of government for that CoI or LoB.  However, the reality is that a domain is sometimes sponsored and governed by one organization because it may be difficult to identify volunteers from various levels of government within the CoI or LoB who can or will participate.  These are usually the smaller domains with less content to govern.
 
 Domains are a key aspect of the NIEM architecture for several reasons.  NIEM was designed with one set of common Core data components governed by the NIEM Business Architecture Committee (NBAC), and multiple sets of domain data components (derived from the Core) each semi-independently governed by a domain technical team.  By design, NIEM partitioning corresponds directly to its governance, and in turn, this facilitates both its version architecture and its ability to scale up (by onboarding new domains).  Furthermore, almost every NBAC member is also a member of at least one domain team which provides significant cross-pollination for collaborating on issue resolution, harmonization, refactorization, refinement of data components during NIEM release development cycles.
 `:w
@@ -34,7 +34,7 @@ Finally, the NIEM architecture is flexible enough to allow the establishment of 
 - Creating NIEM code lists quickly.
 - Technical responsibilities of a domain:
   - Structure its domain content so other domains can reuse it.
-  - Design its data components so it can be understood by other domains. 
+  - Design its data components so it can be understood by other domains.
   - Participate in harmonization and issue resolution when its domain is involved.
   - Consider impacts that changes to its domain will have on other domains (or Core).
   - Maintain representation in NBAC and participate.
@@ -44,7 +44,7 @@ Finally, the NIEM architecture is flexible enough to allow the establishment of 
 - Participating in a release cycle, domain update, and other NIEM technical processes.
 - Technical assistance, tools, templates, best practices, references, etc.
 
-This guide does not necessarily detail all topics it discusses.  However, the guide often references other NIEM documents or Web pages for more information.  It also includes an extensive appendix of references to other NIEM resources.   
+This guide does not necessarily detail all topics it discusses.  However, the guide often references other NIEM documents or Web pages for more information.  It also includes an extensive appendix of references to other NIEM resources.
 
 
 #### 1.2.2 What you should be familiar with to use this guide
@@ -53,12 +53,12 @@ To use this guide, you should be somewhat familiar with the following topics and
 
 - [Extensible Markup Language (XML) 1.0 (5th Edition)](https://www.w3.org/TR/2008/REC-xml-20081126/)
 - W3C XML Schema Definition (XSD) Language
-  - [Part 1: Structures](https://www.w3.org/TR/xmlschema11-1/) 
+  - [Part 1: Structures](https://www.w3.org/TR/xmlschema11-1/)
   - [Part 2: Datatypes](https://www.w3.org/TR/xmlschema11-2/)
 - General NIEM concepts; for example, as presented in:
   - [NIEM Introduction](https://reference.niem.gov/niem/guidance/introduction/0.3/)
   - [NIEM Concept of Operations](https://reference.niem.gov/niem/guidance/concept-of-operations/0.5/)
-  - [NIEM training](https://www.niem.gov/training)
+  - [NIEM Training]({{ "/training/" | relative_url }})
   - [NIEM IEPD Starter Kit](http://niem.github.io/iepd-starter-kit/)
 - [NIEM Conformance](https://reference.niem.gov/niem/specification/conformance/3.0/)
 - [NIEM High Level Version Architecture (HLVA)](https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/)
@@ -67,7 +67,7 @@ To use this guide, you should be somewhat familiar with the following topics and
 
 ### 1.3 Audience
 
-This document is intended for use by technical personnel who support NIEM domain modeling and harmonization during major and minor release cycles, including domain updates.  In particular, we have tried to make it most useful to new or emerging domains that are building their initial content.  Guidance in this document is useful to NIEM working level governance (NBAC, NTAC, PMO staff, and lead developer) who often evaluate the need to harmonize, refine, or refactor NIEM domain models.  It may also be useful to organizations or groups interested in using NIEM but that do not intend to join its governance. 
+This document is intended for use by technical personnel who support NIEM domain modeling and harmonization during major and minor release cycles, including domain updates.  In particular, we have tried to make it most useful to new or emerging domains that are building their initial content.  Guidance in this document is useful to NIEM working level governance (NBAC, NTAC, PMO staff, and lead developer) who often evaluate the need to harmonize, refine, or refactor NIEM domain models.  It may also be useful to organizations or groups interested in using NIEM but that do not intend to join its governance.
 
 ----
 

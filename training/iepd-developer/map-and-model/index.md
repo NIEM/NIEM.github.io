@@ -1,7 +1,7 @@
 ---
 title: Map and Model
 icon: fa-envelope-o
-description: During the map and model phase, you compare your information exchange requirements to what's in NIEM, and then define a mapping between your requirements and NIEM content. You use a mapping document, which may be a spreadsheet or similar tabular form. 
+description: During the map and model phase, you compare your information exchange requirements to what's in NIEM, and then define a mapping between your requirements and NIEM content. You use a mapping document, which may be a spreadsheet or similar tabular form.
 ---
 
 {{ page.description}}
@@ -39,7 +39,7 @@ In the following steps, identify (fill in) the **Source Data Columns**:
 
 ### Source Data Columns (A)
 
-1. Identify a data object within the exisiting exchange content model. This is the **Source Container Type**, which is the data source high-level object, class, or context of a set of data elements (e.g., person, vehicle, arrest) to which they belong.
+1. Identify a data object within the existing exchange content model. This is the **Source Container Type**, which is the data source high-level object, class, or context of a set of data elements (e.g., person, vehicle, arrest) to which they belong.
 
 2. Identify an element within that object. This is the **Source Element**, which is a specific data element that is associated with the Source Container Type.
 
@@ -58,11 +58,11 @@ In the following steps, identify (fill in) the **Source Data Columns**:
 
 After you complete the entries in the Source Data Columns, identify the NIEM elements that may have the same logical definition, semantics, and structure as the source elements.
 
-1. Use a NIEM tool (e.g., Schema Subset Generation Tool ([SSGT](/reference/tools/ssgt/))) to find an element from a NIEM reference schema that “maps” to the exchange data element. In this example, look for a "Property" with "personSSN" as the search string. In general, a "Property" search is a good place to start.
+1. Use a NIEM tool (e.g., Schema Subset Generation Tool ([SSGT]({{ site.data.pages.ssgt | relative_url }}))) to find an element from a NIEM reference schema that “maps” to the exchange data element. In this example, look for a "Property" with "personSSN" as the search string. In general, a "Property" search is a good place to start.
 
 1. If nothing is found that looks like a match, try searching by name, for synonyms, conceptual meaning, or by type. In this example, you found a possible match.<br>![Mapping Tool Example (SSGT)](assets/ssgtexample.png "Mapping Tool Example (SSGT)")
 
-1. Enter the match in the mapping document under "NIEM Element." Map objects that are conceptually and semantically equivalent. If the alignment is not easily understood, it is better to extend, which is explained in the schema [build and validate](/training/iepd-developer/build-and-validate "Build and Validate") process.<br>![Element](assets/mappingelement.png "Element")
+1. Enter the match in the mapping document under "NIEM Element." Map objects that are conceptually and semantically equivalent. If the alignment is not easily understood, it is better to extend, which is explained in the schema [build and validate](../build-and-validate "Build and Validate") process.<br>![Element](assets/mappingelement.png "Element")
 
 1. Note the "type" associated with the NIEM element match and enter it under "NIEM Type."<br>![Element Type](assets/mappingtype.png "Element Type")
 
@@ -94,7 +94,7 @@ After you complete the entries in the Source Data Columns, identify the NIEM ele
 
 1. The **NIEM Element Path** is the path of the NIEM element within the NIEM model.  Join the tree elements together to make the path and enter that in the column.<br>![Element Path](assets/mappingfinal.png "Element Path")
 
-2. With the information you have now, you can begin the schema [build and validate](/reference/iepd/lifecycle/build-and-validate "Build and Validate") process.
+2. With the information you have now, you can begin the schema [build and validate]({{ site.data.pages.iepd | append: "/lifecycle/build-and-validate" | relative_url }} "Build and Validate") process.
 
 ### Model Searching Tips
 

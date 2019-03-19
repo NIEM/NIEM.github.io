@@ -5,7 +5,7 @@
 
 ## Kinds of Facets
 
-See the corresponding [XML list](/reference/concepts/facet/#kinds-of-facets) for definitions.
+See the corresponding [XML list]({{ "/reference/concepts/facet#kinds-of-facets" | relative_url }}) for definitions.
 
 | XML Facet      | JSON Facet | Text | Num | Date |
 | -------------- | ---------- |:----:|:---:|:----:|

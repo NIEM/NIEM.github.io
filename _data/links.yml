@@ -15,6 +15,7 @@ niem_communities: https://www.niem.gov/communities
 # Specifications
 
 ndr: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html
+ndr_folder: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/
 ndr_repo:   https://github.com/NIEM/NIEM-NDR/
 ndr_issues: https://github.com/NIEM/NIEM-NDR/issues
 
@@ -33,7 +34,11 @@ hlva: https://reference.niem.gov/niem/specification/high-level-version-architect
 mpd: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/
 mpd_spec: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html
 
+mpd_catalog_xsd: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/xsd-mpd-catalog/mpd-catalog-3.0.xsd
+
 six: https://reference.niem.gov/niem/specification/sch-in-xsd/1.0alpha4/niem-schematron-in-xsd-1.0alpha4-2016-03-16.html
+
+du: https://reference.niem.gov/niem/specification/domain-update/1.0/domain-update-1.0.pdf
 
 # Tools
 
@@ -47,3 +52,11 @@ movement: https://beta.movement.niem.gov/#/
 migration: https://tools.niem.gov/niemtools/migration/index.iepd
 
 contesa: https://tools.niem.gov/contesa/
+contesa_old: https://tools.niem.gov/contesaNIEM/
+
+oxygen: https://www.oxygenxml.com/
+
+# Core Supplements
+
+cs_3: https://release.niem.gov/niem/3.0/du-cs-3.0.html
+cs_4: https://release.niem.gov/niem/4.0/du-cs-4.0.html

@@ -11,7 +11,7 @@
   margin: 0 0 20px;
 }
 
-.tip, .example, .note, .ndr, .features, .quiz {
+.tip, .example, .note, .ndr, .features, .quiz, .valid, .invalid {
   @extend .box;
 }
 
@@ -37,6 +37,14 @@ ul.tip, ul.example, ul.note, ul.box, ul.quiz {
   content: "Features ";
 }
 
+.valid::before {
+  content: "Valid example ";
+}
+
+.invalid::before {
+  content: "Invalid example ";
+}
+
 .quiz::before {
   content: "Knowledge Check ";
 }
@@ -59,18 +67,12 @@ blockquote::before, ul::before, p::before {
   border: 0;
   border-left: solid 5px seagreen;
   background: rgba(143, 230, 172, 0.2);
-  ::before {
-    content: "Valid example ";
-  }
 }
 
 .invalid {
   border: 0;
   border-left: solid 5px crimson;
-  background: #fce3e3; 
-  ::before {
-    content: "Invalid example ";
-  }
+  background: #fce3e3;
 }
 
 .ndr {

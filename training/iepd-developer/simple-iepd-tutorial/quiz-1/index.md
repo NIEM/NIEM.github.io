@@ -17,4 +17,4 @@ description: Answer the following questions about this topic.
 
     [Answer](answer-2)
 
-[Return to the topic.](/training/iepd-developer/simple-iepd-tutorial/#quiz-1-return)
+[Return to the topic.](../#quiz-1-return)

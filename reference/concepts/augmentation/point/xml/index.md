@@ -10,7 +10,7 @@
 
 ## Instances
 
-Augmentation point elements do not appear in XML instances because they are abstract.  They may only be omitted or replaced by their concrete substitutions. See [Augmentation Elements in XML](../../element/xml) for an example of how augmentation elements replace an augmentation point in an instance.
+Augmentation point elements do not appear in XML instances because they are abstract.  They may only be omitted or replaced by their concrete substitutions. See [Augmentation Elements in XML](../../element/xml-container) for an example of how augmentation elements replace an augmentation point in an instance.
 
 ## Schema example
 

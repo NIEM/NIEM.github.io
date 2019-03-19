@@ -76,9 +76,9 @@ Placeholders appear in upper case.  A few common namespace prefixes and import s
   </xs:annotation>
 
   <xs:import schemaLocation="IMPORT_PATH" namespace="IMPORT_URI"/>
-  <xs:import schemaLocation="../niem/niem-core/4.0/niem-core.xsd" 
+  <xs:import schemaLocation="../niem/niem-core/4.0/niem-core.xsd"
              namespace="http://release.niem.gov/niem/niem-core/4.0/"/>
-  <xs:import schemaLocation="../niem/utility/structures/4.0/structures.xsd" 
+  <xs:import schemaLocation="../niem/utility/structures/4.0/structures.xsd"
              namespace="http://release.niem.gov/niem/structures/4.0/"/>
 
   <!-- element, attribute, and type declarations -->
@@ -170,6 +170,8 @@ NIEM 4.0-based example of a namespace (like an extension schema) targeting the N
 </xs:schema>
 ```
 
+See the section about the [Conformance Targets Attribute Specification](../../../specifications/conformance-targets/) for more information.
+
 ### Namespace prefixes
 
 Prefixes should be assigned for each namespace that is referenced, and also for the current namespace.
@@ -253,7 +255,7 @@ An import statement lists the URI and either the absolute or the relative path o
 Example import of Core 4.0:
 
 ```xml
-<xs:import schemaLocation="../niem/niem-core/4.0/niem-core.xsd" 
+<xs:import schemaLocation="../niem/niem-core/4.0/niem-core.xsd"
            namespace="http://release.niem.gov/niem/structures/4.0/"/>
 ```
 

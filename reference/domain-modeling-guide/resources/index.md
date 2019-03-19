@@ -6,21 +6,21 @@ title: Appendix B - Resources
 
 ----
 
-**Releases** | **URL** | **Notes** 
------------- | ------- | --------- 
-All NIEM release packages                   | <https://release.niem.gov/>                | 
-All NIEM release raw files                  | <https://release.niem.gov/niem/>           | 
-NIEM domain updates, core supplements &nbsp;| <https://publication.niem.gov/niem/>       | 
+**Releases** | **URL** | **Notes**
+------------ | ------- | ---------
+All NIEM release packages                   | <https://release.niem.gov/>                |
+All NIEM release raw files                  | <https://release.niem.gov/niem/>           |
+NIEM domain updates, core supplements &nbsp;| <https://publication.niem.gov/niem/>       |
 NIEM 3.2 release                            | <https://release.niem.gov/niem/3.2/> &nbsp;| replace '3.2' for older versions
 
 ----
 
-**References** | **URL** | **Notes** 
--------------- | ------- | --------- 
-NIEM technical references            | <https://reference.niem.gov/>                 | latest versions 
-All NIEM technical references &nbsp; | <https://reference.niem.gov/niem/>            | includes legacy versions 
+**References** | **URL** | **Notes**
+-------------- | ------- | ---------
+NIEM technical references            | <https://reference.niem.gov/>                 | latest versions
+All NIEM technical references &nbsp; | <https://reference.niem.gov/niem/>            | includes legacy versions
 NDR Schematron rules | <https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.zip> | use w/ oXygen or XMLSpy |
-NIEM 2.1 UML profile                 | <http://www.omg.org/spec/NIEM-UML/1.0/>       | for NIEM 2.1 only 
+NIEM 2.1 UML profile                 | <http://www.omg.org/spec/NIEM-UML/1.0/>       | for NIEM 2.1 only
 NIEM 3.0 UML profile                 | <http://www.omg.org/spec/NIEM-UML/3.0/Beta1/> | NIEM 3.0, 3.1, 3.2
 Conformance Specification v3.0       | <https://reference.niem.gov/niem/specification/conformance/3.0/>                     |
 Naming and Design Rules (NDR) v3.0   | <https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/>         |
@@ -42,7 +42,7 @@ Schema Subset Generation Tool (SSGT) &nbsp;| <https://tools.niem.gov/niemtools/s
 Conformance Testing Assistant (ConTesA)    | <https://tools.niem.gov/contesa/>                      |
 Code List Schema Generator                 | <https://tools.niem.gov/niemtools/codelist/index.iepd> | service available
 NIEM tool staging server                   | <https://niemstaging.ittl.gtri.org/niemtools> | only available in beta stage of release cycles
-NIEM GitHub                                | <https://niem.github.io/>                              | 
+NIEM GitHub                                | <https://niem.github.io/>                              |
 NIEM Config Control Tool (NCCT)            | <https://niem.gtri.gatech.edu/ncct/>                   | used by NIEM governance (not public)
 Request tool account, services, or report tool issues | <mailto:pgmw-system@gtri.gatech.edu>        |
 
@@ -62,7 +62,7 @@ Syncro Soft SRL oXygen XML Editor       | <https://www.oxygenxml.com/>          
 
 **Other Resources** | **URL** | **Notes**
 ------------------- | ------- | ---------
-NIEM home                              | <https://niem.gov/>                                             |
+NIEM home                              | <https://www.niem.gov/>                                             |
 Change request                         | <https://reference.niem.gov/niem/resource/change-request/>      |
 NCCT User Guide                        | <https://reference.niem.gov/niem/guidance/ncct-user-guide/1.0/> |
 Schemas that define a _Wantlist_ &nbsp;| <https://reference.niem.gov/niem/resource/wantlist/>            |

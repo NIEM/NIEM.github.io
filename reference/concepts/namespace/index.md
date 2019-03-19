@@ -156,3 +156,5 @@ TARGET should be a target defined by the NDR:
 
 {: .note}
 > Release schemas must follow the reference rules, but locally-defined namespaces (like extension schemas) may choose which rule set to target.
+
+See the section about the [Conformance Targets Attribute Specification](../../specifications/conformance-targets/) for more information.

@@ -1,5 +1,8 @@
 ---
-title: Code Lists
+title: NIEM Code Lists Specification
+short: Code Lists
+description: The NIEM Code Lists Specification was created to enhance the functionality of code lists in NIEM beyond the basic enumerations and JSON schema provide.  Key new features include the definition of codes in CSV files, dynamic code lists via run-time binding, and multi-column code table support.
+icon: fa-book
 links:
   - url: /reference/specifications/code-lists/country-codes/
   - url: /reference/specifications/code-lists/faq/

@@ -2,14 +2,13 @@
 title: Scenario Planning
 short: Scenario Planning
 icon: fa-envelope-o
-description: The scenario planning phase is the first step you take in IEPD development.  
+description: The scenario planning phase is the first step you take in IEPD development.
 ---
 
 {{ page.description}}
 
 {% include icon-list.html links=page.links %}
-
-In [scenario planning](/reference/iepd/lifecycle/scenario-planning/), the IEPD stakeholders decided and agreed on what will go into the package, and developed one or more diagrams from the following types:
+In [scenario planning]({{ site.data.pages.iepd-lifecycle | append: "scenario-planning/" | relative_url }}), the IEPD stakeholders decided and agreed on what will go into the package, and developed one or more diagrams from the following types:
 
 ### Use Case Diagram Example
 
@@ -35,4 +34,4 @@ This sub-process of the traveler processing system has three interacting applica
 
 ![Traveler Processing System](assets/sequencediagram.png "Traveler Processing System")
 
-When you have answers to the questions and complications [discussed earlier](/reference/iepd/lifecycle/scenario-planning/), and one or more detailed diagrams, proceed to the next phase: [Analyze Requirements](/training/iepd-developer/analyze-requirements/ "Analyze Requirements").
+When you have answers to the questions and complications [discussed earlier]({{ site.data.pages.iepd-lifecycle | append: "scenario-planning/" | relative_url }}), and one or more detailed diagrams, proceed to the next phase: [Analyze Requirements](../analyze-requirements/ "Analyze Requirements").

@@ -1,44 +1,60 @@
 ---
-  title: Conformant Artifacts
-  short: Artifacts
+  title: Artifacts
   icon: fa-sitemap
   description: Learn about the kinds of files that make up NIEM releases and IEPDs.
   links:
-  - url: /reference/artifacts/overview/
-  - url: /reference/artifacts/reference-schema-document/
-    group: schema
-  - url: /reference/artifacts/extension-schema-document/
-    group: schema
-  - url: /reference/artifacts/reference-vs-extension/
-  - url: /reference/artifacts/subset-schema-document/
-    group: schema
+  - url: /reference/artifacts/releases/
+    group: specialized
+  - url: /reference/artifacts/messages/
+    group: specialized
   - url: /reference/artifacts/code-lists/
-    group: special
-  - url: /reference/artifacts/schema-document-set/
-    group: special
-  - url: /reference/iepd/
-    group: package
-  - url: /reference/artifacts/iep/
-    group: package
+    group: niem
+  - url: /reference/artifacts/json-ld-context/
+    group: other
+  - url: /reference/artifacts/xml-catalog/
+    group: other
 ---
 
-The NIEM Conformant Artifacts are the substantive components created to represent the exchange data model. Typically they are packaged into several collections of text, JSON, XML, and binary files.
+NIEM artifacts are individual files or packages relating to NIEM releases or information exchanges.
 
-See a [one-page overview](overview) for excerpts of each of the major artifacts. You may also choose an item on this page for which you need more information
+---
 
-## Schema Artifacts
+## Release Artifacts
 
-The NIEM artifacts are the physical components created to package and represent the data model divided into several files.
+Some of the artifacts below are specific to NIEM releases; others show how NIEM releases implement common kinds of artifacts like documentation spreadsheets and change logs.
 
-{% assign basicLinks = page.links | where: "group", "schema" %}
-{% include icon-list.html links=basicLinks %}
+Click on the `Release Artifacts...` section in the sidebar for more or jump directly to a NIEM release artifact below:
 
-## Special Artifacts
+{% assign releasesPage = site.pages
+    | where: "url", "/reference/artifacts/releases/" | first %}
+{% include icon-list.html links=releasesPage.links %}
 
-{% assign advancedLinks = page.links | where: "group", "special" %}
-{% include icon-list.html links=advancedLinks %}
+---
 
-## Model Package Artifacts
+## IEPD Artifacts
 
-{% assign advancedLinks = page.links | where: "group", "package" %}
-{% include icon-list.html links=advancedLinks %}
+These artifacts are specific to NIEM messages.
+
+Click on the `IEPD Artifacts...` section in the sidebar for more or jump directly to an IEPD artifact below:
+
+{% assign messagesPage = site.pages
+    | where: "url", "/reference/artifacts/messages/" | first %}
+{% include icon-list.html links=messagesPage.links %}
+
+---
+
+## General NIEM Artifacts
+
+The artifacts below can be used with either NIEM releases or IEPDs.
+
+{% assign niem = page.links | where: "group", "niem" %}
+{% include icon-list.html links=niem %}
+
+---
+
+## Other Artifacts
+
+The artifacts below are used by NIEM but are defined by outside specifications or sources.
+
+{% assign other = page.links | where: "group", "other" %}
+{% include icon-list.html links=other %}

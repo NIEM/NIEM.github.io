@@ -20,7 +20,7 @@ In NIEM 4.0, country codes were refactored in order to use the representation pa
 - It improved consistency, by making the same set of substitutions easily reusable.
 
 {:.note}
-> See [Country Code Representations]({{ page.code_lists }}) for information about the different representation formats used with country codes, including CSV files for GENC codes.
+> See [Country Code Representations]({{ page.code_lists | relative_url }}) for information about the different representation formats used with country codes, including CSV files for GENC codes.
 
 ## Representation Pattern
 
@@ -171,7 +171,7 @@ The following shows three different examples of element `nc:LocationCountry`, ea
 
 In addition to the GENC and ISO 3166 representations, other representations may be used with
 NIEM 4, either by additional substitutions for `nc:CountryRepresentation`, or by
-providing additional code list URIs with `nc:CodeType` ([see Code Lists for more]({{ page.code_lists }})).
+providing additional code list URIs with `nc:CodeType` ([see Code Lists for more]({{ page.code_lists | relative_url }})).
 
 An IEPD (information exchange package definition), which specifies a message,
 may include one or more of these representations to convey countries. Which
