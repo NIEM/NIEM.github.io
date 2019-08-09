@@ -11,11 +11,11 @@
   margin: 0 0 20px;
 }
 
-.tip, .example, .note, .ndr, .features, .quiz, .valid, .invalid {
+.tip, .example, .note, .ndr, .features, .quiz, .valid, .invalid, .toc {
   @extend .box;
 }
 
-ul.tip, ul.example, ul.note, ul.box, ul.quiz {
+ul.tip, ul.example, ul.note, ul.box, ul.quiz ul.toc {
   li {
     margin-left: 30px;
   }
@@ -35,6 +35,10 @@ ul.tip, ul.example, ul.note, ul.box, ul.quiz {
 
 .features::before {
   content: "Features ";
+}
+
+.toc::before {
+  content: "Table of contents ";
 }
 
 .valid::before {

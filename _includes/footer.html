@@ -22,6 +22,7 @@
 <script src="{{ '/vendor/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
+{% comment %}
 {% if page.url contains "model/" or page.url contains "training/" %}
   <script type="text/javascript">
     // Find the TOC and active navigation item
@@ -45,6 +46,7 @@
 
   </script>
 {% endif %}
+{% endcomment %}
 
 
 <script type="text/javascript">
@@ -54,7 +56,7 @@
 
   // Add a new copy button to each code block
   $(".highlight").each( function() {
-    
+
     // New copy button and event handler (local copy-to-clipboard function)
     let $copyBtn = $(`<button class="clipboard">Copy</button>`).click( copyToClipboard );
 

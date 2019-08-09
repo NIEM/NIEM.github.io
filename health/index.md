@@ -1,8 +1,8 @@
 ---
 title: NIEM in Health Care
 links:
-  - url: /health/10-oct-2017-meeting-minutes/
-  - url: /health/13-feb-2018-meeting-minutes/
+  - url: /health/meeting-minutes/
+  - url: /health/tutorials/
 ---
 
 ## The NIEM Health Community of Interest Overview
@@ -33,7 +33,7 @@ The specific domains that most need access to health data include:
 
 The NIEM Health Community’s primary objective is to identify ways to use existing health IT standards to meet the needs of the NIEM community, all while providing education and awareness about the specific requirements for protecting sensitive health data [Health Insurance Portability and Accountability Act (HIPAA), the Federal IT Acquisition Reform Act (FITARA), etc.].
 
-### The NIEM Health Community of Interest’s objectives are to:
+### The NIEM Health Community of Interest’s objectives
 
 1. Catalog and prioritize identified use cases for exchanging health related data outside the healthcare system;
 2. Determine health IT standards/frameworks most relevant to high priority exchanges and seek alignment with the NIEM exchange development process;

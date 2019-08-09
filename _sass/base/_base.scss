@@ -31,7 +31,7 @@ a {
   padding-bottom: 160px;
   @media screen and (min-width: 768px) {
     padding-bottom: 290px;
-  } 
+  }
 }
 
 code {
@@ -60,11 +60,21 @@ blockquote {
 
 ul {
   // Resetting default from 40px
-  -webkit-padding-start: 15px;
+  // -webkit-padding-start: 15px;
 }
 
 img {
   max-width: 100%;
+}
+
+.img-right {
+  float: right;
+  margin-top: 0;
+}
+
+.img-caption {
+  text-align: center;
+  font-style: italic;
 }
 
 p.bordered img {
@@ -101,24 +111,24 @@ table {
   width: 100%;
   height: 100%;
 }
-.movement-video-wrapper{ 
+.movement-video-wrapper{
   margin: 10px 0;
 }
 .access-tool-here{
   @media screen and (min-width: 720px) {
     float: right;
   }
-  margin-bottom: 10px;    
+  margin-bottom: 10px;
 }
 .introducing-movement {
   @media screen and (min-width: 720px) {
     display: inline-block;
     margin-top: 6px;
   }
-  margin-bottom: 16px;     
+  margin-bottom: 16px;
 }
 
-// Home hero list styling 
+// Home hero list styling
 .hero-list{
   padding:0;
   margin:0;
@@ -178,11 +188,11 @@ table {
   -ms-transition: .5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
-  transition: .5s;  
+  transition: .5s;
   &:hover{
     background: #005170;
     color: #fff;
-  }  
+  }
 }
 .hero-list > .hero-item .hero-item-container.blue{
   background-color:#00709a;
@@ -251,7 +261,7 @@ table {
   -ms-transition: .5s;
   -moz-transition: .5s;
   -webkit-transition: .5s;
-  transition: .5s;  
+  transition: .5s;
   &:hover{
     background: #005170;
   }
@@ -264,7 +274,7 @@ table {
     margin-top: 25px;
   }
   a {
-    border: 1px solid #dcdcdc; 
+    border: 1px solid #dcdcdc;
     padding: 10px;
     height: auto;
     &:hover{
@@ -283,16 +293,16 @@ table {
   position: relative;
   @media screen and (min-width: 992px) {
     font-size: 3.5em;
-  } 
+  }
 
   a {
     color: #52ACB1;
     text-decoration:none;
     &:hover{
       color: #01445D;
-      text-decoration:none;    
+      text-decoration:none;
     }
-  } 
+  }
 }
 .herosection-content {
   color: #fff;
@@ -317,12 +327,12 @@ table {
   border-width: 5px 1px 1px;
   height: auto;
   margin: 30px 15px 15px;
-  background: #fff; 
+  background: #fff;
   .hero-banner-content {
     padding: 20px 45px 0;
     @media screen and (min-width: 992px) {
-      padding: 20px 45px; 
-    }    
+      padding: 20px 45px;
+    }
     .hero-banner-title {
       font-size: 24px;
       font-weight: 700;
@@ -335,19 +345,19 @@ table {
       text-align: center;
       @media screen and (min-width: 992px) {
         text-align: right;
-      }       
+      }
     }
     .blocks-center-align {
       text-align: center;
       @media screen and (min-width: 992px) {
         text-align: left;
-      }     
+      }
     }
   }
 }
 .hero-banner-button {
   display: inline-block;
-  vertical-align: middle; 
+  vertical-align: middle;
   margin-right: 20px;
   margin-bottom: 20px;
   .button {
@@ -365,10 +375,10 @@ table {
     }
     @media screen and (min-width: 1200px) {
       padding: 15px 30px;
-    }    
-  } 
+    }
+  }
 }
-// Landing page styling 
+// Landing page styling
 ul{
   &.list-fa-icon {
     &.section {
@@ -377,9 +387,9 @@ ul{
           font-size: 24px;
           font-weight: 700;
         }
-      }    
+      }
     }
-  }  
+  }
 }
 .landing-page-section {
   margin: 10px 0;
@@ -396,7 +406,7 @@ ul{
     }
   }
 }
-// Sidebar redesign 
+// Sidebar redesign
 .breadcrumb {
   border-radius: 0px;
 }
