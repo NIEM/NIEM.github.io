@@ -1,5 +1,6 @@
 ---
 title: NIEM Technical Architecture Changes for NIEM v4.0
+short: 4.0 Architecture Updates
 description: What was changed in the NIEM technical architecture from NIEM version 3.* to version 4.0.
 ---
 
@@ -35,7 +36,7 @@ Changes to the NIEM Technical Architecture from NIEM version 3.* to version 4.0.
     the same identifier
     * Removed requirement that elements with `structures:ref` have no properties
   * Major rewrite to section 12.1, 12.2, addressing data's meaning, identity, and references
-* NDR Section 5 - RDF updates 
+* NDR Section 5 - RDF updates
   * Simplified RDF representation
     * RDF is much simpler than v3, with direct properties instead of reification
     * Allows for more direct JSON representation via JSON-LD
