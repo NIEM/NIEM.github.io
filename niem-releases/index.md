@@ -13,7 +13,7 @@ links:
 </style>
 
 {:.note}
-> **[NIEM 4.2-beta1](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2beta1) is now available for review!**  Feedback is requested by Friday, September 13, 2019.  Click **[here](#under-development-niem-42)** for more.
+> **[NIEM 4.2-beta1](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2beta1) is now available for review!**  Feedback is requested by Wednesday, September 18, 2019.  Click **[here](#under-development-niem-42)** for more.
 
 - TOC
 {:toc .toc}
@@ -57,7 +57,7 @@ In addition to the schema release, 4.1 incorporates a
 The release package is available at [NIEM-Releases](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2beta1) on GitHub and may also be downloaded as a [zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-4.2beta1.zip).  The package includes XML schemas, documentation spreadsheets, a change log, a JSON-LD context file, and a README.  A [4.2-testing version of the SSGT](https://staging.niem.gtri.gatech.edu/niemtools/ssgt/index.iepd) is also available to search and view 4.2 content and build XML schema subsets.
 
 {: .note}
-> Please email feedback to <niem-comments@lists.gatech.edu> or submit a new [4.2 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=4.2) by **Friday, September 13, 2019**.
+> Please email feedback to <niem-comments@lists.gatech.edu> or submit a new [4.2 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=4.2) by **Wednesday, September 18, 2019**.
 
 The final 4.2 release is expected to be published Fall 2019.
 
