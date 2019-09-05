@@ -1,6 +1,7 @@
 ---
 title: Meeting Minutes – January 29, 2019
 short: January 29, 2019
+description: General Update; Protecting Health Information
 ---
 
 - TOC

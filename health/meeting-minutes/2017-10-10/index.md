@@ -1,6 +1,7 @@
 ---
-title: Meeting Minutes – Tuesday, October 10, 2017
+title: Meeting Minutes – October 10, 2017
 short: October 10, 2017
+description: FHA, FHIM, and NIEM alignment
 ---
 
 FHA Attendees: Cait Ryan, Alberto, Llanes, Galen Mulrooney, Steve Wagner

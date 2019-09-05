@@ -1,6 +1,7 @@
 ---
 title: Meeting Minutes – April 9, 2019
 short: April 9, 2019
+description: Need for Health IT in Disaster Response; Patient Unified Lookup System for Emergencies (PULSE)
 ---
 
 - TOC

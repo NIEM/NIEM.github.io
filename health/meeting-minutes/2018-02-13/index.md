@@ -1,6 +1,7 @@
 ---
-title: Meeting Minutes – Tuesday, February 13, 2018
+title: Meeting Minutes – February 13, 2018
 short: February 13, 2018
+description: Health IT, NIEM Health Recap, and Status Update
 ---
 
 FHA Attendees: Cait Ryan, Kevin Mundy

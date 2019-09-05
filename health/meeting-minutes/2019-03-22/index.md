@@ -1,6 +1,7 @@
 ---
 title: Meeting Minutes – March 22, 2019
 short: March 22, 2019
+description: NIEM in Canada; Information Exchange Framework Applied to Structured Data
 ---
 
 - TOC
@@ -28,7 +29,7 @@ short: March 22, 2019
 - NIEM in Canada (Veejay Mara, Michell (?), and Don Clysdale: Advanced Systems Management Group and KYM Advisors)
   - Opening Remarks
   - Presentation
-- Information Exchange Framework Applied to Structured Date (Mike Abramson)
+- Information Exchange Framework Applied to Structured Data (Mike Abramson)
 - Q&A (All Participants)
 - Closing Remarks (Cait Ryan)
 
@@ -75,7 +76,7 @@ Cait Ryan
 - Meeting participants are invited to express use cases they are interested in hearing about
 - Meeting participants are invited to express if they would like to give a presentation to the group
 
-### Information Exchange Framework Applied to Structured Date Environments
+### Information Exchange Framework Applied to Structured Data Environments
 
 Brian Handspicker (Introduction)
 

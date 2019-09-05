@@ -7,6 +7,7 @@ links:
   - url: /health/meeting-minutes/2019-01-29/
   - url: /health/meeting-minutes/2019-03-22/
   - url: /health/meeting-minutes/2019-04-09/
+  - url: /health/meeting-minutes/2019-08-06/
 ---
 
-Please see the sidebar for NIEM Health COI meeting minutes.
+{% include icon-list.html links=page.links %}
