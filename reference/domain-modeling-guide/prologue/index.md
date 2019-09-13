@@ -59,7 +59,7 @@ To use this guide, you should be somewhat familiar with the following topics and
   - [NIEM Introduction](https://reference.niem.gov/niem/guidance/introduction/0.3/)
   - [NIEM Concept of Operations](https://reference.niem.gov/niem/guidance/concept-of-operations/0.5/)
   - [NIEM Training]({{ "/training/" | relative_url }})
-  - [NIEM IEPD Starter Kit](http://niem.github.io/iepd-starter-kit/)
+  - [NIEM IEPD Starter Kit](http://niem.github.io/reference/artifacts/messages/iepd/iepd-starter-kit/)
 - [NIEM Conformance](https://reference.niem.gov/niem/specification/conformance/3.0/)
 - [NIEM High Level Version Architecture (HLVA)](https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/)
 - [NIEM Naming and Design Rules (NDR)](https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/)

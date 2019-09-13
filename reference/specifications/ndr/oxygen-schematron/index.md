@@ -22,18 +22,21 @@ The Schematron file(s) will be needed each time you test NDR conformance.  The t
 
 ## Schematron Validation
 
-- Open a NIEM XML REF or EXT schema in Oxygen.
-- Choose one of several ways to "Validate with..."
-  - Document > Validate > Validate with...
-  - Click the drop-down on the `Validate` (checkmark) button and select `Validate with...`
+- In Oxygen, open the NIEM XML schema to test for NDR conformance.  This might be an IEPD extension schema or a NIEM domain schema under development.
 
-    {:.bordered}
-    ![Validate With Icon](assets/validate-with-icon.png)
+- Open the "Validate with..." dialog box.  There are three different ways of doing this:
 
-  - From an open Oxygen project, right-click on or more selected schema files or folders
+  - (Option 1) From the menu bar, click on Document > Validate > Validate with...
 
-    {:.bordered}
-    ![Project schema right-click to Validate With](assets/validate-with-project.png)
+  - (Option 2) Click the drop-down on the `Validate` (checkmark) button and select `Validate with...`, as shown below.
+
+      {:.bordered}
+      ![Validate With Icon](assets/validate-with-icon.png)
+
+  - (Option 3) From an open Oxygen project, right-click on one or more selected schema files or folders, as shown below.
+
+      {:.bordered}
+      ![Project schema right-click to Validate With](assets/validate-with-project.png)
 
 - In the `Validate with` dialog box...
   - Change the `Schema Type` field from `XML Schema` to `Schematron`.
@@ -43,8 +46,13 @@ The Schematron file(s) will be needed each time you test NDR conformance.  The t
 
   - In the `URL` field, browse to the downloaded Schematron file.  Make sure to choose the appropriate file (REF or EXT) for your NIEM schema.
 
+    - *IEPD extension schemas typically use EXT rules.*
+    - *Domain schemas use REF rules.*
+
     {:.bordered}
     ![URL field](assets/url.png)
+
+  - Click OK to run the conformance validation.
 
 ## Review Conformance Errors
 

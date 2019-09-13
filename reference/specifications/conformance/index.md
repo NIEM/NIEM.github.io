@@ -14,7 +14,11 @@ The term *conformance* is often used very broadly, but it has a very specific me
 
 System, tools, or databases may have capabilities designed to specifically support the development of NIEM-conformant artifacts, but those systems art not, themselves, NIEM-conformant.  Such tools or systems are considered NIEM-aware or NIEM-supporting.
 
+## Conformance vs Compliance
+
 NIEM-conformance does not imply NIEM compliance.  Compliance indicates enforcement and the existence of an official certification process that verifies conformance or level of conformance. NIEM does not currently define compliance.
+
+Early in the development of NIEM (and its predecessor), governance committees discussed the language to be used in solicitations (such grants, RFPs, etc.) that require use of NIEM. They considered both terms, and concluded that the term compliance does not convey appropriate intent; it is too regulatory (for example, U.S. citizens and residents must comply with the U.S. tax code). The objectives of NIEM are to facilitate and support interoperability, NOT to force or regulate it.
 
 ## Conformance Targets
 

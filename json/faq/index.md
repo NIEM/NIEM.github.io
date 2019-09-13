@@ -31,7 +31,7 @@ links:
 
 ^
 - [What is NIEM JSON data?](data): JSON data has a hierarchical
-  structure based on simple values, arrays, and objects. NIEM JSON NIEM uses
+  structure based on simple values, arrays, and objects. NIEM JSON uses
   [JSON-LD](../reference/json-ld) to handle what is supported in XML via XML Namespaces and XML ID
   and IDREF attributes.
 

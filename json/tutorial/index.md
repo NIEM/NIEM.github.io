@@ -237,7 +237,7 @@ We know that we require `@context` and `j:Crash` at the top, so we add them to `
 
 We also need these to be available as properties of the top level object, so
 we'll add them to `properties`. Rather than define their *structure* within
-`properties`, we'll point them to a defintion within the `definitions` section
+`properties`, we'll point them to a definition within the `definitions` section
 of the schema. The properties `@context` and `j:Crash` are both simple; each
 references its definition in the `definitions` section of the schema.
 
