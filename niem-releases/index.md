@@ -13,62 +13,49 @@ links:
 </style>
 
 {:.note}
-> **[NIEM 4.2-rc1](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2rc1) is now available for review!**  Feedback is requested by Monday, October 7, 2019.  Click **[here](#under-development-niem-42)** for more.
+> NIEM 4.2 is now available!
 
 - TOC
 {:toc .toc}
 
-## Current Release: NIEM 4.1
+## Current Release: NIEM 4.2
 
-NIEM version 4.1 has been released. This is the **current version** of NIEM. [Release notes are available on GitHub](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.1).
+NIEM 4.2 is the current version of NIEM.  [Release notes](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2) are available on GitHub.
 
-There are several ways to access NIEM 4.1:
+As a minor release, domains and domain code tables have been updated as needed. Core, all Core code tables, and the NIEM architecture are locked until the next major release, NIEM 5.0.
+
+NIEM 4.2 conforms to the ReferenceSchemaDocument (REF) target of the NIEM [Naming and Design Rules (NDR) Specification, version 4.0]({{ site.data.links.ndr }}).
+
+There are several ways to access NIEM 4.2:
 
 - You may download
-  [the complete NIEM 4.1 schema package as a zip file](https://release.niem.gov/niem/4.1/niem-4.1.rel.zip)
-  from [release.niem.gov](https://release.niem.gov/niem/4.1/).
+  [the complete NIEM 4.2 schema package as a zip file](https://release.niem.gov/niem/4.2/niem-4.2.rel.zip)
+  from [release.niem.gov](https://release.niem.gov/niem/4.2/).
 
-- You may search the contents of NIEM 4.1 using [Movement](https://beta.movement.niem.gov).
+- You may search the contents of NIEM 4.2 using [Movement](https://beta.movement.niem.gov).
 
-- You may browse the contents of NIEM 4.1 and download schema subsets from the
+- You may browse the contents of NIEM 4.2 and download schema subsets from the
   [NIEM Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd).
 
 - NIEM releases are
-  [published on Github](https://github.com/NIEM/NIEM-Releases). NIEM 4.1 is
-  [tagged as niem-4.1](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.1),
+  [published on Github](https://github.com/NIEM/NIEM-Releases). NIEM 4.2 is
+  [tagged as niem-4.2](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2),
   and may be
-  [downloaded as a zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-4.1.zip).
+  [downloaded as a zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-4.2.zip).
 
 Please send in any comment on the NIEM release as a [GitHub issue](https://github.com/NIEM/NIEM-Releases/issues).
 
-In addition to the schema release, 4.1 incorporates a
-  [default JSON-LD context for NIEM 4.1](https://release.niem.gov/jsonld-context/niem-4.1-context.jsonld):
-  NIEM JSON leverages JSON-LD (JSON for Linked Data), enabling it to maintain
-  consistency and to connect data across exchanges. The JSON-LD context is a
-  JSON file that identifies, for every namespace for NIEM content, the namespace
-  prefix and its corresponding namespace URI.
+In addition to the XML schema release, 4.2 incorporates a [default JSON-LD context](https://github.com/NIEM/NIEM-Releases/blob/niem-4.2/jsonld-context/niem-4.2-context.json) for NIEM 4.2:
+
+> NIEM JSON leverages JSON-LD (JSON for Linked Data), enabling it to maintain   consistency and to connect data across exchanges. The JSON-LD context is a JSON file that identifies, for every namespace for NIEM content, the namespace prefix and its corresponding namespace URI. <br> [See more about NIEM JSON](../json).
 
 ---
 
-## Under Development: NIEM 4.2
+## Under Development: NIEM 5.0
 
-**[NIEM 4.2 release candidate (RC) 1](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2rc1)** is now available for review!
+The NIEM 5.0 major release will be published Fall 2020.
 
-The release package is available from the [NIEM-Releases](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2rc1) repository on GitHub and may also be downloaded as a [zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-4.2rc1.zip).  The package includes XML schemas, documentation spreadsheets, a change log, a JSON-LD context file, and a README.
-
-{: .note}
-> Please email feedback to <niem-comments@lists.gatech.edu> or submit a new [4.2 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=4.2) by **Monday, October 7, 2019**.
-
-The final 4.2 release will be published Fall 2019.
-
-### Background
-{:.no_toc}
-
-NIEM 4.2 will be a minor release.  Domain content and domain code tables may be updated as needed.
-
-Core and Core code tables will be locked until the next major release (NIEM 5.0). Core Supplements can be published in the interim, with additive changes published in new schemas that can be used alongside or in addition to the originals.
-
-The NIEM architecture, defined by the NIEM [Naming and Design Rules]({{ site.data.links.ndr }}), also remains locked in minor releases.
+It will include new and harmonized content for Core, domains, and code tables; integrate Core Supplements 4.0.1 and 4.0.2; and will incorporate new architectural changes from the upcoming NIEM Naming and Design Rules specification, version 5.0.
 
 ### Schedule
 {:.no_toc}
@@ -77,27 +64,12 @@ The NIEM architecture, defined by the NIEM [Naming and Design Rules]({{ site.dat
 
 Product | Date | Issues | Description
 :------ |:---- |:------ |:-----------
-Alpha 1 | Mar 2019 | [Alpha issues](https://github.com/NIEM/NIEM-Releases/milestone/3?closed=1) | Major domain content submissions due.
-Beta 1 | Aug 2019 | [Beta issues](https://github.com/NIEM/NIEM-Releases/milestone/4?closed=1) | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
-Release Candidate (RC) 1 | Sep 2019 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
-Release | Oct 2019 | | Publish release and update content tools (SSGT, Movement, and Migration Tool)
+Alpha 1 | Mar 2020 | [Alpha issues](https://github.com/NIEM/NIEM-Releases/milestone/6) | Major domain content submissions due.
+Beta 1 | May 2020 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
+Release Candidate (RC) 1 | Aug 2020 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
+Release | Fall 2020 | | Publish release and update tools (SSGT, Movement,  Migration Tool, ConTesA)
 
 Additional phases (e.g., Beta 2) may be added as needed during the development process.
-
-### Major changes
-{:.no_toc}
-
-- **Biometrics**: Added and updated DNA and pedigree components [(#43)](https://github.com/NIEM/NIEM-Releases/issues/43)
-- **Emergency Management**: Added new components to support the Public Health Emergency Operations Center (PH EOC) Minimum Data Set [(#42)](https://github.com/NIEM/NIEM-Releases/issues/42)
-- **Justice**:
-  - Updated FBI NDEx codes [(#39)](https://github.com/NIEM/NIEM-Releases/issues/39)
-  - Updated FBI UCR codes [(#59)](https://github.com/NIEM/NIEM-Releases/issues/59)
-  - Updated FBI NCIC codes [(#63)](https://github.com/NIEM/NIEM-Releases/issues/63)
-  - Removed FBI NIBRS namespace [(#60)](https://github.com/NIEM/NIEM-Releases/issues/60)
-  - Removed FBI CJIS namespace [(#68)](https://github.com/NIEM/NIEM-Releases/issues/68)
-- **Core Supplement 4.0.2**: Updated Core-dependent code tables [(#35)](https://github.com/NIEM/NIEM-Releases/issues/35)
-
-See the [README](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2beta1), [4.2 issue list](https://github.com/NIEM/NIEM-Releases/issues?q=label%3A4.2+is%3Aclosed), or [4.2 project board](https://github.com/NIEM/NIEM-Releases/projects/2) for more details.
 
 ---
 
@@ -116,6 +88,7 @@ There are also online tools available to search and view NIEM release content:
     <tr>
       <th>Release</th>
       <th>Release Package Links</th>
+      <th>Year</th>
       <th>Zip</th>
       <th>Info</th>
       <th title="NIEM Naming and Design Rules Specification">
@@ -128,42 +101,20 @@ There are also online tools available to search and view NIEM release content:
     <tr>
       <td>
         <b>
-          <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2beta1">NIEM 4.2-beta1</a>
-        </b>
-        <br><i>(Latest draft)</i>
-      </td>
-      <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.2beta1">GitHub</a>
-      </td>
-      <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-4.2beta1.zip">Zip</a>
-      </td>
-      <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2beta1">Readme</a>
-      </td>
-      <td>
-        <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html">NDR 4.0</a>
-      </td>
-      <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/issues">Submit feedback</a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>
-          <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.1">NIEM 4.1</a>
+          <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2">NIEM 4.2</a>
         </b>
         <br><i>(Current release)</i>
       </td>
       <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.1">GitHub</a> |
-        <a href="https://release.niem.gov/niem/4.1/">release.niem.gov</a>
+        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.2">GitHub</a> |
+        <a href="https://release.niem.gov/niem/4.2/">release.niem.gov</a>
+      </td>
+      <td>2019</td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-4.2.zip">Zip</a>
       </td>
       <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-4.1.zip">Zip</a>
-      </td>
-      <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.1">Readme</a>
+        <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2">Readme</a>
       </td>
       <td>
         <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html">NDR 4.0</a>
@@ -176,6 +127,29 @@ There are also online tools available to search and view NIEM release content:
     <tr>
       <td>
         <b>
+          <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.1">NIEM 4.1</a>
+        </b>
+      </td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.1">GitHub</a> |
+        <a href="https://release.niem.gov/niem/4.1/">release.niem.gov</a>
+      </td>
+      <td>2018</td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-4.1.zip">Zip</a>
+      </td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.1">Readme</a>
+      </td>
+      <td>
+        <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html">NDR 4.0</a>
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>
           <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.0">NIEM 4.0</a>
         </b>
       </td>
@@ -183,6 +157,7 @@ There are also online tools available to search and view NIEM release content:
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.0">GitHub</a> |
         <a href="https://release.niem.gov/niem/4.0/">release.niem.gov</a>
       </td>
+      <td>2017</td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-4.0.zip">Zip</a>
       </td>
@@ -208,6 +183,7 @@ There are also online tools available to search and view NIEM release content:
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.2">GitHub</a> |
         <a href="https://release.niem.gov/niem/3.2/">release.niem.gov</a>
       </td>
+      <td>2016</td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-3.2.zip">Zip</a>
       </td>
@@ -229,6 +205,7 @@ There are also online tools available to search and view NIEM release content:
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.1">GitHub</a> |
         <a href="https://release.niem.gov/niem/3.1/">release.niem.gov</a>
       </td>
+      <td>2015</td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-3.1.zip">Zip</a>
       </td>
@@ -250,6 +227,7 @@ There are also online tools available to search and view NIEM release content:
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.0">GitHub</a> |
         <a href="https://release.niem.gov/niem/3.0/">release.niem.gov</a>
       </td>
+      <td>2013</td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-3.0.zip">Zip</a>
       </td>
@@ -271,6 +249,7 @@ There are also online tools available to search and view NIEM release content:
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-2.1">GitHub</a> |
         <a href="https://release.niem.gov/niem/2.1/">release.niem.gov</a>
       </td>
+      <td>2009</td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-2.1.zip">Zip</a>
       </td>
@@ -293,6 +272,7 @@ There are also online tools available to search and view NIEM release content:
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-2.0">GitHub</a> |
         <a href="https://release.niem.gov/niem/2.0/">release.niem.gov</a>
       </td>
+      <td>2007</td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-2.0.zip">Zip</a>
       </td>
@@ -314,6 +294,7 @@ There are also online tools available to search and view NIEM release content:
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-1.0">GitHub</a> |
         <a href="https://release.niem.gov/niem/1.0/">release.niem.gov</a>
       </td>
+      <td>2006</td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-1.0.zip">Zip</a>
       </td>
