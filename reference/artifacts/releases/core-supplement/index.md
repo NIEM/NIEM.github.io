@@ -16,7 +16,7 @@ A Core Supplement can be published at any time, though they tend to coincide wit
 
 During a major release, all of the changes in the Core Supplements for the previous major release series are merged back into the primary Core namespace.
 
-![Core Supplement History](https://www.niem.gov/sites/default/files/Release-Cycle-v5.png)
+![Core Supplement History](./Release-Cycle-v6.jpg)
 
 ## Versions
 
