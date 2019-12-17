@@ -46,12 +46,6 @@ The NIEM Health Community’s primary objective is to identify ways to use exist
 
 ## Get Involved!
 
-If your organization is interested in participating in the NIEM Health Community of Interest or learning more about our activities, please contact:
+The Health Community of Interest is sponsored by the U.S. Department of Health and Human Services (HHS).
 
-Cait Ryan, Project Manager
-<cryan@irishealthsolutions.com>
-
-Brian Handspicker, Sr. HIT Consultant
-<bhandspicker@irishealthsolutions.com>
-
-[See this overview as a PDF fact sheet](assets/FHA.Datasheet.NIEMv2.pdf)
+Point of Contact: Robert Tagalicod
