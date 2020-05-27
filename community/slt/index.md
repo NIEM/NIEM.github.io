@@ -18,7 +18,7 @@ links:
 
 - [x] Charter
 - [ ] Tiger Team
-- [ ] GitHub Page
+- [x] GitHub Page
 - [ ] Marketing Materials
 - [ ] Outreach Opportunities Tracker
 - [ ] Grant Assistance
@@ -34,10 +34,10 @@ links:
 
 - 30 Days
   - [x] Finalize Charter
-  - [ ] SLT TT promotion
-  - [ ] Establish GitHub Page
+  - [x] Initial SLT TT promotion
+  - [x] Establish GitHub Page
   - [ ] Establish Meeting Logistics
-  - [ ] Host Kickoff Meeting
+  - [ ] Host Kickoff Meeting (scheduled for 2020-06-10)
 - 60 Days
   - [ ] Catalogue Existing Marketing Materials
   - [ ] Develop Outreach Opportunities Tracker
@@ -66,8 +66,8 @@ ESTABLISH GITHUB PAGE
 
 ESTABLISH MEETING LOGISTICS
 
-- Webinar Platform- Zoom
-- Collaboration Platform- Google Docs
+- Webinar Platform - Zoom
+- Collaboration Platform - Google Docs
 - Meet 1x a week, 1 hr.
 
 HOST KICKOFF MEETING
