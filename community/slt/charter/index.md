@@ -22,7 +22,7 @@ short: Charter
 #### Co-Chairs
 
 - Cait Ryan, IRIS Health Solutions
-- Tom Carlson, Carlson Consulting
+- Tom Carlson, Tom Carlson Consulting
 
 #### Project Purpose
 
