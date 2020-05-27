@@ -4,6 +4,7 @@ short: State, Local, and Tribal
 description: A dedicated group to advance information sharing at the state, local, and tribal level to help protect, support, and respond to community needs.
 links:
 - url: /community/slt/charter/
+- url: /community/slt/meeting-notes/
 ---
 
 <img align="right" width="50%" src="assets/slt.png">
