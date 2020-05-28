@@ -1,5 +1,6 @@
 ---
 title: NIEM in Health Care
+description: The NIEM Health Community's primary objective is to identify ways to use existing health IT standards to meet the needs of the NIEM community, all while providing education and awareness about the specific requirements for protecting sensitive health data.
 links:
   - url: /health/meeting-minutes/
   - url: /health/tutorials/
