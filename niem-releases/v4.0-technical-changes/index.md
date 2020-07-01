@@ -1,17 +1,15 @@
 ---
-title: NIEM Technical Architecture Changes for NIEM v4.0
+title: NIEM 4.0 Technical Architecture Changes
 short: 4.0 Architecture Updates
 description: What was changed in the NIEM technical architecture from NIEM version 3.* to version 4.0.
 ---
 
-Changes to the NIEM Technical Architecture from NIEM version 3.* to version 4.0.
+The changes to the NIEM technical architecture from NIEM version 3.* to version 4.0 are highlighted below.
 
-### Documents:
-* NIEM Naming and Design Rules:
-    * [NIEM NDR version 3.0](https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html)
-    * [NIEM NDR version 4.0](https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html)
-    * [View the differences in the text version of the NDR from v3 to v4 on GitHub](https://github.com/NIEM/NIEM-NDR/compare/niem-ndr-3.0...niem-ndr-4.0#diff-ba7b4561c4e855f66491aec616812509)
-* [NIEM Code Lists Specification v4.0](https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html)
+### Specifications
+
+- NIEM Naming and Design Rules (NDR) updated from [version 3.0](https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html) to [version 4.0](https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html) ([see diffs](https://github.com/NIEM/NIEM-NDR/compare/niem-ndr-3.0...niem-ndr-4.0#diff-ba7b4561c4e855f66491aec616812509))
+* NIEM Code Lists Specification was introduced with [version 4.0](https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html)
 
 ### Changes
 

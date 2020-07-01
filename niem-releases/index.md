@@ -1,7 +1,9 @@
 ---
 title: NIEM Releases
 links:
+- url: /niem-releases/v3.0-technical-changes/
 - url: /niem-releases/v4.0-technical-changes/
+- url: /niem-releases/v5.0-technical-changes/
 ---
 
 <style type="text/css">
@@ -13,7 +15,7 @@ links:
 </style>
 
 {:.note}
-> NIEM 4.2 is now available!
+> **[NIEM 5.0-beta1](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0beta1) is now available for review!**  Feedback is requested by Friday, July 17, 2020.  Click **[here](#under-development-niem-50)** for more.
 
 - TOC
 {:toc .toc}
@@ -53,9 +55,26 @@ In addition to the XML schema release, 4.2 incorporates a [default JSON-LD conte
 
 ## Under Development: NIEM 5.0
 
-The NIEM 5.0 major release will be published Fall 2020.
+**[NIEM 5.0 beta 1](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0beta1)** is now available for review!
 
-It will include new and harmonized content for Core, domains, and code tables; integrate Core Supplements 4.0.1 and 4.0.2; and will incorporate new architectural changes from the upcoming NIEM Naming and Design Rules specification, version 5.0.
+The release package is available at [NIEM-Releases](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0beta1) on GitHub and may also be downloaded as a [zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-5.0beta1.zip).  The package includes XML schemas, documentation spreadsheets, a change log, a JSON-LD context file, and a README.
+
+{: .note}
+> Please email feedback to <niem-comments@lists.gatech.edu> or submit a new [5.0 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.0) by **Friday, July 17, 2020**.
+
+The final 5.0 release is expected to be published Fall 2020.
+
+### Major content changes include
+{:.no_toc}
+
+- Addition of Controlled Unclassified Information (CUI) metadata
+- Addition of content from the Generic Statistical Information Model (GSIM) content as a precursor to the upcoming Statistics domain
+- Addition of new content from the Public Health Emergency Operations Center (PH-EOC) Minimum Data Set to the Emergency Management domain
+- Major updates to the FBI NCIC, NDEx, and UCR code tables
+- Simplified release folder layout and the removal of version numbers from file paths
+- Updated character encoding (from US-ASCII to UTF-8) and addition of attribute xml:lang to the reference schemas for better international support
+- Updated structures and appinfo utility schemas as part of the upcoming Naming and Design Rule (NDR) Specification 5.0 update
+- Many harmonization content updates
 
 ### Schedule
 {:.no_toc}
@@ -65,7 +84,7 @@ It will include new and harmonized content for Core, domains, and code tables; i
 Product | Date | Issues | Description
 :------ |:---- |:------ |:-----------
 Alpha 1 | Mar 2020 | [Alpha issues](https://github.com/NIEM/NIEM-Releases/milestone/6) | Major domain content submissions due.
-Beta 1 | May 2020 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
+Beta 1 | June 2020 | [Beta issues](https://github.com/NIEM/NIEM-Releases/milestone/7) | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
 Release Candidate (RC) 1 | Aug 2020 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Fall 2020 | | Publish release and update tools (SSGT, Movement,  Migration Tool, ConTesA)
 
@@ -98,6 +117,30 @@ There are also online tools available to search and view NIEM release content:
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>
+        <b>
+          <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0beta1">NIEM 5.0 beta1</a>
+        </b>
+        <br><i>(draft release)</i>
+      </td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.0beta1">GitHub</a>
+      </td>
+      <td>2020</td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-5.0beta1.zip">Zip</a>
+      </td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/blob/niem-5.0beta1/README.md">Readme</a>
+      </td>
+      <td>
+        NDR 5.0 <br> pending
+      </td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.0">Submit feedback</a>
+      </td>
+    </tr>
     <tr>
       <td>
         <b>
