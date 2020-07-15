@@ -9,4 +9,4 @@ The State, Local, and Tribal Tiger Team has regular meetings, typically via tele
 
 | Date | Meeting Description |
 | --- | --- |
-| 2020-06-10 | Kickoff Call |
+| 2020-06-10 | [Kickoff Call](call_notes_2020-06-10/index.md) |
