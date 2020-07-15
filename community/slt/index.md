@@ -37,8 +37,8 @@ links:
   - [x] Finalize Charter
   - [x] Initial SLT TT promotion
   - [x] Establish GitHub Page
-  - [ ] Establish Meeting Logistics
-  - [ ] Host Kickoff Meeting (scheduled for 2020-06-10)
+  - [x] Establish Meeting Logistics
+  - [x] Host Kickoff Meeting (scheduled for 2020-06-10)
 - 60 Days
   - [ ] Catalogue Existing Marketing Materials
   - [ ] Develop Outreach Opportunities Tracker
