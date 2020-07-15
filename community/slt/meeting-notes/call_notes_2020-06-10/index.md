@@ -11,12 +11,11 @@ Co-Chairs/Hosts:
 
 Attendees:
 
-- Cait Ryan
-- Tom Carlson
 - Micheal Abramson
-- Noam Arzart
+- Noam Arzt
 - James Cabral
 - Kurt Cagle
+- Tom Carlson
 - Charles Chipman
 - Cory Casanave
 - Dave Gajadhar
@@ -28,11 +27,13 @@ Attendees:
 - Ada Melton
 - Lain McNeill
 - Ralph Oconnell
+- Brian Petitt
 - Michael Phillips
 - Mark Pritchard
+- Cait Ryan
 - Jitendra Sakhamuri
 - Kate Silhol
-- Dan Stein
+- Daniel Stein
 - Steve Sullivan
 - Christopher Tarantino
 - Tammara Tarvin
