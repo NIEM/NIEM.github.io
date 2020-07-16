@@ -60,6 +60,8 @@ Reviewed how this would all come together under the 90 day timeline.
 
 Cait asked if there was anything missing from this presentation, like additional deliverables to be added. There were none at that time. The floor was opened for questions.
 
--	The issue of lack of interoperability between Health, Human Services, and Education organizations is out of scope however as the group continues and we run into these types of discussions or use cases we will discuss them as they come and seek SME for guidance.
+-	The issue of lack of interoperability between Health, Human Services, and Education organizations was brought up. Possibly competing standards like HL7/FHIR and CEDS provide interoperability challenges. There are multiple silos of data, due to a reluctance to share. While there's no national roadmap to breaking down these silos, doing so is out of scope of the Tiger Team. However as the group continues and we run into these types of discussions or use cases, we will discuss them as they come and seek SMEs for guidance.
+  - Some communities don't view data exchange as a two-way street.
+  - Indiana social services has a 3rd normal form reference data model matching NIEM attributes for social service eligibility.
 
 The meeting concluded. The next meeting is TBD
