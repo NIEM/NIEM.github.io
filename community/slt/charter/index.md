@@ -1,5 +1,5 @@
 ---
-title: SLT Charter
+title: "NBAC Tiger Team Charter: State, Local and Tribal"
 short: Charter
 ---
 
