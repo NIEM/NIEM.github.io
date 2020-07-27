@@ -5,6 +5,7 @@ description: A dedicated group to advance information sharing at the state, loca
 links:
 - url: /community/slt/charter/
 - url: /community/slt/meeting-notes/
+- url: /community/slt/opportunities/
 ---
 
 <img align="right" width="50%" src="assets/slt.png">
