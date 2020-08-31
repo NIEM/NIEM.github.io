@@ -12,9 +12,6 @@ The changes to the NIEM technical architecture from NIEM version 4.* to version 
 
 ### Changes
 
-{:.note}
-> NDR changes are still in progress
-
 - Simplified folder layout [(#140)](https://github.com/NIEM/NIEM-Releases/issues/140)
 
 - Changed the character encoding of the XML schemas from "US-ASCII" to "UTF-8" for better international support [(#125)](https://github.com/NIEM/NIEM-Releases/issues/125)
@@ -22,3 +19,5 @@ The changes to the NIEM technical architecture from NIEM version 4.* to version 
 - Added attribute xml:lang to reference schemas [(#153)](https://github.com/NIEM/NIEM-Releases/issues/153)
 
 - Updated structures and appinfo utility schemas to version 5.0 based on NDR updates [(#157)](https://github.com/NIEM/NIEM-Releases/issues/157)
+
+- Reestablished the structures:sequenceID attribute [(#154)](https://github.com/NIEM/NIEM-Releases/issues/154)
