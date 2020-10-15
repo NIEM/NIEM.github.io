@@ -15,7 +15,7 @@ links:
 </style>
 
 {:.note}
-> **[NIEM 5.0-rc3](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0rc3) is now available for review!**  Feedback is requested by Friday, October 16, 2020.  Click **[here](#under-development-niem-50)** for more.
+> **[NIEM 5.0-rc4](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0rc4) is now available for review!**  Feedback is requested by Monday, October 19, 2020.  Click **[here](#under-development-niem-50)** for more.
 
 - TOC
 {:toc .toc}
@@ -55,19 +55,19 @@ In addition to the XML schema release, 4.2 incorporates a [default JSON-LD conte
 
 ## Under Development: NIEM 5.0
 
-**[NIEM 5.0 release candidate 3](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0rc3)** is now available for review!
+**[NIEM 5.0 release candidate 4](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0rc4)** is now available for review!
 
-The release package is available at [NIEM-Releases](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0rc3) on GitHub and may also be downloaded as a [zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-5.0rc3.zip).  The package includes XML schemas, documentation spreadsheets, a change log, a JSON-LD context file, and a README.
+The release package is available at [NIEM-Releases](https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0rc4) on GitHub and may also be downloaded as a [zip file](https://github.com/NIEM/NIEM-Releases/archive/niem-5.0rc4.zip).  The package includes XML schemas, documentation spreadsheets, a change log, a JSON-LD context file, and a README.
 
 {: .note}
-> Please email feedback to <niem-comments@lists.gatech.edu> or submit a new [5.0 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.0) by **Friday, October 16, 2020**.
+> Please email feedback to <niem-comments@lists.gatech.edu> or submit a new [5.0 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.0) by **Monday, October 19, 2020**.
 
 The final 5.0 release is expected to be published Fall 2020.
 
 ### Recent changes
 {:.no_toc}
 
-Several minor changes have been made based on RC2 feedback.  These are:
+Several minor changes have been made based on RC2 and RC3 feedback.  These are:
 
 - Updated GENC CSV files to exclude GENC codes marked 'exclusion'
 - Updated GENC enumerations to exclude GENC codes marked 'exclusion'
@@ -77,6 +77,7 @@ Several minor changes have been made based on RC2 feedback.  These are:
 - Created a substitution group for CUI RELTO codes
 - Updated the names and definitions of CUI limited dissemination RELTO elements to represent both RELTO and DISPLAY ONLY options
 - Updated CUI category and limited dissemination control codes based on registry updates
+- Updated GENC codespace identifiers and local terminology
 
 ### Major content changes include
 {:.no_toc}
@@ -102,6 +103,7 @@ Beta 1 | June 2020 | [Beta issues](https://github.com/NIEM/NIEM-Releases/milesto
 Release Candidate (RC) 1 | Aug 2020 | [RC1 issues](https://github.com/NIEM/NIEM-Releases/milestone/8?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release Candidate (RC) 2 | Sep 2020 | [RC2 issues](https://github.com/NIEM/NIEM-Releases/milestone/9?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release Candidate (RC) 3 | Oct 2020 | [RC3 issues](https://github.com/NIEM/NIEM-Releases/milestone/10?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
+Release Candidate (RC) 4 | Oct 2020 | [RC4 issues](https://github.com/NIEM/NIEM-Releases/milestone/11?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Fall 2020 | | Publish release and update tools (SSGT, Movement,  Migration Tool, ConTesA)
 
 Additional phases (e.g., Beta 2) may be added as needed during the development process.
@@ -136,19 +138,19 @@ There are also online tools available to search and view NIEM release content:
     <tr>
       <td>
         <b>
-          <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0rc3">NIEM 5.0 rc3</a>
+          <a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0rc4">NIEM 5.0 rc4</a>
         </b>
         <br><i>(draft release)</i>
       </td>
       <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.0rc3">GitHub</a>
+        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.0rc4">GitHub</a>
       </td>
       <td>2020</td>
       <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-5.0rc3.zip">Zip</a>
+        <a href="https://github.com/NIEM/NIEM-Releases/archive/niem-5.0rc4.zip">Zip</a>
       </td>
       <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/blob/niem-5.0rc3/README.md">Readme</a>
+        <a href="https://github.com/NIEM/NIEM-Releases/blob/niem-5.0rc4/README.md">Readme</a>
       </td>
       <td>
         NDR 5.0 <br> pending
