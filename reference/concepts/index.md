@@ -33,7 +33,7 @@
 
 {{ page.description }}
 
-Click here for a [one-page summary](overview) of each of the major concepts.
+Click here for a [high-level summary](overview) of each of the major concepts.
 
 {: .note}
 > The concepts below have NIEM-specific representations in XML and JSON.  Each section has pages that demonstrate how to define these concepts in a schema and how sample data would appear in an instance.  For a basic introduction to XML or JSON, there are many resources available online, including the W3 Schools [XML Tutorial](https://www.w3schools.com/xml/default.asp) and [XML Schema Tutorial](https://www.w3schools.com/xml/schema_intro.asp), and the json-schema.org tutorial [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/index.html).
@@ -58,6 +58,8 @@ Learn about namespaces in NIEM and see schema examples and templates with header
 
 <table>
   {% include functions/getPatternRow.html url="/reference/concepts/property/element/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/property/abstract/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/property/substitutable/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/property/attribute/" %}
 </table>
 
@@ -76,27 +78,12 @@ Learn about namespaces in NIEM and see schema examples and templates with header
   {% include functions/getPatternRow.html url="/reference/concepts/type/simple/" %}
 </table>
 
-### Substitution Groups
-
-Substitution groups are typically used in NIEM to support alternate representations of a property (like multiple sources for country codes or multiple representations for a date format) and to support augmentations (described later in the "NIEM-Specific Techniques" section).
-
-<table>
-  {% include functions/getPatternRow.html url="/reference/concepts/property/abstract/" %}
-  {% include functions/getPatternRow.html url="/reference/concepts/property/substitutable/" %}
-</table>
-
 ### Code Sets and other Facets
 
 Facets let you constrain the allowable values for a string, number, date, or other simple type.  Codes (enumerations) are the most commonly used facet in NIEM.  Other facets include patterns, length, and maxExclusive.
 
 <table>
   {% include functions/getPatternRow.html url="/reference/concepts/facet/" %}
-</table>
-
-### Other
-
-<table>
-  {% include functions/getPatternRow.html url="/reference/concepts/reference/" %}
 </table>
 
 ## NIEM-Specific Techniques
@@ -128,6 +115,7 @@ In addition to the basic concepts described above, NIEM defines or uses addition
 
   {% include functions/getPatternRow.html url="/reference/concepts/local-term/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/metadata/" %}
+  {% include functions/getPatternRow.html url="/reference/concepts/reference/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/role/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/representation/" %}
 </table>

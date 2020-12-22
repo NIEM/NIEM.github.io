@@ -2,6 +2,15 @@
   title: Modeling Abstract Elements
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-38
+    - number: 9-39
+    - number: 11-14
+    - number: 11-35
+  - spec:
+    version: "4.0"
     rules:
     - number: 9-38
     - number: 9-39

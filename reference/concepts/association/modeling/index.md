@@ -2,6 +2,17 @@
   title: Modeling Associations
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-21
+    - number: 10-22
+    - number: 11-34
+    - number: 11-43
+    sections:
+    - number: 10.3
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-21
     - number: 10-22

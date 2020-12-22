@@ -33,6 +33,11 @@ The following is a list of NIEM releases along with their newly created domains.
 - **NIEM 4.0**
   - Agriculture (ag)
   - *Children, Youth, and Family Service (cyfs) content was adopted by Human Services (hs)*
+- **NIEM 4.1**
+- **NIEM 4.2**
+- **NIEM 5.0**
+  - Controlled Unclassified Information (cui) - *added as auxiliary content*
+  - Statistics content (stat) - *added as auxiliary content*
 
 ## Release History
 
@@ -217,6 +222,34 @@ The following is a list of NIEM releases along with their newly created domains.
       </ul>
     </td>
     <td>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.2">NIEM 4.2</a></td>
+    <td>2019</td>
+    <td>11,505</td>
+    <td>
+      <ul>
+        <li>See <a href="https://github.com/NIEM/NIEM-Releases/blob/niem-4.2/README.md">release notes</a> for changes</li>
+      </ul>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.0">NIEM 5.0</a></td>
+    <td>2018</td>
+    <td>12,149</td>
+    <td>
+      <ul>
+        <li>See <a href="https://github.com/NIEM/NIEM-Releases/blob/niem-5.0/README.md">release notes</a> for changes</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Controlled Unclassified Information (cui)</li>
+        <li>Statistics (stat)</li>
+      </ul>
     </td>
   </tr>
 </table>

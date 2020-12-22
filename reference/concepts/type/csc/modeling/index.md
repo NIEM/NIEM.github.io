@@ -2,6 +2,25 @@
   title: Modeling CSC Types
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-25
+    - number: 9-26
+    - number: 9-27
+    - number: 9-29
+    - number: 9-30
+    - number: 9-33
+    - number: 9-35
+    - number: 9-71
+    - number: 10-20
+    - number: 11-11
+    - number: 11-20
+    - number: 11-22
+    - number: 11-23
+    - number: 11-46
+  - spec:
+    version: "4.0"
     rules:
     - number: 9-25
     - number: 9-26

@@ -29,6 +29,32 @@ These rules are intended to establish and, more importantly, enforce a degree of
 
 <!--more-->
 
+## Versions
+
+{:.note}
+> See the [NIEM-NDR GitHub repo]({{site.data.links.ndr_repo}}) for the issue tracker and latest draft updates.
+
+- [NDR 5.0]({{site.data.links.ndr5}})
+  - *Applicable to NIEM 5.0 and future 5.1 and 5.2-based schemas*
+  - Simplified release folder layout
+  - Changed character encoding of the XML schemas from "US-ASCII" to "UTF-8" and added schema-level attribute xml:lang for better international support
+  - Reestablished the structures:sequenceID attribute
+  - See more [5.0 key changes]({{site.data.pages.ndr5_updates}})
+- [NDR 4.0]({{site.data.links.ndr4}})
+  - *Applicable to NIEM 4.0, 4.1, and 4.2-based schemas*
+  - Added attribute structures:uri to support linked data
+  - Simplified underlying RDF representation
+  - See more [4.0 key changes]({{site.data.pages.ndr4_updates}})
+- [NDR 3.0]({{site.data.links.ndr3}})
+  - *Applicable to NIEM 3.0, 3.1, and 3.2-based schemas*
+  - Introduced normative schematron rules to enable consistent conformance validation
+  - Updated NIEM's approach to augmentations
+  - Replaced conformant indicator attribute with new conformance targets attribute
+  - Added support for local vocabularies
+  - Merged content and reference elements
+  - See more [3.0 key changes]({{site.data.pages.ndr3_updates}})
+- [NDR 1.3]({{site.data.links.ndr1_3}})
+
 ## NDR Conformance Targets
 
 The NDR describes and defines rules for four different kinds of documents:

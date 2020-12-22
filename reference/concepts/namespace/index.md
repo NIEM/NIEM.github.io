@@ -45,7 +45,7 @@ By convention, NIEM categorizes release namespaces.  This makes schemas easier t
 
 \* - External standards are sometimes made up of multiple namespaces.  The count above simply lists the number of external standards in NIEM, not the total number of namespaces they represent.
 
-- See the [4.0 NIEM release](https://www.github.com/niem/niem-releases/tree/niem-4.0) on GitHub to review the full set of schemas.
+- See the [5.0 NIEM release](https://www.github.com/niem/niem-releases/tree/niem-5.0) on GitHub to review the full set of schemas.
 - See the [training content pages](../../content) to get an overview of the content in these namespaces.
 
 An IEPD is typically made up of subsetted versions of NIEM release namespaces, and one or more local namespaces that contain user-defined properties and types.  These user-defined namespaces are often referred to as **extension** namespaces.
@@ -127,6 +127,10 @@ Version "1" represents that this is the first published version of the 4.0 Core 
 
 Each namespace must have a definition that describes what it is.
 
+### Language - [new in 5.0]
+
+Each namespace must define the language in which its components are defined.  The language for NIEM release schemas is `en-US`.
+
 ### Conformance Targets
 
 Each NIEM namespace must define one more conformance targets.  This explicitly identifies which rule sets should be applied for conformance validation.  A conformance target is identified by a URI.
@@ -140,6 +144,7 @@ VERSION should be the version of the NDR:
 
 - **3.0** - for schemas based on NDR 3.0 rules, like those in the NIEM 3.0, 3.1, and 3.2 releases.
 - **4.0** - for schemas based on NDR 4.0 rules, like those in the NIEM 4.0 release.
+- **5.0** - for schemas based on NDR 5.0 rules, like those in the NIEM 5.0 release.
 
 TARGET should be a target defined by the NDR:
 

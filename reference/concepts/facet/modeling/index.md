@@ -2,6 +2,19 @@
   title: Modeling Facets
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-14
+    - number: 9-13
+    - number: 10-17
+    - number: 10-18
+    - number: 11-8
+    - number: 11-9
+    sections:
+    - number: 11.1.2.3
+  - spec:
+    version: "4.0"
     rules:
     - number: 9-14
     - number: 9-13

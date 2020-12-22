@@ -16,6 +16,11 @@ hlva: /reference/specifications/hlva/
 conformance: /reference/specifications/conformance/
 code-lists: /reference/specifications/code-lists/
 
+# NDR changes
+
+ndr3_updates: /niem-releases/v3.0-technical-changes
+ndr4_updates: /niem-releases/v4.0-technical-changes
+ndr5_updates: /niem-releases/v5.0-technical-changes
 
 # Artifacts
 
@@ -24,3 +29,4 @@ iepd: /reference/artifacts/messages/iepd/
 iepd-lifecycle: /reference/artifacts/messages/iepd/lifecycle/
 iepd-starter-kit: /reference/artifacts/messages/iepd/iepd-starter-kit/
 releases: /reference/artifacts/releases/
+

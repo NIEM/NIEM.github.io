@@ -2,6 +2,26 @@
   title: Property Definitions
   short: Definitions
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 11-24
+    - number: 11-25
+    - number: 11-26
+    - number: 11-27
+    - number: 11-28
+    - number: 11-29
+    - number: 11-36
+    - number: 11-37
+    - number: 11-38
+    - number: 11-39
+    - number: 11-40
+    - number: 11-41
+    - number: 11-42
+    sections:
+    - number: 11.6
+  - spec:
+    version: "4.0"
     rules:
     - number: 11-23
     - number: 11-24

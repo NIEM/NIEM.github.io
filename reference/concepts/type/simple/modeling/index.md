@@ -2,6 +2,20 @@
   title: Modeling Simple Types
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-10
+    - number: 9-11
+    - number: 9-12
+    - number: 11-4
+    - number: 11-8
+    - number: 11-9
+    - number: 11-47
+    sections:
+    - number: 11.1.2
+  - spec:
+    version: "4.0"
     rules:
     - number: 9-10
     - number: 9-11

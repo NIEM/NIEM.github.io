@@ -2,6 +2,27 @@
   title: Modeling Adapters
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-8
+    - number: 10-9
+    - number: 10-10
+    - number: 10-11
+    - number: 10-12
+    - number: 10-13
+    - number: 10-14
+    - number: 10-15
+    - number: 10-16
+    - number: 10-71
+    - number: 10-72
+    - number: 10-73
+    - number: 10-74
+    - number: 10-75
+    sections:
+    - number: 10.2.3
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-8
     - number: 10-9

@@ -5,6 +5,15 @@
   - url: /reference/concepts/property/modeling/definitions/
   - url: /reference/concepts/property/modeling/table/
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 7-5
+    sections:
+    - number: 9.2
+    - number: 11.2
+  - spec:
+    version: "4.0"
     rules:
     - number: 7-5
     sections:

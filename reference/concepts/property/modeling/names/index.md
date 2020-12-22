@@ -2,6 +2,29 @@
   title: Property Names
   short: Names
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-44
+    - number: 10-46
+    - number: 10-47
+    - number: 10-49
+    - number: 10-50
+    - number: 10-53
+    - number: 10-54
+    - number: 10-55
+    - number: 10-56
+    - number: 10-57
+    - number: 10-58
+    - number: 10-59
+    - number: 10-60
+    - number: 10-61
+    - number: 10-62
+    - number: 10-63
+    sections:
+    - number: 10.8
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-44
     - number: 10-45

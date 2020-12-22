@@ -2,6 +2,27 @@
   title: Modeling Metadata
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-38
+    - number: 10-39
+    - number: 10-40
+    - number: 10-41
+    - number: 11-33
+    - number: 11-45
+    - number: 12-11
+    - number: 12-12
+    - number: 12-13
+    - number: 12-14
+    - number: 12-15
+    - number: 12-16
+    - number: 12-17
+    - number: 12-18
+    sections:
+    - number: 10.5
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-38
     - number: 10-39

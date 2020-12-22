@@ -2,6 +2,42 @@
   title: Namespaces in XML
   short: XML
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 4-1
+    - number: 4-2
+    - number: 4-3
+    - number: 4-4
+    - number: 4-5
+    - number: 4-6
+    - number: 7-1
+    - number: 7-2
+    - number: 7-3
+    - number: 7-4
+    - number: 9-75
+    - number: 9-76
+    - number: 9-77
+    - number: 9-78
+    - number: 9-79
+    - number: 9-80
+    - number: 9-81
+    - number: 9-86
+    - number: 9-87
+    - number: 9-88
+    - number: 9-89
+    - number: 9-90
+    - number: 9-91
+    - number: 9-92
+    - number: 9-93
+    - number: 9-94
+    - number: 9-95
+    - number: 9-96
+    - number: 9-97
+    - number: 10-45
+    - number: 11-30
+  - spec:
+    version: "4.0"
     rules:
     - number: 4-1
     - number: 4-2
@@ -39,14 +75,16 @@
 
 ## Full Template
 
-A template for a 4.0 NIEM namespace is provided below.
+A template for 4.0 and 5.0 NIEM namespaces are provided below.
 
 This should help give an overview of how a NIEM namespace looks in XML Schema, but each part will be broken out and explained in the section that follows.
 
-Placeholders appear in upper case.  A few common namespace prefixes and import statements for 4.0 are also provided, but the relative paths in the import statements will need to be adjusted based on local directory layouts.
+Placeholders appear in upper case.  A few common namespace prefixes and import statements for 4.0 and 5.0 are also provided, but the relative paths in the import statements will need to be adjusted based on local directory layouts.
 
 {: .tip}
 > In order to use extension schema rules rather than reference schema rules, like for an IEPD extension namespace, change the end of the ct:conformanceTargets value from `#ReferenceSchemaDocument` to `#ExtensionSchemaDocument`.
+
+**4.0 template**
 
 ```xml
 <?xml version="1.0" encoding="US-ASCII"?>
@@ -86,14 +124,55 @@ Placeholders appear in upper case.  A few common namespace prefixes and import s
 </xs:schema>
 ```
 
+**5.0 template**
+
+```xml
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema
+  targetNamespace="URI" version="VERSION" xml:lang="en-US"
+
+  xsi:schemaLocation="http://release.niem.gov/niem/appinfo/5.0/ ../utility/appinfo.xsd
+  http://release.niem.gov/niem/conformanceTargets/3.0/ ../utility/conformanceTargets.xsd"
+
+  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/#ReferenceSchemaDocument"
+
+  xmlns:PREFIX="URI"
+  xmlns:appinfo="http://release.niem.gov/niem/appinfo/5.0/"
+  xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/5.0/"
+  xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/5.0/"
+  xmlns:structures="http://release.niem.gov/niem/structures/5.0/"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <xs:annotation>
+    <xs:documentation>NAMESPACE_DEFINITION</xs:documentation>
+    <xs:appinfo>
+      <appinfo:LocalTerm term="TERM1" literal="LITERAL1"/>
+      <appinfo:LocalTerm term="TERM2" definition="DEFINITION2"/>
+    </xs:appinfo>
+  </xs:annotation>
+
+  <xs:import namespace="IMPORT_URI" schemaLocation="IMPORT_PATH"/>
+  <xs:import namespace="http://release.niem.gov/niem/niem-core/5.0/" schemaLocation="../niem-core.xsd"/>
+  <xs:import namespace="http://release.niem.gov/niem/structures/5.0/" schemaLocation="../utility/structures.xsd"/>
+
+  <!-- element, attribute, and type declarations -->
+
+</xs:schema>
+```
+
 {: .note}
 [Local terminology](../../local-term), [elements](../../property/element), [attributes](../../property/attribute), and [types](../../type), which appear in the template above, are described in their own sections.
 
 ## The Pieces
 
-### Target URI and Version
+### Target URI, Version, and Language
 
-The target namespace URI and version are declared as schema attributes:
+The target namespace URI, version, and language are declared as schema attributes:
+
+{:.note}
+> `xml:lang` is a newly-added requirement to NDR 5.0.
 
 ```xml
 targetNamespace="URI"
@@ -103,10 +182,14 @@ targetNamespace="URI"
 version="VERSION"
 ```
 
-Core 4.0 example:
+```xml
+xml:lang="LANG"
+```
+
+Core 5.0 example:
 
 ```xml
-<xs:schema targetNamespace="http://release.niem.gov/niem/niem-core/4.0/" version="1">
+<xs:schema targetNamespace="http://release.niem.gov/niem/niem-core/5.0/" version="1" xml:lang="en-US">
   ...
 </xs:schema>
 ```

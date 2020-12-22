@@ -2,6 +2,17 @@
   title: Local Terminology Modeling
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-52
+    - number: 10-53
+    - number: 10-76
+    - number: 10-77
+    sections:
+    - number: 10.9.2
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-51
     - number: 10-52

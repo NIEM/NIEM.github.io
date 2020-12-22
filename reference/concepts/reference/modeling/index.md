@@ -2,6 +2,20 @@
   title: Modeling References
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 12-3
+    - number: 12-4
+    - number: 12-5
+    - number: 12-6
+    - number: 12-7
+    - number: 12-8
+    - number: 12-9
+    sections:
+    - number: 12.2
+  - spec:
+    version: "4.0"
     rules:
     - number: 12-3
     - number: 12-4

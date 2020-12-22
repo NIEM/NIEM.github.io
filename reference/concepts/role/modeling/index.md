@@ -2,6 +2,17 @@
   title: Modeling Roles
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-3
+    - number: 10-4
+    - number: 10-5
+    - number: 10-6
+    sections:
+    - number: 10.2.2
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-3
     - number: 10-4

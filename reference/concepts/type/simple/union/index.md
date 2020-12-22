@@ -3,6 +3,18 @@
   icon: fa-plus
   description: A union type is a simple type that represents the combined set of allowable values from other simple types.
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-19
+    - number: 9-20
+    - number: 9-21
+    - number: 9-22
+    - number: 9-23
+    - number: 9-24
+    - number: 11-7
+  - spec:
+    version: "4.0"
     rules:
     - number: 9-19
     - number: 9-20

@@ -2,6 +2,22 @@
   title: Modeling Augmentation Elements
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-32
+    - number: 10-33
+    - number: 10-34
+    - number: 10-35
+    - number: 10-36
+    - number: 10-37
+    - number: 11-32
+    - number: 11-44
+    sections:
+    - number: 10.4.4
+    - number: 10.4.5
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-32
     - number: 10-33

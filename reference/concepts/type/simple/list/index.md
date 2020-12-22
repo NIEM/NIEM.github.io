@@ -3,6 +3,17 @@
   icon: fa-ellipsis-h
   description: A list type is a simple type that allows for values to be repeated, separated by a space.
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-15
+    - number: 9-16
+    - number: 9-17
+    - number: 9-18
+    - number: 11-5
+    - number: 11-6
+  - spec:
+    version: "4.0"
     rules:
     - number: 9-15
     - number: 9-16

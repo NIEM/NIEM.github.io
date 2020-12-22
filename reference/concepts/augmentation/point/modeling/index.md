@@ -2,6 +2,22 @@
   title: Modeling Augmentation Points
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-25
+    - number: 10-26
+    - number: 10-27
+    - number: 10-28
+    - number: 10-29
+    - number: 10-30
+    - number: 10-31
+    - number: 11-31
+    sections:
+    - number: 10.4.2
+    - number: 10.4.3
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-25
     - number: 10-26

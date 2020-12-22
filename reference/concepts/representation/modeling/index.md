@@ -2,12 +2,24 @@
   title: Modeling Representations
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-42
+    - number: 10-43
+    sections:
+    - number: 10.7
+  - spec:
+    version: "4.0"
     rules:
     - number: 10-42
     - number: 10-43
     sections:
     - number: 10.7
 ---
+
+- TOC
+{:toc}
 
 ## Type
 

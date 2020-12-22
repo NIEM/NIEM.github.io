@@ -2,6 +2,29 @@
   title: Modeling Attributes
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-48
+    - number: 9-49
+    - number: 9-50
+    - number: 9-51
+    - number: 9-52
+    - number: 9-53
+    - number: 9-54
+    - number: 9-55
+    - number: 9-56
+    - number: 9-57
+    - number: 9-58
+    - number: 10-49
+    - number: 11-10
+    - number: 11-18
+    - number: 11-19
+    sections:
+    - number: 9.2.3
+    - number: 11.2.3
+  - spec:
+    version: "4.0"
     rules:
     - number: 9-48
     - number: 9-49

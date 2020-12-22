@@ -2,6 +2,48 @@
   title: Modeling Types
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 7-5
+    - number: 9-1
+    - number: 9-2
+    - number: 9-3
+    - number: 9-4
+    - number: 9-5
+    - number: 9-6
+    - number: 9-7
+    - number: 9-8
+    - number: 9-9
+    - number: 10-44
+    - number: 10-45
+    - number: 10-46
+    - number: 10-47
+    - number: 10-48
+    - number: 10-50
+    - number: 10-51
+    - number: 10-54
+    - number: 10-55
+    - number: 10-56
+    - number: 10-60
+    - number: 10-61
+    - number: 10-62
+    - number: 10-63
+    - number: 11-1
+    - number: 11-2
+    - number: 11-3
+    - number: 11-24
+    - number: 11-25
+    - number: 11-26
+    - number: 11-27
+    - number: 11-28
+    - number: 11-29
+    - number: 11-30
+    sections:
+    - number: 9.1
+    - number: 11.1
+  - spec:
+    version: "4.0"
     rules:
     - number: 7-5
     - number: 9-1

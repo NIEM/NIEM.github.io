@@ -2,6 +2,29 @@
   title: Modeling Namespaces
   short: Modeling
   ndr:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-82
+    - number: 9-83
+    - number: 9-84
+    - number: 9-85
+    - number: 10-68
+    - number: 10-69
+    - number: 10-70
+    - number: 10-78
+    - number: 11-48
+    - number: 11-49
+    - number: 11-50
+    - number: 11-51
+    - number: 11-52
+    - number: 11-53
+    - number: 11-54
+    - number: 11-55
+    - number: 12-1
+    - number: 12-2
+  - spec:
+    version: "4.0"
     rules:
     - number: 9-82
     - number: 9-83
