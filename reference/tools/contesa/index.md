@@ -1,6 +1,7 @@
 ---
   title: Conformance Testing Assistant (ConTesA)
   short: ConTesA
+  icon: fa-check
   description: The Conformance Testing Assistant (ConTesA) enables users to test NIEM XML schemas against the automated rules from the NIEM Naming and Design Rules (NDR).
 ---
 

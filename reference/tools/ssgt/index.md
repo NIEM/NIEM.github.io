@@ -2,6 +2,7 @@
   title: Schema Subset Generation Tool (SSGT)
   short: SSGT
   description: The Schema Subset Generation Tool (SSGT) enables users to search and view the content of the NIEM model, and build XML Schema subsets for use in exchanges.
+  icon: fa-search
   links:
   - url: /reference/tools/ssgt/search/
   - url: /reference/tools/ssgt/results/

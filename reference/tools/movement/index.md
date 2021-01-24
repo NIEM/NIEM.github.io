@@ -1,6 +1,8 @@
 ---
   title: Movement
   short: Movement
+  description: Movement provides a user-friendly interface and smarter search results for the latest NIEM release. Movement is also open source so the community who inspired its creation can contribute to it.
+  icon: fa-search
   links:
   - url: /movement/
 ---

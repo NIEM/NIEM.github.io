@@ -34,6 +34,7 @@ An XML extension schema must declare an ExtensionSchemaDocument conformance targ
   ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument">
 <xs:schema>
 ```
+
 See the page about the [Conformance Target Attribute Specification]({{ site.data.pages.ctas | relative_url }}) for more details about how to declare a conformance target attribute, additional schema declarations that are required to support this attribute, and other conformance target values.
 
 ## Extension schemas in an IEPD
@@ -138,7 +139,7 @@ Make sure the schema declares a `ct:conformanceTargets` attribute, with the appr
 
 Make sure the schema is conformant to whatever conformance target(s) are declared in the previous step.
 
-Use the [Conformance Testing Assistant (ConTesA)]({{ site.data.pages.contesa | relative_url }}) or [Schematron validation in Oxygen XML Editor]({{ site.data.pages.ndr | append: "/oxygen-schematron" | relative_url }}) to check the extension schema against all automated NDR rules.
+Use the [Conformance Testing Assistant (ConTesA)]({{ site.data.pages.contesa | relative_url }}) or [Schematron validation in Oxygen XML Editor]({{ site.data.pages.oxygen_ndr | relative_url }}) to check the extension schema against all automated NDR rules.
 
 {:.note}
 > ConTesA cannot check extension schema conformance without the conformance target attribute specified.  This attribute tells ConTesA which rule set to use for validation.  Without this information, ConTesA will not run any tests.

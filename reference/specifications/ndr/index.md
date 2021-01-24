@@ -11,7 +11,6 @@ links:
   - url: /reference/specifications/ndr/set/
     group: target
   - url: /reference/specifications/ndr/ref-vs-ext/
-  - url: /reference/specifications/ndr/oxygen-schematron/
 ---
 
 The **[NIEM Naming and Design Rules (NDR)]({{ site.data.links.ndr }})** describes the  architecture of the NIEM data model and its representation in XML.  It specifies principles and enforceable rules for NIEM data components and schemas.
@@ -65,7 +64,7 @@ The NDR describes and defines rules for four different kinds of documents:
 In addition to the list above, the NDR defines a **`Instance document`** - An XML instance that is valid to a [Schema document set](set/).
 
 {:.note}
-> The **[REF vs EXT](ref-vs-ext/)** page is a very handy guide to compare the differences between the two primary rule sets.
+> The **[REF vs EXT](ref-vs-ext/)** page is a handy guide to compare the differences between the two primary rule sets.
 
 ## Conformance Validation
 
@@ -76,7 +75,7 @@ Schematron representations of NDR rules provide several key benefits.  There is 
 Schematron rules can also be used to validate XML documents.  This makes it *substantially* easier for users to test NIEM REF and EXT XML schemas against the NDR to see if those schemas conform to the given NDR conformance target.
 
 {:.note}
-> Two common ways to test NDR conformance are to use **[ConTesA]({{ site.data.pages.contesa | relative_url }})** or to use **[Schematron validation](oxygen-schematron/)** within Oxygen XML Editor.
+> Two common ways to test NDR conformance are to upload schemas to **[ConTesA]({{ site.data.pages.contesa | relative_url }})** (online tool) or use the **[Schematron validation]({{site.data.pages.oxygen_ndr | relative_url}})** functionality locally within Oxygen XML Editor.
 
 ## Rules
 
@@ -91,7 +90,7 @@ The image below shows a small excerpt from the NDR.
 {:.note}
 - Each rule shows which conformance targets they apply to.  In these cases, both rules apply to both REF and EXT schemas because they are labeled as `(REF, EXT)`
 - `Rule 10-47` is a descriptive, free-text rule.  Conformance for this rule must be checked manually.
-- `Rule 10-48` is written in Schematron and can be tested via [ConTesA]({{ site.data.pages.contesa | relative_url }}) or [Oxygen](oxygen-schematron/).
+- `Rule 10-48` is written in Schematron and can be tested via [ConTesA]({{ site.data.pages.contesa | relative_url }}) or [Oxygen]({{site.data.pages.oxygen_ndr | relative_url}}).
 
 {:.bordered}
 ![Example rules](assets/rule-examples.png)

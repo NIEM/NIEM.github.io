@@ -6,8 +6,8 @@ links:
 - url: /reference/artifacts/
 - url: /reference/content/
 - url: /reference/concepts/
-- url: /reference/tools/
 - url: /reference/specifications/
+- url: /reference/tools/
 - url: /reference/domain-modeling-guide/
 ---
 

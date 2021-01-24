@@ -1,20 +1,33 @@
 ---
   title: Tools
   icon: fa-wrench
-  description: NIEM tools provide support for reviewing NIEM content and developing NIEM domains and exchanges.
+  description: NIEM tools provide support for searching and exploring NIEM content and developing NIEM domains and exchanges.
   links:
   - url: /reference/tools/ssgt/
+    group: niem
   - url: /reference/tools/contesa/
+    group: niem
   - url: /reference/tools/movement/
+    group: niem
   - url: /reference/tools/migration/
-  - url: /reference/tools/tools-catalog/
+    group: niem
+  - url: /reference/tools/oxygen/
+    group: other
   todo:
   - Set standard table widths for consistency
 ---
 
 {{ page.description }}
 
+## NIEM program tools
+
 {: .note}
 > The following is information about the tools that are developed and supported by the NIEM program.  Information about community and commercially-available tools can be found in the **[NIEM Tools Catalog](https://www.niem.gov/tools-catalog)**.
 
-{% include page/intros.html url="/reference/tools/" %}
+{% assign links = page.links | where: "group", "niem" %}
+{% include icon-list.html links=links %}
+
+## NIEM support for other tools
+
+{% assign links = page.links | where: "group", "other" %}
+{% include icon-list.html links=links %}

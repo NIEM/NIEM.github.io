@@ -1,10 +1,9 @@
 ---
-title: Schematron validation in Oxygen XML Editor
-short: Oxygen and Schematron
+title: Check NDR Conformance Using Schematron Validation
+short: Check Conformance
+icon: fa-check
 description: Use Oxygen to test a XML schema for NDR conformance.
 ---
-
-[Oxygen XML Editor]({{ site.data.links.oxygen }}) is a commercial tool that provides a Schematron-validation capability that can be used to test NDR conformance of XML schemas.
 
 {:.note}
 > [ConTesA]({{ site.data.pages.contesa | relative_url }}) is a free web tool provided by the NIEM program that also may be used to check NDR conformance.
@@ -28,7 +27,7 @@ The Schematron file(s) will be needed each time you test NDR conformance.  The t
 
   - (Option 1) From the menu bar, click on Document > Validate > Validate with...
 
-  - (Option 2) Click the drop-down on the `Validate` (checkmark) button and select `Validate with...`, as shown below.
+  - (Option 2) Click the drop-down on the `Validate` (check mark) button and select `Validate with...`, as shown below.
 
       {:.bordered}
       ![Validate With Icon](assets/validate-with-icon.png)
