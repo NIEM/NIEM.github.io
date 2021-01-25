@@ -1,9 +1,10 @@
 
 // Adding 'Contents' headline to the TOC
-// #markdown-toc::before {
-//   content: "Contents";
-//   font-weight: bold;
-// }
+#markdown-toc:not(.no_header)::before  {
+  content: "Contents \00000a ";
+  font-weight: bold;
+  white-space: break-spaces;
+}
 
 #markdown-toc li {
   margin-left: 15px;

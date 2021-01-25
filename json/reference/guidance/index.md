@@ -47,7 +47,7 @@ or sending email to <niem-comments@lists.gatech.edu>.
 {:.no_toc}
 
 * This line is a placeholder to generate the table of contents
-{:toc}
+{:toc .no_header}
 
 
 <div id="body-start"></div>
@@ -302,7 +302,7 @@ of the document for the exchange. The developer populates the fields for which
 they have values and submits the document. All elements with null values are
 ignored during processing at the receiving end.
 
-The following JSON example is a JSON IEP template for the simple object model 
+The following JSON example is a JSON IEP template for the simple object model
 from [Section 1.5, above](#niem-xml-json).
 
 ```javascript
@@ -367,7 +367,7 @@ element). There is no content using the default (no namespace prefix) namespace.
 These are the namespace declarations in the sample IEP:
 
 ```xml
-<exch:CrashDriverInfo 
+<exch:CrashDriverInfo
     xmlns:exch="http://example.com/CrashDriver/1.0/"
     xmlns:j="http://release.niem.gov/niem/domains/jxdm/5.1/"
     xmlns:nc="http://release.niem.gov/niem/niem-core/3.0/"
@@ -393,7 +393,7 @@ leads to the definition of IRI roots as follows:
   namespace name.
 * Otherwise: concatenate(namespace name, &ldquo;#&rdquo;).
 
-For the QName `nc:Person` this yields the IRI `http://release.niem.gov/niem/niem-core/3.0/#Person`. 
+For the QName `nc:Person` this yields the IRI `http://release.niem.gov/niem/niem-core/3.0/#Person`.
 
 In addtion, we apply the following guidelines:
 
@@ -411,15 +411,15 @@ In addtion, we apply the following guidelines:
 
 Probably keeping:
 
-* structures:ObjectType, 
-* structures:AssociationType, 
+* structures:ObjectType,
+* structures:AssociationType,
 
 TBD:
 
-* structures:metadata, 
+* structures:metadata,
 * structures:relationshipMetadata
 -->
-  
+
 This yields the following `@context` entry:
 
 ```javascript
@@ -442,7 +442,7 @@ This yields the following `@context` entry:
 ### Document element (A.K.A. root element)
 
 Each element within the IEP is converted to a key in a
-[JSON-LD node object]({{page.json-ld-href}}#node-objects). 
+[JSON-LD node object]({{page.json-ld-href}}#node-objects).
 
 The root element (or document element) of a NIEM IEP is also converted to a node
 object. It is given the JSON key corresponding to the QName (XML qualified name)
@@ -580,7 +580,7 @@ rdf:value. You could define rdf:value to something in @context
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/3.0/#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "text" : "rdf:value"	
+    "text" : "rdf:value"
   },
   "nc:Date": { "text": "1893-05-04" }
 }
@@ -657,7 +657,7 @@ element]({{page.ndr-href}}#section_5.6.5.2), which specifies that
 non-empty simple values are mapped in this way.
 
 Obviously this will break if an element in the IEP has `rdf:value` as
-an attribute.  Fortunately, there is no good reason to do that in a NIEM IEP. 
+an attribute.  Fortunately, there is no good reason to do that in a NIEM IEP.
 
 ### Element with Simple Content and No Attributes
 
@@ -685,9 +685,9 @@ example, the representations of `nc:MeasureDecimalValue` and
 `exch:PersonFictionalCharacterIndicator` are:
 
 ```javascript
-  "nc:MeasureDecimalValue" : 9.7 
+  "nc:MeasureDecimalValue" : 9.7
 
-  "exch:PersonFictionalCharacterIndicator" : true 
+  "exch:PersonFictionalCharacterIndicator" : true
 ```
 
 ### Elements with empty and nilled content
@@ -871,11 +871,11 @@ representation of `j:DriverLicense` is
 ```javascript
 "j:DriverLicense" : {
   "j:DriverLicenseCardIdentification" : {
-      "nc:IdentificationID" : "A1234567" 
+      "nc:IdentificationID" : "A1234567"
   },
   "nc:ItemLengthMeasure" : {
       "nc:MeasureDecimalValue" : 9.7,
-      "nc:LengthUnitCode" : "CMT" 
+      "nc:LengthUnitCode" : "CMT"
   }
 }
 ```
@@ -889,7 +889,7 @@ schema includes the following element declaration:
   substitutionGroup="nc:PersonAugmentationPoint">
     <xs:annotation><xs:documentation>
         True if this person is a fictional character in a literary work.
-    </xs:documentation></xs:annotation>     
+    </xs:documentation></xs:annotation>
 </xs:element>
 ```
 
@@ -898,7 +898,7 @@ child element.
 
 ### Metadata
 
-<!-- TODO: do an easy button transform for metadata. put an "oh well" for relationshipMetadata --> 
+<!-- TODO: do an easy button transform for metadata. put an "oh well" for relationshipMetadata -->
 
 > We are still working on figuring out how to represent metadata in JSON-LD.
 > The NDR says to hang metadata on RDF statements, but it is not clear
@@ -924,7 +924,7 @@ something like example from [stack overflow](http://stackoverflow.com/questions/
   "subject": "j:Charge",
   "predicate": "structures:metadata",
   "object": { "@id": "j:JusticeMetadata" },
-  "j:CriminalInformationIndicator": true 
+  "j:CriminalInformationIndicator": true
 }
 ```
 
@@ -1043,7 +1043,7 @@ desirable, of course.
 "geo:LocationGeospatialPoint": {
   "@type": "rdf:XMLLiteral",
   "@value":
-    "<gml:Point gml:id=\"PT01\" 
+    "<gml:Point gml:id=\"PT01\"
                 srsName=\"urn:ogc:def:crs:EPSG::4326\">
          <gml:pos>51.835 -0.417</gml:pos>
      </gml:Point>"
@@ -1084,7 +1084,7 @@ significant. This means that the two following pieces of JSON-LD are
 equivalent:
 
 ```javascript
-{ 
+{
   "ns:key1": "value",
   "ns:key2": "value"
 }
@@ -1093,7 +1093,7 @@ equivalent:
 is equivalent to:
 
 ```javascript
-{ 
+{
   "ns:key2": "value",
   "ns:key1": "value"
 }
@@ -1104,7 +1104,7 @@ writer of the JSON-LD, or may be handled automatically by a JSON-LD library.
 
 ### Arrays may be omitted {#json-ld-array-optional}
 
-In JSON-LD, a single object is equivalent to an array that contains a 
+In JSON-LD, a single object is equivalent to an array that contains a
 single object. So, the two following pieces of JSON-LD are equivalent:
 
 ```javascript
@@ -1117,28 +1117,28 @@ is equivalent to:
 
 ```javascript
 {
-  "ns:key" : [ 
-    "value" 
+  "ns:key" : [
+    "value"
   ]
 }
 ```
 
 A system that is generating JSON-LD could optionally generate the
-second form instead of the first. 
+second form instead of the first.
 
 ## Additional guidance
 
 ### Expressing types
 
-The `@type` keyword is used to associate a type with a node. 
- The concept of a node type and a value type are different. A _node type_ specifies the type of 
- thing that is being described, like a Person, Location, or Event. A _value type_ specifies the 
- data type of a particular value, such as an integer, a floating point number, or a date. 
- Using `@type` keywords is optional. In general, the NIEM IEPD uses XML Schema to define node types 
+The `@type` keyword is used to associate a type with a node.
+ The concept of a node type and a value type are different. A _node type_ specifies the type of
+ thing that is being described, like a Person, Location, or Event. A _value type_ specifies the
+ data type of a particular value, such as an integer, a floating point number, or a date.
+ Using `@type` keywords is optional. In general, the NIEM IEPD uses XML Schema to define node types
  or to constrain value types so it would not be necessary for the JSON-LD to repeat all of that.
 
-If you need to specify type information for handling the iep data correctly, you can add it where needed. 
-This example specifies that the node type of Person in the iep is a NIEM PersonType and the 
+If you need to specify type information for handling the iep data correctly, you can add it where needed.
+This example specifies that the node type of Person in the iep is a NIEM PersonType and the
 value type of their PersonBirthDate is an xsd date type.
 
 ```javascript
@@ -1156,10 +1156,10 @@ value type of their PersonBirthDate is an xsd date type.
             "rdf:value": {
               "@value" : "1893-05-04",
               "@type"  : "xs:date"
-            }  
+            }
           }
         }
-      }  
+      }
     }
 ```
 
@@ -1193,7 +1193,7 @@ how to express typed values.
 If you have existing JSON data that you want to expose as JSON-LD, you can
 do that by supplying a separate JSON-LD context for it. This provides an
 upgrade path for developers who need to be able to continue to support regular JSON.
-You do this by adding a HTTP Link Header as specified by [RFC5988](#bibrfc5988) 
+You do this by adding a HTTP Link Header as specified by [RFC5988](#bibrfc5988)
 using the `http://www.w3.org/ns/json-ld#context` link relation.
 
 A separate context file could be served at URL `http://example.com/contexts/iepd-context.jsonld`:
@@ -1227,7 +1227,7 @@ this JSON data will convert it to use the full NIEM terms.
 ```javascript
 {
   "givenName": { "text" : "Peter" },
-  "additionalName": [ { "text": "Death"}, 
+  "additionalName": [ { "text": "Death"},
                       { "text" : "Bredon" } ],
   "familyName": { "text" : "Wimsey" }
 }
@@ -1246,10 +1246,10 @@ of how to implement this.
 
 ### NIEM Conformance
 
-1. Provide a normative specification on a way to generate a JSON-LD instance from a 
-NIEM-conformant XML schema and/or XML instance, and such a JSON-LD instance could be 
-NIEM-conformant. 
-1. Provide a normative specification on verifying NIEM-conformance of a JSON-LD instance to a 
+1. Provide a normative specification on a way to generate a JSON-LD instance from a
+NIEM-conformant XML schema and/or XML instance, and such a JSON-LD instance could be
+NIEM-conformant.
+1. Provide a normative specification on verifying NIEM-conformance of a JSON-LD instance to a
 NIEM-conformant XML schema
 
 ### Support for transforming between XML and JSON
@@ -1263,9 +1263,9 @@ Provide helper functions to check for repeatable elements.
 ## References
 
 * <a name="bibjsonld"></a>JSON-LD: Manu Sporny, Gregg Kellogg, Markus Lanthaler, Editors. 16 January 2014. W3C Recommendation. &ldquo;[A JSON-based Serialization for Linked Data]( https://www.w3.org/TR/json-ld/).&rdquo; Available from [https://www.w3.org/TR/json-ld/](https://www.w3.org/TR/json-ld/)
-* <a name="bibrdfconcepts"></a>RDF-Concepts: 
+* <a name="bibrdfconcepts"></a>RDF-Concepts:
 Richard Cyganiak, David Wood, Markus Lanthaler, Editors. 09 January 2014. W3C Proposed Recommendation.
-&ldquo;[RDF 1.1 Concepts and Abstract Syntax](https://www.w3.org/TR/2014/PR-rdf11-concepts-20140109/).&rdquo;  Available from 
+&ldquo;[RDF 1.1 Concepts and Abstract Syntax](https://www.w3.org/TR/2014/PR-rdf11-concepts-20140109/).&rdquo;  Available from
 [http://www.w3.org/TR/rdf11-concepts/](http://www.w3.org/TR/rdf11-concepts/)
 * <a name="rdfprimer2004"></a>RDF Primer: Frank Minola, Eric Miller,
   Brian McBride, Editors. 10 February 2004. W3C Recommendation. 10
