@@ -4,13 +4,16 @@ icon: fa-code
 description: NIEM XML follows a regular, well-defined syntax.  Snippets can be used to quickly and consistently fill in standard syntax, leaving users to fill in the blank or partially-filled in values for fields like name and definition.
 ---
 
-{{ page.description }}
+{{ page.description }}  Snippets are currently provided for NIEM XML constructs.
 
 ## Contents
 {:.no_toc}
 
 {:toc}
 - TOC
+
+{:.note}
+> Snippets are also available online for users who do not have the Oxygen XML Editor.  Go to the [Reference/Concepts](/reference/concepts/) section of this site, navigate to the appropriate property, type, or other NIEM concept, and copy/paste the relevant snippets from the XML or JSON sections to your editor of choice.
 
 ## Demo
 

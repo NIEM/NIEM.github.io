@@ -4,9 +4,6 @@
   description: A domain modeler creates and manages the content in a NIEM domain.
   links:
   - url: /reference/
-  - url: https://www.niem.gov/communities/create-a-domain
-    title: Create a Domain
-    description: Discover the NIEM Domain Onboarding Process on niem.gov.
   - url: https://www.niem.gov/communities/domain-governance
     title: Domain Governance
     description: Learn about governance committees and domain content management on niem.gov.
