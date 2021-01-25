@@ -36,6 +36,7 @@
 
     // Open the link in a new window
     link.attr('target', '_blank');
+    link.addClass("external");
   });
 }());
 
