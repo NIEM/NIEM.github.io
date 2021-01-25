@@ -23,6 +23,7 @@ Load NIEM snippets into Oxygen in order to easily insert common templates into N
 - Fill in the empty or partially-filled fields; update default values as necessary
 
 ![NIEM Oxygen snippet demo](./images/niem-snippet-demo.gif)
+{:.bordered}
 
 ## Available NIEM snippets
 
@@ -337,6 +338,7 @@ For more information on snippets in Oxygen, please their page about [Code Templa
 - Click the Import button near the bottom right of the panel and select the downloaded snippets file
 
 ![Importing snippets](images/import.png)
+{:.bordered}
 
 ### Use a snippet
 
@@ -350,6 +352,7 @@ For more information on snippets in Oxygen, please their page about [Code Templa
 - Fill in fields like names and definitions; adjust default values as needed
 
 ![Selecting a snippet](images/select.png)
+{:.bordered}
 
 ### Modify a snippet
 
@@ -361,12 +364,14 @@ For more information on snippets in Oxygen, please their page about [Code Templa
 - Click the "Edit" button
 
 ![View snippets](images/view.png)
+{:.bordered}
 
 - Modify the snippet name, description, code, or add a keyboard shortcut.
 - Notes:
   - The `${caret}` variable marks the position where the cursor will appear once the snippet is loaded.
 
 ![Edit a snippet](images/edit.png)
+{:.bordered}
 
 ### Reload snippets
 
