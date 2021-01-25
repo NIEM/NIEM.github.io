@@ -14,7 +14,7 @@ layout: 'default'
   {% endif %}
 {% endfor %}
 {% comment %}
-  Since we have the feed back button on the left now, we need to show the side navigation on every page. Until we take out the feed back button. 
+  Since we have the feed back button on the left now, we need to show the side navigation on every page. Until we take out the feed back button.
 {% endcomment %}
 {% assign section_has_children = true %}
 <div class="container">
@@ -29,6 +29,19 @@ layout: 'default'
         <div id="sidebar">
           {% include page/sidebar.html %}
         </div>
+
+        <button id="btn_scrollTop" class="btn btn-outline-secondary" onclick="$(document).scrollTop(0)" style="display: none;">
+          <span class="icon fa fa-angle-up"/>
+        </button>
       </div>
   </div>
 </div>
+
+
+<style>
+  #btn_scrollTop {
+    position: fixed;
+    top: 50%;
+    margin-left: 75px;
+  }
+</style>

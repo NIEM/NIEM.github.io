@@ -38,12 +38,32 @@
     link.attr('target', '_blank');
     link.addClass("external");
   });
+
+  // Initially hide the button to scroll to the top of the page
+  // $("#btn_scrollTop").hide();
+
+  $(window).bind("scroll", function() {
+    // Find the "Submit Feedback/Ideas" button in the sidebar
+    let btnFeedback = $(".feedback-btn")[0];
+
+    if (btnFeedback) {
+      // Show the scroll button if the feedback button is above the middle of the page
+      let bottomFeedback = btnFeedback.getBoundingClientRect().bottom;
+      let boolFeedbackAboveMiddle = bottomFeedback < $(window).height() / 2;
+      $("#btn_scrollTop").toggle(boolFeedbackAboveMiddle && window.scrollY > 0);
+    }
+    else {
+      // Default to show button if user has scrolled down
+      $("#btn_scrollTop").toggle(window.scrollY > 0);
+    }
+  })
+
 }());
 
 })(jQuery);
 
 function copyToClipboard() {
-  
+
   // Create a "hidden" textarea and append it to the body
   // -- Note: must use textarea.  Input boxes do not preserve line breaks
   let $temp = $("<textarea>");
@@ -59,4 +79,14 @@ function copyToClipboard() {
   document.execCommand("copy");
 
   $temp.remove();
+}
+
+function scrollTop() {
+  console.log("HIT SCROLL FUNCTION");
+  if (window.scrollY > 0) {
+    $("btn-scrollTop").show();
+  }
+  else {
+    $("btn-scrollTop").hide();
+  }
 }
