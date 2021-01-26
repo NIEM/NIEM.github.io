@@ -3,7 +3,7 @@
   short: Stats
   icon: fa-list-ol
   links:
-  - url: "/reference/artifacts/releases/release/stats/4.0/"
+  - url: /niem-releases/stats/4.0/
   right: [1,2,3]
   widths: ["110px", "150px", "150px", "150px"]
 ---

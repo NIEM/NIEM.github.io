@@ -2,10 +2,6 @@
   title: Release
   icon: fa-files-o
   description: A release is a versioned set of schemas and supporting artifacts published by the NIEM Management Office.  Release schemas include NIEM Core, domains and code tables.
-  links:
-  - url: /reference/artifacts/releases/release/location/
-  - url: /reference/artifacts/releases/release/history/
-  - url: /reference/artifacts/releases/release/stats/
 ---
 
 - TOC
@@ -45,6 +41,24 @@ Domains also have the option of distributing supplemental or replacement schemas
 NIEM has adopted the strategy of publishing annual releases in a **three-year cycle**: major - minor - minor.  A major release one year will be followed by minor releases the next two years.  This process has allowed NIEM to become more responsive to community needs while also providing a more predictable schedule.
 
 A key feature of NIEM releases is that they are **persistent**.  Information exchanges that are built based on NIEM will not break or become invalid just because NIEM publishes a new release.  Old releases will remain available.  The determination of if or when to update an exchange to use a newer version of NIEM is a business decision.  NIEM's release cycle does not dictate exchange development or updates.
+
+## Locations
+
+NIEM releases are now hosted on two sites.
+
+**release.niem.gov**
+
+NIEM releases have traditionally been posted to **<https://release.niem.gov/niem>**.
+
+- Target namespaces of release schemas will resolve to this site.
+
+**GitHub**
+
+Releases are now being also being posted to a GitHub repository at **<https://github.com/NIEM/NIEM-Releases>** for better developer support and release maintenance.
+
+- Click on the [tags](https://github.com/NIEM/NIEM-Releases/tags) link to switch between releases.
+- The package can be downloaded in full as a zip file by clicking on the green `Clone or download` button, and then clicking `Download ZIP`.
+- The issue tracker is also located here on GitHub at <https://github.com/NIEM/NIEM-Releases/issues>
 
 ## Feedback
 

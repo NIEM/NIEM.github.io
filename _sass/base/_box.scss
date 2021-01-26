@@ -15,6 +15,10 @@
   @extend .box;
 }
 
+.box ul {
+  padding-left: 10px;
+}
+
 ul.tip, ul.example, ul.note, ul.box, ul.quiz ul.toc {
   li {
     margin-left: 30px;

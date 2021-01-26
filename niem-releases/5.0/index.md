@@ -1,16 +1,17 @@
 ---
-title: NIEM 5.0 Technical Architecture Changes
-short: 5.0 Architecture Updates
-description: Highlights of the NIEM technical architecture from NIEM version 4.* to version 5.0.
+title: NIEM 5.0 Release (Current)
+short: NIEM 5.0 (current)
+description: An overview of the NIEM 5.0 release.
 ---
+
+{:toc}
+- TOC
+
+## Architectural Changes
 
 The changes to the NIEM technical architecture from NIEM version 4.* to version 5.0 are highlighted below.
 
-### Specifications
-
 - The NIEM Naming and Design Rules has been updated from [NDR 4.0]({{site.data.links.ndr4}}) to [NDR 5.0]({{site.data.links.ndr5}})
-
-### Major Changes
 
 - Simplified folder layout [(#140)](https://github.com/NIEM/NIEM-Releases/issues/140)
 
@@ -22,9 +23,15 @@ The changes to the NIEM technical architecture from NIEM version 4.* to version 
 
 - Reestablished the structures:sequenceID attribute [(#154)](https://github.com/NIEM/NIEM-Releases/issues/154)
 
+- Updated the conformance targets to correspond with the new 5.0 version of the NDR:
+
+## Naming and Design Rules (NDR) Specification Updates
+
+The following sections show some of the key changes between the 4.0 and 5.0 versions of the NDR.
+
 ### New conformance targets
 
-To specify that your NIEM XML schema should conform to the **NDR 5.0 reference rule set (REF)**, use the new NDR 5.0 REF conformance target:
+To specify that your NIEM XML schema should conform to the **NDR 5.0 reference rule set (REF)** (like release schemas), use the new NDR 5.0 REF conformance target:
 
 ```xml
 <xs:schema
@@ -33,10 +40,7 @@ To specify that your NIEM XML schema should conform to the **NDR 5.0 reference r
 </xs:schema>
 ```
 
-{:.note}
-> This is the conformance target used by NIEM release schemas.
-
-To specify that your NIEM XML schema should conform to the **NDR 5.0 extension rule set (EXT)**, use the new NDR 5.0 EXT conformance target:
+To specify that your NIEM XML schema should conform to the **NDR 5.0 extension rule set (EXT)** (like IEPD extension schemas), use the new NDR 5.0 EXT conformance target:
 
 ```xml
 <xs:schema
@@ -45,16 +49,9 @@ To specify that your NIEM XML schema should conform to the **NDR 5.0 extension r
 </xs:schema>
 ```
 
-{:.note}
-> This is the conformance target commonly used in IEPD extension schemas.
-
 See more about how to use [conformance targets]({{site.data.pages.ctas}}).
 
-### NDR rule differences
-
-The following sections show the key rule changes between the NDR 4.0 and NDR 5.0 rule sets.
-
-#### New 5.0 rules
+### New 5.0 rules
 
 {% assign rows = site.data.ndr["5_0"].diff-new-rules %}
 
@@ -73,7 +70,7 @@ Several new rules have been added to the NDR for 5.0:
 
 {% endfor %}
 
-#### Adjusted 5.0 rule numbers
+### Adjusted 5.0 rule numbers
 
 {% assign rows = site.data.ndr["5_0"].diff-rule-nums %}
 

@@ -5,40 +5,6 @@
   description: A timeline of NIEM releases and significant features.
 ---
 
-## Domain History
-
-The following is a list of NIEM releases along with their newly created domains.
-
-- **NIEM 1.0**
-  - Emergency Management (em)
-  - Immigration (im)
-  - Infrastructure Protection (ip)
-  - Intelligence (intel)
-  - International Trade (it)
-  - Justice (j)
-  - Screening (scr)
-- **NIEM 2.1**
-  - Chemical, Biological, Radiological, Nuclear (cbrn)
-  - Family Services (fs)
-  - Maritime (m)
-- **NIEM 3.0**
-  - Biometrics (biom)
-  - *Family Services (fs) became Children, Youth, and Family Services (cyfs)*
-  - *Military Operations (mo) originated as a domain update after the NIEM 3.0 release*
-- **NIEM 3.1**
-  - Human Services (hs)
-  - Military Operations (mo)
-- **NIEM 3.2**
-  - Surface Transportation (st)
-- **NIEM 4.0**
-  - Agriculture (ag)
-  - *Children, Youth, and Family Service (cyfs) content was adopted by Human Services (hs)*
-- **NIEM 4.1**
-- **NIEM 4.2**
-- **NIEM 5.0**
-  - Controlled Unclassified Information (cui) - *added as auxiliary content*
-  - Statistics content (stat) - *added as auxiliary content*
-
 ## Release History
 
 <table>
@@ -81,7 +47,7 @@ The following is a list of NIEM releases along with their newly created domains.
         <li>Additional domains added</li>
         <li>Basic layout:</li>
         <ul>
-          <li>Two central namespaces (univeral core and common core)</li>
+          <li>Two central namespaces (universal core and common core)</li>
           <li>multiple domain namespaces</li>
           <li>multiple code namespaces</li>
         </ul>
@@ -238,7 +204,7 @@ The following is a list of NIEM releases along with their newly created domains.
   </tr>
   <tr>
     <td><a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.0">NIEM 5.0</a></td>
-    <td>2018</td>
+    <td>2020</td>
     <td>12,149</td>
     <td>
       <ul>

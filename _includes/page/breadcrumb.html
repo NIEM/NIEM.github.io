@@ -6,14 +6,14 @@
   {% assign page_url_parts = page.url | split: '/' %}
   {% assign page_url_parts_size = page_url_parts.size %}
   {% for i in (0..page_url_parts_size) %}
-    {% assign working_url = '' %}    
+    {% assign working_url = '' %}
     {% for url_part in page_url_parts limit:i %}
       {% assign working_url = working_url | append: url_part | append: '/' %}
     {% endfor %}
     {% assign working_url = working_url %}
     {% for html_page in site.html_pages %}
       {% if html_page.url == working_url %}
-        {% assign html_page_title = html_page.title %}
+        {% assign html_page_title = html_page.short | default: html_page.title %}
         {% if i == 1 %}
           {% assign html_page_title = 'Home' %}
         {% endif %}
