@@ -1,0 +1,231 @@
+
+<details>
+  <summary>NDR conformance targets</summary>
+
+  <table class="table table-auto">
+    <tr>
+      <th>Conformance Target</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="/reference/specifications/ndr/#reference-schema-document-ref">REF</a></td>
+      <td>Reference schema document</td>
+    </tr>
+    <tr>
+      <td><a href="/reference/specifications/ndr/#extension-schema-document-ext">EXT</a></td>
+      <td>Extension schema document</td>
+    </tr>
+    <tr>
+      <td><a href="/reference/specifications/ndr/#schema-document-set-set">SET</a></td>
+      <td>Conformant schema document set</td>
+    </tr>
+    <tr>
+      <td><a href="/reference/specifications/ndr/#instance-document-ins">INS</a></td>
+      <td>Conformant instance XML document</td>
+    </tr>
+  </table>
+  <br/>
+</details>
+
+<!-- Search menu -->
+<div class="btn-toolbar justify-content-between row">
+
+  <div class="col-lg-6" style="padding-left: 0">
+    <!-- Search box -->
+    <div class="input-group" display="inline">
+      <span class="input-group-addon">
+        <icon class="fa fa-search"/>
+      </span>
+      <input type="text" id="search" class="form-control" onkeyup="search()" placeholder="Filter rules..."/>
+      <span class="input-group-btn">
+        <button class="btn btn-default" onclick="reset()">x</button>
+      </span>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <select id="selectStyle" class="form-control" onchange="updateFilter()">
+      <option value="all">All styles</option>
+      <option value="schematron">Schematron rules</option>
+      <option value="text">Text rules</option>
+    </select>
+  </div>
+
+  <div class="col-lg-3">
+    <select id="selectTargets" class="form-control" onchange="updateFilter()">
+      <option value="all">All targets</option>
+      <option value="REF">Includes REF</option>
+      <option value="EXT">Includes EXT</option>
+      <option value="SET">Includes SET</option>
+      <option value="INS">Includes INS</option>
+      <option value="ONLY REF">Only REF</option>
+      <option value="ONLY EXT">Only EXT</option>
+    </select>
+  </div>
+
+</div>
+
+<p id="ruleCount">{{ rules.size }} rules</p>
+
+<table id="tableRules">
+  <tr>
+    <th>Rule</th>
+    <th>Targets</th>
+    <th>Style</th>
+    <th>Title</th>
+    <th style="display: none;">Text</th>
+    <th>More</th>
+  </tr>
+
+  {% for rule in rules %}
+    <tr id="{{rule.number}}" class="rule">
+      <!-- Rule number with non-breaking hyphen to prevent column wrap -->
+      <td><a href="{{url}}#rule_{{rule.number}}">{{ rule.number | replace: "-", "&#8209;"}}</a></td>
+      <td id="applicability-{{rule.number}}">{{ rule.applicability | join: ", " }}</td>
+      <td id="style-{{rule.number}}">{{ rule.style }}</td>
+      <td>{{ rule.title }}</td>
+      <!-- Include rule text for easier search support -->
+      <td style="display: none;">{{ rule.text | replace: "<", "&lt;" }}</td>
+      <td><button onclick="$('.more_{{rule.number}}').toggle()">+</button></td>
+    </tr>
+    <tr class="more_{{rule.number}}" style="display: none;">
+      <!-- Expanded row section -->
+      <td colspan="5">
+        <p><a href="{{rule.section.link}}">Section {{ rule.section.name }}</a></p>
+        <p>Rule text:</p>
+        <p>{{ rule.text | replace: "<", "&lt;" }}</p>
+        <p>({{ rule.classification }})</p>
+      </td>
+    </tr>
+    <tr class="more_{{rule.number}}" style="display: none;">
+      <!-- Add extra hidden row to fix table striping -->
+    </tr>
+  {% endfor %}
+
+</table>
+
+<script>
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+      reset();
+    }
+  })
+
+  function search() {
+
+    let rows = $(".rule");
+
+    // Format input for case-insensitive and to allow spaces or *'s for wildcards
+    let inputTerms = $("#search").val().trim().toLowerCase().replace(/  /g, " ").split(" ");
+
+    let optionStyle = $("#selectStyle").val();
+    let optionTargets = $("#selectTargets").val();
+
+    let results = 0;
+
+    for (i=0; i<rows.length; i++) {
+
+      let match = true;
+      let ruleNum = $(rows[i]).attr("id");
+
+      // Search rules
+      if (inputTerms.length > 0) {
+        let rowText = rows[i].innerHTML.toLowerCase();
+
+        for (j=0; j<inputTerms.length; j++) {
+          if (!rowText.match(inputTerms[j])) {
+            match = false;
+            break;
+          }
+        }
+      }
+
+      // Filter rules on style (text|schematron)
+      if (optionStyle != "all") {
+        let ruleStyle = $("#style-" + ruleNum).html();
+        if (ruleStyle != optionStyle) {
+          match = false;
+        }
+      }
+
+      // Filter rules on conformance target
+      if (optionTargets != "all") {
+        let ruleTargets = $("#applicability-" + ruleNum).html() || "";
+
+        if (optionTargets == "ONLY REF" && ruleTargets == "REF") {
+          // This is a match
+        }
+        else if (optionTargets == "ONLY EXT" && ruleTargets == "EXT") {
+          // This is a match
+        }
+        else if (!ruleTargets.match(optionTargets)) {
+          match = false;
+        }
+      }
+
+      if (match) {
+        results++;
+      }
+      else {
+        rows[i].style.display = "none";
+      }
+
+    }
+
+    $("#ruleCount").text(`${results} of ${rows.length} rules`);
+
+    fixTableStriping();
+
+  }
+
+  function fixTableStriping() {
+
+    let stripe = true;
+    let visibleRows = $("tr:visible");
+
+    // Remove class to manually stripe the table
+    $("#tableRules").removeClass("table-striped");
+
+    // Remove any previous stripes and add stripes to alternating rows
+    visibleRows.each(function (index) {
+      $(this).css("background-color", "inherit");
+      if (index % 2 == 0) {
+        $(this).css("background-color", "#f9f9f9");
+      }
+    });
+
+  }
+
+  function updateFilter() {
+    removeFilter();
+    search();
+  }
+
+  function removeFilter() {
+
+    let rows = $(".rule");
+
+    for (i=0; i<rows.length; i++) {
+      rows[i].style.display = "table-row";
+    }
+
+    // Reset number of rules
+    $("#ruleCount").text(`${rows.length} rules`);
+
+  }
+
+  function reset() {
+
+    removeFilter();
+
+    // Reset search box
+    $("#search").val("");
+
+    // Reset select boxes
+    $("#selectStyle").val("all");
+    $("#selectTargets").val("all");
+
+  }
+
+</script>

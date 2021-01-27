@@ -1,8 +1,8 @@
 ---
 title: Reference vs. Extension Schema
-short: "Archive: 3.0"
+short: REF vs EXT
 icon: fa-comments-o
-description: The differences in NIEM Naming and Design Rules (NDR) 3.0 between reference (REF) and extension (EXT) schema documents.
+description: View the key rule differences between reference schema documents (REFs) and extension schema documents (EXTs) in NDR 3.0.
 ---
 
 {:.note}
