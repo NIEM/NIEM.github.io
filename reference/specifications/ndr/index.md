@@ -2,11 +2,11 @@
   title: NIEM Naming and Design Rules (NDR) Specification
   short: Naming and Design Rules (NDR)
   icon: fa-book
+  classID: NDR
   description: The NIEM Naming and Design Rules (NDR) describe the architecture of the NIEM data model and its representation in XML.  It specifies principles and enforceable rules for NIEM data components and schemas.
   links:
-    - url: /reference/specifications/ndr/5.0/
-    - url: /reference/specifications/ndr/4.0/
-    - url: /reference/specifications/ndr/3.0/
+    - url: /reference/specifications/ndr/changes/
+    - url: /reference/specifications/ndr/ref-vs-ext/
 ---
 
 The **[NIEM Naming and Design Rules (NDR)]({{ site.data.links.ndr }})** describes the  architecture of the NIEM data model and its representation in XML.  It specifies principles and enforceable rules for NIEM data components and schemas.
@@ -62,7 +62,9 @@ The NDR issue tracker and latest drafts are available on the [NIEM-NDR GitHub re
 
 The NDR describes and defines rules for four different kinds of documents, each identified by its own NDR conformance target.
 
-*Refer to the section about the [Conformance Targets Attribute Specification]({{ site.data.pages.ctas | relative_url }}) for more information, including how to specify a conformance target in a NIEM schema.*
+Refer to the section about the [Conformance Targets Attribute Specification]({{ site.data.pages.ctas | relative_url }}) for more information, including how to specify a conformance target in a NIEM schema.
+
+{% include specs/targets-table.html classID=page.classID %}
 
 ### Reference Schema Document (REF)
 
@@ -93,9 +95,9 @@ Extension schema documents (EXTs), like reference schema documents (REFs), are a
 - Can constrain cardinality for specific requirements
 - Can serve as the core schematic definitions of an IEPD.
 
-### Schema Document Set (SET)
+### Conformant Schema Document Set (SET)
 
-A Conformant Schema Document Set (SET) in a single conceptual XML schema that represents the sum of the rules and definitions defined within a collection of NIEM REF and EXT XML schemas, such as an IEPD.
+A Conformant Schema Document Set (SET) is a single conceptual XML schema that represents the sum of the rules and definitions defined within a collection of NIEM REF and EXT XML schemas, such as an IEPD.
 
 {:.features}
 - Conceptual artifact for collection of schemas
@@ -107,7 +109,7 @@ Because schema document sets are composed of NIEM-conformant schema documents (e
 
 A SET defines a schema that may be used to validate an instance document. This rule ensures that a SET under consideration contains definitions for everything that it references; it has everything necessary to do a complete validation of instance documents without any unresolved references.
 
-### Instance Document (INS)
+### Conformant Instance Document (INS)
 
 An Conformance Instance XML Document (INS) is an XML instance document which is valid against a conformant schema document set (SET).
 
@@ -143,3 +145,9 @@ The image below shows a small excerpt from the NDR.
 
 {:.bordered}
 ![Example rules](assets/rule-examples.png)
+
+## See more
+
+See more information about the Naming and Design Rules Specification:
+
+{% include icon-list.html links=page.links %}

@@ -1,0 +1,128 @@
+-
+    id: NDR-3.0
+    classID: NDR
+    customID: NDR
+    name: 'Naming and Design Rules'
+    version: '3.0'
+    url: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html'
+    year: '2014'
+    applicableReleases: 'NIEM 3.0 - NIEM 3.2'
+    resources: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.zip'
+    examples: null
+    status: null
+    ruleCount: 239
+    definitionCount: 54
+    selector: NDR-3_0
+    targetCount: 4
+-
+    id: NDR-4.0
+    classID: NDR
+    customID: NDR
+    name: 'Naming and Design Rules'
+    version: '4.0'
+    url: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html'
+    year: '2017'
+    applicableReleases: 'NIEM 4.0 - NIEM 4.2'
+    resources: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.zip'
+    examples: null
+    status: null
+    ruleCount: 255
+    definitionCount: 52
+    selector: NDR-4_0
+    targetCount: 4
+-
+    id: NDR-5.0
+    classID: NDR
+    customID: NDR
+    name: 'Naming and Design Rules'
+    version: '5.0'
+    url: 'https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html'
+    year: '2020'
+    applicableReleases: 'NIEM 5.0 - NIEM 5.2'
+    resources: 'https://niem.github.io/NIEM-NDR/v5.0/niem-ndr-v5.0.zip'
+    examples: null
+    status: current
+    ruleCount: 260
+    definitionCount: 52
+    selector: NDR-5_0
+    targetCount: 4
+-
+    id: MPD-3.0.1
+    classID: IEPD
+    customID: MPD
+    name: 'Model Package Description'
+    version: 3.0.1
+    url: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html'
+    year: '2015'
+    applicableReleases: 'NIEM 3.0 - NIEM 4.2'
+    resources: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/mpd-toolkit-3.0.zip'
+    examples: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/iepd-examples/'
+    status: current
+    ruleCount: 60
+    definitionCount: 44
+    selector: MPD-3_0_1
+    targetCount: 6
+-
+    id: IEPD-5.0beta1
+    classID: IEPD
+    customID: IEPD
+    name: 'Information Exchange Package Documentation'
+    version: 5.0beta1
+    url: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html'
+    year: '2015'
+    applicableReleases: null
+    resources: null
+    examples: null
+    status: draft
+    ruleCount: 58
+    definitionCount: 42
+    selector: IEPD-5_0beta1
+    targetCount: 7
+-
+    id: CodeLists-4.0
+    classID: CodeLists
+    customID: CodeLists
+    name: 'Code Lists Specification'
+    version: '4.0'
+    url: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html'
+    year: '2017'
+    applicableReleases: 'NIEM 4.0 - NIEM 4.2'
+    resources: null
+    examples: 'https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/niem/codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv'
+    status: current
+    ruleCount: 29
+    definitionCount: 56
+    selector: CodeLists-4_0
+    targetCount: 6
+-
+    id: CTAS-3.0
+    classID: CTAS
+    customID: CTAS
+    name: 'Conformance Targets Attribute Specification'
+    version: '3.0'
+    url: 'https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html'
+    year: '2014'
+    applicableReleases: 'NIEM 3.0 and later releases'
+    resources: null
+    examples: null
+    status: current
+    ruleCount: 6
+    definitionCount: 5
+    selector: CTAS-3_0
+    targetCount: 0
+-
+    id: JSON-4.0
+    classID: JSON
+    customID: JSON
+    name: 'NIEM JSON Specification'
+    version: '4.0'
+    url: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html'
+    year: '2020'
+    applicableReleases: 'NIEM 4.0 - NIEM 4.2'
+    resources: null
+    examples: null
+    status: current
+    ruleCount: 4
+    definitionCount: 23
+    selector: JSON-4_0
+    targetCount: 2

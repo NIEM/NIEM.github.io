@@ -1,0 +1,475 @@
+
+{% comment %}
+***
+Creates a page to browse, search, and filter NIEM specification rules.
+
+Optional parameters:
+- "classID": "NDR" | "IEPD" | "CodeLists" | "CTAS" | "JSON"
+***
+{% endcomment %}
+
+{% assign classID = include.classID | default: "NDR" %}
+
+{% assign classes = site.data.specs.niem-spec-classes %}
+{% assign specs = site.data.specs.niem-specs %}
+{% assign rules = site.data.specs.niem-rules %}
+{% assign targets = site.data.specs.niem-targets %}
+
+<!-- Specification info box -->
+<div id="specBox" class="box">
+
+  <div class="btn-toolbar row" style="display: inline;">
+
+    <!-- Specification name -->
+    <div class="input-group col-lg-6" style="display: inline-table;">
+      <span class="input-group-addon">
+        <icon class="fa fa-book"/>
+      </span>
+      <select id="selectClass" class="form-control">
+        {% for class in classes %}
+          <option value="{{class.id}}">{{ class.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <!-- Specification version and optional version status -->
+    <div class="input-group col-lg-3" style="display: inline-table; width: 25%;">
+      <select id="selectVersion" class="form-control user-select" style="width: auto;">
+        {% for spec in specs %}
+          <option class="class {{spec.classID}} {{spec.status}}" value="{{spec.id}}">
+            Version {{ spec.version }} {% if spec.status %} - {{ spec.status }}{% endif %}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+
+<!--
+    <button class="btn btn-default" style="margin-top: -25px;" onclick="$('.specDetails').toggle();">
+      <icon class="fa fa-fw fa-caret-right specDetails"/>
+      <icon class="fa fa-fw fa-caret-down specDetails" style="display: none;"/>
+    </button>
+ -->
+    <div style="display: inline;" onclick="$('.specDetails').toggle();">
+      <icon class="fa fa-2x fa-fw fa-caret-right text-muted specDetails"/>
+      <icon class="fa fa-2x fa-fw fa-caret-down text-muted specDetails" style="display: none;"/>
+    </div>
+
+  </div>
+
+  <div class="specDetails" style="display: none;">
+    <!-- Specification description -->
+    <p id="specDescription" style="margin-top: -10px;"/>
+
+    <p>
+      Published <span id="specPublished"/>
+      <span class="spacer"> | </span>
+      <a id="specURL" href="" target="_blank">View the specification</a>
+      <span class="spacer"> | </span>
+      <a id="specTutorial" href="">Learn more about the specification</a>
+      <span class="spacer"> | </span>
+      Use with <span id="specApplicableReleases"/>
+    </p>
+
+    <!-- Conformance targets table -->
+    {% include specs/targets-table.html %}
+  </div>
+
+  <hr/>
+
+  <!-- Search menu -->
+  <div class="btn-toolbar row">
+
+    <!-- Search box -->
+    <div class="col-lg-6">
+      <div class="input-group" style="padding-right: 10px;">
+        <span class="input-group-addon">
+          <icon class="fa fa-search"/>
+        </span>
+        <input type="text" id="search" class="form-control" onkeyup="updateResults()" placeholder="Search rules..."/>
+        <span class="input-group-btn">
+          <button class="btn btn-default" onclick="reset()">x</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-lg-6 user-select-boxes">
+      <!-- Target filter -->
+      <div class="input-group" style="width: 48%;">
+        <select id="selectTargets" class="form-control user-select">
+          <option value="all">All targets</option>
+
+          <!-- Set up special targets for the NDR -->
+          <option class="class NDR includes" value="REF">Includes REF</option>
+          <option class="class NDR includes" value="EXT">Includes EXT</option>
+          <option class="class NDR includes" value="SET">Includes SET</option>
+          <option class="class NDR includes" value="INS">Includes INS</option>
+          <option class="class NDR exact" value="ONLY REF">Only REF</option>
+          <option class="class NDR exact" value="ONLY EXT">Only EXT</option>
+
+          {% for target in targets %}
+            {% if target.classID != "NDR" %}
+              <!-- Targets for the rest of the specs -->
+              <option class="spec {{target.specificationSelector}} exact" value="{{target.targetCode}}">
+                {{target.targetCode}}
+              </option>
+            {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+
+      <!-- Style filter -->
+      <div class="input-group" style="width: 48%;">
+        <select id="selectStyle" class="form-control user-select">
+          <option value="all">All styles</option>
+          <option value="schematron">Schematron rules</option>
+          <option value="text">Text rules</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="text-muted" style="padding-bottom: 10px;">
+  <span id="ruleCount" style="float: left;"/>
+  <span id="selectedTarget" style="float: right;"></span>
+</div>
+
+<table id="tableRules">
+  <tr>
+    <th style="width: 60px;">Rule</th>
+    <th style="width: 110px;">Targets</th>
+    <th style="width: 110px;">Style</th>
+    <th>Title</th>
+    <th style="width: 60px;">More</th>
+  </tr>
+
+  {% for rule in rules %}
+
+    {% assign currentRuleClass = "" %}
+    {% assign displayStyle = ""%}
+
+    {% if rule.ruleCurrent == true %}
+      {% assign currentRuleClass = "currentRule" %}
+    {% else%}
+      {% assign displayStyle = "style='display: none;'" %}
+    {% endif %}
+
+    {% assign uid = rule.ruleUID | replace: ".", "_" %}
+
+    <tr id="{{uid}}" class="rule spec {{rule.specificationSelector}} style-{{rule.ruleStyle}} targets-{{rule.ruleTargets | join: '-'}}">
+
+      <!-- Rule number with non-breaking hyphen to prevent column wrap -->
+      <td><a href="{{rule.ruleURL}}">{{ rule.ruleNumber | replace: "-", "&#8209;"}}</a></td>
+
+      <!-- Rule targets -->
+      <td id="cell-{{uid}}-targets">{{ rule.ruleTargets | join: ", " }}</td>
+
+      <!-- Rule style (schematron vs text) -->
+      <td id="cell-{{uid}}-style">{{ rule.ruleStyle }}</td>
+
+      <!-- Rule title -->
+      <td id="cell-{{uid}}-title">{{ rule.ruleTitle }}</td>
+
+      <!-- More button -->
+      <td style="text-align: center;">
+        <button onclick="$('.more_{{uid}}').toggle()">
+          <span class="more_{{uid}}">+</span>
+          <span class="more_{{uid}}" style="display: none;">-</span>
+        </button>
+      </td>
+
+    </tr>
+
+    <tr class="more_{{uid}}" style="display: none;">
+
+      <!-- Expanded row section with additional rule information -->
+      <td colspan="5">
+
+        <!-- Section name -->
+        <p><a href="{{rule.sectionURL}}">{{ rule.sectionLabel }}</a></p>
+
+        <!-- Rule text -->
+        <p>Rule text:</p>
+        <p id="p-{{uid}}-text">{{ rule.ruleText | replace: "<", "&lt;" }}</p>
+
+        <!-- Rule classification -->
+        {% if rule.ruleClassification != "" %}
+          <p>({{ rule.ruleClassification }})</p>
+        {% endif %}
+
+      </td>
+
+    </tr>
+
+  {% endfor %}
+
+</table>
+
+<script>
+
+  let specificationSelector;
+  let classID;
+
+  let classes = parseLiquidJSONArray(`{{ site.data.specs.niem-spec-classes }}`);
+  let specs = parseLiquidJSONArray(`{{ site.data.specs.niem-specs }}`);
+  let targets = parseLiquidJSONArray(`{{ site.data.specs.niem-targets }}`);
+
+  $(document).ready( function() {
+    // Initialize specification class
+    $("#selectClass").val("{{classID}}").change();
+  });
+
+  $(document).keydown( function(event) {
+    // Clear search input, filter selections, and show all rules on the Escape key
+    if (event.key === "Escape") {
+      reset();
+    }
+  })
+
+  $("#selectClass").change( function() {
+
+    classID = this.value || "NDR";
+
+    $(`.class`).hide();
+    $(`.class.${classID}`).show();
+
+    // After changing specification class, select the current version of the spec
+    $(`#selectVersion option.${classID}.current`).prop("selected", true).change();
+
+  });
+
+  $("#selectVersion").change( function() {
+
+    let spec = specs.find( spec => spec.id == this.value );
+    let specClass = classes.find( specClass => specClass.id == classID )
+    specificationSelector = spec.selector;
+
+    // Load spec description box
+    $("#specURL").attr("href", spec.url);
+    $("#specDescription").text(specClass.description);
+    $("#specPublished").text(spec.year);
+    $("#specApplicableReleases").text((spec.applicableReleases || "null").replace("null", "pending"));
+    $("#specTutorial").attr("href", specClass.tutorialRelativeURL);
+
+    // Update conformance targets table and select targets
+    $(`.spec`).hide();
+    $(`.spec.${spec.selector}`).show();
+
+    // Disable version select box if only one version available
+    $("#selectVersion").prop("disabled", specClass.versionCount == 1);
+
+    // Reset user filters
+    $("#selectTargets").prop("selectedIndex", 0);
+    $("#selectStyle").prop("selectedIndex", 0);
+
+    finalPass();
+
+  });
+
+  $("#search,#selectTargets,#selectStyle").change( function() {
+    updateResults();
+  });
+
+  function search() {
+
+    // Grab user search terms
+    let inputTerms = $("#search").val().trim().toLowerCase().replace(/  /g, " ").split(" ");
+
+    if (inputTerms.length == 0) return;
+
+    $(".rule:visible").each( function(i, row) {
+
+      let match = true;
+      let ruleUID = $(row).attr("id");
+
+      // Merge the rule title and text into a single string
+      let ruleTitle = $(row).find(`#cell-${ruleUID}-title`).html();
+      let ruleText = $(`#p-${ruleUID}-text`).text();
+
+      let ruleInfo =  (ruleTitle + " " + ruleText).toLowerCase();
+
+      // Search rules
+      for (term of inputTerms) {
+        if (!ruleInfo.match(term)) {
+          $(row).hide();
+          break;
+        }
+      }
+
+    });
+
+    finalPass();
+
+  }
+
+  function updateResults() {
+
+    // Remove rule filter for currently selected specification
+    $(`.rule.${specificationSelector}`).show();
+
+
+    // Hide any expanded rows
+    $("tr[class*=more_]").hide();
+
+    // Update filters
+    filterStyles();
+    filterTargets();
+
+    // Run search
+    search();
+
+    // Clean up and format
+    finalPass();
+
+  }
+
+  function filterStyles() {
+    let selectedStyle = $("#selectStyle").val();
+
+    if (selectedStyle != "all") {
+      $(`.rule:not('.style-${selectedStyle}')`).hide();
+    }
+  }
+
+  function filterTargets() {
+
+    let selectedTargets = $("#selectTargets").val().replace("ONLY ", "");
+    let classes = $("select[id='selectTargets'] :selected").attr("class");
+
+
+    if (selectedTargets == "all") {
+      return;
+    }
+    else if (classes.includes("exact")) {
+      // Hide rule targets that are not an exact match for the selected target
+      $(`.rule:not('.targets-${selectedTargets}')`).hide();
+    }
+    else {
+      // Supports remaining NDR "Includes ..." targets
+      $(`.rule:not(:contains(${selectedTargets}))`).hide();
+    }
+
+  }
+
+  function reset() {
+
+    // Reset rule rows
+    $(`.spec.${specificationSelector}`).show();
+
+    // Reset search and select boxes
+    $("#search").val("");
+    $("#selectStyle").val("all");
+    $("#selectTargets").val("all");
+
+    finalPass();
+
+  }
+
+  function finalPass() {
+    fixTableStriping();
+    updateRuleCountLabel();
+    updateTargetLabel();
+  }
+
+  function updateRuleCountLabel() {
+    let resultCount = $(".rule:visible").length;
+    let ruleCount = $(`.rule.${specificationSelector}`).length;
+
+    let label = (resultCount != ruleCount) ? `${resultCount} of ` : "";
+    label += `${ruleCount} rules`;
+
+    $("#ruleCount").text(label);
+  }
+
+  function updateTargetLabel() {
+
+    let targetCode = $("#selectTargets").val().replace("ONLY ", "");
+
+    if (targetCode == "all") {
+      // Reset text since no target has been chosen
+      $("#selectedTarget").text("");
+    }
+    else {
+      let target = targets.find( target => {
+        return target.specificationSelector == specificationSelector && target.targetCode == targetCode;
+      });
+      $("#selectedTarget").text(`[${targetCode}: ${target.targetName}]`);
+    }
+
+  }
+
+  function fixTableStriping() {
+    $("#tableRules tr").removeClass("odd").removeClass("even");
+    $("#tableRules tr:visible:odd").addClass("odd");
+    $("#tableRules tr:visible:even").addClass("even");
+  }
+
+  function parseLiquidJSONArray(string) {
+    let json = `[${string}]`.replace(/=>/g, ":").replace(/nil/g, "null").replace(/}{/g, "},{");
+    return JSON.parse(json);
+  }
+
+</script>
+
+<style>
+
+  #selectClass, #selectVersion {
+    font-weight: bold;
+    /* border-radius: 4px;   Wasn't being added to the version box so apply manually */
+  }
+
+  #specDetails {
+    padding-left: 8px;
+  }
+
+  .spacer {
+    padding: 0 12px;
+  }
+
+  div.box {
+    margin-bottom: 10px;
+  }
+
+  div.btn-toolbar {
+    margin-left: 0;
+  }
+
+  div.col-lg-6, div.col-lg-3 {
+    padding-left: 0;
+    display: inline-table;
+    padding-right: 10px !important;
+    margin: -10px 0 0 0;
+  }
+
+  div.input-group {
+    /* display: inline-table !important; */
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  div.user-select-boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-select {
+    border-radius: 4px !important;
+    padding: 0 20px 0 10px !important;
+  }
+
+  hr {
+    margin: 0;
+    padding: 12px 0;
+    vertical-align: middle;
+  }
+
+  tr.even {
+    background-color: #f9f9f9 !important;
+  }
+
+  tr.odd {
+    background-color: white !important;
+  }
+
+</style>

@@ -1,27 +1,24 @@
 ---
-title: NIEM Model Package Description (MPD) Specification
-short: Model Package Description (MPD)
-icon: fa-book
-description:  The NIEM Model Package Description (MPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages.  It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.
+  title: NIEM Model Package Description (MPD) Specification
+  short: Model Package Description (MPD)
+  icon: fa-book
+  classID: IEPD
+  description:  The NIEM Model Package Description (MPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages.  It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.
 ---
 
 The **[NIEM Model Package Description (MPD) Specification]({{ site.data.links.mpd_spec }})** specifies normative rules and non-normative guidance for building NIEM information exchange messages.
 
+- TOC
+{:toc}
+
 {:.note}
-> The MPD Specification is currently out of date.  It targets NIEM 3.0, but the information still applies to the NIEM 4.x series of releases.  Use the corresponding NDR version 4.0 as appropriate.  Development of an updated NIEM message specification is in progress.
+> The MPD Specification is currently out of date.  It targets NIEM 3.0, but the information still applies to the NIEM 4.x series of releases.  Use the corresponding NDR version 4.0 as appropriate.  Development of an updated NIEM message specification is in progress for 5.0.
 
 ## Conformance Targets
 
 The MPD Specification includes the following conformance targets:
 
-| Conformance Target | Code | Description |
-| ------------------ | ---- | ----------- |
-| Model Package Description | WF-MPD | A set of cohesive XML schema documents and other supporting files that represent one or more reusable or implementable XML information models. |
-| Information Exchange Package Description | IEPD | A special kind of MPD that defines the content, structure, and meaning of an information exchange message. |
-| Information Exchange Package | IEP | An information exchange message, as an XML instance document. |
-| Schema Document Subset | Schema-subset | A set of schemas, corresponding to a set of full reference schemas, that have been reduced and constrained to include only the files and components needed for an information exchange. |
-| MPD catalog document | MPD-catalog | A XML file that contains metadata about the MPD, including descriptive information and an index of the files it contains. |
-| XML catalog document | XML-catalog | A XML file that maps namespaces to file locations. |
+{% include specs/targets-table.html classID=page.classID %}
 
 ## Artifacts
 
@@ -43,7 +40,7 @@ The MPD Specification describes the following artifacts:
 | External Schema Document | A schema included in a MPD that does not conform to NIEM.  Content from external schemas must be accessed via NIEM [adapters](../../concepts/adapter). |
 | Constraint-Schema Document Set | A set of schemas that define additional constraints outside of what is permitted in a regular NIEM-conformant schema. Used as second-pass validation for IEPs (IEPs must first validate to the original reference or subset schemas). |
 
-## Required Document Artifacts
+### Required Document Artifacts
 
 {% assign mpdCatalogPage = site.pages
     | where: "url", "/reference/artifacts/message/mpd-catalog/" | first %}
@@ -63,7 +60,7 @@ The MPD Specification describes the following artifacts:
 | Sample instances | A sample instance is an example of the message, with actual or example data.  These can be very helpful for implementers of the IEPD. |
 | [Conformance Report / Assertion]({{ conformanceReportPage.url | relative_url }}) | {{ conformanceReportPage.description }} |
 
-## Optional Artifacts
+### Optional Artifacts
 
 Aside from the required artifacts, MPD content is relatively flexible. A variety of other optional documentation files may be incorporated into an MPD. When applicable, these may include (but are not limited to) files that describe or explain:
 

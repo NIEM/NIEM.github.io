@@ -7,8 +7,11 @@
 
 The **[NIEM Conformance Specification]({{ site.data.links.conformance }})** introduces NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply.  It describes the benefits of conformance, and refers to sources of information, tools, and help.
 
+- TOC
+{:toc}
+
 {:.note}
-> The Conformance Specification is currently out of date, with references to NIEM 3.0 and NDR 3.0.  The information is still valid, but the 4.0 version of the [NDR]({{ site.data.pages.ndr | relative_url }}) should be used where appropriate.
+> The Conformance Specification is currently out of date, with references to NIEM 3.0 and NDR 3.0.  The information is still valid, but the 4.0 or 5.0 version of the [NDR]({{ site.data.pages.ndr | relative_url }}) should be used where appropriate.
 
 The term *conformance* is often used very broadly, but it has a very specific meaning within NIEM.  Artifacts, like schemas and IEPDs, can conform to a specific conformance target.
 

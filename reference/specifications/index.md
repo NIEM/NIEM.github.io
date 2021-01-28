@@ -4,8 +4,7 @@ short: Specifications
 icon: fa-book
 description: NIEM specifications provide rules and guidance in order to design consistent and well-defined information exchanges.
 links:
-- url: /reference/specifications/normative-rules/
-  group: other
+- url: /reference/specifications/rule-browser/
 - url: /reference/specifications/ndr/
   group: specs
 - url: /reference/specifications/mpd/
@@ -27,7 +26,8 @@ deferred:
 
 {{ page.description }}
 
-See the [Normative Rules](normative-rules) section for a compiled list of the normative rules from NIEM specifications, including the NDR and the MPD Specification.
+{:.note}
+> View and search rules from the specifications below in the **[NIEM Specification Rule Browser](./rule-browser)**.
 
 {% assign specs = page.links | where: "group", "specs" %}
 {% include icon-list.html links=specs %}

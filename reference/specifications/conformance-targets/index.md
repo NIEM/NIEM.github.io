@@ -1,11 +1,15 @@
 ---
-title: NIEM Conformance Targets Attribute Specification
-short: Conformance Targets Attribute
-icon: fa-book
-description: The Conformance Targets Attribute Specification (CTAS) defines how NIEM XML documents classify what kind of artifact they are through the use of a conformance targets attribute.
+  title: NIEM Conformance Targets Attribute Specification
+  short: Conformance Targets Attribute
+  icon: fa-book
+  classID: CTAS
+  description: The Conformance Targets Attribute Specification (CTAS) defines how NIEM XML documents classify what kind of artifact they are through the use of a conformance targets attribute.
 ---
 
 The **[NIEM Conformance Targets Attribute Specification (CTAS)]({{site.data.links.ctas}})** defines how NIEM XML documents classify what kind of artifact they are.  This is not always obvious by inspection, so making this information explicit is important; it also supports automated conformance validation by NIEM tools.
+
+- TOC
+{:toc}
 
 {:.note}
 > Conformance targets exist in NIEM XML, starting with NDR 3.0 and the 3.0 release.  They do not currently have a counterpart in NIEM JSON.
@@ -66,7 +70,7 @@ This is demonstrated in the example below from a 4.0 release schema:
 
 ## Common Conformance Targets
 
-### NDR 3.0 Reference Schema rules
+**NDR 3.0 Reference Schema rules**
 
 Conformance targets attribute used by:
 
@@ -77,7 +81,7 @@ Conformance targets attribute used by:
 ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ReferenceSchemaDocument"
 ```
 
-### NDR 3.0 Extension Schema rules
+**NDR 3.0 Extension Schema rules**
 
 Conformance targets attribute used by:
 
@@ -87,7 +91,7 @@ Conformance targets attribute used by:
 ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument"
 ```
 
-### NDR 4.0 Reference Schema rules
+**NDR 4.0 Reference Schema rules**
 
 Conformance targets attribute used by:
 
@@ -98,7 +102,7 @@ Conformance targets attribute used by:
 ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument"
 ```
 
-### NDR 4.0 Extension Schema rules
+**NDR 4.0 Extension Schema rules**
 
 Conformance targets attribute used by:
 
@@ -106,4 +110,25 @@ Conformance targets attribute used by:
 
 ```sh
 ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument"
+```
+
+**NDR 5.0 Reference Schema rules**
+
+Conformance targets attribute used by:
+
+- any conformant schema from the 5.0-series of releases
+- IEPD extension schema that follows the stricter NDR 5.0 rule set
+
+```sh
+ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/#ReferenceSchemaDocument"
+```
+
+**NDR 5.0 Extension Schema rules**
+
+Conformance targets attribute used by:
+
+- IEPD extension schema that follows the more relaxed NDR 5.0 rule set
+
+```sh
+ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/#ExtensionSchemaDocument"
 ```

@@ -35,8 +35,8 @@ conformance_targets: https://reference.niem.gov/niem/specification/conformance-t
 
 hlva: https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/high-level-version-architecture-3.0.html
 
-mpd: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/
 mpd_spec: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html
+mpd_spec_folder: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/
 
 mpd_catalog_xsd: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/xsd-mpd-catalog/mpd-catalog-3.0.xsd
 

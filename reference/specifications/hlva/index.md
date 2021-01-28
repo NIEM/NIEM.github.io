@@ -7,6 +7,9 @@ description:  The NIEM High-Level Version Architecture (HLVA) Specification iden
 
 The **[NIEM High-Level Version Architecture (HLVA) Specification]({{ site.data.links.hlva }})** identifies the processes, artifacts, and responsibilities required to produce new releases of the NIEM model.  It also establishes a regular release cycle for predictable and manageable NIEM updates.
 
+- TOC
+{:toc}
+
 ## Objectives
 
 The HLVA was designed to meet the following objectives:

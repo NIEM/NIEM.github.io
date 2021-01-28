@@ -58,6 +58,12 @@ blockquote {
   background-color: rgba($pale-turquoise, 0.4);
 }
 
+.table-striped tr:nth-child(even) {
+  // Alternate white rows in the table, not transparent
+  // This prevents blue-striped rows when the table is located inside of a formatted box
+  background-color: white;
+}
+
 ul {
   // Resetting default from 40px
   // -webkit-padding-start: 15px;
@@ -412,9 +418,14 @@ ul{
 }
 .page-header {
   margin: 0 0 20px 0;
+  font-size: 40px;
 }
 
 // a.external::after {
 //   font-family: "FontAwesome";
 //   content: " \f08e";
 // }
+
+h2 {
+  margin-bottom: 15px;;
+}

@@ -1,0 +1,47 @@
+
+{% comment %}
+  ***
+  Creates a table with conformance target information
+
+  Required parameters
+  "targets" - YAML file with the conformance target information
+
+  Example call:
+  {% include specs/targets-table.html  targets=site.data.specs.ndr-targets %}
+  ***
+{% endcomment %}
+
+{% assign allTargets = site.data.specs.niem-targets %}
+
+{% if include.classID %}
+  {% assign targets = allTargets | where: "classID", include.classID | where: "targetStatus", "current" %}
+{% elsif include.specificationID %}
+  {% assign targets = allTargets | where: "specificationID", include.specificationID %}
+{% else %}
+  {% assign targets = allTargets %}
+{% endif %}
+
+<table>
+  <tr>
+    <th style="display: none;">ID</th>
+    <th style="width: 90px;">Code</th>
+    <th style="width: 25%;">Conformance Target</th>
+    <th>Description</th>
+    <th style="width: 55px;">Spec</th>
+  </tr>
+  {% for target in targets %}
+  <tr class="target class {{target.classID}} spec {{target.specificationSelector}}">
+    <td id="target-{{target.targetCode}}-id" style="display: none;">{{target.targetCode}}</td>
+    <td>
+      {% if target.targetTutorial %}
+        <a href="{{target.targetTutorial}}">{{target.targetCode}}</a>
+      {% else %}
+        {{target.targetCode}}
+      {% endif %}
+    </td>
+    <td id="target-{{target.targetCode}}-name">{{target.targetName}}</td>
+    <td id="target-{{target.targetCode}}-description">{{target.targetDescription}}</td>
+    <td><a href="{{target.targetURL}}">Link</a></td>
+  </tr>
+  {% endfor%}
+</table>

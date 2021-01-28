@@ -6,9 +6,6 @@ description: NIEM XML follows a regular, well-defined syntax.  Snippets can be u
 
 {{ page.description }}  Snippets are currently provided for NIEM XML constructs.
 
-## Contents
-{:.no_toc}
-
 {:toc}
 - TOC
 
@@ -331,7 +328,7 @@ The following snippets provide additional NIEM templates.
 
 ## Using NIEM snippets with Oxygen
 
-For more information on snippets in Oxygen, please their page about [Code Templates](https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/code-templates-x-editing2.html).
+For more information on snippets in Oxygen, please see their page about [Code Templates](https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/code-templates-x-editing2.html).
 
 ### Import snippets
 
