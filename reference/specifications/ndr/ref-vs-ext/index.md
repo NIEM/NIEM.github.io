@@ -12,7 +12,7 @@ The [NIEM Naming and Design Rules version 5.0](https://reference.niem.gov/niem/s
 
 ## Background
 
-Beginning with NDR 3.0, NIEM XML schemas must declare themselves as either a reference schema document or an extension schema document through the use of the schema-level [conformance targets attribute]({{ site.data.pages.ctas }}).
+Beginning with NDR 3.0, NIEM XML schemas must declare themselves as either a reference schema document or an extension schema document through the use of the schema-level [conformance targets attribute]({{ site.data.pages.ctas | relative_url }}).
 
 - [Reference schema document (REF)](https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#section_4.1.1): A schema document that is intended to provide the authoritative definitions of broadly reusable schema components. NIEM release schemas are REFs because they are intended for wide reuse.
 

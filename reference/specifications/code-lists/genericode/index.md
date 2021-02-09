@@ -6,7 +6,7 @@ title: Genericode
 {:toc}
 
 Genericode is a XML representation for code lists defined by OASIS in 2007. The
-[NIEM Code Lists Specification](../niem-code-lists-specification) leverages
+[NIEM Code Lists Specification]({{ site.data.links.code_list_spec | relative_url }}) leverages
 Genericode as a method of representing code lists in NIEM information exchange
 specifications.
 

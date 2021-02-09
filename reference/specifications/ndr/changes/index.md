@@ -92,6 +92,8 @@ Due to the addition of the new rules outlined above, inserted throughout the spe
 
 </details>
 
+---
+
 ## NDR 4.0 Changes
 
 The NIEM Naming and Design Rules (NDR) specification was updated from [version 3.0]({{site.data.links.ndr3}}) to [version 4.0]({{site.data.links.ndr4}}) in 2017, corresponding with the NIEM 4.0 major release.
@@ -152,6 +154,8 @@ The NIEM Naming and Design Rules (NDR) specification was updated from [version 3
 - Explicitly allow structures namespace to be subset
 
 ([See full diffs](https://github.com/NIEM/NIEM-NDR/compare/niem-ndr-3.0...niem-ndr-4.0#diff-ba7b4561c4e855f66491aec616812509))
+
+---
 
 ## NDR 3.0 Changes
 

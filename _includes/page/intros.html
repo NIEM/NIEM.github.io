@@ -9,22 +9,19 @@
 
 {% assign thisPage = site.pages | where: "url", include.url | first %}
 {% assign links = thisPage.links %}
-{% assign headerLevel = "h2" %}
 
 {% if include.group %}
   {% assign links = links | where: "group", include.group %}
-  {% assign headerLevel = "h3" %}
 {% endif %}
 
 {% for link in links %}
 
   {% assign linkPage = site.pages | where: "url", link.url | first %}
 
-  <{{ headerLevel }}>{{ linkPage.title }}</{{ headerLevel }}>
+  <h3>{{ linkPage.title }}</h3>
 
   {% comment %}
-    {{ linkPage.except }} isn't grabbing anything, so manually splitting the page on
-    the excerpt separator.
+    {{ linkPage.excerpt }} isn't grabbing anything, so manually splitting the page on the excerpt separator.
   {% endcomment %}
 
   {% assign page_array = linkPage.content | split: site.excerpt_separator %}
@@ -33,8 +30,11 @@
     Use description front matter (if available) if page does not have an excerpt
   {% endcomment %}
 
+{% capture newline %}
+{% endcapture %}
+
   {% if page_array.size >= 2 %}
-    {% assign excerpt = page_array | first %}
+    {% assign excerpt = page_array | first | replace: "{:toc}", "" | replace: "- TOC", "" | replace: "## ", "### " %}
   {% else %}
     {% assign excerpt = linkPage.description %}
   {% endif %}

@@ -34,7 +34,7 @@
     <td id="target-{{target.targetCode}}-id" style="display: none;">{{target.targetCode}}</td>
     <td>
       {% if target.targetTutorial %}
-        <a href="{{target.targetTutorial}}">{{target.targetCode}}</a>
+        <a href="{{ target.targetTutorial | relative_url }}">{{target.targetCode}}</a>
       {% else %}
         {{target.targetCode}}
       {% endif %}

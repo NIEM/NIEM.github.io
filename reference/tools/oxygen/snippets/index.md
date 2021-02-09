@@ -10,7 +10,7 @@ description: NIEM XML follows a regular, well-defined syntax.  Snippets can be u
 - TOC
 
 {:.note}
-> Snippets are also available online for users who do not have the Oxygen XML Editor.  Go to the [Reference/Concepts](/reference/concepts/) section of this site, navigate to the appropriate property, type, or other NIEM concept, and copy/paste the relevant snippets from the XML or JSON sections to your editor of choice.
+> Snippets are also available online for users who do not have the Oxygen XML Editor.  Go to the [Reference/Concepts]({{ "/reference/concepts/" | relative_url }}) section of this site, navigate to the appropriate property, type, or other NIEM concept, and copy/paste the relevant snippets from the XML or JSON sections to your editor of choice.
 
 ## Demo
 

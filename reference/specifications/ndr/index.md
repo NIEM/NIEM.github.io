@@ -37,14 +37,14 @@ The NDR issue tracker and latest drafts are available on the [NIEM-NDR GitHub re
 - Simplified release folder layout
 - Changed character encoding of the XML schemas from "US-ASCII" to "UTF-8" and added schema-level attribute xml:lang for better international support
 - Reestablished the structures:sequenceID attribute
-- See more [5.0 key changes]({{site.data.pages.ndr5_updates}})
+- See more [5.0 key changes]({{ site.data.pages.ndr5_updates | relative_url }})
 
 **[NDR 4.0]({{site.data.links.ndr4}})**
 
 - *Applicable to NIEM 4.0, 4.1, and 4.2-based schemas*
 - Added attribute structures:uri to support linked data
 - Simplified underlying RDF representation
-- See more [4.0 key changes]({{site.data.pages.ndr4_updates}})
+- See more [4.0 key changes]({{ site.data.pages.ndr4_updates | relative_url }})
 
 **[NDR 3.0]({{site.data.links.ndr3}})**
 
@@ -54,7 +54,7 @@ The NDR issue tracker and latest drafts are available on the [NIEM-NDR GitHub re
 - Replaced conformant indicator attribute with new conformance targets attribute
 - Added support for local vocabularies
 - Merged content and reference elements
-- See more [3.0 key changes]({{site.data.pages.ndr3_updates}})
+- See more [3.0 key changes]({{ site.data.pages.ndr3_updates | relative_url }})
 
 **[NDR 1.3]({{site.data.links.ndr1_3}})**
 
@@ -77,7 +77,7 @@ The conformance rules for reference schema documents are generally stricter than
 - Does not restrict other data definitions.
 - Does not use XML Schema's restriction mechanism `xs:restriction`.
 - Does not use schema groups such as `xs:choice` or `xs:any`.
-- Requires [augmentation points](/reference/concepts/augmentation/point/) to support additional content from other namespaces
+- Requires [augmentation points]({{ "/reference/concepts/augmentation/point/" | relative_url }}) to support additional content from other namespaces
 - Typically contains data components with relaxed cardinality (0 to unbounded)
 - Made as regular and simple as possible.
 
@@ -90,7 +90,7 @@ Extension schema documents (EXTs), like reference schema documents (REFs), are a
 {:.features}
 - Defines package-specific data elements and models.
 - Extends vocabulary above and beyond that available to REFs.
-- Can [augment](/reference/concepts/augmentation/element/) existing NIEM types with additional content.
+- Can [augment]({{ "/reference/concepts/augmentation/element/" | relative_url }}) existing NIEM types with additional content.
 - Can limit the behavior of existing NIEM data types through schema `xs:restriction`.
 - Can constrain cardinality for specific requirements
 - Can serve as the core schematic definitions of an IEPD.

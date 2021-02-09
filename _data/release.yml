@@ -1,0 +1,29 @@
+
+tag: niem-5.0
+label: NIEM 5.0
+description: NIEM 5.0
+feedbackDue:
+
+
+# Field description:
+# ----
+# tag:         The actual GitHub tag from the NIEM/NIEM-Releases repo.
+#              Used for links to the schemas, README, and zip file.  Wrong tag means broken links.
+# label:       Short label
+# description: Longer label, with abbreviations spelled out
+# feedbackDue: Free text date for which feedback is requested by.  Leave blank for a final release.
+
+
+# Example 1, draft release info:
+# ----
+# tag: niem-5.0rc6
+# label: NIEM 5.0-rc6
+# description: NIEM 5.0 release candidate 6
+# feedbackDue: Tuesday, October 26, 2020
+
+# Example 2, final release info:
+# ----
+# tag: niem-5.0
+# label: NIEM 5.0
+# description: NIEM 5.0
+# feedbackDue:

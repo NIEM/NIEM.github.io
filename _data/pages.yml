@@ -18,9 +18,9 @@ code-lists: /reference/specifications/code-lists/
 
 # NDR changes
 
-ndr3_updates: /niem-releases/v3.0-technical-changes
-ndr4_updates: /niem-releases/v4.0-technical-changes
-ndr5_updates: /niem-releases/v5.0-technical-changes
+ndr3_updates: /niem-releases/3.0/#specification-updates
+ndr4_updates: /niem-releases/4.0/#specification-updates
+ndr5_updates: /niem-releases/5.0/#specification-updates
 
 # Artifacts
 

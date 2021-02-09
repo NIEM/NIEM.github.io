@@ -1,19 +1,63 @@
 ---
-title: NIEM 5.0 Release (Current)
-short: NIEM 5.0 (current)
-description: An overview of the NIEM 5.0 release.
+  title: NIEM 5.0 Release (Current)
+  short: NIEM 5.0 (current)
+  description: An overview of the NIEM 5.0 release.
+  right: [1,2,3]
+  widths: ["110px", "150px", "150px", "150px"]
 ---
+
+NIEM 5.0 is a major release, published December 2020.  This is the most current NIEM release.
 
 {:toc}
 - TOC
 
-## Architectural Changes
+## Resources
 
-The changes to the NIEM technical architecture from NIEM version 4.* to version 5.0 are highlighted below.
+- Download the full [release package](https://github.com/NIEM/NIEM-Releases/archive/niem-5.0.zip) as a zip file
 
-- The NIEM Naming and Design Rules has been updated from [NDR 4.0]({{site.data.links.ndr4}}) to [NDR 5.0]({{site.data.links.ndr5}})
+- View schemas and documentation on [release.niem.gov](https://release.niem.gov/niem/5.0) or [GitHub](https://github.com/NIEM/NIEM-Releases/tree/niem-5.0)
 
-- Simplified folder layout [(#140)](https://github.com/NIEM/NIEM-Releases/issues/140)
+- Use online tools to explore the contents of NIEM 5.0:
+
+  - [Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs
+
+  - [Movement](https://beta.movement.niem.gov) - search elements
+
+  - [Model Viewer](https://niem.github.io/model/) - browse namespaces and their contents
+
+- Download the [component spreadsheet](https://release.niem.gov/niem/5.0/xlsx/niem-5.0.xlsx) or the [code spreadsheet](https://release.niem.gov/niem/5.0/xlsx/niem-5.0-codes.xlsx) to explore the contents of NIEM 5.0 in Excel
+
+## Highlights
+
+{:.box}
+- Added **Controlled Unclassified Information** (cui) as auxiliary content
+
+- Added **Statistics** (stat) as auxiliary content
+
+- Added additional Public Health Emergency Operations Center (PH EOC) requirements to the **Emergency Management** domain
+
+- Moved Core code elements to code namespaces to break the import dependencies, allowing easy updates in minor releases
+
+- Harmonized FBI code sets across the NCIC, NDEx, UCR, and Justice namespaces
+
+- Replaced the full GML external standard with a simplified NIEM profile
+
+- Re-established the structures:sequenceID attribute allowing explicit ordering of repeated elements
+
+- Simplified the folder layout in the release package, removing extra nesting and versions.
+
+See the [NIEM 5.0 readme](https://github.com/NIEM/NIEM-Releases/blob/niem-5.0/README.md) for a detailed list of changes.
+
+## Specification updates
+
+### Naming and Design Rules (NDR) 5.0
+
+The NIEM **Naming and Design Rules (NDR)** specification was updated from [version 4.0]({{site.data.links.ndr4}}) to [version 5.0]({{site.data.links.ndr5}}).
+
+Key changes include:
+
+{:.box}
+- Simplified folder layout in the release package, removing version folders and unnecessary nesting [(#140)](https://github.com/NIEM/NIEM-Releases/issues/140)
 
 - Changed the character encoding of the XML schemas from "US-ASCII" to "UTF-8" for better international support [(#125)](https://github.com/NIEM/NIEM-Releases/issues/125)
 
@@ -23,74 +67,61 @@ The changes to the NIEM technical architecture from NIEM version 4.* to version 
 
 - Reestablished the structures:sequenceID attribute [(#154)](https://github.com/NIEM/NIEM-Releases/issues/154)
 
-- Updated the conformance targets to correspond with the new 5.0 version of the NDR:
+- Updated the conformance targets to correspond with the new 5.0 version of the NDR
 
-## Naming and Design Rules (NDR) Specification Updates
+See the [NDR 5.0 changes]({{ "/reference/specifications/ndr/changes/#ndr-50-changes" | relative_url }}) for more.
 
-The following sections show some of the key changes between the 4.0 and 5.0 versions of the NDR.
+## Stats
 
-### New conformance targets
+The following are some basic statistics for the 5.0 release.
 
-To specify that your NIEM XML schema should conform to the **NDR 5.0 reference rule set (REF)** (like release schemas), use the new NDR 5.0 REF conformance target:
+NIEM 5.0 has 14 domains and 2 auxiliary namespaces.
 
-```xml
-<xs:schema
-  xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
-  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/#ReferenceSchemaDocument">
-</xs:schema>
-```
+**Summary Counts**
 
-To specify that your NIEM XML schema should conform to the **NDR 5.0 extension rule set (EXT)** (like IEPD extension schemas), use the new NDR 5.0 EXT conformance target:
+The table below breaks down property, type, and code counts by namespace group.
 
-```xml
-<xs:schema
-  xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
-  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/#ExtensionSchemaDocument">
-</xs:schema>
-```
+- The "Core" group represents a single namespace (NIEM Core).
+- The "Domain" and "Code Set" groups combine the counts from multiple namespaces and are broken out in the subsequent tables.
 
-See more about how to use [conformance targets]({{site.data.pages.ctas}}).
+{% include csv-table.html
+      csv=site.data.model.stats.5_0.summary
+      classes="table-auto"
+      right=page.right
+      widths=page.widths
+%}
 
-### New 5.0 rules
+**Domain Counts**
 
-{% assign rows = site.data.ndr["5_0"].diff-new-rules %}
+The counts in the following table represent the namespaces that make up the "Domain" group in the summary table above.
 
-Several new rules have been added to the NDR for 5.0:
+{% include csv-table.html
+      csv=site.data.model.stats.5_0.domains
+      classes="table-auto"
+      right=page.right
+      widths=page.widths
+%}
 
-{% for row in rows %}
+**Auxiliary Counts**
 
-<details style="padding-bottom: 10px;">
-  <summary>
-    <a href="{{site.data.links.ndr5}}#rule_{{row.Num}}">Rule {{row.Num}}</a>
-    <span style="font-weight: lighter;"> ({{ row.Targets}})</span>: {{ row.Title }}
-  </summary>
+The counts in the following table represent the namespaces that make up the "Auxiliary" group in the summary table above.
 
-  <p style="padding-left: 20px; padding-top: 10px">{{ row.Text }}</p>
-</details>
+{% include csv-table.html
+      csv=site.data.model.stats.5_0.auxiliary
+      classes="table-auto"
+      right=page.right
+      widths=page.widths
+%}
 
-{% endfor %}
+**Code Counts**
 
-### Adjusted 5.0 rule numbers
+The counts in the following table represent the namespaces that make up the "Code Set" group in the summary table above.
 
-{% assign rows = site.data.ndr["5_0"].diff-rule-nums %}
-
-Due to the insertion into the NDR 5.0 of the new rules outlined above, rule numbers for {{rows.size}} rules from the 4.0 NDR have shifted.  The table below shows how the NDR 4.0 and 5.0 rule numbers correspond:
-
-<table>
-  <tr>
-    <th>NDR&nbsp;4.0</th>
-    <th>NDR&nbsp;5.0</th>
-    <th>Applicability</th>
-    <th>Title</th>
-  </tr>
-  {% for row in rows %}
-  <tr>
-    <td><a href="{{site.data.links.ndr4}}#rule_{{row.OldRule}}">{{row.OldRule}}</a></td>
-    <td><a href="{{site.data.links.ndr5}}#rule_{{row.NewRule}}">{{row.NewRule}}</a></td>
-    <td>{{row.Targets}}</td>
-    <td>{{row.Title}}</td>
-  </tr>
-  {% endfor %}
-</table>
+{% include csv-table.html
+      csv=site.data.model.stats.5_0.codes
+      classes="table-auto"
+      right=page.right
+      widths=page.widths
+%}
 
 <br/>
