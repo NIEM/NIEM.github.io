@@ -1,0 +1,71 @@
+
+{% assign classID = include.classID %}
+{% assign link = include.link %}
+
+{% assign class = site.data.specs.niem-spec-classes | where: "id", classID | first %}
+{% assign specs = site.data.specs.niem-specs | where: "classID", classID | sort: "id" | reverse %}
+
+<div style="padding-bottom: 4px;">
+
+<a href="{{ link | relative_url }}">
+  <span class="icon fa-stack fa-2x">
+    <i class="fa fa-square fa-stack-2x"></i>
+    <i class="fa fa-book fa-stack-1x"></i>
+  </span>
+  <span class="content">{{ class.name }}</span>
+</a>
+
+<p>{{ class.description }}</p>
+
+{% if class.note and class.note != blank %}
+  <p><strong>Note: </strong>{{ class.note }}</p>
+{% endif %}
+
+{% if class.repo %}
+  <p class="text-muted">
+    Submit a <a href="{{class.repo}}/issues/new">new issue</a>,
+    view <a href="{{class.repo}}/issues">all issues</a>,
+    {% if class.issueTracker %} track <a href="{{class.issueTracker}}">issue status</a>, {% endif %}
+    or go to the <a href="{{class.repo}}">GitHub repo</a> for this specification.
+  </p>
+{% endif %}
+
+<div class="box">
+
+<p><strong>Available versions</strong></p>
+
+<ul>
+  {% for spec in specs %}
+
+    {% assign status = "" %}
+    {% assign changes = "" %}
+    {% assign useWith = "" %}
+
+    {% if spec.specStatus == "current" %}
+      {% assign status = "<strong>[Current version]</strong>" %}
+    {% elsif spec.specStatus == "draft" %}
+      {% assign status = "<strong>[Latest draft]</strong>" %}
+    {% endif %}
+
+    {% if spec.changeHistory %}
+      {% assign changes = " See <a href='" | append: spec.changeHistory | append: "'>changes</a>." %}
+    {% endif %}
+
+    {% if spec.specApplicableReleases %}
+      {% assign useWith = "Use with " | append: spec.specApplicableReleases | append: ". " %}
+    {% endif %}
+
+    <li>
+      <span><strong><a href="{{spec.specURL}}">Version {{ spec.specVersion }}</a></strong>, </span>
+      <span>published {{ spec.specYear }}.</span>
+      <span class="text-muted">{{ useWith }}</span>
+      <span>{{ status }} {{ changes }}</span>
+    </li>
+
+  {% endfor %}
+
+</ul>
+
+</div>
+
+</div>

@@ -10,8 +10,9 @@
     tutorialRelativeURL: /reference/specifications/ndr/
     changeHistory: null
     description: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
-    versionCount: 3
-    versionNumbers: '3.0, 4.0, 5.0'
+    note: ""
+    versionCount: 4
+    versionNumbers: '1.3, 3.0, 4.0, 5.0'
 -
     id: IEPD
     name: 'Information Exchange Package Documentation'
@@ -23,9 +24,10 @@
     tutorial: 'https://niem.github.io/reference/specifications/mpd/'
     tutorialRelativeURL: /reference/specifications/mpd/
     changeHistory: null
-    description: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.  Prior to NIEM 5.0, this specification was known as the NIEM Model Package Description (MPD) Specification.'
+    description: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.'
+    note: 'Prior to NIEM 5.0, this specification was known as the NIEM Model Package Description (MPD) Specification.'
     versionCount: 2
-    versionNumbers: '3.0.1, 5.0beta1'
+    versionNumbers: '3.0.1, 5.0 beta1'
 -
     id: CodeLists
     name: 'Code Lists Specification'
@@ -38,8 +40,24 @@
     tutorialRelativeURL: /reference/specifications/code-lists/
     changeHistory: null
     description: 'The Code Lists Specification adds support for new capabilities of NIEM code lists beyond the basic enumeration representations provided by XML and JSON schema.  Key features include the definition of codes in CSV or Genericode files, dynamic code lists via run-time binding, and multi-column code table support.'
+    note: ""
     versionCount: 1
     versionNumbers: '4.0'
+-
+    id: Conformance
+    name: 'NIEM Conformance Specification'
+    repo: 'https://github.com/NIEM/NIEM-Conformance-Spec'
+    landingPage: 'https://niem.github.io/NIEM-Conformance-Spec/'
+    issueList: 'https://github.com/NIEM/NIEM-Conformance-Spec/issues'
+    issueSubmit: 'https://github.com/NIEM/NIEM-Conformance-Spec/issues/new'
+    issueTracker: null
+    tutorial: 'https://niem.github.io/reference/specifications/conformance/'
+    tutorialRelativeURL: /reference/specifications/conformance/
+    changeHistory: null
+    description: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
+    note: ""
+    versionCount: 3
+    versionNumbers: '1.0, 3.0, 5.0 beta1'
 -
     id: CTAS
     name: 'Conformance Targets Attribute Specification'
@@ -52,6 +70,7 @@
     tutorialRelativeURL: /reference/specifications/conformance-targets/
     changeHistory: null
     description: 'The Conformance Targets Attribute Specification (CTAS) defines how NIEM XML documents indicate what kind of artifact they are through the use of a conformance targets attribute.'
+    note: ""
     versionCount: 1
     versionNumbers: '3.0'
 -
@@ -65,5 +84,19 @@
     tutorial: null
     changeHistory: null
     description: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
+    note: ""
     versionCount: 1
     versionNumbers: '4.0'
+-
+    id: HLVA
+    name: 'NIEM High-Level Version Architecture Specification'
+    repo: null
+    landingPage: null
+    issueTracker: null
+    tutorial: 'https://niem.github.io/reference/specifications/hlva/'
+    tutorialRelativeURL: /reference/specifications/hlva/
+    changeHistory: null
+    description: 'The NIEM High-Level Version Architecture (HLVA) Specification identifies the processes, artifacts, and responsibilities required to produce new releases of the NIEM model. It also establishes a regular release cycle for predictable and manageable NIEM updates.'
+    note: ""
+    versionCount: 1
+    versionNumbers: '3.0'

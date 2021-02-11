@@ -37,7 +37,7 @@ NIEM [release packages](../reference/artifacts/releases/) are available on both 
 Please submit feedback to the NIEM releases [issue tracker](https://github.com/NIEM/NIEM-Releases/issues).
 
 {:.note}
-> The **[NIEM-Specifications](https://niem.github.io/NIEM-Specifications/)** landing page has the latest news about the drafts available for review, plus quick links to other specification resources.
+> The **[NIEM-Specifications]({{ "/reference/specifications/" | relative_url }})** landing page has the latest news about the drafts available for review, plus quick links to other specification resources.
 
 {% assign tag = site.data.release.tag %}
 

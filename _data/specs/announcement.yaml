@@ -1,0 +1,5 @@
+
+# To remove the announcement section from the landing page, put a # in front of the message tag below
+# to comment it out.  The index page will skip the announcements section if there is no message.
+
+message:  The following NIEM specifications have drafts ready for review, with feedback requested by **Friday, February 26, 2021**.
