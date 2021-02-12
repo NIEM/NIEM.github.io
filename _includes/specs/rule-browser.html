@@ -36,8 +36,8 @@ Optional parameters:
     <div class="input-group col-lg-3" style="display: inline-table; width: 25%;">
       <select id="selectVersion" class="form-control user-select" style="width: auto;">
         {% for spec in specs %}
-          <option class="class {{spec.classID}} {{spec.status}}" value="{{spec.id}}">
-            Version {{ spec.version }} {% if spec.status %} - {{ spec.status }}{% endif %}
+          <option class="class {{spec.classID}} {{spec.specStatus}}" value="{{spec.id}}">
+            Version {{ spec.specVersion }} {% if spec.specStatus %} - {{ spec.specStatus }}{% endif %}
           </option>
         {% endfor %}
       </select>
@@ -243,18 +243,27 @@ Optional parameters:
 
     let spec = specs.find( spec => spec.id == this.value );
     let specClass = classes.find( specClass => specClass.id == classID )
-    specificationSelector = spec.selector;
+    specificationSelector = spec.specSelector;
 
     // Load spec description box
-    $("#specURL").attr("href", spec.url);
+    $("#specURL").attr("href", spec.specURL);
     $("#specDescription").text(specClass.description);
-    $("#specPublished").text(spec.year);
-    $("#specApplicableReleases").text((spec.applicableReleases || "null").replace("null", "pending"));
+    $("#specPublished").text(spec.specYear);
+    $("#specApplicableReleases").text((spec.specApplicableReleases || "null").replace("null", "pending"));
     $("#specTutorial").attr("href", specClass.tutorialRelativeURL);
 
     // Update conformance targets table and select targets
+    $("#conformanceTargets").show();
     $(`.spec`).hide();
-    $(`.spec.${spec.selector}`).show();
+    let currentTargets = $(`.spec.${spec.specSelector}`);
+    if (currentTargets.length > 0) {
+      // Show the conformance targets from the current spec
+      currentTargets.show();
+    }
+    else {
+      // Hide entire table if spec does not have conformance targets
+      $("#conformanceTargets").hide();
+    }
 
     // Disable version select box if only one version available
     $("#selectVersion").prop("disabled", specClass.versionCount == 1);
@@ -263,6 +272,7 @@ Optional parameters:
     $("#selectTargets").prop("selectedIndex", 0);
     $("#selectStyle").prop("selectedIndex", 0);
 
+    reset();
     finalPass();
 
   });

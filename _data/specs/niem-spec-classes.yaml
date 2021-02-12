@@ -1,6 +1,6 @@
 -
     id: NDR
-    name: 'Naming and Design Rules'
+    name: 'NIEM Naming and Design Rules'
     repo: 'https://github.com/NIEM/NIEM-NDR'
     landingPage: 'https://niem.github.io/NIEM-NDR/'
     issueList: 'https://github.com/NIEM/NIEM-NDR/issues'
@@ -15,7 +15,7 @@
     versionNumbers: '1.3, 3.0, 4.0, 5.0'
 -
     id: IEPD
-    name: 'Information Exchange Package Documentation'
+    name: 'NIEM Information Exchange Package Documentation'
     repo: 'https://github.com/NIEM/MPD-Spec'
     landingPage: 'https://reference.niem.gov/niem/specification/model-package-description/'
     issueList: 'https://github.com/NIEM/MPD-Spec/issues'
@@ -30,7 +30,7 @@
     versionNumbers: '3.0.1, 5.0 beta1'
 -
     id: CodeLists
-    name: 'Code Lists Specification'
+    name: 'NIEM Code Lists Specification'
     repo: 'https://github.com/NIEM/NIEM-Code-Lists-Spec'
     landingPage: 'https://github.com/NIEM/NIEM-Code-Lists-Spec'
     issueList: 'https://github.com/NIEM/NIEM-Code-Lists-Spec/issues'
@@ -60,7 +60,7 @@
     versionNumbers: '1.0, 3.0, 5.0 beta1'
 -
     id: CTAS
-    name: 'Conformance Targets Attribute Specification'
+    name: 'NIEM Conformance Targets Attribute Specification'
     repo: 'https://github.com/NIEM/NIEM-Conformance-Targets-Attribute-Spec'
     landingPage: 'https://reference.niem.gov/niem/specification/conformance-targets-attribute/'
     issueList: 'https://github.com/NIEM/NIEM-Conformance-Targets-Attribute-Spec/issues'
