@@ -11,8 +11,9 @@ The **[NIEM Model Package Description (MPD) Specification]({{ site.data.links.mp
 - TOC
 {:toc}
 
-{:.note}
-> The MPD Specification is currently out of date.  It targets NIEM 3.0, but the information still applies to the NIEM 4.x series of releases.  Use the corresponding NDR version 4.0 as appropriate.  Development of an updated NIEM message specification is in progress for 5.0.
+## Resources
+
+{% include specs/specification-summary.html classID=page.classID %}
 
 ## Conformance Targets
 

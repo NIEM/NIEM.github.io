@@ -11,8 +11,11 @@ The **[NIEM Conformance Targets Attribute Specification (CTAS)]({{site.data.link
 - TOC
 {:toc}
 
-{:.note}
-> Conformance targets exist in NIEM XML, starting with NDR 3.0 and the 3.0 release.  They do not currently have a counterpart in NIEM JSON.
+## Resources
+
+{% include specs/specification-summary.html classID=page.classID %}
+
+## Background
 
 Certain NIEM specifications define rules for specific kinds of artifacts.  The NDR defines rules for Reference Schema Documents and Extension Schema Documents.  The Code List Specification defines rules for a Code List Document, a CSV Code List Document, and a Genericode Code List Document.  In addition to defining the artifacts and the rules, these specifications also define conformance target identifiers for each kind of artifact.  These are unique string values, formatted as a URL, and include information about the specification, the version, and the kind of artifact.
 
@@ -27,8 +30,6 @@ A NIEM XML document can describe itself as a certain kind of artifact by includi
 ```sh
 ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument"
 ```
-
-<!--more-->
 
 If an XML document represents more than one kind of artifact, then all applicable conformance target identifiers can be listed together as the `ct:conformanceTargets` attribute value, with each identifier separated by whitespace.
 

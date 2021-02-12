@@ -15,6 +15,10 @@ The **[Code Lists Specification]({{site.data.links.code_list_spec}})** adds supp
 {:toc}
 - TOC
 
+## Resources
+
+{% include specs/specification-summary.html classID=page.classID %}
+
 ## Overview
 
 The Code Lists Specification establishes methods for using code list artifacts with NIEM information exchange specifications.

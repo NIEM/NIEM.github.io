@@ -1,6 +1,7 @@
 ---
   title: NIEM Conformance Specification
   short: Conformance
+  classID: Conformance
   icon: fa-book
   description: The Conformance Specification specifies general conformance guidance, principles, and rules for NIEM.
 ---
@@ -16,6 +17,10 @@ The **[NIEM Conformance Specification]({{ site.data.links.conformance }})** intr
 The term *conformance* is often used very broadly, but it has a very specific meaning within NIEM.  Artifacts, like schemas and IEPDs, can conform to a specific conformance target.
 
 System, tools, or databases may have capabilities designed to specifically support the development of NIEM-conformant artifacts, but those systems art not, themselves, NIEM-conformant.  Such tools or systems are considered NIEM-aware or NIEM-supporting.
+
+## Resources
+
+{% include specs/specification-summary.html classID=page.classID %}
 
 ## Conformance vs Compliance
 

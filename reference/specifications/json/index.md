@@ -11,6 +11,10 @@ The **[NIEM JSON Specification]({{ site.data.links.json }})**  establishes the t
 - TOC
 {:toc}
 
+## Resources
+
+{% include specs/specification-summary.html classID=page.classID %}
+
 ## Conformance Targets
 
 NIEM-conformance of JSON data is primarily focused on the relationship between the data in the JSON file and the definitions established by a NIEM-conformant schema, e.g., the schema defined by a NIEM IEPD.

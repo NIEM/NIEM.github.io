@@ -58,13 +58,4 @@ View and search rules from the specifications below in the **[NIEM Specification
 <!-- Loop through specifications -->
 
 {% assign specs = page.links | where: "group", "specs" %}
-
-<div>
-  <ul class="list-fa-icon">
-    {% for spec in specs %}
-      <li>
-        {% include specs/specification-summary.html classID=spec.classID link=spec.url %}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+{% include icon-list.html links=specs %}
