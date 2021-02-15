@@ -31,3 +31,7 @@ NIEM changed its philosophy from 1.0 on NIEM Core and moved away from the idea t
 - Performed additional harmonization work across the domains
 
 See the [NIEM 2.0 change log](https://release.niem.gov/niem/2.0/changelog.html) for a list of changes.
+
+## Specification Links
+
+{% include specs/specification-list.html specIDs = "NDR-1.3, Conformance-1.0" %}

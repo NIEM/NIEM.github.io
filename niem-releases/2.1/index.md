@@ -30,3 +30,7 @@ NIEM 2.1 is a minor release, published September 2009.
 - The [NIEM UML profile](https://reference.niem.gov/niem/specification/uml-profile/1.0/uml-profile-1.0.pdf) was introduced.
 
 See the [NIEM 2.1 change log](https://release.niem.gov/niem/2.1/changelog.html) for a list of changes.
+
+## Specification Links
+
+{% include specs/specification-list.html specIDs = "NDR-1.3, Conformance-1.0" %}

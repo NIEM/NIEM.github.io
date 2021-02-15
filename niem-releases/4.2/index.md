@@ -48,3 +48,7 @@ NIEM 4.2 is a minor release, published October 2019.
 - Updated GENC Code Lists CSVs to version 3-10 and added XML schema enumeration representations
 
 See the [NIEM 4.2 readme](https://github.com/NIEM/NIEM-Releases/blob/niem-4.2/README.md) for a list of changes.
+
+## Specification Links
+
+{% include specs/specification-list.html specIDs = "NDR-4.0, MPD-3.0.1, JSON-4.0, Conformance-3.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}

@@ -43,9 +43,11 @@ NIEM 4.0 is a major release, published June 2017.
 
 See the [NIEM 4.0 readme](https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/README.md) for a detailed list of changes.
 
----
+## Specification Links
 
-## Specification updates
+{% include specs/specification-list.html specIDs = "NDR-4.0, MPD-3.0.1, JSON-4.0, Conformance-3.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
+
+## Specification Updates
 
 ### Naming and Design Rules (NDR) 4.0
 
@@ -154,9 +156,7 @@ Changes include:
 
 - Added well-known column "uri".
 
----
-
-## Stats
+## Release Stats
 
 The following are statistics for the **4.0 release**.
 

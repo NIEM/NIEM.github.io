@@ -56,8 +56,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
   <tbody>
     <tr>
       <td>
-        <b>NIEM 5.1</b><br><i>(under development)</i>
-        <!-- <b><a href="https://github.com/NIEM/NIEM-Releases/tree/dev">{{ site.data.release.label }}</a></b> -->
+        <b><a href="./5.1">NIEM 5.1</a></b><br><i>(under development)</i>
       </td>
       <td>
         Coming Soon
@@ -74,7 +73,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
     </tr>
     <tr>
       <td>
-        <b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-5.0">NIEM 5.0</a></b>
+        <b><a href="./5.0">NIEM 5.0</a></b>
         <br><i>(current release)</i>
       </td>
       <td>
@@ -88,7 +87,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td><a href="{{site.data.links.ndr5}}">NDR 5.0</a></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.2">NIEM 4.2</a></b></td>
+      <td><b><a href="./4.2">NIEM 4.2</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.2">GitHub</a> |
         <a href="https://release.niem.gov/niem/4.2/">release.niem.gov</a>
@@ -100,7 +99,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td><a href="{{site.data.links.ndr4}}">NDR 4.0</a></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.1">NIEM 4.1</a></b></td>
+      <td><b><a href="./4.1">NIEM 4.1</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.1">GitHub</a> |
         <a href="https://release.niem.gov/niem/4.1/">release.niem.gov</a>
@@ -112,7 +111,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td><a href="{{site.data.links.ndr4}}">NDR 4.0</a></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-4.0">NIEM 4.0</a></b></td>
+      <td><b><a href="./4.0">NIEM 4.0</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-4.0">GitHub</a> |
         <a href="https://release.niem.gov/niem/4.0/">release.niem.gov</a>
@@ -124,7 +123,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td><a href="{{site.data.links.ndr4}}">NDR 4.0</a></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-3.2">NIEM 3.2</a></b></td>
+      <td><b><a href="./3.2">NIEM 3.2</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.2">GitHub</a> |
         <a href="https://release.niem.gov/niem/3.2/">release.niem.gov</a>
@@ -136,7 +135,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html">NDR 3.0</a></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-3.1">NIEM 3.1</a></b></td>
+      <td><b><a href="./3.1">NIEM 3.1</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.1">GitHub</a> |
         <a href="https://release.niem.gov/niem/3.1/">release.niem.gov</a>
@@ -148,7 +147,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html">NDR 3.0</a></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-3.0">NIEM 3.0</a></b></td>
+      <td><b><a href="./3.0">NIEM 3.0</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-3.0">GitHub</a> |
         <a href="https://release.niem.gov/niem/3.0/">release.niem.gov</a>
@@ -160,7 +159,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html">NDR 3.0</a></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-2.1">NIEM 2.1</a></b></td>
+      <td><b><a href="./2.1">NIEM 2.1</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-2.1">GitHub</a> |
         <a href="https://release.niem.gov/niem/2.1/">release.niem.gov</a>
@@ -175,7 +174,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       </td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-2.0">NIEM 2.0</a></b></td>
+      <td><b><a href="./2.0">NIEM 2.0</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-2.0">GitHub</a> |
         <a href="https://release.niem.gov/niem/2.0/">release.niem.gov</a>
@@ -187,7 +186,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf">NDR 1.3</a></td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/NIEM/NIEM-Releases/releases/tag/niem-1.0">NIEM 1.0</a></b></td>
+      <td><b><a href="./1.0">NIEM 1.0</a></b></td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-1.0">GitHub</a> |
         <a href="https://release.niem.gov/niem/1.0/">release.niem.gov</a>

@@ -150,7 +150,7 @@
     specVersion: '4.0'
     specURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html'
     specYear: '2017'
-    specApplicableReleases: 'NIEM 4.0 - NIEM 4.2'
+    specApplicableReleases: 'NIEM 4.0 - NIEM 5.2'
     specChangeHistory: null
     specResources: null
     specExamples: 'https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/niem/codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv'

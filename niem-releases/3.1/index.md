@@ -28,3 +28,7 @@ NIEM 3.1 is a minor release, published May 2015.
 - NIEM continued to add and update domain content and code sets, and to address user feedback.
 
 See the [NIEM 3.1 change log spreadsheet](https://release.niem.gov/niem/3.1/niem-3.1-changelog.xlsx) for changes.
+
+## Specification Links
+
+{% include specs/specification-list.html specIDs = "NDR-3.0, MPD-3.0.1, Conformance-3.0, CTAS-3.0, HLVA-3.0" %}

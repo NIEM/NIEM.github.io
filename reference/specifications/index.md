@@ -1,6 +1,5 @@
 ---
-title: NIEM Specifications
-short: Specifications
+title: Specifications
 icon: fa-book
 description: NIEM specifications provide rules and guidance in order to design consistent and well-defined information exchanges.  Specifications are managed by the NIEM Technical Architecture Committee (NTAC).
 links:

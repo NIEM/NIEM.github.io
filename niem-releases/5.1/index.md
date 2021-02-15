@@ -68,3 +68,7 @@ The following changes are expected to appear in NIEM 5.1:
 - **Statistics** domain *(new)* - add content from the Census Bureau and merge the Generic Statistic Information Model (GSIM) auxiliary content added to 5.0
 
 - **Update code sets**
+
+## Specification Links
+
+{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0 beta1, JSON-4.0, Conformance-5.0 beta1, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}

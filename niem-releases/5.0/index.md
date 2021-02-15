@@ -48,7 +48,11 @@ NIEM 5.0 is a major release, published December 2020.  This is the most current 
 
 See the [NIEM 5.0 readme](https://github.com/NIEM/NIEM-Releases/blob/niem-5.0/README.md) for a detailed list of changes.
 
-## Specification updates
+## Specification Links
+
+{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0 beta1, JSON-4.0, Conformance-5.0 beta1, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
+
+## Specification Updates
 
 ### Naming and Design Rules (NDR) 5.0
 
@@ -71,7 +75,7 @@ Key changes include:
 
 See the [NDR 5.0 changes]({{ "/reference/specifications/ndr/changes/#ndr-50-changes" | relative_url }}) for more.
 
-## Stats
+## Release Stats
 
 The following are some basic statistics for the 5.0 release.
 

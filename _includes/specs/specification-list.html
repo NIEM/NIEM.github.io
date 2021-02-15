@@ -1,0 +1,26 @@
+
+{% assign specIDs = include.specIDs | default: "" | split: ", " %}
+
+<p>The following are the NIEM specifications that can be used with this release:</p>
+
+<div class="box">
+
+  <ul>
+    {% for specID in specIDs %}
+
+      {% assign spec = site.data.specs.niem-specs | where: "id", specID | first %}
+
+      {% assign class = site.data.specs.niem-spec-classes | where: "id", spec.classID | first %}
+
+      <li>
+        <span><strong><a href="{{spec.specURL}}">{{ spec.specName | default: spec.className }}</a></strong>, </span>
+        <span><strong>version {{ spec.specVersion }}</strong></span>
+        <span class="text-muted"> [published {{ spec.specYear }}]</span>
+        <p style="padding: 5px 0;">{{ spec.classDescription }} <a href="{{ class.tutorialRelativeURL | relative_url }}">Learn more...</a></p>
+      </li>
+
+  {% endfor %}
+
+</ul>
+
+</div>

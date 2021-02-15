@@ -45,7 +45,11 @@ NIEM 3.0 is a major release, published October 2013.
 
 See the [NIEM 3.0 change log spreadsheet](https://release.niem.gov/niem/3.0/niem-3.0-changelog.xlsx) for changes.
 
-## Specification updates
+## Specification Links
+
+{% include specs/specification-list.html specIDs = "NDR-3.0, MPD-3.0.1, Conformance-3.0, CTAS-3.0, HLVA-3.0" %}
+
+## Specification Updates
 
 Starting with NIEM 3.0, specification version numbers were adjusted to match the corresponding major NIEM release.
 
