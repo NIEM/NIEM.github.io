@@ -159,7 +159,7 @@ The data elements
 for the content model of *Example 2* include:
 
 | Data Element Name | Definition |
-|-
+|--- | --- |
 | nc:Person             | A human being |
 | nc:PersonName         | A combination of names and/or titles by which a person is known |
 | nc:PersonSurName      | A last name or family name of a person |
@@ -175,7 +175,7 @@ composed of the namespace prefix plus a *local name*, such as
 `PersonSurName`. The namespaces used in this example are:
 
 | Namespace | Prefix | Namespace URI |
-|-
+|--- | --- | --- |
 | NIEM Core | nc     | http://release.niem.gov/niem/niem-core/4.0/ |
 | Justice   | j      | http://release.niem.gov/niem/domains/jxdm/6.0/ |
 
@@ -224,6 +224,34 @@ provided by the NIEM conceptual model and the resource content
 model. Producers and consumers do not have to guess at the meaning of
 `lname`; it is precisely defined.
 
+In addition, some development tooling do not support JSON names that
+include a colon (`:`),  In these cases, a context can be used to
+define equivalent local names similar to the NIEM data elements that
+workaround the limitations of the tooling.
+
+For example, the context could be:
+
+```
+"@context": {
+  "nc":    "http://release.niem.gov/niem/niem-core/4.0/#",
+  "j":     "http://release.niem.gov/niem/domains/jxdm/6.0/",
+  "Person": "nc:Person",
+  "PersonName":   "nc:PersonName",
+  "PersonSurName":  "nc:PersonSurName",
+  "PersonGivenName":  "nc:PersonGivenName",
+  "PersonHeightMeasure": "nc:PersonHeightMeasure",
+  "MeasureIntegerValue":    "nc:MeasureIntegerValue",
+  "LengthUnitCode":  "nc:LengthUnitCode",
+  "PersonHairColorCode":   "j:PersonHairColorCode"
+}
+```
+
+This approach, however, does not handle exchanges in which the
+same name is used in multiple domains (e.g. `nc:Person` and
+`j:Person`).  Another approach useful in these cases is to
+include domain prefixes in the local names with the colons
+replaced with an underscore (`_`) or other special character
+supported by the tooling (e.g. `nc_PersonName`)
 
 ### Associating NIEM JSON Data To Its JSON-LD Context
 
