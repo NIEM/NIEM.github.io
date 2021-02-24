@@ -3,11 +3,12 @@
   ***
   Creates a table with conformance target information
 
-  Required parameters
-  "targets" - YAML file with the conformance target information
+  Optional parameters
+  "classID" - ID for the specification class, e.g., "NDR" or "IEPD"
+  "specificationID" - ID for the individual specification, e.g., "NDR-4.0", "MPD-3.0.1"
 
   Example call:
-  {% include specs/targets-table.html  targets=site.data.specs.ndr-targets %}
+  {% include specs/targets-table.html  classID="NDR" %}
   ***
 {% endcomment %}
 

@@ -134,7 +134,7 @@
     specStatus: draft
     specRuleCount: 0
     specDefinitionCount: 0
-    specSelector: 'IEPD-5_0 beta1'
+    specSelector: 'IEPD-5_0beta1'
     specTargetCount: 7
 -
     id: CodeLists-4.0
