@@ -1,7 +1,7 @@
 ---
   title: NIEM resources for the Oxygen XML Editor
   short: NIEM and Oxygen
-  description: Oxygen XML Editor is a commercial multi-platform XML editor. NIEM provides some additional information and resources for this tool that may assist with domain and IEPD schema development and conformance testing.
+  description: The Oxygen XML Editor is a commercial multi-platform XML editor. NIEM provides some additional information and resources for this tool that may assist with domain and IEPD schema development and conformance testing.
   icon: fa-pencil
   links:
   - url: /reference/tools/oxygen/ndr/

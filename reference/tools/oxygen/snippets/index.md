@@ -9,8 +9,23 @@ description: NIEM XML follows a regular, well-defined syntax.  Snippets can be u
 {:toc}
 - TOC
 
-{:.note}
-> Snippets are also available online for users who do not have the Oxygen XML Editor.  Go to the [Reference/Concepts]({{ "/reference/concepts/" | relative_url }}) section of this site, navigate to the appropriate property, type, or other NIEM concept, and copy/paste the relevant snippets from the XML or JSON sections to your editor of choice.
+## Overview
+
+The following is an example of a snippet or a template to create a basic element in NIEM.  It includes the standard schema syntax required by the NDR, but leaves the fields for the element's name, type, and definition blank for the user to fill in:
+
+```xml
+<xs:element name="" type="" nillable="true">
+  <xs:annotation>
+    <xs:documentation></xs:documentation>
+  </xs:annotation>
+</xs:element>
+```
+
+This is a very simple example, but it's the kind of thing schema developers have to do over and over again.  There is often built-in support in XML editors, including Oxygen, for schema syntax, but those provide for a wider range of options than NIEM allows.  These NIEM-specific snippets provide an easy way for developers to quickly stub out the exact syntax the NDR requires and focus on filling in the semantics.  It's easier, for example, to create a new augmentation when all you need to do is fill in the blanks rather than figure out how to get the syntax right as well.
+
+There are over two dozen snippets provided, ranging from simple snippets for an individual concept, snippets that stub out an entire namespace, and snippets that provide templates for related concepts at the same time.
+
+Snippets are also available on this site for users who do not have the Oxygen XML Editor.  Go to the [Reference / Concepts]({{ "/reference/concepts/" | relative_url }}) section, navigate to the appropriate topic, and copy/paste the relevant snippets from the XML or JSON sections to your editor of choice.  For example, a snippet to create a new element is available [here]({{ "/reference/concepts/property/element/xml/#schema-template" | relative_url }}).
 
 ## Demo
 
@@ -28,7 +43,7 @@ Load NIEM snippets into Oxygen in order to easily insert common templates into N
 ## Available NIEM snippets
 
 {:.note}
-> Snippets include some commonly-used default values but these may be modified as necessary.  Change default values as the snippet is used, or edit the snippet template itself to fill in better default values for your particular requirements.
+> The snippets include some commonly-used default values.  If the given defaults are wrong for your typical scenario, you can customize them in Oxygen.  Some are tailored more for IEPD developers than domain modelers, especially those relating to default cardinalities.  See the instructions on how to [modify a snippet](#modify-a-snippet).
 
 ### Property snippets
 
@@ -325,6 +340,64 @@ The following snippets provide additional NIEM templates.
     <td><a href="https://niem.github.io/reference/concepts/local-term/">Info</a></td>
   </tr>
 </table>
+
+## Conventions
+
+Several conventions were used with the snippets.
+
+Note that these too can be adjusted by [modifying the snippets](#modify-a-snippet) in Oxygen in case you would like the defaults set differently.
+
+### Blanks
+
+Blanks are used for values where no helpful defaults can be provided.
+
+### Dots (...)
+
+A set of '...' characters were used in places where a field has been partially filled in but requires additional text.  Otherwise, it might not be immediately obvious that something is missing.
+
+For example, it may not be obvious that the following element name and type reference are incomplete:
+
+```xml
+<xs:element name="Code" type="CodeType" nillable="true">
+  <xs:annotation>
+    <xs:documentation></xs:documentation>
+  </xs:annotation>
+</xs:element>
+```
+
+Adding dots to indicate missing text helps highlight where updates need to be made.  The dots also have the benefit of being invalid characters in a property or type name.  Although still valid within definitions, Oxygen can at least easily show these as errors when they are left remaining in component names and references:
+
+```xml
+<xs:element name="...Code" type="...CodeType" nillable="true">
+  <xs:annotation>
+    <xs:documentation></xs:documentation>
+  </xs:annotation>
+</xs:element>
+```
+
+> Exception: Oxygen snippets allows you to designate where the cursor should appear.  In cases where an incomplete value appears at the same place the cursor will be set, no dots have been added.  The cursor itself is the cue to fill in the rest of the information.  Dots are used to indicate incomplete information in the fields that follow.
+
+### ALLCAPS
+
+Labels written as ALLCAPS were used in places where Oxygen can be used to autofill the value if it has already been defined.
+
+For example, the snippets for the `niem-code-2` pattern provide templates for a code simple type and a code complex type with simple content (CSC).  If you fill in the information for the simple type first as it appears, Oxygen will let you autofill in the name of the simple type you just created as you fill in the CSC's base type.  Autofill is quicker than editing an alternate default value set as `...CodeSimpleType`.
+
+In order to use autofill, you first need to select the current value in the field.  Once fully highlighted, hit Ctrl/Cmd + Space for a list of available components and begin typing to get to the one you need.
+
+{:.note}
+> A value without delimiters like 'ALLCAPS' can be selected in Oxygen from the keyboard in one Ctrl/Cmd-Shift + arrow key jump.  Selecting `...CodeSimpleType` would take Oxygen six jumps to fully highlight, one arrow key stroke for each dot and upper case letter.  This is one of the reasons this ALLCAPS formatting convention has been selected.
+
+### Ordering
+
+Component snippets are ordered by dependencies.  The order for components in the `niem-code-4` snippet is
+
+1. Code simple type
+2. Code CSC type (base type is defined in \# 1)
+3. Abstract element
+4. Code element (type is defined in \# 2; substitution group is defined in \# 3)
+
+This ordering prevents encountering required fields that have not yet been defined.
 
 ## Using NIEM snippets with Oxygen
 

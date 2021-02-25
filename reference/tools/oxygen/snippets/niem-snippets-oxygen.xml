@@ -148,7 +148,7 @@
   &lt;/xs:annotation>
 &lt;/xs:element>
   
-&lt;xs:complexType name="">
+&lt;xs:complexType name="...Type">
   &lt;xs:annotation>
     &lt;xs:documentation>A data type for ...&lt;/xs:documentation>
   &lt;/xs:annotation>
@@ -156,7 +156,7 @@
     &lt;xs:extension base="structures:ObjectType">
       &lt;xs:sequence>
         &lt;xs:element ref="" minOccurs="0" maxOccurs="unbounded"/>
-        &lt;xs:element ref="...AUGMENTATIONPOINT" minOccurs="0" maxOccurs="unbounded"/>
+        &lt;xs:element ref="AUGMENTATIONPOINT" minOccurs="0" maxOccurs="unbounded"/>
       &lt;/xs:sequence>
     &lt;/xs:extension>
   &lt;/xs:complexContent>
@@ -375,7 +375,7 @@
    &lt;xs:documentation>A data type for ...&lt;/xs:documentation>
   &lt;/xs:annotation>
   &lt;xs:simpleContent>
-    &lt;xs:extension base="">
+    &lt;xs:extension base="CODESIMPLETYPE">
       &lt;xs:attributeGroup ref="structures:SimpleObjectAttributeGroup"/>
     &lt;/xs:extension>
   &lt;/xs:simpleContent>
@@ -423,13 +423,13 @@
     &lt;xs:documentation>A data type for ...&lt;/xs:documentation>
   &lt;/xs:annotation>
   &lt;xs:simpleContent>
-    &lt;xs:extension base="">
+    &lt;xs:extension base="CODESIMPLETYPE">
       &lt;xs:attributeGroup ref="structures:SimpleObjectAttributeGroup"/>
     &lt;/xs:extension>
   &lt;/xs:simpleContent>
 &lt;/xs:complexType>
   
-&lt;xs:element name="...Code" type="" nillable="true">
+&lt;xs:element name="...Code" type="CODETYPE" nillable="true">
   &lt;xs:annotation>
     &lt;xs:documentation>&lt;/xs:documentation>
   &lt;/xs:annotation>
@@ -477,7 +477,7 @@
     &lt;xs:documentation>A data type for ...&lt;/xs:documentation>
   &lt;/xs:annotation>
   &lt;xs:simpleContent>
-    &lt;xs:extension base="">
+    &lt;xs:extension base="CODESIMPLETYPE">
       &lt;xs:attributeGroup ref="structures:SimpleObjectAttributeGroup"/>
     &lt;/xs:extension>
   &lt;/xs:simpleContent>
@@ -489,7 +489,7 @@
   &lt;/xs:annotation>
 &lt;/xs:element>
 
-&lt;xs:element name="...Code" type="" substitutionGroup="" nillable="true">
+&lt;xs:element name="...Code" type="CODETYPE" substitutionGroup="ABSTRACTELEMENT" nillable="true">
   &lt;xs:annotation>
     &lt;xs:documentation>&lt;/xs:documentation>
   &lt;/xs:annotation>
@@ -609,7 +609,7 @@
   &lt;/xs:complexContent>
 &lt;/xs:complexType>
 
-&lt;xs:element name="...Association" type="" nillable="true">
+&lt;xs:element name="...Association" type="ASSOCIATIONTYPE" nillable="true">
   &lt;xs:annotation>
     &lt;xs:documentation>An association between ...&lt;/xs:documentation>
   &lt;/xs:annotation>
@@ -654,7 +654,7 @@
   &lt;/xs:complexContent>
   &lt;/xs:complexType>
 
-&lt;xs:element name="...Association" type="" nillable="true">
+&lt;xs:element name="...Association" type="ASSOCIATIONTYPE" nillable="true">
   &lt;xs:annotation>
     &lt;xs:documentation>An association between ...&lt;/xs:documentation>
   &lt;/xs:annotation>
@@ -717,7 +717,7 @@
   &lt;/xs:complexContent>
 &lt;/xs:complexType>
   
-&lt;xs:element name="...Augmentation" type="" substitutionGroup="...AugmentationPoint" nillable="true">
+&lt;xs:element name="...Augmentation" type="AUGMENTATIONTYPE" substitutionGroup="...AugmentationPoint" nillable="true">
   &lt;xs:annotation>
    &lt;xs:documentation>Additional information about ...&lt;/xs:documentation>
   &lt;/xs:annotation>
@@ -797,7 +797,7 @@
   &lt;/xs:complexContent>
 &lt;/xs:complexType>
   
-&lt;xs:element name="...Metadata" type="...MetadataType" nillable="true">
+&lt;xs:element name="...Metadata" type="METADATATYPE" nillable="true">
   &lt;xs:annotation>
     &lt;xs:documentation>Metadata about ...&lt;/xs:documentation>
   &lt;/xs:annotation>
