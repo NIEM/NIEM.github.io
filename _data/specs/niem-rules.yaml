@@ -15465,8 +15465,8 @@
     ruleStatus: current
     ruleSelector: MPD-3_0.1-rule_7-9
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_3.2.1
     sectionLabel: 'Section 3.2.1. Information Exchange Package Documentation'
@@ -15475,17 +15475,17 @@
     ruleTitle: 'IEPD conformance target identifier'
     ruleName: ""
     ruleID: rule_3-1
-    ruleUID: IEPD-5.0beta1-rule_3-1
+    ruleUID: 'IEPD-5.0 rc1-rule_3-1'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_3-1'
     ruleTargets: [IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD MUST have an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#IEPD as a value of its c:iepdConformanceTargetIdentifierURIList attribute.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_3-1
+    ruleSelector: 'IEPD-5_0 rc1-rule_3-1'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_3.2.1.1
     sectionLabel: 'Section 3.2.1.1. Well-Formed IEPD'
@@ -15494,17 +15494,17 @@
     ruleTitle: 'IEPD is well-formed'
     ruleName: ""
     ruleID: rule_3-2
-    ruleUID: IEPD-5.0beta1-rule_3-2
+    ruleUID: 'IEPD-5.0 rc1-rule_3-2'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_3-2'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD MUST have an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#WF-IEPD.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_3-2
+    ruleSelector: 'IEPD-5_0 rc1-rule_3-2'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_4.2.1
     sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
@@ -15513,17 +15513,17 @@
     ruleTitle: 'Fundamental NIEM Subset Rule'
     ruleName: ""
     ruleID: rule_4-1
-    ruleUID: IEPD-5.0beta1-rule_4-1
+    ruleUID: 'IEPD-5.0 rc1-rule_4-1'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_4-1'
     ruleTargets: [Schema-subset]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'A schema document subset ($SUBSET) for a given reference schema document set ($REFERENCE) MUST be defined such that for all instance XML documents ($XML), where $XML is valid to $SUBSET, $XML is valid to $REFERENCE.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_4-1
+    ruleSelector: 'IEPD-5_0 rc1-rule_4-1'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.1
     sectionLabel: 'Section 5.1. NIEM IEPD Catalog'
@@ -15532,17 +15532,17 @@
     ruleTitle: 'IEPD Has an iepd-catalog.xml in its Root Directory'
     ruleName: ""
     ruleID: rule_5-1
-    ruleUID: IEPD-5.0beta1-rule_5-1
+    ruleUID: 'IEPD-5.0 rc1-rule_5-1'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-1'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within its root directory, an IEPD MUST contain an IEPD catalog document artifact with name iepd-catalog.xml.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-1
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-1'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.1
     sectionLabel: 'Section 5.1. NIEM IEPD Catalog'
@@ -15551,17 +15551,17 @@
     ruleTitle: 'IEPD Catalog Document Valid to iepd-catalog.xsd'
     ruleName: ""
     ruleID: rule_5-2
-    ruleUID: IEPD-5.0beta1-rule_5-2
+    ruleUID: 'IEPD-5.0 rc1-rule_5-2'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-2'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD catalog document MUST be valid to iepd-catalog.xsd as provided by Appendix A, IEPD Catalog XML Schema Document, below.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-2
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-2'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.1.2
     sectionLabel: 'Section 5.1.2. Extending an IEPD Catalog'
@@ -15570,17 +15570,17 @@
     ruleTitle: 'IEPD Catalog Extension XML Catalog Document in Root Directory'
     ruleName: ""
     ruleID: rule_5-3
-    ruleUID: IEPD-5.0beta1-rule_5-3
+    ruleUID: 'IEPD-5.0 rc1-rule_5-3'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-3'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD catalog extension XML catalog document MUST reside in the same relative directory as the iepd-catalog.xml artifact (normally in the IEPD root directory)'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-3
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-3'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.1.2
     sectionLabel: 'Section 5.1.2. Extending an IEPD Catalog'
@@ -15589,17 +15589,17 @@
     ruleTitle: 'IEPD Catalog Extension XML Catalog Document Name Is iepd-catalog-extension-xml-catalog.xml'
     ruleName: ""
     ruleID: rule_5-4
-    ruleUID: IEPD-5.0beta1-rule_5-4
+    ruleUID: 'IEPD-5.0 rc1-rule_5-4'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-4'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD catalog extension XML catalog document MUST bear the file name (and type) iepd-catalog-extension-xml-catalog.xml.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-4
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-4'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.1.2
     sectionLabel: 'Section 5.1.2. Extending an IEPD Catalog'
@@ -15608,17 +15608,17 @@
     ruleTitle: 'IEPD Catalog Extension XML Catalog Document Resolves Namespaces to URIs'
     ruleName: ""
     ruleID: rule_5-5
-    ruleUID: IEPD-5.0beta1-rule_5-5
+    ruleUID: 'IEPD-5.0 rc1-rule_5-5'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-5'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD catalog extension XML catalog document MUST resolve all IEPD catalog schema extension document namespaces to the correct corresponding local URIs in the IEPD.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-5
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-5'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.1.2
     sectionLabel: 'Section 5.1.2. Extending an IEPD Catalog'
@@ -15627,17 +15627,17 @@
     ruleTitle: 'IEPD Catalog Extension Schema Document Conforms to NDR Extension Schema Document Rules'
     ruleName: ""
     ruleID: rule_5-6
-    ruleUID: IEPD-5.0beta1-rule_5-6
+    ruleUID: 'IEPD-5.0 rc1-rule_5-6'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-6'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD catalog extension schema document MUST conform to the [NIEM Naming and Design Rules] extension schema document conformance target rules.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-6
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-6'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.1.2
     sectionLabel: 'Section 5.1.2. Extending an IEPD Catalog'
@@ -15646,17 +15646,17 @@
     ruleTitle: 'IEPD Catalog Schema and Its Extensions Conform to NDR Schema Set Rules'
     ruleName: ""
     ruleID: rule_5-7
-    ruleUID: IEPD-5.0beta1-rule_5-7
+    ruleUID: 'IEPD-5.0 rc1-rule_5-7'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-7'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD, the schema set formed by iepd-catalog.xsd and all IEPD catalog extension schema documents MUST conform to the [NIEM Naming and Design Rules] schema set conformance target rules.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-7
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-7'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.1.2
     sectionLabel: 'Section 5.1.2. Extending an IEPD Catalog'
@@ -15665,17 +15665,17 @@
     ruleTitle: 'IEPD Schema Document Extension Support Schemas Are Supersets of Spec Subsets'
     ruleName: ""
     ruleID: rule_5-8
-    ruleUID: IEPD-5.0beta1-rule_5-8
+    ruleUID: 'IEPD-5.0 rc1-rule_5-8'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-8'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Subset schema documents provided to support an IEPD schema document extension MUST be a superset of the subset schema documents provided with this specification to support the IEPD catalog schema document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-8
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-8'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.3
     sectionLabel: 'Section 5.2.3. IEPD Version Numbering Scheme (c:iepdVersionID)'
@@ -15684,17 +15684,17 @@
     ruleTitle: 'IEPD Version Number Syntax'
     ruleName: ""
     ruleID: rule_5-9
-    ruleUID: IEPD-5.0beta1-rule_5-9
+    ruleUID: 'IEPD-5.0 rc1-rule_5-9'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-9'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: "An IEPD MUST be assigned a version number that adheres to the regular expression:The meaning of the status values are as follows: \n- alpha indicates early development; changing significantly. \n- beta indicates late development; but changing or incomplete. \n- rc indicates release candidate; complete but not approved as operational. \n- rev indicates very minor revision that does not impact schema validation."
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-9
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-9'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.1
     sectionLabel: 'Section 5.2.4.1. IEPD URI Scheme (c:iepdURI)'
@@ -15703,17 +15703,17 @@
     ruleTitle: 'IEPD URI Is Absolute'
     ruleName: ""
     ruleID: rule_5-10
-    ruleUID: IEPD-5.0beta1-rule_5-10
+    ruleUID: 'IEPD-5.0 rc1-rule_5-10'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-10'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'In an IEPD catalog document, the value of a c:iepdURI attribute of type xs:anyURI MUST match the production <absolute-URI> as defined by [RFC 3986 URI], §4.3, Absolute URI.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-10
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-10'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.2
     sectionLabel: 'Section 5.2.4.2. URI Scheme for IEPD Artifacts (c:externalURI)'
@@ -15722,17 +15722,17 @@
     ruleTitle: 'IEPD URI Supports Fragment'
     ruleName: ""
     ruleID: rule_5-11
-    ruleUID: IEPD-5.0beta1-rule_5-11
+    ruleUID: 'IEPD-5.0 rc1-rule_5-11'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-11'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'A valid IEPD URI MUST support the inclusion of a fragment identifier (as a suffix) [RFC 3986 URI].'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-11
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-11'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.2
     sectionLabel: 'Section 5.2.4.2. URI Scheme for IEPD Artifacts (c:externalURI)'
@@ -15741,17 +15741,17 @@
     ruleTitle: 'IEPD URI Has No Fragment'
     ruleName: ""
     ruleID: rule_5-12
-    ruleUID: IEPD-5.0beta1-rule_5-12
+    ruleUID: 'IEPD-5.0 rc1-rule_5-12'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-12'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'A valid IEPD URI MUST NOT contain a fragment identifier [RFC 3986 URI].'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-12
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-12'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.2
     sectionLabel: 'Section 5.2.4.2. URI Scheme for IEPD Artifacts (c:externalURI)'
@@ -15760,17 +15760,17 @@
     ruleTitle: 'IEPD Artifact URI Syntax'
     ruleName: ""
     ruleID: rule_5-13
-    ruleUID: IEPD-5.0beta1-rule_5-13
+    ruleUID: 'IEPD-5.0 rc1-rule_5-13'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-13'
     ruleTargets: [WF-IEPD]
     ruleClassification: Interpretation
     ruleStyle: text
     ruleText: "Within an IEPD a URI reference to an artifact in another external IEPD (i.e., an IEPD artifact URI) is the concatenation of: \n- The URI of the IEPD that contains the artifact. \n- A pound-sign character (\"#\" — also known as a hashtag character). \n- An identifier that is the artifact’s locally unique path name relative to the IEPD root directory."
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-13
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-13'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15779,17 +15779,17 @@
     ruleTitle: 'c:pathURI Resolves to a Resource'
     ruleName: ""
     ruleID: rule_5-14
-    ruleUID: IEPD-5.0beta1-rule_5-14
+    ruleUID: 'IEPD-5.0 rc1-rule_5-14'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-14'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute MUST resolve to a resource.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-14
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-14'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15798,17 +15798,17 @@
     ruleTitle: 'c:pathURI for c:XMLCatalog'
     ruleName: ""
     ruleID: rule_5-15
-    ruleUID: IEPD-5.0beta1-rule_5-15
+    ruleUID: 'IEPD-5.0 rc1-rule_5-15'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-15'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:XMLCatalog element MUST resolve to an XML catalog document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-15
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-15'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15817,17 +15817,17 @@
     ruleTitle: 'c:pathURI for c:IEPDChangeLog'
     ruleName: ""
     ruleID: rule_5-16
-    ruleUID: IEPD-5.0beta1-rule_5-16
+    ruleUID: 'IEPD-5.0 rc1-rule_5-16'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-16'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:IEPDChangeLog element MUST resolve to a change log.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-16
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-16'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15836,17 +15836,17 @@
     ruleTitle: 'c:pathURI for c:ReadMe'
     ruleName: ""
     ruleID: rule_5-17
-    ruleUID: IEPD-5.0beta1-rule_5-17
+    ruleUID: 'IEPD-5.0 rc1-rule_5-17'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-17'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ReadMe element MUST resolve to a readme artifact.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-17
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-17'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15855,17 +15855,17 @@
     ruleTitle: 'c:pathURI for c:IEPSampleXMLDocument'
     ruleName: ""
     ruleID: rule_5-18
-    ruleUID: IEPD-5.0beta1-rule_5-18
+    ruleUID: 'IEPD-5.0 rc1-rule_5-18'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-18'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:IEPSampleXMLDocument element MUST resolve to an XML document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-18
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-18'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15874,17 +15874,17 @@
     ruleTitle: 'c:pathURI for c:BusinessRulesArtifact'
     ruleName: ""
     ruleID: rule_5-19
-    ruleUID: IEPD-5.0beta1-rule_5-19
+    ruleUID: 'IEPD-5.0 rc1-rule_5-19'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-19'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:BusinessRulesArtifact element MUST resolve to a business rule schema or business rules artifact.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-19
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-19'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15893,17 +15893,17 @@
     ruleTitle: 'c:pathURI for c:XMLSchemaDocument'
     ruleName: ""
     ruleID: rule_5-20
-    ruleUID: IEPD-5.0beta1-rule_5-20
+    ruleUID: 'IEPD-5.0 rc1-rule_5-20'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-20'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:XMLSchemaDocument element MUST resolve to an XML schema document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-20
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-20'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15912,17 +15912,17 @@
     ruleTitle: 'c:pathURI for c:ExternalSchemaDocument'
     ruleName: ""
     ruleID: rule_5-21
-    ruleUID: IEPD-5.0beta1-rule_5-21
+    ruleUID: 'IEPD-5.0 rc1-rule_5-21'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-21'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ExternalSchemaDocument element MUST resolve to an XML schema document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-21
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-21'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15931,17 +15931,17 @@
     ruleTitle: 'c:pathURI for c:ReferenceSchemaDocument'
     ruleName: ""
     ruleID: rule_5-22
-    ruleUID: IEPD-5.0beta1-rule_5-22
+    ruleUID: 'IEPD-5.0 rc1-rule_5-22'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-22'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ReferenceSchemaDocument element MUST resolve to a NIEM reference schema document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-22
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-22'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15950,17 +15950,17 @@
     ruleTitle: 'c:pathURI for c:ExtensionSchemaDocument'
     ruleName: ""
     ruleID: rule_5-23
-    ruleUID: IEPD-5.0beta1-rule_5-23
+    ruleUID: 'IEPD-5.0 rc1-rule_5-23'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-23'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ExtensionSchemaDocument element MUST resolve to a NIEM extension schema document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-23
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-23'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15969,17 +15969,17 @@
     ruleTitle: 'c:pathURI for c:SubsetSchemaDocument'
     ruleName: ""
     ruleID: rule_5-24
-    ruleUID: IEPD-5.0beta1-rule_5-24
+    ruleUID: 'IEPD-5.0 rc1-rule_5-24'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-24'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SubsetSchemaDocument element MUST resolve to a NIEM subset schema document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-24
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-24'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -15988,17 +15988,17 @@
     ruleTitle: 'c:pathURI for c:Wantlist'
     ruleName: ""
     ruleID: rule_5-25
-    ruleUID: IEPD-5.0beta1-rule_5-25
+    ruleUID: 'IEPD-5.0 rc1-rule_5-25'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-25'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:Wantlist element MUST resolve to a NIEM wantlist XML document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-25
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-25'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -16007,17 +16007,17 @@
     ruleTitle: 'c:pathURI for c:SchematronSchema'
     ruleName: ""
     ruleID: rule_5-26
-    ruleUID: IEPD-5.0beta1-rule_5-26
+    ruleUID: 'IEPD-5.0 rc1-rule_5-26'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-26'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SchematronSchema element MUST resolve to a Schematron schema.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-26
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-26'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -16026,17 +16026,17 @@
     ruleTitle: 'c:pathURI for c:RelaxNGSchema'
     ruleName: ""
     ruleID: rule_5-27
-    ruleUID: IEPD-5.0beta1-rule_5-27
+    ruleUID: 'IEPD-5.0 rc1-rule_5-27'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-27'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:RelaxNGSchema element MUST resolve to a RelaxNG schema.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-27
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-27'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -16045,17 +16045,17 @@
     ruleTitle: 'c:pathURI for c:SchemaDocumentSet'
     ruleName: ""
     ruleID: rule_5-28
-    ruleUID: IEPD-5.0beta1-rule_5-28
+    ruleUID: 'IEPD-5.0 rc1-rule_5-28'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-28'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SchemaDocumentSet element MUST resolve to an XML schema document set.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-28
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-28'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -16064,17 +16064,17 @@
     ruleTitle: 'c:pathURI for c:ConstraintSchemaDocumentSet'
     ruleName: ""
     ruleID: rule_5-29
-    ruleUID: IEPD-5.0beta1-rule_5-29
+    ruleUID: 'IEPD-5.0 rc1-rule_5-29'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-29'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ConstraintSchemaDocumentSet element MUST resolve to a NIEM XML schema document set.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-29
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-29'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.3
     sectionLabel: 'Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)'
@@ -16083,17 +16083,17 @@
     ruleTitle: 'Schema document set interpreted as constraint schema document set'
     ruleName: ""
     ruleID: rule_5-30
-    ruleUID: IEPD-5.0beta1-rule_5-30
+    ruleUID: 'IEPD-5.0 rc1-rule_5-30'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-30'
     ruleTargets: [WF-IEPD]
     ruleClassification: Interpretation
     ruleStyle: text
     ruleText: 'Any XML schema document set whose c:pathURI attribute resolves to a constraint schema document set MUST be interpreted to be a constraint schema document set.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-30
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-30'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.5
     sectionLabel: 'Section 5.2.4.5. Resolving an IEPD URI with a Fragment'
@@ -16102,17 +16102,17 @@
     ruleTitle: 'Resolve IEPD URI with Fragment'
     ruleName: ""
     ruleID: rule_5-31
-    ruleUID: IEPD-5.0beta1-rule_5-31
+    ruleUID: 'IEPD-5.0 rc1-rule_5-31'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-31'
     ruleTargets: [WF-IEPD]
     ruleClassification: Interpretation
     ruleStyle: text
     ruleText: "Given an absolute IEPD URI [RFC 3986 URI], §4.3, Absolute URI with a fragment, resolve this URI as follows: \n- Resolve the base URI (per [RFC 3986 URI]) to retrieve the resource IEPD. If the resource IEPD does not exist, then fail (existence error). \n- Apply the fragment (without \"#\") to the IEPD resource: Locate a structures:id attribute value that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then continue. Locate a path name (for a directory or file) that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then fail (existence error). \n- Locate a structures:id attribute value that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then continue. \n- Locate a path name (for a directory or file) that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then fail (existence error). \n- Return the element, directory, or file found."
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-31
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-31'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.7
     sectionLabel: 'Section 5.2.4.7. XML Catalog URI'
@@ -16121,17 +16121,17 @@
     ruleTitle: 'XML Catalog uri Value Resolves to Resource'
     ruleName: ""
     ruleID: rule_5-32
-    ruleUID: IEPD-5.0beta1-rule_5-32
+    ruleUID: 'IEPD-5.0 rc1-rule_5-32'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-32'
     ruleTargets: [XML-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an XML catalog document, the value of a uri attribute owned by a er:uri element MUST resolve to a resource.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-32
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-32'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.2.4.7
     sectionLabel: 'Section 5.2.4.7. XML Catalog URI'
@@ -16140,17 +16140,17 @@
     ruleTitle: 'XML Catalog uri Value Resolves to Resource with Correct Target Namespace'
     ruleName: ""
     ruleID: rule_5-33
-    ruleUID: IEPD-5.0beta1-rule_5-33
+    ruleUID: 'IEPD-5.0 rc1-rule_5-33'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-33'
     ruleTargets: [XML-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an XML catalog document, given an XML schema document resolved by the value of a uri attribute owned by a er:uri element, the XML schema document target namespace MUST equal the value of the name (a namespace string) attribute owned by the er:uri element.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-33
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-33'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.3
     sectionLabel: 'Section 5.3. Change Log'
@@ -16159,17 +16159,17 @@
     ruleTitle: 'IEPD Has a Change Log'
     ruleName: ""
     ruleID: rule_5-34
-    ruleUID: IEPD-5.0beta1-rule_5-34
+    ruleUID: 'IEPD-5.0 rc1-rule_5-34'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-34'
     ruleTargets: [IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD MUST contain a change log artifact that is identified by a c:IEPDChangeLog element in its IEPD catalog document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-34
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-34'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.4
     sectionLabel: 'Section 5.4. ReadMe Artifact'
@@ -16178,17 +16178,17 @@
     ruleTitle: 'Readme Describes Purpose, Scope, Business Value, etc.'
     ruleName: ""
     ruleID: rule_5-35
-    ruleUID: IEPD-5.0beta1-rule_5-35
+    ruleUID: 'IEPD-5.0 rc1-rule_5-35'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-35'
     ruleTargets: [WF-IEPD]
     ruleClassification: Interpretation
     ruleStyle: text
     ruleText: 'A readme artifact SHOULD (at a minimum) describe the IEPD purpose, scope, business value, exchange information, typical senders/receivers, interactions, and references to other documentation.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-35
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-35'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.4
     sectionLabel: 'Section 5.4. ReadMe Artifact'
@@ -16197,17 +16197,17 @@
     ruleTitle: 'IEPD Has a ReadMe Artifact'
     ruleName: ""
     ruleID: rule_5-36
-    ruleUID: IEPD-5.0beta1-rule_5-36
+    ruleUID: 'IEPD-5.0 rc1-rule_5-36'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-36'
     ruleTargets: [IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD MUST contain a readme artifact that is identified by a c:ReadMe element in its IEPD catalog document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-36
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-36'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.6
     sectionLabel: 'Section 5.6. Defining Information Exchange Packages'
@@ -16216,17 +16216,17 @@
     ruleTitle: 'Conformance Target Identifier'
     ruleName: ""
     ruleID: rule_5-37
-    ruleUID: IEPD-5.0beta1-rule_5-37
+    ruleUID: 'IEPD-5.0 rc1-rule_5-37'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-37'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Interpretation
     ruleStyle: text
     ruleText: "A conformance target identifier for an IEP conformance target declared in an IEPD is formed by concatenating in sequence: \n- the IEPD URI, and \n- the pound sign character (#). and \n- a locally unique NCName (i.e., a non-colonized name, as defined by [W3C XML Schema Part 2 Datatypes], §3.3.7, NCName)."
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-37
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-37'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.6
     sectionLabel: 'Section 5.6. Defining Information Exchange Packages'
@@ -16235,17 +16235,17 @@
     ruleTitle: 'IEP Conformance Target Has a structures:id'
     ruleName: ""
     ruleID: rule_5-38
-    ruleUID: IEPD-5.0beta1-rule_5-38
+    ruleUID: 'IEPD-5.0 rc1-rule_5-38'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-38'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'A c:IEPConformanceTarget element MUST own a structures:id attribute.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-38
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-38'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.6
     sectionLabel: 'Section 5.6. Defining Information Exchange Packages'
@@ -16254,17 +16254,17 @@
     ruleTitle: 'IEPD Declares One or More IEP Conformance Targets'
     ruleName: ""
     ruleID: rule_5-39
-    ruleUID: IEPD-5.0beta1-rule_5-39
+    ruleUID: 'IEPD-5.0 rc1-rule_5-39'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-39'
     ruleTargets: [IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'The IEPD catalog document of an IEPD MUST contain one or more c:IEPConformanceTarget elements.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-39
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-39'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.6.2.3
     sectionLabel: 'Section 5.6.2.3. c:ValidityContext'
@@ -16273,17 +16273,17 @@
     ruleTitle: 'Validity contraint context is value of c:xPathText'
     ruleName: ""
     ruleID: rule_5-40
-    ruleUID: IEPD-5.0beta1-rule_5-40
+    ruleUID: 'IEPD-5.0 rc1-rule_5-40'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-40'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Interpretation
     ruleStyle: text
     ruleText: 'Given a c:xPathText attribute owned by c:ValidityContext, the validity constraint context for the descendant’s validity constraint SHALL be the value of c:xPathText evaluated against the IEP’s document information item (See [W3-XML-InfoSet], §2.1, The Document Information Item).'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-40
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-40'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.6.2.4
     sectionLabel: 'Section 5.6.2.4. c:HasDocumentElement'
@@ -16292,17 +16292,17 @@
     ruleTitle: 'IEP has Document Element'
     ruleName: ""
     ruleID: rule_5-41
-    ruleUID: IEPD-5.0beta1-rule_5-41
+    ruleUID: 'IEPD-5.0 rc1-rule_5-41'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-41'
     ruleTargets: [IEP]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document, if an c:IEPConformanceTarget element for an IEP has a c:HasDocumentElement child element owning a c:qualifiedNameList attribute with a value of $LIST, then the document element of the IEP MUST have a QName that is a member of $LIST.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-41
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-41'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.6.2.5
     sectionLabel: 'Section 5.6.2.5. c:ValidToXPath'
@@ -16311,17 +16311,17 @@
     ruleTitle: 'Validating an XPath Expression'
     ruleName: ""
     ruleID: rule_5-42
-    ruleUID: IEPD-5.0beta1-rule_5-42
+    ruleUID: 'IEPD-5.0 rc1-rule_5-42'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-42'
     ruleTargets: [IEP]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document with a c:xPathText attribute owned by a c:ValidToXPath element, a candidate IEP is a valid IEP, ONLY IF the value of c:ValidToXPath applied to the candidate IEP (an XML document) has an effective Boolean value (EBV) equal to true. EBV is defined by [W3C XPath 3.1], §2.4.3, Effective Boolean Value.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-42
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-42'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.6.3
     sectionLabel: 'Section 5.6.3. IEP Sample Instance XML Documents'
@@ -16330,17 +16330,17 @@
     ruleTitle: 'IEPD Has an IEP Sample for Each c:IEPConformanceTarget'
     ruleName: ""
     ruleID: rule_5-43
-    ruleUID: IEPD-5.0beta1-rule_5-43
+    ruleUID: 'IEPD-5.0 rc1-rule_5-43'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-43'
     ruleTargets: [IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within the IEPD catalog document of an IEPD, a c:IEPConformanceTarget element MUST contain a c:IEPSampleXMLDocument child element.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-43
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-43'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.6.3
     sectionLabel: 'Section 5.6.3. IEP Sample Instance XML Documents'
@@ -16349,17 +16349,17 @@
     ruleTitle: 'Validating an IEP Sample XML Document'
     ruleName: ""
     ruleID: rule_5-44
-    ruleUID: IEPD-5.0beta1-rule_5-44
+    ruleUID: 'IEPD-5.0 rc1-rule_5-44'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-44'
     ruleTargets: [IEP]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD catalog document with a c:pathURI attribute owned by a c:IEPSampleXMLDocument, the artifact resolved by the value of c:pathURI MUST be valid for the validity constraints of the c:IEPConformanceTarget parent of c:IEPSampleXMLDocument.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-44
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-44'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_5.7
     sectionLabel: 'Section 5.7. Conformance Assertion'
@@ -16368,17 +16368,17 @@
     ruleTitle: 'IEPD Has Conformance Assertion'
     ruleName: ""
     ruleID: rule_5-45
-    ruleUID: IEPD-5.0beta1-rule_5-45
+    ruleUID: 'IEPD-5.0 rc1-rule_5-45'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_5-45'
     ruleTargets: [IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD MUST contain a conformance assertion artifact that is identified by a c:ConformanceAssertion element in its IEPD catalog document.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_5-45
+    ruleSelector: 'IEPD-5_0 rc1-rule_5-45'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_6.1
     sectionLabel: 'Section 6.1. NIEM Wantlist'
@@ -16387,17 +16387,17 @@
     ruleTitle: 'Wantlist Location'
     ruleName: ""
     ruleID: rule_6-1
-    ruleUID: IEPD-5.0beta1-rule_6-1
+    ruleUID: 'IEPD-5.0 rc1-rule_6-1'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_6-1'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'If present, a NIEM wantlist MUST reside within the root of the IEPD subdirectory that groups and defines its corresponding subset schema document set (e.g., niem).'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_6-1
+    ruleSelector: 'IEPD-5_0 rc1-rule_6-1'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7
     sectionLabel: 'Section 7. Organization, Packaging, and Other Criteria'
@@ -16406,17 +16406,17 @@
     ruleTitle: 'An IEPD in ZIP File Format Preserves Logical Directory Structure.'
     ruleName: ""
     ruleID: rule_7-1
-    ruleUID: IEPD-5.0beta1-rule_7-1
+    ruleUID: 'IEPD-5.0 rc1-rule_7-1'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-1'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD in ZIP file format represents a sub-tree of a file system. Such an archive MUST preserve and store the logical directory structure intended by its author for respository format.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-1
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-1'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7
     sectionLabel: 'Section 7. Organization, Packaging, and Other Criteria'
@@ -16425,17 +16425,17 @@
     ruleTitle: 'XSD and XML Documents Conform to Applicable NDR Conformance Targets'
     ruleName: ""
     ruleID: rule_7-2
-    ruleUID: IEPD-5.0beta1-rule_7-2
+    ruleUID: 'IEPD-5.0 rc1-rule_7-2'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-2'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD, each XML schema document (XSD) or instance XML document (XML) artifact that uses a conformance targets attribute (as defined by [NIEM Conformance Targets Attribute Specification]) MUST satisfy the [NIEM Naming and Design Rules] rules for the conformance targets it declares.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-2
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-2'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7
     sectionLabel: 'Section 7. Organization, Packaging, and Other Criteria'
@@ -16444,17 +16444,17 @@
     ruleTitle: 'IEPD Archive Uncompresses to a Single Root Directory'
     ruleName: ""
     ruleID: rule_7-3
-    ruleUID: IEPD-5.0beta1-rule_7-3
+    ruleUID: 'IEPD-5.0 rc1-rule_7-3'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-3'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD in ZIP file format MUST uncompress (unzip) to one and only one IEPD root directory.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-3
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-3'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7.1.1
     sectionLabel: 'Section 7.1.1. Constraint on Elements of Type c:SchemaDocumentSetType'
@@ -16463,17 +16463,17 @@
     ruleTitle: 'Constraint on Elements of Type c:SchemaDocumentSetType'
     ruleName: ""
     ruleID: rule_7-4
-    ruleUID: IEPD-5.0beta1-rule_7-4
+    ruleUID: 'IEPD-5.0 rc1-rule_7-4'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-4'
     ruleTargets: [IEPD-catalog]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An element information item with a type definition validly derived from c:SchemaDocumentSetType MUST have a child element with an element declaration that is in the substitution group of c:XMLCatalog or c:XMLSchemaDocument.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-4
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-4'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7.2
     sectionLabel: 'Section 7.2. IEPD File Name Syntax'
@@ -16482,17 +16482,17 @@
     ruleTitle: 'IEPD ZIP file Name Syntax'
     ruleName: ""
     ruleID: rule_7-5
-    ruleUID: IEPD-5.0beta1-rule_7-5
+    ruleUID: 'IEPD-5.0 rc1-rule_7-5'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-5'
     ruleTargets: [IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'The file name of an IEPD ZIP file (iepd-filename) SHOULD adhere to the syntax defined by the regular expression:The status values are as defined in Rule 5-9, IEPD Version Number Syntax (WF-IEPD), above.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-5
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-5'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7.3
     sectionLabel: 'Section 7.3. Artifact Links to Other Resources'
@@ -16501,17 +16501,17 @@
     ruleTitle: 'IEPD Reference to Resource Uses Common URI Scheme'
     ruleName: ""
     ruleID: rule_7-6
-    ruleUID: IEPD-5.0beta1-rule_7-6
+    ruleUID: 'IEPD-5.0 rc1-rule_7-6'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-6'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An absolute reference to an Internet resource MUST use a well-known URI scheme (e.g., http, https, ftp, ftps) and MUST resolve. If applicable, documentation SHOULD describe how to resolve with security, account, and/or password information.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-6
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-6'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. IEPD Completeness'
@@ -16520,17 +16520,17 @@
     ruleTitle: 'IEPD Completeness'
     ruleName: ""
     ruleID: rule_7-7
-    ruleUID: IEPD-5.0beta1-rule_7-7
+    ruleUID: 'IEPD-5.0 rc1-rule_7-7'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-7'
     ruleTargets: [IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'An IEPD SHOULD contain all artifacts needed to understand it and facilitate its correct implementation.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-7
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-7'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. IEPD Completeness'
@@ -16539,17 +16539,17 @@
     ruleTitle: 'IEPD External Schema Documents Are Local Resources'
     ruleName: ""
     ruleID: rule_7-8
-    ruleUID: IEPD-5.0beta1-rule_7-8
+    ruleUID: 'IEPD-5.0 rc1-rule_7-8'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-8'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within an IEPD, a non-NIEM-conformant external schema document reference to another schema document and/or namespace MUST resolve to a local resource. schemaLocation attributes or XML catalogs can be used to ensure resolution.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-8
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-8'
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. IEPD Completeness'
@@ -16558,14 +16558,14 @@
     ruleTitle: 'Key IEPD Resources Are Local Resources'
     ruleName: ""
     ruleID: rule_7-9
-    ruleUID: IEPD-5.0beta1-rule_7-9
+    ruleUID: 'IEPD-5.0 rc1-rule_7-9'
     ruleURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#rule_7-9'
     ruleTargets: [WF-IEPD]
     ruleClassification: Constraint
     ruleStyle: text
     ruleText: 'Within any artifact of an IEPD, any direct reference to another resource (i.e., another artifact such as an image, schema, stylesheet, etc.) that is required to process or display an artifact SHOULD exist within the IEPD at the location specified by that reference.'
     ruleStatus: draft
-    ruleSelector: IEPD-5_0beta1-rule_7-9
+    ruleSelector: 'IEPD-5_0 rc1-rule_7-9'
 -
     specificationID: CodeLists-4.0
     specificationSelector: CodeLists-4_0

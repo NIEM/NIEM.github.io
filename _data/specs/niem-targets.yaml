@@ -1,4 +1,44 @@
 -
+    specificationID: NDR-1.3
+    specificationSelector: NDR-1_3
+    classID: NDR
+    targetCode: REF
+    targetName: 'Reference Schema Document'
+    targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf#definition_reference_schema_document'
+    targetDescription: 'A NIEM schema that provides authoritative definitions of broadly reusable schema components and follows a stricter syntax. NIEM release schemas are REFs.'
+    targetTutorial: '/reference/specifications/ndr/#reference-schema-document-ref'
+    targetStatus: null
+-
+    specificationID: NDR-1.3
+    specificationSelector: NDR-1_3
+    classID: NDR
+    targetCode: EXT
+    targetName: 'Extension Schema Document'
+    targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf#definition_extension_schema_document'
+    targetDescription: 'A NIEM schema for special-purpose content with little reuse expected. EXTs may thus follow a slightly more relaxed syntax. IEPD extension schemas are often EXTs.'
+    targetTutorial: '/reference/specifications/ndr/#extension-schema-document-ext'
+    targetStatus: null
+-
+    specificationID: NDR-1.3
+    specificationSelector: NDR-1_3
+    classID: NDR
+    targetCode: SET
+    targetName: 'Conformant Schema Document Set'
+    targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf#definition_conformant_schema_document_set'
+    targetDescription: 'A single conceptual XML schema that represents the sum of all rules and definitions within a collection of NIEM REF and EXT schemas, such as an IEPD.'
+    targetTutorial: '/reference/specifications/ndr/#conformant-schema-document-set-set'
+    targetStatus: null
+-
+    specificationID: NDR-1.3
+    specificationSelector: NDR-1_3
+    classID: NDR
+    targetCode: INS
+    targetName: 'Conformant Instance Document'
+    targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf#definition_conformant_instance_XML_document'
+    targetDescription: 'An XML instance document which is valid against a conformant schema document set (SET).'
+    targetTutorial: '/reference/specifications/ndr/#conformant-instance-document-ins'
+    targetStatus: null
+-
     specificationID: NDR-3.0
     specificationSelector: NDR-3_0
     classID: NDR
@@ -173,8 +213,8 @@
     targetDescription: 'A XML file that maps namespaces to file locations.'
     targetStatus: current
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     targetCode: IEPD
     targetName: 'Information Exchange Package Documentation'
@@ -182,8 +222,8 @@
     targetDescription: 'A set of artifacts that define the content, structure, and meaning of an information exchange message.  The schemas contained by the IEPD must conform to the NIEM Naming and Design Rules (NDR).'
     targetStatus: draft
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     targetCode: WF-IEPD
     targetName: 'Well-formed IEPD'
@@ -191,8 +231,8 @@
     targetDescription: 'An IEPD with a less-strict set of requirements.  A well-formed IEPD focuses on the format and structure of the package, includes a valid IEPD catalog with no broken links, and includes and uses other general IEPD artifacts correctly; however, schema conformance to the NIEM Naming and Design Rules (NDR) is not required.'
     targetStatus: draft
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     targetCode: IEP
     targetName: 'Information Exchange Package'
@@ -200,8 +240,8 @@
     targetDescription: 'An information exchange message, as an XML instance document.  The use of NIEM-defined elements is not required.'
     targetStatus: draft
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     targetCode: FN-IEP
     targetName: 'Full NIEM IEP'
@@ -209,8 +249,8 @@
     targetDescription: 'An information exchange message, as an XML instance document.  Ths use of elements defined by NIEM reference or extension schemas is required.'
     targetStatus: draft
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     targetCode: Schema-subset
     targetName: 'Schema document subset'
@@ -218,8 +258,8 @@
     targetDescription: 'A set of schemas, corresponding to a set of full reference schemas, that have been reduced and constrained to include only the files and components needed for an information exchange.'
     targetStatus: draft
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     targetCode: IEPD-catalog
     targetName: 'IEPD catalog document'
@@ -227,8 +267,8 @@
     targetDescription: 'A XML file that contains metadata about the IEPD, including descriptive information and an index of the files it contains.'
     targetStatus: draft
 -
-    specificationID: IEPD-5.0beta1
-    specificationSelector: IEPD-5_0beta1
+    specificationID: 'IEPD-5.0 rc1'
+    specificationSelector: IEPD-5_0rc1
     classID: IEPD
     targetCode: XML-catalog
     targetName: 'XML catalog document'
