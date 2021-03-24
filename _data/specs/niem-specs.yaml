@@ -289,7 +289,7 @@
     specURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html'
     specYear: '2021'
     specApplicableReleases: 'NIEM 5.0 - NIEM 5.2'
-    specChangeHistory: null
+    specChangeHistory: 'https://github.com/NIEM/NIEM-JSON-Spec/releases/tag/v5.0beta1'
     specResources: null
     specExamples: null
     specStatus: draft

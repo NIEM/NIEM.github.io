@@ -2,4 +2,4 @@
 # To remove the announcement section from the landing page, put a # in front of the message tag below
 # to comment it out.  The index page will skip the announcements section if there is no message.
 
-message:  The following NIEM specifications have drafts ready for review, with feedback requested by **Wednesday, March 17, 2021**.
+message:  "The 5.0 versions of the **[IEPD specification](https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html)** and the **[Conformance specification](https://niem.github.io/NIEM-Conformance-Spec/v5.0/niem-conformance-spec.html)** have been officially released! <br/> <br/>  The following specification is ready for review, with feedback requested by **Friday, April 9, 2021**:"

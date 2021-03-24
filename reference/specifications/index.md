@@ -25,8 +25,6 @@ links:
 - url: /reference/specifications/hlva/
   classID: HLVA
   group: specs
-todo:
-- JSON
 deferred:
 - SIX
 - UML Profile
