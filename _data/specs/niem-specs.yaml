@@ -102,39 +102,39 @@
     specCustomID: MPD
     specName: 'Model Package Description'
     specVersion: 3.0.1
-    specURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html'
+    specURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html'
     specYear: '2015'
     specApplicableReleases: 'NIEM 3.0 - NIEM 4.2'
     specChangeHistory: null
     specResources: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/mpd-toolkit-3.0.zip'
     specExamples: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/iepd-examples/'
-    specStatus: current
+    specStatus: null
     specRuleCount: 60
     specDefinitionCount: 44
     specSelector: MPD-3_0_1
     specTargetCount: 6
 -
-    id: 'IEPD-5.0 rc1'
+    id: IEPD-5.0
     classID: IEPD
     className: 'NIEM Information Exchange Package Documentation'
     classRepo: 'https://github.com/NIEM/MPD-Spec'
     classLandingPage: 'https://reference.niem.gov/niem/specification/model-package-description/'
     classIssueTracker: 'https://github.com/NIEM/MPD-Spec/projects/1'
     classDescription: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.'
-    specID: 'IEPD-5.0 rc1'
+    specID: IEPD-5.0
     specCustomID: IEPD
     specName: 'NIEM Information Exchange Package Documentation'
-    specVersion: '5.0 release candidate 1'
-    specURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html'
-    specYear: 'Feb 2021'
+    specVersion: '5.0'
+    specURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html'
+    specYear: '2021'
     specApplicableReleases: 'NIEM 5.0 - NIEM 5.2'
-    specChangeHistory: 'https://github.com/NIEM/MPD-Spec/releases/tag/v5.0rc1'
+    specChangeHistory: 'https://github.com/NIEM/MPD-Spec/releases/tag/v5.0'
     specResources: null
     specExamples: null
-    specStatus: draft
-    specRuleCount: 0
-    specDefinitionCount: 0
-    specSelector: IEPD-5_0rc1
+    specStatus: current
+    specRuleCount: 58
+    specDefinitionCount: 42
+    specSelector: IEPD-5_0
     specTargetCount: 7
 -
     id: CodeLists-4.0
@@ -200,33 +200,33 @@
     specChangeHistory: null
     specResources: null
     specExamples: null
-    specStatus: current
+    specStatus: null
     specRuleCount: 0
     specDefinitionCount: 0
     specSelector: Conformance-3_0
     specTargetCount: 0
 -
-    id: 'Conformance-5.0 rc1'
+    id: Conformance-5.0
     classID: Conformance
     className: 'NIEM Conformance Specification'
     classRepo: 'https://github.com/NIEM/NIEM-Conformance-Spec'
     classLandingPage: 'https://niem.github.io/NIEM-Conformance-Spec/'
     classIssueTracker: null
     classDescription: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
-    specID: 'Conformance-5.0 rc1'
+    specID: Conformance-5.0
     specCustomID: Conformance
     specName: 'NIEM Conformance Specification'
-    specVersion: '5.0 release candidate 1'
-    specURL: 'https://niem.github.io/NIEM-Conformance-Spec/draft/niem-conformance-spec.html'
-    specYear: 'Dec 2020'
+    specVersion: '5.0'
+    specURL: 'https://niem.github.io/NIEM-Conformance-Spec/v5.0/niem-conformance-spec.html'
+    specYear: '2021'
     specApplicableReleases: 'NIEM 5.0 - NIEM 5.2'
-    specChangeHistory: 'https://github.com/NIEM/NIEM-Conformance-Spec/releases/tag/v5.0rc1'
+    specChangeHistory: 'https://github.com/NIEM/NIEM-Conformance-Spec/releases/tag/v5.0'
     specResources: null
     specExamples: null
-    specStatus: draft
+    specStatus: current
     specRuleCount: 0
     specDefinitionCount: 0
-    specSelector: Conformance-5_0rc1
+    specSelector: Conformance-5_0
     specTargetCount: 0
 -
     id: CTAS-3.0
@@ -273,6 +273,29 @@
     specRuleCount: 4
     specDefinitionCount: 23
     specSelector: JSON-4_0
+    specTargetCount: 2
+-
+    id: 'JSON-5.0 beta 1'
+    classID: JSON
+    className: 'NIEM JSON Specification'
+    classRepo: 'https://github.com/NIEM/NIEM-JSON-Spec'
+    classLandingPage: 'https://niem.github.io/NIEM-JSON-Spec/'
+    classIssueTracker: 'https://github.com/NIEM/NIEM-JSON-Spec/projects/1'
+    classDescription: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
+    specID: 'JSON-5.0 beta 1'
+    specCustomID: JSON
+    specName: 'NIEM JSON Specification'
+    specVersion: '5.0 beta 1'
+    specURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html'
+    specYear: '2021'
+    specApplicableReleases: 'NIEM 5.0 - NIEM 5.2'
+    specChangeHistory: null
+    specResources: null
+    specExamples: null
+    specStatus: draft
+    specRuleCount: 4
+    specDefinitionCount: 24
+    specSelector: JSON-5_0beta1
     specTargetCount: 2
 -
     id: HLVA-3.0

@@ -34,7 +34,7 @@ Major releases allow content changes to NIEM Core and domains, plus architectura
 
 NIEM [release packages](../reference/artifacts/releases/) are available on both [GitHub](https://github.com/NIEM/NIEM-Releases) and [release.niem.gov](https://release.niem.gov/niem/) (the original publication site).
 
-Please submit feedback to the NIEM releases [issue tracker](https://github.com/NIEM/NIEM-Releases/issues).
+Please submit feedback to the NIEM releases [issue tracker](https://github.com/NIEM/NIEM-Releases/issues) (see [info](https://github.com/NIEM/NIEM-Releases/wiki/Issues) for help).
 
 {:.note}
 > The **[NIEM-Specifications]({{ "/reference/specifications/" | relative_url }})** landing page has the latest news about the drafts available for review, plus quick links to other specification resources.

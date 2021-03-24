@@ -23,7 +23,7 @@ Please email feedback to  or submit a new [5.1 issue](https://github.com/NIEM/NI
 
 The release is currently in the pre-alpha stage and no updated schemas are available yet for review.
 
-- Submit a [new issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.1) or email feedback to <niem-comments@lists.gatech.edu>
+- Submit a [new issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.1) (see [info](https://github.com/NIEM/NIEM-Releases/wiki/Issues) for help) or email feedback to <niem-comments@lists.gatech.edu>
 
 - View all [5.1 issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+label%3A5.1)
 
@@ -39,6 +39,7 @@ The release is currently in the pre-alpha stage and no updated schemas are avail
 Draft | Date | Issues | Description
 :------ |:---- |:------ |:-----------
 Alpha 1 | Mar 2021 |  | Major domain content submissions due.
+Alpha 2 | May 2021 |  | Additional updates to domain content.
 Beta 1 | June 2021 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
 Release Candidate (RC) 1 | Aug 2021 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Fall 2021 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
@@ -59,7 +60,7 @@ The following changes are expected to appear in NIEM 5.1:
 
 - **Biometrics** domain - add new DNA content [(#152)](https://github.com/NIEM/NIEM-Releases/issues/152)
 
-- **Emergency Management** domain - add content from OpenFEMA [(#208)](https://github.com/NIEM/NIEM-Releases/issues/208)
+- **Emergency Management** domain - add flood damage claim content from OpenFEMA [(#208)](https://github.com/NIEM/NIEM-Releases/issues/208)
 
 - **Immigration** domain - update content and codes
 
@@ -71,4 +72,4 @@ The following changes are expected to appear in NIEM 5.1:
 
 ## Specification Links
 
-{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0 beta1, JSON-4.0, Conformance-5.0 beta1, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
+{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0, JSON-5.0 beta 1, Conformance-5.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}

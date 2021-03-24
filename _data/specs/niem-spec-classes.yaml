@@ -27,7 +27,7 @@
     description: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.'
     note: 'Prior to NIEM 5.0, this specification was known as the NIEM Model Package Description (MPD) Specification.'
     versionCount: 2
-    versionNumbers: '3.0.1, 5.0 release candidate 1'
+    versionNumbers: '3.0.1, 5.0'
 -
     id: CodeLists
     name: 'NIEM Code Lists Specification'
@@ -57,7 +57,7 @@
     description: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
     note: ""
     versionCount: 3
-    versionNumbers: '1.0, 3.0, 5.0 release candidate 1'
+    versionNumbers: '1.0, 3.0, 5.0'
 -
     id: CTAS
     name: 'NIEM Conformance Targets Attribute Specification'
@@ -85,8 +85,8 @@
     changeHistory: null
     description: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
     note: ""
-    versionCount: 1
-    versionNumbers: '4.0'
+    versionCount: 2
+    versionNumbers: '4.0, 5.0 beta 1'
 -
     id: HLVA
     name: 'NIEM High-Level Version Architecture Specification'

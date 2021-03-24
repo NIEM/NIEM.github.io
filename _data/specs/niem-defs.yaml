@@ -2216,1204 +2216,1204 @@
     classID: IEPD
     sectionID: section_2.3
     sectionLabel: 'Section 2.3. Artifacts'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.3'
     definitionID: definition_artifact
     definitionUID: MPD-3.0.1-definition_artifact
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_artifact'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_artifact'
     definitionTerm: artifact
     definitionText: 'A single file with a defined purpose.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.3
     sectionLabel: 'Section 2.3. Artifacts'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.3'
     definitionID: definition_artifact_set
     definitionUID: MPD-3.0.1-definition_artifact_set
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_artifact_set'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_artifact_set'
     definitionTerm: 'artifact set'
     definitionText: 'A collection of artifacts logically grouped for a defined purpose.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_6.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_6.2'
     definitionID: definition_business_rule_schema
     definitionUID: MPD-3.0.1-definition_business_rule_schema
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_business_rule_schema'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_business_rule_schema'
     definitionTerm: 'business rule schema'
     definitionText: 'An artifact that contains business rules in a formal representation language with the intent to automatically process them on an XML document to enforce business constraints.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_6.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_6.2'
     definitionID: definition_business_rules
     definitionUID: MPD-3.0.1-definition_business_rules
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_business_rules'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_business_rules'
     definitionTerm: 'business rules'
     definitionText: 'Formal or informal statements that describe business policy or procedure, and in doing so define or constrain some aspect of a process or procedure in order to impose control.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.3
     sectionLabel: 'Section 5.3. Change Log'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.3'
     definitionID: definition_change_log
     definitionUID: MPD-3.0.1-definition_change_log
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_change_log'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_change_log'
     definitionTerm: 'change log'
     definitionText: 'An artifact that describes the changes applied to an MPD since its previous version.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.7
     sectionLabel: 'Section 5.7. Conformance Assertion'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.7'
     definitionID: definition_conformance_assertion
     definitionUID: MPD-3.0.1-definition_conformance_assertion
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_conformance_assertion'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_conformance_assertion'
     definitionTerm: 'conformance assertion'
     definitionText: 'An artifact that provides a declaration that an MPD conforms to relevant NIEM specifications and associated rules, including [NIEM Conformance 3.0], [NIEM Naming and Design Rules 3.0], [NIEM Conformance Targets Attribute Specification 3.0] and [NIEM MPD Specification 3.0] (this NIEM MPD Specification).'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.1'
     definitionID: definition_conformance_target
     definitionUID: MPD-3.0.1-definition_conformance_target
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_conformance_target'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_conformance_target'
     definitionTerm: 'conformance target'
     definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification 3.0]:A class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.1'
     definitionID: definition_conformance_target_identifier
     definitionUID: MPD-3.0.1-definition_conformance_target_identifier
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_conformance_target_identifier'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_conformance_target_identifier'
     definitionTerm: 'conformance target identifier'
     definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification 3.0]:An internationalized resource identifier [RFC 3987 IRI] that uniquely identifies a conformance target.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Rules'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.9'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.9'
     definitionID: definition_constraint_rule
     definitionUID: MPD-3.0.1-definition_constraint_rule
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_constraint_rule'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_constraint_rule'
     definitionTerm: 'constraint rule'
     definitionText: 'A rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.5
     sectionLabel: 'Section 4.5. Constraint Schema Document Sets'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_4.5'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_4.5'
     definitionID: definition_constraint_schema_document_set
     definitionUID: MPD-3.0.1-definition_constraint_schema_document_set
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_constraint_schema_document_set'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_constraint_schema_document_set'
     definitionTerm: 'constraint schema document set'
     definitionText: 'A set of related constraint schema documents that work together; for example, a constraint schema document set could be built by adding constraints to a schema document subset.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. Harmonization'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.6'
     definitionID: definition_data_component
     definitionUID: MPD-3.0.1-definition_data_component
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_data_component'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_data_component'
     definitionTerm: 'data component'
     definitionText: 'An XML Schema type or attribute group definition; or an XML Schema element or attribute declaration.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.3
     sectionLabel: 'Section 4.3. Extension Schema Documents'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_4.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_4.3'
     definitionID: definition_extension_schema_document
     definitionUID: MPD-3.0.1-definition_extension_schema_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_extension_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_extension_schema_document'
     definitionTerm: 'extension schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:An XML schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document. It is a conformance target of [NIEM Naming and Design Rules 3.0]. An extension schema document MUST conform to all rules of [NIEM Naming and Design Rules 3.0] that apply to this conformance target. An XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument MUST be an extension schema document.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.4
     sectionLabel: 'Section 4.4. External Schema Documents'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_4.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_4.4'
     definitionID: definition_external_adapter_type
     definitionUID: MPD-3.0.1-definition_external_adapter_type
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_external_adapter_type'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_external_adapter_type'
     definitionTerm: 'external adapter type'
     definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:A NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. External adapter types are defined in NIEM-conformant schemas.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.4
     sectionLabel: 'Section 4.4. External Schema Documents'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_4.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_4.4'
     definitionID: definition_external_schema_document
     definitionUID: MPD-3.0.1-definition_external_schema_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_external_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_external_schema_document'
     definitionTerm: 'external schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:Any XML schema document that is not one of: a reference schema document, an extension schema document, or an XML schema document that has the structures namespace as its target namespace.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.3
     sectionLabel: 'Section 3.2.3. IEP Conformance Targets'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.2.3'
     definitionID: definition_full_NIEM_information_exchange_package
     definitionUID: MPD-3.0.1-definition_full_NIEM_information_exchange_package
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_full_NIEM_information_exchange_package'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_full_NIEM_information_exchange_package'
     definitionTerm: 'full NIEM information exchange package'
     definitionText: 'An information exchange package that satisfies all the validity constraints for its class as defined by a model package description, and that has an XML document element that is declared in either a NIEM reference or extension schema document.This term may be abbreviated full NIEM IEP. Rules specifying this conformance target use the applicability code FN-IEP.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. Harmonization'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.6'
     definitionID: definition_harmonization
     definitionUID: MPD-3.0.1-definition_harmonization
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_harmonization'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_harmonization'
     definitionTerm: harmonization
     definitionText: 'The process of reviewing a data model’s existing data definitions and declarations; reviewing how it structures and represents data; integrating new data components; and refactoring data components as necessary to remove (or reduce to the maximum extent feasible) semantic duplication and/or overlap among all data structures and definitions resulting in quality improvements to representation and usability.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.6
     sectionLabel: 'Section 5.6. Defining Information Exchange Packages'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.6'
     definitionID: definition_IEP_conformance_target
     definitionUID: MPD-3.0.1-definition_IEP_conformance_target
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_IEP_conformance_target'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_IEP_conformance_target'
     definitionTerm: 'IEP conformance target'
     definitionText: 'A conformance target that is a class or category of IEP which has a set of one or more validity constraints and a conformance target identifier. Every IEP is an instance of one or more IEP conformance targets.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.3
     sectionLabel: 'Section 3.2.3. IEP Conformance Targets'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.2.3'
     definitionID: definition_information_exchange_package
     definitionUID: MPD-3.0.1-definition_information_exchange_package
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package'
     definitionTerm: 'information exchange package'
     definitionText: 'An XML instance XML document that conforms to the conformance target defined by a c:IEPConformanceTarget element in the MPD catalog document of a model package description.This term may be abbreviated IEP. Rules specifying this conformance target use the applicability code IEP.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.2
     sectionLabel: 'Section 3.2.2. IEPD Conformance Target'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.2.2'
     definitionID: definition_information_exchange_package_documentation
     definitionUID: MPD-3.0.1-definition_information_exchange_package_documentation
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package_documentation'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package_documentation'
     definitionTerm: 'information exchange package documentation'
     definitionText: 'An information exchange package documentation is a model package description that: has an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD, and conforms to all the rules in this specification for the conformance target information exchange package documentation (i.e., applicability code IEPD).This term may be abbreviated IEPD. Rules specifying this conformance target use the applicability code IEPD.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.2
     sectionLabel: 'Section 3.2.2. IEPD Conformance Target'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.2.2'
     definitionID: definition_instance_XML_document
     definitionUID: MPD-3.0.1-definition_instance_XML_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_instance_XML_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_instance_XML_document'
     definitionTerm: 'instance XML document'
     definitionText: 'An instance XML document is an XML document that is valid against an XML Schema. An instance XML document is said to be an instance of the schema to which it validates.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Rules'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.9'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.9'
     definitionID: definition_interpretation_rule
     definitionUID: MPD-3.0.1-definition_interpretation_rule
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_interpretation_rule'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_interpretation_rule'
     definitionTerm: 'interpretation rule'
     definitionText: 'A rule that sets the methodology, pattern, or procedure for understanding or using some aspect of an instance of a conformance target.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.1
     sectionLabel: 'Section 3.2.1. The Model Package Description Conformance Target'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.2.1'
     definitionID: definition_model_package_description
     definitionUID: MPD-3.0.1-definition_model_package_description
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_model_package_description'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_model_package_description'
     definitionTerm: 'model package description'
     definitionText: 'A model package description is a set of artifacts (possibly in a ZIP file) that: includes a set of logically cohesive W3C XML Schema documents and other supporting files that represent one or more reusable or implementable XML information models, and has an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#MPD, and adheres to all the rules within this specification for the model package description conformance target.This term may be abbreviated MPD. Rules specifying this conformance target use the applicability code WF-MPD.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.1
     sectionLabel: 'Section 5.1. NIEM MPD Catalog'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.1'
     definitionID: definition_MPD_catalog_document
     definitionUID: MPD-3.0.1-definition_MPD_catalog_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_MPD_catalog_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_MPD_catalog_document'
     definitionTerm: 'MPD catalog document'
     definitionText: 'An instance XML document that: conforms to all the rules in this specification for the conformance target MPD catalog document (i.e., applicability code MPD-catalog), and contains metadata describing: MPD unique identification Conformance targets Basic characteristics and properties Key artifacts and directory structure Relationships to other MPDs and their artifactsThis term may be abbreviated MPD-catalog. Rules specifying this conformance target use the applicability code MPD-catalog.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.1'
     definitionID: definition_MPD_class
     definitionUID: MPD-3.0.1-definition_MPD_class
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_MPD_class'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_MPD_class'
     definitionTerm: 'MPD class'
     definitionText: 'A conformance target identifier to which a given MPD claims to conform. The MPD class of an MPD is established by Rule 5-9, MPD Class Determined by Conformance Target Identifier in c:mpdClassURIList, below.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_7
     sectionLabel: 'Section 7. Organization, Packaging, and Other Criteria'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_7'
     definitionID: definition_MPD_root_directory
     definitionUID: MPD-3.0.1-definition_MPD_root_directory
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_MPD_root_directory'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_MPD_root_directory'
     definitionTerm: 'MPD root directory'
     definitionText: 'The top level file directory relative to all MPD artifacts and subdirectories.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_6.1
     sectionLabel: 'Section 6.1. NIEM Wantlist'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_6.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_6.1'
     definitionID: definition_NIEM_wantlist
     definitionUID: MPD-3.0.1-definition_NIEM_wantlist
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_NIEM_wantlist'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_NIEM_wantlist'
     definitionTerm: 'NIEM wantlist'
     definitionText: 'An XML document that represents a complete NIEM schema document subset.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.2.4
     sectionLabel: 'Section 5.2.4. URI Schemes'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.2.4'
     definitionID: definition_path_name
     definitionUID: MPD-3.0.1-definition_path_name
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_path_name'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_path_name'
     definitionTerm: 'path name'
     definitionText: 'A general form of the name of a file or directory that specifies a unique location in a file system. A path name points to a file system location by following the directory tree hierarchy expressed in a string of characters in which path components, separated by a delimiting character, represent each subdirectory. If a path name terminates in a file name, then it specifies the location of that file.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.4
     sectionLabel: 'Section 5.4. ReadMe Artifact'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.4'
     definitionID: definition_readme_artifact
     definitionUID: MPD-3.0.1-definition_readme_artifact
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_readme_artifact'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_readme_artifact'
     definitionTerm: 'readme artifact'
     definitionText: 'An informal documentation artifact contained in a model package description that serves as the initial general source of human readable descriptive or instructional information. A readme artifact or file (formerly known as a master document) may index or reference other more specific documentation or other explanatory materials within the MPD.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.2.4.6
     sectionLabel: 'Section 5.2.4.6. URI Resolution Involving Reference Elements'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.2.4.6'
     definitionID: definition_reference_element
     definitionUID: MPD-3.0.1-definition_reference_element
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_reference_element'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_reference_element'
     definitionTerm: 'reference element'
     definitionText: 'A reference element is an element information item that has an attribute structures:ref. A reference element refers to its value by reference, instead of carrying it as content.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.8
     sectionLabel: 'Section 2.8. Reference Schema Documents'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.8'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.8'
     definitionID: definition_reference_schema_document
     definitionUID: MPD-3.0.1-definition_reference_schema_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_reference_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_reference_schema_document'
     definitionTerm: 'reference schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:An XML schema document that is intended to provide the authoritative definitions of broadly reusable schema components. It is a conformance target of [NIEM Naming and Design Rules 3.0]. A reference schema document MUST conform to all rules of [NIEM Naming and Design Rules 3.0] that apply to this conformance target. An instance XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ReferenceSchemaDocument MUST be a conformant reference schema document.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.8
     sectionLabel: 'Section 2.8. Reference Schema Documents'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.8'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.8'
     definitionID: definition_reference_schema_document_set
     definitionUID: MPD-3.0.1-definition_reference_schema_document_set
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_reference_schema_document_set'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_reference_schema_document_set'
     definitionTerm: 'reference schema document set'
     definitionText: 'A set of related reference schema documents, such as a NIEM release.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.2.4
     sectionLabel: 'Section 5.2.4. URI Schemes'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.2.4'
     definitionID: definition_resolve_URI
     definitionUID: MPD-3.0.1-definition_resolve_URI
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_resolve_URI'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_resolve_URI'
     definitionTerm: 'resolve URI'
     definitionText: 'A function (or action) that takes a URI string of the form xs:anyURI and returns the resource it identifies. If the URI is local (i.e., within an MPD) and the resource does not exist, then this function fails. If a URI is remote or of unknown location (e.g., a URN), then this function (or action) may require human assistance to determine if a resource associated with the URI exists (pass) or not (fail).'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.7'
     definitionID: definition_schema_component
     definitionUID: MPD-3.0.1-definition_schema_component
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_schema_component'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_schema_component'
     definitionTerm: 'schema component'
     definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.2.1
     sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_4.2.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_4.2.1'
     definitionID: definition_schema_document_subset
     definitionUID: MPD-3.0.1-definition_schema_document_subset
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_schema_document_subset'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_schema_document_subset'
     definitionTerm: 'schema document subset'
     definitionText: 'An XML schema document set based on a reference schema document set intended to ensure that any instance XML document valid to the schema document subset is also valid to the reference schema document set.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_6.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_6.2'
     definitionID: definition_Schematron_schema
     definitionUID: MPD-3.0.1-definition_Schematron_schema
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_Schematron_schema'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_Schematron_schema'
     definitionTerm: 'Schematron schema'
     definitionText: 'A business rule schema that adheres to [ISO Schematron].'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.2.1
     sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_4.2.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_4.2.1'
     definitionID: definition_subset_schema_document
     definitionUID: MPD-3.0.1-definition_subset_schema_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_subset_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_subset_schema_document'
     definitionTerm: 'subset schema document'
     definitionText: 'An XML schema document that meets all of the following criteria: It is built from a reference schema document set where one or more reference schema documents have been substituted by corresponding subset schema documents. It is built from a reference schema document by applying subset operations to the XML schema statements in a reference schema document. It is explicitly designated as a subset schema document. This is accomplished by declaration in the relevant MPD catalog or by a tool-specific mechanism outside the subset schema document. It has a target namespace previously defined by a reference schema document. That is, it does not provide original definitions and declarations for schema components, but instead provides an alternate schema representation of components that are defined by a reference schema document. It does not alter the business semantics of components in its namespace. The reference schema document defines these business semantics. It is intended to express the limited vocabulary necessary for an IEPD and to support XML Schema validation for an IEPD.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.6.1
     sectionLabel: 'Section 5.6.1. Validity Context and Constraints'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.6.1'
     definitionID: definition_validity_constraint_context
     definitionUID: MPD-3.0.1-definition_validity_constraint_context
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_validity_constraint_context'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_validity_constraint_context'
     definitionTerm: 'validity constraint context'
     definitionText: 'A set of information items that establishes the applicability of certain validity constraints.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.5
     sectionLabel: 'Section 5.5. XML Catalogs'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.5'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_5.5'
     definitionID: definition_XML_catalog_document
     definitionUID: MPD-3.0.1-definition_XML_catalog_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_catalog_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_XML_catalog_document'
     definitionTerm: 'XML catalog document'
     definitionText: 'As defined by [XML Catalogs 1.1], which states:An entity catalog.An XML catalog document MUST conform to all the rules in this specification for the conformance target XML catalog document.Rules specifying this conformance target use the applicability code XML-catalog.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.7'
     definitionID: definition_XML_document
     definitionUID: MPD-3.0.1-definition_XML_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_XML_document'
     definitionTerm: 'XML document'
     definitionText: 'A document in XML format.(as defined by [W3C XML 1.0], §2, Documents)'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.7'
     definitionID: definition_XML_Schema
     definitionUID: MPD-3.0.1-definition_XML_Schema
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_Schema'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_XML_Schema'
     definitionTerm: 'XML Schema'
     definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.7'
     definitionID: definition_XML_schema_assembly
     definitionUID: MPD-3.0.1-definition_XML_schema_assembly
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_schema_assembly'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_XML_schema_assembly'
     definitionTerm: 'XML schema assembly'
     definitionText: 'A process that uses XML schema documents to identify the constituent schema components for an XML Schema, and correctly sequences and structures these components to construct a single entity, the XML Schema.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.7'
     definitionID: definition_XML_schema_document
     definitionUID: MPD-3.0.1-definition_XML_schema_document
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_XML_schema_document'
     definitionTerm: 'XML schema document'
     definitionText: 'A physical (file) representation of part or all of an XML Schema. One or more XML schema documents are used to assemble schema components into an XML Schema.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_2.7'
     definitionID: definition_XML_schema_validation
     definitionUID: MPD-3.0.1-definition_XML_schema_validation
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_schema_validation'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_XML_schema_validation'
     definitionTerm: 'XML schema validation'
     definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0], §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures], §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
     definitionLocal: true
-    definitionStatus: current
+    definitionStatus: null
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. MPD Conformance Targets'
-    sectionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#section_3.2'
     definitionID: definition_ZIP_file
     definitionUID: MPD-3.0.1-definition_ZIP_file
-    definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_ZIP_file'
+    definitionURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_ZIP_file'
+    definitionTerm: 'ZIP file'
+    definitionText: 'As defined by [PKZIP], which states that it defines:... a cross-platform, interoperable file storage and transfer format ... used to aggregate, compress, and encrypt files into a single interoperable container.'
+    definitionLocal: true
+    definitionStatus: null
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.3
+    sectionLabel: 'Section 2.3. Artifacts'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.3'
+    definitionID: definition_artifact
+    definitionUID: IEPD-5.0-definition_artifact
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_artifact'
+    definitionTerm: artifact
+    definitionText: 'A single file with a defined purpose.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.3
+    sectionLabel: 'Section 2.3. Artifacts'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.3'
+    definitionID: definition_artifact_set
+    definitionUID: IEPD-5.0-definition_artifact_set
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_artifact_set'
+    definitionTerm: 'artifact set'
+    definitionText: 'A collection of artifacts logically grouped for a defined purpose.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_6.2
+    sectionLabel: 'Section 6.2. Business Rules'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_6.2'
+    definitionID: definition_business_rule_schema
+    definitionUID: IEPD-5.0-definition_business_rule_schema
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_business_rule_schema'
+    definitionTerm: 'business rule schema'
+    definitionText: 'An artifact that contains business rules in a formal representation language with the intent to automatically process them on an XML document to enforce business constraints.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_6.2
+    sectionLabel: 'Section 6.2. Business Rules'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_6.2'
+    definitionID: definition_business_rules
+    definitionUID: IEPD-5.0-definition_business_rules
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_business_rules'
+    definitionTerm: 'business rules'
+    definitionText: 'Formal or informal statements that describe business policy or procedure, and in doing so define or constrain some aspect of a process or procedure in order to impose control.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.3
+    sectionLabel: 'Section 5.3. Change Log'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.3'
+    definitionID: definition_change_log
+    definitionUID: IEPD-5.0-definition_change_log
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_change_log'
+    definitionTerm: 'change log'
+    definitionText: 'An artifact that describes the changes applied to an IEPD since its previous version.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.7
+    sectionLabel: 'Section 5.7. Conformance Assertion'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.7'
+    definitionID: definition_conformance_assertion
+    definitionUID: IEPD-5.0-definition_conformance_assertion
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_conformance_assertion'
+    definitionTerm: 'conformance assertion'
+    definitionText: 'An artifact that provides a declaration that an IEPD conforms to relevant NIEM specifications and associated rules, including [NIEM Conformance Specification], [NIEM Naming and Design Rules], [NIEM Conformance Targets Attribute Specification] and this NIEM IEPD Specification.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.1
+    sectionLabel: 'Section 3.1. Conformance Target Terminology'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.1'
+    definitionID: definition_conformance_target
+    definitionUID: IEPD-5.0-definition_conformance_target
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_conformance_target'
+    definitionTerm: 'conformance target'
+    definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification]:A class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.1
+    sectionLabel: 'Section 3.1. Conformance Target Terminology'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.1'
+    definitionID: definition_conformance_target_identifier
+    definitionUID: IEPD-5.0-definition_conformance_target_identifier
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_conformance_target_identifier'
+    definitionTerm: 'conformance target identifier'
+    definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification]:An internationalized resource identifier [RFC 3987 IRI] that uniquely identifies a conformance target.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.8
+    sectionLabel: 'Section 2.8. Rules'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.8'
+    definitionID: definition_constraint_rule
+    definitionUID: IEPD-5.0-definition_constraint_rule
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_constraint_rule'
+    definitionTerm: 'constraint rule'
+    definitionText: 'A rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_4.5
+    sectionLabel: 'Section 4.5. Constraint Schema Document Sets'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_4.5'
+    definitionID: definition_constraint_schema_document_set
+    definitionUID: IEPD-5.0-definition_constraint_schema_document_set
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_constraint_schema_document_set'
+    definitionTerm: 'constraint schema document set'
+    definitionText: 'A set of related constraint schema documents that work together; for example, a constraint schema document set could be built by adding constraints to a schema document subset.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.7
+    sectionLabel: 'Section 2.7. Reference Schema Documents'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.7'
+    definitionID: definition_data_component
+    definitionUID: IEPD-5.0-definition_data_component
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_data_component'
+    definitionTerm: 'data component'
+    definitionText: 'An XML Schema type or attribute group definition; or an XML Schema element or attribute declaration.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_4.3
+    sectionLabel: 'Section 4.3. Extension Schema Documents'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_4.3'
+    definitionID: definition_extension_schema_document
+    definitionUID: IEPD-5.0-definition_extension_schema_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_extension_schema_document'
+    definitionTerm: 'extension schema document'
+    definitionText: 'As defined by [NIEM Naming and Design Rules]:An XML schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_4.4
+    sectionLabel: 'Section 4.4. External Schema Documents'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_4.4'
+    definitionID: definition_external_adapter_type
+    definitionUID: IEPD-5.0-definition_external_adapter_type
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_external_adapter_type'
+    definitionTerm: 'external adapter type'
+    definitionText: 'As defined by [NIEM Naming and Design Rules]:A NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. External adapter types are defined in NIEM-conformant schemas.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_4.4
+    sectionLabel: 'Section 4.4. External Schema Documents'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_4.4'
+    definitionID: definition_external_schema_document
+    definitionUID: IEPD-5.0-definition_external_schema_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_external_schema_document'
+    definitionTerm: 'external schema document'
+    definitionText: 'As defined by [NIEM Naming and Design Rules]:Any XML schema document that is not one of: a reference schema document, an extension schema document, or an XML schema document that has the structures namespace as its target namespace.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.2.2
+    sectionLabel: 'Section 3.2.2. IEP Conformance Targets'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.2.2'
+    definitionID: definition_full_NIEM_information_exchange_package
+    definitionUID: IEPD-5.0-definition_full_NIEM_information_exchange_package
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_full_NIEM_information_exchange_package'
+    definitionTerm: 'full NIEM information exchange package'
+    definitionText: 'An information exchange package that satisfies all the validity constraints for its class as defined by an information exchange package documentation, and that has an XML document element that is declared in either a NIEM reference or extension schema document.This term may be abbreviated full NIEM IEP. Rules specifying this conformance target use the applicability code FN-IEP.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.6
+    sectionLabel: 'Section 5.6. Defining Information Exchange Packages'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.6'
+    definitionID: definition_IEP_conformance_target
+    definitionUID: IEPD-5.0-definition_IEP_conformance_target
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_IEP_conformance_target'
+    definitionTerm: 'IEP conformance target'
+    definitionText: 'A conformance target that is a class or category of IEP which has a set of one or more validity constraints and a conformance target identifier. Every IEP is an instance of one or more IEP conformance targets.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.1
+    sectionLabel: 'Section 5.1. NIEM IEPD Catalog'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.1'
+    definitionID: definition_IEPD_catalog_document
+    definitionUID: IEPD-5.0-definition_IEPD_catalog_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_IEPD_catalog_document'
+    definitionTerm: 'IEPD catalog document'
+    definitionText: 'An instance XML document that: conforms to all the rules in this specification for the conformance target IEPD catalog document (i.e., applicability code IEPD-catalog), and contains metadata describing: IEPD unique identification Conformance targets Basic characteristics and properties Key artifacts and directory structure Relationships to other IEPDs and their artifactsThis term may be abbreviated IEPD-catalog. Rules specifying this conformance target use the applicability code IEPD-catalog.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.1
+    sectionLabel: 'Section 3.1. Conformance Target Terminology'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.1'
+    definitionID: definition_IEPD_conformance_target_identifier
+    definitionUID: IEPD-5.0-definition_IEPD_conformance_target_identifier
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_IEPD_conformance_target_identifier'
+    definitionTerm: 'IEPD conformance target identifier'
+    definitionText: 'A conformance target identifier to which a given IEPD claims to conform.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_7
+    sectionLabel: 'Section 7. Organization, Packaging, and Other Criteria'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_7'
+    definitionID: definition_IEPD_root_directory
+    definitionUID: IEPD-5.0-definition_IEPD_root_directory
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_IEPD_root_directory'
+    definitionTerm: 'IEPD root directory'
+    definitionText: 'The top level file directory relative to all IEPD artifacts and subdirectories.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.2.2
+    sectionLabel: 'Section 3.2.2. IEP Conformance Targets'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.2.2'
+    definitionID: definition_information_exchange_package
+    definitionUID: IEPD-5.0-definition_information_exchange_package
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_information_exchange_package'
+    definitionTerm: 'information exchange package'
+    definitionText: 'An instance XML document that conforms to the conformance target defined by a c:IEPConformanceTarget element in the IEPD catalog document of an information exchange package documentation.This term may be abbreviated IEP. Rules specifying this conformance target use the applicability code IEP.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.2.1
+    sectionLabel: 'Section 3.2.1. Information Exchange Package Documentation'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.2.1'
+    definitionID: definition_information_exchange_package_documentation
+    definitionUID: IEPD-5.0-definition_information_exchange_package_documentation
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_information_exchange_package_documentation'
+    definitionTerm: 'information exchange package documentation'
+    definitionText: 'An information exchange package documentation is a set of artifacts (possibly in a ZIP file) that: includes a set of logically cohesive W3C XML Schema documents and other supporting files, that represent one or more reusable or implementable XML information models, and has an IEPD conformance target identifier http://reference.niem.gov/niem/specification/iepd/5.0/#IEPD, and conforms to all the rules in this specification for the conformance target information exchange package documentation (i.e., applicability code IEPD), and is well-formed (conforms to all the rules with applicability code WF-IEPD).This term may be abbreviated IEPD. Rules specifying this conformance target use the applicability code IEPD.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.2.1
+    sectionLabel: 'Section 3.2.1. Information Exchange Package Documentation'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.2.1'
+    definitionID: definition_instance_XML_document
+    definitionUID: IEPD-5.0-definition_instance_XML_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_instance_XML_document'
+    definitionTerm: 'instance XML document'
+    definitionText: 'An instance XML document is an XML document that is valid against an XML Schema. An instance XML document is said to be an instance of the schema to which it validates.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.8
+    sectionLabel: 'Section 2.8. Rules'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.8'
+    definitionID: definition_interpretation_rule
+    definitionUID: IEPD-5.0-definition_interpretation_rule
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_interpretation_rule'
+    definitionTerm: 'interpretation rule'
+    definitionText: 'A rule that sets the methodology, pattern, or procedure for understanding or using some aspect of an instance of a conformance target.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_6.1
+    sectionLabel: 'Section 6.1. NIEM Wantlist'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_6.1'
+    definitionID: definition_NIEM_wantlist
+    definitionUID: IEPD-5.0-definition_NIEM_wantlist
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_NIEM_wantlist'
+    definitionTerm: 'NIEM wantlist'
+    definitionText: 'An XML document that represents a complete NIEM schema document subset.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.2.4
+    sectionLabel: 'Section 5.2.4. URI Schemes'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.2.4'
+    definitionID: definition_path_name
+    definitionUID: IEPD-5.0-definition_path_name
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_path_name'
+    definitionTerm: 'path name'
+    definitionText: 'A general form of the name of a file or directory that specifies a unique location in a file system. A path name points to a file system location by following the directory tree hierarchy expressed in a string of characters in which path components, separated by a delimiting character, represent each subdirectory. If a path name terminates in a file name, then it specifies the location of that file.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.4
+    sectionLabel: 'Section 5.4. ReadMe Artifact'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.4'
+    definitionID: definition_readme_artifact
+    definitionUID: IEPD-5.0-definition_readme_artifact
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_readme_artifact'
+    definitionTerm: 'readme artifact'
+    definitionText: 'An informal documentation artifact contained in an information exchange package documentation that serves as the initial general source of human readable descriptive or instructional information. A readme artifact or file (formerly known as a master document) may index or reference other more specific documentation or other explanatory materials within the IEPD.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.7
+    sectionLabel: 'Section 2.7. Reference Schema Documents'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.7'
+    definitionID: definition_reference_schema_document
+    definitionUID: IEPD-5.0-definition_reference_schema_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_reference_schema_document'
+    definitionTerm: 'reference schema document'
+    definitionText: 'As defined by [NIEM Naming and Design Rules]:An XML schema document that is intended to provide the authoritative definitions of broadly reusable schema components.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.7
+    sectionLabel: 'Section 2.7. Reference Schema Documents'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.7'
+    definitionID: definition_reference_schema_document_set
+    definitionUID: IEPD-5.0-definition_reference_schema_document_set
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_reference_schema_document_set'
+    definitionTerm: 'reference schema document set'
+    definitionText: 'A set of related reference schema documents, such as a NIEM release.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.2.4
+    sectionLabel: 'Section 5.2.4. URI Schemes'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.2.4'
+    definitionID: definition_resolve_URI
+    definitionUID: IEPD-5.0-definition_resolve_URI
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_resolve_URI'
+    definitionTerm: 'resolve URI'
+    definitionText: 'A function (or action) that takes a URI string of the form xs:anyURI and returns the resource it identifies. If the URI is local (i.e., within an IEPD) and the resource does not exist, then this function fails. If a URI is remote or of unknown location (e.g., a URN), then this function (or action) may require human assistance to determine if a resource associated with the URI exists (pass) or not (fail).'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.6
+    sectionLabel: 'Section 2.6. XML Validation'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.6'
+    definitionID: definition_schema_component
+    definitionUID: IEPD-5.0-definition_schema_component
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_schema_component'
+    definitionTerm: 'schema component'
+    definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_4.2.1
+    sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_4.2.1'
+    definitionID: definition_schema_document_subset
+    definitionUID: IEPD-5.0-definition_schema_document_subset
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_schema_document_subset'
+    definitionTerm: 'schema document subset'
+    definitionText: 'An XML schema document set based on a reference schema document set for which any instance XML document valid to the schema document subset is also valid to the reference schema document set.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_6.2
+    sectionLabel: 'Section 6.2. Business Rules'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_6.2'
+    definitionID: definition_Schematron_schema
+    definitionUID: IEPD-5.0-definition_Schematron_schema
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_Schematron_schema'
+    definitionTerm: 'Schematron schema'
+    definitionText: 'A business rule schema that adheres to [ISO Schematron].'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_4.2.1
+    sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_4.2.1'
+    definitionID: definition_subset_schema_document
+    definitionUID: IEPD-5.0-definition_subset_schema_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_subset_schema_document'
+    definitionTerm: 'subset schema document'
+    definitionText: 'An XML schema document that meets all of the following criteria: It is built from a reference schema document set where one or more reference schema documents have been substituted by corresponding subset schema documents. It is built from a reference schema document by applying subset operations to the XML schema statements in a reference schema document. It is explicitly designated as a subset schema document. This is accomplished by declaration in the relevant IEPD catalog or by a tool-specific mechanism outside the subset schema document. It has a target namespace previously defined by a reference schema document. That is, it does not provide original definitions and declarations for schema components, but instead provides an alternate schema representation of components that are defined by a reference schema document. It does not alter the business semantics of components in its namespace. The reference schema document defines these business semantics. It is intended to express the limited vocabulary necessary for an IEPD and to support XML Schema validation for an IEPD.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.6.1
+    sectionLabel: 'Section 5.6.1. Validity Context and Constraints'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.6.1'
+    definitionID: definition_validity_constraint_context
+    definitionUID: IEPD-5.0-definition_validity_constraint_context
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_validity_constraint_context'
+    definitionTerm: 'validity constraint context'
+    definitionText: 'A set of information items that establishes the applicability of certain validity constraints.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.2.1.1
+    sectionLabel: 'Section 3.2.1.1. Well-Formed IEPD'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.2.1.1'
+    definitionID: definition_well-formed_IEPD
+    definitionUID: IEPD-5.0-definition_well-formed_IEPD
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_well-formed_IEPD'
+    definitionTerm: 'well-formed IEPD'
+    definitionText: 'A well-formed IEPD is an IEPD that: has an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#WF-IEPD, and adheres to all the rules within this specification for the well-formed IEPD conformance target (i.e., applicability code WF-IEPD).This term may be abbreviated WF-IEPD. Rules specifying this conformance target use the applicability code WF-IEPD.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_5.5
+    sectionLabel: 'Section 5.5. XML Catalogs'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_5.5'
+    definitionID: definition_XML_catalog_document
+    definitionUID: IEPD-5.0-definition_XML_catalog_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_XML_catalog_document'
+    definitionTerm: 'XML catalog document'
+    definitionText: 'As defined by [XML Catalogs 1.1], which states:An entity catalog.An XML catalog document MUST conform to all the rules in this specification for the conformance target XML catalog document.Rules specifying this conformance target use the applicability code XML-catalog.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.6
+    sectionLabel: 'Section 2.6. XML Validation'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.6'
+    definitionID: definition_XML_document
+    definitionUID: IEPD-5.0-definition_XML_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_XML_document'
+    definitionTerm: 'XML document'
+    definitionText: 'A document in XML format.(as defined by [W3C XML 1.0], §2, Documents)'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.6
+    sectionLabel: 'Section 2.6. XML Validation'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.6'
+    definitionID: definition_XML_Schema
+    definitionUID: IEPD-5.0-definition_XML_Schema
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_XML_Schema'
+    definitionTerm: 'XML Schema'
+    definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.6
+    sectionLabel: 'Section 2.6. XML Validation'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.6'
+    definitionID: definition_XML_schema_assembly
+    definitionUID: IEPD-5.0-definition_XML_schema_assembly
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_XML_schema_assembly'
+    definitionTerm: 'XML schema assembly'
+    definitionText: 'A process that uses XML schema documents to identify the constituent schema components for an XML Schema, and correctly sequences and structures these components to construct a single entity, the XML Schema.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.6
+    sectionLabel: 'Section 2.6. XML Validation'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.6'
+    definitionID: definition_XML_schema_document
+    definitionUID: IEPD-5.0-definition_XML_schema_document
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_XML_schema_document'
+    definitionTerm: 'XML schema document'
+    definitionText: 'A physical (file) representation of part or all of an XML Schema. One or more XML schema documents are used to assemble schema components into an XML Schema.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_2.6
+    sectionLabel: 'Section 2.6. XML Validation'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_2.6'
+    definitionID: definition_XML_schema_validation
+    definitionUID: IEPD-5.0-definition_XML_schema_validation
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_XML_schema_validation'
+    definitionTerm: 'XML schema validation'
+    definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0], §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures], §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
+    definitionLocal: true
+    definitionStatus: current
+-
+    specificationID: IEPD-5.0
+    specificationSelector: IEPD-5_0
+    classID: IEPD
+    sectionID: section_3.2.1.1
+    sectionLabel: 'Section 3.2.1.1. Well-Formed IEPD'
+    sectionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#section_3.2.1.1'
+    definitionID: definition_ZIP_file
+    definitionUID: IEPD-5.0-definition_ZIP_file
+    definitionURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_ZIP_file'
     definitionTerm: 'ZIP file'
     definitionText: 'As defined by [PKZIP], which states that it defines:... a cross-platform, interoperable file storage and transfer format ... used to aggregate, compress, and encrypt files into a single interoperable container.'
     definitionLocal: true
     definitionStatus: current
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.3
-    sectionLabel: 'Section 2.3. Artifacts'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.3'
-    definitionID: definition_artifact
-    definitionUID: 'IEPD-5.0 rc1-definition_artifact'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_artifact'
-    definitionTerm: artifact
-    definitionText: 'A single file with a defined purpose.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.3
-    sectionLabel: 'Section 2.3. Artifacts'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.3'
-    definitionID: definition_artifact_set
-    definitionUID: 'IEPD-5.0 rc1-definition_artifact_set'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_artifact_set'
-    definitionTerm: 'artifact set'
-    definitionText: 'A collection of artifacts logically grouped for a defined purpose.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_6.2
-    sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_6.2'
-    definitionID: definition_business_rule_schema
-    definitionUID: 'IEPD-5.0 rc1-definition_business_rule_schema'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_business_rule_schema'
-    definitionTerm: 'business rule schema'
-    definitionText: 'An artifact that contains business rules in a formal representation language with the intent to automatically process them on an XML document to enforce business constraints.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_6.2
-    sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_6.2'
-    definitionID: definition_business_rules
-    definitionUID: 'IEPD-5.0 rc1-definition_business_rules'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_business_rules'
-    definitionTerm: 'business rules'
-    definitionText: 'Formal or informal statements that describe business policy or procedure, and in doing so define or constrain some aspect of a process or procedure in order to impose control.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.3
-    sectionLabel: 'Section 5.3. Change Log'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.3'
-    definitionID: definition_change_log
-    definitionUID: 'IEPD-5.0 rc1-definition_change_log'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_change_log'
-    definitionTerm: 'change log'
-    definitionText: 'An artifact that describes the changes applied to an IEPD since its previous version.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.7
-    sectionLabel: 'Section 5.7. Conformance Assertion'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.7'
-    definitionID: definition_conformance_assertion
-    definitionUID: 'IEPD-5.0 rc1-definition_conformance_assertion'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_conformance_assertion'
-    definitionTerm: 'conformance assertion'
-    definitionText: 'An artifact that provides a declaration that an IEPD conforms to relevant NIEM specifications and associated rules, including [NIEM Conformance Specification], [NIEM Naming and Design Rules], [NIEM Conformance Targets Attribute Specification] and this NIEM IEPD Specification.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.1
-    sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.1'
-    definitionID: definition_conformance_target
-    definitionUID: 'IEPD-5.0 rc1-definition_conformance_target'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_conformance_target'
-    definitionTerm: 'conformance target'
-    definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification]:A class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.1
-    sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.1'
-    definitionID: definition_conformance_target_identifier
-    definitionUID: 'IEPD-5.0 rc1-definition_conformance_target_identifier'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_conformance_target_identifier'
-    definitionTerm: 'conformance target identifier'
-    definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification]:An internationalized resource identifier [RFC 3987 IRI] that uniquely identifies a conformance target.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.8
-    sectionLabel: 'Section 2.8. Rules'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.8'
-    definitionID: definition_constraint_rule
-    definitionUID: 'IEPD-5.0 rc1-definition_constraint_rule'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_constraint_rule'
-    definitionTerm: 'constraint rule'
-    definitionText: 'A rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_4.5
-    sectionLabel: 'Section 4.5. Constraint Schema Document Sets'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.5'
-    definitionID: definition_constraint_schema_document_set
-    definitionUID: 'IEPD-5.0 rc1-definition_constraint_schema_document_set'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_constraint_schema_document_set'
-    definitionTerm: 'constraint schema document set'
-    definitionText: 'A set of related constraint schema documents that work together; for example, a constraint schema document set could be built by adding constraints to a schema document subset.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.7
-    sectionLabel: 'Section 2.7. Reference Schema Documents'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.7'
-    definitionID: definition_data_component
-    definitionUID: 'IEPD-5.0 rc1-definition_data_component'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_data_component'
-    definitionTerm: 'data component'
-    definitionText: 'An XML Schema type or attribute group definition; or an XML Schema element or attribute declaration.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_4.3
-    sectionLabel: 'Section 4.3. Extension Schema Documents'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.3'
-    definitionID: definition_extension_schema_document
-    definitionUID: 'IEPD-5.0 rc1-definition_extension_schema_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_extension_schema_document'
-    definitionTerm: 'extension schema document'
-    definitionText: 'As defined by [NIEM Naming and Design Rules]:An XML schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_4.4
-    sectionLabel: 'Section 4.4. External Schema Documents'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.4'
-    definitionID: definition_external_adapter_type
-    definitionUID: 'IEPD-5.0 rc1-definition_external_adapter_type'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_external_adapter_type'
-    definitionTerm: 'external adapter type'
-    definitionText: 'As defined by [NIEM Naming and Design Rules]:A NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. External adapter types are defined in NIEM-conformant schemas.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_4.4
-    sectionLabel: 'Section 4.4. External Schema Documents'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.4'
-    definitionID: definition_external_schema_document
-    definitionUID: 'IEPD-5.0 rc1-definition_external_schema_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_external_schema_document'
-    definitionTerm: 'external schema document'
-    definitionText: 'As defined by [NIEM Naming and Design Rules]:Any XML schema document that is not one of: a reference schema document, an extension schema document, or an XML schema document that has the structures namespace as its target namespace.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.2.2
-    sectionLabel: 'Section 3.2.2. IEP Conformance Targets'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.2'
-    definitionID: definition_full_NIEM_information_exchange_package
-    definitionUID: 'IEPD-5.0 rc1-definition_full_NIEM_information_exchange_package'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_full_NIEM_information_exchange_package'
-    definitionTerm: 'full NIEM information exchange package'
-    definitionText: 'An information exchange package that satisfies all the validity constraints for its class as defined by an information exchange package documentation, and that has an XML document element that is declared in either a NIEM reference or extension schema document.This term may be abbreviated full NIEM IEP. Rules specifying this conformance target use the applicability code FN-IEP.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.6
-    sectionLabel: 'Section 5.6. Defining Information Exchange Packages'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.6'
-    definitionID: definition_IEP_conformance_target
-    definitionUID: 'IEPD-5.0 rc1-definition_IEP_conformance_target'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEP_conformance_target'
-    definitionTerm: 'IEP conformance target'
-    definitionText: 'A conformance target that is a class or category of IEP which has a set of one or more validity constraints and a conformance target identifier. Every IEP is an instance of one or more IEP conformance targets.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.1
-    sectionLabel: 'Section 5.1. NIEM IEPD Catalog'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.1'
-    definitionID: definition_IEPD_catalog_document
-    definitionUID: 'IEPD-5.0 rc1-definition_IEPD_catalog_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEPD_catalog_document'
-    definitionTerm: 'IEPD catalog document'
-    definitionText: 'An instance XML document that: conforms to all the rules in this specification for the conformance target IEPD catalog document (i.e., applicability code IEPD-catalog), and contains metadata describing: IEPD unique identification Conformance targets Basic characteristics and properties Key artifacts and directory structure Relationships to other IEPDs and their artifactsThis term may be abbreviated IEPD-catalog. Rules specifying this conformance target use the applicability code IEPD-catalog.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.1
-    sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.1'
-    definitionID: definition_IEPD_conformance_target_identifier
-    definitionUID: 'IEPD-5.0 rc1-definition_IEPD_conformance_target_identifier'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEPD_conformance_target_identifier'
-    definitionTerm: 'IEPD conformance target identifier'
-    definitionText: 'A conformance target identifier to which a given IEPD claims to conform.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_7
-    sectionLabel: 'Section 7. Organization, Packaging, and Other Criteria'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_7'
-    definitionID: definition_IEPD_root_directory
-    definitionUID: 'IEPD-5.0 rc1-definition_IEPD_root_directory'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEPD_root_directory'
-    definitionTerm: 'IEPD root directory'
-    definitionText: 'The top level file directory relative to all IEPD artifacts and subdirectories.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.2.2
-    sectionLabel: 'Section 3.2.2. IEP Conformance Targets'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.2'
-    definitionID: definition_information_exchange_package
-    definitionUID: 'IEPD-5.0 rc1-definition_information_exchange_package'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_information_exchange_package'
-    definitionTerm: 'information exchange package'
-    definitionText: 'An instance XML document that conforms to the conformance target defined by a c:IEPConformanceTarget element in the IEPD catalog document of an information exchange package documentation.This term may be abbreviated IEP. Rules specifying this conformance target use the applicability code IEP.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.2.1
-    sectionLabel: 'Section 3.2.1. Information Exchange Package Documentation'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.1'
-    definitionID: definition_information_exchange_package_documentation
-    definitionUID: 'IEPD-5.0 rc1-definition_information_exchange_package_documentation'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_information_exchange_package_documentation'
-    definitionTerm: 'information exchange package documentation'
-    definitionText: 'An information exchange package documentation is a set of artifacts (possibly in a ZIP file) that: includes a set of logically cohesive W3C XML Schema documents and other supporting files, that represent one or more reusable or implementable XML information models, and has an IEPD conformance target identifier http://reference.niem.gov/niem/specification/iepd/5.0/#IEPD, and conforms to all the rules in this specification for the conformance target information exchange package documentation (i.e., applicability code IEPD), and is well-formed (conforms to all the rules with applicability code WF-IEPD).This term may be abbreviated IEPD. Rules specifying this conformance target use the applicability code IEPD.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.2.1
-    sectionLabel: 'Section 3.2.1. Information Exchange Package Documentation'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.1'
-    definitionID: definition_instance_XML_document
-    definitionUID: 'IEPD-5.0 rc1-definition_instance_XML_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_instance_XML_document'
-    definitionTerm: 'instance XML document'
-    definitionText: 'An instance XML document is an XML document that is valid against an XML Schema. An instance XML document is said to be an instance of the schema to which it validates.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.8
-    sectionLabel: 'Section 2.8. Rules'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.8'
-    definitionID: definition_interpretation_rule
-    definitionUID: 'IEPD-5.0 rc1-definition_interpretation_rule'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_interpretation_rule'
-    definitionTerm: 'interpretation rule'
-    definitionText: 'A rule that sets the methodology, pattern, or procedure for understanding or using some aspect of an instance of a conformance target.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_6.1
-    sectionLabel: 'Section 6.1. NIEM Wantlist'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_6.1'
-    definitionID: definition_NIEM_wantlist
-    definitionUID: 'IEPD-5.0 rc1-definition_NIEM_wantlist'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_NIEM_wantlist'
-    definitionTerm: 'NIEM wantlist'
-    definitionText: 'An XML document that represents a complete NIEM schema document subset.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.2.4
-    sectionLabel: 'Section 5.2.4. URI Schemes'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.2.4'
-    definitionID: definition_path_name
-    definitionUID: 'IEPD-5.0 rc1-definition_path_name'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_path_name'
-    definitionTerm: 'path name'
-    definitionText: 'A general form of the name of a file or directory that specifies a unique location in a file system. A path name points to a file system location by following the directory tree hierarchy expressed in a string of characters in which path components, separated by a delimiting character, represent each subdirectory. If a path name terminates in a file name, then it specifies the location of that file.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.4
-    sectionLabel: 'Section 5.4. ReadMe Artifact'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.4'
-    definitionID: definition_readme_artifact
-    definitionUID: 'IEPD-5.0 rc1-definition_readme_artifact'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_readme_artifact'
-    definitionTerm: 'readme artifact'
-    definitionText: 'An informal documentation artifact contained in an information exchange package documentation that serves as the initial general source of human readable descriptive or instructional information. A readme artifact or file (formerly known as a master document) may index or reference other more specific documentation or other explanatory materials within the IEPD.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.7
-    sectionLabel: 'Section 2.7. Reference Schema Documents'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.7'
-    definitionID: definition_reference_schema_document
-    definitionUID: 'IEPD-5.0 rc1-definition_reference_schema_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_reference_schema_document'
-    definitionTerm: 'reference schema document'
-    definitionText: 'As defined by [NIEM Naming and Design Rules]:An XML schema document that is intended to provide the authoritative definitions of broadly reusable schema components.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.7
-    sectionLabel: 'Section 2.7. Reference Schema Documents'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.7'
-    definitionID: definition_reference_schema_document_set
-    definitionUID: 'IEPD-5.0 rc1-definition_reference_schema_document_set'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_reference_schema_document_set'
-    definitionTerm: 'reference schema document set'
-    definitionText: 'A set of related reference schema documents, such as a NIEM release.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.2.4
-    sectionLabel: 'Section 5.2.4. URI Schemes'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.2.4'
-    definitionID: definition_resolve_URI
-    definitionUID: 'IEPD-5.0 rc1-definition_resolve_URI'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_resolve_URI'
-    definitionTerm: 'resolve URI'
-    definitionText: 'A function (or action) that takes a URI string of the form xs:anyURI and returns the resource it identifies. If the URI is local (i.e., within an IEPD) and the resource does not exist, then this function fails. If a URI is remote or of unknown location (e.g., a URN), then this function (or action) may require human assistance to determine if a resource associated with the URI exists (pass) or not (fail).'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.6
-    sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
-    definitionID: definition_schema_component
-    definitionUID: 'IEPD-5.0 rc1-definition_schema_component'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_schema_component'
-    definitionTerm: 'schema component'
-    definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_4.2.1
-    sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.2.1'
-    definitionID: definition_schema_document_subset
-    definitionUID: 'IEPD-5.0 rc1-definition_schema_document_subset'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_schema_document_subset'
-    definitionTerm: 'schema document subset'
-    definitionText: 'An XML schema document set based on a reference schema document set intended to ensure that any instance XML document valid to the schema document subset is also valid to the reference schema document set.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_6.2
-    sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_6.2'
-    definitionID: definition_Schematron_schema
-    definitionUID: 'IEPD-5.0 rc1-definition_Schematron_schema'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_Schematron_schema'
-    definitionTerm: 'Schematron schema'
-    definitionText: 'A business rule schema that adheres to [ISO Schematron].'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_4.2.1
-    sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.2.1'
-    definitionID: definition_subset_schema_document
-    definitionUID: 'IEPD-5.0 rc1-definition_subset_schema_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_subset_schema_document'
-    definitionTerm: 'subset schema document'
-    definitionText: 'An XML schema document that meets all of the following criteria: It is built from a reference schema document set where one or more reference schema documents have been substituted by corresponding subset schema documents. It is built from a reference schema document by applying subset operations to the XML schema statements in a reference schema document. It is explicitly designated as a subset schema document. This is accomplished by declaration in the relevant IEPD catalog or by a tool-specific mechanism outside the subset schema document. It has a target namespace previously defined by a reference schema document. That is, it does not provide original definitions and declarations for schema components, but instead provides an alternate schema representation of components that are defined by a reference schema document. It does not alter the business semantics of components in its namespace. The reference schema document defines these business semantics. It is intended to express the limited vocabulary necessary for an IEPD and to support XML Schema validation for an IEPD.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.6.1
-    sectionLabel: 'Section 5.6.1. Validity Context and Constraints'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.6.1'
-    definitionID: definition_validity_constraint_context
-    definitionUID: 'IEPD-5.0 rc1-definition_validity_constraint_context'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_validity_constraint_context'
-    definitionTerm: 'validity constraint context'
-    definitionText: 'A set of information items that establishes the applicability of certain validity constraints.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.2.1.1
-    sectionLabel: 'Section 3.2.1.1. Well-Formed IEPD'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.1.1'
-    definitionID: definition_well-formed_IEPD
-    definitionUID: 'IEPD-5.0 rc1-definition_well-formed_IEPD'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_well-formed_IEPD'
-    definitionTerm: 'well-formed IEPD'
-    definitionText: 'A well-formed IEPD is an IEPD that: has an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#WF-IEPD, and adheres to all the rules within this specification for the well-formed IEPD conformance target (i.e., applicability code WF-IEPD).This term may be abbreviated WF-IEPD. Rules specifying this conformance target use the applicability code WF-IEPD.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_5.5
-    sectionLabel: 'Section 5.5. XML Catalogs'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.5'
-    definitionID: definition_XML_catalog_document
-    definitionUID: 'IEPD-5.0 rc1-definition_XML_catalog_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_catalog_document'
-    definitionTerm: 'XML catalog document'
-    definitionText: 'As defined by [XML Catalogs 1.1], which states:An entity catalog.An XML catalog document MUST conform to all the rules in this specification for the conformance target XML catalog document.Rules specifying this conformance target use the applicability code XML-catalog.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.6
-    sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
-    definitionID: definition_XML_document
-    definitionUID: 'IEPD-5.0 rc1-definition_XML_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_document'
-    definitionTerm: 'XML document'
-    definitionText: 'A document in XML format.(as defined by [W3C XML 1.0], §2, Documents)'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.6
-    sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
-    definitionID: definition_XML_Schema
-    definitionUID: 'IEPD-5.0 rc1-definition_XML_Schema'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_Schema'
-    definitionTerm: 'XML Schema'
-    definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.6
-    sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
-    definitionID: definition_XML_schema_assembly
-    definitionUID: 'IEPD-5.0 rc1-definition_XML_schema_assembly'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_schema_assembly'
-    definitionTerm: 'XML schema assembly'
-    definitionText: 'A process that uses XML schema documents to identify the constituent schema components for an XML Schema, and correctly sequences and structures these components to construct a single entity, the XML Schema.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.6
-    sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
-    definitionID: definition_XML_schema_document
-    definitionUID: 'IEPD-5.0 rc1-definition_XML_schema_document'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_schema_document'
-    definitionTerm: 'XML schema document'
-    definitionText: 'A physical (file) representation of part or all of an XML Schema. One or more XML schema documents are used to assemble schema components into an XML Schema.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_2.6
-    sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
-    definitionID: definition_XML_schema_validation
-    definitionUID: 'IEPD-5.0 rc1-definition_XML_schema_validation'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_schema_validation'
-    definitionTerm: 'XML schema validation'
-    definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0], §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures], §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
-    definitionLocal: true
-    definitionStatus: draft
--
-    specificationID: 'IEPD-5.0 rc1'
-    specificationSelector: IEPD-5_0rc1
-    classID: IEPD
-    sectionID: section_3.2.1.1
-    sectionLabel: 'Section 3.2.1.1. Well-Formed IEPD'
-    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.1.1'
-    definitionID: definition_ZIP_file
-    definitionUID: 'IEPD-5.0 rc1-definition_ZIP_file'
-    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_ZIP_file'
-    definitionTerm: 'ZIP file'
-    definitionText: 'As defined by [PKZIP], which states that it defines:... a cross-platform, interoperable file storage and transfer format ... used to aggregate, compress, and encrypt files into a single interoperable container.'
-    definitionLocal: true
-    definitionStatus: draft
 -
     specificationID: CodeLists-4.0
     specificationSelector: CodeLists-4_0
@@ -4590,3 +4590,339 @@
     definitionText: 'The term reference schema document is a conformance target defined by the [NIEM NDR] Section 4.1.1, Reference schema document, which states:'
     definitionLocal: false
     definitionStatus: current
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.2
+    sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.2'
+    definitionID: definition_conformance_target
+    definitionUID: 'JSON-5.0 beta 1-definition_conformance_target'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_conformance_target'
+    definitionTerm: 'conformance target'
+    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states: A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.2
+    sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.2'
+    definitionID: definition_conformance_target_identifier
+    definitionUID: 'JSON-5.0 beta 1-definition_conformance_target_identifier'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_conformance_target_identifier'
+    definitionTerm: 'conformance target identifier'
+    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states: A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.3
+    sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.3'
+    definitionID: definition_conformant_instance_XML_document
+    definitionUID: 'JSON-5.0 beta 1-definition_conformant_instance_XML_document'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_conformant_instance_XML_document'
+    definitionTerm: 'conformant instance XML document'
+    definitionText: 'The term conformant instance XML document is a conformance target defined by the [NIEM NDR] Section 4.1.4, Instance documents and elements, which states:'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.3
+    sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.3'
+    definitionID: definition_conformant_schema_document_set
+    definitionUID: 'JSON-5.0 beta 1-definition_conformant_schema_document_set'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_conformant_schema_document_set'
+    definitionTerm: 'conformant schema document set'
+    definitionText: 'The term conformant schema document set is a conformance target defined by the [NIEM NDR] Section 4.1.3, Schema document set, which states:'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_2.2.1
+    sectionLabel: 'Section 2.2.1. Rules'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_2.2.1'
+    definitionID: definition_constraint_rule
+    definitionUID: 'JSON-5.0 beta 1-definition_constraint_rule'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_constraint_rule'
+    definitionTerm: 'constraint rule'
+    definitionText: 'A constraint rule is a rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
+    definitionLocal: true
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.2
+    sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.2'
+    definitionID: definition_effective_conformance_target_identifier
+    definitionUID: 'JSON-5.0 beta 1-definition_effective_conformance_target_identifier'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_effective_conformance_target_identifier'
+    definitionTerm: 'effective conformance target identifier'
+    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states: An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.7
+    sectionLabel: 'Section 3.7. RDF and RDF Schema'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.7'
+    definitionID: definition_equivalent
+    definitionUID: 'JSON-5.0 beta 1-definition_equivalent'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_equivalent'
+    definitionTerm: equivalent
+    definitionText: '[RDF-Concepts] Section 1.7, Equivalence, Entailment and Inconsistency defines the term equivalent: Two RDF graphs A and B are equivalent if they make the same claim about the world. A is equivalent to B if and only if A entails B and B entails A.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.3
+    sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.3'
+    definitionID: definition_extension_schema_document
+    definitionUID: 'JSON-5.0 beta 1-definition_extension_schema_document'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_extension_schema_document'
+    definitionTerm: 'extension schema document'
+    definitionText: 'The term extension schema document is a conformance target defined by the [NIEM NDR] Section 4.1.2, Extension schema document, which states:'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.3
+    sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.3'
+    definitionID: definition_external_schema_document
+    definitionUID: 'JSON-5.0 beta 1-definition_external_schema_document'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_external_schema_document'
+    definitionTerm: 'external schema document'
+    definitionText: 'The term external schema document is defined by the [NIEM NDR] Section 10.2.3, External adapter types and external components, which states:'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.4
+    sectionLabel: 'Section 3.4. Model Package Description Specification'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.4'
+    definitionID: definition_IEP_conformance_target
+    definitionUID: 'JSON-5.0 beta 1-definition_IEP_conformance_target'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_IEP_conformance_target'
+    definitionTerm: 'IEP conformance target'
+    definitionText: 'The term IEP conformance target is defined by [IEPD] Section 5.6, Defining Information Exchange Packages. An IEP conformance target defines a set of conformance criteria for a class of information exchange package (IEP).'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.4
+    sectionLabel: 'Section 3.4. Model Package Description Specification'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.4'
+    definitionID: definition_information_exchange_package
+    definitionUID: 'JSON-5.0 beta 1-definition_information_exchange_package'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_information_exchange_package'
+    definitionTerm: 'information exchange packageIEP'
+    definitionText: 'The term information exchange package is defined by [IEPD] Section 3.2.3, IEP Conformance Targets. An information exchange package (IEP) is an XML document that conforms to the criteria defined for an IEP conformance target.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.4
+    sectionLabel: 'Section 3.4. Model Package Description Specification'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.4'
+    definitionID: definition_IEP
+    definitionUID: 'JSON-5.0 beta 1-definition_IEP'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_IEP'
+    definitionTerm: 'information exchange packageIEP'
+    definitionText: 'The term information exchange package is defined by [IEPD] Section 3.2.3, IEP Conformance Targets. An information exchange package (IEP) is an XML document that conforms to the criteria defined for an IEP conformance target.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_2.2
+    sectionLabel: 'Section 2.2. Normative and informative content'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_2.2'
+    definitionID: definition_informative
+    definitionUID: 'JSON-5.0 beta 1-definition_informative'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_informative'
+    definitionTerm: informative
+    definitionText: 'The term informative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:INFORMATIVE (NON-NORMATIVE) — statements provided for informational purposes, intended to assist the understanding or use of the specification and shall not contain provisions that are required for conformance.'
+    definitionLocal: true
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_2.2.1
+    sectionLabel: 'Section 2.2.1. Rules'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_2.2.1'
+    definitionID: definition_interpretation_rule
+    definitionUID: 'JSON-5.0 beta 1-definition_interpretation_rule'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_interpretation_rule'
+    definitionTerm: 'interpretation rule'
+    definitionText: 'An interpretation rule is a rule that sets the methodology, pattern, or procedure for understanding some aspect of an instance of a conformance target.'
+    definitionLocal: true
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.5
+    sectionLabel: 'Section 3.5. JSON'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.5'
+    definitionID: definition_JSON_document
+    definitionUID: 'JSON-5.0 beta 1-definition_JSON_document'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_JSON_document'
+    definitionTerm: 'JSON document'
+    definitionText: 'The term JSON document, when used within this document, is synonymous with JSON text.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.5
+    sectionLabel: 'Section 3.5. JSON'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.5'
+    definitionID: definition_JSON_text
+    definitionUID: 'JSON-5.0 beta 1-definition_JSON_text'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_JSON_text'
+    definitionTerm: 'JSON text'
+    definitionText: 'The term JSON text is defined by [RFC8259] Section 2, JSON Grammar, which defines it as a single serialized JSON value.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.6
+    sectionLabel: 'Section 3.6. JSON-LD'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.6'
+    definitionID: definition_JSON-LD_document
+    definitionUID: 'JSON-5.0 beta 1-definition_JSON-LD_document'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_JSON-LD_document'
+    definitionTerm: 'JSON-LD document'
+    definitionText: '[JSON-LD] defines JSON-LD, a JSON-based format to serialize linked data. [JSON-LD] defines the term JSON-LD document. [JSON-LD] Section 7, Data Model provides a summary of what constitutes a JSON-LD document. [JSON-LD] Section 8, JSON-LD Grammar states: A JSON-LD document MUST be a valid JSON document as described in [RFC4627].'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_5.1
+    sectionLabel: 'Section 5.1. Literal-to-object conversion'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_5.1'
+    definitionID: definition_literal-to-object_conversion
+    definitionUID: 'JSON-5.0 beta 1-definition_literal-to-object_conversion'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_literal-to-object_conversion'
+    definitionTerm: 'literal-to-object conversion'
+    definitionText: 'Within this document, literal-to-object conversion is a process by which a JSON value is transformed from a value of false, null, true, number, or string, into an object containing only the properties rdf:value and rdf:type. Evaluation of conformance of a JSON document is conducted on the results of literal-to-object conversion of that document.'
+    definitionLocal: true
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_4.2
+    sectionLabel: 'Section 4.2. NIEM JSON document laxly conformant to a schema'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_4.2'
+    definitionID: definition_NIEM_JSON_document_laxly_conformant_to_a_schema
+    definitionUID: 'JSON-5.0 beta 1-definition_NIEM_JSON_document_laxly_conformant_to_a_schema'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_NIEM_JSON_document_laxly_conformant_to_a_schema'
+    definitionTerm: 'NIEM JSON document laxly conformant to a schema'
+    definitionText: 'A NIEM JSON document laxly conformant to a schema is a JSON-LD document that may be interpreted using the RDF vocabulary defined by a conformant schema document set. It is a conformance target of this specification. A NIEM JSON document laxly conformant to a schema MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/niem-json-spec/5.0/#Lax.'
+    definitionLocal: true
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_4.1
+    sectionLabel: 'Section 4.1. NIEM JSON document strictly conformant to a schema'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_4.1'
+    definitionID: definition_NIEM_JSON_document_strictly_conformant_to_a_schema
+    definitionUID: 'JSON-5.0 beta 1-definition_NIEM_JSON_document_strictly_conformant_to_a_schema'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_NIEM_JSON_document_strictly_conformant_to_a_schema'
+    definitionTerm: 'NIEM JSON document strictly conformant to a schema'
+    definitionText: 'A NIEM JSON document strictly conformant to a schema is a JSON-LD document that may be assigned a one-to-one correspondence to a conformant instance XML document valid against a conformant schema document set. It is a conformance target of this specification. A NIEM JSON document strictly conformant to a schema MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/niem-json-spec/5.0/#Strict.'
+    definitionLocal: true
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_5.2
+    sectionLabel: 'Section 5.2. NIEM JSON Normalization'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_5.2'
+    definitionID: definition_NIEM_JSON_normalization
+    definitionUID: 'JSON-5.0 beta 1-definition_NIEM_JSON_normalization'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_NIEM_JSON_normalization'
+    definitionTerm: 'NIEM JSON normalization'
+    definitionText: 'Within this document, NIEM JSON normalization is a process by which simple JSON name/value pairs are transformed from simple names with values of false, null, true, number, or string, into NIEM conformant objects containing properties rdf:value and rdf:type. Evaluation of conformance of a JSON document is conducted on the results of NIEM JSON normalization of that document.'
+    definitionLocal: true
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_2.2
+    sectionLabel: 'Section 2.2. Normative and informative content'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_2.2'
+    definitionID: definition_normative
+    definitionUID: 'JSON-5.0 beta 1-definition_normative'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_normative'
+    definitionTerm: normative
+    definitionText: 'The term normative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:NORMATIVE — statements provided for the prescriptive parts of the specification, providing that which is necessary in order to be able to claim conformance to the specification.'
+    definitionLocal: true
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.7
+    sectionLabel: 'Section 3.7. RDF and RDF Schema'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.7'
+    definitionID: definition_RDF_graph
+    definitionUID: 'JSON-5.0 beta 1-definition_RDF_graph'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_RDF_graph'
+    definitionTerm: 'RDF graph'
+    definitionText: '[RDF-Concepts] Section 3, RDF Graphs defines the term RDF graph: An RDF graph is a set of RDF triples.'
+    definitionLocal: false
+    definitionStatus: draft
+-
+    specificationID: 'JSON-5.0 beta 1'
+    specificationSelector: JSON-5_0beta1
+    classID: JSON
+    sectionID: section_3.3
+    sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
+    sectionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#section_3.3'
+    definitionID: definition_reference_schema_document
+    definitionUID: 'JSON-5.0 beta 1-definition_reference_schema_document'
+    definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_reference_schema_document'
+    definitionTerm: 'reference schema document'
+    definitionText: 'The term reference schema document is a conformance target defined by the [NIEM NDR] Section 4.1.1, Reference schema document, which states:'
+    definitionLocal: false
+    definitionStatus: draft
