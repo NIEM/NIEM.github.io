@@ -46,7 +46,7 @@ ConTesA cannot verify that a schema is fully NIEM conformant; only that it passe
 
 **IEPD conformance**
 
-ConTesA can check a very limited number of rules from the [Model Package Description (MPD) Specification]({{ site.data.pages.mpd | relative_url }}).  Ensuring that an IEPD meets all applicable rules currently requires manual review.
+ConTesA can check a very limited number of rules from the [Information Exchange Package Documentation (IEPD) Specification]({{ site.data.pages.mpd | relative_url }}).  Ensuring that an IEPD meets all applicable rules currently requires manual review.
 
 **XML schema validation**
 

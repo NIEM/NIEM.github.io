@@ -33,12 +33,12 @@ Early in the development of NIEM (and its predecessor), governance committees di
 A `conformance target` is a special class of artifact, defined by a NIEM specification, with an applicable set of normative rules.
 
 {:.example}
-- The [NDR 4.0 specification]({{ site.data.links.ndr }}) defines 4 conformance targets, including
+- The [NDR 5.0 specification]({{ site.data.links.ndr }}) defines 4 conformance targets, including
   - **[Reference schema document (REF)]({{ site.data.links.ndr }}#definition_reference_schema_document)**
   - **[Extension schema document (EXT)]({{ site.data.links.ndr }}#definition_extension_schema_document)** <br><br>
-- The [MPD 3.0.1 specification]({{ site.data.links.mpd_spec }}) defines 7 conformance targets, including
+- The [IEPD 5.0 specification]({{ site.data.links.mpd_spec }}) defines 7 conformance targets, including
   - **[Information Exchange Package Documentation (IEPD)]({{ site.data.links.mpd_spec }}#definition_information_exchange_package_documentation)**
-  - **[MPD catalog document (MPD-catalog)]({{ site.data.links.mpd_spec}}#definition_MPD_catalog_document)** <br><br>
+  - **[IEPD catalog document (IEPD-catalog)]({{ site.data.links.mpd_spec}}#definition_IEPD_catalog_document)** <br><br>
 - The [Code Lists 4.0 specification]({{ site.data.links.code_list_spec }}) defines 6 conformance targets, including
   - **[CSV code list document (CSV-CLD)]({{ site.data.links.code_list_spec}}#definition_CSV_code_list_document)**
 
@@ -59,8 +59,8 @@ In addition to describing what a conformance target is, NIEM specifications assi
 A NIEM artifact will declare its applicable conformance targets by referencing the associated conformance target identifier(s).
 
 {:.example}
-- An XML schema can declare the `Extension schema document` conformance target from the NDR 4.0 specification.
-- An IEPD can declare the `IEPD` conformance target from the MPD 3.0.1 specification.
+- An XML schema can declare the `Extension schema document` conformance target from the NDR 5.0 specification.
+- An IEPD can declare the `IEPD` conformance target from the IEPD 5.0 specification.
 - A CSV code list can declare the `CSV Code List Document` conformance target from the Code Lists 4.0 specification.
 
 See the [Conformance Targets Attribute Specification]({{ site.data.pages.ctas | relative_url }}) for more information on how this is done.

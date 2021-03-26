@@ -11,13 +11,10 @@ links:
     group: artifact
   - url: /reference/artifacts/messages/extension-schema/
     group: artifact
-  - url: /reference/artifacts/messages/mpd-catalog/
+  - url: /reference/artifacts/messages/iepd-catalog/
     group: artifact
   - url: /reference/artifacts/messages/conformance-report/
     group: artifact
-todo:
-- add mpd catalog
-- add other IEPD artifacts (see reference/specifications/mpd for gaps)
 ---
 
 The following are artifacts that normatively define NIEM messages and message specifications:
@@ -27,11 +24,11 @@ The following are artifacts that normatively define NIEM messages and message sp
 
 ---
 
-## IEPD Artifacts
+## Artifacts within an IEPD
 
 The list below contains required or common artifacts for an IEPD.
 
-See the [Model Package Description (MPD) Specification]({{ site.data.pages.mpd | relative_url }}) page on this site for information on how these artifacts can be arranged in an IEPD package.
+See the [Information Exchange Package Documentation (IEPD) Specification]({{ site.data.pages.mpd | relative_url }}) page on this site for information on how these artifacts can be arranged in an IEPD package.
 
 {% assign artifactLinks = page.links | where: "group", "artifact" %}
 {% include icon-list.html links=artifactLinks %}

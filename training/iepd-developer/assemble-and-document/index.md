@@ -80,7 +80,7 @@ The following example shows a recommended IEPD folder structure and file locatio
 >   - xml-catalog.xml (references extension uri and nextCatalog niem/xml-catalog.xml)
 >- documentation (miscellaneous, binaries)
 >- iep-sample (contains sample xml instances; must be in root directory)
->- mpd-catalog.xml (must be in root directory)
+>- iepd-catalog.xml (must be in root directory)
 >- changelog.txt (.md, .htm, .pdf; must be in root directory)
 >- readme.txt (.md, .htm, .pdf; must be in root directory)
 >- conformance-assertion.txt (.md, .htm, .pdf; should be in root directory)
@@ -98,5 +98,5 @@ A good way to review an IEPD is to compare it to a checklist. The checklist shou
 
 - The readme document contains documentation necessary to effectively describe the information exchange.
 - The exchange content model file is included and accurately represents the XML code in the schemas.
-- The XML catalog validates with the NIEM Model Package Description (MPD) catalog schema (XSD) and resides in the root directory of the MPD bearing the file name “mpd-catalog.xml.”
+- The XML catalog validates with the NIEM Information Exchange Package Documentation (IEPD) catalog schema (XSD) and resides in the root directory of the IEPD bearing the file name “iepd-catalog.xml.”
 - The change log is in the root directory of the IEPD, begins with the substring “changelog,” and records changes to previous IEPD schemas that are represented.

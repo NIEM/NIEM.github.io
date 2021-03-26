@@ -53,7 +53,7 @@ The following table is an example of a code list for vehicle makes and models:
 
 ### XML Schema Conformance
 
-Schemas must conform to predefined rules and guidelines as defined in the NIEM Naming and Design Rules (NDR) and Model Package Description (MPD) Specification to promote increased levels of interoperability and reuse within exchanges. The NDR provides other general conformance guidelines and principles. XML schemas need to be checked for conformance both manually and through the use of tools because no tool currently exists that checks all of the NDR rules.
+Schemas must conform to predefined rules and guidelines as defined in the NIEM Naming and Design Rules (NDR) and Information Exchange Package Documentation (IEPD) Specification to promote increased levels of interoperability and reuse within exchanges. The NDR provides other general conformance guidelines and principles. XML schemas need to be checked for conformance both manually and through the use of tools because no tool currently exists that checks all of the NDR rules.
 
 ### XML Instance Validation
 

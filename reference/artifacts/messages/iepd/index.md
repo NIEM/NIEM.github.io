@@ -13,15 +13,15 @@ links:
 
 {:.features}
 >
-> - Explicit Conformance Target specified in the Model Package Description Specification (MPD-Spec)
+> - Explicit Conformance Target specified in the Information Exchange Package Documentation (IEPD) Specification
 > - The definitive artifact defining information exchanges
 > - Provides authoritative semantics for Information Exchange Packages (IEPs)
 > - Provides example derived IEPs and documentation
 
 {:.note}
-> The rules for constructing IEPDs are defined by the [Model Package Description
-> Specification (MPD-Spec)](https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html).
-> IEPDs are a kind of MPD composed from other NIEM
+> The rules for constructing IEPDs are defined by the [Information Exchange Package Documentation (IEPD)
+> Specification]({{ site.data.links.mpd_spec | relative_url }}).
+> IEPDs are composed from other NIEM
 > artifacts including, but not limited to Code Lists, Extension Schema Documents,
 > and Subset Schema Documents. IEPDs provide a self-contained definition for
 > derived information exchanges, thus they must be self documenting.
@@ -34,7 +34,7 @@ links:
 
 An Information Exchange Package Documentation (IEPD) is a NIEM message specification. It is a set of artifacts that define and document a message, using applicable content from NIEM and custom content as needed. Extra work goes into creating an IEPD so that it contains all of the information needed by developers to implement it.
 
-To NIEM, the IEPD is considered the point of interoperability. Creation and management of IEPDs is the responsibility of their stakeholders and developers. As such, IEPDs have their own versioning processes, and are managed independently of NIEM and NIEM Domains. NIEM PMO defines IEPD conformance, but IEPD development and management fall outside its scope.
+To NIEM, the IEPD is considered the point of interoperability. Creation and management of IEPDs is the responsibility of their stakeholders and developers. As such, IEPDs have their own versioning processes, and are managed independently of NIEM and NIEM Domains. The NIEM Management Office defines IEPD conformance, but IEPD development and management fall outside its scope.
 
 ![Data Interoperability](assets/interoperability.png "Data Interoperability")
 

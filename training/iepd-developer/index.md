@@ -63,7 +63,7 @@ The **[Artifacts]({{ "/reference/artifacts" | relative_url }})** section describ
 | **[IEPD]({{ "/reference/artifacts/messages/iepd" | relative_url }})** | Create a package that defines a NIEM message. |
 | **[Extension Schema]({{ "/reference/artifacts/messages/extension-schema" | relative_url }})** | Create new NIEM elements and data types needed for an exchange. |
 | **[Subset Schema]({{"/reference/artifacts/messages/subset-schema" | relative_url }})** | Create a smaller set of NIEM schemas that contains only the properties and types that are needed for an exchange. |
-| **[MPD Catalog]({{"/reference/artifacts/messages/mpd-catalog" | relative_url }})** | Document metadata about your message. |
+| **[IEPD Catalog]({{"/reference/artifacts/messages/iepd-catalog" | relative_url }})** | Document metadata about your message. |
 | **[Conformance Report]({{"/reference/artifacts/messages/conformance-report" | relative_url }})** | Document the steps that were taken to ensure an IEPD is NIEM conformant and record any known exceptions. |
 | **[Release]({{ "/reference/artifacts/releases" | relative_url }})** | Learn about NIEM major and minor releases and the artifacts that can be found in a release package. |
 | **[Core Supplement]({{ "/reference/artifacts/releases/core-supplement" | relative_url }})** | Learn about how NIEM publishes incremental changes to the Core namespace between major releases and how to use these supplements in your IEPD. |
@@ -77,7 +77,7 @@ The **[Specifications]({{ "/reference/specifications/" | relative_url }})** sect
 | Specification | IEPD Developer Uses |
 | ------------- | ------------------- |
 | **[Naming and Design Rules]({{ site.data.pages.ndr | relative_url }})** | Learn about the architecture of the NIEM data model, its representation in XML, and the conformance rules that are required for your extension schemas. |
-| **[Model Package Description]({{ site.data.pages.mpd | relative_url }})** | Read about rules and guidance for creating an IEPD. |
+| **[Information Exchange Package Documentation]({{ site.data.pages.mpd | relative_url }})** | Read about rules and guidance for creating an IEPD. |
 | **[Code Lists]({{ site.data.pages.code-lists | relative_url }})** | Want to use CSV files to define your IEPD codes instead of XML enumerations? <br> Want to link codes to other codes (like vehicle makes and models) or multiple definitions? <br> Want to use GENC codes from the release?  <br>Learn how NIEM uses CSV files to represent enhanced code lists. |
 | **[Conformance]({{ site.data.pages.conformance | relative_url }})** | Learn what it means for a schema, IEPD, or other artifact to be NIEM-conformant. |
 | **[Conformance Targets Attribute]({{ site.data.pages.ctas | relative_url }})** | Learn how to declare conformance targets for your extension schemas. <br> This is required both for NIEM conformance and to use ConTesA for conformance testing. |

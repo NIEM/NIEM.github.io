@@ -60,21 +60,21 @@ The first item you need to determine is the single, main, focal point or purpose
 
 The content portion of the requirements analysis can be done however you prefer: document, spreadsheet, or model diagram.  The kinds of information to capture include the following:
 
-- Data elements – These are the data fields for the message.  For each field, the following information may or will be needed:
-  - Element name – This is the name of the field or tag.  Examples include First Name, Last Name, Street Address, and Phone Number.
-  - Data type – The structural representation or format of the element. Examples include string, date, integer, decimal, Boolean, state code set, person data type, location data type.
-  - Definition – Descriptive definitions will be required for all components in the exchange. At this stage, the semantics need to be captured, but the wording does not have to be finalized or perfected. If you determine later that an element maps to NIEM, then the NIEM element will come with its own definition. The definition captured here should be sufficient enough so that the meaning is clear.
-  - Occurrence constraints – The minimum and maximum number of times an element may appear in the instance. For example, Last Name may occur once only; Social Security Number (SSN) may occur 0 to 1 times; Phone Number may occur 0 to many times.
+- Data elements - These are the data fields for the message.  For each field, the following information may or will be needed:
+  - Element name - This is the name of the field or tag.  Examples include First Name, Last Name, Street Address, and Phone Number.
+  - Data type - The structural representation or format of the element. Examples include string, date, integer, decimal, Boolean, state code set, person data type, location data type.
+  - Definition - Descriptive definitions will be required for all components in the exchange. At this stage, the semantics need to be captured, but the wording does not have to be finalized or perfected. If you determine later that an element maps to NIEM, then the NIEM element will come with its own definition. The definition captured here should be sufficient enough so that the meaning is clear.
+  - Occurrence constraints - The minimum and maximum number of times an element may appear in the instance. For example, Last Name may occur once only; Social Security Number (SSN) may occur 0 to 1 times; Phone Number may occur 0 to many times.
 
     Default occurrence constraints in NIEM are 0 to unbounded (with a few exceptions); the default in XML Schema is once only.  Without explicitly setting these occurrence constraints, the defaults mean that components reused from NIEM will be optional and the ones added locally will be required.
-  - Source information – Optional. It may be useful or necessary in some cases to record the source of the requirement. Traceability information may seem very apparent at the time but can be difficult to reconstruct at a later date if needed.
+  - Source information - Optional. It may be useful or necessary in some cases to record the source of the requirement. Traceability information may seem very apparent at the time but can be difficult to reconstruct at a later date if needed.
 
 {:.note}
 >If a corresponding NIEM element is already known at this stage, then the NIEM values may be used in place of local ones for element name, data type, and definition.
 
-- Objects and classes – These are the complex, reusable data structures where related elements are grouped together.  Examples include Person (with elements First Name, Last Name, SSN, and Phone) and Location (with elements Street Address, City, State, and Zip Code).
-- Code sets – This is a list of allowable values, such as a state code list or an eye color list.  Code sets may come from a standard or may be custom-defined.
-- Conditions and business rules – There may be certain restrictions on the content that need to be represented.  Examples include restrictions on individual values (such as a number that cannot be less than zero or a string that must have a certain number of characters) and conditional restraints (such as if the SSN is not provided, then Last Name and Birth Date are required), etc.
+- Objects and classes - These are the complex, reusable data structures where related elements are grouped together.  Examples include Person (with elements First Name, Last Name, SSN, and Phone) and Location (with elements Street Address, City, State, and Zip Code).
+- Code sets - This is a list of allowable values, such as a state code list or an eye color list.  Code sets may come from a standard or may be custom-defined.
+- Conditions and business rules - There may be certain restrictions on the content that need to be represented.  Examples include restrictions on individual values (such as a number that cannot be less than zero or a string that must have a certain number of characters) and conditional restraints (such as if the SSN is not provided, then Last Name and Birth Date are required), etc.
 
 The other requirements of the exchange (e.g., technical, security and privacy, performance, reporting) should be described in this step as well.
 
@@ -198,17 +198,17 @@ You prepare and package all related files for the IEPD into a single, self‐con
 {:.example}
 >
 >superhero-iepd-4.0-rev-01
->- base-xsd
->   - niem
->      - niem-core/4.0
->      - proxy/xsd/4.0
->      - utility
->         - appinfo/4.0
->         - conformanceTargets/3.0
->         - structures/4.0
->      - wantlist.xml
->      - xml-catalog.xml
->- mpd-catalog.xml (must be in root directory)
+>- base-xsd/
+>   - niem/
+>     - xsd/
+>       - adapters/
+>       - codes/
+>       - domains/
+>       - utility/
+>       - niem-core.xsd
+>       - wantlist.xml
+>       - xml-catalog.xml
+>- iepd-catalog.xml (must be in root directory)
 >- changelog.txt (.md, .htm, .pdf; must be in root directory)
 >- readme.txt (.md, .htm, .pdf; must be in root directory)
 >- iep-sample (contains sample xml instances; must be in root directory)
@@ -216,32 +216,31 @@ You prepare and package all related files for the IEPD into a single, self‐con
 >- documentation (miscellaneous, binaries)
 >- schematron (optional; should be in root directory)
 
-Additional artifacts are required in an IEPD. An mpd-catalog is required and must conform to the [mpd specification]({{site.data.links.mpd_spec}}). Other artifacts such as documentation, sample instances, and schematron rules will not be covered in this tutorial. Schematron rules are not required but can be used to ensure the IEPD is following required business rules.
+Additional artifacts are required in an IEPD. A iepd-catalog is required and must conform to the [IEPD Specification]({{site.data.links.mpd_spec | relative_url}}). Other artifacts such as documentation, sample instances, and schematron rules will not be covered in this tutorial. Schematron rules are not required but can be used to ensure the IEPD is following required business rules.
 
 **IEPD Artifacts:**
 
-- **NIEM schema subset** (required) – The output from the SSGT from the Map and Model step.
+- **NIEM schema subset** (required) - The output from the SSGT from the Map and Model step.
 
-- **[mpd-catalog]({{site.data.links.mpd_spec}}#section_5.1)** (required) – A specially-formatted XML instance that contains metadata about the IEPD.
-   - Catalog metadata includes:
-      - IEPD unique identification
-      - Conformance targets
-      - Basic information about the IEPD
-      - Key artifacts and directory structure
-      - Relationships to other MPDs and their artifacts
+- **[ied-catalog.xml]({{site.data.links.mpd_spec | relative_url}}#section_5.1)** (required) - A specially-formatted XML document that contains metadata about the IEPD.
+  - Catalog metadata includes:
+    - IEPD unique identification
+    - Conformance targets
+    - Basic information about the IEPD
+    - Key artifacts and directory structure
+    - Relationships to other IEPDs and their artifacts
 
+- **[changelog]({{site.data.links.mpd_spec | relative_url}}#section_5.3)** (required) - An artifact that describes the changes applied to the IEPD since its previous version. You may choose your own format for the changelog which can simply be the release date.
 
-- **[changelog]({{site.data.links.mpd_spec}}#section_5.3)** (required) – An artifact that describes the changes applied to the IEPD since its previous version. You may choose your own format for the changelog which can simply be the release date.
+- **[readme]({{site.data.links.mpd_spec | relative_url}}#section_5.4)** (required) - An informal documentation artifact that includes an initial description or instructional information. This artifact should describe the IEPD purpose, scope, business value, exchange information, typical senders/receivers, interactions, and references to other documentation.
 
-- **[readme]({{site.data.links.mpd_spec}}#section_5.4)** (required) – An informal documentation artifact that includes an initial description or instructional information. This artifact should describe the IEPD purpose, scope, business value, exchange information, typical senders/receivers, interactions, and references to other documentation.
+- **[iep-sample]({{site.data.links.mpd_spec | relative_url}}#section_5.6.3)** (required) - A sample xml instance that serves as a test for the IEPD schemas. The sample instance should contain realistic data and use as many data components and validity constraints as possible.
 
-- **[iep-sample]({{site.data.links.mpd_spec}}#section_5.6.3)** (required) – A sample xml instance that serves as a test for the IEPD schemas. The sample instance should contain realistic data and use as many data components and validity constraints as possible.
+- **[conformance-assertion]({{site.data.links.mpd_spec | relative_url}}#section_5.7)**  - An artifact that provides a declaration that an IEPD conforms to relevant NIEM specifications and associated rules, including [NIEM Conformance 5.0]({{site.data.links.conformance}}), [NIEM Naming and Design Rules 5.0]({{site.data.links.ndr}}), [NIEM Conformance Targets Attribute Specification 3.0]({{site.data.links.conformance_targets}}), and [NIEM IEPD Specification 5.0]({{site.data.links.mpd_spec | relative_url}}).
 
-- **[conformance-assertion]({{site.data.links.mpd_spec}}#section_5.7)**  – An artifact that provides a declaration that an IEPD conforms to relevant NIEM specifications and associated rules, including [NIEM Conformance 3.0]({{site.data.links.conformance}}), [NIEM Naming and Design Rules 4.0]({{site.data.links.ndr}}), [NIEM Conformance Targets Attribute Specification 3.0]({{site.data.links.conformance_targets}}), and [NIEM MPD Specification 3.0.1]({{site.data.links.mpd_spec}}).
+- **[xml-catalog]({{site.data.links.mpd_spec | relative_url}}#section_5.5)** - An xml instance that describes mappings between external schema references and locally-cached equivalents. A basic xml-catalog will be generated with the subset and can be modified as necessary.
 
-- **[xml-catalog]({{site.data.links.mpd_spec}}#section_5.5)** – An xml instance that describes mappings between external schema references and locally-cached equivalents. A basic xml-catalog will be generated with the subset and can be modified as necessary.
-
-- **[wantlist]({{site.data.links.mpd_spec}}#section_6.1)** – An xml file that contains the elements and types from NIEM that will be included within the subset schema for the exchange. In other words, it describes what an exchange "wants" from the NIEM data model. Output from the SSGT during the Map and Model step.
+- **[wantlist]({{site.data.links.mpd_spec | relative_url}}#section_6.1)** - An xml file that contains the elements and types from NIEM that will be included within the subset schema for the exchange. In other words, it describes what an exchange "wants" from the NIEM data model. Output from the SSGT during the Map and Model step.
 
 Once you have assembled all required artifacts, compress the root directory folder **superhero-iepd-4.0-rev-01** to a self-contained archive (e.g., zip) file. You should then perform a peer review to ensure artifact consistency within the IEPD and with other IEPDs.
 
@@ -259,9 +258,7 @@ You may also wish to publish your IEPD on a service such as [github](https://git
 
 ## Additional Resources
 
-- [NIEM Conformance 3.0]({{site.data.links.conformance}})
-- [Model Package Description Specification 3.0.1]({{site.data.links.mpd_spec}})
-- [NIEM Naming and Design Rules 4.0]({{site.data.links.ndr}})
-- [Optional IEPD Artifacts]({{site.data.links.mpd_spec}}#section_6)
-- [IEPD SuperHero Series]({{ site.data.pages.iepd-starter-kit | append: "iepd-series/" | relative_url }})
-- [NIEM Reusable XML Snippets]({{ site.data.pages.iepd-starter-kit | append: "reusable-xml-snippets/" | relative_url }})
+- [NIEM Conformance 5.0]({{site.data.links.conformance}})
+- [Information Exchange Package Documentation Specification 5.0]({{site.data.links.mpd_spec | relative_url}})
+- [NIEM Naming and Design Rules 5.0]({{site.data.links.ndr}})
+- [Optional IEPD Artifacts]({{site.data.links.mpd_spec | relative_url}}#section_6)

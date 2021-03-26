@@ -11,7 +11,7 @@ oxygen_ndr: /reference/tools/oxygen/ndr/
 
 ndr: /reference/specifications/ndr/
 ctas: /reference/specifications/conformance-targets/
-mpd: /reference/specifications/mpd/
+mpd: /reference/specifications/iepd/
 hlva: /reference/specifications/hlva/
 conformance: /reference/specifications/conformance/
 code-lists: /reference/specifications/code-lists/

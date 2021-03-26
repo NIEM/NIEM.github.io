@@ -24,14 +24,14 @@ New components added to extension schemas are often referred to as "extensions".
 An XML extension schema must declare an ExtensionSchemaDocument conformance target as defined by the [NDR]({{ site.data.pages.ndr | relative_url }}).
 
 {:.example}
-- The snippet below shows a very general outline of an XML extension schema that has declared its conformance target to be an extension schema document as defined by the NDR, version 4.0:
+- The snippet below shows a very general outline of an XML extension schema that has declared its conformance target to be an extension schema document as defined by the NDR, version 5.0:
 - Notice that the end of the conformance target identifier in the example is formatted as
   - `/specificationName/version/conformanceTarget`:
-  - `/naming-and-design-rules/4.0/#ExtensionSchemaDocument`
+  - `/naming-and-design-rules/5.0/#ExtensionSchemaDocument`
 
 ```xml
 <xs:schema
-  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument">
+  ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/#ExtensionSchemaDocument">
 <xs:schema>
 ```
 
@@ -51,12 +51,13 @@ myIEPD-2.0/
   base-xsd/
 
     niem/               # NIEM subset schemas
-      adapters/
-      codes/
-      domains/
-      external/
-      niem-core/
-      ...
+      xsd/
+        adapters/
+        codes/
+        domains/
+        external/
+        niem-core.xsd
+        ...
 
     extension/          # NIEM-conformant extension schemas
       extension1.xsd
@@ -69,7 +70,7 @@ myIEPD-2.0/
       ...
 ```
 
-The [Model Package Description (MPD) Specification]({{ site.data.pages.mpd | relative_url  }}) page on this site contains more information about how an IEPD package might be structured.
+The [Information Exchange Package Documentation (IEPD) Specification]({{ site.data.pages.mpd | relative_url  }}) page on this site contains more information about how an IEPD package might be structured.
 
 ## Reusing NIEM components
 
@@ -88,11 +89,11 @@ In order to reuse components from NIEM, the following steps should be taken:
 ```xml
 <!-- Declare a prefix for the NIEM Core namespace -->
 <xs:schema
-  xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/5.0/"
 >
   <!-- Import the NIEM Core namespace -->
-  <xs:import schemaLocation="../niem/niem-core/4.0/niem-core.xsd"
-             namespace="http://release.niem.gov/niem/niem-core/4.0/"/>
+  <xs:import schemaLocation="../niem/niem-core/5.0/niem-core.xsd"
+             namespace="http://release.niem.gov/niem/niem-core/5.0/"/>
 
   <!-- Reuse a NIEM Core type -->
   <xs:element name="Veterinarian" type="nc:PersonType">

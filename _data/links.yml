@@ -30,17 +30,17 @@ code_list_spec_repo:      https://github.com/NIEM/niem-code-lists-spec/
 
 ctas: https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html
 
-conformance: https://reference.niem.gov/niem/specification/conformance/3.0/conformance-3.0.html
+conformance: https://reference.niem.gov/niem/specification/conformance/5.0/niem-conformance-spec-5.0.html
 conformance_targets: https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html
 
 hlva: https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/high-level-version-architecture-3.0.html
 
 json: https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html
 
-mpd_spec: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html
-mpd_spec_folder: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/
+mpd_spec: https://reference.niem.gov/niem/specification/model-package-description/5.0/niem-iepd-spec-5.0.html
+mpd_spec_folder: https://reference.niem.gov/niem/specification/model-package-description/5.0/
 
-mpd_catalog_xsd: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/xsd-mpd-catalog/mpd-catalog-3.0.xsd
+mpd_catalog_xsd: https://reference.niem.gov/niem/specification/model-package-description/5.0/iepd-catalog-schema/iepd-catalog.xsd
 
 six: https://reference.niem.gov/niem/specification/sch-in-xsd/1.0alpha4/niem-schematron-in-xsd-1.0alpha4-2016-03-16.html
 

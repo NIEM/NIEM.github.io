@@ -1,24 +1,24 @@
 ---
-title:  Appendix C. NIEM glossary
+title:  Appendix C - NIEM glossary
 ---
 
-This appendix defines terminology associated with NIEM. The first section defines common terms that are not formally defined in NIEM specifications. Subsequent sections reference the definitions for terms used in the NIEM specifications. Each list is sorted alphabetically. 
+This appendix defines terminology associated with NIEM. The first section defines common terms that are not formally defined in NIEM specifications. Subsequent sections reference the definitions for terms used in the NIEM specifications. Each list is sorted alphabetically.
 
 ## Common NIEM terms
 
-- __coordinated domain update__ &mdash; A NIEM [domain update] that is a collaborative effort among multiple (two or more) domains. Simultaneously, each domain releases a new version of (update to) its namespace(s). Together these updates will be [harmonized][harmonization] and [coherent][coherence]. 
+- __coordinated domain update__ &mdash; A NIEM [domain update] that is a collaborative effort among multiple (two or more) domains. Simultaneously, each domain releases a new version of (update to) its namespace(s). Together these updates will be [harmonized][harmonization] and [coherent][coherence].
 - __data component__ &mdash; An NIEM XML element, attribute, or type.
-- __funneling__ &mdash; Describes a process for subjective reviewing of an intermediate [NIEM release]. Once governance has reviewed, identified, and resolved a subjective modeling issue within an intermediate release, the issue is closed and will not be reopened in a subsequent review during that [release cycle].  Funneling begins at the start of a [beta] release. Note that funneling is only applicable to subjective issues; errors in the model will be corrected at anytime during the [release cycle]. 
-- __intermediate release__ &mdash; An [alpha], [beta], or [release candidate] release (i.e., not an operational release). 
+- __funneling__ &mdash; Describes a process for subjective reviewing of an intermediate [NIEM release]. Once governance has reviewed, identified, and resolved a subjective modeling issue within an intermediate release, the issue is closed and will not be reopened in a subsequent review during that [release cycle].  Funneling begins at the start of a [beta] release. Note that funneling is only applicable to subjective issues; errors in the model will be corrected at anytime during the [release cycle].
+- __intermediate release__ &mdash; An [alpha], [beta], or [release candidate] release (i.e., not an operational release).
 - __term__ &mdash; A word, acronym, or abbreviation concatenated in upper camel case with other terms to form a NIEM data component name.  For example, the NIEM data component name <code>nc:PersonSSNIdentification</code> consists of three terms: <code>Person</code>, <code>SSN</code> (an acronym for Social Security Number), and <code>Identification</code>.
 
 
-## All terms defined in NIEM specifications ... 
-  Naming and Design Rules 3.0  
-  Conformance Targets Attribute Specification 3.0  
-  Code Lists Specification 1.0  
-  High Level Version Architecture 3.0  
-  Model Package Description Specification 3.0.1  
+## All terms defined in NIEM specifications ...
+  Naming and Design Rules 3.0
+  Conformance Targets Attribute Specification 3.0
+  Code Lists Specification 1.0
+  High Level Version Architecture 3.0
+  Model Package Description Specification 3.0.1
 
 - [alpha]
 - [appinfo namespace]

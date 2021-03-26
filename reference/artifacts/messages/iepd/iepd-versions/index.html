@@ -7,32 +7,32 @@ description: Best practices for NIEM IEPD change control and version management.
 
 <html>
   <body>
-    <!-- 
+    <!--
          Outline
          (1) NIEM architecture
          (2) NIEM XSDs versioning
          (3) IEPD versioning
          (4) IEPs validate to IEPD schema document sets
          (5) Backward compatibility is defined in terms of IEPs and IEPDs
-         (6) How to build/update an IEPD that can maintain backward compatibility with older IEPs 
+         (6) How to build/update an IEPD that can maintain backward compatibility with older IEPs
       -->
 
 <h3>Introduction</h3>
 
 <p>This FAQ relates best practices for NIEM IEPD change control and versioning.
 Before discussing these concepts as they relate specifically to an IEPD,
-we begin with an overview of the NIEM architecture, and follow that 
-with several applicable FAQs about NIEM change control in general. 
+we begin with an overview of the NIEM architecture, and follow that
+with several applicable FAQs about NIEM change control in general.
 </p>
 
 <p>Please help improve this content by <a href="{{ site.submit_feedback_link }}">sending your feedback and additional questions</a>!</p>
 
-<p>The audience is intended to be NIEM Information Exchange Package Documentation (IEPD) developers and implementers 
-who transmit or share NIEM IEPs (Information Exchange Packages, i.e., instance XML documents) based on one or more IEPDs. 
-The scope covers all aspects of IEPD change control and versioning 
-based on NIEM releases, including how NIEM releases relate to IEPDs and their 
-implementations, compatibility, and what users and implementers should expect. 
-The intent is to help the NIEM community understand how to implement NIEM effectively 
+<p>The audience is intended to be NIEM Information Exchange Package Documentation (IEPD) developers and implementers
+who transmit or share NIEM IEPs (Information Exchange Packages, i.e., instance XML documents) based on one or more IEPDs.
+The scope covers all aspects of IEPD change control and versioning
+based on NIEM releases, including how NIEM releases relate to IEPDs and their
+implementations, compatibility, and what users and implementers should expect.
+The intent is to help the NIEM community understand how to implement NIEM effectively
 in the context of annual releases, and know the limitations and trade-offs.</p>
 
 <hr/>
@@ -44,15 +44,15 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
     <ol>
       <li>
         <b>What release versions of NIEM are available?</b>
-        <p>NIEM release versions currently available are: 1.0, 2.0, 2.1, 
-          3.0, and 3.1.  These are all available for download
+        <p>NIEM release versions currently available are: 1.0, 2.0, 2.1,
+          3.0, 3.1, 3.2, 4.0, 4.1, 4.2, and 5.0.  These are all available for download
           at <a href="http://release.niem.gov/">http://release.niem.gov/</a>.
           There are also a few domain updates and core supplements that can be
           used in IEPDs available in the NIEM Publication Area at
           <a href="http://publication.niem.gov/niem/">http://publication.niem.gov/niem/</a>.
-	  Original domain updates and core supplements are always available in the 
-          Publication Area to use with the existing releases to which they apply. 
-          However, domain updates and core supplements are also harmonized with 
+	  Original domain updates and core supplements are always available in the
+          Publication Area to use with the existing releases to which they apply.
+          However, domain updates and core supplements are also harmonized with
           and integrated into the next major or minor release.</p>
       </li>
 
@@ -88,14 +88,14 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
 
       <li>
         <b>How are NIEM subset schema documents versioned?</b>
-        <p>In NIEM, the <code>targetNamespace</code> of a subset schema 
-	  document based on a reference schema document (within a release) 
-          is never unique.  A subset schema document always takes the 
-          <code>targetNamespace</code> of the reference schema document 
-          from which it was built. 
-          (See <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0.1rc1/model-package-description-3.0.1rc1.html#section_4.2.2"
-          >Model Package Description 3.0.1</a> for subsetting operations.)  
-          This is because a subset schema is essentially a reduced copy (i.e., 
+        <p>In NIEM, the <code>targetNamespace</code> of a subset schema
+	  document based on a reference schema document (within a release)
+          is never unique.  A subset schema document always takes the
+          <code>targetNamespace</code> of the reference schema document
+          from which it was built.
+          (See <a href="http://reference.niem.gov/niem/specification/model-package-description/5.0/niem-iepd-spec-5.0.html#section_4.2.2"
+          >Information Exchange Package Documentation 5.0</a> for subsetting operations.)
+          This is because a subset schema is essentially a reduced copy (i.e.,
           a subset) of that reference schema document.  So, an XML document
           instance defined by a subset schema document is also defined by its
           associated reference schema document.  And in fact, a conformant
@@ -180,8 +180,8 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
           validation) might not require a URI change.  This decision is left to
           the judgement of IEPD authors, sponsors, or certification authorities.
           (See
-          the <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.1"
-          >NIEM Model Package Description 3.0.1 - Section 5.2.4.1</a > for IEPD
+          the <a href="http://reference.niem.gov/niem/specification/model-package-description/5.0/niem-iepd-spec-5.0.html#section_5.2.4.1"
+          >NIEM Information Exchange Package Documentation 5.0 - Section 5.2.4.1</a > for IEPD
           URI syntax details and rationales.)</p>
       </li>
 
@@ -212,15 +212,15 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
           documents, because some domains (such as Justice) and some code lists
           have legacy versioning schemes that do not correspond directly to the
           release version.  For example, the current version number in the
-          Justice <code>targetNamespace</code> URI is 5.0, not 3.0.</p>
+          Justice <code>targetNamespace</code> URI is 7.0, not 5.0.</p>
       </li>
 
       <li>
         <b>Can an IEPD employ data components from more than one NIEM release
           version?</b>
         <p>The
-          NIEM <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0.1/"
-          >Model Package Description Specification 3.0.1</a> allows an IEPD to
+          NIEM <a href="http://reference.niem.gov/niem/specification/model-package-description/5.0/"
+          >Information Exchange Package Documentation Specification 5.0</a> allows an IEPD to
           employ XML data components from multiple NIEM releases.  This means
           that schema subsets from multiple releases can be used together in a
           single IEPD.  That said, mixing releases in an IEPD can introduce
@@ -236,19 +236,17 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
       <li>
         <b>Can I use NIEM domain updates and/or core supplements in my
           IEPD?</b>
-        <p>A NIEM domain update is a
-          <a href="http://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_model_package_description"
-          >model package description (MPD)</a> that contains one or more schema
+        <p>A NIEM domain update contains one or more schema
           documents representing changes to one or more domains.  A NIEM core
-          supplement is a special release MPD that contains one or more
+          supplement contains one or more
           schema documents representing additive-only changes to a published
-          NIEM Core.  An IEPD may incorporate domain updates and core supplements.  
-          That said, semantic overlap and duplication that can occur by mixing multiple 
+          NIEM Core.  An IEPD may incorporate domain updates and core supplements.
+          That said, semantic overlap and duplication that can occur by mixing multiple
           NIEM releases within an IEPD (See FAQ above), may also happen when using a
-          domain update or core supplement.  
+          domain update or core supplement.
           This is because a domain update changes a given domain's
           published <code>targetNamespace</code> by creating a
-          new <code>targetNamespace</code> and applying the changes there. 
+          new <code>targetNamespace</code> and applying the changes there.
           In doing so, it may replicate data components defined by
           the <code>targetNamespace</code> it changes.
           (See <a href="http://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/"
@@ -257,13 +255,13 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
           others' data components while also independently publish changes
           outside the regular release cycle, is that over time the level of
           semantic overlap can increase across a given release and its
-          associated domain updates and core supplements.  
+          associated domain updates and core supplements.
           To the extent possible, within an IEPD avoid
           mixing duplicate versions of the same data component.  Use the subset
           technique where possible to reduce duplication; but realize that some
           level of semantic duplication and overlap may be unavoidable.</p>
       </li>
-      
+
       <li>
         <b>"An IEPD is the point of NIEM interoperability." ... What does this
           mean?</b>
@@ -273,8 +271,8 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
           or core supplements, an IEPD implementation establishes
           interoperability among senders/receivers of XML instance documents
           (IEPs) that validate to the IEPD's schema document set.  This means that
-          a NIEM implementation is immune to NIEM changes (new releases, domain updates, 
-          and core supplements), and will continue to work as long as IEPs 
+          a NIEM implementation is immune to NIEM changes (new releases, domain updates,
+          and core supplements), and will continue to work as long as IEPs
           (instance XML documents)
           are schema-valid to the original IEPD schema document set.  Furthermore,
           if the IEPD schemas change and the implementation changes accordingly,
@@ -320,7 +318,7 @@ in the context of annual releases, and know the limitations and trade-offs.</p>
           the IEPD schema document set.  Therefore, producer and consumer
           implementations of an IEPD must be aware of the IEPD versions their
           software implementations are based on.</p>
-      </li>  
+      </li>
     </ol>
 
     <h3>Backward compatibility</h3>

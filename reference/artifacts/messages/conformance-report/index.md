@@ -23,4 +23,4 @@ The [Conformance Testing Assistance (ConTesA)]({{ site.data.pages.contesa | rela
 
 ## Additional validation steps
 
-Additional information can also be included specifying any additional steps that were taken to manually review and validate rules that are not automated, like free-text rules from the [Naming and Design Rules (NDR)]({{ site.data.pages.ndr | relative_url }}) and the [Model Package Description (MPD) Specification]({{ site.data.pages.mpd | relative_url }}).  See the [MPD Specification, Appendix D. Conformance Assertion Example]({{ site.data.links.mpd_spec}}#appendix_D) for more on what this might look like.
+Additional information can also be included specifying any additional steps that were taken to manually review and validate rules that are not automated, like free-text rules from the [Naming and Design Rules (NDR)]({{ site.data.pages.ndr | relative_url }}) and the [Information Exchange Package Documentation (IEPD) Specification]({{ site.data.pages.mpd | relative_url }}).  See the [IEPD Specification, Appendix D. Conformance Assertion Example]({{ site.data.links.mpd_spec}}#appendix_D) for more on what this might look like.

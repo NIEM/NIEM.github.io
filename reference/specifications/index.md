@@ -7,7 +7,7 @@ links:
 - url: /reference/specifications/ndr/
   classID: NDR
   group: specs
-- url: /reference/specifications/mpd/
+- url: /reference/specifications/iepd/
   classID: IEPD
   group: specs
 - url: /reference/specifications/json/
