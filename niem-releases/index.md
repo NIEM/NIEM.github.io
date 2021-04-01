@@ -23,10 +23,8 @@ links:
     }
 </style>
 
-<!--
 {:.note}
-> **[{{page.draftLabel}}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{site.data.release.tag}}) is now available for review!**  Feedback is requested by end of the day on {{site.data.release.feedbackDue}}.  Click **[here](./draft/)** for more.
- -->
+> **[{{site.data.release.description}}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{site.data.release.tag}}) is now available for review!**  Feedback is requested by end of the day on {{site.data.release.feedbackDue}}.  Click **[here](./draft/)** for more.
 
 NIEM publishes annual releases on a 3-year cycle.  A major release one year will be followed by minor releases the next two years.
 
@@ -35,9 +33,6 @@ Major releases allow content changes to NIEM Core and domains, plus architectura
 NIEM [release packages](../reference/artifacts/releases/) are available on both [GitHub](https://github.com/NIEM/NIEM-Releases) and [release.niem.gov](https://release.niem.gov/niem/) (the original publication site).
 
 Please submit feedback to the NIEM releases [issue tracker](https://github.com/NIEM/NIEM-Releases/issues) (see [info](https://github.com/NIEM/NIEM-Releases/wiki/Issues) for help).
-
-{:.note}
-> The **[NIEM-Specifications]({{ "/reference/specifications/" | relative_url }})** landing page has the latest news about the drafts available for review, plus quick links to other specification resources.
 
 {% assign tag = site.data.release.tag %}
 
@@ -56,19 +51,18 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
   <tbody>
     <tr>
       <td>
-        <b><a href="./5.1">NIEM 5.1</a></b><br><i>(under development)</i>
+        <b><a href="./5.1">{{ site.data.release.description }}</a></b><br><i>(under development)</i>
       </td>
       <td>
-        Coming Soon
-        <!--
-        <a href="https://github.com/NIEM/NIEM-Releases/tree/{{tag}}">GitHub</a> |
+        <a href="https://github.com/NIEM/NIEM-Releases/tree/{{tag}}">GitHub</a>
+        <!-- |
         <a href="https://release.niem.gov/niem/{{tag}}/">release.niem.gov</a>
          -->
       </td>
       <td>2021</td>
-      <td><!--<a href="https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip">Zip</a>--></td>
-      <td><!--<a href="https://github.com/NIEM/NIEM-Releases/blob/{{tag}}/README.md">Readme</a>--></td>
-      <td></td>
+      <td><a href="https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip">Zip</a></td>
+      <td><a href="https://github.com/NIEM/NIEM-Releases/blob/{{tag}}/README.md">Readme</a></td>
+      <td>{{ site.data.release.elements }}</td>
       <td><a href="{{site.data.links.ndr5}}">NDR 5.0</a></td>
     </tr>
     <tr>

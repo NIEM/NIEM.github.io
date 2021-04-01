@@ -21,15 +21,15 @@ Please email feedback to  or submit a new [5.1 issue](https://github.com/NIEM/NI
 
 ## Resources
 
-The release is currently in the pre-alpha stage and no updated schemas are available yet for review.
+{% assign tag = site.data.release.tag %}
+
+- Download the full [draft release package](https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip) as a zip file
+
+- View schemas and documentation on [GitHub](https://github.com/NIEM/NIEM-Releases/tree/{{tag}})
 
 - Submit a [new issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.1) (see [info](https://github.com/NIEM/NIEM-Releases/wiki/Issues) for help) or email feedback to <niem-comments@lists.gatech.edu>
 
-- View all [5.1 issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+label%3A5.1)
-
-- Track progress via the [5.1 project board](https://github.com/NIEM/NIEM-Releases/projects/6)
-
-- Review upcoming 5.1 draft schemas on the [dev branch]({{site.data.links.release_repo}}/tree/dev) on GitHub
+- View a list of all [5.1 issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+label%3A5.1) or track progress via the [5.1 project board](https://github.com/NIEM/NIEM-Releases/projects/6)
 
 ## Schedule
 
