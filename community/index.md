@@ -4,7 +4,7 @@ description: NIEM community activities
 links:
 - url: /grants/
 - url: /health/
-- url: /community/slt/
+- url: /community/sltt/
 ---
 
 {% include section-list.html sections=page.links %}
