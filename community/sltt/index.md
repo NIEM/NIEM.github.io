@@ -14,7 +14,7 @@ links:
 - url: /community/sltt/opportunities/
 ---
 
-<img align="right" width="50%" src="assets/slt.png">
+<img align="right" width="50%" src="assets/images/NIEM-SLTT-Voices-Concept-1-v2.jpg">
 
 ## 90 Day Proposal
 
