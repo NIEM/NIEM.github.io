@@ -11,7 +11,5 @@ The following are Success Stories associated with State, Local, Tribal, and Terr
 |---|---|---|
 |[Arizona and Washington Medicaid Information](/community/sltt/success-stories/Arizona and Washing share Medicaid information.pdf)|Health Policy and Justice Policy Center|2017|
 |[NIEM Drives Major Police Department's Data Integration Projects](/community/sltt/success-stories/CharlotteNC_Success_13Dec2020.pdf)|City of Charlotte, North Carolina|2020|
-|[Arizona and Washing share Medicaid information.pdf](/community/sltt/success-stories/Arizona and Washing share Medicaid information.pdf)|Information Sharing between Medicaid and Corrections Systems to Enroll the Justice-Involved Population: Arizona and Washington|01/01/2017|
-|[Arizona and Washing share Medicaid information.pdf](/community/sltt/success-stories/Arizona and Washing share Medicaid information.pdf)|Information Sharing between Medicaid and Corrections Systems to Enroll the Justice-Involved Population: Arizona and Washington|01/01/2017|
-|[Arizona and Washing share Medicaid information.pdf](/community/sltt/success-stories/Arizona and Washing share Medicaid information.pdf)|Information Sharing between Medicaid and Corrections Systems to Enroll the Justice-Involved Population: Arizona and Washington|01/01/2017|
-|[Arizona and Washing share Medicaid information.pdf](/community/sltt/success-stories/Arizona and Washing share Medicaid information.pdf)|Information Sharing between Medicaid and Corrections Systems to Enroll the Justice-Involved Population: Arizona and Washington|01/01/2017|
+|[NIEM Ensures Accurate Statewide Crime Reporting and Analysis](/community/sltt/success-stories/Florida_Success_13Dec2020.pdf)|State of Florida Department of Law Enforcement|2020|
+|[Hawaii Integrated Information Sharing and the Open Justice Broker Consortium](/community/sltt/success-stories/Hawaii Open Justice Broker.pdf)|Hawaii Integrated Justice Information Sharing (HIJIS)|2012|
