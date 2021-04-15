@@ -5,6 +5,6 @@ short: Plans
 
 ## Plans
 
-|Plan Number|Title|Date Posted|
+|Title|Description|Date Posted|
 |---|---|---|
-|[Kickoff Plan](http://127.0.0.1:4000/community/slt/plans/SLTT-Tiger-Team-Plan.pdf)|NIEM SLTT Tiger Team|04/01/2021
+|[Kickoff Plan](/community/sltt/plans/SLTT-Tiger-Team-Plan.pdf)|NIEM SLTT Tiger Team|04/01/2021
