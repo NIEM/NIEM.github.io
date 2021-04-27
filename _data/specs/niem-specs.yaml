@@ -275,27 +275,27 @@
     specSelector: JSON-4_0
     specTargetCount: 2
 -
-    id: 'JSON-5.0 beta 1'
+    id: 'JSON-5.0 rc1'
     classID: JSON
     className: 'NIEM JSON Specification'
     classRepo: 'https://github.com/NIEM/NIEM-JSON-Spec'
     classLandingPage: 'https://niem.github.io/NIEM-JSON-Spec/'
     classIssueTracker: 'https://github.com/NIEM/NIEM-JSON-Spec/projects/1'
     classDescription: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
-    specID: 'JSON-5.0 beta 1'
+    specID: 'JSON-5.0 rc1'
     specCustomID: JSON
     specName: 'NIEM JSON Specification'
-    specVersion: '5.0 beta 1'
+    specVersion: '5.0 release candidate 1'
     specURL: 'https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html'
     specYear: '2021'
     specApplicableReleases: 'NIEM 5.0 - NIEM 5.2'
-    specChangeHistory: 'https://github.com/NIEM/NIEM-JSON-Spec/releases/tag/v5.0beta1'
+    specChangeHistory: 'https://github.com/NIEM/NIEM-JSON-Spec/releases/tag/v5.0rc1'
     specResources: null
     specExamples: null
     specStatus: draft
     specRuleCount: 4
     specDefinitionCount: 24
-    specSelector: JSON-5_0beta1
+    specSelector: JSON-5_0rc1
     specTargetCount: 2
 -
     id: HLVA-3.0
