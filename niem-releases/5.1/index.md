@@ -39,8 +39,8 @@ Please email feedback to  or submit a new [5.1 issue](https://github.com/NIEM/NI
 Draft | Date | Issues | Description
 :------ |:---- |:------ |:-----------
 Alpha 1 | Mar 2021 |  | Major domain content submissions due.
-Alpha 2 | May 2021 |  | Additional updates to domain content.
-Beta 1 | June 2021 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
+Alpha 2 | June 2021 |  | Additional updates to domain content.
+Beta 1 | July 2021 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
 Release Candidate (RC) 1 | Aug 2021 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Fall 2021 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
 
