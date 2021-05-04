@@ -62,8 +62,6 @@ The following changes are expected to appear in NIEM 5.1:
 
 - **Emergency Management** domain - add flood damage claim content from OpenFEMA [(#208)](https://github.com/NIEM/NIEM-Releases/issues/208)
 
-- **Immigration** domain - update content and codes
-
 - **Military Operations** domain - add content from the Joint Non-Kinetic Effectiveness (JNKE) IEPD (cyber-related)
 
 - **Statistics** domain *(new)* - add content from the Census Bureau and merge the Generic Statistic Information Model (GSIM) auxiliary content added to 5.0
@@ -72,4 +70,4 @@ The following changes are expected to appear in NIEM 5.1:
 
 ## Specification Links
 
-{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0, JSON-5.0 beta 1, Conformance-5.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
+{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0, JSON-5.0 rc1, Conformance-5.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
