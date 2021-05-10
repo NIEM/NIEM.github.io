@@ -348,8 +348,8 @@
     targetDescription: 'A NIEM JSON document laxly conformant to a schema is a JSON-LD document that may be interpreted using the RDF vocabulary defined by a conformant schema document set.'
     targetStatus: current
 -
-    specificationID: 'JSON-5.0 beta 1'
-    specificationSelector: JSON-5_0beta1
+    specificationID: 'JSON-5.0 rc2'
+    specificationSelector: JSON-5_0rc2
     classID: JSON
     targetCode: STRICT
     targetName: 'NIEM JSON document strictly conformant to a schema'
@@ -357,8 +357,8 @@
     targetDescription: 'A NIEM JSON document strictly conformant to a schema is a JSON-LD document that may be assigned a one-to-one correspondence to a conformant instance XML document valid against a conformant schema document set.'
     targetStatus: draft
 -
-    specificationID: 'JSON-5.0 beta 1'
-    specificationSelector: JSON-5_0beta1
+    specificationID: 'JSON-5.0 rc2'
+    specificationSelector: JSON-5_0rc2
     classID: JSON
     targetCode: LAX
     targetName: 'NIEM JSON document laxly conformant to a schema'
