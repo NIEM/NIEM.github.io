@@ -2,4 +2,4 @@
 # To remove the announcement section from the landing page, put a # in front of the message tag below
 # to comment it out.  The index page will skip the announcements section if there is no message.
 
-message:  "The following specification is ready for review, with feedback requested by **Thursday, May 13, 2021**:"
+message:  "The final [5.0 version](https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html) of the NIEM JSON specification has just been released."

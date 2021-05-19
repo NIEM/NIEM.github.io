@@ -50,7 +50,7 @@ See the [NIEM 5.0 readme](https://github.com/NIEM/NIEM-Releases/blob/niem-5.0/RE
 
 ## Specification Links
 
-{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0 beta1, JSON-4.0, Conformance-5.0 beta1, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
+{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0, JSON-5.0, Conformance-5.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
 
 ## Specification Updates
 

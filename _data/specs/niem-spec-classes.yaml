@@ -86,7 +86,7 @@
     description: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
     note: ""
     versionCount: 2
-    versionNumbers: '4.0, 5.0 release candidate 2'
+    versionNumbers: '4.0, 5.0'
 -
     id: HLVA
     name: 'NIEM High-Level Version Architecture Specification'

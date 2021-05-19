@@ -70,4 +70,4 @@ The following changes are expected to appear in NIEM 5.1:
 
 ## Specification Links
 
-{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0, JSON-5.0 rc2, Conformance-5.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
+{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0, JSON-5.0, Conformance-5.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
