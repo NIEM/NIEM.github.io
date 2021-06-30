@@ -38,8 +38,8 @@ Please email feedback to  or submit a new [5.1 issue](https://github.com/NIEM/NI
 
 Draft | Date | Issues | Description
 :------ |:---- |:------ |:-----------
-Alpha 1 | Mar 2021 |  | Major domain content submissions due.
-Alpha 2 | June 2021 |  | Additional updates to domain content.
+Alpha 1 | Mar 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1alpha1) | Major domain content submissions due.
+Alpha 2 | June 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1alpha2) | Additional updates to domain content.
 Beta 1 | July 2021 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
 Release Candidate (RC) 1 | Aug 2021 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Fall 2021 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
@@ -63,8 +63,6 @@ The following changes are expected to appear in NIEM 5.1:
 - **Emergency Management** domain - add flood damage claim content from OpenFEMA [(#208)](https://github.com/NIEM/NIEM-Releases/issues/208)
 
 - **Military Operations** domain - add content from the Joint Non-Kinetic Effectiveness (JNKE) IEPD (cyber-related)
-
-- **Statistics** domain *(new)* - add content from the Census Bureau and merge the Generic Statistic Information Model (GSIM) auxiliary content added to 5.0
 
 - **Update code sets**
 
