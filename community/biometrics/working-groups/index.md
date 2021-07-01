@@ -5,7 +5,7 @@ short: Working Groups
 
 ## Working Groups
 
-<img align="center" width="50%" src="Biometrics-Collab.png">
+<img align="center" width="40%" src="Biometrics-Collab.png">
 
 The NEIM Biometrics Domain (NBD) has a standing working group, the NBDWG. The Chair, Co-Chairs, and Ombudsman of the NIEM Biometrics Domain participates in the NBDWG and the meetings are specific to potential NBD model updates. The Co-Chairs lead the NBDWG based on their respective need for potential NBD model updates, or for updates that align with ANSI/NIST-ITL updates.
 
@@ -15,7 +15,7 @@ Changes to the NBD model are first confirmed and approved by the NBDWG before ma
 
 ## Human Language Technology
 
-<img align="center" width="25%" src="Biometrics-HLT.png">
+<img align="left" width="10%" src="Biometrics-HLT.png" style="padding-bottom: 20px; margin-right: 20px;">
 
 DHS OBIM is developing an Human Language Technology (HLT) prototype and utilizes the NIEM Biometrics Domain Working Group (NBDWG) to bring together DHS, DoD, DOJ, HLT SME’s, NIEM, and NIST to mature the voice standard. The goal of this effort is to perform an initial gap analysis by mapping the HLT subject areas to NIST Type 11 and the current NIEM Biometrics Domain which will feed into the later stages of the  Map and Model phase of the NIEM Information Exchange Package Documentation (IEPD) lifecycle.
 
