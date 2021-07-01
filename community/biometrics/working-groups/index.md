@@ -75,8 +75,12 @@ Outcomes of the NBDWG DNA effort including updates to NIEM 4.2 and 5.1 RC, some 
 
 ### Height Open Source Project
 
-•	Large peak height values must be “capped” at 32,767 in a .fsa file causing loss of data so the group discussed alternative options.  Currently working to set up an open source project to collaboratively develop the “.fsax” data format to meet DNA Vendor requirements.
-•	The NBD team worked with the NIEM Management Office (NMO) to stand up a GitHub repo for the open source project to collaborate between NIST, NIEM, SME’s, and DNA Vendors to design the .fsax format to improve Peak Height representation in NIEM and American National Standards Institute (ANSI)/NIST-Information Technology Laboratory (ITL).
+<img align="left" width="10%" src="Biometrics-OpenSource.png" style="margin-right: 30px; padding-bottom:40px">
+
+<ul>
+<li>Large peak height values must be “capped” at 32,767 in a .fsa file causing loss of data so the group discussed alternative options.  Currently working to set up an open source project to collaboratively develop the “.fsax” data format to meet DNA Vendor requirements.</li>
+<li>The NBD team worked with the NIEM Management Office (NMO) to stand up a GitHub repo for the open source project to collaborate between NIST, NIEM, SME’s, and DNA Vendors to design the .fsax format to improve Peak Height representation in NIEM and American National Standards Institute (ANSI)/NIST-Information Technology Laboratory (ITL).</li>
+</ul>
 
 If you are interested in collaborating in this effort, learning more information about it, or other NBDWG discussions, please contact [the NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov).
 
