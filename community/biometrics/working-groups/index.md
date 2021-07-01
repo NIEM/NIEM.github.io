@@ -5,7 +5,7 @@ short: Working Groups
 
 ## Working Groups
 
-<img align="center" width="25%" src="Biometrics-WG.png">
+<img align="center" width="25%" src="Biometrics-Collab.png">
 
 The NEIM Biometrics Domain (NBD) has a standing working group, the NBDWG. The Chair, Co-Chairs, and Ombudsman of the NIEM Biometrics Domain participates in the NBDWG and the meetings are specific to potential NBD model updates. The Co-Chairs lead the NBDWG based on their respective need for potential NBD model updates, or for updates that align with ANSI/NIST-ITL updates.
 
