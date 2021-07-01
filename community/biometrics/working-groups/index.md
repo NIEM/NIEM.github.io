@@ -38,20 +38,40 @@ DHS OBIM has developed a DNA prototype and utilized the NIEM Biometrics Domain W
 Outcomes of the NBDWG DNA effort including updates to NIEM 4.2 and 5.1 RC, some of which are described  further below. Continued efforts are ongoing which may lead to updates to NIEM 5.2.
 
 ### DNA Record Structure
+<div>
+<img align="left" width="10%" src="Biometrics-Record.png" style="margin-right: 30px;">
+<ul>
+<li>Restructuring DNA record so that it contains one to many DNA Typing Technology Data.</li>
+<li>Sample information should be optional metadata to DNA Typing Technology Data.</li>
+</ul>
+</div>
 
-DNA Record Structure
-
-•	Restructuring DNA record so that it contains one to many DNA Typing Technology Data.
-•	Sample information should be optional metadata to DNA Typing Technology Data.
+<br>
+<br>
+<br>
 
 ### DNA Match
 
-•	Modify DNA match data structure to include the fields required for kinship matches.
+<img align="left" width="10%" src="Biometrics-DNA.png" style="margin-right: 30px;">
+<ul>
+<li>Modify DNA match data structure to include the fields required for kinship matches.</li>
+</ul>
+
+<br>
+<br>
+<br>
+<br>
 
 ### Pedigree
 
-•	To have a separate type in the ANSI/NIST ITL Biometric Data Exchange Standard is recommended for exchanging the embedded pedigree information.
-•	Additional fields for pedigree information are also recommended to streamline the communication of complex familial relationships.
+<img align="left" width="10%" src="Biometrics-Pedigree.png" style="margin-right: 30px;">
+
+<ul>
+<li>To have a separate type in the ANSI/NIST ITL Biometric Data Exchange Standard is recommended for exchanging the embedded pedigree information.</li>
+<li>Additional fields for pedigree information are also recommended to streamline the communication of complex familial relationships.</li>
+</ul>
+
+<br>
 
 ### Height Open Source Project
 
