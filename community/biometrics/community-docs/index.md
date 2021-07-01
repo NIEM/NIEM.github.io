@@ -5,6 +5,8 @@ short: Community Documents
 
 ## Community Documents
 
+<img align="left" width="15%" src="Biometrics-CommunityDocs.png" style="margin-right: 30px;">
+
 OBIM supported the NIEM Biometrics Domain by developing biometrics domain related documents to benefit Biometrics community. The below items are available for download.
 
 

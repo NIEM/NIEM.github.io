@@ -19,5 +19,6 @@ OBIM manages all domain related activities, including biometrics schema developm
 
 OBIM contributes to NIEM Technical Architecture Committee (NTAC) as a member and provides input during the review and editing of various NIEM technical specifications. We participate in tiger teams like the Information Exchange Package Documentation (IEPD) Registry, and the Emerging Technologies Tiger Team (ET3) as well.
 
+<br>
 
 {% include section-list.html sections=page.links %}
