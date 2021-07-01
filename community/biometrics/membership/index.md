@@ -5,7 +5,7 @@ short: Membership
 
 ## Membership
 
-<img align="center" width="25%" src="Biometrics-Feedback.png">
+<img align="center" width="50%" src="Biometrics-Feedback.png">
 
 Domain members can contribute to efforts in the Biometrics domain including formal training, domain related best practices, working group participation and collaborative review and creation of biometric standards, data exchanges, information models, and code management support.
 

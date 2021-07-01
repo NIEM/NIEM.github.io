@@ -5,7 +5,7 @@ short: Newsletters
 
 ## Newsletters
 
-<img align="center" width="25%" src="Biometrics-Newsletter-v2.png">
+<img align="center" width="40%" src="Biometrics-Newsletter-v2.png">
 
 |Time Period|Date Posted|
 |---|---|

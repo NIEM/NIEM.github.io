@@ -10,7 +10,7 @@ links:
 - url: /community/biometrics/membership/
 ---
 
-<img align="center" width="25%" src="assets/images/Biometrics-Main.png">
+<img align="center" width="50%" src="assets/images/Biometrics-Main.png">
 
 The NIEM Biometrics Domain (NBD) is a data model of agreed upon terms, definitions, and formats. It supports information sharing and promotes interoperability between mission-based organizations engaged in activities such as homeland security, national defense, border management, immigration benefits, and global law enforcement through the joint development and alignment of Extensible Markup Language (XML) Biometric Standards. The NBD was launched in July 2012 and functions under the stewardship of the Office of Biometric Identity Management (OBIM) within the Department of Homeland Security (DHS). OBIM transitioned to the DHS Management Directorate after passage of the Cybersecurity and Infrastructure Security Agency Act of 2018.
 
