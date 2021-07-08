@@ -35,7 +35,9 @@ conformance_targets: https://reference.niem.gov/niem/specification/conformance-t
 
 hlva: https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/high-level-version-architecture-3.0.html
 
-json: https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html
+json: https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html
+json_v5: https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html
+json_v4: https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html
 
 mpd_spec: https://reference.niem.gov/niem/specification/model-package-description/5.0/niem-iepd-spec-5.0.html
 mpd_spec_folder: https://reference.niem.gov/niem/specification/model-package-description/5.0/

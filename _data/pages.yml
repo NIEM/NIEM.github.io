@@ -13,6 +13,7 @@ ndr: /reference/specifications/ndr/
 ctas: /reference/specifications/conformance-targets/
 mpd: /reference/specifications/iepd/
 hlva: /reference/specifications/hlva/
+json: /reference/specifications/json/
 conformance: /reference/specifications/conformance/
 code-lists: /reference/specifications/code-lists/
 
