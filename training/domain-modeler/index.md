@@ -4,10 +4,12 @@
   description: A domain modeler creates and manages the content in a NIEM domain.
   links:
   - url: /reference/
+    crossReference: true
   - url: https://www.niem.gov/communities/domain-governance
     title: Domain Governance
     description: Learn about governance committees and domain content management on niem.gov.
   - url: /reference/domain-modeling-guide/
+    crossReference: true
     description: Learn how to start a domain and manage its content.
   - url: https://www.niem.gov/about-niem/niem-model
     title: About the NIEM Model

@@ -1,6 +1,7 @@
 ---
   title: Training
   layout: 'landing_page'
+  description: NIEM training information, tailored to specific user roles.
   links:
   - url: /training/domain-modeler/
     button: 'Begin training'

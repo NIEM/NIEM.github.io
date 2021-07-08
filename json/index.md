@@ -1,5 +1,6 @@
 ---
 title: NIEM and JSON
+description: An easy introduction to the purpose of NIEM, the reasons to use NIEM with JSON data, and the developer knowledge needed to put NIEM JSON into practice.
 links:
   - url: /json/tutorial/
   - url: /json/faq/

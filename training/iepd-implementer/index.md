@@ -6,7 +6,9 @@
   - url: /training/iepd-implementer/implementation-cookbook/
   - url: /training/iepd-implementer/java-bindings/
   - url: /reference/artifacts/messages/iepd/iepd-starter-kit/
+    crossReference: true
   - url: /reference/artifacts/
+    crossReference: true
 ---
 
 {{ page.description}}
