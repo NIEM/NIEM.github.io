@@ -1,0 +1,3 @@
+﻿Filler,OldRule,NewRule,Targets,Title,Text
+x,5-31,5-30,WF-IEPD,Schema document set interpreted as constraint schema document set, Any XML schema document set whose c:pathURI attribute resolves to a constraint schema document set MUST be interpreted to be a constraint schema document set.
+x,5-41,5-40,IEPD-Catalog,Validity contraint context is value of c:xPathText, Given a c:xPathText attribute owned by c:ValidityContext, the validity constraint context for the descendant’s validity constraint SHALL be the value of c:xPathText evaluated against the IEP’s document information item (See [W3C XML InfoSet], §2.1, The Document Information Item).

@@ -1,0 +1,3 @@
+﻿Rule,Num,Targets,Title,Text
+"Rule 3-2","3-2",MPD,MPD with MPD class of IEPD is an IEPD,A model package description with an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD MUST be an information exchange package documentation.
+"Rule 5-9","5-9",WF-MPD,MPD Class Determined by Conformance Target Identifier in c:mpdClassURIList,An MPD MUST have an MPD class of a conformance target identifier if and only if that conformance target identifier appears in the c:mpdClassURIList attribute within its MPD catalog document.

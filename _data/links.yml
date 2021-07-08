@@ -39,8 +39,11 @@ json: https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html
 
 mpd_spec: https://reference.niem.gov/niem/specification/model-package-description/5.0/niem-iepd-spec-5.0.html
 mpd_spec_folder: https://reference.niem.gov/niem/specification/model-package-description/5.0/
+iepd_v5: https://reference.niem.gov/niem/specification/model-package-description/5.0/niem-iepd-spec-5.0.html
+mpd_v3: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html
 
 mpd_catalog_xsd: https://reference.niem.gov/niem/specification/model-package-description/5.0/iepd-catalog-schema/iepd-catalog.xsd
+mpd_catalog_example: https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#appendix_B
 
 six: https://reference.niem.gov/niem/specification/sch-in-xsd/1.0alpha4/niem-schematron-in-xsd-1.0alpha4-2016-03-16.html
 

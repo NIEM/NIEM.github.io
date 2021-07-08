@@ -1,0 +1,55 @@
+﻿Filler,OldRule,NewRule,Targets,Title,Text
+x,3-1,3-2,WF-IEPD,IEPD is well-formed,An IEPD MUST have an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#WF-IEPD.
+x,3-3,3-1,IEPD,IEPD conformance target identifier,An IEPD MUST have an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#IEPD as a value of its c:iepdConformanceTargetIdentifierURIList attribute.
+x,5-10,5-9,WF-IEPD,IEPD Version Number Syntax,"An IEPD MUST be assigned a version number that adheres to the regular expression:The meaning of the status values are as follows: 
+- alpha indicates early development; changing significantly. 
+- beta indicates late development; but changing or incomplete. 
+- rc indicates release candidate; complete but not approved as operational. 
+- rev indicates very minor revision that does not impact schema validation."
+x,5-11,5-10,WF-IEPD,IEPD URI Is Absolute,"In an IEPD catalog document, the value of a c:iepdURI attribute of type xs:anyURI MUST match the production <absolute-URI> as defined by [RFC 3986 URI], §4.3, Absolute URI."
+x,5-12,5-11,WF-IEPD,IEPD URI Supports Fragment,A valid IEPD URI MUST support the inclusion of a fragment identifier (as a suffix) [RFC 3986 URI].
+x,5-13,5-12,WF-IEPD,IEPD URI Has No Fragment,A valid IEPD URI MUST NOT contain a fragment identifier [RFC 3986 URI].
+x,5-14,5-13,WF-IEPD,IEPD Artifact URI Syntax,"Within an IEPD a URI reference to an artifact in another external IEPD (i.e., an IEPD artifact URI) is the concatenation of: 
+- The URI of the IEPD that contains the artifact. 
+- A pound-sign character (""#"" — also known as a hashtag character). 
+- An identifier that is the artifact’s locally unique path name relative to the IEPD root directory."
+x,5-15,5-14,WF-IEPD,c:pathURI Resolves to a Resource,"Within an IEPD catalog document, the value of a c:pathURI attribute MUST resolve to a resource."
+x,5-16,5-15,WF-IEPD,c:pathURI for c:XMLCatalog,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:XMLCatalog element MUST resolve to an XML catalog document."
+x,5-17,5-16,WF-IEPD,c:pathURI for c:IEPDChangeLog,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:IEPDChangeLog element MUST resolve to a change log."
+x,5-18,5-17,WF-IEPD,c:pathURI for c:ReadMe,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ReadMe element MUST resolve to a readme artifact."
+x,5-19,5-18,WF-IEPD,c:pathURI for c:IEPSampleXMLDocument,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:IEPSampleXMLDocument element MUST resolve to an XML document."
+x,5-20,5-19,WF-IEPD,c:pathURI for c:BusinessRulesArtifact,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:BusinessRulesArtifact element MUST resolve to a business rule schema or business rules artifact."
+x,5-21,5-20,WF-IEPD,c:pathURI for c:XMLSchemaDocument,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:XMLSchemaDocument element MUST resolve to an XML schema document."
+x,5-22,5-21,WF-IEPD,c:pathURI for c:ExternalSchemaDocument,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ExternalSchemaDocument element MUST resolve to an XML schema document."
+x,5-23,5-22,WF-IEPD,c:pathURI for c:ReferenceSchemaDocument,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ReferenceSchemaDocument element MUST resolve to a NIEM reference schema document."
+x,5-24,5-23,WF-IEPD,c:pathURI for c:ExtensionSchemaDocument,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ExtensionSchemaDocument element MUST resolve to a NIEM extension schema document."
+x,5-25,5-24,WF-IEPD,c:pathURI for c:SubsetSchemaDocument,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SubsetSchemaDocument element MUST resolve to a NIEM subset schema document."
+x,5-26,5-25,WF-IEPD,c:pathURI for c:Wantlist,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:Wantlist element MUST resolve to a NIEM wantlist XML document."
+x,5-27,5-26,WF-IEPD,c:pathURI for c:SchematronSchema,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SchematronSchema element MUST resolve to a Schematron schema."
+x,5-28,5-27,WF-IEPD,c:pathURI for c:RelaxNGSchema,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:RelaxNGSchema element MUST resolve to a RelaxNG schema."
+x,5-29,5-28,WF-IEPD,c:pathURI for c:SchemaDocumentSet,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SchemaDocumentSet element MUST resolve to an XML schema document set."
+x,5-30,5-29,WF-IEPD,c:pathURI for c:ConstraintSchemaDocumentSet,"Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ConstraintSchemaDocumentSet element MUST resolve to a NIEM XML schema document set."
+x,5-31,5-30,WF-IEPD,Schema document set interpreted as constraint schema document set,Any XML schema document set whose c:pathURI attribute resolves to a constraint schema document set MUST be interpreted to be a constraint schema document set.
+x,5-32,5-31,WF-IEPD,Resolve IEPD URI with Fragment,"Given an absolute IEPD URI [RFC 3986 URI], §4.3, Absolute URI with a fragment, resolve this URI as follows: 
+- Resolve the base URI (per [RFC 3986 URI]) to retrieve the resource IEPD. If the resource IEPD does not exist, then fail (existence error). 
+- Apply the fragment (without ""#"") to the IEPD resource: Locate a structures:id attribute value that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then continue. Locate a path name (for a directory or file) that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then fail (existence error). 
+- Locate a structures:id attribute value that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then continue. 
+- Locate a path name (for a directory or file) that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then fail (existence error). 
+- Return the element, directory, or file found."
+x,5-33,5-32,XML-catalog,XML Catalog uri Value Resolves to Resource,"Within an XML catalog document, the value of a uri attribute owned by a er:uri element MUST resolve to a resource."
+x,5-34,5-33,XML-catalog,XML Catalog uri Value Resolves to Resource with Correct Target Namespace,"Within an XML catalog document, given an XML schema document resolved by the value of a uri attribute owned by a er:uri element, the XML schema document target namespace MUST equal the value of the name (a namespace string) attribute owned by the er:uri element."
+x,5-35,5-34,IEPD,IEPD Has a Change Log,An IEPD MUST contain a change log artifact that is identified by a c:IEPDChangeLog element in its IEPD catalog document.
+x,5-36,5-35,WF-IEPD,"Readme Describes Purpose, Scope, Business Value, etc.","A readme artifact SHOULD (at a minimum) describe the IEPD purpose, scope, business value, exchange information, typical senders/receivers, interactions, and references to other documentation."
+x,5-37,5-36,IEPD,IEPD Has a ReadMe Artifact,An IEPD MUST contain a readme artifact that is identified by a c:ReadMe element in its IEPD catalog document.
+x,5-38,5-37,IEPD-catalog,Conformance Target Identifier,"A conformance target identifier for an IEP conformance target declared in an IEPD is formed by concatenating in sequence: 
+- the IEPD URI, and 
+- the pound sign character (#). and 
+- a locally unique NCName (i.e., a non-colonized name, as defined by [W3C XML Schema Part 2 Datatypes], §3.3.7, NCName)."
+x,5-39,5-38,IEPD-catalog,IEP Conformance Target Has a structures:id,A c:IEPConformanceTarget element MUST own a structures:id attribute.
+x,5-40,5-39,IEPD,IEPD Declares One or More IEP Conformance Targets,The IEPD catalog document of an IEPD MUST contain one or more c:IEPConformanceTarget elements.
+x,5-41,5-40,IEPD-catalog,Validity contraint context is value of c:xPathText,"Given a c:xPathText attribute owned by c:ValidityContext, the validity constraint context for the descendant’s validity constraint SHALL be the value of c:xPathText evaluated against the IEP’s document information item (See [W3C XML InfoSet], §2.1, The Document Information Item)."
+x,5-42,5-41,IEP,IEP has Document Element,"Within an IEPD catalog document, if an c:IEPConformanceTarget element for an IEP has a c:HasDocumentElement child element owning a c:qualifiedNameList attribute with a value of $LIST, then the document element of the IEP MUST have a QName that is a member of $LIST."
+x,5-43,5-42,IEP,Validating an XPath Expression,"Within an IEPD catalog document with a c:xPathText attribute owned by a c:ValidToXPath element, a candidate IEP is a valid IEP, ONLY IF the value of c:ValidToXPath applied to the candidate IEP (an XML document) has an effective Boolean value (EBV) equal to true. EBV is defined by [W3C XPath 3.1], §2.4.3, Effective Boolean Value."
+x,5-44,5-43,IEPD,IEPD Has an IEP Sample for Each c:IEPConformanceTarget,"Within the IEPD catalog document of an IEPD, a c:IEPConformanceTarget element MUST contain a c:IEPSampleXMLDocument child element."
+x,5-45,5-44,IEP,Validating an IEP Sample XML Document,"Within an IEPD catalog document with a c:pathURI attribute owned by a c:IEPSampleXMLDocument, the artifact resolved by the value of c:pathURI MUST be valid for the validity constraints of the c:IEPConformanceTarget parent of c:IEPSampleXMLDocument."
+x,5-46,5-45,IEPD,IEPD Has Conformance Assertion,An IEPD MUST contain a conformance assertion artifact that is identified by a c:ConformanceAssertion element in its IEPD catalog document.
