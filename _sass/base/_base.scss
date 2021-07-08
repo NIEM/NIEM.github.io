@@ -429,3 +429,8 @@ ul{
 h2 {
   margin-bottom: 15px;;
 }
+
+// Fixes the browser or bootstrap bug that removes the expand arrow from the details summary element
+details > summary:first-of-type {
+  display: list-item;
+}
