@@ -23,31 +23,30 @@
 <script src="{{ '/vendor/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
-{% comment %}
-{% if page.url contains "model/" or page.url contains "training/" %}
-  <script type="text/javascript">
-    // Find the TOC and active navigation item
-    let $toc = $("#markdown-toc");
-    let $activeNav = $("div.section-nav a.active");
+<script type="text/javascript">
+  // Copy the TOC and update the id
+  let $toc = $("#markdown-toc").clone().prop("id", "section-headers-ul").addClass("nav list-group-item")[0];
 
-    // Create a new nav wrapper for the TOC ul
-    let $nav = $("<nav id='page-nav'></nav>");
-    $nav.append($toc);
+  // Create a nav wrapper for the section headers and append the TOC
+  let $headers = $("<div id='page-nav'></div>")[0];
 
-    // Move TOC to navbar under the active element
-    $toc.addClass("nav list-group-item");
-    $nav.insertAfter($activeNav);
+  // Add the section headers to the sidebar
+  $("#sidebar-wrapper").append($headers);
 
-    // Add scrollspy and adjust offset to account for top menu bar
-    // allowing for a few lines above from the previous section
-    $("body").scrollspy({
-      target: "#page-nav",
-      offset: 150
-    });
+  if ($toc) {
+    $headers.append($toc);
+    $("#page-nav").css("top", "5%");
+  }
 
-  </script>
-{% endif %}
-{% endcomment %}
+  $("#btn-top").detach().appendTo($headers);
+
+  // Add scrollspy and adjust offset to account for top menu bar
+  $("body").scrollspy({
+    target: "#page-nav",
+    offset: 150
+  });
+
+</script>
 
 
 <script type="text/javascript">

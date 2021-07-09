@@ -5,7 +5,7 @@
   position: relative;
   margin-top: 15px;
   // width: auto;
-  width: min-content;
+  // width: min-content;
 }
 
 // Placing a fixed div (#sidebar) inside of a relative container
@@ -14,7 +14,7 @@
 #sidebar {
   position: fixed;
   width: inherit;
-  max-width: 200px;
+  // max-width: 200px;
   font-size: smaller;
 }
 
@@ -81,39 +81,50 @@ a.list-group-item.external::before {
 
 // Styling for sidebar navigation scrollspy
 #page-nav {
-  
-    #markdown-toc {
-      padding: 5px;
-    }
-  
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 40%;
+  font-size: smaller;
+
     a {
       color: #555;
     }
-  
+
     ul {
       // list-style: none;
+
+      ul ul {
+        padding-inline-start: 20px;
+      }
+
     }
-  
+
     .active > a {
       font-weight: bold;
     }
-  
-    li a {
-      padding: 5px;
-    }
 
-  }
-  
-// New Side bar design Apr 2017 
+}
+
+#section-headers-ul {
+  padding: 10px;
+}
+
+#sidebar, #page-nav {
+  max-width: 260px;
+}
+
+// New Side bar design Apr 2017
 #sidebar {
-  max-width: 223px;
+  // max-width: 223px;
   width: auto;
   position: relative;
 }
+
 .section-nav{
   &.list-group{
     ul {
-      list-style: none; 
+      list-style: none;
       padding: 0 0px;
       margin: 0;
       li {
@@ -129,7 +140,7 @@ a.list-group-item.external::before {
         &.active {
           &:hover {
             background: #1486b8;
-          }      
+          }
           a {
             color: #fff;
             &:after {
@@ -140,8 +151,8 @@ a.list-group-item.external::before {
               margin:0px 0px 0px 10px;
               text-decoration:none;
               right: 3px;
-              padding-right: 7px;  
-              position: absolute;        
+              padding-right: 7px;
+              position: absolute;
             }
           }
           li {
@@ -164,12 +175,12 @@ a.list-group-item.external::before {
         ul {
           li {
             &.active {
-              background: #1486b8; 
+              background: #1486b8;
             }
             background: #D7D7D7;
             &:hover {
               background: #bfbebe;
-            }              
+            }
             a{
               color: #01445D;
               padding-left: 25px;
@@ -201,7 +212,7 @@ a.list-group-item.external::before {
                       color: #1486B8;
                     }
                   }
-                }                
+                }
                 ul {
                   li {
                     background: #f7f7f7;
@@ -234,5 +245,15 @@ a.list-group-item.external::before {
         }
       }
     }
+  }
+}
+
+#btn-top {
+  margin: 20px auto;
+  display: block;
+  font-weight: 400;
+
+  span.icon {
+    margin-right: 10px;
   }
 }

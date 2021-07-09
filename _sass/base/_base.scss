@@ -442,3 +442,16 @@ h3, h4 {
 details > summary:first-of-type {
   display: list-item;
 }
+
+
+// Needed to make the sidebar column the same size as the content column,
+// so that the section-headers position will stick to the top
+// (otherwise runs out of space within its parent div)
+div.row-flex {
+  display: flex;
+  flex-wrap: wrap;;
+}
+
+a.feedback-btn {
+  margin-bottom: 20px;
+}

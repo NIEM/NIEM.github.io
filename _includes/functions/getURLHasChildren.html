@@ -1,23 +1,15 @@
 
 {% comment %}
   ***
-  Given a "url", looks for front matter links or subdirectories.
+  Given a "url", looks for front matter links
   ***
 {% endcomment %}
 
-{% assign hasChildren = true %}
+{% assign hasChildren = false %}
+{% assign page = site.pages | where: "url", include.url | first %}
 
-{% assign thisPage = site.pages | where: "url", include.url | first %}
-
-{% unless thisPage.links %}
-  {% capture subfolders %}
-    {% include functions/getSubfoldersString.html url=include.url %}
-  {% endcapture %}
-  {% assign subfolders = subfolders | strip %}
-
-  {% unless subfolders.size > 0 %}
-    {% assign hasChildren = false %}  
-  {% endunless %}
-{% endunless %}
+{% if page.links %}
+  {% assign hasChildren = true %}
+{% endif %}
 
 {{ hasChildren }}

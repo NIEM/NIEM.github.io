@@ -39,23 +39,13 @@
     link.addClass("external");
   });
 
-  // Initially hide the button to scroll to the top of the page
-  // $("#btn_scrollTop").hide();
+})();
 
+(function() {
+
+    // Show the "Top of page" button in the sidebar if user has scrolled down
   $(window).bind("scroll", function() {
-    // Find the "Submit Feedback/Ideas" button in the sidebar
-    let btnFeedback = $(".feedback-btn")[0];
-
-    if (btnFeedback) {
-      // Show the scroll button if the feedback button is above the middle of the page
-      let bottomFeedback = btnFeedback.getBoundingClientRect().bottom;
-      let boolFeedbackAboveMiddle = bottomFeedback < $(window).height() / 2;
-      $("#btn_scrollTop").toggle(boolFeedbackAboveMiddle && window.scrollY > 0);
-    }
-    else {
-      // Default to show button if user has scrolled down
-      $("#btn_scrollTop").toggle(window.scrollY > 0);
-    }
+    $("#btn-top").toggle(window.scrollY > 0);
   })
 
 }());
@@ -79,14 +69,4 @@ function copyToClipboard() {
   document.execCommand("copy");
 
   $temp.remove();
-}
-
-function scrollTop() {
-  console.log("HIT SCROLL FUNCTION");
-  if (window.scrollY > 0) {
-    $("btn-scrollTop").show();
-  }
-  else {
-    $("btn-scrollTop").hide();
-  }
 }

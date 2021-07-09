@@ -18,7 +18,7 @@ layout: 'default'
 {% endcomment %}
 {% assign section_has_children = true %}
 <div class="container">
-  <div class="row">
+  <div class="row row-flex">
       <div class="col-md-12 col-lg-12">
         {% include page/breadcrumb.html %}
       </div>
@@ -29,19 +29,6 @@ layout: 'default'
         <div id="sidebar">
           {% include page/sidebar.html %}
         </div>
-
-        <button id="btn_scrollTop" class="btn btn-outline-secondary" onclick="$(document).scrollTop(0)" style="display: none;">
-          <span class="icon fa fa-angle-up"/>
-        </button>
       </div>
   </div>
 </div>
-
-
-<style>
-  #btn_scrollTop {
-    position: fixed;
-    top: 50%;
-    margin-left: 75px;
-  }
-</style>
