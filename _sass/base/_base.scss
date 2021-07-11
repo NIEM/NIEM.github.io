@@ -418,7 +418,7 @@ ul{
 }
 .page-header {
   margin: 0 0 20px 0;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 // a.external::after {
@@ -428,6 +428,14 @@ ul{
 
 h2 {
   margin-bottom: 15px;;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h3, h4 {
+  margin-top: 20px;
 }
 
 // Fixes the browser or bootstrap bug that removes the expand arrow from the details summary element
