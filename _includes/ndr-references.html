@@ -49,7 +49,7 @@
 
           <tr>
             <td><a href="{{ link }}" target="_blank">NDR {{ rule.number }}</a></td>
-            <td>{{ rule.applicability }}</td>
+            <td>{{ rule.applicability | join: ", " }}</td>
             <td>{{ rule.title }}</td>
           </tr>
         {% endfor %}
