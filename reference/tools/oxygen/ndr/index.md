@@ -3,6 +3,7 @@ title: Check NDR Conformance Using Schematron Validation
 short: Check Conformance
 icon: fa-check
 description: Use Oxygen to test a XML schema for NDR conformance.
+redirect_from: /reference/specifications/ndr/oxygen-schematron/
 ---
 
 {:.note}

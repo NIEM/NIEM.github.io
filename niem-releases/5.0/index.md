@@ -2,6 +2,7 @@
   title: NIEM 5.0 Release (Current)
   short: NIEM 5.0 (current)
   description: An overview of the NIEM 5.0 release.
+  redirect_from: /niem-releases/current/
   right: [1,2,3]
   widths: ["110px", "150px", "150px", "150px"]
 ---

@@ -2,6 +2,7 @@
   title: NIEM 5.1 Release (Draft)
   short: NIEM 5.1 (draft)
   description: An overview of the draft NIEM 5.1 release, currently under development.
+  redirect_from: /niem-releases/draft/
 ---
 
 NIEM 5.1 will be a minor release and is currently under development.  Publication is scheduled for Fall 2021.

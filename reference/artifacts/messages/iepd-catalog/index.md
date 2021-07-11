@@ -1,6 +1,7 @@
 ---
 title: IEPD Catalog
 icon: fa-info
+redirect_from: /reference/artifacts/messages/mpd-catalog/
 description: An IEPD Catalog is an XML document that contains basic information about the package (name, description, purpose, etc.) and a listing of the package's key artifacts.  It is a required artifact in an IEPD.
 ---
 

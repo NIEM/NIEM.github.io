@@ -2,6 +2,9 @@
   title: NIEM 4.0 Release
   short: NIEM 4.0
   description: An overview of the NIEM 4.0 release.
+  redirect_from:
+  - /niem-4.0/
+  - /niem-releases/v4.0-technical-changes/
   right: [1,2,3]
   widths: ["110px", "150px", "150px", "150px"]
 ---

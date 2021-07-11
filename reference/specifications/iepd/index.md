@@ -3,6 +3,7 @@
   short: Information Exchange Package Documentation (IEPD)
   icon: fa-book
   classID: IEPD
+  redirect_from: /reference/specification/mpd/
   description:  The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages.  It defines IEPD artifacts like subset schemas, extension schemas, and IEPD catalogs; and recommends how the package should be structured.
   links:
   - url: /reference/specifications/iepd/changes/

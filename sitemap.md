@@ -68,15 +68,29 @@ The sitemap below shows the cards on the home page and their immediate sub-secti
 
 {% assign pages = site.html_pages | sort: "url" %}
 
-<!-- Set up content page and redirect page arrays -->
+{% comment %} Set up content page and redirect page arrays {% endcomment %}
 
 {% assign contentURLs = "" %}
 {% assign redirectURLs = "" %}
 
 {% for page in pages %}
   {% if page.url contains "vendor" or page.url == false or page.url == "/titlepage.html/" or page.url == "/tocpage.html/" %}
+    {% comment %} Ignore these pages {% endcomment %}
+
   {% elsif page.redirect %}
     {% assign redirectURLs = redirectURLs | append: "," | append: page.url %}
+
+  {% elsif page.redirect_from and page.redirect_from.first %}
+    {% comment %} Page is a content page but has a redirect array listed in the front matter {% endcomment %}
+    {% assign contentURLs = contentURLs | append: "," | append: page.url %}
+    {% assign urls = page.redirect_from | join: "," %}
+    {% assign redirectURLs = redirectURLs | append: "," | append: urls %}
+
+  {% elsif page.redirect_from %}
+    {% comment %} Page is a content page but has a redirect string listed in the front matter {% endcomment %}
+    {% assign contentURLs = contentURLs | append: "," | append: page.url %}
+    {% assign redirectURLs = redirectURLs | append: "," | append: page.redirect_from %}
+
   {% else %}
     {% assign contentURLs = contentURLs | append: "," | append: page.url %}
   {% endif %}
