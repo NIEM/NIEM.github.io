@@ -11,7 +11,7 @@ The **[NIEM JSON Specification]({{ site.data.links.json }})**  establishes the t
 - TOC
 {:toc}
 
-## Resources
+## Specification Resources
 
 {% include specs/specification-summary.html classID=page.classID %}
 

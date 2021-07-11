@@ -4,7 +4,7 @@ title: Sample JSON Schema
 
 This document is one of two. This one describes some options for using JSON
 Schema that supports features of NIEM and JSON-LD.
-[The other document](../../movement/json-schema-output) describes what Movement does now.
+[The other document]({{ "/reference/tools/movement/json-schema-output/" | relative_url }}) describes what Movement does now.
 
 A JSON Schema structure that provides what you would expect from NIEM XML:
 cardinality, enumeration options descriptions, substitution group, and
@@ -32,13 +32,13 @@ User picks 8 complex/simple elements for the exchange:
 
 - Vehicle
     - VehicleAxleQuantity
-    - VehicleIdentification 
+    - VehicleIdentification
         - IdentificationID
     - VehicleMSRPAmount
         - Amount
-        - Currency 
+        - Currency
             - CurrencyCode
-            
+
 ## Sample JSON Schema output
 
 ```javascript
@@ -87,4 +87,4 @@ context is used to map terms (i.e. properties with associated values in a JSON
 document) to URLs—a term is a short word that expands to a URL.
 
 
-Need something simplier? [This other sample](../../movement/json-schema-output) describes what Movement does now, a conventional JSON Schema output.
+Need something simpler? [This other sample]({{ "/reference/tools/movement/json-schema-output/" | relative_url }}) describes what Movement does now, a conventional JSON Schema output.

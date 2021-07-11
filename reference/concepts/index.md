@@ -1,10 +1,8 @@
 ---
-  title: Model Concepts
-  short: Concepts
+  title: Modeling Concepts
   icon: fa-cog
   description: Learn about properties, types, augmentations, and other building blocks used to construct the model.
   links:
-  - url: /reference/concepts/overview/
   - url: /reference/concepts/namespace/
     group: Basics
   - url: /reference/concepts/property/
@@ -33,10 +31,13 @@
 
 {{ page.description }}
 
-Click here for a [high-level summary](overview) of each of the major concepts.
+{:toc}
+- TOC
 
-{: .note}
-> The concepts below have NIEM-specific representations in XML and JSON.  Each section has pages that demonstrate how to define these concepts in a schema and how sample data would appear in an instance.  For a basic introduction to XML or JSON, there are many resources available online, including the W3 Schools [XML Tutorial](https://www.w3schools.com/xml/default.asp) and [XML Schema Tutorial](https://www.w3schools.com/xml/schema_intro.asp), and the json-schema.org tutorial [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/index.html).
+The concepts below have NIEM-specific representations in XML and JSON.  Each section has information that demonstrates how to define these concepts in a schema and how sample data would appear in an instance.
+
+{:.tip}
+> For a basic introduction to XML or JSON, there are many resources available online, including the W3 Schools [XML Tutorial](https://www.w3schools.com/xml/default.asp) and [XML Schema Tutorial](https://www.w3schools.com/xml/schema_intro.asp), and the json-schema.org tutorial [Understanding JSON Schema](https://json-schema.org/understanding-json-schema/index.html).
 
 ## The Basics
 
@@ -57,6 +58,7 @@ Learn about namespaces in NIEM and see schema examples and templates with header
 {{ property.description}}
 
 <table>
+  {% include functions/getPatternRow.html url="/reference/concepts/property/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/property/element/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/property/abstract/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/property/substitutable/" %}
@@ -64,7 +66,7 @@ Learn about namespaces in NIEM and see schema examples and templates with header
 </table>
 
 {:.tip}
-> See the pages under the [Modeling Properties](property/modeling) section for guidance on **[Names](property/modeling/names)**, **[Definitions](property/modeling/definitions)**, and **[Representation terms + Standard Opening Phrases](property/modeling/table)**.
+> See the information in the **[Property](property)** page for guidance on **[Naming](property/#naming)**, **[Definitions](property/#definitions)**, and **[Representation terms + Definition Standard Opening Phrases](property/#representation-terms-and-definition-phrases)**.
 
 ### Types
 
@@ -73,6 +75,7 @@ Learn about namespaces in NIEM and see schema examples and templates with header
 {{ type.description}}
 
 <table>
+  {% include functions/getPatternRow.html url="/reference/concepts/type/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/type/ccc/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/type/csc/" %}
   {% include functions/getPatternRow.html url="/reference/concepts/type/simple/" %}
@@ -102,15 +105,14 @@ In addition to the basic concepts described above, NIEM defines or uses addition
       <a href="{{ '/reference/concepts/augmentation/element/' | relative_url }}">Augmentation Element</a>
     </strong></td>
     <td>{{ page.description }}</td>
-    <td><a href="{{ '/reference/concepts/augmentation/element/modeling/' | relative_url }}">Tips</a></td>
     <td>
       <a title="Container"
-         href="{{ '/reference/concepts/augmentation/element/xml-container/' | relative_url }}" >XML1</a>
+         href="{{ '/reference/concepts/augmentation/element/#xml-container' | relative_url }}" >XML1</a>
       <br />
       <a title="Direct"
-         href="{{ '/reference/concepts/augmentation/element/xml-direct/' | relative_url }}">XML2</a>
+         href="{{ '/reference/concepts/augmentation/element/#xml-direct-substitution' | relative_url }}">XML2</a>
     </td>
-    <td><a href="{{ '/reference/concepts/augmentation/element/json/' | relative_url }}">JSON</a></td>
+    <td><a href="{{ '/reference/concepts/augmentation/element/#json' | relative_url }}">JSON</a></td>
   </tr>
 
   {% include functions/getPatternRow.html url="/reference/concepts/local-term/" %}

@@ -11,7 +11,7 @@ The **[NIEM High-Level Version Architecture (HLVA) Specification]({{ site.data.l
 - TOC
 {:toc}
 
-## Resources
+## Specification Resources
 
 {% include specs/specification-summary.html classID=page.classID %}
 

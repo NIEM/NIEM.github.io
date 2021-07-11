@@ -6,6 +6,9 @@ description: Use Oxygen to test a XML schema for NDR conformance.
 redirect_from: /reference/specifications/ndr/oxygen-schematron/
 ---
 
+{:toc}
+- TOC
+
 {:.note}
 > [ConTesA]({{ site.data.pages.contesa | relative_url }}) is a free web tool provided by the NIEM program that also may be used to check NDR conformance.
 

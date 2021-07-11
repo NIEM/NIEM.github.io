@@ -21,8 +21,8 @@
     issueList: 'https://github.com/NIEM/MPD-Spec/issues'
     issueSubmit: 'https://github.com/NIEM/MPD-Spec/issues/new'
     issueTracker: 'https://github.com/NIEM/MPD-Spec/projects/1'
-    tutorial: 'https://niem.github.io/reference/specifications/mpd/'
-    tutorialRelativeURL: /reference/specifications/mpd/
+    tutorial: 'https://niem.github.io/reference/specifications/iepd/'
+    tutorialRelativeURL: /reference/specifications/iepd/
     changeHistory: null
     description: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.'
     note: 'Prior to NIEM 5.0, this specification was known as the NIEM Model Package Description (MPD) Specification.'

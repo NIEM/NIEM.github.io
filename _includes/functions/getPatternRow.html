@@ -19,8 +19,7 @@ Returns a row for the Patterns table for the given "url".
 <tr>
   {% comment %} Title | Description | Tips | XML | JSON {% endcomment %}
   <td width="20%"><strong><a href="{{ include.url | relative_url }}">{{ title }}</a></strong></td>
-  <td width="61%">{{ page.description }}</td>
-  <td width="5%"><a href="{{ include.url | append: 'modeling/' | relative_url }}">Tips</a></td>
-  <td width="7%"><a href="{{ include.url | append: 'xml/' | relative_url }}">XML</a></td>
-  <td width="7%"><a href="{{ include.url | append: 'json/' | relative_url }}">JSON</a></td>
+  <td width="66%">{{ page.description }}</td>
+  <td width="7%"><a href="{{ include.url | append: '#xml' | relative_url }}">XML</a></td>
+  <td width="7%"><a href="{{ include.url | append: '#json' | relative_url }}">JSON</a></td>
 </tr>

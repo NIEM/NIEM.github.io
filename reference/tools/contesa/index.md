@@ -7,6 +7,8 @@
 
 The **[Conformance Testing Assistant (ConTesA)]({{ site.data.links.contesa | relative_url }})** enables users to test NIEM XML schemas against the automated rules from the [NIEM Naming and Design Rules (NDR)]({{ site.data.pages.ndr | relative_url }}).  This is an important first step in verifying [NIEM conformance]({{ site.data.pages.conformance | relative_url }}).
 
+The current version of ConTesA works for NIEM XML schemas based on version 3.0 of the [NDR]({{ site.data.pages.ndr | relative_url }}) or later.
+
 {:.features}
 - Validates XML schemas against the automated rules of the NIEM NDR.
 - Generates a conformance report available in spreadsheet, HTML, and XML formats.
@@ -14,17 +16,18 @@ The **[Conformance Testing Assistant (ConTesA)]({{ site.data.links.contesa | rel
 - Saves conformance reports to the user accounts.
 
 {:.note}
-> Do not upload sensitive or classified materials to ConTesA.
+> Do not upload sensitive, classified, or distribution-restricted materials to ConTesA.
+
+{:toc}
+- TOC
 
 <!--more-->
 
-The current version of ConTesA works for NIEM XML schemas based on version 3.0 of the [NDR]({{ site.data.pages.ndr | relative_url }}) or later.  For an older version of ConTesA that works for the NIEM 2.x series, please follow [this link]({{ site.data.links.contesa_old | relative_url }}).
-
 ## Scope
 
-**Automated NDR Rules**
+### NDR Schematron rules
 
-Some of the rules that the [NDR]({{ site.data.pages.ndr | relative_url }}) defines are written in Schematron.  ConTesA is able to run validation on all such rules.
+Some of the rules that the [NDR]({{ site.data.pages.ndr | relative_url }}) defines are written in Schematron.  ConTesA is able to run automated validation on all such rules.
 
 {:.example}
 > The image below shows a rule written in Schematron from the NDR:
@@ -34,9 +37,9 @@ Some of the rules that the [NDR]({{ site.data.pages.ndr | relative_url }}) defin
 
 ## Out of scope
 
-**Full NIEM or NDR conformance**
+### NDR text rules
 
-ConTesA cannot verify that a schema is fully NIEM conformant; only that it passes the set of automated rules from the NDR.  The NDR also has free-text rules that cannot be automated and must be checked manually.
+ConTesA cannot verify that a schema is fully NIEM conformant; only that it passes the set of automatable Schematron rules from the NDR.  The NDR also has free-text rules that cannot be automated and must be checked manually.
 
 {:.example}
 > The image belows shows a rule written in free text from the NDR:
@@ -44,13 +47,17 @@ ConTesA cannot verify that a schema is fully NIEM conformant; only that it passe
 ![NDR free-text rule](assets/rule-text.png)
 {:.bordered}
 
-**IEPD conformance**
+### IEPDs
 
-ConTesA can check a very limited number of rules from the [Information Exchange Package Documentation (IEPD) Specification]({{ site.data.pages.mpd | relative_url }}).  Ensuring that an IEPD meets all applicable rules currently requires manual review.
+ConTesA can check the NDR conformance of the XML schemas within an IEPD.  The [IEPD specification]({{ site.data.pages.mpd | relative_url }}), however, defines an additional set of conformance rules for IEPDs and for some of the artifacts within.  Ensuring that an IEPD meets all applicable rules currently requires manual review.
 
-**XML schema validation**
+### XML validation
 
-ConTesA does not run XML schema validation.  This is required for NIEM conformance, but there are many tools available that already do this, including XMLSpy, Oxygen XML Editor, and Xerces.
+ConTesA does not check for XML schema or instance validation.  This is required for NIEM conformance, but there are many tools available that already do this, including XMLSpy, Oxygen XML Editor, and Xerces.
+
+### JSON
+
+There is no current automated support for NIEM JSON conformance validation.
 
 ## Usage
 
@@ -112,7 +119,7 @@ The key section to review from the conformance report lists the rules that the s
 ![Conformance report - rules auto failed](assets/report-errors.png)
 {:.bordered}
 
-## Frequently Asked Questions
+## FAQ
 
 **I can't logout of ConTesA?**
 

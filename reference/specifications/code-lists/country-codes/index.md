@@ -1,11 +1,13 @@
 ---
 title: Country Codes Example
+icon: fa-magic
+description: This example shows different ways to define and represent country codes in NIEM - via free text, XML schema enumerations, and CSV codes via the Code Lists Specification.
 ---
 
 - TOC
 {:toc}
 
-## Overview
+## Representations diagram
 
 Country codes in NIEM 4.0 provide a good example of different representations of code lists in NIEM.  ISO 3166 codes are represented as schema enumerations, and GENC codes are represented by CSV files as described by the [Code Lists Specification]({{ site.data.links.code_list_spec }}).
 
@@ -16,7 +18,7 @@ Country representations in NIEM:
 
 ![Country Representations](./schema.png)
 
-## Text
+## Free-text
 
 Representing country by a text value is the simplest method, but provides minimal interoperability, as sender and receiver must somehow agree on what any given value means.
 
@@ -40,7 +42,7 @@ A text representation of the United States of America may appear in an XML messa
 </nc:Document>
 ```
 
-## Schema Enumerations
+## Enumerations
 
 ISO represents country codes via the ISO 3166-1 standard, which incorporates three different representations for each country:
 

@@ -4,7 +4,7 @@ title: A NIEM JSON Primer
 
 The NIEM JSON Primer is a non-normative document intended to provide
 an easy introduction to the purpose of NIEM and the reasons to use
-NIEM with JSON data. 
+NIEM with JSON data.
 
 It is a companion to the [NIEM JSON guidance](../
 
@@ -45,13 +45,13 @@ Regardless of whether the JSON data is simple or complex, the data
 analysts and software developers who work with it need to understand
 what it means. This involves answers to questions like
 
-* What is the meaning of the `date` [data element](./data-element)? Birthday or
+* What is the meaning of the `date` [data element](./dataelement.html)? Birthday or
   something else?
-  
+
 * What is the format of the `date` value?  Is it always an ISO 8601
   date field, or might we sometimes see `Tuesday`, or `Fred`? Is it
   the same format as `cdate`, or something different?
-  
+
 * Does `lname` have the same meaning in both examples?
 
 * Will `gname` always be found within a `name` object, or is it
@@ -71,47 +71,47 @@ when developers work on multiple data exchanges (all at once, or over
 time) that have many different data elements for the same shared
 concept (`fname`, `gname`, `givenname`) -- in short, when _data
 exchange overlap_ is high. These conditions -- low cohesion, high
-overlap -- are typically found in any [enterprise](tbd) with many
+overlap -- are typically found in any *enterprise (tbd)* with many
 participants or extensive data sharing needs.
 
 NIEM is especially useful in those circumstances.  The NIEM approach
 offers
 
-* A [global identifier](tbd) for each [JSON data element](./data-element), based
-  on [JSON-LD](tbd)
+* A *global identifier (tbd)* for each [JSON data element](./dataelement.html), based
+  on *JSON-LD*
 
-* A standards-based convention for canonical [data element names](tbd)
+* A standards-based convention for canonical *data element names (tbd)*
   (while still permitting local names like `lat` within exchanged
   data)
 
-* A framework for [machine-readable documentation](tbd) of each data
+* A framework for *machine-readable documentation (tbd)* of each data
   element.
 
-These three combine to make [NIEM-JSON data](tbd) _self-documenting_,
-in that any analyst or developer can identifiy each element and know
+These three combine to make *NIEM-JSON data (tbd)* _self-documenting_,
+in that any analyst or developer can identify each element and know
 how it is defined. In addition, the NIEM approach also offers
 
-* A simple way for developers to [reuse](tbd) data elements defined
+* A simple way for developers to *reuse (tbd)* data elements defined
   by others
 
-* A [NIEM data model](tbd), partitioned into a [NIEM core](tbd) of
+* A *NIEM data model (tbd)*, partitioned into a *NIEM core (tbd)* of
   concepts that might be reused in any exchange, plus several
   submodels extending the core, each defined by a subject-area or
-  functional [NIEM domain](tbd) community
+  functional *NIEM domain* community
 
-* A [governance approach](tbd) in which the NIEM core is controlled by
+* A *governance approach (tbd)* in which the NIEM core is controlled by
   the entire NIEM community, while each submodel is independently
   controlled by its domain, and which allows any community to create
   and control its own extension of the NIEM model
 
-* A [version-control architecture](tbd) that encourages reuse by
+* A *version-control architecture (tbd)* that encourages reuse by
   insulating each community from external changes; this allows each
   community to change at its own pace, deciding if and when it will
   adopt changes made by others
 
-* A framework for [data exchange specifications](tbd) that contain all
+* A framework for *data exchange specifications (tbd)* that contain all
   the artifacts required to document the required and optional
-  elements that may appear in an [instance](tbd) of an exchange,
+  elements that may appear in an *instance* of an exchange,
   together with the meaning of those elements
 
 These features of NIEM combine to form a standards-based approach for
@@ -148,4 +148,4 @@ NIEM to create an exchange that is all-JSON, or one that is all-XML,
 or one that defines both a JSON and an XML serialization, depending on
 the needs of the exchange and the exchangers.
 
-Next: [Global identifiers for NIEM data elements](tbd)
+Next: *Global identifiers for NIEM data elements (tbd)*

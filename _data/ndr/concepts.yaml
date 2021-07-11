@@ -1,0 +1,880 @@
+
+# Namespace
+namespace_all:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-82
+    - number: 9-83
+    - number: 9-84
+    - number: 9-85
+    - number: 10-68
+    - number: 10-69
+    - number: 10-70
+    - number: 10-78
+    - number: 11-48
+    - number: 11-49
+    - number: 11-50
+    - number: 11-51
+    - number: 11-52
+    - number: 11-53
+    - number: 11-54
+    - number: 11-55
+    - number: 12-1
+    - number: 12-2
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-82
+    - number: 9-83
+    - number: 9-84
+    - number: 9-85
+    - number: 10-67
+    - number: 10-68
+    - number: 10-69
+    - number: 10-77
+    - number: 11-46
+    - number: 11-47
+    - number: 11-48
+    - number: 11-49
+    - number: 11-50
+    - number: 11-51
+    - number: 11-52
+    - number: 11-53
+    - number: 12-1
+    - number: 12-2
+
+# Namespace - XML
+namespace_xml:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 4-1
+    - number: 4-2
+    - number: 4-3
+    - number: 4-4
+    - number: 4-5
+    - number: 4-6
+    - number: 7-1
+    - number: 7-2
+    - number: 7-3
+    - number: 7-4
+    - number: 9-75
+    - number: 9-76
+    - number: 9-77
+    - number: 9-78
+    - number: 9-79
+    - number: 9-80
+    - number: 9-81
+    - number: 9-86
+    - number: 9-87
+    - number: 9-88
+    - number: 9-89
+    - number: 9-90
+    - number: 9-91
+    - number: 9-92
+    - number: 9-93
+    - number: 9-94
+    - number: 9-95
+    - number: 9-96
+    - number: 9-97
+    - number: 10-45
+    - number: 11-30
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 4-1
+    - number: 4-2
+    - number: 4-3
+    - number: 4-4
+    - number: 4-5
+    - number: 4-6
+    - number: 7-1
+    - number: 7-2
+    - number: 7-3
+    - number: 7-4
+    - number: 9-75
+    - number: 9-76
+    - number: 9-77
+    - number: 9-78
+    - number: 9-79
+    - number: 9-80
+    - number: 9-81
+    - number: 9-86
+    - number: 9-87
+    - number: 9-88
+    - number: 9-89
+    - number: 9-90
+    - number: 9-91
+    - number: 9-92
+    - number: 9-93
+    - number: 9-94
+    - number: 9-95
+    - number: 9-96
+    - number: 9-97
+
+# Property
+property_all:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 7-5
+    sections:
+    - number: 9.2
+    - number: 11.2
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 7-5
+    sections:
+    - number: 9.2
+    - number: 11.2
+
+# Property names
+property_names:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-44
+    - number: 10-46
+    - number: 10-47
+    - number: 10-49
+    - number: 10-50
+    - number: 10-53
+    - number: 10-54
+    - number: 10-55
+    - number: 10-56
+    - number: 10-57
+    - number: 10-58
+    - number: 10-59
+    - number: 10-60
+    - number: 10-61
+    - number: 10-62
+    - number: 10-63
+    sections:
+    - number: 10.8
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 10-44
+    - number: 10-45
+    - number: 10-46
+    - number: 10-47
+    - number: 10-49
+    - number: 10-50
+    - number: 10-53
+    - number: 10-54
+    - number: 10-55
+    - number: 10-56
+    - number: 10-57
+    - number: 10-58
+    - number: 10-59
+    - number: 10-60
+    - number: 10-61
+    - number: 10-62
+    sections:
+    - number: 10.8
+
+# Property definitions
+property_defs:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 11-24
+    - number: 11-25
+    - number: 11-26
+    - number: 11-27
+    - number: 11-28
+    - number: 11-29
+    - number: 11-36
+    - number: 11-37
+    - number: 11-38
+    - number: 11-39
+    - number: 11-40
+    - number: 11-41
+    - number: 11-42
+    sections:
+    - number: 11.6
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 11-23
+    - number: 11-24
+    - number: 11-25
+    - number: 11-26
+    - number: 11-27
+    - number: 11-28
+    - number: 11-34
+    - number: 11-35
+    - number: 11-36
+    - number: 11-37
+    - number: 11-38
+    - number: 11-39
+    - number: 11-40
+    sections:
+    - number: 11.6
+
+# Property - Abstract
+abstract:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-38
+    - number: 9-39
+    - number: 11-14
+    - number: 11-35
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-38
+    - number: 9-39
+    - number: 11-13
+    - number: 11-33
+
+# Property - Attribute
+attribute:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-48
+    - number: 9-49
+    - number: 9-50
+    - number: 9-51
+    - number: 9-52
+    - number: 9-53
+    - number: 9-54
+    - number: 9-55
+    - number: 9-56
+    - number: 9-57
+    - number: 9-58
+    - number: 10-49
+    - number: 11-10
+    - number: 11-18
+    - number: 11-19
+    sections:
+    - number: 9.2.3
+    - number: 11.2.3
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-48
+    - number: 9-49
+    - number: 9-50
+    - number: 9-51
+    - number: 9-52
+    - number: 9-53
+    - number: 9-54
+    - number: 9-55
+    - number: 9-56
+    - number: 9-57
+    - number: 9-58
+    - number: 10-48
+    - number: 11-9
+    - number: 11-17
+    - number: 11-18
+    sections:
+    - number: 9.2.3
+    - number: 11.2.3
+
+# Element
+element:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-36
+    - number: 9-37
+    - number: 9-38
+    - number: 9-39
+    - number: 9-40
+    - number: 9-41
+    - number: 9-42
+    - number: 9-43
+    - number: 9-44
+    - number: 9-45
+    - number: 9-46
+    - number: 9-47
+    - number: 9-72
+    - number: 9-73
+    - number: 9-74
+    - number: 10-19
+    - number: 10-44
+    - number: 10-45
+    - number: 10-46
+    - number: 10-47
+    - number: 10-48
+    - number: 10-50
+    - number: 10-51
+    - number: 10-54
+    - number: 10-55
+    - number: 10-56
+    - number: 10-57
+    - number: 10-58
+    - number: 10-59
+    - number: 10-60
+    - number: 10-61
+    - number: 10-62
+    - number: 10-63
+    - number: 10-64
+    - number: 10-65
+    - number: 10-66
+    - number: 11-12
+    - number: 11-13
+    - number: 11-14
+    - number: 11-15
+    - number: 11-16
+    - number: 11-17
+    - number: 11-30
+    - number: 12-10
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-36
+    - number: 9-37
+    - number: 9-38
+    - number: 9-39
+    - number: 9-40
+    - number: 9-41
+    - number: 9-42
+    - number: 9-43
+    - number: 9-44
+    - number: 9-45
+    - number: 9-46
+    - number: 9-47
+    - number: 9-72
+    - number: 9-73
+    - number: 9-74
+    - number: 10-19
+    - number: 10-44
+    - number: 10-45
+    - number: 10-46
+    - number: 10-47
+    - number: 10-49
+    - number: 10-50
+    - number: 10-53
+    - number: 10-54
+    - number: 10-55
+    - number: 10-56
+    - number: 10-57
+    - number: 10-58
+    - number: 10-59
+    - number: 10-60
+    - number: 10-61
+    - number: 10-62
+    - number: 10-63
+    - number: 10-64
+    - number: 10-65
+    - number: 11-11
+    - number: 11-12
+    - number: 11-13
+    - number: 11-14
+    - number: 11-15
+    - number: 11-16
+
+# Types
+type:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 7-5
+    - number: 9-1
+    - number: 9-2
+    - number: 9-3
+    - number: 9-4
+    - number: 9-5
+    - number: 9-6
+    - number: 9-7
+    - number: 9-8
+    - number: 9-9
+    - number: 10-44
+    - number: 10-45
+    - number: 10-46
+    - number: 10-47
+    - number: 10-48
+    - number: 10-50
+    - number: 10-51
+    - number: 10-54
+    - number: 10-55
+    - number: 10-56
+    - number: 10-60
+    - number: 10-61
+    - number: 10-62
+    - number: 10-63
+    - number: 11-1
+    - number: 11-2
+    - number: 11-3
+    - number: 11-24
+    - number: 11-25
+    - number: 11-26
+    - number: 11-27
+    - number: 11-28
+    - number: 11-29
+    - number: 11-30
+    sections:
+    - number: 9.1
+    - number: 11.1
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 7-5
+    - number: 9-1
+    - number: 9-2
+    - number: 9-3
+    - number: 9-4
+    - number: 9-5
+    - number: 9-6
+    - number: 9-7
+    - number: 9-8
+    - number: 9-9
+    - number: 10-44
+    - number: 10-45
+    - number: 10-46
+    - number: 10-47
+    - number: 10-49
+    - number: 10-50
+    - number: 10-53
+    - number: 10-54
+    - number: 10-55
+    - number: 10-59
+    - number: 10-60
+    - number: 10-61
+    - number: 10-62
+    - number: 11-1
+    - number: 11-2
+    - number: 11-23
+    - number: 11-24
+    - number: 11-25
+    - number: 11-26
+    - number: 11-27
+    - number: 11-28
+    sections:
+    - number: 9.1
+    - number: 11.1
+
+# Complex type with complex content
+ccc:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-25
+    - number: 9-26
+    - number: 9-27
+    - number: 9-28
+    - number: 9-29
+    - number: 9-30
+    - number: 9-31
+    - number: 9-32
+    - number: 9-34
+    - number: 9-35
+    - number: 9-60
+    - number: 9-61
+    - number: 9-62
+    - number: 9-63
+    - number: 9-64
+    - number: 9-65
+    - number: 9-66
+    - number: 9-67
+    - number: 9-68
+    - number: 9-69
+    - number: 9-70
+    - number: 9-71
+    - number: 10-1
+    - number: 10-2
+    - number: 10-23
+    - number: 10-24
+    - number: 11-20
+    - number: 11-21
+    - number: 11-22
+    - number: 11-23
+    - number: 11-46
+    sections:
+    - number: 9.1
+    - number: 11.1
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-25
+    - number: 9-26
+    - number: 9-27
+    - number: 9-28
+    - number: 9-29
+    - number: 9-30
+    - number: 9-31
+    - number: 9-32
+    - number: 9-34
+    - number: 9-35
+    - number: 9-60
+    - number: 9-61
+    - number: 9-62
+    - number: 9-63
+    - number: 9-64
+    - number: 9-65
+    - number: 9-66
+    - number: 9-67
+    - number: 9-68
+    - number: 9-69
+    - number: 9-70
+    - number: 9-71
+    - number: 10-1
+    - number: 10-2
+    - number: 10-23
+    - number: 10-24
+    - number: 11-19
+    - number: 11-20
+    - number: 11-21
+    - number: 11-22
+    - number: 11-44
+    sections:
+    - number: 9.1
+    - number: 11.1
+
+# Complex type with simple content (CSC)
+csc:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-25
+    - number: 9-26
+    - number: 9-27
+    - number: 9-29
+    - number: 9-30
+    - number: 9-33
+    - number: 9-35
+    - number: 9-71
+    - number: 10-20
+    - number: 11-11
+    - number: 11-20
+    - number: 11-22
+    - number: 11-23
+    - number: 11-46
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-25
+    - number: 9-26
+    - number: 9-27
+    - number: 9-29
+    - number: 9-30
+    - number: 9-33
+    - number: 9-35
+    - number: 9-71
+    - number: 10-20
+    - number: 11-10
+    - number: 11-19
+    - number: 11-21
+    - number: 11-22
+    - number: 11-44
+
+# Simple type
+simple:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-10
+    - number: 9-11
+    - number: 9-12
+    - number: 11-4
+    - number: 11-8
+    - number: 11-9
+    - number: 11-47
+    sections:
+    - number: 11.1.2
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-10
+    - number: 9-11
+    - number: 9-12
+    - number: 11-3
+    - number: 11-7
+    - number: 11-8
+    - number: 11-45
+    sections:
+    - number: 11.1.2
+
+# Simple list type
+list:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-15
+    - number: 9-16
+    - number: 9-17
+    - number: 9-18
+    - number: 11-5
+    - number: 11-6
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-15
+    - number: 9-16
+    - number: 9-17
+    - number: 9-18
+    - number: 11-4
+    - number: 11-5
+
+# Simple union type
+union:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-19
+    - number: 9-20
+    - number: 9-21
+    - number: 9-22
+    - number: 9-23
+    - number: 9-24
+    - number: 11-7
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-19
+    - number: 9-20
+    - number: 9-21
+    - number: 9-22
+    - number: 9-23
+    - number: 9-24
+    - number: 11-6
+
+facet:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 9-14
+    - number: 9-13
+    - number: 10-17
+    - number: 10-18
+    - number: 11-8
+    - number: 11-9
+    sections:
+    - number: 11.1.2.3
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 9-14
+    - number: 9-13
+    - number: 10-17
+    - number: 10-18
+    - number: 11-7
+    - number: 11-8
+    sections:
+    - number: 11.1.2.3
+
+# Adapter
+adapter:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-8
+    - number: 10-9
+    - number: 10-10
+    - number: 10-11
+    - number: 10-12
+    - number: 10-13
+    - number: 10-14
+    - number: 10-15
+    - number: 10-16
+    - number: 10-71
+    - number: 10-72
+    - number: 10-73
+    - number: 10-74
+    - number: 10-75
+    sections:
+    - number: 10.2.3
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 10-8
+    - number: 10-9
+    - number: 10-10
+    - number: 10-11
+    - number: 10-12
+    - number: 10-13
+    - number: 10-14
+    - number: 10-15
+    - number: 10-16
+    - number: 10-70
+    - number: 10-71
+    - number: 10-72
+    - number: 10-73
+    - number: 10-74
+    sections:
+    - number: 10.2.3
+
+# Association
+association:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-21
+    - number: 10-22
+    - number: 11-34
+    - number: 11-43
+    sections:
+    - number: 10.3
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 10-21
+    - number: 10-22
+    - number: 11-32
+    - number: 11-41
+    sections:
+    - number: 10.3
+
+# Augmentation Point
+aug_point:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-25
+    - number: 10-26
+    - number: 10-27
+    - number: 10-28
+    - number: 10-29
+    - number: 10-30
+    - number: 10-31
+    - number: 11-31
+    sections:
+    - number: 10.4.2
+    - number: 10.4.3
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 10-25
+    - number: 10-26
+    - number: 10-27
+    - number: 10-28
+    - number: 10-29
+    - number: 10-30
+    - number: 10-31
+    - number: 11-29
+    sections:
+    - number: 10.4.2
+    - number: 10.4.3
+
+# Local terminology
+term:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-52
+    - number: 10-53
+    - number: 10-76
+    - number: 10-77
+    sections:
+    - number: 10.9.2
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 10-51
+    - number: 10-52
+    - number: 10-75
+    - number: 10-76
+    sections:
+    - number: 10.9.2
+
+# Metadata
+metadata:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-38
+    - number: 10-39
+    - number: 10-40
+    - number: 10-41
+    - number: 11-33
+    - number: 11-45
+    - number: 12-11
+    - number: 12-12
+    - number: 12-13
+    - number: 12-14
+    - number: 12-15
+    - number: 12-16
+    - number: 12-17
+    - number: 12-18
+    sections:
+    - number: 10.5
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 10-38
+    - number: 10-39
+    - number: 10-40
+    - number: 10-41
+    - number: 11-31
+    - number: 11-43
+    - number: 12-10
+    - number: 12-11
+    - number: 12-12
+    - number: 12-13
+    - number: 12-14
+    - number: 12-15
+    - number: 12-16
+    - number: 12-17
+    sections:
+    - number: 10.5
+
+# Reference
+reference:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 12-3
+    - number: 12-4
+    - number: 12-5
+    - number: 12-6
+    - number: 12-7
+    - number: 12-8
+    - number: 12-9
+    sections:
+    - number: 12.2
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 12-3
+    - number: 12-4
+    - number: 12-5
+    - number: 12-6
+    - number: 12-7
+    - number: 12-8
+    - number: 12-9
+    sections:
+    - number: 12.2
+
+# Representation
+representation:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-42
+    - number: 10-43
+    sections:
+    - number: 10.7
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 10-42
+    - number: 10-43
+    sections:
+    - number: 10.7
+
+# Role
+role:
+  - spec:
+    version: "5.0"
+    rules:
+    - number: 10-3
+    - number: 10-4
+    - number: 10-5
+    - number: 10-6
+    sections:
+    - number: 10.2.2
+  - spec:
+    version: "4.0"
+    rules:
+    - number: 10-3
+    - number: 10-4
+    - number: 10-5
+    - number: 10-6
+    sections:
+    - number: 10.2.2

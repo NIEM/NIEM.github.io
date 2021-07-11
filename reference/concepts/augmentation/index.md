@@ -9,6 +9,9 @@
 
 Augmentations are NIEM's mechanism to add additional content to a type defined by another namespace.
 
+{:toc}
+- TOC
+
 Augmentations are done via element substitution (in XML).  Almost every type with complex content (sub-properties) in NIEM contains an augmentation point element.  These augmentation point elements serve solely as hooks, to be later replaced by additional content defined elsewhere.
 
 {: .example}

@@ -27,7 +27,7 @@ NDR rules are intended to establish and, more importantly, enforce a degree of s
 - Rules for naming NIEM components
 - Rules for extending NIEM-conformant components
 
-## Resources
+## Specification Resources
 
 {% include specs/specification-summary.html classID=page.classID %}
 
@@ -39,9 +39,9 @@ Refer to the section about the [Conformance Targets Attribute Specification]({{ 
 
 {% include specs/targets-table.html classID=page.classID %}
 
-### Reference Schema Document (REF)
+### REF
 
-Reference schema documents (REFs) are NIEM schemas that provide authoritative definitions of broadly reusable schema components and follow a stricter syntax, as specified by the NDR.  NIEM release schemas are REFs.
+**Reference schema documents** (REFs) are NIEM schemas that provide authoritative definitions of broadly reusable schema components and follow a stricter syntax, as specified by the NDR.  NIEM release schemas are REFs.
 
 The conformance rules for reference schema documents are generally stricter than those for extension schema documents (EXTs).  This is because REFs are intended for reuse and must be defined in a way that supports a broad variety of requirements.
 
@@ -54,9 +54,9 @@ The conformance rules for reference schema documents are generally stricter than
 - Typically contains data components with relaxed cardinality (0 to unbounded)
 - Made as regular and simple as possible.
 
-### Extension Schema Document (EXT)
+### EXT
 
-Extension Schema Documents (EXTs) are NIEM schemas for special-purpose content that is not expected to be reused outside of the specific package in which it is defined.  EXTs may thus follow a slightly more relaxed syntax, as specified by the NDR.  IEPD extension schemas are usually EXTs, but may be designated as REFs instead if needed.
+**Extension Schema Documents** (EXTs) are NIEM schemas for special-purpose content that is not expected to be reused outside of the specific package in which it is defined.  EXTs may thus follow a slightly more relaxed syntax, as specified by the NDR.  IEPD extension schemas are usually EXTs, but may be designated as REFs instead if needed.
 
 Extension schema documents (EXTs), like reference schema documents (REFs), are a fundamental part of NIEM model design. They contain components that use, extend, or limit the components defined in REFs and express additional vocabulary above and beyond the vocabulary available from REFs.
 
@@ -68,9 +68,9 @@ Extension schema documents (EXTs), like reference schema documents (REFs), are a
 - Can constrain cardinality for specific requirements
 - Can serve as the core schematic definitions of an IEPD.
 
-### Conformant Schema Document Set (SET)
+### SET
 
-A Conformant Schema Document Set (SET) is a single conceptual XML schema that represents the sum of the rules and definitions defined within a collection of NIEM REF and EXT XML schemas, such as an IEPD.
+A **Conformant Schema Document Set** (SET) is a single conceptual XML schema that represents the sum of the rules and definitions defined within a collection of NIEM REF and EXT XML schemas, such as an IEPD.
 
 {:.features}
 - Conceptual artifact for collection of schemas
@@ -82,9 +82,9 @@ Because schema document sets are composed of NIEM-conformant schema documents (e
 
 A SET defines a schema that may be used to validate an instance document. This rule ensures that a SET under consideration contains definitions for everything that it references; it has everything necessary to do a complete validation of instance documents without any unresolved references.
 
-### Conformant Instance Document (INS)
+### INS
 
-An Conformance Instance XML Document (INS) is an XML instance document which is valid against a conformant schema document set (SET).
+An **Conformance Instance XML Document** (INS) is an XML instance document which is valid against a conformant schema document set (SET).
 
 {:.features}
 - Document element is locally schema-valid
@@ -119,7 +119,7 @@ The image below shows a small excerpt from the NDR.
 {:.bordered}
 ![Example rules](assets/rule-examples.png)
 
-## See more
+## Additional Resources
 
 See more information about the Naming and Design Rules Specification:
 

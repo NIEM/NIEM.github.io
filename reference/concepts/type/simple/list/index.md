@@ -2,36 +2,18 @@
   title: List Types
   icon: fa-ellipsis-h
   description: A list type is a simple type that allows for values to be repeated, separated by a space.
-  ndr:
-  - spec:
-    version: "5.0"
-    rules:
-    - number: 9-15
-    - number: 9-16
-    - number: 9-17
-    - number: 9-18
-    - number: 11-5
-    - number: 11-6
-  - spec:
-    version: "4.0"
-    rules:
-    - number: 9-15
-    - number: 9-16
-    - number: 9-17
-    - number: 9-18
-    - number: 11-4
-    - number: 11-5
 ---
 
-## Overview
-
 {{ page.description }}
+
+{:toc}
+- TOC
 
 In NIEM, multiple values are typically represented by a property that occurs multiple times.  Lists are provided to represent larger sets of data values, such as readings from a sensor.
 
 ## Modeling
 
-### Name
+### Representation term "ListSimpleType"
 
 The name of a list type should end with the representation term "ListSimpleType".
 
@@ -94,6 +76,6 @@ The following is a template for the declaration of a simple list type:
 
 JSON guidance for list types is not yet available.
 
-## References
+## NDR References
 
-{% include ndr-references.html list=page.ndr %}
+{% include ndr-references.html list=site.data.ndr.concepts.list %}

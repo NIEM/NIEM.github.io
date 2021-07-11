@@ -1,4 +1,11 @@
 
+# Current release tags
+current:
+  tag: niem-5.0
+  label: NIEM 5.0
+  page: /niem-releases/5.0/
+
+# Draft release tags
 tag: niem-5.1alpha2
 label: NIEM 5.1-alpha2
 description: NIEM 5.1 alpha 2

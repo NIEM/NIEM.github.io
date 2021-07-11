@@ -2,32 +2,12 @@
   title: Union Types
   icon: fa-plus
   description: A union type is a simple type that represents the combined set of allowable values from other simple types.
-  ndr:
-  - spec:
-    version: "5.0"
-    rules:
-    - number: 9-19
-    - number: 9-20
-    - number: 9-21
-    - number: 9-22
-    - number: 9-23
-    - number: 9-24
-    - number: 11-7
-  - spec:
-    version: "4.0"
-    rules:
-    - number: 9-19
-    - number: 9-20
-    - number: 9-21
-    - number: 9-22
-    - number: 9-23
-    - number: 9-24
-    - number: 11-6
 ---
 
-## Overview
-
 {{ page.description }}
+
+{:toc}
+- TOC
 
 A union type defines a list of simple types as its members.  A value allowed by any one of its member types will be a valid value for the union type.
 
@@ -98,6 +78,6 @@ The following is a template for a simple union type with two members.  Additiona
 
 JSON guidance is not yet available for union types.
 
-## References
+## NDR References
 
-{% include ndr-references.html list=page.ndr %}
+{% include ndr-references.html list=site.data.ndr.concepts.union %}

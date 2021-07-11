@@ -11,14 +11,11 @@ The **[NIEM Conformance Specification]({{ site.data.links.conformance }})** intr
 - TOC
 {:toc}
 
-{:.note}
-> The Conformance Specification is currently out of date, with references to NIEM 3.0 and NDR 3.0.  The information is still valid, but the 4.0 or 5.0 version of the [NDR]({{ site.data.pages.ndr | relative_url }}) should be used where appropriate.
-
-The term *conformance* is often used very broadly, but it has a very specific meaning within NIEM.  Artifacts, like schemas and IEPDs, can conform to a specific conformance target.
+The term *conformance* is often used very broadly, but it has a very specific meaning within NIEM.  Artifacts, like schemas and IEPDs, can be built so that they conform to a specific conformance target.  Conformance targets and their associated rules are defined by NIEM specifications.
 
 System, tools, or databases may have capabilities designed to specifically support the development of NIEM-conformant artifacts, but those systems art not, themselves, NIEM-conformant.  Such tools or systems are considered NIEM-aware or NIEM-supporting.
 
-## Resources
+## Specification Resources
 
 {% include specs/specification-summary.html classID=page.classID %}
 

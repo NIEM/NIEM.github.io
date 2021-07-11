@@ -17,7 +17,7 @@ The **[NIEM Information Exchange Package Documentation (IEPD) Specification]({{ 
 - TOC
 {:toc}
 
-## Resources
+## Specification Resources
 
 {% include specs/specification-summary.html classID=page.classID %}
 
@@ -31,7 +31,7 @@ The IEPD Specification includes the following conformance targets:
 
 The IEPD Specification describes the following artifacts:
 
-### Schema Artifacts
+### Schemas
 
 {% assign subsetPage = site.pages
     | where: "url", "/reference/artifacts/message/subset-schema/" | first %}
@@ -47,7 +47,7 @@ The IEPD Specification describes the following artifacts:
 | External Schema Document | A schema included in an IEPD that does not conform to NIEM.  Content from external schemas must be accessed via NIEM [adapters](../../concepts/adapter). |
 | Constraint-Schema Document Set | A set of schemas that define additional constraints outside of what is permitted in a regular NIEM-conformant schema. Used as second-pass validation for IEPs (IEPs must first validate to the original reference or subset schemas). |
 
-### Required Document Artifacts
+### Required Documents
 
 {% assign iepdCatalogPage = site.pages
     | where: "url", "/reference/artifacts/message/iepd-catalog/" | first %}
@@ -82,7 +82,7 @@ Aside from the required artifacts, IEPD content is relatively flexible. A variet
 | NIEM Wantlist | A wantlist is an abbreviated XML representation of a NIEM schema document subset, and identifies only the data components a user selected to build a schema document subset. A wantlist file is required to be able to reload a NIEM subset into the [SSGT]({{ site.data.pages.ssgt | relative_url }}) for future editing. |
 | Business Rules | Business rules constrain a message. They may be written as descriptive text or in a language that enables validation, such as [Schematron](http://schematron.com/). |
 
-## Packaging a IEPD
+## Packaging an IEPD
 
 The IEPD Specification does not contain normative rules on how to structure the folders and place the files in an IEPD, but guidance is provided. A recommended layout is provided below:
 
@@ -129,3 +129,9 @@ myIEPD-2.0/
     ...
 
 ```
+
+## Additional Resources
+
+See more information about the IEPD Specification:
+
+{% include icon-list.html links=page.links %}

@@ -49,8 +49,8 @@ http://release.niem.gov/niem/niem-core/4.0/#PersonName
 ```
 
 When NIEM-JSON developers choose to reuse data components from the
-[#NIEM model](tbd), as is done in this example, they will often reuse the
-component's [#canonical QName](tbd). When that is done the above NIEM-JSON
+NIEM model, as is done in this example, they will often reuse the
+component's canonical QName. When that is done the above NIEM-JSON
 example looks like this:
 
 ```
@@ -112,8 +112,8 @@ NIEM-XML data in the middle, and the NIEM-JSON data towards the bottom
 are equivalents; they all represent the same information.
 
 Finally, it is worth mentioning that, unlike namespace declarations in
-NIEM-XML, the [#context object does not have to appear within the
-NIEM-JSON data](tbd). The context may be inline, or referenced
+NIEM-XML, the context object does not have to appear within the
+NIEM-JSON data. The context may be inline, or referenced
 explicitly or implicitly.
 
 

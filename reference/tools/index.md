@@ -19,6 +19,9 @@
 
 {{ page.description }}
 
+{:toc}
+- TOC
+
 ## NIEM program tools
 
 {: .note}
@@ -27,7 +30,7 @@
 {% assign links = page.links | where: "group", "niem" %}
 {% include icon-list.html links=links %}
 
-## NIEM support for other tools
+## NIEM resources for other tools
 
 {% assign links = page.links | where: "group", "other" %}
 {% include icon-list.html links=links %}
