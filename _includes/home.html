@@ -20,7 +20,7 @@
       <div style="clear:both"></div>
     </div>
 
-    <!-- ==== ALERT BANNER ==== -->
+    <!-- ==== ALERT BANNER: White banner with message and buttons same width as cards below ==== -->
 
     <!--<div class="hero-banner">
       <div class="hero-banner-content">
@@ -39,158 +39,32 @@
         <div style="clear:both"></div>
       </div>
     </div> -->
+
     <!-- ==== TILE SECTION ==== -->
 
     <div class="hero-wrapper">
 
-      <!-- ==== TILE 1: Training ==== -->
+      <!-- ==== Edit card data in _data/home.yml ==== -->
 
-      <div class="col-lg-3 col-md-6">
-        <div class="hero-list">
-          <div class="hero-item">
-            <a href="{{ '/training/'  | relative_url }}">
-              <div class="hero-item-container white">
-                <img class="img-responsive" src="{{ '/assets/images/front/training-icon.png'  | relative_url }}" width="166" height="166" alt="Training Icon">
-                <h3>Training</h3>
-                <p>We are starting to evolve the NIEM training curriculum to GitHub pages.</p>
-
-                <div class="button">Learn more</div>
-              </div>
-            </a>
+      {% for card in site.data.home %}
+        <div class="col-lg-3 col-md-6">
+          <div class="hero-list">
+            <div class="hero-item">
+              <a href="{{ card.url  | relative_url }}">
+                <div class="hero-item-container {{ card.class }}">
+                  {% assign imgURL = card.img | prepend: "/assets/images/front/" %}
+                  <img class="img-responsive" src="{{ imgURL | relative_url }}" width="166" height="166" alt="{{ card.img-alt }}">
+                  <h3>{{ card.title }}</h3>
+                  <p>{{ card.description }}</p>
+                  <div class="button">{{ card.button }}</div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- ==== TILE 2: Reference ==== -->
-
-
-      <div class="col-lg-3 col-md-6">
-        <div class="hero-list">
-          <div class="hero-item">
-            <a href="{{ '/reference/'  | relative_url }}">
-              <div class="hero-item-container white">
-                <img class="img-responsive" src="{{ '/assets/images/front/reference_icon.png'  | relative_url }}" width="166" height="166" alt="Reference Icon">
-                <h3>Reference</h3>
-                <p>Documentation and reference materials to help you learn more about NIEM.</p>
-
-                <div class="button">Learn more </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==== TILE 3: JSON ==== -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="hero-list">
-          <div class="hero-item">
-            <a href="{{ '/json/'  | relative_url }}">
-              <div class="hero-item-container white">
-                <img class="img-responsive" src="{{ '/assets/images/front/curly_brackets_icon.png'  | relative_url }}" width="166" height="166" alt="Reference Icon">
-                <!-- <img class="img-responsive" src="{{ '/assets/images/front/json_icon.png'  | relative_url }}" width="166" height="166" alt="JSON Icon"> -->
-                <h3>JSON</h3>
-                <p>Guidelines supporting the use of JSON with NIEM.</p>
-
-                <div class="button">Learn more </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==== TILE 4: Community Activities ==== -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="hero-list">
-          <div class="hero-item">
-            <a href="{{ '/community/' | relative_url }}">
-              <div class="hero-item-container white">
-                <img class="img-responsive" src="{{ '/assets/images/front/community-icon.png'  | relative_url }}" width="166" height="166" alt="Community Activities Icon">
-                <h3>Community Activities</h3>
-                <p>Includes Grants, Health, and the State, Local, Tribal, and Territorial Tiger Team.</p>
-                <div class="button">Learn more </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==== TILE 5: Movement ==== -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="hero-list">
-          <div class="hero-item">
-            <a href="{{ '/movement/'  | relative_url }}">
-              <div class="hero-item-container white">
-                <img class="img-responsive" src="{{ '/assets/images/front/movement_icon.png' | relative_url }}" width="166" height="166" alt="Movement Icon">
-                <h3>Movement</h3>
-                <p>Introducing Movement—an easier, simpler way to explore and use NIEM.</p>
-
-                <div class="button">Learn more </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==== TILE 6: IEPD Starter Kit ==== -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="hero-list">
-          <div class="hero-item">
-            <a href="{{ '/reference/artifacts/messages/iepd/iepd-starter-kit/'  | relative_url }} ">
-              <div class="hero-item-container white">
-                <img class="img-responsive" src="{{ '/assets/images/front/iepd_starter_kit_icon.png'  | relative_url }}" width="166" height="166" alt="IEPD Starter Kit Icon">
-                <h3>IEPD Starter Kit </h3>
-                <p>To use NIEM, you normally build an Information Exchange Package Documentation (IEPD).</p>
-
-                <div class="button">Learn more </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==== TILE 7: Geospatial Integration ==== -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="hero-list">
-          <div class="hero-item">
-            <a href="{{ '/geospatial/'  | relative_url }} ">
-              <div class="hero-item-container white">
-                <img class="img-responsive" src="{{ '/assets/images/front/geospatial_icon.png'  | relative_url }}" width="166" height="166" alt="Geospatial Integration Icon">
-                <h3>Geospatial Integration </h3>
-                <p>The Geo4NIEM initiative demonstrates the use of OGC community standards with NIEM.</p>
-
-                <div class="button">Learn more </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- ==== TILE 8: Feedback ==== -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="hero-list">
-          <div class="hero-item">
-            <a href="https://github.com/NIEM/NIEM.github.io/issues">
-              <div class="hero-item-container green">
-                <img class="img-responsive" src="{{ '/assets/images/front/feedback_icon.png'  | relative_url }}" width="166" height="166" alt="Feedback &amp; Ideas Icon">
-                <h3>Feedback &amp; Ideas</h3>
-                <p>We greatly appreciate feedback, thoughts, ideas, and issue submission.</p>
-
-                <div class="button">Submit feedback</div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
 
     </div>
-
-<!-- ==== END TILES ==== -->
 
   </div>
 </div>

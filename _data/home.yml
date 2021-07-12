@@ -1,0 +1,74 @@
+
+# Card info for the home page
+
+- # Training
+  url: /training/
+  img: training-icon.png
+  img-alt: Training Icon
+  class: white
+  title: Training
+  description: We are starting to evolve the NIEM training curriculum to GitHub pages.
+  button: Learn more
+
+- # Reference
+  url: /reference/
+  img: reference_icon.png
+  img-alt: Reference Icon
+  class: white
+  title: Reference
+  description: Documentation and reference materials to help you learn more about NIEM.
+  button: Learn more
+
+- # NIEM JSON
+  url: /json/
+  img: curly_brackets_icon.png
+  img-alt: JSON Icon
+  class: white
+  title: JSON
+  description: Guidelines supporting the use of JSON with NIEM.
+  button: Learn more
+
+- # Community activities
+  url: /community/
+  img: community-icon.png
+  img-alt: Community Activities Icon
+  class: white
+  title: Community Activities
+  description: Includes Biometrics, Grants, Health, and the State, Local, Tribal, and Territorial Tiger Team.
+  button: Learn more
+
+- # Movement
+  url: /reference/tools/movement/
+  img: movement_icon.png
+  img-alt: Movement Icon
+  class: white
+  title: Movement
+  description: Introducing Movement—an easier, simpler way to explore and use NIEM.
+  button: Learn more
+
+- # IEPD Starter Kit
+  url: /reference/artifacts/messages/iepd/iepd-starter-kit/
+  img: iepd_starter_kit_icon.png
+  img-alt: IEPD Starter Kit Icon
+  class: white
+  title: IEPD Starter Kit
+  description: To use NIEM, you normally build an Information Exchange Package Documentation (IEPD).
+  button: Learn more
+
+- # Geospatial Integration
+  url: /geospatial/
+  img: geospatial_icon.png
+  img-alt: Geospatial Icon
+  class: white
+  title: Geospatial Integration
+  description: The Geo4NIEM initiative demonstrates the use of OGC community standards with NIEM.
+  button: Learn more
+
+- # Feedback
+  url: https://github.com/NIEM/NIEM.github.io/issues
+  img: feedback_icon.png
+  img-alt: Feedback and Ideas Icon
+  class: green
+  title: Feedback &amp; Ideas
+  description: We greatly appreciate feedback, thoughts, ideas, and issue submission.
+  button: Submit feedback
