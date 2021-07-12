@@ -28,7 +28,7 @@ The sitemap below shows the cards on the home page and their immediate sub-secti
   <h3>{{ rootPage.title }}</h3>
 
   {{ rootPage.description }}<br/>
-  <a href="{{ rootPage.url | relative_url }}">{{ site.url | relative_url }}{{ rootPage.url }}</a> <br/>
+  <a href="{{ rootPage.url | relative_url }}">{{ rootPage.url | relative_url }}</a> <br/>
 
   {% for link in rootPage.links %}
 
@@ -51,7 +51,7 @@ The sitemap below shows the cards on the home page and their immediate sub-secti
     <div class="box">
       <p>
         {{ sectionPage.description }} <br/>
-        <a href="{{ sectionPage.url | relative_url }}">{{ site.url | relative_url }}{{ sectionPage.url }}</a>
+        <a href="{{ sectionPage.url | relative_url }}">{{ sectionPage.url | relative_url }}</a>
       </p>
 
       {% include page/sitemap-links.html links=sectionPage.links %}

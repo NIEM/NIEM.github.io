@@ -1,8 +1,7 @@
 
 {% comment %}
   ***
-  Given a "url", outputs the page's links (if available) or subdirectories.
-
+  Given a "url", outputs the page's links, if available.
   - "currentURL" - If "url" matches "currentURL", adds classes "active current" to the link.
   - "class" - Additional class(es) to add to non-active links
   ***
@@ -14,31 +13,10 @@
 {% comment %} Assign children links {% endcomment%}
 
 {% if thisPage.links %}
-
-  {% comment %} Links assigned in front matter{% endcomment %}
-  {% assign links = thisPage.links | map: "url" %}
-
-{% else %}
-  
-  {% comment %} Grab subfolders {% endcomment %}
-  {% capture links %}
-    {% include functions/getSubfoldersString.html url=include.url %}
-  {% endcapture %}
-  {% assign links = links | strip | split: "," %}
-
+  {% comment %} A page's children links are defined in the page's front matter {% endcomment %}
+  {% assign urls = thisPage.links | map: "url" %}
 {% endif %}
 
-
-{% for link in links %}
-
-  {% comment %} Grab title from links in case of external links {% endcomment %}
-  {% assign tmp = thisPage.links | where: "url", link | first %}
-  {% assign title = tmp.short %}
-  {% unless title %}
-    {% assign title = tmp.title %}
-  {% endunless %}
-
-  {% include page/sidebar-link.html url=link 
-        class=include.class title=title currentURL=include.currentURL external=link.external %}
-    
+{% for url in urls %}
+  {% include page/sidebar-link.html url=url class=include.class currentURL=include.currentURL %}
 {% endfor %}

@@ -4,11 +4,10 @@
 Outputs a section with its title, description and call to action button.
 
 - The section must come with a url property.
-- If title and/or description are not provided, checks the 
+- If title and/or description are not provided, checks the
   front matter of the corresponding page.  If not there either,
   defaults are provided for title (page name).
 - External links are set to open in a new tab.
-- Also checks for link.newtab == true
 ***
 {% endcomment %}
 
@@ -16,61 +15,15 @@ Outputs a section with its title, description and call to action button.
 
 {% assign linkPage = site.pages | where: "url", link.url | first %}
 
-
-{% comment %} 
-  Assign the title, from input parameter, link's page, or default 
-{% endcomment %}
-{% assign title = link.title %}
-{% unless title %}
-  {% assign title = linkPage.title %}
-  {% unless title %}
-    {% capture title %}
-      {% include functions/getFolderName.html url=link.url %}
-    {% endcapture %}
-    {% assign title = title | strip %}
-  {% endunless %}
-{% endunless %}
-
-{% comment %}
-  Assign the description, from input parameter, link's page, or nothing
-{% endcomment %}
-{% assign description = link.description %}
-{% unless description %}
-  {% assign description = linkPage.description %}
-{% endunless %}
-{% if description %}
-  {% assign description = description %}
-{% endif %}
-    
-{% comment %}
-  Set link to open in new tab if external to site (url contains http or www)
-{% endcomment %}
-{% if link.url contains "http" or link.url contains "www" %}
-  {% unless link contains "http://127.0" %}
-    {% assign target = "target='_blank'" %}
-    {% assign url = link.url %}
-  {% endunless %}
-{% elsif link.newtab == true %}
-  {% assign target = "target='_blank'" %}
-  {% assign url = link.url | relative_url %}
-{% else %}
-  {% assign url = link.url | relative_url %}
-{% endif %}
-
-{% comment %}
-  Get the button text from the front matter. Use 'Learn more' if not defined
-{% endcomment %}
-
-{% if link.button %}
-  {% assign button_text = link.button %}
-{% else %}
-  {% assign button_text = 'Learn more' %}
-{% endif %}
+{% assign title = link.title | default: linkPage.title %}
+{% assign description = link.description | default: linkPage.description %}
+{% assign url = link.url | relative_url %}
+{% assign button_text = link.button | default: "Learn more" %}
 
 <div class="row landing-page-section">
   <div class="section-wrapper">
     <div class="col-lg-8 col-md-8">
-      <div class="section-title"> 
+      <div class="section-title">
         <a {{ target }} href="{{ url }}">
           <span class="content">{{ title }}</span>
         </a>
@@ -81,7 +34,7 @@ Outputs a section with its title, description and call to action button.
       <div class="section-button">
         <a {{ target }} class="btn btn-primary" href="{{ url }}">
           <span class="content">{{ button_text }}</span>
-        </a> 
+        </a>
       </div>
     </div>
   </div>

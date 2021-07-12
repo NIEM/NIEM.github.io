@@ -2,7 +2,7 @@
   title: Implementation Cookbook
   description: A catalog of techniques and methods that help to implement NIEM.
   icon: fa-info
-  links:
+  externalLinks:
   - url: https://github.com/NIEM/Implementation-Cookbook/wiki/Avoid-replicating-data-in-a-NIEM-XML-document
     title: Avoid Replicating Data in a NIEM XML Document
     description: There are several NIEM-specific strategies to avoid replicating data within a NIEM XML document.
@@ -38,4 +38,4 @@ With your help, our goal is for the cookbook to define the many ways NIEM-based 
 
 Remember, NIEM and other data standards are independent of any particular software. However, ensuring NIEM is expressed, defined, and used in various software platforms better enables reusability, portability, and interoperability—which is what this effort is working toward.
 
-{% include icon-list.html links=page.links %}
+{% include icon-list.html links=page.externalLinks %}

@@ -10,23 +10,8 @@
 
 {% assign thisPage = site.pages | where: "url", include.url | first %}
 
-
-{% comment %} Assign children links {% endcomment%}
-
-{% if thisPage.links %}
-
-  {% comment %} Links assigned in front matter{% endcomment %}
-  {% assign links = thisPage.links | map: "url" %}
-
-{% else %}
-  
-  {% comment %} Grab subfolders {% endcomment %}
-  {% capture links %}
-    {% include functions/getSubfoldersString.html url=include.url %}
-  {% endcapture %}
-  {% assign links = links | strip | split: "," %}
-
-{% endif %}
+{% comment %} A page's children links are assigned in it's front matter {% endcomment %}
+{% assign links = thisPage.links | map: "url" %}
 
 <ul class="lastChildren">
 	{% for link in links %}

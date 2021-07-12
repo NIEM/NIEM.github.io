@@ -1,54 +1,26 @@
 
 {% assign links = include.links %}
 
-{% if links %}
+{% if include.links %}
   <ul style="margin-left: 15px;">
-    {% for subLink in links %}
-      {% if subLink.title %}
-        <!-- External link.  Link metadata is provided. -->
-        {% assign linkPage = nil %}
-        {% assign title = subLink.title | append: " [external link]" %}
-        {% assign description = subLink.description %}
-        {% assign url = subLink.url %}
-      {% else %}
-        <!-- Internal link.  Link metadata is available from the page's frontmatter. -->
-        {% assign linkPage = site.html_pages | where: "url", subLink.url | first %}
-        {% assign title = linkPage.title %}
-        {% assign description = linkPage.description %}
-        {% assign url = site.url | append: subLink.url %}
-      {% endif %}
+    {% for link in include.links %}
+      {% assign linkPage = site.html_pages | where: "url", link.url | first %}
+      {% assign title = linkPage.title %}
+      {% assign description = linkPage.description %}
+      {% assign url = link.url %}
 
-      {% if subLink.crossReference %}
+      <li style="padding-left: 15px;">
+        <strong>{{ title }}</strong><br/>
+        <p>
+          {{ description }}<br/>
+          <a href="{{ url | relative_url }}">{{ url | relative_url }}</a>
+        </p>
 
-        <details style="margin-left: -15px">
-          <summary><strong style="padding-left: 15px;">{{ title }} [cross-reference link]</strong></summary>
-          <div class="box">
-            <p>
-              {{ description }} <br/>
-              <a href="{{ url | relative_url }}">{{ url | relative_url }}</a>
-            </p>
-
-            {% include page/sitemap-links.html links=linkPage.links %}
-
-          </div>
-        </details>
-
-      {% else %}
-
-        <li style="padding-left: 15px;">
-          <strong>{{ title }}</strong><br/>
-          <p>
-            {{ description }}<br/>
-            <a href="{{ url | relative_url }}">{{ url | relative_url }}</a>
-          </p>
-
-          {% if linkPage and linkPage.links %}
-            <!-- Recurse on the page's sublinks -->
-            {% include page/sitemap-links.html links=linkPage.links %}
-          {% endif %}
-        </li>
-
-      {% endif %}
+        {% if linkPage and linkPage.links %}
+          <!-- Recurse on the page's sublinks -->
+          {% include page/sitemap-links.html links=linkPage.links %}
+        {% endif %}
+      </li>
 
     {% endfor %}
   </ul>
