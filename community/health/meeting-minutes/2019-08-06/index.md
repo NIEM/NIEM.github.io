@@ -2,6 +2,7 @@
 title: Meeting Minutes - August 6, 2019
 short: August 6, 2019
 description: Future of NIEM Health COI
+icon: fa-pencil
 ---
 
 - TOC

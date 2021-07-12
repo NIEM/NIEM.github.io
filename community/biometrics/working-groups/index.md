@@ -3,6 +3,9 @@ title: "Biometrics Working Groups"
 short: Working Groups
 ---
 
+{:toc}
+- TOC
+
 ## Working Groups
 
 <img align="center" width="40%" src="Biometrics-Collab.png">

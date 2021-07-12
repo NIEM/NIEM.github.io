@@ -3,6 +3,7 @@ title: "NIEM Health 102: An Introduction to Security and Privacy of Protected He
 short: "102: Security and Privacy"
 icon: fa-info
 description: "NIEM Health 102 provides a brief overview of the security and privacy of protected healthcare information (PHI)."
+redirect_from: /health/tutorials/102/
 ---
 
 Produced by the Federal Health Architecture

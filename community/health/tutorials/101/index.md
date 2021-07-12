@@ -3,6 +3,7 @@ title: "NIEM Health 101: An Introduction to Health Information Exchange"
 short: "101: Introduction"
 icon: fa-info
 description: "NIEM Health 101 provides a brief overview of the current health information technology (IT) landscape, related reference exchange and terminology standards, the NIEM Health challenges, and the Federal Health Information Model (FHIM)."
+redirect_from: /health/tutorials/101/
 ---
 
 Produced by the Federal Health Architecture

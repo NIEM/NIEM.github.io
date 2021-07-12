@@ -1,11 +1,16 @@
 ---
-title: NIEM in Health Care
+title: Health Care and NIEM
+short: Health
 description: The NIEM Health Community's primary objective is to identify ways to use existing health IT standards to meet the needs of the NIEM community, all while providing education and awareness about the specific requirements for protecting sensitive health data.
 links:
-  - url: /health/meeting-minutes/
-  - url: /health/tutorials/
-  - url: /health/fha-deliverables/
+  - url: /community/health/meeting-minutes/
+  - url: /community/health/tutorials/
+  - url: /community/health/fha-deliverables/
+redirect_from: /health/
 ---
+
+{:toc}
+- TOC
 
 ## The NIEM Health Community of Interest Overview
 

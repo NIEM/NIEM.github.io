@@ -3,7 +3,11 @@ title: NIEM Health Elements Inventory
 short: Element Inventory
 icon: fa-list
 description: The NIEM Health Elements Inventory is a tentative inventory of healthcare elements and types defined across the NIEM domains. The goal of this exercise is to determine what healthcare-related elements have already been defined across the NIEM Domains, compare those elements for completeness and standards compliance with ONC USCDI and health industry standards, and identify gaps that may need to be filled by NIEM Health definitions.
+redirect_from: /health/tutorials/inventory/
 ---
+
+{:toc}
+- TOC
 
 Cait Ryan, Project Manager
 
@@ -53,27 +57,14 @@ This inventory is not certain to be complete until sufficient review has shaken 
 
 ## NIEM Core (38)
 
-<p><b>nc:MedicalConditionDoctor</b>
-(nc:PersonType)</p>
+**nc:MedicalConditionDoctor** (nc:PersonType) -  A doctor who treats a person for a medical condition.
 
-<p style='margin-left:.5in'><b>Definition</b>: A doctor who treats a person for a medical condition.</p>
+**nc:PatientMedicalFacility** (nc:OrganizationType) - A medical facility receiving patient.</p>
 
-<p><b>nc:PatientMedicalFacility</b>
-(nc:OrganizationType)</p>
-
-<p style='margin-left:.5in'><b>Definition</b>: A medical facility receiving patient.</p>
-
-<p><b>nc:</b><b><span>Person</span></b><span> (nc:PersonType)</span></p>
-
-<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;
-margin-left:.5in;margin-bottom:.0001pt;line-height:normal'><b>Definition</b>: A human being.</p>
-
-<br/>
+**nc:Person** (nc:PersonType) - A human being.
 
 {:.note}
-> Although Person is an object/class defined
-in NIEM Core, this has been included in this specification because it is the
-basis of role of patient, doctor, etc plus many class elements are associated
+> Although Person is an object/class defined in NIEM Core, this has been included in this specification because it is the basis of role of patient, doctor, etc plus many class elements are associated
 with clinical records, e.g. height, weight, etc.
 >
 ><span style='background:yellow'>Likely candidate health elements highlighted.</span>
@@ -550,12 +541,11 @@ href="https://beta.movement.niem.gov/#/details?entityID=nc%3APersonXRayImage"><s
 style='color:blue'>PersonXRayImage</span></a></span></u><span style='mso-fareast-font-family:
 "Times New Roman";mso-bidi-font-family:"Times New Roman";background:yellow;mso-fareast-language:EN-US'> (nc:ImageType)</span></p>
 
-<p><b>nc:MedicalCondition</b> (nc:MedicalConditionType)</p>
+<br/>
 
-<p><b><span>nc:PersonMedicalCondition</span></b><span> (nc:MedicalConditionType) </span></p>
+**nc:MedicalCondition** (nc:MedicalConditionType)
 
-<p style='margin-left:.5in'><span><b>Definition</b>: </span>A state of health
-for a person, on-going or present.</p>
+**nc:PersonMedicalCondition** (nc:MedicalConditionType) - A state of health for a person, on-going or present.
 
 <p style='margin-top:0in;margin-right:0in;margin-bottom:0in;
 margin-left:.5in;margin-bottom:.0001pt;line-height:normal'><b>nc:</b><u><span><a
@@ -592,50 +582,27 @@ margin-left:.5in;margin-bottom:.0001pt;line-height:normal'><b>nc:</b><u><span><a
 href="https://beta.movement.niem.gov/#/details?entityID=nc%3AMedicalConditionText"><span
 style='color:blue'>MedicalConditionText</span></a></span></u><span> (TextType)</span></p>
 
-<p><b>nc:MedicalConditionText</b>
-(nc:TextType)</p>
+<br/>
 
-<p style='margin-left:.5in'><b>Definition</b>: A state of health, on-going or present.</p>
+**nc:MedicalConditionText** (nc:TextType) - A state of health, on-going or present.
 
-<p><b>nc:PersonMedicalDescriptionText</b>
-(nc:TextType)</p>
+**nc:PersonMedicalDescriptionText** (nc:TextType) - </span>A description of the overall health of a person.
 
-<p style='margin-left:.5in'><span><b>Definition</b>: </span>A description of the
-overall health of a person.</p>
+**nc:PersonMedicalFileIndicator** (niem-xs:boolean) - </span>True if a medical history file is known to exist for a person; false otherwise.
 
-<p><b>nc:PersonMedicalFileIndicator</b>
-(niem-xs:boolean)</p>
+**nc:PersonMedicationRequiredText** (nc:TextType) - A medication and dosage required for a person.
 
-<p style='margin-left:.5in'><span><b>Definition</b>: </span>True if a medical
-history file is known to exist for a person; false otherwise.</p>
+**nc:PersonMentalStateText** (nc:TextType) - A mental condition of a person.
 
-<p><b>nc:PersonMedicationRequiredText</b>
-(nc:TextType)</p>
+**nc:PersonLivingIndicator** (niem-xs:boolean) - True if a person is alive; false if a person is dead.
 
-<p style='margin-left:.5in'><b>Definition</b>: A medication and dosage required for a person.</p>
-
-<p><b>nc:PersonMentalStateText</b>
-(nc:TextType) </p>
-
-<p style='margin-left:.5in'><b>Definition: </b>A mental condition of a person.</p>
-
-<p><b>nc:PersonLivingIndicator</b>
-(niem-xs:boolean) </p>
-
-<p style='margin-left:.5in'><b>Definition: </b>True if a person is alive; false if a person is dead.</p>
-
-<p><b>nc:PersonOrganDonorAbstract</b> (abstract) This term has synonym entries</p>
-
-<p style='margin-left:.5in'><b>Definition: </b>A data concept for an organ a person is willing to
-donate upon death.</p>
+**nc:PersonOrganDonorAbstract** (abstract / This term has synonym entries) - A data concept for an organ a person is willing to donate upon death.
 
 <p style='margin-left:.5in'><a href="https://beta.movement.niem.gov/#/details?entityID=nc%3APersonOrganDonorText">PersonOrganDonorText</a> (TextType)</p>
 
 <p style='margin-left:.5in'><a href="https://beta.movement.niem.gov/#/details?entityID=j%3APersonOrganDonorCode">PersonOrganDonorCode</a> (PersonOrganDonorCodeType)</p>
 
-<p><b>nc:PersonInjury</b> (nc:InjuryType) </p>
-
-<p style='margin-left:.5in'><b>Definition: </b>A form of physical harm or damage sustained by a person.</p>
+**nc:PersonInjury** (nc:InjuryType) - A form of physical harm or damage sustained by a person.
 
 <p style='margin-left:.5in'><span><a
 href="https://beta.movement.niem.gov/#/details?entityID=nc%3AInjuryCategoryAbstract">InjuryCategoryAbstract</a></span>
@@ -660,24 +627,13 @@ href="https://beta.movement.niem.gov/#/details?entityID=nc%3AInjurySeverityAbstr
  (abstract) This term has synonym entries</p>
 
 <p style='margin-left:.5in'><span><a
-href="https://beta.movement.niem.gov/#/details?entityID=nc%3AInjurySustainer">InjurySustainer</a></span> (nc:PersonType)
+href="https://beta.movement.niem.gov/#/details?entityID=nc%3AInjurySustainer">InjurySustainer</a></span> (nc:PersonType)</p>
 
-<p><b>nc:PersonBirthDate</b>
-(nc:DateType) </p>
+**nc:PersonBirthDate** (nc:DateType) - A date a person was born.
 
-<p style='margin-left:.5in'><b>Definition: </b>A date a person was born.</p>
+**nc:PersonDeathDate** (nc:DateType) - A date a person died or was declared legally dead.
 
-<p><b>nc:PersonDeathDate</b>
-(nc:DateType) </p>
-
-<p style='margin-left:.5in'><b>Definition: </b>A date a person died or was declared legally dead.</p>
-
-<p><b>nc:PersonBloodTypeAbstract</b>
-(abstract) This
-term has synonym entries</p>
-
-<p style='margin-left:.5in'><b>Definition: </b>A data concept for a blood group and RH factor of a
-person.</p>
+**nc:PersonBloodTypeAbstract** (abstract / This term has synonym entries) - A data concept for a blood group and RH factor of a person.
 
 <p style='margin-left:.5in'>nc:<span><a
 href="https://beta.movement.niem.gov/#/details?entityID=nc%3APersonBloodTypeText">PersonBloodTypeText</a></span>
@@ -691,116 +647,58 @@ href="https://beta.movement.niem.gov/#/details?entityID=j%3APersonBloodTypeCode"
 href="https://beta.movement.niem.gov/#/details?entityID=j%3APersonBloodTypeRapSheetCode">PersonBloodTypeRapSheetCode</a></span>
 (j:PersonBloodTypeCodeType)</p>
 
-<h1>Agriculture</h1>
+## Agriculture
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>Biometrics (2)</h1>
+## Biometrics (2)
 
-<p><b>bio:RadiographImageSeriesCodeText</b>
-(nc:TextType)</p>
+**bio:RadiographImageSeriesCodeText** (nc:TextType) - A kind of Radiograph Image Series. Only integer and periods are in the code text. An example is 8.1.3.9.1.5 for the National Provider Identifier Number of Dentist that treated the patient.
 
-<p style='margin-left:.5in'><b>Definition</b>: A kind of Radiograph Image Series. Only integer and
-periods are in the code text. An example is 8.1.3.9.1.5 for the National
-Provider Identifier Number of Dentist that treated the patient.</p>
+**bio:HealthCommentText** (nc:TextType) - A comment noting any observable health issues impacting
+the data subject during the recording time segment.
 
-<p><b>bio:HealthCommentText</b>
-(nc:TextType) </p>
+## Chemical, Biological, Radiological, and Nuclear
 
-<p style='margin-left:.5in'><b>Definition</b>: A comment noting any observable health issues impacting
-the data subject during the recording time segment.</p>
+[None Defined]
 
-<h1>Chemical, Biological, Radiological, and Nuclear</h1>
+## Cyber (new)
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>Cyber (new)</h1>
+## Emergency Management (6)
 
-<p>[None Defined]</p>
+**em:HospitalStatus** (abstract) - *The top level container element for reporting status of any number of hospitals. The EDXL-HAVE has no independent routing mechanism, so it requires a routing mechanism that is consistent with the EDXL-DE distribution types. It must contain one or more Hospital elements.*
 
-<h1>Emergency Management (6)</h1>
+**em:EMSCensus** (em:TriagePatientCountType) - *A number detailing each triage patient kind the overall hospital currently has.*
 
-<p><b>em:HospitalStatus</b> (abstract)</p>
+- {% include functions/getMovementLink.html qname="em:TriageBlackQuantity" %} (nc:QuantityType) - *A count of the Number of deceased victims;*
+- {% include functions/getMovementLink.html qname="em:TriageGreenQuantity" %} (nc:QuantityType) - *A count of the Number of victims with minor needs*
+- {% include functions/getMovementLink.html qname="em:TriageRedQuantity" %} (nc:QuantityType) - *A count of the Number of victims with immediate needs*
+- {% include functions/getMovementLink.html qname="em:TriageYellowQuantity" %} (nc:QuantityType) - *A count of the Number of victims with delayed needs*
 
-<p style='margin-left:.5in'><b>Definition</b>: The top level container element for reporting status of
-any number of hospitals. The EDXL-HAVE has no independent routing mechanism, so
-it requires a routing mechanism that is consistent with the EDXL-DE
-distribution types. It must contain one or more Hospital elements. </p>
+**em:EMSCapacity** (em:TriagePatientCountType) - A number detailing each triage patient kind the overall hospital can accept.
 
-<p><b>em:EMSCensus</b> (em:TriagePatientCountType) </p>
+- {% include functions/getMovementLink.html qname="em:TriageBlackQuantity" %} (nc:QuantityType) - *A count of the Number of deceased victims;*
+- {% include functions/getMovementLink.html qname="em:TriageGreenQuantity" %} (nc:QuantityType) - *A count of the Number of victims with minor needs*
+- {% include functions/getMovementLink.html qname="em:TriageRedQuantity" %} (nc:QuantityType) - *A count of the Number of victims with immediate needs*
+- {% include functions/getMovementLink.html qname="em:TriageYellowQuantity" %} (nc:QuantityType) - *A count of the Number of victims with delayed needs*
 
-<p style='margin-left:.5in'><b>Definition</b>: A number detailing each triage patient kind the overall hospital currently has.</p>
+**em:AvailableQuantity** (nc:QuantityType) - *A count of the vacant/available beds to which patients can be immediately transported.*
 
-<p style='margin-left:.5in'>em:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3ATriageBlackQuantity">TriageBlackQuantity</a></span>
-(QuantityType) - A count of the Number of deceased
-victims</p>
+**{% include functions/getMovementLink.html qname="em:StaffingCode" %}** (have-codes:AvailabilityStatusCodeType) - *A status indicating the staffing levels at the hospital*
 
-<p style='margin-left:.5in'>em:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3ATriageGreenQuantity">TriageGreenQuantity</a></span>
-(QuantityType) - A count of the Number of victims
-with minor needs</p>
+**{% include functions/getMovementLink.html qname="em:EOCPlanCode" %}** (have-codes:EOCPlanCodeType) - *A code indicating whether the hospital has activated its Emergency Operations Plan (EOP)*
 
-<p style='margin-left:.5in'>em:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3ATriageRedQuantity">TriageRedQuantity</a></span>
-(QuantityType) - A count of the Number of victims
-with immediate needs</p>
+## Grants
 
-<p style='margin-left:.5in'>em:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3ATriageYellowQuantity">TriageYellowQuantity</a></span>
-(QuantityType) - A count of the Number of victims
-with delayed needs</p>
+[None Defined]
 
-<p><b>em:EMSCapacity</b> (em:TriagePatientCountType) </p>
+## Housing (new)
 
-<p style='margin-left:.5in'><b>Definition</b>: A number detailing each triage patient kind the overall
-hospital can accept.</p>
+[None Defined]
 
-<p style='margin-left:.5in'>em:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3ATriageBlackQuantity">TriageBlackQuantity</a></span>
-(QuantityType) - A count of the Number of deceased
-victims</p>
-
-<p style='margin-left:.5in'>em:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3ATriageGreenQuantity">TriageGreenQuantity</a></span>
-(QuantityType) - A count of the Number of victims
-with minor needs</p>
-
-<p style='margin-left:.5in'>em:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3ATriageRedQuantity">TriageRedQuantity</a></span>
-(QuantityType) - A count of the Number of victims
-with immediate needs</p>
-
-<p style='margin-left:.5in'>em:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3ATriageYellowQuantity">TriageYellowQuantity</a></span>
-(QuantityType) - A count of the Number of victims
-with delayed needs</p>
-
-<p><b>em:AvailableQuantity</b>
-(nc:QuantityType) </p>
-
-<p style='margin-left:.5in'><b>Definition</b>: A count of the vacant/available beds to which patients can be immediately transported.</p>
-
-<p><b>em:<a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3AStaffingCode">StaffingCode</a></b> (have-codes:Aan)</p>
-
-<p style='margin-left:.5in'><b>Definition:</b> A status indicating the staffing levels at the hospital</p>
-
-<p><b>em:<a
-href="https://beta.movement.niem.gov/#/details?entityID=em%3AEOCPlanCode">EOCPlanCode</a></b> (have-codes:Ean></p>
-
-<p style='margin-left:.5in'><b>Definition:</b> A code indicating whether the hospital has activated its
-Emergency Operations Plan (EOP)</p>
-
-<h1>Grants</h1>
-
-<p>[None Defined]</p>
-
-<h1>Housing (new)</h1>
-
-<p>[None Defined]</p>
-
-<h1>Human Services (75)</h1>
+## Human Services (75)
 
 <p><b>hs:Patient</b> (hs:PatientType) </p>
 
@@ -831,7 +729,7 @@ href="https://beta.movement.niem.gov/#/details?entityID=hs%3ASpeciesAbstract">Sp
  (abstract) This term has synonym entries</p>
 
 <p style='margin-left:.5in'><span><a
-href="https://beta.movement.niem.gov/#/details?entityID=hs%3ACustodialEntity">CustodialEntity</a></span> (nc:EntityType)p>
+href="https://beta.movement.niem.gov/#/details?entityID=hs%3ACustodialEntity">CustodialEntity</a></span> (nc:EntityType)</p>
 
 <p>hs:<b>MedicalSummary</b>
 (hs:MedicalSummaryType) </p>
@@ -882,11 +780,10 @@ href="https://beta.movement.niem.gov/#/details?entityID=hs%3AObservationPrimaryI
 href="https://beta.movement.niem.gov/#/details?entityID=hs%3AMedicalEncounter">MedicalEncounter</a></span> (nc:ActivityType) </p>
 
 <p style='margin-left:.5in'>hs:<span><a
-href="https://beta.movement.niem.gov/#/details?entityID=hs%3AServiceEvent">ServiceEvent</a></span> (nc:ActivityType)p>
+href="https://beta.movement.niem.gov/#/details?entityID=hs%3AServiceEvent">ServiceEvent</a></span> (nc:ActivityType)</p>
 
 <p>hs:<b>PatientLocationAbstract</b>
-(abstract) This
-term has synonym entries</p>
+(abstract) This term has synonym entries</p>
 
 <p style='margin-left:.5in'><b>Definition: </b>A data concept for a location of a patient.</p>
 
@@ -1292,7 +1189,7 @@ href="https://beta.movement.niem.gov/#/details?entityID=hs%3AObservationCategory
 <p style='margin-left:.5in'><b>Definition: </b>A kind of an observation (e.g. a diagnosis, lab
 results, allergy indications, etc.).</p>
 
-<h1>Immigration</h1>
+## Immigration
 
 <b> [N.B. The following "provider" element is <i>NOT</i> a healthcare element. I've included it as a warning.]</b>
 
@@ -1300,19 +1197,19 @@ results, allergy indications, etc.).</p>
 
 <p style='margin-left:.5in'><b>Definition: </b>A person who has another person as a dependent.</p>
 
-<h1>Infrastructure Protection</h1>
+## Infrastructure Protection
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>Intelligence</h1>
+## Intelligence
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>International Trade</h1>
+## International Trade
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>Justice (157+61)</h1>
+## Justice (157+61)
 
 <p>[N.B. Justice has 61 MentalHealth elements defined that are
 not documented here, yet.]</p>
@@ -1330,7 +1227,7 @@ that receives patient.</p>
 medical facility.</p>
 
 <p style='margin-left:.5in'><span><a
-href="https://beta.movement.niem.gov/#/details?entityID=j%3AEMSAgency">EMSAgency</a></span> (nc:OrganizationType)<p>
+href="https://beta.movement.niem.gov/#/details?entityID=j%3AEMSAgency">EMSAgency</a></span> (nc:OrganizationType)</p>
 
 <p><b>j:InjuredTransportationSourceAbstract
 </b>(abstract) This term has synonym entries</p>
@@ -1555,10 +1452,10 @@ href="https://beta.movement.niem.gov/#/details?entityID=j%3AAlcoholUseAssessment
 (TextType)</p>
 
 <p>j:<span><b><a
-href="https://beta.movement.niem.gov/#/details?entityID=j%3ASubjectAssessmentMentalHealthAssessment">SubjectAssessmentMentalHealthAssessment</a></b></span> (j:MentalHealthAssessmentType)p>
+href="https://beta.movement.niem.gov/#/details?entityID=j%3ASubjectAssessmentMentalHealthAssessment">SubjectAssessmentMentalHealthAssessment</a></b></span> (j:MentalHealthAssessmentType)</p>
 
 <p>j:<span><b><a
-href="https://beta.movement.niem.gov/#/details?entityID=j%3ASubjectAssessmentMentalHealthAssessment">SubjectMentalHealthAssessment</a></b></span> (j:MentalHealthAssessmentType)p>
+href="https://beta.movement.niem.gov/#/details?entityID=j%3ASubjectAssessmentMentalHealthAssessment">SubjectMentalHealthAssessment</a></b></span> (j:MentalHealthAssessmentType)</p>
 
 <p>j:<b><a
 href="https://beta.movement.niem.gov/#/details?entityID=j%3AMentalHealthAssessment">MentalHealthAssessment</a></b> (j:MentalHealthAssessmentType)</p>
@@ -1945,36 +1842,36 @@ href="https://beta.movement.niem.gov/#/details?entityID=j%3APersonHospitalBirthI
 
 <p style='margin-left:.5in'><b>Definition:</b> True if a person was born in a hospital; false otherwise.</p>
 
-<h1>Maritime</h1>
+## Maritime
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>Military Operations</h1>
+## Military Operations
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>Public Safety Canada (new)</h1>
+## Public Safety Canada (new)
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>Screening (1)</h1>
+## Screening (1)
 
-<p><b>Scr:PersonMedicalConditionStatus</b> (scr:PersonMedicalConditionStatusType) </p>
+<p><b>scr:PersonMedicalConditionStatus</b> (scr:PersonMedicalConditionStatusType) </p>
 
 <p style='margin-left:.5in'><b>Definition: </b>A status or name of the PERSONs health problem and physical limitation that an officer should be cautious of.</p>
 
-<p style='margin-left:.5in'>Scr:<span><a
+<p style='margin-left:.5in'>scr:<span><a
 href="https://beta.movement.niem.gov/#/details?entityID=scr%3APersonMedicalConditionStatusCodeAbstract">PersonMedicalConditionStatusCodeAbstract</a></span>
  (abstract) This term has synonym entries</p>
 
-<h1>Statistics (new)</h1>
+## Statistics (new)
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>Surface Transportation</h1>
+## Surface Transportation
 
-<p>[None Defined]</p>
+[None Defined]
 
-<h1>USAID</h1>
+## USAID
 
-<p>[None Defined]</p>
+[None Defined]

@@ -1,7 +1,8 @@
 ---
-title: Meeting Minutes – April 9, 2019
+title: Meeting Minutes - April 9, 2019
 short: April 9, 2019
 description: Need for Health IT in Disaster Response; Patient Unified Lookup System for Emergencies (PULSE)
+icon: fa-pencil
 ---
 
 - TOC
@@ -13,7 +14,7 @@ description: Need for Health IT in Disaster Response; Patient Unified Lookup Sys
 
 **Guest presenter**: Mariann Yeager, CEO of The Sequoia Project
 
-**Topic**:  PULSE – Supporting a Nationwide Disaster Response System Slide Presentation
+**Topic**:  PULSE - Supporting a Nationwide Disaster Response System Slide Presentation
 
 **Length**:  39:35 minutes
 
@@ -118,7 +119,7 @@ Funding provided by HHS Idea Lab to look at core technical approach and requirem
 - Only information that is a match based on basic information provided individual can be selected.
 - Information is now queued for the attending physician and housed only for a period provided by the state.
 
-### PULSE Pilot Use Case – – Based on CA fires
+### PULSE Pilot Use Case - - Based on CA fires
 
 - Emergency or disaster occurs
 - Request made to EMSA to activate PULSE

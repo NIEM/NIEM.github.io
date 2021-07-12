@@ -3,6 +3,7 @@ title: "NIEM Health 201: Architecting NIEM Health IEPDs Using Health Information
 short: "201: NIEM Health IEPDs"
 icon: fa-info
 description: "NIEM Health 201 demonstrates how to use health IT standard information models to map NIEM Health use case requirements to NIEM elements and health information exchange standards elements."
+redirect_from: /health/tutorials/201/
 ---
 
 Produced by the Federal Health Architecture

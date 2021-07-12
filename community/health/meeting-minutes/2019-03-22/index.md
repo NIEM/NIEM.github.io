@@ -1,7 +1,8 @@
 ---
-title: Meeting Minutes – March 22, 2019
+title: Meeting Minutes - March 22, 2019
 short: March 22, 2019
 description: NIEM in Canada; Information Exchange Framework Applied to Structured Data
+icon: fa-pencil
 ---
 
 - TOC

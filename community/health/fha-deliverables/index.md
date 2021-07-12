@@ -1,6 +1,7 @@
 ---
 title: Final Report for FHA NIEM Health
 short: FHA Final Report
+redirect_from: /health/fha-deliverables/
 ---
 
 **Produced by the Federal Health Architecture**
@@ -18,6 +19,9 @@ Brian Handspicker
 - [Final Report for FHA NIEM Health](./assets/FHA-NIEM-Health-Final-Report.docx)
 - [NIEM Health Terminology](./assets/NH-Terminology.docx)
 - [NIEM Health Scenarios](./assets/NIEM-Health-Scenario-Catalogue.pptx)
+
+{:toc}
+- TOC
 
 ## Introduction
 

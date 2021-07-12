@@ -1,7 +1,8 @@
 ---
-title: Meeting Minutes – January 29, 2019
+title: Meeting Minutes - January 29, 2019
 short: January 29, 2019
 description: General Update; Protecting Health Information
+icon: fa-pencil
 ---
 
 - TOC
@@ -68,7 +69,7 @@ Cait Ryan
     - This includes feedback and subject matter expertise
     - Explore what a NIEM registry looks and feels like
 - NIEM Health Follow Up:
-  - In motion – Talking with the Coast Guard regarding how they handle neurotoxin reports
+  - In motion - Talking with the Coast Guard regarding how they handle neurotoxin reports
     - Would like someone from the Coast Guard to present to the NIEM COI
   - ACF, regarding HIPAA and Privacy Concerns,
   - Justice, regarding Opioid Use Cases
@@ -104,7 +105,7 @@ Cait Ryan
   - Reformat the COI to facilitate collaboration
     - Presentations by NIEM Health COI demonstrating the ways they've leveraged NIEM to solve use case
     - Presentations by HIT Community educating the NIEM Community of existing initiatives with overlapping interests
-    - Cait invites participants to share about scenarios and areas of interest, and to be part of a presentation to this forum – the schedule can be made flexible to accommodate
+    - Cait invites participants to share about scenarios and areas of interest, and to be part of a presentation to this forum - the schedule can be made flexible to accommodate
 
 ### Existing NIEM Health-related Elements
 
@@ -120,7 +121,7 @@ Brian Handspicker
 - Few defined based on HL7 Health IT standards, or did not reflect the entirety of HL7 standards for the element being defined in NIEM
 - This made it challenging to map cleanly between NIEM IEPDs and HL7 messages
 
-### NIEM Health Modeling – USCDI, FHIM, NIEM and Health IT Standards
+### NIEM Health Modeling - USCDI, FHIM, NIEM and Health IT Standards
 
 Brian Handspicker
 
@@ -132,7 +133,7 @@ Brian Handspicker
     - MU Common elements are supported by HL7 through the Consolidated Care Document Architecture (C-CDA) and Fast Healthcare Interoperability Resources (FHIR)
   - Most existing NIEM healthcare elements are not conformant with health IT standards
     - The challenge is to map existing NIEM Healthcare elements to the healthcare standards or, when that cannot be done, define the minimum subset of healthcare elements for NIEM so they align with healthcare standards
-  - FHIM provides a common authoritative source of health standards information modeling – a model Rosetta Stone
+  - FHIM provides a common authoritative source of health standards information modeling - a model Rosetta Stone
     - FHIM is being used as a tool, as opposed to a solution, to help with the mapping
 
 ### Cross-Technology Modeling using Authoritative Sources
@@ -154,13 +155,13 @@ Cait Ryan
 
 - February 19, 2019
   - The Prescription Monitoring Information eXchange (PMIX), a NIEM-based Standard
-    - Presenter – Jean Hall, PMIX
+    - Presenter - Jean Hall, PMIX
 - March 1029 (TBD)
   - Canadian Public Safety; Privacy and Security
-    - Presenter – Vijay Mehra, KYM Advisors
+    - Presenter - Vijay Mehra, KYM Advisors
 - April 2019 (TBD)
   - The Patient Unified Lookup System for Emergencies (PULSE)
-    - Presenter – Marianne Yeager, The Sequoia Project
+    - Presenter - Marianne Yeager, The Sequoia Project
 - Cait encourages participant to invite their colleagues
 
 ### Care to Share?
@@ -171,17 +172,17 @@ Cait Ryan
 - Participants are encouraged to mention use cases they'd like to discuss and/or explore
 - Participants are asked if there are Health IT initiatives they would like to invite as presenters
 - Contact information is shared
-  - Cait Ryan – <cryan@irishealthsolutions.com>
-  - Brian Handspicker – <bhandspicker@irishealthsolutions.com>
+  - Cait Ryan - <cryan@irishealthsolutions.com>
+  - Brian Handspicker - <bhandspicker@irishealthsolutions.com>
 
 ### The Issue of Protecting Health Information
 
 Bryan Handspicker, Regina Beach, and Marco Demartin
 
 - Three tutorial documents were developed over the last year
-  - 101 – An introduction to Health Information Exchange (HIE) providing a NIEM COI-focused explanation of the health IT ecosystem, laws, regulations, and standards
-  - 102 – An introduction to Security and Privacy of Protected Healthcare Information (PHI) discussing HIPAA and Privacy and Security of PHI
-  - 201 – Architecting NIEM IEPDs using Health Information Models (HIM) providing guidance for identifying health terminologies, values, and code sets
+  - 101 - An introduction to Health Information Exchange (HIE) providing a NIEM COI-focused explanation of the health IT ecosystem, laws, regulations, and standards
+  - 102 - An introduction to Security and Privacy of Protected Healthcare Information (PHI) discussing HIPAA and Privacy and Security of PHI
+  - 201 - Architecting NIEM IEPDs using Health Information Models (HIM) providing guidance for identifying health terminologies, values, and code sets
     - Use is made of the Federal Health Information Model (FHIM) as a tool as part of the NIEM IEPD lifecycle
 
 ### NIEM Health 102
@@ -365,7 +366,7 @@ Cait Ryan
 
 - February 19 at 2:00 PM ET
   - PMIX a NIEM Based Standard
-    - Presenter – Jean Hall, PMIX
+    - Presenter - Jean Hall, PMIX
 - The Prescription Monitoring Information Exchange (PMIX) National Architecture enables interoperability between systems PDMPs use for interstate exchange of PDMP data
 - PMIX got it's start with NIEM and has since evolved into its own program
 - Topics include:
@@ -377,8 +378,8 @@ Cait Ryan
 Thanks for Coming
 Cait Ryan
 - Contact information is shared
-  - Cait Ryan – <cryan@irishealthsolutions.com>
-  - Brian Handspicker – <bhandspicker@irishealthsolutions.com>
+  - Cait Ryan - <cryan@irishealthsolutions.com>
+  - Brian Handspicker - <bhandspicker@irishealthsolutions.com>
 - Participant asks if the spreadsheet can be share to which  Regina Beach affirms but advises that the spreadsheet is in draft form
 - Regina shares her contact information, <rbeach@irishealthsolutions.com>
 - Cait confirms she will reply to those invited to the meeting with Regina's contact information
