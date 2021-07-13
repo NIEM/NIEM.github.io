@@ -672,23 +672,23 @@ the data subject during the recording time segment.
 
 **em:EMSCensus** (em:TriagePatientCountType) - *A number detailing each triage patient kind the overall hospital currently has.*
 
-- {% include functions/getMovementLink.html qname="em:TriageBlackQuantity" %} (nc:QuantityType) - *A count of the Number of deceased victims;*
-- {% include functions/getMovementLink.html qname="em:TriageGreenQuantity" %} (nc:QuantityType) - *A count of the Number of victims with minor needs*
-- {% include functions/getMovementLink.html qname="em:TriageRedQuantity" %} (nc:QuantityType) - *A count of the Number of victims with immediate needs*
-- {% include functions/getMovementLink.html qname="em:TriageYellowQuantity" %} (nc:QuantityType) - *A count of the Number of victims with delayed needs*
+- {% include functions/getMovementElementURL.html qname="em:TriageBlackQuantity" %} (nc:QuantityType) - *A count of the Number of deceased victims;*
+- {% include functions/getMovementElementURL.html qname="em:TriageGreenQuantity" %} (nc:QuantityType) - *A count of the Number of victims with minor needs*
+- {% include functions/getMovementElementURL.html qname="em:TriageRedQuantity" %} (nc:QuantityType) - *A count of the Number of victims with immediate needs*
+- {% include functions/getMovementElementURL.html qname="em:TriageYellowQuantity" %} (nc:QuantityType) - *A count of the Number of victims with delayed needs*
 
 **em:EMSCapacity** (em:TriagePatientCountType) - A number detailing each triage patient kind the overall hospital can accept.
 
-- {% include functions/getMovementLink.html qname="em:TriageBlackQuantity" %} (nc:QuantityType) - *A count of the Number of deceased victims;*
-- {% include functions/getMovementLink.html qname="em:TriageGreenQuantity" %} (nc:QuantityType) - *A count of the Number of victims with minor needs*
-- {% include functions/getMovementLink.html qname="em:TriageRedQuantity" %} (nc:QuantityType) - *A count of the Number of victims with immediate needs*
-- {% include functions/getMovementLink.html qname="em:TriageYellowQuantity" %} (nc:QuantityType) - *A count of the Number of victims with delayed needs*
+- {% include functions/getMovementElementURL.html qname="em:TriageBlackQuantity" %} (nc:QuantityType) - *A count of the Number of deceased victims;*
+- {% include functions/getMovementElementURL.html qname="em:TriageGreenQuantity" %} (nc:QuantityType) - *A count of the Number of victims with minor needs*
+- {% include functions/getMovementElementURL.html qname="em:TriageRedQuantity" %} (nc:QuantityType) - *A count of the Number of victims with immediate needs*
+- {% include functions/getMovementElementURL.html qname="em:TriageYellowQuantity" %} (nc:QuantityType) - *A count of the Number of victims with delayed needs*
 
 **em:AvailableQuantity** (nc:QuantityType) - *A count of the vacant/available beds to which patients can be immediately transported.*
 
-**{% include functions/getMovementLink.html qname="em:StaffingCode" %}** (have-codes:AvailabilityStatusCodeType) - *A status indicating the staffing levels at the hospital*
+**{% include functions/getMovementElementURL.html qname="em:StaffingCode" %}** (have-codes:AvailabilityStatusCodeType) - *A status indicating the staffing levels at the hospital*
 
-**{% include functions/getMovementLink.html qname="em:EOCPlanCode" %}** (have-codes:EOCPlanCodeType) - *A code indicating whether the hospital has activated its Emergency Operations Plan (EOP)*
+**{% include functions/getMovementElementURL.html qname="em:EOCPlanCode" %}** (have-codes:EOCPlanCodeType) - *A code indicating whether the hospital has activated its Emergency Operations Plan (EOP)*
 
 ## Grants
 

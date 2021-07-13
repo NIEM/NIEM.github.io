@@ -1,0 +1,6 @@
+{% assign searchTerms = include.terms | replace: " ", "%20" %}
+{% if include.prefix %}
+  {% assign domainName = site.data.namespaces[include.prefix].name %}
+  {% assign filter = '&selectedFacets=domain:"' | append: domainName | append: '"' %}
+{% endif %}
+<a href='https://beta.movement.niem.gov/#/results?q={{ searchTerms }}{{ filter }}'>{{ include.terms }}</a>

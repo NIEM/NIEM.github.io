@@ -1,0 +1,161 @@
+
+nc:
+  prefix: nc
+  name: Core
+  style: Core
+  terms:
+    - Person
+    - Location
+    - Document
+    - Item
+    - Name
+    - Organization
+    - Facility
+    - Activity
+    - Contact
+    - Address
+    - Device
+    - Status
+    - Binary
+    - Obligation
+    - Unit
+ag:
+  prefix: ag
+  name: Agriculture
+  style: Domain
+  terms:
+    - Acreage
+    - Geospatial
+    - Modified
+    - Crop
+    - Reason
+biom:
+  prefix: biom
+  name: Biometrics
+  style: Domain
+  terms:
+    - Image
+    - Minutiae
+    - Ridge
+    - Segment
+    - Feature
+cbrn:
+  prefix: cbrn
+  name: Chemical, Biological, Radiological, Nuclear
+  style: Domain
+  terms:
+    - Data
+    - Rad
+    - File
+    - Time
+    - Rate
+em:
+  prefix: em
+  name: Emergency Management
+  style: Domain
+  terms:
+    - Alarm
+    - Notification
+    - Resource
+    - Event
+    - Alert
+hs:
+  prefix: hs
+  name: Human Services
+  style: Domain
+  terms:
+    - Juvenile
+    - Child
+    - Case
+    - Support
+    - Enforcement
+im:
+  prefix: im
+  name: Immigration
+  style: Domain
+  terms:
+    - Alien
+    - Benefit
+    - Immigration
+    - Program
+    - Role
+intel:
+  prefix: intel
+  name: Intelligence
+  style: Domain
+  terms:
+    - Person
+    - Agency
+    - Subject
+    - Interest
+    - Handling
+ip:
+  prefix: ip
+  name: Infrastructure Protection
+  style: Domain
+  terms:
+    - Asset
+    - Sector
+    - Segment
+    - Sub
+    - Name
+it:
+  prefix: it
+  name: International Trade
+  style: Domain
+  terms:
+    - Transport
+    - Goods
+    - Means
+    - Location
+    - Container
+j:
+  prefix: j
+  name: Justice
+  style: Domain
+  terms:
+    - Subject
+    - Person
+    - Assessment
+    - Hearing
+    - Parole
+m:
+  prefix: m
+  name: Maritime
+  style: Domain
+  terms:
+    - Vessel
+    - Port
+    - Location
+    - Cargo
+    - Crew
+mo:
+  prefix: mo
+  name: Military Operations
+  style: Domain
+  terms:
+    - Unit
+    - Location
+    - Event
+    - Observed
+    - Object
+scr:
+  prefix: scr
+  name: Screening
+  style: Domain
+  terms:
+    - Person
+    - Status
+    - Encounter
+    - Classification
+    - Document
+st:
+  prefix: st
+  name: Surface Transportation
+  style: Domain
+  terms:
+    - Roadway
+    - Traffic
+    - Location
+    - Annual
+    - Average
