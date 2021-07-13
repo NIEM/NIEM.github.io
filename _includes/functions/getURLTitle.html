@@ -1,20 +1,20 @@
 
-{% comment %}
+{%- comment -%}
   Returns:
   - "Home" if given url = "/"
   - "Not found" if bad url
   - page.short if front matter variable exists
   - page.title otherwise
-{% endcomment %}
+{%- endcomment -%}
 
-{% if include.url == "/" %}
-  {{ "Home" }}
-{% else %}
-  {% assign pg = site.pages | where: "url", include.url | first %}
-  {% if pg %}
-    {% assign title = pg.short | default: pg.title %}
-    {{ title }}
-  {% else %}
-    {{ "Not found" }}
-  {% endif %}
-{% endif %}
+{%- if include.url == "/" -%}
+  {{- "Home" -}}
+{%- else -%}
+  {%- assign pg = site.pages | where: "url", include.url | first -%}
+  {%- if pg -%}
+    {%- assign title = pg.short | default: pg.title -%}
+    {{- title -}}
+  {%- else -%}
+    {{- "Not found" -}}
+  {%- endif -%}
+{%- endif -%}
