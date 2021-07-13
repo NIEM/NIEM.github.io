@@ -6,7 +6,7 @@ Given input parameter "url", returns the name of the last folder.
 {% endcomment %}
 
 {% capture name_parentURL %}
-  {% include functions/getParentURL.html url=include.url %}
+  {% include functions/getURLParent.html url=include.url %}
 {% endcapture %}
 {% assign name_parentURL = name_parentURL | strip %}
 

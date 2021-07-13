@@ -1,5 +1,72 @@
 
-<div class="prev-next">
-  {% include page/nav-previous.html url=page.url %}
-  {% include page/nav-next.html url=page.url %}
-</div>
+{%- comment -%} Add navigation controls for prev | up | next buttons to bottom of pages {%- endcomment -%}
+
+{%- if page.nav != false -%}
+
+  <hr/>
+  <div id="nav-controls" class="text-center">
+
+  {%- comment -%} Previous button {%- endcomment -%}
+  {%- capture prevTitleURL -%}
+    {%- include functions/getURLPrev.html url=page.url -%}
+  {%- endcapture -%}
+  {% assign prevTitleURLArray = prevTitleURL | strip | split: "||" -%}
+
+  {%- if prevTitleURLArray[1] -%}
+    <a class="btn btn-primary pull-left" href="{{ prevTitleURLArray[1] | relative_url }}">
+      <span class="icon fa fa-backward fa-sm"></span>
+      <span class="content">{{ prevTitleURLArray[0] }}</span>
+    </a>
+  {%- else -%}
+    <a class="btn btn-primary pull-left disabled" href="">
+      <span class="icon fa fa-backward fa-sm"></span>
+      <span class="content">Previous section</span>
+    </a>
+  {%- endif -%}
+
+  {%- comment -%} Up button {%- endcomment -%}
+  {%- capture parentURL -%}{%- include functions/getURLParent.html url=page.url -%}{%- endcapture -%}
+  {% assign parentURL = parentURL | strip -%}
+  {% assign parent = site.pages | where: "url", parentURL | first -%}
+  {% assign parentLabel = parent.short | default: parent.title -%}
+
+  {%- if parentURL -%}
+    <a class="btn btn-primary" href="{{ parentURL | relative_url }}">
+      <span class="icon fa fa-caret-up fa-sm"></span>
+      <span class="content">{{ parentLabel }}</span>
+    </a>
+  {%- endif -%}
+
+  {%- comment -%} Down (if available) or next button {%- endcomment -%}
+  {%- if page.links -%}
+    {% assign childURL = page.links[0].url %}
+    {% capture childLabel %}{% include functions/getURLTitle.html url=childURL %}{%- endcapture -%}
+  {%- endif -%}
+
+  {%- if childURL -%}
+    <a class="btn btn-primary pull-right" href="{{ childURL | relative_url }}">
+      <span class="icon fa fa-caret-down fa-sm"></span>
+      <span class="content">{{ childLabel }}</span>
+    </a>
+  {%- else -%}
+    {%- comment -%} No child links.  Compute the next section. {%- endcomment -%}
+    {%- capture nextTitleURL -%}{%- include functions/getURLNext.html url=page.url -%}{%- endcapture -%}
+    {% assign nextTitleURLArray = nextTitleURL | strip | split: "||" -%}
+
+    {%- if nextTitleURLArray[1] -%}
+      <a class="btn btn-primary pull-right" href="{{ nextTitleURLArray[1] | relative_url }}">
+        <span class="icon fa fa-forward fa-sm"></span>
+        <span class="content">{{ nextTitleURLArray[0] }}</span>
+      </a>
+    {%- else -%}
+      <a class="btn btn-primary pull-right disabled" href="">
+        <span class="icon fa fa-forward fa-sm"></span>
+        <span class="content">Next section</span>
+      </a>
+    {%- endif -%}
+
+  {%- endif -%}
+
+  </div>
+
+{%- endif -%}

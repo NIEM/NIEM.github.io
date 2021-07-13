@@ -1,0 +1,38 @@
+
+{% comment %}
+  Finds the sibling of the given url in the parent page's page.links front matter.
+  -- "url"
+  -- "increment": 1 for next sibling link, -1 for previous sibling link
+  -- "recurse": Default assumes true and will recurse upwards.  Set to false to stay within the parent.
+  Returns string "TITLE(or short title if available)||URL"
+{% endcomment %}
+
+{%- capture parentURL -%}{%- include functions/getURLParent.html url=include.url -%}{%- endcapture -%}
+{% assign parentURL = parentURL | strip %}
+{% assign parentPage = site.pages | where: "url", parentURL | first %}
+
+{% if parentPage %}
+  {% for link in parentPage.links %}
+    {% if link.url == include.url %}
+      {% assign index = forloop.index0 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+  {% assign siblingIndex = index | plus: include.increment %}
+
+  {% if siblingIndex >= 0 and siblingIndex < parentPage.links.size %}
+    {% comment %} sibling found {% endcomment %}
+    {% assign siblingURL = parentPage.links[siblingIndex].url %}
+    {%- capture title -%}{%- include functions/getLinkTitle.html url=siblingURL -%}{%- endcapture -%}
+    {{ title | strip }}||{{ siblingURL }}
+
+  {% elsif include.recurse != false %}
+    {% include functions/getURLSibling.html url=parentURL increment=include.increment recurse=true %}
+
+  {% endif %}
+
+{% else %}
+  {{ nil }}
+
+{% endif %}
