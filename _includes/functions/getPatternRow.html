@@ -12,7 +12,7 @@ Returns a row for the Patterns table for the given "url".
 
 {% comment %} Get the title or short title of the page {% endcomment %}
 {% capture title %}
-  {% include functions/getLinkTitle.html url=include.url %}
+  {% include functions/getURLTitle.html url=include.url %}
 {% endcapture %}
 {% assign title = title | strip %}
 

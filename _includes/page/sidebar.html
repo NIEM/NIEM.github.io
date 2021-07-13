@@ -1,88 +1,9 @@
 
-{% assign pageUrl = page.url %}
-
-{% assign pathSegments = pageUrl | split: "/" %}
-{% assign tmpURL = "" %}
-{% comment %} Determine when the side menu starts {% endcomment %}
-{% assign menuDepth = 1 %}
-{% assign pathSegmentsCount = pathSegments.size %}
-{% assign reverseMenuDepth = pathSegmentsCount | minus:menuDepth %}
 
 <div class="section-nav list-group">
-
-  {% assign tmpURL = "" %}
-
-  {% comment %} Opening tags loop {% endcomment %}
-  {% for segment in pathSegments %}
-    {% assign parentURL = tmpURL %}
-    {% assign tmpURL = tmpURL | append: segment | append: "/" %}
-    {% if forloop.index > menuDepth %}
-      <ul class="nav-ul-start">
-      {% assign liClass = "" %}
-
-      {% capture menuHasChildren %}
-        {% include functions/getURLHasChildren.html url=tmpURL %}
-      {% endcapture %}
-      {% assign menuHasChildren = menuHasChildren | strip %}
-
-      {% if menuHasChildren == "true" %}
-        {% assign liClass = liClass | append: " expand" %}
-      {% endif %}
-      {% if forloop.last %}
-        {% assign liClass = liClass | append: " active" %}
-      {% endif %}
-        {% capture hasYoungerSibilings %}
-          {% include functions/getURLHasChildren.html url=parentURL %}
-        {% endcapture %}
-        {% assign hasYoungerSibilings = hasYoungerSibilings | strip %}
-        {% if hasYoungerSibilings == "true" %}
-          {% include page/sidebar-younger-sibilings.html url=parentURL class="sub" urlToExclude=tmpURL %}
-        {% endif %}
-        <li class=" {{ liClass }} ">
-        {% include page/sidebar-link-tag.html url=tmpURL %}
-        {% if forloop.last %}
-          {% capture hasChildren %}
-            {% include functions/getURLHasChildren.html url=pageUrl %}
-          {% endcapture %}
-          {% assign hasChildren = hasChildren | strip %}
-
-          {% if hasChildren == "true" %}
-            {% include page/sidebar-children.html url=pageUrl class="sub" %}
-          {% endif %}
-        {% endif %}
-    {% endif %}
-  {% endfor %}
-
-  {% comment %} Closing tags loop {% endcomment %}
-  {% assign reverseUrl = pageUrl %}
-  {% for segment in pathSegments reversed %}
-    {% if forloop.index < reverseMenuDepth %}
-        </li>
-        {% comment %}
-          urlToExclude is used to avoid multiple rendering of the parent menu
-        {% endcomment %}
-        {% assign urlToExclude = reverseUrl %}
-        {% comment %}
-          This is just to ensure similar segments don't get truncated all together
-        {% endcomment %}
-        {% assign reverseUrlSafety = reverseUrl | append: '*@*' %}
-        {% comment %}
-          Define what to truncate from the url
-        {% endcomment %}
-        {% assign sectionToRemove = {{segment}} | append: '/*@*'  %}
-        {% assign reverseUrl = reverseUrlSafety | replace: sectionToRemove, ""  %}
-        {% capture hasOlderSibilings %}
-          {% include functions/getURLHasChildren.html url=reverseUrl %}
-        {% endcapture %}
-        {% assign hasOlderSibilings = hasOlderSibilings | strip %}
-
-        {% if hasOlderSibilings == "true" %}
-          {% include page/sidebar-older-sibilings.html url=reverseUrl class="sub" urlToExclude=urlToExclude %}
-        {% endif %}
-      </ul>
-    {% endif %}
-  {% endfor %}
-
+  {% assign pathSegments = page.url | split: "/"  %}
+  {% assign firstSegmentURL = "/" | append: pathSegments[1] | append: "/" %}
+  {% include page/sidebar-helper.html currentURL=firstSegmentURL pageURL=page.url %}
 </div>
 
 
