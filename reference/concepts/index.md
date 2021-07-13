@@ -99,12 +99,12 @@ In addition to the basic concepts described above, NIEM defines or uses addition
   {% include functions/getPatternRow.html url="/reference/concepts/augmentation/point/" %}
 
   <!-- Augmentation elements do not follow the same pattern and have two XML syntaxes -->
-  {% assign page = site.pages | where: "url", "/reference/concepts/augmentation/element/" | first %}
+  {% assign augPage = site.pages | where: "url", "/reference/concepts/augmentation/element/" | first %}
   <tr>
     <td><strong>
       <a href="{{ '/reference/concepts/augmentation/element/' | relative_url }}">Augmentation Element</a>
     </strong></td>
-    <td>{{ page.description }}</td>
+    <td>{{ augPage.description }}</td>
     <td>
       <a title="Container"
          href="{{ '/reference/concepts/augmentation/element/#xml-container' | relative_url }}" >XML1</a>

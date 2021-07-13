@@ -1,25 +1,17 @@
 
-{% comment %}
-***
-Returns a row for the Patterns table for the given "url".
+{%- comment -%} Returns a row for the Patterns table for the given "url". {%- endcomment -%}
 
-***
-{% endcomment %}
+{% assign urlPage = site.pages | where: "url", include.url | first -%}
 
-{% comment %} Get the page for the given url {% endcomment %}
-{% assign page = site.pages | where: "url", include.url | first %}
-
-
-{% comment %} Get the title or short title of the page {% endcomment %}
-{% capture title %}
+{%- comment -%} Get the title or short title of the page {%- endcomment -%}
+{%- capture title -%}
   {% include functions/getURLTitle.html url=include.url %}
-{% endcapture %}
-{% assign title = title | strip %}
+{%- endcapture -%}
 
 <tr>
-  {% comment %} Title | Description | Tips | XML | JSON {% endcomment %}
+  {%- comment -%} Title | Description | Tips | XML | JSON {%- endcomment -%}
   <td width="20%"><strong><a href="{{ include.url | relative_url }}">{{ title }}</a></strong></td>
-  <td width="66%">{{ page.description }}</td>
+  <td width="66%">{{ urlPage.description }}</td>
   <td width="7%"><a href="{{ include.url | append: '#xml' | relative_url }}">XML</a></td>
   <td width="7%"><a href="{{ include.url | append: '#json' | relative_url }}">JSON</a></td>
 </tr>

@@ -1,25 +1,19 @@
 
-{% comment%}
-  ***
+{%- comment -%}
   Given a list of rule numbers, outputs a table with external links to the NDR.
-
   - list: Required list of NDR rule numbers and/or sections, grouped by spec version
+{%- endcomment -%}
 
-  Example call: {% include ndr-rule-table.html list=page.ndr %}
-  ***
-{% endcomment%}
+{%- for spec in include.list -%}
 
-{% for spec in include.list %}
+  {%- assign open = "" -%}
 
-  {% assign open = "" %}
-
-  {% if spec.version == "5.0" %}
+  {%- if spec.version == "5.0" -%}
     {% assign open = "open" %}
-  {% endif %}
+  {%- endif -%}
 
-  {% assign ndrLink = "https://reference.niem.gov/niem/specification/naming-and-design-rules/" | append: spec.version | append: "/niem-ndr-" | append: spec.version | append: ".html" %}
-
-  {% assign specFolder = spec.version | replace: ".", "_" %}
+  {%- assign ndrLink = "https://reference.niem.gov/niem/specification/naming-and-design-rules/" | append: spec.version | append: "/niem-ndr-" | append: spec.version | append: ".html" -%}
+  {%- assign specFolder = spec.version | replace: ".", "_" -%}
 
   <details {{open}} style="padding-bottom: 10px;">
 
@@ -28,8 +22,8 @@
     {% if spec.sections %}
       <ul style="padding-top: 10px;">
         {% for item in spec.sections %}
-          {% assign section = site.data.ndr[{{specFolder}}].ndr-sections | where: "number", item.number | first %}
-          {% assign link = ndrLink | append: "#section_" | append: section.number %}
+          {%- assign section = site.data.ndr[{{specFolder}}].ndr-sections | where: "number", item.number | first -%}
+          {%- assign link = ndrLink | append: "#section_" | append: section.number -%}
           <li><a href="{{ link }}">NDR Section {{ section.number }}</a> - {{ section.title }}</li>
         {% endfor %}
       </ul>
@@ -44,9 +38,8 @@
         </thead>
 
         {% for item in spec.rules %}
-          {% assign rule = site.data.ndr[{{specFolder}}].ndr-rules | where: "number", item.number | first %}
-          {% assign link = ndrLink | append: "#rule_" | append: rule.number %}
-
+          {%- assign rule = site.data.ndr[{{specFolder}}].ndr-rules | where: "number", item.number | first -%}
+          {%- assign link = ndrLink | append: "#rule_" | append: rule.number -%}
           <tr>
             <td><a href="{{ link }}" target="_blank">NDR {{ rule.number }}</a></td>
             <td>{{ rule.applicability | join: ", " }}</td>
@@ -58,4 +51,4 @@
 
   </details>
 
-{% endfor %}
+{%- endfor -%}

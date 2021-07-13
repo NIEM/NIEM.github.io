@@ -1,34 +1,34 @@
 
-{% assign currentURL = include.currentURL %}
-{% assign pageURL = include.pageURL %}
+{% assign currentURL = include.currentURL -%}
+{% assign pageURL = include.pageURL -%}
 
-{% assign currentPage = site.pages | where: "url", currentURL | first %}
-{% assign title = currentPage.short | default: currentPage.title %}
-{% assign pageURLStartingText = pageURL | slice: 0, currentURL.size %}
-{% assign expand = "" %}
-{% assign active = "" %}
-{% assign recurse = false %}
+{% assign currentPage = site.pages | where: "url", currentURL | first -%}
+{% assign title = currentPage.short | default: currentPage.title -%}
+{% assign pageURLStartingText = pageURL | slice: 0, currentURL.size -%}
+{% assign expand = "" -%}
+{% assign active = "" -%}
+{% assign recurse = false -%}
 
-{% if currentURL == pageURL or currentURL == pageURLStartingText %}
+{%- if currentURL == pageURL or currentURL == pageURLStartingText -%}
   {% assign expand = "expand" %}
   {% assign recurse = true %}
-{% endif %}
+{%- endif -%}
 
-{% if currentURL == pageURL %}
+{%- if currentURL == pageURL -%}
   {% assign active = "active" %}
-{% endif %}
+{%- endif -%}
 
 <ul class="nav-ul-start">
 
   <li class="{{ expand }} {{ active }}">
     <a href="{{ currentURL | relative_url }}">{{ title | strip }}</a>
 
-    {% if recurse %}
+    {%- if recurse -%}
       {% assign childURLs = currentPage.links | map: "url" %}
       {% for childURL in childURLs %}
         {% include page/sidebar-helper.html currentURL=childURL pageURL=pageURL %}
       {% endfor %}
-    {% endif %}
+    {%- endif -%}
 
   </li>
 </ul>

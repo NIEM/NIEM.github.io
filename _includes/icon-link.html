@@ -1,47 +1,30 @@
 
-{% comment %}
-***
-Outputs a link with its title, icon and description.
+{% comment %} Outputs a link with its title, icon and description. {% endcomment %}
 
-- The link must come with a url property.
-- If title, icon, and/or description are not provided, checks the
-  front matter of the corresponding page.  If not there either,
-  defaults are provided for icon and title (page name).
-- External links are set to open in a new tab.
-***
-{% endcomment %}
+{% assign link = include.link -%}
+{% assign linkPage = site.pages | where: "url", link.url | first -%}
 
-{% assign link = include.link %}
-
-{% assign linkPage = site.pages | where: "url", link.url | first %}
-
-{% comment %}
-  Assign the icon, from input parameter, link's page, or default
-{% endcomment %}
-{% assign icon = link.icon | default: linkPage.icon %}
-{% unless icon %}
+{% assign icon = link.icon | default: linkPage.icon -%}
+{%- unless icon -%}
   {% if link.url contains "http" %}
     {% assign icon = "fa-share" %}
   {% else %}
     {% assign icon = "fa-cog" %}
   {% endif %}
-{% endunless %}
+{%- endunless -%}
 
-{% assign title = link.title | default: linkPage.title %}
-{% assign description = link.description | default: linkPage.description %}
-{% if description %}
-  {% assign description = description | prepend: "<br>" %}
-{% endif %}
+{% assign title = link.title | default: linkPage.title -%}
+{% assign description = link.description | default: linkPage.description -%}
 
-{% comment %} Set link to open in new tab if external to site (url contains http or www) {% endcomment %}
-{% if link.url contains "http" or link.url contains "www" %}
+{%- comment -%} Set link to open in new tab if external to site (url contains http or www) {%- endcomment -%}
+{%- if link.url contains "http" or link.url contains "www" -%}
   {% unless link contains "http://127.0" %}
     {% assign target = "target='_blank'" %}
     {% assign url = link.url %}
   {% endunless %}
-{% else %}
+{%- else -%}
   {% assign url = link.url | relative_url %}
-{% endif %}
+{%- endif -%}
 
 <a {{ target }} href="{{ url }}">
   <span class="icon fa-stack fa-2x">
@@ -50,4 +33,6 @@ Outputs a link with its title, icon and description.
   </span>
   <span class="content">{{ title }}</span>
 </a>
-{{ description }}
+{%- if description -%}
+  <p style="padding-left: 76px;">{{ description }}</p>
+{%- endif -%}
