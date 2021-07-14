@@ -25,28 +25,28 @@
   {%- endif -%}
 
   {%- comment -%} Up button {%- endcomment -%}
-  {%- capture parentURL -%}{%- include functions/getURLParent.html url=page.url -%}{%- endcapture -%}
-  {% assign parentURL = parentURL | strip -%}
-  {% assign parent = site.pages | where: "url", parentURL | first -%}
-  {% assign parentLabel = parent.short | default: parent.title -%}
+  {%- capture nav_parentURL -%}{%- include functions/getURLParent.html url=page.url -%}{%- endcapture -%}
+  {% assign nav_parentURL = nav_parentURL | strip -%}
+  {% assign nav_parent = site.pages | where: "url", nav_parentURL | first -%}
+  {% assign nav_parentLabel = nav_parent.short | default: nav_parent.title -%}
 
-  {%- if parentURL -%}
-    <a class="btn btn-primary" href="{{ parentURL | relative_url }}">
+  {%- if nav_parentURL -%}
+    <a class="btn btn-primary" href="{{ nav_parentURL | relative_url }}">
       <span class="icon fa fa-caret-up fa-sm"></span>
-      <span class="content">{{ parentLabel }}</span>
+      <span class="content">{{ nav_parentLabel }}</span>
     </a>
   {%- endif -%}
 
   {%- comment -%} Down (if available) or next button {%- endcomment -%}
   {%- if page.links -%}
-    {% assign childURL = page.links[0].url %}
-    {% capture childLabel %}{% include functions/getURLTitle.html url=childURL %}{%- endcapture -%}
+    {% assign nav_childURL = page.links[0].url %}
+    {% capture nav_childLabel %}{% include functions/getURLTitle.html url=nav_childURL %}{%- endcapture -%}
   {%- endif -%}
 
-  {%- if childURL -%}
-    <a class="btn btn-primary pull-right" href="{{ childURL | relative_url }}">
+  {%- if nav_childURL -%}
+    <a class="btn btn-primary pull-right" href="{{ nav_childURL | relative_url }}">
       <span class="icon fa fa-caret-down fa-sm"></span>
-      <span class="content">{{ childLabel }}</span>
+      <span class="content">{{ nav_childLabel }}</span>
     </a>
   {%- else -%}
     {%- comment -%} No child links.  Compute the next section. {%- endcomment -%}

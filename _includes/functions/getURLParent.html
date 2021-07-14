@@ -1,9 +1,9 @@
 
-{% comment %} Returns the parent of the given url, or nil for the root folder {% endcomment %}
-{% if include.url.size > 1 %}
-  {% assign urlSegments = include.url | split: "/" | size | minus: 1 %}
-  {% assign parentURL = include.url | split: "/" | slice: 0, urlSegments | join: "/" | append: "/" %}
-  {{ parentURL }}
-{% else %}
+{%- comment -%} Returns the parent of the given url, or nil for the root folder {%- endcomment -%}
+{%- if include.url.size > 1 -%}
+  {%- assign urlSegments = include.url | split: "/" | size | minus: 1 -%}
+  {%- assign getURLParent = include.url | split: "/" | slice: 0, urlSegments | join: "/" | append: "/" -%}
+  {{ getURLParent }}
+{%- else -%}
   {{ nil }}
-{% endif %}
+{%- endif -%}

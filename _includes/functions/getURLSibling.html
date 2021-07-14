@@ -5,34 +5,35 @@
   -- "increment": 1 for next sibling link, -1 for previous sibling link
   -- "recurse": Default assumes true and will recurse upwards.  Set to false to stay within the parent.
   Returns string "TITLE(or short title if available)||URL"
+  Note: renamed variables with unique names to avoid scope issues with other functions.
 {% endcomment %}
 
-{%- capture parentURL -%}{%- include functions/getURLParent.html url=include.url -%}{%- endcapture -%}
-{% assign parentURL = parentURL | strip %}
-{% assign parentPage = site.pages | where: "url", parentURL | first %}
+{%- capture sib_parentURL -%}{%- include functions/getURLParent.html url=include.url -%}{%- endcapture -%}
+{%- assign sib_parentURL = sib_parentURL | strip -%}
+{%- assign sib_parentPage = site.pages | where: "url", sib_parentURL | first -%}
 
-{% if parentPage %}
-  {% for link in parentPage.links %}
-    {% if link.url == include.url %}
-      {% assign index = forloop.index0 %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
+{%- if sib_parentPage -%}
+  {%- for link in sib_parentPage.links -%}
+    {%- if link.url == include.url -%}
+      {%- assign index = forloop.index0 -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
 
-  {% assign siblingIndex = index | plus: include.increment %}
+  {%- assign siblingIndex = index | plus: include.increment -%}
 
-  {% if siblingIndex >= 0 and siblingIndex < parentPage.links.size %}
-    {% comment %} sibling found {% endcomment %}
-    {% assign siblingURL = parentPage.links[siblingIndex].url %}
+  {%- if siblingIndex >= 0 and siblingIndex < sib_parentPage.links.size -%}
+    {%- comment -%} sibling found {%- endcomment -%}
+    {%- assign siblingURL = sib_parentPage.links[siblingIndex].url -%}
     {%- capture title -%}{%- include functions/getURLTitle.html url=siblingURL -%}{%- endcapture -%}
     {{ title | strip }}||{{ siblingURL }}
 
-  {% elsif include.recurse != false %}
-    {% include functions/getURLSibling.html url=parentURL increment=include.increment recurse=true %}
+  {%- elsif include.recurse != false -%}
+    {%- include functions/getURLSibling.html url=sib_parentURL increment=include.increment recurse=true -%}
 
-  {% endif %}
+  {%- endif -%}
 
-{% else %}
+{%- else -%}
   {{ nil }}
 
-{% endif %}
+{%- endif -%}
