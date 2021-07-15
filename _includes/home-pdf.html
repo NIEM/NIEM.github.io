@@ -1,0 +1,14 @@
+
+<h1>{{ site.title }}</h1>
+<br/>
+<div>
+  <p>{{ site.data.home.about-niem }}</p>
+  <p><small>PDF generated from niem.github.io on {{ site.time | date: '%B %d, %Y' }}</small></p>
+  <br/>
+  <ul>
+    {% assign sections = site.data.home.sections | where: "category", "main" %}
+    {% for section in sections %}
+      <li><a href="{{ site.url }}{{ section.url }}">{{ section.title }}</a></li>
+    {% endfor%}
+  </ul>
+</div>

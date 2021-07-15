@@ -6,11 +6,19 @@
   <body>
     <div id="page-wrap" class="front">
 
-      {% include header.html %}
+      {% if site.output == "pdf" %}
 
-      {% include home.html %}
+        {% include home-pdf.html %}
 
-      {% include footer.html %}
+      {% else %}
+
+        {% include header.html %}
+
+        {% include home.html %}
+
+        {% include footer.html %}
+
+      {% endif %}
 
     </div>
   </body>

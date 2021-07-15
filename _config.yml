@@ -26,7 +26,6 @@ exclude:
   - normative-rules-guidance/country-codes/schema.png
   - README.md
   - run
-  - site-tools
   - vendor/Font-Awesome/README.md
   - vendor/Font-Awesome/src
   - vendor/bootstrap/docs

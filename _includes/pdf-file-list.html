@@ -1,0 +1,11 @@
+
+{% assign currentPage = site.pages | where: "url", include.url | first -%}
+{% assign subPageURLs = currentPage.links | map: "url" -%}
+
+{% if currentPage.category == "content" %}
+{{ site.url }}{{ currentPage.url }}
+{% endif %}
+
+{% for url in subPageURLs -%}
+  {% include pdf-file-list.html url=url %}
+{% endfor -%}

@@ -1,6 +1,15 @@
 ---
 layout: 'default'
 ---
+{% if site.output == "pdf" %}
+<div class="container">
+  <div class="row row-flex">
+      <div class="col-md-12 col-lg-12">
+        {% include page/content.html %}
+      </div>
+  </div>
+</div>
+{% else %}
 <div class="container">
   <div class="row row-flex">
       <div class="col-md-12 col-lg-12">
@@ -17,3 +26,4 @@ layout: 'default'
       </div>
   </div>
 </div>
+{% endif %}

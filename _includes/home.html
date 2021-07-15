@@ -9,13 +9,11 @@
 <div class="container" style="max-width:1200px">
   <div class="row">
 
-    <!-- ==== TOP PARAGRAPH ==== -->
+    <!-- ==== TOP PARAGRAPH - ABOUT NIEM ==== -->
 
     <div class="herosection">
       <div class="col-lg-12">
-        <div class="herosection-content">
-          The National Information Exchange Model (NIEM) is a community-driven, common vocabulary that enables efficient information exchange across diverse public and private organizations. NIEM can save time and money by providing consistent, reusable data terms and definitions, and repeatable processes.  This site provides information and resources to help the community use NIEM.
-        </div>
+        <div class="herosection-content">{{ site.data.home.about-niem }}</div>
       </div>
       <div style="clear:both"></div>
     </div>
@@ -46,7 +44,7 @@
 
       <!-- ==== Edit card data in _data/home.yml ==== -->
 
-      {% for card in site.data.home %}
+      {% for card in site.data.home.sections %}
         <div class="col-lg-3 col-md-6">
           <div class="hero-list">
             <div class="hero-item">

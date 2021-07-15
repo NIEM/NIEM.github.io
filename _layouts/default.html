@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% if site.output == "pdf" %}
+<body>
+  <div id="page-wrap">
+    {{ content }}
+  </div>
+</body>
+{% else %}
+{% include head.html %}
 
-  <body>
-    <div id="page-wrap">
+<body>
+  <div id="page-wrap">
 
-      {% include header.html %}
+    {% include header.html %}
 
-      {{ content }}
-      
-      {% include footer.html %}
+    {{ content }}
 
-    </div>
-  </body>
+    {% include footer.html %}
 
+  </div>
+</body>
+{% endif %}
 </html>

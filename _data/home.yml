@@ -1,5 +1,11 @@
 
-# Card info for the home page
+# Information for the home page
+
+# Text for the 'About NIEM' paragraph
+about-niem: The National Information Exchange Model (NIEM) is a community-driven, common vocabulary that enables efficient information exchange across diverse public and private organizations. NIEM can save time and money by providing consistent, reusable data terms and definitions, and repeatable processes.  This site provides information and resources to help the community use NIEM.
+
+# Card info
+sections:
 
 - # Training
   url: /training/
@@ -9,6 +15,7 @@
   title: Training
   description: We are starting to evolve the NIEM training curriculum to GitHub pages.
   button: Learn more
+  category: main
 
 - # Reference
   url: /reference/
@@ -18,6 +25,7 @@
   title: Reference
   description: Documentation and reference materials to help you learn more about NIEM.
   button: Learn more
+  category: main
 
 - # NIEM JSON
   url: /json/
@@ -27,6 +35,7 @@
   title: JSON
   description: Guidelines supporting the use of JSON with NIEM.
   button: Learn more
+  category: main
 
 - # Community activities
   url: /community/
@@ -36,6 +45,7 @@
   title: Community Activities
   description: Includes Biometrics, Grants, Health, and the State, Local, Tribal, and Territorial Tiger Team.
   button: Learn more
+  category: main
 
 - # Movement
   url: /reference/tools/movement/
@@ -63,6 +73,7 @@
   title: Geospatial Integration
   description: The Geo4NIEM initiative demonstrates the use of OGC community standards with NIEM.
   button: Learn more
+  category: main
 
 - # Feedback
   url: https://github.com/NIEM/NIEM.github.io/issues

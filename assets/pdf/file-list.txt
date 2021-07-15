@@ -1,0 +1,11 @@
+---
+layout:
+---
+
+{{ site.url }}/
+
+{% assign chapters = site.data.home.sections | where: "category", "main" %}
+
+{% for chapter in chapters %}
+  {% include pdf-file-list.html url=chapter.url %}
+{% endfor %}
