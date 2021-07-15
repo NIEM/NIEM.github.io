@@ -1,5 +1,6 @@
 ---
 title: Sitemap
+permalink: /sitemap/
 layout: landing_page
 rootURLs:
   - url: /training/
@@ -8,7 +9,6 @@ rootURLs:
   - url: /community/
   - url: /geospatial/
   - url: /niem-releases/
-otherURLs:
 ---
 
 {:toc}
@@ -16,7 +16,7 @@ otherURLs:
 
 ## Sections
 
-The sitemap below shows the cards on the home page and their immediate sub-sections.  Expand each sub-section to see the pages within.
+These are the major sections of this website.  Expand each sub-section to see the pages within.
 
 {% assign prev_url = "" %}
 {% assign prev_len = 0 %}
@@ -64,7 +64,7 @@ The sitemap below shows the cards on the home page and their immediate sub-secti
 
 {% endfor %}
 
-## Content page list
+## Page index
 
 {% assign pages = site.html_pages | sort: "url" %}
 
@@ -72,6 +72,7 @@ The sitemap below shows the cards on the home page and their immediate sub-secti
 
 {% assign contentURLs = "" %}
 {% assign redirectURLs = "" %}
+{% assign siteURLs = "" %}
 
 {% for page in pages %}
   {% if page.url contains "vendor" or page.url == false or page.url == "/titlepage.html/" or page.url == "/tocpage.html/" %}
@@ -79,6 +80,9 @@ The sitemap below shows the cards on the home page and their immediate sub-secti
 
   {% elsif page.redirect %}
     {% assign redirectURLs = redirectURLs | append: "," | append: page.url %}
+
+  {% elsif page.path contains "site/" %}
+    {% assign siteURLs = siteURLs | append: "," | append: page.url %}
 
   {% elsif page.redirect_from and page.redirect_from.first %}
     {% comment %} Page is a content page but has a redirect array listed in the front matter {% endcomment %}
@@ -96,26 +100,16 @@ The sitemap below shows the cards on the home page and their immediate sub-secti
   {% endif %}
 {% endfor %}
 
-{% assign urls = contentURLs | split: "," %}
-This site has {{ urls | size }} content pages.
+### Content pages
 
-<ul>
-  {% for url in urls %}
-    {% if url != "" %}
-      <li><a href="{{ url | relative_url }}">{{ url }}</a></li>
-    {% endif %}
-  {% endfor%}
-</ul>
+*Click [here](#site-pages) to jump ahead to the next section.*
 
-## Redirect page list
+{% include page/sitemap-index-section.html urls=contentURLs label="content"%}
 
-{% assign urls = redirectURLs | split: "," | uniq | sort %}
-This site has {{ urls | size }} redirect pages.
+### Site pages
 
-<ul>
-  {% for url in urls %}
-    {% if url != "" %}
-      <li><a href="{{ url | relative_url }}">{{ url }}</a></li>
-    {% endif %}
-  {% endfor%}
-</ul>
+{% include page/sitemap-index-section.html urls=siteURLs label="site-specific"%}
+
+### Redirect pages
+
+{% include page/sitemap-index-section.html urls=redirectURLs label="redirect"%}

@@ -1,0 +1,15 @@
+
+{%- comment -%}
+  - urls: A comma-delimited string of urls.  Assumes first character is a comma.
+  - label: The label to use to describe this section.
+{%- endcomment -%}
+
+{%- assign urls = include.urls | slice: 1, include.urls.size | split: "," | uniq | sort -%}
+
+This site has {{ urls.size }} {{ include.label }} pages.
+
+<ul>
+  {% for url in urls %}
+  <li><a href="{{ url | relative_url }}">{{ url }}</a></li>
+  {% endfor%}
+</ul>
