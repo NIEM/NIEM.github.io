@@ -1,72 +1,60 @@
+
 # Site settings
-title: NIEM
-# Start with excludes that are as general as is reasonable, and we can make them
-# more specific when things don't get exported
-# keep this listed sorted alphabetically
+
+title: NIEM GitHub
+
+incremental: true
+repository: NIEM/niem.github.io
+plugins:
+  - jekyll-mentions
+  - jekyll-redirect-from
+
 exclude:
-  - /run
-  - /Makefile
-  - /CONTRIBUTING.md
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - vendor/Font-Awesome/src
-  - vendor/bootstrap/docs
-  - vendor/cache/ruby/2.4.0/gems/
   - "*/aspell-exceptions.txt"
   - "*/Makefile"
   - "*.dot"
   - "*.dot.m4"
   - "*/dot_macros.m4"
-  - normative-rules-guidance/country-codes/schema.png
+  - "*/tmp.*"
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
   - json/guidance/aux
   - json/guidance/tmp
   - json/outline
+  - Makefile
+  - normative-rules-guidance/country-codes/schema.png
+  - README.md
+  - run
   - site-tools
-  - "*/tmp.*"
-
-plugins:
-  - jekyll-mentions
-  - jekyll-redirect-from
-
-repository: NIEM/niem.github.io
-
-excerpt_separator: <!--more-->
-
-# Uncomment this to view as a forked repo (e.g., http://$user.github.io/NIEM.github.io/).
-# baseurl should NOT be set on the master branch.
-# baseurl: "NIEM.github.io"
+  - vendor/Font-Awesome/README.md
+  - vendor/Font-Awesome/src
+  - vendor/bootstrap/docs
+  - vendor/bootstrap/README.md
+  - vendor/bootstrap/test-infra/README.md
+  - vendor/bootstrap-sass/README.md
+  - vendor/bootstrap-sass/CHANGELOG.md
+  - vendor/cache/ruby/
 
 # Site data
 superhero_iepd_path: https://github.com/NIEM/Developer-Network-IEPD-Series--SuperHero
 submit_feedback_link: https://github.com/NIEM/NIEM.github.io/issues
 niem_comments_link: mailto:niem-comments@lists.gatech.edu
 
-# Build settings
+# Processing settings
 markdown: kramdown
 highlighter: rouge
-incremental: true
-
+excerpt_separator: <!--more-->
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  # syntax_highlighter_opts:
-  #   block:
-  #     line_numbers: true
-  #     start_line: 1
-
-
 
 # Defaults
 defaults:
   -
     scope:
       path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
       type: "pages"
     values:
+      category: content
       layout: "page"
