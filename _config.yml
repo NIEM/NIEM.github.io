@@ -41,6 +41,9 @@ superhero_iepd_path: https://github.com/NIEM/Developer-Network-IEPD-Series--Supe
 submit_feedback_link: https://github.com/NIEM/NIEM.github.io/issues
 niem_comments_link: mailto:niem-comments@lists.gatech.edu
 
+# Append the rendered HTML page description for /reference/concepts pages
+concepts-description: See modeling tips, NDR rules, and examples in NIEM XML and JSON.
+
 # Processing settings
 markdown: kramdown
 highlighter: rouge
