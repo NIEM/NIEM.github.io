@@ -4,14 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
 
-  {%- if page.description -%}
+  {% if page.description %}
     {%- assign description = page.description -%}
     {%- if page.url contains "/reference/concepts/" -%}
       {%- assign description = description | append: " " | append: site.concepts-description -%}
     {%- endif -%}
   {%- else -%}
-    {% assign description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: '  ', ' ' | truncate: 160 %}
-  {%- endif -%}
+    {%- assign description = page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | strip_html | strip_newlines | replace: '  ', ' ' | truncate: 160 -%}
+  {% endif -%}
 
   <meta name="description" content="{{ description }}">
 
@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
   {% if page.layout == "specification" %}<link rel="stylesheet" href="{{ '/assets/css/specification.css' | relative_url }}">{% endif %}
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
