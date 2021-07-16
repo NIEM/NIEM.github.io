@@ -19,4 +19,4 @@ The NBDEC communicates the information concerning the Biometrics Domain and asso
 
 <img align="center" width="80%" src="Biometrics-Org-v2.png">
 
-Please contact the [NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov) to become a member and receive updates and newsletters.
+***Please contact the [NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov) to become a member and receive updates and newsletters.***

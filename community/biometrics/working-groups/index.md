@@ -15,21 +15,12 @@ Changes to the NBD model are first confirmed and approved by the NBDWG before ma
 
 ## Human Language Technology
 
-<img align="left" width="10%" src="Biometrics-HLT.png" style="padding-bottom: 20px; margin-right: 20px;">
+<img align="left" width="10%" src="Biometrics-HLT.png" style="padding-bottom: 5px; margin-right: 20px;">
 
 DHS OBIM is developing an Human Language Technology (HLT) prototype and utilizes the NIEM Biometrics Domain Working Group (NBDWG) to bring together DHS, DoD, DOJ, HLT SME’s, NIEM, and NIST to mature the voice standard. The goal of this effort is to perform an initial gap analysis by mapping the HLT subject areas to NIST Type 11 and the current NIEM Biometrics Domain which will feed into the later stages of the  Map and Model phase of the NIEM Information Exchange Package Documentation (IEPD) lifecycle.
-
-If you are interested in collaborating in this effort, learning more information about it, or other NBDWG discussions, please contact the NIEM Biometrics Team.
-
-## HLT Artifacts
-
-Here are the HLT related artifacts that were reviewed and updated during NBDWG sessions.
-
-|Artifact Title|Artifact|
-|Voice Conceptual Model|
-|USCIS Voice Use Cases|
-|FBI Forensic Voice Use Cases|
-|Voice Glossary|
+<br>
+<br>
+***If you are interested in collaborating in this effort, learning more information about it, or other NBDWG discussions, please contact [the NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov).***
 
 ## DNA
 
@@ -82,14 +73,4 @@ Outcomes of the NBDWG DNA effort including updates to NIEM 4.2 and 5.1 RC, some 
 <li>The NBD team worked with the NIEM Management Office (NMO) to stand up a GitHub repo for the open source project to collaborate between NIST, NIEM, SME’s, and DNA Vendors to design the .fsax format to improve Peak Height representation in NIEM and American National Standards Institute (ANSI)/NIST-Information Technology Laboratory (ITL).</li>
 </ul>
 
-If you are interested in collaborating in this effort, learning more information about it, or other NBDWG discussions, please contact [the NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov).
-
-### DNA Artifacts
-
-Here are the DNA related artifacts that were reviewed and updated during NBDWG sessions.
-
-|Artifact Title|Artifact|
-|DNA Use Cases|
-|DNA Attributes List|
-|Recommendations to NIST Type 18 Record|
-|DNA Peak Height Analysis|
+***If you are interested in collaborating in this effort, learning more information about it, or other NBDWG discussions, please contact [the NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov).***

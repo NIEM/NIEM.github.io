@@ -5,7 +5,9 @@ short: Newsletters
 
 ## Newsletters
 
-<img align="center" width="25%" src="Biometrics-Newsletter.png">
+<img align="center" width="40%" src="Biometrics-Newsletter-Main.png">
+
+The NBD produces Quarterly Newsletters to support the community. The publication provides Domain members with situational awareness of the latest features and related news of the Biometrics Domain, and enhances the exchange of intelligence and information across the Domains. Domain members represent the full range of operations dealing with the gathering, analysis, fusion, and dissemination of biometrics intelligence. Our readers represent a broad audience of decision makers, stakeholders, and practitioners of the NIEM Biometrics Domain.
 
 |Time Period|Date Posted|
 |---|---|
@@ -20,4 +22,4 @@ short: Newsletters
 |Q2 2019|[Newsletter Q2 2019](Newsletter Q2 2019 published.pdf)
 |Q1 2019|[Newsletter Q1 2019](Newsletter Q1 2019 published.pdf)
 
-Please contact the [NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov) to become a member and receive updates and newsletters.
+***Please contact the [NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov) to become a member and receive updates and newsletters.***
