@@ -20,6 +20,7 @@ Changes to the NBD model are first confirmed and approved by the NBDWG before ma
 DHS OBIM is developing an Human Language Technology (HLT) prototype and utilizes the NIEM Biometrics Domain Working Group (NBDWG) to bring together DHS, DoD, DOJ, HLT SME’s, NIEM, and NIST to mature the voice standard. The goal of this effort is to perform an initial gap analysis by mapping the HLT subject areas to NIST Type 11 and the current NIEM Biometrics Domain which will feed into the later stages of the  Map and Model phase of the NIEM Information Exchange Package Documentation (IEPD) lifecycle.
 <br>
 <br>
+<br>
 ***If you are interested in collaborating in this effort, learning more information about it, or other NBDWG discussions, please contact [the NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov).***
 
 ## DNA
@@ -72,5 +73,5 @@ Outcomes of the NBDWG DNA effort including updates to NIEM 4.2 and 5.1 RC, some 
 <li>Large peak height values must be “capped” at 32,767 in a .fsa file causing loss of data so the group discussed alternative options.  Currently working to set up an open source project to collaboratively develop the “.fsax” data format to meet DNA Vendor requirements.</li>
 <li>The NBD team worked with the NIEM Management Office (NMO) to stand up a GitHub repo for the open source project to collaborate between NIST, NIEM, SME’s, and DNA Vendors to design the .fsax format to improve Peak Height representation in NIEM and American National Standards Institute (ANSI)/NIST-Information Technology Laboratory (ITL).</li>
 </ul>
-
+<br>
 ***If you are interested in collaborating in this effort, learning more information about it, or other NBDWG discussions, please contact [the NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov).***
