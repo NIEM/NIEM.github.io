@@ -24,8 +24,14 @@
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 <script type="text/javascript">
-  // Copy the TOC and update the id
-  let $toc = $("#markdown-toc").clone().prop("id", "section-headers-ul").addClass("nav list-group-item")[0];
+
+  let $toc;
+  let layout = "{{ page.layout }}";
+
+  if (layout == "page") {
+    // Move the TOC and update the id
+    $toc = $("#markdown-toc").prop("id", "section-headers-ul").addClass("nav list-group-item")[0];
+  }
 
   // Create a nav wrapper for the section headers and append the TOC
   let $headers = $("<div id='page-nav'></div>")[0];
