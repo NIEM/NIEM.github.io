@@ -1,5 +1,6 @@
 ---
-  title: Modeling Concepts
+  title: Concepts for data modeling
+  short: Concepts
   icon: fa-cog
   description: Learn about properties, types, augmentations, and other building blocks used to construct the model.
   links:

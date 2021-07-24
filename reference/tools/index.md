@@ -13,6 +13,8 @@
     group: niem
   - url: /reference/tools/oxygen/
     group: other
+  - url: /reference/tools/xmlspy/
+    group: other
   todo:
   - Set standard table widths for consistency
 ---
@@ -29,6 +31,8 @@
 
 {% assign links = page.links | where: "group", "niem" %}
 {% include icon-list.html links=links %}
+
+---
 
 ## NIEM resources for other tools
 

@@ -6,6 +6,7 @@
   links:
   - url: /reference/tools/oxygen/ndr/
   - url: /reference/tools/oxygen/snippets/
+  - url: /reference/tools/oxygen/xml-catalog/
 ---
 
 The [Oxygen XML Editor]({{ site.data.links.oxygen }}) is a commercial multi-platform XML editor, XSLT/XQuery debugger and profiler with Unicode support.  NIEM provides some additional information and resources for this tool that may assist with domain and IEPD schema development and conformance testing.

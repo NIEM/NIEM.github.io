@@ -31,7 +31,7 @@ NIEM publishes annual releases on a 3-year cycle.  A major release one year will
 
 Major releases allow content changes to NIEM Core and domains, plus architectural changes as specified by the NIEM Naming and Design Rules.  Minor releases allow for domain-related content changes only; Core and the architecture remain fixed.
 
-NIEM [release packages](../reference/artifacts/releases/) are available on both [GitHub](https://github.com/NIEM/NIEM-Releases) and [release.niem.gov](https://release.niem.gov/niem/) (the original publication site).
+NIEM [release packages](../reference/release/) are available on both [GitHub](https://github.com/NIEM/NIEM-Releases) and [release.niem.gov](https://release.niem.gov/niem/) (the original publication site).
 
 Please submit feedback to the NIEM releases [issue tracker](https://github.com/NIEM/NIEM-Releases/issues) (see [info](https://github.com/NIEM/NIEM-Releases/wiki/Issues) for help).
 

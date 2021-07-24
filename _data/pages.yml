@@ -25,9 +25,12 @@ ndr5_updates: /niem-releases/5.0/#specification-updates
 
 # Artifacts
 
-subset: /reference/artifacts/messages/subset-schema/
-iepd: /reference/artifacts/messages/iepd/
-iepd-lifecycle: /reference/artifacts/messages/iepd/lifecycle/
-iepd-starter-kit: /reference/artifacts/messages/iepd/iepd-starter-kit/
-releases: /reference/artifacts/releases/
+subset: /reference/iepd/artifacts/subset-schema/
+iepd: /reference//iepd/
+iepd-lifecycle: /reference/iepd/lifecycle/
+iepd-starter-kit: /reference/iepd/iepd-starter-kit/
+releases: /reference/release/
 
+# Miscellaneous
+
+check-conformance: /reference/iepd/artifacts/extension-schema/#checking-conformance

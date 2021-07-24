@@ -19,7 +19,7 @@ The **[NIEM High-Level Version Architecture (HLVA) Specification]({{ site.data.l
 
 The HLVA was designed to meet the following objectives:
 
-- A domain may issue a [domain update](../../artifacts/releases/domain-update) as needed to publish content changes outside of the regular release cycle.
+- A domain may issue a [domain update](../../release/domain-update) as needed to publish content changes outside of the regular release cycle.
 - IEPDs may reuse content from NIEM releases and domain updates.
 - Domain updates are incorporated into the next NIEM release.
 - A clear process is available for domains to participate in Core-related harmonization and issue resolution.
@@ -98,9 +98,9 @@ During this process, NBAC-approved changes are applied to Core and any outstandi
 
 The HLVA defines various kinds of artifacts, including:
 
-- [NIEM release](../../artifacts/releases/release)
-- [Domain Update](../../artifacts/releases/domain-update)
-- [Core Supplement](../../artifacts/releases/core-supplement)
+- [NIEM release](../../release)
+- [Domain Update](../../release/domain-update)
+- [Core Supplement](../../release/core-supplement)
 
 The HLVA also defines the difference between a major and a minor release:
 

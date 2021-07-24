@@ -1,0 +1,12 @@
+
+scenario: Review background information related to your information exchange, assess resource impact, understand business context, and identify information exchange business scenarios.
+
+analyze: Further elaborate on the information exchange scenario to understand and document the business context and data requirements.
+
+map: Compare the data requirements for the exchange gathered in the last step to what is available in NIEM.  Record results in a mapping spreadsheet and plan how requirements that aren't available in NIEM should be modeled and added as IEPD extensions.
+
+build: Create subset and extension schemas for the IEPD based on the mapping and modeling decisions made in the previous step.  Check that schemas are valid and NIEM-conformant.  Build and validate sample instances for additional testing.
+
+assemble: Finalize the documentation and other IEPD artifacts and then package all related files for the IEPD into a single, self‐contained, self-documented, portable archive file.
+
+publish: Publish the IEPD for search, discovery, and reuse, and implement the IEPD for production.
