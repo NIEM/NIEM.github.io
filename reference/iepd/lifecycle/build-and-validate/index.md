@@ -1,7 +1,7 @@
 ---
 title: Build and Validate
 icon: fa-pencil
-description: Create subset and extension schemas and sample instances based on the previous mapping and modeling work.  Verify that schemas and instances are valid and that they meet NIEM conformance requirements described by the NIEM Naming and Design Rules (NDR) specification.
+description: Create subset schemas, and extension schemas, and sample instances based on the previous mapping and modeling work.  Verify that schemas and instances are valid and that they meet NIEM conformance requirements described by the NIEM Naming and Design Rules (NDR) specification.
 ---
 
 {{ page.description}}
@@ -9,21 +9,68 @@ description: Create subset and extension schemas and sample instances based on t
 {:toc}
 - TOC
 
-Data objects identified in the mapping document appear in either the exchange, extension, or subset schemas. Associations and cardinality from the exchange content model are reflected in XML schemas.
+## Build
 
-## NIEM-Conformant XML Schema Generation
+There are three main kinds of artifacts that should be built during this stage of the IEPD development process: NIEM subset schemas, IEPD extension schemas, and sample instances.
 
-XML schemas that are typically created for an IEPD include subset, exchange, extension, constraint, and reference. A NIEM-conformant IEPD is required to constrain at least one schema that is either a NIEM reference schema or subset schema. XML schemas for NIEM-conformant exchanges can be created in two ways:
+### NIEM subset schemas
 
-| Method | Process |
-| --- | ---|
-| Generation Through Tools | Automatically generate schemas based on an exchange content model, mapping document, or other inputs. |
-| Coded by Hand | Start with existing schemas or NIEM schema templates, which can be derived from NIEM reference schemas. |
+[NIEM subset schemas]({{ "/reference/iepd/artifacts/subset-schema/" | relative_url }}) should contain all of the NIEM properties and types that will be reused in the IEPD, plus any dependencies.  IEPDs typically contain customized NIEM subsets rather the full set of NIEM release schemas (12,000+ elements in NIEM 5.0 and dozens of schemas) in order to improve performance and reduce size and complexity.
 
-It is recommended that you start with tools and modify as needed.
+NIEM subset schemas are usually built with the Subset Schema Generation Tool (SSGT), which lets users search the NIEM model, select properties and types, and generate NIEM XML subset schemas.  See the **[SSGT]({{ site.data.pages.ssgt | relative_url }})** page under the [Reference / Tools]({{ "/reference/tools/" | relative_url }}) section for a lot more information about how to search NIEM, build subsets, and reload wantlists later for additional work.
 
-### The NIEM Tools Catalog
+Starting with the [Mapping Spreadsheet]({{ "/reference/iepd/artifacts/mapping-spreadsheet/" | relative_url }}) filled in during the previous stage of the IEPD lifecycle, find each mention of a NIEM property or type, search for it in the SSGT, and add it to the subset.  When finished, download the subset.  Extract the subset schemas from the downloaded zip file into a NIEM subset folder within the IEPD working directory.
 
-The [NIEM Tools Catalog]({{ site.data.links.tools_catalog }} "NIEM Tools Catalog") is a collection of different tools that aid in schema generation. For example, the Subset Schema Generation Tool ([SSGT]({{ site.data.pages.ssgt | relative_url }})) is often used to start schema development because it is easy to use and produces subset schemas and wantlists for use within an exchange. The SSGT can also be used for searching and browsing the NIEM data model.
+{:.tip}
+> Build NIEM subsets while filling in the mapping spreadsheet during the *Map and Model* phase in order to prevent looking up the same properties and types a second time.  As matches are found in the SSGT and mappings are recorded, add the NIEM property or type to build the subset at the same time.
 
-Look for an appropriate tool in the [NIEM Tools Catalog]({{ site.data.links.tools_catalog }} "NIEM Tools Catalog"). Use one or more tools to [create the artifacts and validate them]({{ "/training/iepd-developer/build-and-validate" | relative_url }}).
+As extension schemas are developed, the NIEM subset schemas may need to be updated several times to account for additional NIEM properties or types that were not identified during the previous mapping phase.  If the subset is no longer loaded in the SSGT, reload the wantlist from the previous subset package to [resume work on the subset]({{ "/reference/tools/ssgt/#resume-work-later" | relative_url }}).  Regenerate the subset and update the schemas in the IEPD working directory.
+
+### Extension schemas
+
+Create one or more schemas to hold the new properties and types that will need to be created specifically for this IEPD.  Extension schemas typically import multiple schemas from the NIEM subset, most often including Core and structures (for basic NIEM infrastructure support).
+
+With the extension schema, create NIEM-conformant properties and types for the requirements identified in the mapping spreadsheet as either a "no match" or an "add".  Preliminary modeling work will have already been done for the requirements labeled as "add".  See the modeling information if needed from the previous lifecycle stage for a starting point on how to model local data requirements as NIEM extensions.
+
+{:.note}
+> See the **[Concepts]({{ "/reference/concepts/" | relative_url }})** section for lots of information about the various NIEM modeling constructs, and for schema and instance examples of each in XML and JSON.  Start with [Namespaces]({{ "/reference/concepts/namespace/" | relative_url }}) to set up the extension namespace.
+
+### Sample instances
+
+Create at least one sample instance for each kind of message defined by the IEPD.  Create more than one of each if needed to better illustrate different options for sending data.
+
+Oxygen and XMLSpy are capable of initializing sample instances given schemas and a selected element to use as the root of the document.  Instances generated in this manner should then be updated to add desired fields the tool may have left out of the message and to replace generic strings and other values with realistic-looking ones.  This will help reviewers and IEPD implementers understand what messages should really look like.
+
+## Validate
+
+If NIEM subset schemas are generated by the [SSGT]({{ site.data.pages.ssgt | relative_url }}), no extra validation for these schemas should be needed.  All IEPD extension schemas and any NIEM subset schemas generated by hand or by other methods should be tested for basic schema validation and NDR conformance validation.
+
+### Schema validation
+
+Use tools or libraries like XMLSpy, Oxygen, Saxon, Xerces, or Ajv (JavaScript validator for JSON schema) to perform schema validation.
+
+### Sample instance validation
+
+#### Validate format
+
+Using the tools or libraries listed above, check the sample instances against their schemas to ensure they are valid.
+
+#### Validate requirements
+
+In addition to verifying schemas and instances conform to basic format and NDR rules, it's important to make sure that the IEPD meets the original data requirements defined in the *Analyze Requirements* lifecycle phase.
+
+Go back to the data requirements that were documented in UML, a mapping spreadsheet, or a custom format, and compare that to the sample instance.  Make sure all of the requirements are accounted for in the instance.  It can be easy to leave small things out and sometimes difficult to discover without carefully comparing the original requirements to a thorough example of the final product.
+
+### NDR conformance validation
+
+#### Automated rules
+
+For XML schemas, the [NIEM Naming and Design Rules (NDR)]({{ site.data.pages.ndr | relative_url }}) defines may of its rules in Schematron, allowing automated conformance testing.  This can be done by either uploading the schemas to [ConTesA]({{ site.data.pages.contesa | relative_url }}) or by [validating the NDR Schematron rules with Oxygen]({{ site.data.pages.oxygen_ndr | relative_url }}).  Review errors, update schemas and sample instances as needed, and rerun all validation steps until conformance issues have been resolved.
+
+#### Manual rules
+
+Not all rules in the NDR are able to be written in Schematron and automated; some rules must be evaluated manually.  The conformance report generated by ConTesA will also provide a list of manual rules.  The [Rule Browser]({{ "/reference/specifications/rule-browser/" | relative_url }}) is another way to find and learn about the text-style NDR rules that require manual evaluation.
+
+## Output
+
+At the end of this stage, the full set of NIEM subset schemas and IEPD extension schemas should be complete, and there should be one or more sample instances that illustrate what messages should look like.  These are required artifacts for the IEPD.

@@ -26,7 +26,7 @@ ndr5_updates: /niem-releases/5.0/#specification-updates
 # Artifacts
 
 subset: /reference/iepd/artifacts/subset-schema/
-iepd: /reference//iepd/
+iepd: /reference/iepd/
 iepd-lifecycle: /reference/iepd/lifecycle/
 iepd-starter-kit: /reference/iepd/iepd-starter-kit/
 releases: /reference/release/

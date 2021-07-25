@@ -68,7 +68,7 @@ These are the major sections of this website.  Expand each sub-section to see th
 {% assign urls = site.html_pages | where_exp: "page", "page.layout != 'redirect'" | where: "category", "content" | map: "url" | sort %}
 {% include page/sitemap-index-section.html urls=urls label="active"%}
 
-### Redirects for former pages
+### Redirects
 
 {% assign urls = site.html_pages | where: "layout", "redirect" | map: "url" %}
 {% include page/sitemap-index-section.html urls=urls label="redirect"%}

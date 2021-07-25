@@ -51,7 +51,7 @@ NIEM Health 101 establishes that the Federal Health Information Model (FHIM) is 
 
 The NIEM Information Exchange Package Documentation (IEPD) lifecycle is a six-stage collaborative process involving multiple team players, including technical stakeholders (e.g., data architects, data modelers, developers), business analysts, and subject matter experts (SMEs). Since this is an interoperable exchange effort between two or more entities, it is critical for stakeholders on all sides of the exchange to participate in the planning, development, and execution of the exchange.
 
-For the purposes of this tutorial, the focus is specifically on the second "Analyze Exchange Requirements" stage of the IEPD lifecycle. You should have your scenarios ready for the next step in this process. If you are unfamiliar with scenario planning, please visit the [IEPD starter kit](http://niem.github.io/reference/artifacts/messages/iepd/iepd-starter-kit/).
+For the purposes of this tutorial, the focus is specifically on the second "Analyze Exchange Requirements" stage of the IEPD lifecycle. You should have your scenarios ready for the next step in this process. If you are unfamiliar with scenario planning, please visit the [IEPD starter kit](http://niem.github.io/reference/iepd/iepd-starter-kit/).
 
 ![IEPD Lifecycle](./assets/iepd-lifecycle.png)
 

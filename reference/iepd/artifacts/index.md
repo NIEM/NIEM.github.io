@@ -7,6 +7,7 @@ links:
 - url: /reference/iepd/artifacts/extension-schema/
 - url: /reference/iepd/artifacts/iepd-catalog/
 - url: /reference/iepd/artifacts/conformance-report/
+- url: /reference/iepd/artifacts/mapping-spreadsheet/
 ---
 
 {{ page.description }}
@@ -41,12 +42,6 @@ The [NIEM Naming and Design Rules (NDR) specification]({{ site.data.links.ndr }}
 
 See the [Extension schema]({{ "/reference/iepd/artifacts/extension-schema/" | relative_url }}) page in this section for more details.
 
-### IEPD catalog
-
-An IEPD Catalog is an XML document that contains basic information about the package (name, description, purpose, point of contact, etc.) and a listing of the package's key artifacts.  This file has the name `iepd-catalog.xml` and resides in the IEPD root directory.
-
-See the [IEPD Catalog]({{ "/reference/iepd/artifacts/iepd-catalog/" | relative_url }}) page in this section for more details.
-
 ### Change log
 
 A change log can be a summary or a detailed description of the changes in this IEPD since the previous versions.  NIEM release provide change logs in the form of a spreadsheet but free text descriptions in a document or text file are fine.
@@ -63,6 +58,15 @@ As part of a conformance assertion, additional artifacts may also be included in
 
 [Conformance report]({{ site.data.pages.contesa | relative_url }})
 : [ConTesA]({{ site.data.pages.contesa | relative_url }}) can be used to check if IEPD extension schemas conform to the [NIEM Naming and Design Rules (NDR) specification]({{ site.data.pages.ndr | relative_url }}) and provides the results in a conformance report.
+
+[IEPD review checklist]({{ "/reference/iepd/lifecycle/assemble-and-document/#iepd-review-checklist" | relative_url }})
+: Manually review rules about the full IEPD package from the [IEPD Specification]({{ site.data.pages.mpd | relative_url }}) and document results with the IEPD review checklist spreadsheet.
+
+### IEPD catalog
+
+An IEPD Catalog is an XML document that contains basic information about the package (name, description, purpose, point of contact, etc.) and a listing of the package's key artifacts.  This file has the name `iepd-catalog.xml` and resides in the IEPD root directory.
+
+See the [IEPD Catalog]({{ "/reference/iepd/artifacts/iepd-catalog/" | relative_url }}) page in this section for more details.
 
 ### Readme
 
@@ -138,6 +142,12 @@ To use an external standard:
 {:.box}
 - Add the schemas for the external standard to the IEPD.  The IEPD specification recommends adding these to a separate `external` folder under the `base-xsd` folder, next to other folders for the NIEM subset and IEPD extension schemas.
 - Define [adapter types]({{ "/reference/concepts/adapter/" | relative_url }}) to wrap external properties.  An adapter type is a way to identify where the external, non-NIEM conformant properties are in an exchange and enables NIEM NDR rules to avoid throwing errors at these known exceptions.
+
+### Mapping spreadsheet
+
+A mapping spreadsheet can be used to explicitly document mappings from data requirements to properties and types in NIEM.  It can also be used to model extensions for requirements that do not exist in NIEM.
+
+See the [Mapping Spreadsheet]({{ "/reference/iepd/artifacts/mapping-spreadsheet/" | relative_url }}) page in this section for more details, plus the spreadsheet template and examples.
 
 ### Wantlist
 

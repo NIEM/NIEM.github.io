@@ -13,4 +13,4 @@ In NIEM information exchanges, **instances** are referred to as **Information Ex
 
 NIEM supports JSON information exchanges including **IEPs** in JSON format and **IEPDs** that include [JSON Schema](../json-schema)
 
-More detail on NIEM [models]({{ "/reference/" | relative_url }}){:target="_blank"} and their implementations in XML and JSON, including NIEM [concepts]({{ "/reference/concepts/" | relative_url }}{:target="_blank"},  [content]({{ "/reference/content/" | relative_url }}){:target="_blank"},  and [releases]({{ site.data.pages.releases | relative_url }}){:target="_blank"}, is available.
+More detail on NIEM [models]({{ "/reference/" | relative_url }}){:target="_blank"} and their implementations in XML and JSON, including NIEM [concepts]({{ "/reference/concepts/" | relative_url }}){:target="_blank"},  [content]({{ "/reference/content/" | relative_url }}){:target="_blank"},  and [releases]({{ site.data.pages.releases | relative_url }}){:target="_blank"}, is available.

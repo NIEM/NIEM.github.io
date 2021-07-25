@@ -47,7 +47,7 @@
   button: Learn more
 
 - # IEPD Starter Kit
-  url: /reference/artifacts/messages/iepd/iepd-starter-kit/
+  url: /reference/iepd/iepd-starter-kit/
   img: iepd_starter_kit_icon.png
   img-alt: IEPD Starter Kit Icon
   class: white

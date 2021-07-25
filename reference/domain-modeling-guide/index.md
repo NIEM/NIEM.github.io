@@ -60,7 +60,7 @@ To use this guide, you should be somewhat familiar with the following topics and
   - [NIEM Introduction](https://reference.niem.gov/niem/guidance/introduction/0.3/)
   - [NIEM Concept of Operations](https://reference.niem.gov/niem/guidance/concept-of-operations/0.5/)
   - [NIEM Training]({{ "/training/" | relative_url }})
-  - [NIEM IEPD Starter Kit](http://niem.github.io/reference/artifacts/messages/iepd/iepd-starter-kit/)
+  - [NIEM IEPD Starter Kit](http://niem.github.io/reference/iepd/iepd-starter-kit/)
 - [NIEM Conformance](https://reference.niem.gov/niem/specification/conformance/3.0/)
 - [NIEM High Level Version Architecture (HLVA)](https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/)
 - [NIEM Naming and Design Rules (NDR)](https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/)
@@ -196,7 +196,7 @@ with the Core (or with other domains if inputting a domain update).
 
 **Use reference materials to model various NIEM techniques**
 
-- Simple examples exist as [IEPD Starter Kit patterns]({{ "/reference/artifacts/messages/iepd/iepd-starter-kit/reusable-xml-snippets/" | relative_url }})
+- Simple examples exist in the Reference [Concepts]({{ "/reference/concepts/" | relative_url }}) section
 that illustrate NIEM techniques such as:  augmentation, association, role, references, metadata, abstract elements and substitution groups, type extension, type adapter, etc.
 - Review existing [release reference schemas](https://release.niem.gov/).
 - The [change request](https://reference.niem.gov/niem/resource/change-request/) contains examples.

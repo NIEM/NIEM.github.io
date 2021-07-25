@@ -14,6 +14,9 @@ Your entries in the document identify the exchange requirements that are well-re
 
 In the following sections, we provide more detailed information on how you determine what you need to enter.
 
+{:.note}
+> This section will be undergoing changes to update the examples and screenshots to use the latest version of the mapping spreadsheet.
+
 ## What is a Mapping Document
 
 The Mapping Document has the following characteristics:
@@ -30,10 +33,8 @@ The following illustration shows the recommended structure of a mapping document
 
 ## Mapping Document Setup
 
-Create a blank, nine-column spreadsheet with the headings shown in the previous illustration (Source Container Type, Source Element, etc.). Alternatively you can start with the [sample mapping document we provide](assets/SampleEmptyMappingDocument.xlsx).
-
 {:.note}
->The sample mapping document does not have a way to capture any issues or problems you many encounter. You can add an additional "Notes" column to document problems.
+See the **[Mapping Spreadsheet]({{ "/reference/iepd/artifacts/mapping-spreadsheet" | relative_url }})** page in the [IEPD Artifacts]({{ "/reference/iepd/artifacts/" | relative_url }}) section for more information about the spreadsheet and to download the template and examples.
 
 In the following steps, identify (fill in) the **Source Data Columns**:
 

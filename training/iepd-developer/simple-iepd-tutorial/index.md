@@ -2,7 +2,7 @@
 title: Simple IEPD Tutorial
 short: Simple IEPD Tutorial
 icon: fa-envelope-o
-description: This tutorial shows you how to create a very simple [IEPD](../../../reference/artifacts/messages/iepd/ "IEPD"). Once you are comfortable with the process and output, you can move on to more complex IEPDs.
+description: This tutorial shows you how to create a very simple [IEPD](../../../reference/iepd/ "IEPD"). Once you are comfortable with the process and output, you can move on to more complex IEPDs.
 ---
 
 {{ page.description}}
@@ -88,7 +88,10 @@ The other requirements of the exchange (e.g., technical, security and privacy, p
 
 After you have analyzed and determined your exchange requirements, you proceed to [map and model]({{ site.data.pages.iepd-lifecycle | append: "map-and-model" | relative_url }}) them for the next step in the IEPD development process.
 
-A common way begin the creation of IEPD components for your exchange is to create a mapping document. This is typically a spreadsheet, which maps your local exchange data elements to the NIEM data model. You can [download a sample spreadsheet](../map-and-model/assets/SampleEmptyMappingDocument.xlsx "Sample Mapping Document") and modify it to suit your requirements.
+A common way begin the creation of IEPD components for your exchange is to create a mapping document. This is typically a spreadsheet, which maps your local exchange data elements to the NIEM data model.
+
+{:.note}
+See the **[Mapping Spreadsheet]({{ "/reference/iepd/artifacts/mapping-spreadsheet" | relative_url }})** page in the [IEPD Artifacts]({{ "/reference/iepd/artifacts/" | relative_url }}) section for more information about the spreadsheet and to download the template and examples.
 
 The [Schema Subset Generation Tool (SSGT)]({{ site.data.pages.ssgt | relative_url }} "Schema Subset Generation Tool (SSGT)") is a good tool to use to map your exchange to NIEM. If you are unfamiliar with the SSGT, refer to [Map and Model Training](../map-and-model/ "Map and Model Training"), "What is a Mapping Document." The SSGT's advantage lies in that you can extract just what you need from NIEM, i.e., create a subset.
 

@@ -11,7 +11,7 @@
   margin: 0 0 20px;
 }
 
-.tip, .example, .note, .ndr, .features, .quiz, .valid, .invalid, .toc {
+.tip, .example, .note, .ndr, .features, .quiz, .valid, .invalid, .toc, .solution {
   @extend .box;
 }
 
@@ -57,6 +57,10 @@ ul.tip, ul.example, ul.note, ul.box, ul.quiz ul.toc {
   content: "Knowledge Check ";
 }
 
+.solution::before {
+  content: "Solution ";
+}
+
 .quiz {
     background: rgb(239, 224, 219);
     border-color:  rgb(219, 186, 175);
@@ -71,7 +75,7 @@ blockquote::before, ul::before, p::before {
   font-weight: bolder;
 }
 
-.valid {
+.valid, .solution {
   border: 0;
   border-left: solid 5px seagreen;
   background: rgba(143, 230, 172, 0.2);

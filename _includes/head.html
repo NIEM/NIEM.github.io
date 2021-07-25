@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}">
   {% if page.layout == "specification" %}<link rel="stylesheet" href="{{ '/assets/css/specification.css' | relative_url }}">{% endif %}
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | relative_url }}" />
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

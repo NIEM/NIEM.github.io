@@ -49,7 +49,7 @@ ConTesA cannot verify that a schema is fully NIEM conformant; only that it passe
 
 ### IEPDs
 
-ConTesA can check the NDR conformance of the XML schemas within an IEPD.  The [IEPD specification]({{ site.data.pages.mpd | relative_url }}), however, defines an additional set of conformance rules for IEPDs and for some of the artifacts within.  Ensuring that an IEPD meets all applicable rules currently requires manual review.
+ConTesA can check the NDR conformance of the XML schemas within an IEPD.  The [IEPD specification]({{ site.data.pages.mpd | relative_url }}), however, defines an additional set of conformance rules for IEPDs and for some of the artifacts within.  Ensuring that an IEPD meets all applicable rules currently requires [manual review]({{ "/reference/iepd/lifecycle/assemble-and-document/#iepd-review-checklist" | relative_url }}).
 
 ### XML validation
 

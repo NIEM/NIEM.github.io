@@ -17,7 +17,7 @@ At this stage, the schemas and sample instances for the IEPD should be complete.
 
 See [IEPD Artifacts](../../artifacts/) for information about the required artifacts and optional artifacts for an IEPD.
 
-Make sure to include:
+Among the other documentation that is being prepared, make sure to prepare the following required artifacts:
 
 - [IEPD catalog](../../artifacts/iepd-catalog/)
 - [Change log](../../artifacts/#change-log)
@@ -25,13 +25,9 @@ Make sure to include:
 
 ## Assemble
 
-Once all IEPD artifacts have been compiled, the the next step is to properly name, file, and archive the final package:
+Once all IEPD artifacts have been prepared, the the next step is to compile and archive the final package:
 
-- Name each artifact for your exchange with a consistent naming convention
-- File each artifact in a logical, consistent folder structure
-- Archive the file structure, including artifacts, into the final package
-
-See [IEPD Artifacts](../../artifacts/#recommended-folder-layout) for the recommended layout of the IEPD directory.
+See [IEPD Artifacts -- Recommended folder layout](../../artifacts/#recommended-folder-layout) for the recommended layout of the IEPD directory.
 
 ## Review
 
@@ -62,7 +58,37 @@ A review process will help to decrease the occurrence of published IEPDs that ar
 - Extension schemas conform to the [NIEM Naming and Design Rules]({{ site.data.pages.ndr | relative_url }})
   - *See [Extension schema - Checking conformance]({{ site.data.pages.check-conformance | relative_url }}) for more*
 
-### Peer review process
+### IEPD review checklist
+
+While the [NIEM Naming and Design Rules (NDR)]({{ site.data.pages.ndr | relative_url }}) provides conformance rules and guidances for NIEM schemas and instance documents, it does not address IEPDs.  NDR conformance is only part of the requirement for full NIEM IEPD conformance.
+
+The **[NIEM IEPD Specification]({{ site.data.pages.mpd | relative_url }})** provides rules and guidance about the IEPD as a whole, including which artifacts are required and what kind of metadata should be provided.
+
+Checking IEPD conformance is an additional review step that must be taken after the IEPD is fully assembled.  Thus, it is not one of the validation steps described in the previous *Build and Validate* phase of the IEPD lifecycle.
+
+IEPD conformance rules are not automated.  [ConTesA]({{ site.data.pages.contesa | relative_url }}) only checks NDR Schematron rules for schemas and instances.  IEPD conformance rules must be checked manually.
+
+To make it easier to identify rules from the IEPD specification and record the results, an IEPD review checklist has been provided.  This is a spreadsheet that includes:
+
+- Rule summaries from the IEPD specification and information about to evaluate them
+- Additional QA tests that can be useful in assessing an IEPD
+- Columns to capture the manual review results and additional comments or feedback
+
+**Download an IEPD review checklist**
+
+- [IEPD 5.0 review checklist](assets/iepd-5.0-checklist.xlsx) - for IEPDs using NIEM 5.0 or a more recent release
+- [MPD 3.0 review checklist](assets/mpd-3.0-checklist.xlsx) - for IEPDs using a release between NIEM 3.0 and NIEM 4.2
+
+*Checklists last updated 2021-06-25.*
+
+The image below shows several rows from the checklist, along with some example rule status codes filled in.
+
+![IEPD Review Checklist example rows](assets/iepd-review-checklist.png)
+{:.bordered}
+
+"Pass" and "fail" status codes are fairly standard for results.  "Review" is provided as an additional option to make it easy to identify rows that need to be returned to later for further review.
+
+### Peer review
 
 Some organizations use an IEPD Peer Review Process to establish a standard process for reviewing IEPDs.
 
@@ -94,3 +120,7 @@ Responsibilities for the review team include:
 - Coordinate with IEPD developer(s) during the review process to incorporate all feedback into the document as necessary
 - Coordinate status updates to the IEPD developer and best practice briefings for the NIEM community of interest
 - Submit the finalized IEPD to exchange stakeholders
+
+## Output
+
+By the end of this stage, the IEPD should be complete.  The package should contain all required artifacts, including extension and NIEM subset schemas, an IEPD catalog, a readme, a change log, and a conformance assertion.  Many other kinds of documentation and artifacts can be included as well.  The final package should be zipped and ready for distribution and implementation.

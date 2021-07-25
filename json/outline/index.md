@@ -100,7 +100,7 @@ NO JSON SCHEMA ABOVE HERE
     - XML details
     - XSD details
     - augmentations
-- [exchange-specification](/reference/artifacts/messages/iepd/iepd-starter-kit)
+- [exchange-specification](/reference/iepd/iepd-starter-kit)
     - How to specify an exchange for JSON
     - Determine business data content
     - Specify JSON representation of content
