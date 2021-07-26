@@ -31,6 +31,9 @@ h5:before {
 }
 </style>
 
+{:toc}
+- TOC
+
 This page walks through a simple example of implementing an exchange using NIEM-JSON.
 
 ## Define data requirements
@@ -103,7 +106,7 @@ Every property that does not have a simple value (such as a string or a number)
 is represented as an object. For example, the `j:Crash` element is represented
 as an object:
 
-```text
+```json
 "j:Crash" : {
   ... value for the crash property ...
 }
@@ -113,7 +116,7 @@ If a property has *only* a single simple value, then it may be represented as a
 literal value, rather than an object. For example, the `nc:PersonFullName`
 element here needs only a simple value:
 
-```text
+```json
 "nc:PersonFullName": "Gerry H. Everett"
 ```
 
@@ -124,7 +127,7 @@ property. For example, if an organization has 3 employees, it may appear as an
 representing a person (e.g., an object representing an instance of NIEM type
 `nc:PersonType`).
 
-```text
+```json
 "nc:Employee": [
   { "nc:PersonFullName": "Gerry H. Everett" },
   { "nc:PersonFullName": "Floyd Q. Halverson" },
@@ -151,13 +154,13 @@ both attributes and a simple value.
   distinguish between an array with 1 entry and a single value. This is a
   property with a value that is a single string:
 
-  ```text
+  ```json
   "nc:PersonFullName": "Gerry H. Everett"
   ```
 
   This is a property whose value is *an array* containing one string:
 
-  ```text
+  ```json
   "nc:PersonFullName": [ "Gerry H. Everett" ]
   ```
 
@@ -184,7 +187,7 @@ property as a JSON property. This results in the following JSON document:
 
 This example is available in the [JSON-LD Playground](http://tinyurl.com/y96znvok).
 
-## If needed, construct a JSON schema for your instances
+## Construct a JSON schema for your instances
 
 NIEM does not require the use of JSON schema for your JSON messages. NIEM merely
 requires that JSON documents have the correct format. However, you can create a
@@ -255,7 +258,7 @@ definitions will be small schemas within a `definitions` section of the JSON
 schema document. First, we add the definition for `@context`, which will accept
 any object:
 
-```
+```json
 "@context": {
     "type": "object"
   },

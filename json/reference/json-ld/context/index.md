@@ -2,6 +2,9 @@
 title: JSON-LD contexts
 ---
 
+{:toc}
+- TOC
+
 JSON-LD provides **JSON-LD contexts** which enable JSON documents to use simple,
 locally-meaningful names, while still enabling the messages to be meaningful
 beyond the initial exchange partners. A JSON-LD message can be meaningful to
@@ -61,7 +64,6 @@ This yields the JSON-LD data that uses only short, local terms:
 ```
 
 This example can be seen at [the JSON-LD Playground](http://tinyurl.com/yb7m7chr).
-
 
 When interpreted against the right JSON-LD contexts, both JSON documents
 evaluate to [the same expanded data](http://tinurl.com/y7w3tqpd).
@@ -146,7 +148,7 @@ This example is available at [the JSON-LD Playground](http://tinyurl.com/y9zdc3e
 The [JSON-LD specification](https://json-ld.org/spec/latest/json-ld/) describes
 how to attach a JSON-LD context to a JSON file, so that the file may be properly
 processed as JSON-LD. Examples provided on this website *mostly* maintain
-separate contexts from the JSON files. 
+separate contexts from the JSON files.
 
 ### Use `@context`
 
@@ -198,4 +200,3 @@ A best practice for using JSON-LD contexts with NIEM is to treat contexts as
 part of an information exchange specification, and inspect them, vet them, and
 cache them for use, rather than relying on any kind of run-time network
 resolution of contexts.
-

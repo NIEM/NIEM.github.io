@@ -17,8 +17,8 @@ are organized into namespaces. These bodies, and their namespaces, include:
   **appinfo**.
 
 * Domains are communities of interest, each managing components addressing a
-  specific topic or line of business. 
-  
+  specific topic or line of business.
+
 [Core and domains, and their namespaces](../../../../reference/content/), are outlined
 elsewhere on this site.
 
@@ -44,9 +44,3 @@ a component. For example:
 * The `ChargeDisposition` element defined by the Justice domain would be
   expressed as a qualified name, with the commonly-used prefix, as
   `j:ChargeDisposition`.
-
-
-
-
-
-

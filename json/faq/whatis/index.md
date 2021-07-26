@@ -170,7 +170,7 @@ comprised of domain representatives who govern the NIEM core model.
 
 The NIEM Technical Architecture Committee (NTAC) defines and supports
 the technical architecture that governs NIEM; it documents,
-implements, and maintains NIEM’s technical specifications.
+implements, and maintains NIEM's technical specifications.
 
 Those bodies, the NTAC, the NBAC, and the Domains, comprise a voluntary
 consensus standards body for the NIEM standards. They operate
@@ -249,4 +249,3 @@ JSON. Much more information about NIEM is available at the
         text-align: right;
     }
 </style>
-

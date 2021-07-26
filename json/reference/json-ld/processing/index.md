@@ -2,9 +2,12 @@
 title: JSON-LD processing
 ---
 
+{:toc}
+- TOC
+
 JSON-LD provides a specification,
 [JSON-LD 1.1 Processing Algorithms and API](https://json-ld.org/spec/latest/json-ld-api/),
-whic provides standard operations for processing JSON-LD. These operations allow
+which provides standard operations for processing JSON-LD. These operations allow
 JSON data to be transformed to various formats for different purposes, and
 enables the meaning of data that uses local terminology to be widely comprehended.
 
@@ -17,7 +20,7 @@ information about the other operations.
 ## Expansion
 
 The expansion algorithm removes JSON-LD contexts from a message, cooking any
-alises defined in the context directly into the data. In addition, anywhere an
+aliases defined in the context directly into the data. In addition, anywhere an
 array could occur, it places an array. An overview is provided in
 [section 2.1, Expansion](https://json-ld.org/spec/latest/json-ld-api/#expansion).
 
@@ -89,7 +92,7 @@ The data could be compacted against a context that provides a short local name
 for the term:
 
 ```json
-{ 
+{
   "nick": "http://release.niem.gov/niem/niem-core/4.0/#PersonPreferredName"
 }
 ```
@@ -101,4 +104,3 @@ for the term:
   "nick": "Morty"
 }
 ```
-

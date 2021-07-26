@@ -14,6 +14,7 @@ When the JSON data...
 ...is processed using the
 [JSON-LD expansion algorithm](https://json-ld.org/spec/latest/json-ld-api/#expansion),
 against the following JSON context...
+
 ```json
 {% include_relative qname-context.json %}
 ```

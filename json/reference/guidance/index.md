@@ -1,11 +1,11 @@
 ---
 title: Non-Normative Guidance in Using NIEM with JSON
+short: Guidance
 layout: specification
 ndr-href: https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/NIEM-NDR-3.0-2014-07-31.html
 json-ld-api-href: http://www.w3.org/TR/json-ld-api/
 json-ld-href: http://www.w3.org/TR/json-ld/
 json-ld-name: "JSON-LD 1.0"
-short: Guidance
 external: true
 ---
 
@@ -48,7 +48,6 @@ or sending email to <niem-comments@lists.gatech.edu>.
 
 * This line is a placeholder to generate the table of contents
 {:toc .no_header}
-
 
 <div id="body-start"></div>
 
@@ -164,7 +163,7 @@ short form using a JSON-LD context.
 
 Take, for example, the following JSON data:
 
-```javascript
+```json
 {
   "http://release.niem.gov/niem/niem-core/3.0/#quantityUnitText" : "dozen"
 }
@@ -174,7 +173,7 @@ The key in this JSON object is the IRI defined by NIEM for the
 `nc:quantityUnitText` attribute.  Using the JSON-LD context mechanism,
 that IRI can be compacted. as follows:
 
-```javascript
+```json
 {
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/3.0/#"
@@ -208,7 +207,7 @@ their long forms. This is described by
 [JSON-LD 1.0 Processing Algorithms and API, Section 2.1, &ldquo;Expansion&rdquo;]({{page.json-ld-api-href}}#expansion). The
 expanded form of the above data follows:
 
-```javascript
+```json
 [
   {
     "http://release.niem.gov/niem/niem-core/3.0/#quantityUnitText": [
@@ -305,7 +304,7 @@ ignored during processing at the receiving end.
 The following JSON example is a JSON IEP template for the simple object model
 from [Section 1.5, above](#niem-xml-json).
 
-```javascript
+```json
 {% include_relative object-model-template.jsonld %}
 ```
 
@@ -333,7 +332,7 @@ The IEP as a whole is represented by a JSON object, evident in an
 instance by an outside set of curly braces. The sub-objects for the
 root element and `@context` go within that object:
 
-```javascript
+```json
 {
     "@context" : {
         ...
@@ -395,7 +394,7 @@ leads to the definition of IRI roots as follows:
 
 For the QName `nc:Person` this yields the IRI `http://release.niem.gov/niem/niem-core/3.0/#Person`.
 
-In addtion, we apply the following guidelines:
+In addition, we apply the following guidelines:
 
 * Omit the `xsi` namespace, `http://www.w3.org/2001/XMLSchema-instance`, which
   is reserved for XML Schema-specific concepts, and is not carried over into
@@ -422,7 +421,7 @@ TBD:
 
 This yields the following `@context` entry:
 
-```javascript
+```json
 {
     "@context" : {
         "exch" : "http://example.com/CrashDriver/1.0/#",
@@ -450,7 +449,7 @@ of the element. This may be expanded into an IRI by a JSON-LD processor, but
 this guidance recommends using the QName, supported by a context entry for the
 IRI root. Within the [full example](#full-example), this yields:
 
-```javascript
+```json
 {
   "@context": {
     "exch": "http://example.com/CrashDriver/1.0/#",
@@ -481,7 +480,7 @@ sample instance, `exch:CrashDriverInfo` has the following child elements:
 These are each converted into keys within the `exch:CrashDriverInfo` object
 described above:
 
-```javascript
+```json
 ...
 "exch:CrashDriverInfo": {
   "nc:Person": {
@@ -509,7 +508,6 @@ Note that there is only one pair for each child
 element *name*, no matter how many times that element appears in the
 content.  It is now time to discuss...
 
-
 ### Repeated Elements
 
 In the [full example XML IEP](#full-example-xml), The element
@@ -527,7 +525,7 @@ In the [full example XML IEP](#full-example-xml), The element
 Since `nc:PersonMiddleName` is repeated, it is represented using the key
 `nc:PersonMiddleName`, with a value that is an array of objects:
 
-```javascript
+```json
 "nc:PersonName": {
   "nc:PersonGivenName": <!-- content of element nc:PersonGivenName -->,
   "nc:PersonMiddleName": [
@@ -575,7 +573,7 @@ Model](https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0
 <!-- reference to another section ("advanced topics") to talk about handling
 rdf:value. You could define rdf:value to something in @context
 
-```javascript
+```json
 {
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/3.0/#",
@@ -603,7 +601,7 @@ sample IEP we have
 
 which is converted to the following JSON
 
-```javascript
+```json
 "nc:PersonName": {
   "nc:personNameCommentText": "copied",
   "nc:PersonGivenName": {
@@ -631,7 +629,7 @@ own.
 The `nc:PersonGivenName` element has simple content and
 attributes. Its JSON representation is
 
-```javascript
+```json
   "nc:PersonGivenName" : {
     "nc:sequenceID" : 1,
     "rdf:value" : "Peter"
@@ -664,7 +662,7 @@ an attribute.  Fortunately, there is no good reason to do that in a NIEM IEP.
 The `nc:Date` element has simple content and no attributes.  Its JSON-LD
 representation is
 
-```javascript
+```json
   "nc:Date" :"1893-05-04"
 ```
 
@@ -675,7 +673,7 @@ attributes), or a value (if it does not), and code accordingly.
 
 ### Element with Numeric or Boolean Content
 
-<!-- easy button walkthrough is stringifying or Boolean.
+<!-- easy button walk-through is stringifying or Boolean.
     typing is an advanced topic -->
 
 When the IEPD schema defines a numeric type for a simple element, the
@@ -684,7 +682,7 @@ a boolean type, the value of the JSON pair is `true` or `false`.  For
 example, the representations of `nc:MeasureDecimalValue` and
 `exch:PersonFictionalCharacterIndicator` are:
 
-```javascript
+```json
   "nc:MeasureDecimalValue" : 9.7
 
   "exch:PersonFictionalCharacterIndicator" : true
@@ -727,7 +725,7 @@ must either define `nc:PersonType` (the type defined by NIEM for element
 This XML instance may be valid with mandatory element children, as long as
 `nillable="true"` is set for the element. The JSON for all of these is the same:
 
-```javascript
+```json
 "nc:Person" : { }
 ```
 
@@ -751,7 +749,7 @@ if that element is empty, it represents the empty string. The XML instance (case
 &hellip;are both carrying the empty string as children of
 `nc:PersonGivenName`. This may be represented with the JSON:
 
-```javascript
+```json
 "nc:PersonGivenName" : ""
 ```
 
@@ -783,7 +781,7 @@ example, the XML:
 
 &hellip;is represented by the JSON-LD:
 
-```javascript
+```json
 "nc:Person" : {
   "@id" : "P01",
   "nc:PersonBirthDate": {
@@ -812,7 +810,7 @@ attribute is converted into a reference using the @id of the
 corresponding JSON-LD node. For example, the representation for
 `<nc:RoleOfPerson structures:ref="P01" xsi:nil="true"/>` is
 
-```javascript
+```json
 "nc:RoleOfPerson" : {
   "@id" : "P01"
 }
@@ -850,7 +848,7 @@ place. Abstract elements do not appear at all.  For example,
 
 becomes
 
-```javascript
+```json
 "nc:Person" : {
     "nc:PersonBirthDate" : {
         "nc:Date"  : "1893-05-04"
@@ -868,7 +866,7 @@ for schema validation, but have no role in the conceptual model, and
 so they do not appear in the JSON representation. So, for example, the
 representation of `j:DriverLicense` is
 
-```javascript
+```json
 "j:DriverLicense" : {
   "j:DriverLicenseCardIdentification" : {
       "nc:IdentificationID" : "A1234567"
@@ -1039,7 +1037,7 @@ desirable, of course.
 
 #### Represent the external content as an XMLLiteral blob
 
-```javascript
+```json
 "geo:LocationGeospatialPoint": {
   "@type": "rdf:XMLLiteral",
   "@value":
@@ -1052,7 +1050,7 @@ desirable, of course.
 
 ## Implementing Translators
 
-> TODO: Discuss an **easy button** transfrom from NIEM XML to JSON-LD, treating input
+> TODO: Discuss an **easy button** transform from NIEM XML to JSON-LD, treating input
 > like a *canned query* with very little optionality, transforming to JSON-LD
 > using XSLT3's JSON capability. &mdash;@webb
 
@@ -1069,8 +1067,7 @@ straightforward, although there are caveats. These include:
 1. JSON-LD expanded syntax may be much more *regular*, simplifying software that uses data.
 1. The order of keys in an object is not significant, so don't rely on it.
 1. Arrays may only appear as needed.
-1. Order of data inside an array should not be considered signficant (as described by [*Building JSON-LD APIs: Best Practices*, &ldquo;Best Practice 6: Assume arrays are unordered&rdquo;](http://json-ld.org/spec/latest/json-ld-api-best-practices/#unordered-values))
-
+1. Order of data inside an array should not be considered significant (as described by [*Building JSON-LD APIs: Best Practices*, &ldquo;Best Practice 6: Assume arrays are unordered&rdquo;](http://json-ld.org/spec/latest/json-ld-api-best-practices/#unordered-values))
 
 Vanilla JSON processes that use JSON-LD are encouraged to carefully
 control the organization and JSON-LD context of the data. This may be
@@ -1083,7 +1080,7 @@ In JSON and JSON-LD, the order of keys within an object are *not* considered
 significant. This means that the two following pieces of JSON-LD are
 equivalent:
 
-```javascript
+```json
 {
   "ns:key1": "value",
   "ns:key2": "value"
@@ -1092,7 +1089,7 @@ equivalent:
 
 is equivalent to:
 
-```javascript
+```json
 {
   "ns:key2": "value",
   "ns:key1": "value"
@@ -1107,7 +1104,7 @@ writer of the JSON-LD, or may be handled automatically by a JSON-LD library.
 In JSON-LD, a single object is equivalent to an array that contains a
 single object. So, the two following pieces of JSON-LD are equivalent:
 
-```javascript
+```json
 {
   "ns:key": "value"
 }
@@ -1115,7 +1112,7 @@ single object. So, the two following pieces of JSON-LD are equivalent:
 
 is equivalent to:
 
-```javascript
+```json
 {
   "ns:key" : [
     "value"
@@ -1141,7 +1138,7 @@ If you need to specify type information for handling the iep data correctly, you
 This example specifies that the node type of Person in the iep is a NIEM PersonType and the
 value type of their PersonBirthDate is an xsd date type.
 
-```javascript
+```json
 {
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/3.0/#",
@@ -1166,7 +1163,7 @@ value type of their PersonBirthDate is an xsd date type.
 Here is an example of a typed literal, identifying the type of the simple
 content of `nc:MeasureDecimalValue` as being type `xs:decimal`:
 
-```javascript
+```json
 {
   "@context" : {
     "nc": "http://release.niem.gov/niem/niem-core/3.0/#",
@@ -1198,7 +1195,7 @@ using the `http://www.w3.org/ns/json-ld#context` link relation.
 
 A separate context file could be served at URL `http://example.com/contexts/iepd-context.jsonld`:
 
-```javascript
+```json
 {
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/3.0/#",
@@ -1214,7 +1211,7 @@ A separate context file could be served at URL `http://example.com/contexts/iepd
 
 A link header can be added to the plain JSON response that includes:
 
-```
+```text
 Link: <http://example.com/contexts/iepd-context.jsonld>; rel="http://www.w3.org/ns/json-ld#context"; type="application/ld+json"
 ```
 
@@ -1224,7 +1221,7 @@ data instance, without the instance explicitly referring to the context. Since
 the context defined the short terms as aliases to full NIEM terms, expanding
 this JSON data will convert it to use the full NIEM terms.
 
-```javascript
+```json
 {
   "givenName": { "text" : "Peter" },
   "additionalName": [ { "text": "Death"},
@@ -1240,7 +1237,6 @@ stored.
 
 See [JSON-LD Specification Section 6.8, &ldquo;Interpreting JSON as JSON-LD&rdquo;]({{page.json-ld-href}}#interpreting-json-as-json-ld) for more information and examples
 of how to implement this.
-
 
 ## Road map for future work
 
@@ -1259,7 +1255,6 @@ Describe approaches or tools for transforming.
 Provide helper functions to check for repeatable elements.
 <div id="body-end"></div>
 
-
 ## References
 
 * <a name="bibjsonld"></a>JSON-LD: Manu Sporny, Gregg Kellogg, Markus Lanthaler, Editors. 16 January 2014. W3C Recommendation. &ldquo;[A JSON-based Serialization for Linked Data]( https://www.w3.org/TR/json-ld/).&rdquo; Available from [https://www.w3.org/TR/json-ld/](https://www.w3.org/TR/json-ld/)
@@ -1275,7 +1270,7 @@ Richard Cyganiak, David Wood, Markus Lanthaler, Editors. 09 January 2014. W3C Pr
 
 ## Full example: {#full-example}
 
-The walkthrough of how to transform an XML instance document IEP into a JSON-LD
+The walk-through of how to transform an XML instance document IEP into a JSON-LD
 data instance is demonstrated using the full example documents within this
 section. These examples were constructed to show many aspects and features of
 NIEM XML instance documents.
@@ -1292,7 +1287,7 @@ The following XML document is the XML form for the full example from [Section 2,
 
 The following JSON data is a compact JSON-LD form of the full example from [Section 2, above](#xml-to-json).
 
-```javascript
+```json
 {% include_relative full-example.jsonld %}
 ```
 

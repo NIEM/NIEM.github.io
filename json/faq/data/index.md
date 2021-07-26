@@ -2,6 +2,9 @@
 title: What Is NIEM JSON data?
 ---
 
+{:toc}
+- TOC
+
 A summary answer, one that is unpacked below, is:
 
 1. It is [JSON data](./simple). It follows the rules of the JSON
@@ -12,10 +15,12 @@ A summary answer, one that is unpacked below, is:
    which connects key strings in the data to the data elements
    that provide their meaning.
 
+## Examples
+
 NIEM JSON data might look like *Example 1* below, with simple *ad hoc*
 key strings:
 
-```
+```json
 {
   "person": {
     "name": {
@@ -35,7 +40,7 @@ The same information might also look like *Example 2* instead, with key
 strings that are names of NIEM data elements: (More on that [information
 equivalence](#equiv) later.)
 
-```
+```json
 {
   "nc:Person": {
     "nc:PersonName": {
@@ -72,7 +77,7 @@ That meaning is supplied in three steps:
 3. The content model for each NIEM JSON data resource provides those
    data elements, and specifies which are mandatory and optional.
 
-### The NIEM Conceptual Model {#concept}
+## The NIEM Conceptual Model {#concept}
 
 According to the NIEM conceptual model, each object in the JSON data
 is
@@ -126,7 +131,7 @@ terms in key strings (and in certain data values) to IRIs. NIEM JSON
 always has a context that maps key strings to data element URIs.  The
 context for *Example 2* is:
 
-```
+```json
 {
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
@@ -138,14 +143,14 @@ context for *Example 2* is:
 Interpreted against that context, the key string `nc:PersonSurName`
 expands to the absolute URI:
 
-```
+```text
 http://release.niem.gov/niem/niem-core/4.0/#PersonSurName
 ```
 
 Which is the global identifier for the data element defined as "A last
 name or family name of a person".
 
-### NIEM Content Models {#content}
+## NIEM Content Models {#content}
 
 NIEM data always has a [content model](../../reference/models), which includes all
 of the data elements that may appear in the data resource. These
@@ -188,7 +193,7 @@ identified by the namespace URI. The normative syntax for the
 namespace resource is XML Schema; however, equivalent alternate
 encodings in JSON Schema or RDF are possible.
 
-### Equivalence Of *Ad Hoc* Key Strings {#equiv}
+## Equivalence Of *Ad Hoc* Key Strings {#equiv}
 
 NIEM JSON data will often use the names of NIEM data elements (such as
 `nc:PersonGiveName`) for key strings. However, sometimes people
@@ -196,7 +201,7 @@ prefer simple *ad hoc* key strings such as `gname` instead. These
 simple keys may be used in NIEM JSON data if their mapping is included
 in the JSON-LD context. For example, the context for *Example 1* is:
 
-```
+```json
 "@context": {
   "nc":    "http://release.niem.gov/niem/niem-core/4.0/#",
   "j":     "http://release.niem.gov/niem/domains/jxdm/6.0/",
@@ -214,7 +219,7 @@ in the JSON-LD context. For example, the context for *Example 1* is:
 Using that context, the property with the key string `lname` is
 expanded to the URI:
 
-```
+```text
 http://release.niem.gov/niem/niem-core/4.0/#PersonSurName
 ```
 
@@ -231,7 +236,7 @@ workaround the limitations of the tooling.
 
 For example, the context could be:
 
-```
+```json
 "@context": {
   "nc":    "http://release.niem.gov/niem/niem-core/4.0/#",
   "j":     "http://release.niem.gov/niem/domains/jxdm/6.0/",
@@ -253,13 +258,13 @@ include domain prefixes in the local names with the colons
 replaced with an underscore (`_`) or other special character
 supported by the tooling (e.g. `nc_PersonName`)
 
-### Associating NIEM JSON Data To Its JSON-LD Context
+## Associating NIEM JSON Data To Its JSON-LD Context
 
 NIEM JSON data always has an associated JSON-LD context.  Sometimes
 the context object is embedded within the NIEM JSON data.  For
 *Example 2*, the result would look like:
 
-```
+```json
 {
   "@context": {
     "nc":    "http://release.niem.gov/niem/niem-core/4.0/#",
@@ -283,7 +288,7 @@ Sometimes, NIEM JSON data simply includes the URI of its context
 resource. (This is especially useful when the context object is
 large.) With this approach, the data in *Example 2* might be:
 
-```
+```json
 {
   "@context": "http://example.com/myIEPD",
   "nc:Person": {
@@ -302,7 +307,7 @@ large.) With this approach, the data in *Example 2* might be:
 
 Where `http://example.com/myIEPD` is the URI for the context resource:
 
-```
+```json
 {
   "@context": {
     "nc": "http://release.niem.gov/niem/niem-core/4.0/#",
@@ -327,7 +332,7 @@ data should be treated as part of an information exchange
 specification, inspected at build time and retained for use, instead
 of relying on any kind of run-time network resolution of contexts.
 
-### Self-Describing Data
+## Self-Describing Data
 
 NIEM JSON is self-describing because:
 

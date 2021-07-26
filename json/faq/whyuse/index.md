@@ -7,7 +7,7 @@ in the example on the left.  JSON data can also be complex, with
 nested objects and arrays of objects or values, as in the example on
 the right.
 
-```
+```text
 {                                {
   "lname": "Wimsey",               "name": {
   "fname": "Peter",                  "lname": "Wimsey",
@@ -27,11 +27,11 @@ what it means. This involves answers to questions like:
 
 * What is the meaning of the `date` key string? Birthday or something
   else?
-  
+
 * What is the format of the `date` value?  Is it always an ISO 8601
   date field, or might we sometimes see `Tuesday`, or `Fred`? Is it
   the same format as `cdate`, or something different?
-  
+
 * Does `lname` have the same meaning in both resources?
 
 * Will `gname` always be found within a `name` object, or is it
@@ -76,7 +76,7 @@ is defined. In addition, the NIEM approach also offers:
 
 * A simple way for developers who are creating a resource to
   reuse data elements defined by others, instead of creating new
-  defintions. This encourages a degree of harmonization between
+  definitions. This encourages a degree of harmonization between
   different resources.
 
 * A [NIEM data model](../whatis#model), partitioned into a NIEM core of
@@ -112,4 +112,3 @@ the XML technology originally used. Data exchange designers can use
 NIEM to create a resource specification that is all-JSON, or one that
 is all-XML, or one that defines both a JSON and an XML serialization,
 depending on the needs of the producers and consumers.
-

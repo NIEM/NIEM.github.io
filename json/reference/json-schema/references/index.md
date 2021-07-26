@@ -13,12 +13,12 @@ Both *A* and *B* consist of successive components of the path (folder, type or p
 To demonstrate, here is a example JSON schema `xs.schema.json` that will be the target of **cross-schema references**:
 
 ```json
-{%include_relative xs.schema.json %}
+{% include_relative xs.schema.json %}
 ```
 
 Here is an example JSON schema `ns.schema.json` including **cross-schema references** to types in `xs.schema.json`, a schema in the same directory, and **in-schema references** to
 types and properties in the same schema:
 
 ```json
-{%include_relative nc.schema.json %}
+{% include_relative nc.schema.json %}
 ```

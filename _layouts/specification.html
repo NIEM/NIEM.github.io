@@ -5,6 +5,10 @@ layout: 'default'
   <div class="row">
     <div class="col-md-12">
       {% include page/content.html %}
+
+      {% if site.output != "pdf" %}
+        {% include page/nav.html %}
+      {% endif %}
     </div>
   </div>
 </div>

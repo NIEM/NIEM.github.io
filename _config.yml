@@ -19,9 +19,11 @@ exclude:
   - CONTRIBUTING.md
   - Gemfile
   - Gemfile.lock
+  - json/differences/
   - json/guidance/aux
   - json/guidance/tmp
   - json/outline
+  - json/primer
   - Makefile
   - normative-rules-guidance/country-codes/schema.png
   - README.md
