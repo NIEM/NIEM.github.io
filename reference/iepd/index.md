@@ -9,7 +9,7 @@ links:
 - url: /reference/iepd/lifecycle/
 - url: /reference/iepd/artifacts/
 - url: /reference/iepd/iepd-starter-kit/
-- url: /reference/iepd/iepd-versions/
+- url: /reference/iepd/versioning/
 ---
 
 ## Overview

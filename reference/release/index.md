@@ -9,6 +9,8 @@ links:
     group: update
   - url: /reference/release/artifacts/
     group: more
+  - url: /reference/release/versioning/
+    group: more
 ---
 
 - TOC
