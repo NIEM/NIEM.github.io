@@ -25,7 +25,9 @@ links:
 </style>
 
 {:.note}
-> **[{{site.data.release.description}}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{site.data.release.tag}}) is now available for review!**  Feedback is requested by end of the day on {{site.data.release.feedbackDue}}.  Click **[here](./draft/)** for more.
+> **The [{{site.data.release.description}}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{site.data.release.tag}}) draft is now available for review!** <br/>
+>
+> Feedback is requested by end of the day on {{site.data.release.feedbackDue}}.  See the **[NIEM 5.1 info page](./draft/)** in this section for more.
 
 NIEM publishes annual releases on a 3-year cycle.  A major release one year will be followed by minor releases the next two years.
 
@@ -55,7 +57,8 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
         <b><a href="./5.1">{{ site.data.release.description }}</a></b><br><i>(under development)</i>
       </td>
       <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/tree/{{tag}}">GitHub</a>
+        <a href="https://github.com/NIEM/NIEM-Releases/tree/{{tag}}">GitHub</a> |
+        <span class="text-muted">pending final release</span>
         <!-- |
         <a href="https://release.niem.gov/niem/{{tag}}/">release.niem.gov</a>
          -->
