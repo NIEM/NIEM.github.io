@@ -11,6 +11,7 @@ The NBD produces Quarterly Newsletters to support the community. The publication
 
 |Time Period|Date Posted|
 |---|---|
+|Q3 2021|[Newsletter Q3 2021](OBIM FI NIEM Biometrics Newsletter Q3 2021.pdf)
 |Q2 2021|[Newsletter Q2 2021](OBIM FI NIEM Biometrics Domain Q2 2021 Newsletter.pdf)
 |Q1 2021|[Newsletter Q1 2021](OBIM FI NIEM Biometrics Newsletter Q1 2021.pdf)
 |Q4 2020|[Newsletter Q4 2020](OBIM FI NIEM Biometrics Newsletter Q4 2020 final.pdf)
