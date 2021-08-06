@@ -3,45 +3,54 @@
 <p id="status-message" class="note">Status: <span id="status">Loading NIEM issues from GitHub...</span></p>
 
 <!-- Result counts message -->
-<p id="status-counts" style="padding-bottom: 10px; display: none">
-  <span>There are <span id="issue-count">##</span> issues across <span id="repo-count">##</span> NIEM GitHub repos.</span>
+<div id="issue-header" style="display: none">
+  <div id="status-counts">
+    There are <span id="issue-count">##</span>
+    <span id="label-filter" style="display: none"> filtered </span>
+    issues across <span id="repo-count">##</span> NIEM GitHub repos.
+  </div>
 
-  <!-- Menu options -->
-  <span id="menu" class="pull-right">
+  <div id="issue-menu" class="pull-right">
+    <div class="form-check issue-menu-item">
+      <input class="form-check-input" type="checkbox" id="filter-unassigned" onchange="displayResults()"/>
+      <label class="form-check-label" for="filter-unassigned">Unassigned</label>
+    </div>
 
-    <!-- Filter options -->
-    <span id="menu-repos">
-      <strong>Repos</strong> [
-      <a id="reposAll" onclick="filterAllRepos()" class="active">All</a>
-      <span class="spacer"> | </span>
-      <a id="reposActive" onclick="filterActiveRepos()">Active</a>
-      <span class="spacer"> | </span>
-      <a id="reposInactive" onclick="filterInactiveRepos()">Inactive</a>
-      ]
-    </span>
+    <div class="form-check issue-menu-item">
+      <input class="form-check-input" type="checkbox" id="filter-external" onchange="displayResults()"/>
+      <label class="form-check-label" for="filter-external">Community</label>
+    </div>
 
-    <!-- Display options -->
-    <span id="menu-display" style="padding-left: 10px;">
-      <strong>Display by</strong> [
-      <a id="displayRepos" onclick="displayRepos()" class="active">Repo</a>
-      <span class="spacer"> | </span>
-      <a id="displayIssues" onclick="displayIssues()">Issue</a>
-      <span class="spacer"> | </span>
-      <a id="displayAssignees" onclick="displayAssignees()">Assignee</a>
-      ]
-    </span>
+    <div class="issue-menu-item"><span class="spacer"> | </span></div>
 
-    <!-- Sort options -->
-    <span id="menu-sort" style="padding-left: 10px;">
-      <strong>Sort</strong> [
-      <a id="sortNewest" onclick="sortNewest()" class="active">Newest</a>
-      <span class="spacer"> | </span>
-      <a id="sortOldest" onclick="sortOldest()">Oldest</a>
-      ]
-    </span>
+    <div class="issue-menu-item">
+      <label for="select-repos">Repos: </label>
+      <select id="select-repos" onchange="displayResults()">
+        <option value="all">All</option>
+        <option value="active" selected>Active</option>
+        <option value="inactive">Inactive</option>
+      </select>
+    </div>
 
-  </span>
-</p>
+    <div class="issue-menu-item">
+      <label for="select-groupBy">Group by: </label>
+      <select id="select-groupBy" onchange="displayResults()">
+        <option value="repo" selected>Repo</option>
+        <option value="issue">Issue</option>
+        <option value="assignee">Assignee</option>
+      </select>
+    </div>
+
+    <div class="issue-menu-item">
+      <label for="select-sort">Sort: </label>
+      <select id="select-sort" onchange="displayResults()">
+        <option value="newest" selected>Newest</option>
+        <option value="oldest">Oldest</option>
+      </select>
+    </div>
+  </div>
+</div>
+
 
 <!-- Placeholder for data -->
 <div id="data">
@@ -70,6 +79,19 @@
   }
   #data div.box {
     margin-top: 4px;
+  }
+  label {
+    font-weight: normal;
+  }
+  div#issue-header {
+    padding-bottom: 25px;
+  }
+  div#status-counts, div#issue-menu {
+    display: inline;
+  }
+  div.issue-menu-item {
+    display: inline;
+    padding-left: 8px;
   }
 </style>
 

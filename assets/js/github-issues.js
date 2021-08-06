@@ -35,17 +35,22 @@ let inactiveRepos = ["How-to-Upload-an-IEPD-to-GitHub", "Implementation-Cookbook
 /** @type {String[]} */
 let currentAssignees = [];
 
+let staffLogins = ["CB2", "cchipman6", "cdmgtri", "jasonlancaster", "iamdrscott", "markrdotson", "smrubin", "TomCarlson-NTAC", "webb"];
+
 let $data = $("#data");
-let $menuRepos = $("#menu-repos > a");
-let $menuDisplays = $("#menu-display > a");
-let $menuSorts = $("#menu-sort > a");
+let $labelFilter = $("#label-filter");
+let $selectRepos = $("#select-repos");
+let $selectGroupBy = $("#select-groupBy");
+let $selectSort = $("#select-sort");
+let $checkboxUnassigned = $("#filter-unassigned");
+let $checkboxExternal = $("#filter-external");
 
 getIssues();
 
 /**
  * Grab issue data from GitHub API for all NIEM organization repositories
  */
-function getIssues() {
+async function getIssues() {
 
   let response = $.get(endpoint + page++, function (data, status, xhr) {
     if (status == "success") {
@@ -63,7 +68,7 @@ function getIssues() {
 
       if (totalCount == allIssues.length) {
         processIssues();
-        filterAllRepos();
+        displayResults();
       }
     }
     else {
@@ -93,7 +98,7 @@ function processIssues() {
 
   setStatus("Done");
   $("#status-message").hide();
-  $("#status-counts").show();
+  $("#issue-header").show();
 
   inactiveRepos = allRepos.filter( repo => inactiveRepos.includes(repo) );
   activeRepos = allRepos.filter( repo => ! inactiveRepos.includes(repo) );
@@ -105,32 +110,36 @@ function processIssues() {
  */
 function displayResults() {
 
-  let id = $("#menu-display > a.active")[0].id;
+  $labelFilter.hide();
+  updateRepoFilter();
+  updateSort();
+  updateAssignees();
 
-  switch (id) {
-    case "displayRepos":
-      displayRepos();
+  switch ($selectGroupBy.val()) {
+    case "issue":
+      groupByIssues();
       break;
-    case "displayIssues":
-      displayIssues();
+    case "assignee":
+      groupByAssignees();
       break;
-    case "displayAssignees":
-      displayAssignees();
+    case "repo":
+    default:
+      groupByRepos();
       break;
   }
 
   $("#issue-count").text(currentIssues.length);
   $("#repo-count").text(currentRepos.length);
+  finalizeDisplay();
 
 }
 
 /**
  * Displays issue results grouped by repo
  */
-function displayRepos() {
+function groupByRepos() {
 
   $data.empty();
-  updateMenu($menuDisplays, "#displayRepos");
 
   currentRepos.forEach( repo => {
     let repoURL = getRepoURL(repo);
@@ -156,31 +165,27 @@ function displayRepos() {
 
     $data.append($repoDiv);
   });
-  finalizeDisplay();
 }
 
 /**
  * Displays issue results as a flat list of issues
  */
-function displayIssues() {
+function groupByIssues() {
   $data.empty();
-  updateMenu($menuDisplays, "#displayIssues");
   let $issueList = $(`
     <ul>
       ${ currentIssues.map( issue => getIssueListItem(issue, true, true) ).join("") }
     </ul>
   `);
   $data.append($issueList);
-  finalizeDisplay();
 }
 
 /**
  * Displays issue results grouped by assignee
  */
-function displayAssignees() {
+function groupByAssignees() {
 
   $data.empty();
-  updateMenu($menuDisplays, "#displayAssignees");
 
   currentAssignees.forEach( assignee => {
 
@@ -202,11 +207,36 @@ function displayAssignees() {
     $data.append($assigneeDiv);
   });
 
-  finalizeDisplay();
 }
 
 function finalizeDisplay() {
   updateExternalLinks();
+}
+
+/**
+ */
+function updateRepoFilter() {
+
+  switch ($selectRepos.val()) {
+    case "all":
+      filterAllRepos();
+      break;
+    case "active":
+      filterActiveRepos();
+      break;
+    case "inactive":
+      filterInactiveRepos();
+      break;
+  }
+
+  if ($checkboxUnassigned.is(":checked")) {
+    currentIssues = currentIssues.filter( issue => issue.assignee.login == "unassigned" );
+  }
+  if ($checkboxExternal.is(":checked")) {
+    currentIssues = currentIssues.filter( issue => !staffLogins.includes(issue.user.login) );
+  }
+
+  filterCurrentRepos();
 }
 
 /**
@@ -215,20 +245,14 @@ function finalizeDisplay() {
 function filterAllRepos() {
   currentRepos = allRepos;
   currentIssues = allIssues;
-  updateAssignees();
-  updateMenu($menuRepos, "#reposAll");
-  displayResults();
 }
 
 /**
  * Sets the issue filter so only issues from active repos will be displayed
  */
 function filterActiveRepos() {
-  currentRepos = activeRepos;
   currentIssues = allIssues.filter( issue => activeRepos.includes(issue.repo) );
-  updateAssignees();
-  updateMenu($menuRepos, "#reposActive");
-  displayResults();
+  $labelFilter.show();
 }
 
 /**
@@ -236,11 +260,22 @@ function filterActiveRepos() {
  * file as inactive will be displayed
  */
 function filterInactiveRepos() {
-  currentRepos = inactiveRepos;
   currentIssues = allIssues.filter( issue => inactiveRepos.includes(issue.repo) );
-  updateAssignees();
-  updateMenu($menuRepos, "#reposInactive");
-  displayResults();
+  $labelFilter.show();
+}
+
+function filterCurrentRepos() {
+  currentRepos = [...new Set(currentIssues.map( issue => issue.repo ))];
+}
+
+/**
+ * Sort issues
+ */
+function updateSort() {
+  switch ($selectSort.val()) {
+    case "oldest": return sortOldest();
+    case "newest": return sortNewest();
+  }
 }
 
 /**
@@ -250,8 +285,6 @@ function sortOldest() {
   currentIssues = currentIssues.sort( (a, b) => {
     return (a.created_at < b.created_at) ? -1 : 1;
   });
-  updateMenu($menuSorts, "#sortOldest");
-  displayResults();
 }
 
 /**
@@ -261,8 +294,6 @@ function sortNewest() {
   currentIssues = currentIssues.sort( (a, b) => {
     return (a.created_at > b.created_at) ? -1 : 1;
   });
-  updateMenu($menuSorts, "#sortNewest");
-  displayResults();
 }
 
 /**
@@ -425,14 +456,4 @@ function getRepoURL(repoName) {
  */
 function setStatus(status) {
   $("#status").text(status);
-}
-
-/**
- * Updates the given menu so that only the given menu item has the active class
- * @param {JQuery} $menuLinks
- * @param {string} menuID
- */
-function updateMenu($menuLinks, menuID) {
-  $menuLinks.removeClass("active");
-  $(menuID).addClass("active");
 }

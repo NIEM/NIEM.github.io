@@ -1,5 +1,5 @@
 ---
-title: NIEM GitHub issues
+title: Issue Dashboard for NIEM GitHub Repositories
 short: Issues
 description: GitHub issues across all NIEM organization repositories.
 permalink: /issues/

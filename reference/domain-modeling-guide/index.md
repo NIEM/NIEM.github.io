@@ -215,7 +215,7 @@ or [Change Request](https://reference.niem.gov/niem/resource/change-request/) (X
 - IEPD extensions are candidates for domain content, but each should be evaluated and potentially remodeled.
 - Use IEPD repositories to share IEPDs.
 - Example IEPD:  Cursor-on-Target MilOps Future Namespace.
-- [IEPD versioning]({{ site.data.pages.iepd | append: "iepd-versions/" | relative_url }})
+- [IEPD versioning]({{ site.data.pages.iepd | append: "versioning/" | relative_url }})
 - When building a domain model, concentrate on designing XML data components that can be reused within any IEPD that any domain might build to share data with you. Do NOT build an IEPD for a domain model. To do this, try to design small parts that can be reused independently and are potentially standalone. Do not build a couple of very large monolithic structures. Think in terms of the kinds of small objects you need to represent, so they can be reused in multiple IEPDs.
 
 **The NIEM Lead Developer (GTRI) can and will help you**
