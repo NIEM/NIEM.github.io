@@ -293,7 +293,7 @@ Placeholders appear in upper case.  A few common namespace prefixes and import s
   xmlns:appinfo="http://release.niem.gov/niem/appinfo/5.0/"
   xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
   xmlns:nc="http://release.niem.gov/niem/niem-core/5.0/"
-  xmlns:niem-xs="http://release.niem.gov/niem/proxy/xsd/5.0/"
+  xmlns:niem-xs="http://release.niem.gov/niem/proxy/niem-xs/5.0/"
   xmlns:structures="http://release.niem.gov/niem/structures/5.0/"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -308,6 +308,7 @@ Placeholders appear in upper case.  A few common namespace prefixes and import s
 
   <xs:import namespace="IMPORT_URI" schemaLocation="IMPORT_PATH"/>
   <xs:import namespace="http://release.niem.gov/niem/niem-core/5.0/" schemaLocation="../niem-core.xsd"/>
+  <xs:import namespace="http://release.niem.gov/niem/proxy/niem-xs/5.0/" schemaLocation="../adapters/niem-xs.xsd"/>
   <xs:import namespace="http://release.niem.gov/niem/structures/5.0/" schemaLocation="../utility/structures.xsd"/>
 
   <!-- element, attribute, and type declarations -->
