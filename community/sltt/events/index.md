@@ -12,3 +12,4 @@ short: Meetings & Events Calendar
 |9/15/21|NBAC National Meeting|NIEM and Child Care|Human Services|Jeremy Howard|
 |9/15/21|NBAC National Meeting|SLTT Update|All|P. Wormeli, M. Phillips|
 |10/21/21|NLETS Webinar|NIEM Applications|Justice and Emergency Management|Kate Silhol, K. Escobar, P. Wormeli, M. Phillips|
+|11/17/21|NIEM SLTT to Participate in DAMA Chicago Chapter 35th Anniversary Meeting|||P. Wormeli, M. Phillips|
