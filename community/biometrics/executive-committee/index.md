@@ -14,7 +14,7 @@ The NBDEC communicates the information concerning the Biometrics Domain and asso
 |---|---|---|
 |John Boyd|Chair|DHS OBIM|
 |Jennifer Stathakis|Co-Chair|DoJ Criminal Justice Information Services (CJIS)|
-|William Graves|Co-Chair|DoD|
+|Ryan Triplett|Co-Chair|DoD|
 |Diane Stephens|Ombudsman|NIST|
 
 <img align="center" width="80%" src="Biometrics-Org-v2.png">
