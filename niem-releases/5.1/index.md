@@ -37,41 +37,49 @@ Draft | Date | Issues | Description
 Alpha 1 | Mar 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1alpha1) | Major domain content submissions due.
 Alpha 2 | June 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1alpha2) | Additional updates to domain content.
 Beta 1 | Aug 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1beta1) | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
-Release Candidate (RC) 1 | Sept 2021 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
+Release Candidate (RC) 1 | Oct 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/milestone/17?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Fall 2021 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
 
 Additional phases (e.g., Beta 2) may be added as needed during the development process.
 
 ### Recent changes
 
-More information is available at [NIEM 5.1-beta1 milestone issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+milestone%3Aniem-5.1beta1).  Highlights include:
+Highlights include:
 
-- Minor updates to new Biometrics ([#221](https://github.com/NIEM/NIEM-Releases/issues/221))and Cyber ([#217](https://github.com/NIEM/NIEM-Releases/issues/217)) content based on the 5.1 alpha 2 review
-- Updated NCIC VMA, VMO, and MAK codes ([#219](https://github.com/NIEM/NIEM-Releases/issues/219)); removed the BOAT code set ([#218](https://github.com/NIEM/NIEM-Releases/issues/218))
-- Updated ISO 639-3 language codes ([#222](https://github.com/NIEM/NIEM-Releases/issues/222))
-- Updated the definition of the geospatial adapter namespace ([#220](https://github.com/NIEM/NIEM-Releases/issues/220))
+- Split the **CUI Limited Dissemination Control (LDC) code set** into separate document marking and portion marking LDC code sets ([#233](https://github.com/NIEM/NIEM-Releases/issues/233))
+- Updated **NCIC vehicle model (VMO) codes** to the original 3-character codes.  Duplicates have been removed and the definitions now match the code values to avoid conflicts from overlapping models. ([#219](https://github.com/NIEM/NIEM-Releases/issues/219))
+- Updated **Biometrics pedigree content** ([#224](https://github.com/NIEM/NIEM-Releases/issues/224))
+- Update class terms for **Cyber's cyber indicator pattern** properties and types.
 
 ## Highlights
 
 The following is a summary of the major changes made in this release.  More details are available from the [5.1 issues](https://github.com/NIEM/NIEM-Releases/issues?page=1&q=is%3Aissue+label%3A5.1) in the NIEM Releases issue tracker, and the change log spreadsheet in the release package.
 
 {:.box}
+- **Biometrics domain**
+  - Added additional DNA-related content ([#152](https://github.com/NIEM/NIEM-Releases/issues/152))
+  - Updated pedigree content ([#224](https://github.com/NIEM/NIEM-Releases/issues/224))
 
-- **Biometrics domain** - Added additional DNA-related content ([#152](https://github.com/NIEM/NIEM-Releases/issues/152))
+- **CUI**
+  - Split the single Limited Dissemination Control (LDC) code set into separate document marking and portion marking LDC code sets ([#233](https://github.com/NIEM/NIEM-Releases/issues/223))
 
-- **Cyber domain** *(new)* - Added content supporting Federal Incident Reporting Requirements (FIRR) ([#209](https://github.com/NIEM/NIEM-Releases/issues/209)) and  State, Local, Tribal, and Territorial (SLTT) Agency Cyber Incident Reporting Requirements (CIRR) ([#215](https://github.com/NIEM/NIEM-Releases/issues/215))
+- **Cyber domain** (new)
+  - Added content supporting Federal Incident Reporting Requirements (FIRR) ([#209](https://github.com/NIEM/NIEM-Releases/issues/209))
+  - Added content supporting State, Local, Tribal, and Territorial (SLTT) Agency Cyber Incident Reporting Requirements (CIRR) ([#215](https://github.com/NIEM/NIEM-Releases/issues/215))
 
-- **Emergency Management domain** - Added flood damage claim content from OpenFEMA ([#208](https://github.com/NIEM/NIEM-Releases/issues/208))
+- **Emergency Management domain**
+  - Added flood damage claim content from OpenFEMA ([#208](https://github.com/NIEM/NIEM-Releases/issues/208))
 
-- **Justice domain** - Moved NCIC code elements to the NCIC namespace ([#214](https://github.com/NIEM/NIEM-Releases/issues/214))
+- **Justice domain**
+  - Moved Justice elements with a NCIC data type to the NCIC namespace ([#214](https://github.com/NIEM/NIEM-Releases/issues/214))
 
-- **Military Operations domain** - Added content from the Joint Non-Kinetic Effectiveness (JNKE) IEPD ([#210](https://github.com/NIEM/NIEM-Releases/issues/210))
+- **Military Operations domain**
+  - Added content from the Joint Non-Kinetic Effectiveness (JNKE) IEPD ([#210](https://github.com/NIEM/NIEM-Releases/issues/210))
 
-- **CUI codes** - Updated codes ([#212](https://github.com/NIEM/NIEM-Releases/issues/212))
-
-- **ISO 639-3 codes** - Updated language codes based on the 2012-02-18 update ([#222](https://github.com/NIEM/NIEM-Releases/issues/222))
-
-- **NCIC codes** -  Updated MAK, VMA, and VMO codes ([#219](https://github.com/NIEM/NIEM-Releases/issues/219)); removed BOAT codes ([#218](https://github.com/NIEM/NIEM-Releases/issues/218)); and re-added code sets dropped from 5.0 for legacy support. ([#211](https://github.com/NIEM/NIEM-Releases/issues/211))
+- **NCIC codes**
+  - Re-added 4.2 code sets that were removed from the 5.0 release due to harmonization efforts across the FBI and Justice code sets for legacy support. ([#211](https://github.com/NIEM/NIEM-Releases/issues/211))
+  - Removed ncic:BOATCodeType as it is no longer being used ([#218](https://github.com/NIEM/NIEM-Releases/issues/218))
+  - Updated codes for NIEM 5.1, with changes to the MAK, VMA, and VMO code sets ([#219](https://github.com/NIEM/NIEM-Releases/issues/219))
 
 ## Specification Links
 
