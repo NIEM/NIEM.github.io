@@ -3,6 +3,7 @@ title: Biometrics Domain
 short: Biometrics Domain
 description: A dedicated group that supports information sharing and promotes interoperability between mission-based organizations engaged in activities such as homeland security, national defense, border management, immigration benefits, and global law enforcement through the joint development and alignment of Extensible Markup Language (XML) Biometric Standards.
 links:
+- url: /community/biometrics/announcements/
 - url: /community/biometrics/executive-committee/
 - url: /community/biometrics/newsletter/
 - url: /community/biometrics/working-groups/
