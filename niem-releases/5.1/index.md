@@ -13,7 +13,7 @@
 {:.box}
 > **[{{ site.data.release.description }}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{tag}})** is now available for review! Please submit feedback (see below) by the end of the day **{{ site.data.release.feedbackDue }}**.
 
-NIEM 5.1 will be a minor release and is currently under development.  Publication is scheduled for Fall 2021.
+NIEM 5.1 will be a minor release and is currently under development.  Publication is scheduled for December 2021.
 
 ## Resources
 
@@ -38,7 +38,8 @@ Alpha 1 | Mar 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%
 Alpha 2 | June 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1alpha2) | Additional updates to domain content.
 Beta 1 | Aug 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1beta1) | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
 Release Candidate (RC) 1 | Oct 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/milestone/17?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
-Release | Fall 2021 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
+Release Candidate (RC) 2 | Dec 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/milestone/18?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
+Release | Dec 2021 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
 
 Additional phases (e.g., Beta 2) may be added as needed during the development process.
 
@@ -46,10 +47,8 @@ Additional phases (e.g., Beta 2) may be added as needed during the development p
 
 Highlights include:
 
-- Split the **CUI Limited Dissemination Control (LDC) code set** into separate document marking and portion marking LDC code sets ([#233](https://github.com/NIEM/NIEM-Releases/issues/233))
-- Updated **NCIC vehicle model (VMO) codes** to the original 3-character codes.  Duplicates have been removed and the definitions now match the code values to avoid conflicts from overlapping models. ([#219](https://github.com/NIEM/NIEM-Releases/issues/219))
-- Updated **Biometrics pedigree content** ([#224](https://github.com/NIEM/NIEM-Releases/issues/224))
-- Update class terms for **Cyber's cyber indicator pattern** properties and types.
+- Updated Biometrics definitions and restored DNAPedigree components from 4.1 ([#227](https://github.com/NIEM/NIEM-Releases/issues/227))
+- Added new CUI limited dissemination code "RELIDO" ([#225](https://github.com/NIEM/NIEM-Releases/issues/225))
 
 ## Highlights
 
@@ -59,6 +58,7 @@ The following is a summary of the major changes made in this release.  More deta
 - **Biometrics domain**
   - Added additional DNA-related content ([#152](https://github.com/NIEM/NIEM-Releases/issues/152))
   - Updated pedigree content ([#224](https://github.com/NIEM/NIEM-Releases/issues/224))
+  - Restored original DNAPedigree components from 4.1 for backward compatibility ([#227](https://github.com/NIEM/NIEM-Releases/issues/227))
 
 - **CUI**
   - Split the single Limited Dissemination Control (LDC) code set into separate document marking and portion marking LDC code sets ([#233](https://github.com/NIEM/NIEM-Releases/issues/223))

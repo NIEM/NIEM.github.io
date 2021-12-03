@@ -6,11 +6,11 @@ current:
   page: /niem-releases/5.0/
 
 # Draft release tags
-tag: niem-5.1rc1
-label: NIEM 5.1-rc1
-description: NIEM 5.1 release candidate 1
-feedbackDue: Wednesday, November 10, 2021
-elements: "12,987"
+tag: niem-5.1rc2
+label: NIEM 5.1-rc2
+description: NIEM 5.1 release candidate 2
+feedbackDue: Wednesday, December 8, 2021
+elements: "12,996"
 
 
 # Field description:
