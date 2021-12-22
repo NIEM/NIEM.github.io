@@ -9,6 +9,7 @@ links:
 - url: /community/biometrics/working-groups/
 - url: /community/biometrics/community-docs/
 - url: /community/biometrics/membership/
+- url: /community/biometrics/sample-xml/
 ---
 
 <img align="center" width="60%" src="assets/images/Biometrics-Main.png">

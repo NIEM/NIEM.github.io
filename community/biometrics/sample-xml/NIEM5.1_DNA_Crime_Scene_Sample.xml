@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Use Case (Source data file R3053GlobalFExpress.xml):
+A DNA sample was collected from a blood droplet at a crime scene by the police department and submitted to the city's crime laboratiory for DNA analysis.  A full single-source STR DNA profile (except for CSF1PO) was successfully generated using GlobalFiler on ABI 3500.  CSF1PO did not have allele calls and was flagged by the data collection software.  Additional analysis using OSIRIS was able to obtain an allele call for CSF1PO.  This transaction uploads the DNA profile to the database for searching.
+
+Police Department ORI: XX0000000001
+Police case ID: XX20211204-00321
+DNA Sample ID (barcode): 1234567890
+Location where the DNA sample was collected from: a blood droplet on the vinyl kitchen floor
+Date/time when the DNA sample was collected: Dec. 4, 2021 at 7:12am EST
+Detective who collected the sample: Mac Taylor (User ID Mac.Taylor)
+Crime Laboratory ORI: XX0000000011
+Date/time when the DNA sample testing process starts on the DNA instrument: Dec. 4, 2021 at 3:45pm EST
+Date/time when the DNA profile is initially produced: Dec. 5, 2021 at 10:47am EST (there were loci failed to yield results)
+DNA Instrument ID: ABI3500-XX0000000011-01
+DNA Batch ID: 000298761
+DNA Profile ID: XX23487669
+DNA Profile Analyst: Adam Ross (User ID Adam.Ross)
+CSF1PO analysis by: Sheldon Hawkes (User ID Sheldon.Hawkes); analysis completed on Dec. 6, 2021 at 02:27 pm EST
+-->
+<smpl:DNADataTransaction
+  xmlns:smpl="http://www.sna-intl.com/DNA/Sample/NIEM/5.1/2021"
+  xmlns:biom="http://release.niem.gov/niem/domains/biometrics/5.1/"
+  xmlns:nc="http://release.niem.gov/niem/niem-core/5.0/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sna-intl.com/DNA/Sample/NIEM/5.1/2021 DNA_Sample_NIEM.xsd">
+  <biom:DNARecord>
+    <biom:DNACategoryCode>Forensic</biom:DNACategoryCode>
+    <biom:DNADataIdentification>
+      <nc:IdentificationID>XX20211204-00321</nc:IdentificationID>
+      <nc:IdentificationCategoryDescriptionText>Case ID</nc:IdentificationCategoryDescriptionText>
+    </biom:DNADataIdentification>
+    <biom:DNADataIdentification>
+      <nc:IdentificationID>XX23487669</nc:IdentificationID>
+      <nc:IdentificationCategoryDescriptionText>DNA Profile ID</nc:IdentificationCategoryDescriptionText>
+    </biom:DNADataIdentification>
+    <biom:DNAEncoding>
+      <biom:DNATypingTechnologyCode>STR</biom:DNATypingTechnologyCode>
+      <biom:DNASampleCollection>
+        <biom:DNASampleCollectionUTCDate>2021-12-04T12:12:00Z</biom:DNASampleCollectionUTCDate>
+        <biom:DNASampleCollectionEntity>
+          <nc:EntityOrganization>
+            <nc:OrganizationIdentification>
+              <nc:IdentificationID>XX0000000001</nc:IdentificationID>
+              <nc:IdentificationCategoryText>ORI</nc:IdentificationCategoryText>
+            </nc:OrganizationIdentification>
+            <nc:OrganizationPrimaryContactInformation>
+              <nc:ContactInformationDescriptionText>Detective Mac Taylor 212-666-4444 Mac.Taylor@police.state.gov</nc:ContactInformationDescriptionText>
+            </nc:OrganizationPrimaryContactInformation>
+          </nc:EntityOrganization>
+        </biom:DNASampleCollectionEntity>
+        <biom:DNASampleCollectionSite>
+          <nc:SiteLocation>
+            <nc:LocationDescriptionText>Sample was collected from a blood droplet on the vinyl kitchen floor near the deceased victim.</nc:LocationDescriptionText>
+          </nc:SiteLocation>
+        </biom:DNASampleCollectionSite>
+        <biom:DNASampleCollectionCommentText>Samples from other blood droplets near the deceased victim are also collected and submitted separately under the same Case ID.</biom:DNASampleCollectionCommentText>
+      </biom:DNASampleCollection>
+      <biom:DNASource>
+        <biom:DNASourceIdentification>
+          <nc:IdentificationID>1234567890</nc:IdentificationID>
+          <nc:IdentificationCategoryText>Sample ID</nc:IdentificationCategoryText>
+        </biom:DNASourceIdentification>
+        <biom:DNASourceCategoryCode>Evidentiary, Single Source</biom:DNASourceCategoryCode>
+        <biom:DNASourceCompositeIndicator>false</biom:DNASourceCompositeIndicator>
+        <biom:DNASourceKnownIndicator>false</biom:DNASourceKnownIndicator>
+        <biom:DNASampleOrigin>
+          <biom:DNACellularCategoryCode>Blood</biom:DNACellularCategoryCode>
+        </biom:DNASampleOrigin>
+      </biom:DNASource>
+      <biom:DNAProcess>
+        <biom:DNAInstrumentProcess>
+          <biom:DeviceID>ABI3500-XX0000000011-01</biom:DeviceID>
+          <biom:DeviceName>ABI 3500 Genetic Analyzer</biom:DeviceName>
+          <biom:DeviceManufacturerText>Thermo Fisher</biom:DeviceManufacturerText>
+          <biom:DeviceModelText>3500</biom:DeviceModelText>
+          <biom:ProcessUTCDate>2021-12-04T20:45:27Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityOrganization>
+              <nc:OrganizationCategoryText>ORI</nc:OrganizationCategoryText>
+              <nc:OrganizationIdentification>
+                <nc:IdentificationID>XX0000000011</nc:IdentificationID>
+              </nc:OrganizationIdentification>
+            </nc:EntityOrganization>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNAInstrumentSite>
+          <nc:SiteLocation>
+            <nc:LocationDescriptionText>Eastern Laboratory</nc:LocationDescriptionText>
+          </nc:SiteLocation>
+          </biom:DNAInstrumentSite>
+          <biom:DNALaboratoryAccreditation>
+            <biom:DNALaboratoryAccreditationLevelCode>1</biom:DNALaboratoryAccreditationLevelCode>
+            <!--
+                             1: ISO 17025 Accreditation.  Note that ASCLD Lab Accreditation or ISO 17025/FBI QAS
+                                by itself is not an accreditation; and therefore, is not listed as a separate
+                                accreditation from "ISO 17025 Accreditation.
+                         -->
+          </biom:DNALaboratoryAccreditation>
+          <biom:DNAInstrumentSoftware>
+            <nc:SoftwareName>ABI 3500/3500xl Data Collection Software</nc:SoftwareName>
+            <nc:SoftwareVendorName>Thermo Fisher</nc:SoftwareVendorName>
+            <nc:SoftwareVersionText>3.0</nc:SoftwareVersionText>
+          </biom:DNAInstrumentSoftware>
+        </biom:DNAInstrumentProcess>
+        <biom:DNAAnalysisProcess>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityOrganization>
+              <nc:OrganizationCategoryText>ORI</nc:OrganizationCategoryText>
+              <nc:OrganizationIdentification>
+                <nc:IdentificationID>XX0000000011</nc:IdentificationID>
+              </nc:OrganizationIdentification>
+            </nc:EntityOrganization>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNAAnalysisProcessSite>
+          <nc:SiteLocation>
+            <nc:LocationDescriptionText>Eastern Laboratory</nc:LocationDescriptionText>
+          </nc:SiteLocation>
+          </biom:DNAAnalysisProcessSite>
+          <biom:ProcessName>STR Profile Assessment</biom:ProcessName>
+          <biom:DNAAnalysisProcessSoftware>
+            <nc:SoftwareName>OSIRIS</nc:SoftwareName>
+            <nc:SoftwareVendorName>NIH NLM NCBI</nc:SoftwareVendorName>
+            <nc:SoftwareVersionText>2.16</nc:SoftwareVersionText>
+          </biom:DNAAnalysisProcessSoftware>
+          <biom:ProcessDescriptionText>ABI 3500/Data Analyzer flagged CSF1PO.  Additional analysis using OSIRIS was able to obtain an allele call for CSF1PO.</biom:ProcessDescriptionText>
+        </biom:DNAAnalysisProcess>
+      </biom:DNAProcess>
+      <biom:DNAAnalysis>
+        <biom:DNAFragmentSequenceAnalysis>
+          <biom:DNAFragmentSequenceAnalysisCategoryCode>Sample</biom:DNAFragmentSequenceAnalysisCategoryCode>
+          <biom:DNAFragmentSequenceAnalysisFileStorageText>fsa</biom:DNAFragmentSequenceAnalysisFileStorageText>
+          <!--
+                        A base-64 representation of a DNA fragment sequence analysis (fsa) file for the sample from
+                        ABI 3500 Genetic Analyzer and Data Collection Software v3.0
+                    -->
+          <biom:DNAFragmentSequenceAnalysisBinaryObject>QSBiYXNlLTY0IHJlcHJlc2VudGF0aW9uIG9mIGEgRE5BIGZyYWdtZW50IHNlcXVlbmNlIGFuYWx5c2lzIChGU0EpIGZpbGUgZm9yIHRoZSBzYW1wbGUgZnJvbSBBQkkgMzUwMCBHZW5ldGljIEFuYWx5emVyIGFuZCBEYXRhIENvbGxlY3Rpb24gU29mdHdhcmUgdjMuMCA=</biom:DNAFragmentSequenceAnalysisBinaryObject>
+        </biom:DNAFragmentSequenceAnalysis>
+        <biom:DNAFragmentSequenceAnalysis>
+          <biom:DNAFragmentSequenceAnalysisCategoryCode>Ladder</biom:DNAFragmentSequenceAnalysisCategoryCode>
+          <biom:DNAFragmentSequenceAnalysisFileStorageText>fsa</biom:DNAFragmentSequenceAnalysisFileStorageText>
+          <!--
+                        A base-64 representation of a DNA fragment sequence analysis (fsa) file for the ladder from
+                        ABI 3500 Genetic Analyzer and Data Collection Software v3.0
+                    -->
+          <biom:DNAFragmentSequenceAnalysisBinaryObject>QSBiYXNlLTY0IHJlcHJlc2VudGF0aW9uIG9mIGEgRE5BIGZyYWdtZW50IHNlcXVlbmNlIGFuYWx5c2lzIChGU0EpIGZpbGUgZm9yIHRoZSBsYWRkZXIgZnJvbSBBQkkgMzUwMCBHZW5ldGljIEFuYWx5emVyIGFuZCBEYXRhIENvbGxlY3Rpb24gU29mdHdhcmUgdjMuMCA=</biom:DNAFragmentSequenceAnalysisBinaryObject>
+        </biom:DNAFragmentSequenceAnalysis>
+        <biom:DNAElectropherogram>
+          <biom:DNAElectropherogramFileStorageText>png</biom:DNAElectropherogramFileStorageText>
+          <!--
+                        A base-64 representation of a DNA electropherogram image file for the sample from
+                        ABI 3500 Genetic Analyzer and Data Collection Software v3.0
+                    -->
+          <biom:DNAElectropherogramBinaryObject>QSBiYXNlLTY0IHJlcHJlc2VudGF0aW9uIG9mIGEgRE5BIGVsZWN0cm9waGVyb2dyYW0gaW1hZ2UgZmlsZSBmb3IgdGhlIHNhbXBsZSBmcm9tIEFCSSAzNTAwIEdlbmV0aWMgQW5hbHl6ZXIgYW5kIERhdGEgQ29sbGVjdGlvbiBTb2Z0d2FyZSB2My4wIA==</biom:DNAElectropherogramBinaryObject>
+        </biom:DNAElectropherogram>
+      </biom:DNAAnalysis>
+      <biom:DNASTRData>
+        <biom:DNAKit>
+          <biom:DNAKitName>GlobalFiler</biom:DNAKitName>
+          <biom:DNAKitManufacturerName>Thermo Fisher</biom:DNAKitManufacturerName>
+        </biom:DNAKit>
+        <biom:DNABatchID>000298761</biom:DNABatchID>
+        <biom:DNASTRLaneNumeric>3</biom:DNASTRLaneNumeric>
+        <biom:DNASTRProfilePartialIndicator>false</biom:DNASTRProfilePartialIndicator>
+        <biom:DNALocus>
+          <biom:DNALocusName>D3S1358</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>15</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D16S539</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>10</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>12</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>CSF1PO</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-06T19:27:03Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Sheldon.Hawkes</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Not Definitive</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>10</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>TPOX</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>8</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>Yindel</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Y-STR</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>1</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>Amelogenin</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>X</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>Y</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D8S1179</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>12</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>13</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D21S11</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>30</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>31</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D18S51</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>14</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>15</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>DYS391</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Y-STR</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>10</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D2S441</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>11</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>13</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D19S433</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>12</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>14</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>TH01</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>6</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>9</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>FGA</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>21</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>22</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D22S1045</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>13</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>15</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D5S818</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>11</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>12</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D13S317</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>9</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>11</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D7S820</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>8</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>11</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>SE33</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>17</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>19</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D10S1248</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>14</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>15</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D1S1656</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>11</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>12</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D12S391</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>19</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+        <biom:DNALocus>
+          <biom:DNALocusName>D2S1338</biom:DNALocusName>
+          <biom:DNALocusCategoryCode>Autosomal</biom:DNALocusCategoryCode>
+          <biom:ProcessUTCDate>2021-12-05T15:47:33Z</biom:ProcessUTCDate>
+          <biom:DNAAnalysisProcessingEntity>
+            <nc:EntityPerson>
+              <nc:PersonOtherIdentification>
+                <nc:IdentificationID>Adam.Ross</nc:IdentificationID>
+                <nc:IdentificationCategoryText>User ID</nc:IdentificationCategoryText>
+              </nc:PersonOtherIdentification>
+            </nc:EntityPerson>
+          </biom:DNAAnalysisProcessingEntity>
+          <biom:DNALocusQualityStatusCode>Normal</biom:DNALocusQualityStatusCode>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>17</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+          <biom:DNAAllele>
+            <biom:DNAAlleleOperatorCode>Equal</biom:DNAAlleleOperatorCode>
+            <biom:DNAAlleleCall1Text>18</biom:DNAAlleleCall1Text>
+          </biom:DNAAllele>
+        </biom:DNALocus>
+      </biom:DNASTRData>
+    </biom:DNAEncoding>
+  </biom:DNARecord>
+</smpl:DNADataTransaction>
