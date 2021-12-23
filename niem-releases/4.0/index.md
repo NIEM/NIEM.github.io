@@ -161,42 +161,8 @@ Changes include:
 
 ## Release Stats
 
-The following are statistics for the **4.0 release**.
+The following are some basic statistics for the 4.0 release.
 
-NIEM 4.0 has [14 domains]({{ "reference/content#domains" | relative_url }}).
+{% include page/release-stats.html csv=site.data.model.stats.stats-4_0 %}
 
-**Summary Counts**
-
-The table below breaks down property, type, and code counts by namespace group.
-
-- The "Core" group represents a single namespace (NIEM Core).
-- The "Domain" and "Code Set" groups combine the counts from multiple namespaces and are broken out in the subsequent tables.
-
-{% include csv-table.html
-      csv=site.data.model.stats.4_0.summary
-      classes="table-auto"
-      right=page.right
-      widths=page.widths
-%}
-
-**Domain Counts**
-
-The counts in the following table represent the namespaces that make up the "Domain" group in the summary table above.
-
-{% include csv-table.html
-      csv=site.data.model.stats.4_0.domains
-      classes="table-auto"
-      right=page.right
-      widths=page.widths
-%}
-
-**Code Counts**
-
-The counts in the following table represent the namespaces that make up the "Code Set" group in the summary table above.
-
-{% include csv-table.html
-      csv=site.data.model.stats.4_0.codes
-      classes="table-auto"
-      right=page.right
-      widths=page.widths
-%}
+<br/>

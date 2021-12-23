@@ -1,13 +1,12 @@
 ---
-  title: NIEM 5.0 Release (Current)
-  short: NIEM 5.0 (current)
+  title: NIEM 5.0 Release
+  short: NIEM 5.0
   description: An overview of the NIEM 5.0 release.
-  redirect_from: /niem-releases/current/
   right: [1,2,3]
   widths: ["110px", "150px", "150px", "150px"]
 ---
 
-NIEM 5.0 is a major release, published December 2020.  This is the most current NIEM release.
+NIEM 5.0 is a major release, published December 2020.
 
 {:toc}
 - TOC
@@ -80,53 +79,6 @@ See the [NDR 5.0 changes]({{ "/reference/specifications/ndr/changes/#ndr-50-chan
 
 The following are some basic statistics for the 5.0 release.
 
-NIEM 5.0 has 14 domains and 2 auxiliary namespaces.
-
-**Summary Counts**
-
-The table below breaks down property, type, and code counts by namespace group.
-
-- The "Core" group represents a single namespace (NIEM Core).
-- The "Domain" and "Code Set" groups combine the counts from multiple namespaces and are broken out in the subsequent tables.
-
-{% include csv-table.html
-      csv=site.data.model.stats.5_0.summary
-      classes="table-auto"
-      right=page.right
-      widths=page.widths
-%}
-
-**Domain Counts**
-
-The counts in the following table represent the namespaces that make up the "Domain" group in the summary table above.
-
-{% include csv-table.html
-      csv=site.data.model.stats.5_0.domains
-      classes="table-auto"
-      right=page.right
-      widths=page.widths
-%}
-
-**Auxiliary Counts**
-
-The counts in the following table represent the namespaces that make up the "Auxiliary" group in the summary table above.
-
-{% include csv-table.html
-      csv=site.data.model.stats.5_0.auxiliary
-      classes="table-auto"
-      right=page.right
-      widths=page.widths
-%}
-
-**Code Counts**
-
-The counts in the following table represent the namespaces that make up the "Code Set" group in the summary table above.
-
-{% include csv-table.html
-      csv=site.data.model.stats.5_0.codes
-      classes="table-auto"
-      right=page.right
-      widths=page.widths
-%}
+{% include page/release-stats.html csv=site.data.model.stats.stats-5_0 %}
 
 <br/>

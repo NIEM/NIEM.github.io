@@ -1,0 +1,106 @@
+
+<style>
+
+  .badge {
+    background: darkgray;
+    margin-left: 10px;
+  }
+
+  .btn-expander {
+    margin-left: 10px;
+    width: 30px;
+  }
+
+  td.details {
+    width: 75px;
+  }
+
+  th.group {
+    width: 120px;
+  }
+
+  td.prefix {
+    width: 110px;
+    font-weight: bolder;
+  }
+
+  td.count, th.count {
+    width: 70px;
+    text-align: right;
+  }
+
+  thead tr {
+    background: rgba(101, 196, 203, 0.15) !important;
+  }
+
+  tr.namespace {
+    display: none;
+    font-size: smaller;
+  }
+
+  tr.group {
+    background: rgba(101, 196, 203, 0.05) !important;
+    {% comment %} background: #F9F9F9 !important; {% endcomment %}
+    font-weight: 600;
+  }
+
+  tr.total {
+    background: rgba(101, 196, 203, 0.15) !important;
+    font-weight: bold;
+  }
+
+</style>
+
+{%- assign offset = 4 -%}
+{%- assign table = include.csv -%}
+{%- assign category = include.category -%}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="details">Details</th>
+      <th class="group">Group&nbsp;/&nbsp;NS</th>
+      {%- for col in table[0] offset: offset -%}
+        {%- if col[0] contains '_' -%}
+          {%- assign class = "count" -%}
+        {%- endif -%}
+        <th class="{{class}}">{{ col[0] | replace: "_", "." }}</th>
+      {%- endfor -%}
+    </tr>
+  </thead>
+
+  {%- for row in table -%}
+    {% comment %} Replace space with dash to allow use as a CSS selector {% endcomment %}
+    {%- assign group = row.Group | replace: " ", "-" -%}
+
+    <tr class="{{row.Class}} {{group}} {{category}}">
+
+      {%- if row.Class == "group" -%}
+        {% comment %} Details button on "group" rows and group name {% endcomment %}
+        <td class="details">
+          <button id="btn-{{group}}-{{category}}" class="btn btn-sm btn-primary btn-expander" onclick="groupExpander('{{group}}', '{{category}}')">+</button>
+        </td>
+        <td class="group">{{ row.Group }}</td>
+
+      {%- elsif row.Class == "namespace" -%}
+        {% comment %} No details button; namespace prefix {% endcomment %}
+        <td></td>
+        <td class="group" title="{{row.NamespaceName}}">{{ row.NamespacePrefix }}</td>
+
+      {% else %}
+        {% comment %} No details button; "Total" {% endcomment %}
+        <td></td>
+        <td>Total</td>
+      {%- endif -%}
+
+      {%- for cell in row offset: offset -%}
+        <td class="count">{{ cell[1] }}</td>
+      {%- endfor -%}
+    </tr>
+  {%- endfor -%}
+
+</table>
+
+<br/>
+
+<script src="{{ '/assets/js/release-stats.js' | relative_url }}"></script>

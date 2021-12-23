@@ -14,6 +14,7 @@ links:
 - url: /niem-releases/2.0/
 - url: /niem-releases/1.0/
 - url: /niem-releases/domain-timeline/
+- url: /niem-releases/stats/
 ---
 
 <style type="text/css">
@@ -24,10 +25,12 @@ links:
     }
 </style>
 
+<!--
 {:.note}
 > **The [{{site.data.release.description}}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{site.data.release.tag}}) draft is now available for review!** <br/>
 >
 > Feedback is requested by end of the day on {{site.data.release.feedbackDue}}.  See the **[NIEM 5.1 info page](./draft/)** in this section for more.
+-->
 
 NIEM publishes annual releases on a 3-year cycle.  A major release one year will be followed by minor releases the next two years.
 
@@ -52,27 +55,38 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <!-- <tr>
       <td>
         <b><a href="./5.1">{{ site.data.release.description }}</a></b><br><i>(under development)</i>
       </td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/{{tag}}">GitHub</a> |
         <span class="text-muted">pending final release</span>
-        <!-- |
-        <a href="https://release.niem.gov/niem/{{tag}}/">release.niem.gov</a>
-         -->
       </td>
       <td>2021</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip">Zip</a></td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/blob/{{tag}}/README.md">Readme</a></td>
       <td>{{ site.data.release.elements }}</td>
       <td><a href="{{site.data.links.ndr5}}">NDR 5.0</a></td>
+    </tr> -->
+    <tr>
+      <td>
+        <b><a href="./5.1">{{ site.data.release.description }}</a></b>
+        <br><i>(current release)</i>
+      </td>
+      <td>
+        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.1">GitHub</a> |
+        <a href="https://release.niem.gov/niem/5.1/">release.niem.gov</a>
+      </td>
+      <td>2021</td>
+      <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-5.1.zip">Zip</a></td>
+      <td><a href="https://github.com/NIEM/NIEM-Releases/blob/niem-5.1/README.md">Readme</a></td>
+      <td>12,976</td>
+      <td><a href="{{site.data.links.ndr5}}">NDR 5.0</a></td>
     </tr>
     <tr>
       <td>
         <b><a href="./5.0">NIEM 5.0</a></b>
-        <br><i>(current release)</i>
       </td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.0">GitHub</a> |
@@ -81,7 +95,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2020</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-5.0.zip">Zip</a></td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/blob/niem-5.0/README.md">Readme</a></td>
-      <td>12,149</td>
+      <td>12,163</td>
       <td><a href="{{site.data.links.ndr5}}">NDR 5.0</a></td>
     </tr>
     <tr>
@@ -93,7 +107,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2019</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-4.2.zip">Zip</a></td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/blob/niem-4.2/README.md">Readme</a></td>
-      <td>11,505</td>
+      <td>11,520</td>
       <td><a href="{{site.data.links.ndr4}}">NDR 4.0</a></td>
     </tr>
     <tr>
@@ -105,7 +119,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2018</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-4.1.zip">Zip</a></td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/blob/niem-4.1/README.md">Readme</a></td>
-      <td>11,350</td>
+      <td>11,328</td>
       <td><a href="{{site.data.links.ndr4}}">NDR 4.0</a></td>
     </tr>
     <tr>
@@ -117,7 +131,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2017</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-4.0.zip">Zip</a></td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/README.md">Readme</a></td>
-      <td>11,000</td>
+      <td>11,087</td>
       <td><a href="{{site.data.links.ndr4}}">NDR 4.0</a></td>
     </tr>
     <tr>
@@ -129,7 +143,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2016</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-3.2.zip">Zip</a></td>
       <td><a href="https://release.niem.gov/niem/3.2/niem-3.2-changelog.xlsx">Change log (xlsx)</a></td>
-      <td>10,500</td>
+      <td>10,484</td>
       <td><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html">NDR 3.0</a></td>
     </tr>
     <tr>
@@ -141,7 +155,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2015</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-3.1.zip">Zip</a></td>
       <td><a href="https://release.niem.gov/niem/3.1/niem-3.1-changelog.xlsx">Change log (xlsx)</a></td>
-      <td>8,700</td>
+      <td>8,705</td>
       <td><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html">NDR 3.0</a></td>
     </tr>
     <tr>
@@ -153,7 +167,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2013</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-3.0.zip">Zip</a></td>
       <td><a href="https://release.niem.gov/niem/3.0/niem-3.0-changelog.xlsx">Change log (xlsx)</a></td>
-      <td>8,000</td>
+      <td>8,224</td>
       <td><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html">NDR 3.0</a></td>
     </tr>
     <tr>
@@ -165,7 +179,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2009</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-2.1.zip">Zip</a></td>
       <td><a href="https://release.niem.gov/niem/2.1/changelog.html">Change log (html)</a></td>
-      <td>6,000</td>
+      <td>5,965</td>
       <td>
         <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf">NDR 1.3</a> + <br>
         <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/type-augmentation/niem-type-augmentation-1.0.pdf">supplement</a>
@@ -180,7 +194,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2007</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-2.0.zip">Zip</a></td>
       <td><a href="https://release.niem.gov/niem/2.0/changelog.html">Change log (html)</a></td>
-      <td>4,000</td>
+      <td>4,232</td>
       <td><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf">NDR 1.3</a></td>
     </tr>
     <tr>
@@ -192,7 +206,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
       <td>2006</td>
       <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-1.0.zip">Zip</a></td>
       <td></td>
-      <td>4,000</td>
+      <td>4,185</td>
       <td></td>
     </tr>
   </tbody>
@@ -202,4 +216,4 @@ There are also online tools available to search and view NIEM release content:
 
 - The [Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) can be used with any published release to search the model and build XML schema subsets for use in IEPDs.  Go to `Options` to choose a previous release.  *[Learn more]({{ site.data.pages.ssgt | relative_url }})*
 
-- [Movement]({{ site.data.links.movement }}) can be used with the current release to search the model.  *[Learn more]({{ site.data.pages.movement | relative_url }})*
+- [Movement]({{ site.data.links.movement }}) can be used with NIEM 5.0 to search the model.  *[Learn more]({{ site.data.pages.movement | relative_url }})*

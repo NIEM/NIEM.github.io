@@ -32,3 +32,11 @@ See the [NIEM 3.1 change log spreadsheet](https://release.niem.gov/niem/3.1/niem
 ## Specification Links
 
 {% include specs/specification-list.html specIDs = "NDR-3.0, MPD-3.0.1, Conformance-3.0, CTAS-3.0, HLVA-3.0" %}
+
+## Release Stats
+
+The following are some basic statistics for the 3.1 release.
+
+{% include page/release-stats.html csv=site.data.model.stats.stats-3_1 %}
+
+<br/>

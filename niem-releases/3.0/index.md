@@ -103,3 +103,11 @@ The NIEM Conformance Targets Attribute (CTAS) specification was introduced as [v
 ### NIEM UML Profile
 
 The NIEM UML Profile was updated to [version 3.0](https://reference.niem.gov/niem/specification/uml-profile/omg/3.0beta1/)
+
+## Release Stats
+
+The following are some basic statistics for the 3.0 release.
+
+{% include page/release-stats.html csv=site.data.model.stats.stats-3_0 %}
+
+<br/>

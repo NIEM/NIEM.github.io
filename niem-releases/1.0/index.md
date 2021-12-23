@@ -38,3 +38,11 @@ The success of the [Global Justice XML Data Model (GJXDM)](https://it.ojp.gov/in
 - Added the Geography Markup Language (GML) as an external standard
 - Added support for IC-ISM security markup metadata
 - Represented augmentations via type extension and type substitution
+
+## Release Stats
+
+The following are some basic statistics for the 1.0 release.
+
+{% include page/release-stats.html csv=site.data.model.stats.stats-1_0 %}
+
+<br/>

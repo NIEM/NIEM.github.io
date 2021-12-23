@@ -53,11 +53,11 @@ The following is a timeline that shows when new domains were added to NIEM or un
 
 - *No new domains were added to NIEM 4.2*
 
-**[NIEM 5.0](../5.0/)** (2020) - *current release*
+**[NIEM 5.0](../5.0/)** (2020)
 
 - Controlled Unclassified Information (cui) - *added as auxiliary content*
 - Statistics content (stat) - *added as auxiliary content*
 
-**[NIEM 5.1](../5.1/)** (Fall 2021) - *draft release*
+**[NIEM 5.1](../5.1/)** (2021) - *current release*
 
 - Cyber domain (cyber)

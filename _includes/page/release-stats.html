@@ -1,0 +1,116 @@
+
+{% comment %}
+  ***
+  Imports release stats from the given CSV from _data and outputs a table.
+  First CSV row is used as the table header row.
+
+  Required parameters
+  "csv" - csv data
+        - If referencing site.data, do not wrap value in quotes
+          or include the ".csv" extension.
+
+  Example call:
+  {% include page/release-stats.html csv=site.data.stats.4_0.codes %}
+  ***
+{% endcomment %}
+
+{% assign table = include.csv %}
+
+<style>
+
+  .badge {
+    background: darkgray;
+    margin-left: 10px;
+  }
+
+  .btn-expander {
+    margin-left: 10px;
+    width: 30px;
+  }
+
+  td.details {
+    width: 75px;
+  }
+
+  th.group {
+    width: 120px;
+  }
+
+  td.prefix {
+    width: 110px;
+    font-weight: bolder;
+  }
+
+  td.count, th.count {
+    width: 95px;
+    text-align: right;
+  }
+
+  thead tr {
+    background: rgba(101, 196, 203, 0.15) !important;
+  }
+
+  tr.namespace {
+    display: none;
+    font-size: smaller;
+  }
+
+  tr.group {
+    background: rgba(101, 196, 203, 0.05) !important;
+    {% comment %} background: #F9F9F9 !important; {% endcomment %}
+    font-weight: 600;
+  }
+
+  tr.total {
+    background: rgba(101, 196, 203, 0.15) !important;
+    font-weight: bold;
+  }
+
+</style>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="details">Details</th>
+      <th class="group">Group</th>
+      <th class="prefix">Prefix</th>
+      <th>Name</th>
+      <th class="count">Properties</th>
+      <th class="count">Types</th>
+      <th class="count">Codes</th>
+    </tr>
+  </thead>
+
+  {%- for row in table -%}
+    {% comment %} Replace space with dash to allow use as a CSS selector {% endcomment %}
+    {%- assign group = row.Group | replace: " ", "-" -%}
+
+    <tr class="{{row.Class}} {{group}} release">
+
+      {% comment %} Details button on "group" rows {% endcomment %}
+      {%- if row.Class == "group" -%}
+        <td class="details">
+          <button id="btn-{{group}}-release" class="btn btn-sm btn-primary btn-expander" onclick="groupExpander('{{group}}', 'release')">+</button>
+        </td>
+      {%- else -%}
+        <td></td>
+      {%- endif -%}
+
+      <td class="group">
+        <span>{{ row.Group }}</span>
+        {%- if row.Class != "namespace" -%}
+          <span id="badge-{{group}}" class="badge small"></span>
+        {%- endif -%}
+      </td>
+
+      <td class="prefix"><a href="{{row.Link}}">{{ row.NamespacePrefix }}</a></td>
+      <td class="name">{{ row.NamespaceName }}</td>
+      <td class="count">{{ row.Properties }}</td>
+      <td class="count">{{ row.Types }}</td>
+      <td class="count">{{ row.Codes }}</td>
+    </tr>
+  {%- endfor -%}
+
+</table>
+
+<script src="{{ '/assets/js/release-stats.js' | relative_url }}"></script>

@@ -35,3 +35,11 @@ See the [NIEM 2.0 change log](https://release.niem.gov/niem/2.0/changelog.html) 
 ## Specification Links
 
 {% include specs/specification-list.html specIDs = "NDR-1.3, Conformance-1.0" %}
+
+## Release Stats
+
+The following are some basic statistics for the 2.0 release.
+
+{% include page/release-stats.html csv=site.data.model.stats.stats-2_0 %}
+
+<br/>

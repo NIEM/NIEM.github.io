@@ -1,7 +1,8 @@
 ---
-  title: NIEM 5.1 Release (Draft)
-  short: NIEM 5.1 (draft)
-  description: An overview of the draft NIEM 5.1 release, currently under development.
+  title: NIEM 5.1 Release (Current)
+  short: NIEM 5.1 (current)
+  description: An overview of the NIEM 5.1 release.
+  redirect_from: /niem-releases/current/
   redirect_from: /niem-releases/draft/
 ---
 
@@ -10,45 +11,23 @@
 
 {% assign tag = site.data.release.tag %}
 
-{:.box}
-> **[{{ site.data.release.description }}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{tag}})** is now available for review! Please submit feedback (see below) by the end of the day **{{ site.data.release.feedbackDue }}**.
-
-NIEM 5.1 will be a minor release and is currently under development.  Publication is scheduled for December 2021.
+NIEM 5.1 is a minor release, published December 2021.  This is the most current NIEM release.
 
 ## Resources
 
-{% assign tag = site.data.release.tag %}
+- Download the full [release package](https://github.com/NIEM/NIEM-Releases/archive/niem-5.1.zip) as a zip file
 
-- Download the full [draft release package](https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip) as a zip file.  This package includes XML schemas, documentation spreadsheets, a change log, a JSON-LD context file, and a README.
+- View schemas and documentation on [release.niem.gov](https://release.niem.gov/niem/5.1) or [GitHub](https://github.com/NIEM/NIEM-Releases/tree/niem-5.1)
 
-- View schemas and documentation on [GitHub](https://github.com/NIEM/NIEM-Releases/tree/{{tag}})
+- Use online tools to explore the contents of NIEM 5.1:
 
-- Submit a [new issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.1) (see [info](https://github.com/NIEM/NIEM-Releases/wiki/Issues) for help) or email feedback to <niem-comments@lists.gatech.edu>
+  - <p markdown="1">[Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs </p>
 
-- View a list of all [5.1 issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+label%3A5.1) or track progress via the [5.1 project board](https://github.com/NIEM/NIEM-Releases/projects/6)
+- Download the [component spreadsheet](https://release.niem.gov/niem/5.1/xlsx/niem-5.1.xlsx) or the [code spreadsheet](https://release.niem.gov/niem/5.1/xlsx/niem-5.1-codes.xlsx) to explore the contents of NIEM 5.1 in Excel
 
-## Schedule
+  <!-- - [Movement](https://beta.movement.niem.gov) - search elements -->
 
-{:.note}
-> This schedule is subject to change.
-
-Draft | Date | Issues | Description
-:------ |:---- |:------ |:-----------
-Alpha 1 | Mar 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1alpha1) | Major domain content submissions due.
-Alpha 2 | June 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1alpha2) | Additional updates to domain content.
-Beta 1 | Aug 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+milestone%3Aniem-5.1beta1) | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
-Release Candidate (RC) 1 | Oct 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/milestone/17?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
-Release Candidate (RC) 2 | Dec 2021 | [Issues](https://github.com/NIEM/NIEM-Releases/milestone/18?closed=1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
-Release | Dec 2021 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
-
-Additional phases (e.g., Beta 2) may be added as needed during the development process.
-
-### Recent changes
-
-Highlights include:
-
-- Updated Biometrics definitions and restored DNAPedigree components from 4.1 ([#227](https://github.com/NIEM/NIEM-Releases/issues/227))
-- Added new CUI limited dissemination code "RELIDO" ([#225](https://github.com/NIEM/NIEM-Releases/issues/225))
+  <!-- - [Model Viewer](https://niem.github.io/model/) - browse namespaces and their contents -->
 
 ## Highlights
 
@@ -84,3 +63,11 @@ The following is a summary of the major changes made in this release.  More deta
 ## Specification Links
 
 {% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0, JSON-5.0, Conformance-5.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
+
+## Release Stats
+
+The following are some basic statistics for the 5.1 release.
+
+{% include page/release-stats.html csv=site.data.model.stats.stats-5_1 %}
+
+<br/>
