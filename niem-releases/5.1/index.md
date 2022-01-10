@@ -23,9 +23,15 @@ NIEM 5.1 is a minor release, published December 2021.  This is the most current 
 
   - <p markdown="1">[Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs </p>
 
+  - <p markdown="1">[Movement](https://beta.movement.niem.gov) - search elements </p>
+
 - Download the [component spreadsheet](https://release.niem.gov/niem/5.1/xlsx/niem-5.1.xlsx) or the [code spreadsheet](https://release.niem.gov/niem/5.1/xlsx/niem-5.1-codes.xlsx) to explore the contents of NIEM 5.1 in Excel
 
-  <!-- - [Movement](https://beta.movement.niem.gov) - search elements -->
+- See the [Community Activities](/community) section on this site for additional information about this release:
+
+  - <p markdown="1">[Sample XML instances and schema](/community/biometrics/sample/) from the Biometrics domain.</p>
+
+  - <p markdown="1">[An overview and the development methodology](/community/cyber/) from the new Cyber domain.</p>
 
   <!-- - [Model Viewer](https://niem.github.io/model/) - browse namespaces and their contents -->
 

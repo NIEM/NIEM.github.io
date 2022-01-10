@@ -216,4 +216,4 @@ There are also online tools available to search and view NIEM release content:
 
 - The [Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) can be used with any published release to search the model and build XML schema subsets for use in IEPDs.  Go to `Options` to choose a previous release.  *[Learn more]({{ site.data.pages.ssgt | relative_url }})*
 
-- [Movement]({{ site.data.links.movement }}) can be used with NIEM 5.0 to search the model.  *[Learn more]({{ site.data.pages.movement | relative_url }})*
+- [Movement]({{ site.data.links.movement }}) can be used with the current NIEM release to search the model.  *[Learn more]({{ site.data.pages.movement | relative_url }})*

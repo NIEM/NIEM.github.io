@@ -6,7 +6,7 @@ description: Sample Biometrics XML schema and instances
 {:toc}
 - TOC
 
-The following are a sample XML schema and several sample XML instance documents using content from the NIEM Biometrics domain.
+The following are a sample XML schema and several sample XML instance documents using content from the NIEM 5.1 Biometrics domain.
 
 ## Sample root schema
 

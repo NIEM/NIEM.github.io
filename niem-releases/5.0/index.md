@@ -21,8 +21,6 @@ NIEM 5.0 is a major release, published December 2020.
 
   - [Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs
 
-  - [Movement](https://beta.movement.niem.gov) - search elements
-
   - [Model Viewer](https://niem.github.io/model/) - browse namespaces and their contents
 
 - Download the [component spreadsheet](https://release.niem.gov/niem/5.0/xlsx/niem-5.0.xlsx) or the [code spreadsheet](https://release.niem.gov/niem/5.0/xlsx/niem-5.0-codes.xlsx) to explore the contents of NIEM 5.0 in Excel
