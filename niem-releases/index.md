@@ -2,6 +2,7 @@
 title: NIEM Releases
 description: Information and resources for each NIEM release.
 links:
+- url: /niem-releases/5.2/
 - url: /niem-releases/5.1/
 - url: /niem-releases/5.0/
 - url: /niem-releases/4.2/
@@ -55,20 +56,21 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
     </tr>
   </thead>
   <tbody>
-    <!-- <tr>
+    <tr>
       <td>
-        <b><a href="./5.1">{{ site.data.release.description }}</a></b><br><i>(under development)</i>
+        <b><a href="./5.2">{{ site.data.release.description }}</a></b><br><i>(under development)</i>
       </td>
       <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/tree/{{tag}}">GitHub</a> |
-        <span class="text-muted">pending final release</span>
+        <i>pending alpha 1</i>
+        <!--<a href="https://github.com/NIEM/NIEM-Releases/tree/{{tag}}">GitHub</a> |
+        <span class="text-muted">pending final release</span>-->
       </td>
-      <td>2021</td>
-      <td><a href="https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip">Zip</a></td>
-      <td><a href="https://github.com/NIEM/NIEM-Releases/blob/{{tag}}/README.md">Readme</a></td>
-      <td>{{ site.data.release.elements }}</td>
+      <td>2022</td>
+      <td><!--<a href="https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip">Zip</a>--></td>
+      <td><!--<a href="https://github.com/NIEM/NIEM-Releases/blob/{{tag}}/README.md">Readme</a>--></td>
+      <td><!--{{ site.data.release.elements }}--></td>
       <td><a href="{{site.data.links.ndr5}}">NDR 5.0</a></td>
-    </tr> -->
+    </tr>
     <tr>
       <td>
         <b><a href="./5.1">{{ site.data.release.description }}</a></b>
