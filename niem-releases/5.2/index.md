@@ -61,4 +61,4 @@ The following changes are expected to appear in NIEM 5.2:
 
 - **Learning and Development** - new domain
 
-- **MilOps** - new content from USMTF (US Message Text Format) messages
+- **MilOps** - new content from USMTF (US Message Text Format) messages about military operations, missions, resources, readiness, and training.
