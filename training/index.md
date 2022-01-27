@@ -13,7 +13,7 @@
 
 ## Welcome to the new home of NIEM training
 
-We recently modernized our training to include user-driven tutorials and reference content on GitHub. It’s an evolution based on how people learn these days.
+We recently modernized our training to include user-driven tutorials and reference content on GitHub. It's an evolution based on how people learn these days.
 
 The content addresses the two types of training audiences we historically see:
 
@@ -22,10 +22,10 @@ The content addresses the two types of training audiences we historically see:
 
 This section represents our *work in progress*. As we knock out content, we push it out to the user community for [feedback](https://github.com/NIEM/NIEM.github.io/issues) and use.
 
-{: .note}
->
->- Just getting started?  Head over to the [main site](https://www.niem.gov) to learn [About NIEM](https://www.niem.gov/about-niem), [How to Get Started](https://www.niem.gov/getting-started), and much more!
->- Looking for information about a specific topic?  See the [Reference]({{ "/reference/" | relative_url }}) section for general documentation.
+Just getting started?  Head over to the [main site](https://www.niem.gov) to learn [About NIEM](https://www.niem.gov/about-niem), [How to Get Started](https://www.niem.gov/getting-started), and much more! Looking for information about a specific topic?  See the [Reference]({{ "/reference/" | relative_url }}) section for general documentation.
+
+{:.note}
+> NIEM is now offering virtual technical deep dive training.  Three half-day training sessions are being offered monthly over Webex for those who want to learn the technical details of NIEM, technically developers and implementers.  View or follow [@NIEMconnects](https://twitter.com/NIEMconnects) to learn about future opportunities.  Training course materials are available from [GitHub](https://github.com/NIEM/NIEM-Training), including the [training syllabus](https://github.com/NIEM/NIEM-Training/blob/main/NIEM%20Training%20Syllabus.md), the [master training document](https://github.com/NIEM/NIEM-Training/blob/main/Master%20NIEM%20Document/Master%20NIEM%20Training%20Document.md), and an [example IEPD](https://github.com/NIEM/NIEM-Training/tree/main/Crash%20Driver%20IEPD).
 
 ## Training tracks
 
