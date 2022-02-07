@@ -73,7 +73,7 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
     </tr>
     <tr>
       <td>
-        <b><a href="./5.1">{{ site.data.release.description }}</a></b>
+        <b><a href="./5.1">NIEM 5.1</a></b>
         <br><i>(current release)</i>
       </td>
       <td>
