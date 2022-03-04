@@ -6,6 +6,7 @@ links:
 - url: /community/cyber/
 - url: /community/grants/
 - url: /community/health/
+- url: /community/milops/
 - url: /community/sltt/
 ---
 
