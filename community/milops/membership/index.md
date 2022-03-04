@@ -2,7 +2,7 @@
 title: "Military Operations Membership"
 short: Membership
 links:
-- url: /community/sltt/membership/charter/
+- url: /community/milops/membership/charter/
 ---
 
 ## Domain Stewards
