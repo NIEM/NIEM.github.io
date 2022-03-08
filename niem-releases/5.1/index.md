@@ -3,7 +3,6 @@
   short: NIEM 5.1 (current)
   description: An overview of the NIEM 5.1 release.
   redirect_from: /niem-releases/current/
-  redirect_from: /niem-releases/draft/
 ---
 
 {:toc}

@@ -2,6 +2,7 @@
   title: NIEM 5.2 Release (Draft)
   short: NIEM 5.2 (draft)
   description: An overview of the draft NIEM 5.2 release, currently under development.
+  redirect_from: /niem-releases/draft/
 ---
 
 NIEM 5.2 will be a minor release and is currently under development.  Publication is scheduled for Fall 2022.
