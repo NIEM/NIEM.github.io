@@ -1,11 +1,11 @@
 ---
-title: "Military Operations Educational Material"
-short: Educational Material
+title: "Military Operations Commmunity/Educational Material"
+short: Community/Educational Material
 ---
 
-## Educational Material
+## Community/Educational Material
 
-This area will contain educational material.
+This area will contain community/educational material.
 
 |Title|Description|Date Posted|
 |---|---|---|
