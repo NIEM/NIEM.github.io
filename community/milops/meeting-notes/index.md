@@ -11,4 +11,4 @@ The Military Operations Domain has regular meetings, typically via teleconferenc
 |---|---|
 |March 2022|[MilOps March 2022](NIEM_MilOps_09Mar22_StakeholderEngagement_v0.1.pdf)|
 |February 2022|[MilOps February 2022](NIEM_MilOps_09Feb22_StakeholderEngagement_v0.1.pdf)|
-|January 2022|[MilOps February. 2022](NIEM_MilOps_12Jan22_StakeholderEngagement_v0.1.pdf)|
+|January 2022|[MilOps January 2022](NIEM_MilOps_12Jan22_StakeholderEngagement_v0.1.pdf)|
