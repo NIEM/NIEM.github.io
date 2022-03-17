@@ -33,7 +33,7 @@ ctas: https://reference.niem.gov/niem/specification/conformance-targets-attribut
 conformance: https://reference.niem.gov/niem/specification/conformance/5.0/niem-conformance-spec-5.0.html
 conformance_targets: https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html
 
-hlva: https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/high-level-version-architecture-3.0.html
+hlva: https://reference.niem.gov/niem/specification/high-level-version-architecture/5.0/NIEM_HLVA_5.0.pdf
 
 json: https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html
 json_v5: https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html

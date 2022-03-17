@@ -1,8 +1,8 @@
 
-{% assign classID = include.classID %}
+{% assign suiteID = include.suiteID %}
 
-{% assign class = site.data.specs.niem-spec-classes | where: "id", classID | first %}
-{% assign specs = site.data.specs.niem-specs | where: "classID", classID | sort: "id" | reverse %}
+{% assign class = site.data.specs.niem-spec-classes | where: "id", suiteID | first %}
+{% assign specs = site.data.specs.niem-specs | where: "suiteID", suiteID | sort: "id" | reverse %}
 
 {% comment %}
 {% if class.note and class.note != blank %}

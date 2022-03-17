@@ -1,7 +1,7 @@
 ---
   title: NIEM JSON Specification
   short: NIEM JSON
-  classID: JSON
+  suiteID: JSON
   icon: fa-book
   description: The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and message specifications.
 ---
@@ -13,7 +13,7 @@ The **[NIEM JSON Specification]({{ site.data.links.json }})**  establishes the t
 
 ## Specification Resources
 
-{% include specs/specification-summary.html classID=page.classID %}
+{% include specs/specification-summary.html suiteID=page.suiteID %}
 
 ## Conformance Targets
 
@@ -21,7 +21,7 @@ NIEM-conformance of JSON data is primarily focused on the relationship between t
 
 There are two forms of conformance of a NIEM JSON document to a NIEM-conformant schema:
 
-{% include specs/targets-table.html classID=page.classID %}
+{% include specs/targets-table.html suiteID=page.suiteID %}
 
 ## Additional Resources
 

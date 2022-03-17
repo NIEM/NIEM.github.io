@@ -10,13 +10,13 @@
 
       {% assign spec = site.data.specs.niem-specs | where: "id", specID | first %}
 
-      {% assign class = site.data.specs.niem-spec-classes | where: "id", spec.classID | first %}
+      {% assign suite = site.data.specs.niem-suites | where: "id", spec.suiteID | first %}
 
       <li>
-        <span><strong><a href="{{spec.specURL}}">{{ spec.specName | default: spec.className }}</a></strong>, </span>
+        <span><strong><a href="{{spec.specURL}}">{{ spec.specName | default: spec.suiteName }}</a></strong>, </span>
         <span><strong>version {{ spec.specVersion }}</strong></span>
         <span class="text-muted"> [published {{ spec.specYear }}]</span>
-        <p style="padding: 5px 0;">{{ spec.classDescription }} <a href="{{ class.tutorialRelativeURL | relative_url }}">Learn more...</a></p>
+        <p style="padding: 5px 0;">{{ spec.classDescription }} <a href="{{ suite.tutorialRelativeURL | relative_url }}">Learn more...</a></p>
       </li>
 
   {% endfor %}

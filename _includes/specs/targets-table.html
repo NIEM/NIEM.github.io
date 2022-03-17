@@ -4,18 +4,18 @@
   Creates a table with conformance target information
 
   Optional parameters
-  "classID" - ID for the specification class, e.g., "NDR" or "IEPD"
+  "suiteID" - ID for the specification suite, e.g., "NDR" or "IEPD"
   "specificationID" - ID for the individual specification, e.g., "NDR-4.0", "MPD-3.0.1"
 
   Example call:
-  {% include specs/targets-table.html  classID="NDR" %}
+  {% include specs/targets-table.html  suiteID="NDR" %}
   ***
 {% endcomment %}
 
 {% assign allTargets = site.data.specs.niem-targets %}
 
-{% if include.classID %}
-  {% assign targets = allTargets | where: "classID", include.classID | where: "targetStatus", "current" %}
+{% if include.suiteID %}
+  {% assign targets = allTargets | where: "suiteID", include.suiteID | where: "targetStatus", "current" %}
 {% elsif include.specificationID %}
   {% assign targets = allTargets | where: "specificationID", include.specificationID %}
 {% else %}
@@ -31,7 +31,7 @@
     <th style="width: 55px;">Spec</th>
   </tr>
   {% for target in targets %}
-  <tr class="target class {{target.classID}} spec {{target.specificationSelector}}">
+  <tr class="target suite {{target.suiteID}} spec {{target.specificationSelector}}">
     <td id="target-{{target.targetCode}}-id" style="display: none;">{{target.targetCode}}</td>
     <td>
       {% if target.targetTutorial %}

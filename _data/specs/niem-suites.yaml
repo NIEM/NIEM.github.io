@@ -98,5 +98,5 @@
     changeHistory: null
     description: 'The NIEM High-Level Version Architecture (HLVA) Specification identifies the processes, artifacts, and responsibilities required to produce new releases of the NIEM model. It also establishes a regular release cycle for predictable and manageable NIEM updates.'
     note: ""
-    versionCount: 1
-    versionNumbers: '3.0'
+    versionCount: 3
+    versionNumbers: '1.0, 3.0, 5.0'

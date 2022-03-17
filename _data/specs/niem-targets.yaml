@@ -1,167 +1,167 @@
 -
     specificationID: NDR-1.3
     specificationSelector: NDR-1_3
-    classID: NDR
+    suiteID: NDR
     targetCode: REF
     targetName: 'Reference Schema Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf#definition_reference_schema_document'
     targetDescription: 'A NIEM schema that provides authoritative definitions of broadly reusable schema components and follows a stricter syntax. NIEM release schemas are REFs.'
-    targetTutorial: '/reference/specifications/ndr/#reference-schema-document-ref'
+    targetTutorial: '/reference/specifications/ndr/#ref'
     targetStatus: null
 -
     specificationID: NDR-1.3
     specificationSelector: NDR-1_3
-    classID: NDR
+    suiteID: NDR
     targetCode: EXT
     targetName: 'Extension Schema Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf#definition_extension_schema_document'
     targetDescription: 'A NIEM schema for special-purpose content with little reuse expected. EXTs may thus follow a slightly more relaxed syntax. IEPD extension schemas are often EXTs.'
-    targetTutorial: '/reference/specifications/ndr/#extension-schema-document-ext'
+    targetTutorial: '/reference/specifications/ndr/#ext'
     targetStatus: null
 -
     specificationID: NDR-1.3
     specificationSelector: NDR-1_3
-    classID: NDR
+    suiteID: NDR
     targetCode: SET
     targetName: 'Conformant Schema Document Set'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf#definition_conformant_schema_document_set'
     targetDescription: 'A single conceptual XML schema that represents the sum of all rules and definitions within a collection of NIEM REF and EXT schemas, such as an IEPD.'
-    targetTutorial: '/reference/specifications/ndr/#conformant-schema-document-set-set'
+    targetTutorial: '/reference/specifications/ndr/#set'
     targetStatus: null
 -
     specificationID: NDR-1.3
     specificationSelector: NDR-1_3
-    classID: NDR
+    suiteID: NDR
     targetCode: INS
     targetName: 'Conformant Instance Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf#definition_conformant_instance_XML_document'
     targetDescription: 'An XML instance document which is valid against a conformant schema document set (SET).'
-    targetTutorial: '/reference/specifications/ndr/#conformant-instance-document-ins'
+    targetTutorial: '/reference/specifications/ndr/#ins'
     targetStatus: null
 -
     specificationID: NDR-3.0
     specificationSelector: NDR-3_0
-    classID: NDR
+    suiteID: NDR
     targetCode: REF
     targetName: 'Reference Schema Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_reference_schema_document'
     targetDescription: 'A NIEM schema that provides authoritative definitions of broadly reusable schema components and follows a stricter syntax. NIEM release schemas are REFs.'
-    targetTutorial: '/reference/specifications/ndr/#reference-schema-document-ref'
+    targetTutorial: '/reference/specifications/ndr/#ref'
     targetStatus: null
 -
     specificationID: NDR-3.0
     specificationSelector: NDR-3_0
-    classID: NDR
+    suiteID: NDR
     targetCode: EXT
     targetName: 'Extension Schema Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_extension_schema_document'
     targetDescription: 'A NIEM schema for special-purpose content with little reuse expected. EXTs may thus follow a slightly more relaxed syntax. IEPD extension schemas are often EXTs.'
-    targetTutorial: '/reference/specifications/ndr/#extension-schema-document-ext'
+    targetTutorial: '/reference/specifications/ndr/#ext'
     targetStatus: null
 -
     specificationID: NDR-3.0
     specificationSelector: NDR-3_0
-    classID: NDR
+    suiteID: NDR
     targetCode: SET
     targetName: 'Conformant Schema Document Set'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_conformant_schema_document_set'
     targetDescription: 'A single conceptual XML schema that represents the sum of all rules and definitions within a collection of NIEM REF and EXT schemas, such as an IEPD.'
-    targetTutorial: '/reference/specifications/ndr/#conformant-schema-document-set-set'
+    targetTutorial: '/reference/specifications/ndr/#set'
     targetStatus: null
 -
     specificationID: NDR-3.0
     specificationSelector: NDR-3_0
-    classID: NDR
+    suiteID: NDR
     targetCode: INS
     targetName: 'Conformant Instance Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_conformant_instance_XML_document'
     targetDescription: 'An XML instance document which is valid against a conformant schema document set (SET).'
-    targetTutorial: '/reference/specifications/ndr/#conformant-instance-document-ins'
+    targetTutorial: '/reference/specifications/ndr/#ins'
     targetStatus: null
 -
     specificationID: NDR-4.0
     specificationSelector: NDR-4_0
-    classID: NDR
+    suiteID: NDR
     targetCode: REF
     targetName: 'Reference Schema Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document'
     targetDescription: 'A NIEM schema that provides authoritative definitions of broadly reusable schema components and follows a stricter syntax. NIEM release schemas are REFs.'
-    targetTutorial: '/reference/specifications/ndr/#reference-schema-document-ref'
+    targetTutorial: '/reference/specifications/ndr/#ref'
     targetStatus: null
 -
     specificationID: NDR-4.0
     specificationSelector: NDR-4_0
-    classID: NDR
+    suiteID: NDR
     targetCode: EXT
     targetName: 'Extension Schema Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document'
     targetDescription: 'A NIEM schema for special-purpose content with little reuse expected. EXTs may thus follow a slightly more relaxed syntax. IEPD extension schemas are often EXTs.'
-    targetTutorial: '/reference/specifications/ndr/#extension-schema-document-ext'
+    targetTutorial: '/reference/specifications/ndr/#ext'
     targetStatus: null
 -
     specificationID: NDR-4.0
     specificationSelector: NDR-4_0
-    classID: NDR
+    suiteID: NDR
     targetCode: SET
     targetName: 'Conformant Schema Document Set'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_schema_document_set'
     targetDescription: 'A single conceptual XML schema that represents the sum of all rules and definitions within a collection of NIEM REF and EXT schemas, such as an IEPD.'
-    targetTutorial: '/reference/specifications/ndr/#conformant-schema-document-set-set'
+    targetTutorial: '/reference/specifications/ndr/#set'
     targetStatus: null
 -
     specificationID: NDR-4.0
     specificationSelector: NDR-4_0
-    classID: NDR
+    suiteID: NDR
     targetCode: INS
     targetName: 'Conformant Instance Document'
     targetURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_instance_XML_document'
     targetDescription: 'An XML instance document which is valid against a conformant schema document set (SET).'
-    targetTutorial: '/reference/specifications/ndr/#conformant-instance-document-ins'
+    targetTutorial: '/reference/specifications/ndr/#ins'
     targetStatus: null
 -
     specificationID: NDR-5.0
     specificationSelector: NDR-5_0
-    classID: NDR
+    suiteID: NDR
     targetCode: REF
     targetName: 'Reference Schema Document'
     targetURL: 'https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html#definition_reference_schema_document'
     targetDescription: 'A NIEM schema that provides authoritative definitions of broadly reusable schema components and follows a stricter syntax. NIEM release schemas are REFs.'
-    targetTutorial: '/reference/specifications/ndr/#reference-schema-document-ref'
+    targetTutorial: '/reference/specifications/ndr/#ref'
     targetStatus: current
 -
     specificationID: NDR-5.0
     specificationSelector: NDR-5_0
-    classID: NDR
+    suiteID: NDR
     targetCode: EXT
     targetName: 'Extension Schema Document'
     targetURL: 'https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html#definition_extension_schema_document'
     targetDescription: 'A NIEM schema for special-purpose content with little reuse expected. EXTs may thus follow a slightly more relaxed syntax. IEPD extension schemas are often EXTs.'
-    targetTutorial: '/reference/specifications/ndr/#extension-schema-document-ext'
+    targetTutorial: '/reference/specifications/ndr/#ext'
     targetStatus: current
 -
     specificationID: NDR-5.0
     specificationSelector: NDR-5_0
-    classID: NDR
+    suiteID: NDR
     targetCode: SET
     targetName: 'Conformant Schema Document Set'
     targetURL: 'https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html#definition_conformant_schema_document_set'
     targetDescription: 'A single conceptual XML schema that represents the sum of all rules and definitions within a collection of NIEM REF and EXT schemas, such as an IEPD.'
-    targetTutorial: '/reference/specifications/ndr/#conformant-schema-document-set-set'
+    targetTutorial: '/reference/specifications/ndr/#set'
     targetStatus: current
 -
     specificationID: NDR-5.0
     specificationSelector: NDR-5_0
-    classID: NDR
+    suiteID: NDR
     targetCode: INS
     targetName: 'Conformant Instance Document'
     targetURL: 'https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html#definition_conformant_instance_XML_document'
     targetDescription: 'An XML instance document which is valid against a conformant schema document set (SET).'
-    targetTutorial: '/reference/specifications/ndr/#conformant-instance-document-ins'
+    targetTutorial: '/reference/specifications/ndr/#ins'
     targetStatus: current
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
-    classID: IEPD
+    suiteID: IEPD
     targetCode: WF-MPD
     targetName: 'Model Package Description'
     targetURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_model_package_description'
@@ -170,7 +170,7 @@
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
-    classID: IEPD
+    suiteID: IEPD
     targetCode: IEPD
     targetName: 'Information Exchange Package Documentation'
     targetURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package_documentation'
@@ -179,7 +179,7 @@
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
-    classID: IEPD
+    suiteID: IEPD
     targetCode: IEP
     targetName: 'Information Exchange Package'
     targetURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package'
@@ -188,7 +188,7 @@
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
-    classID: IEPD
+    suiteID: IEPD
     targetCode: Schema-subset
     targetName: 'Schema Document Subset'
     targetURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_schema_document_subset'
@@ -197,7 +197,7 @@
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
-    classID: IEPD
+    suiteID: IEPD
     targetCode: MPD-catalog
     targetName: 'MPD catalog document'
     targetURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_MPD_catalog_document'
@@ -206,7 +206,7 @@
 -
     specificationID: MPD-3.0.1
     specificationSelector: MPD-3_0_1
-    classID: IEPD
+    suiteID: IEPD
     targetCode: XML-catalog
     targetName: 'XML catalog document'
     targetURL: 'https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_XML_catalog_document'
@@ -215,7 +215,7 @@
 -
     specificationID: IEPD-5.0
     specificationSelector: IEPD-5_0
-    classID: IEPD
+    suiteID: IEPD
     targetCode: IEPD
     targetName: 'Information Exchange Package Documentation'
     targetURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_information_exchange_package_documentation'
@@ -224,7 +224,7 @@
 -
     specificationID: IEPD-5.0
     specificationSelector: IEPD-5_0
-    classID: IEPD
+    suiteID: IEPD
     targetCode: WF-IEPD
     targetName: 'Well-formed IEPD'
     targetURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_well-formed_IEPD'
@@ -233,7 +233,7 @@
 -
     specificationID: IEPD-5.0
     specificationSelector: IEPD-5_0
-    classID: IEPD
+    suiteID: IEPD
     targetCode: IEP
     targetName: 'Information Exchange Package'
     targetURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_information_exchange_package'
@@ -242,7 +242,7 @@
 -
     specificationID: IEPD-5.0
     specificationSelector: IEPD-5_0
-    classID: IEPD
+    suiteID: IEPD
     targetCode: FN-IEP
     targetName: 'Full NIEM IEP'
     targetURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_full_NIEM_information_exchange_package'
@@ -251,7 +251,7 @@
 -
     specificationID: IEPD-5.0
     specificationSelector: IEPD-5_0
-    classID: IEPD
+    suiteID: IEPD
     targetCode: Schema-subset
     targetName: 'Schema document subset'
     targetURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_schema_document_subset'
@@ -260,7 +260,7 @@
 -
     specificationID: IEPD-5.0
     specificationSelector: IEPD-5_0
-    classID: IEPD
+    suiteID: IEPD
     targetCode: IEPD-catalog
     targetName: 'IEPD catalog document'
     targetURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_IEPD_catalog_document'
@@ -269,7 +269,7 @@
 -
     specificationID: IEPD-5.0
     specificationSelector: IEPD-5_0
-    classID: IEPD
+    suiteID: IEPD
     targetCode: XML-catalog
     targetName: 'XML catalog document'
     targetURL: 'https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_XML_catalog_document'
@@ -278,7 +278,7 @@
 -
     specificationID: CodeLists-4.0
     specificationSelector: CodeLists-4_0
-    classID: CodeLists
+    suiteID: CodeLists
     targetCode: CLD
     targetName: 'code list document'
     targetURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list_document'
@@ -287,7 +287,7 @@
 -
     specificationID: CodeLists-4.0
     specificationSelector: CodeLists-4_0
-    classID: CodeLists
+    suiteID: CodeLists
     targetCode: GC-CLD
     targetName: 'Genericode code list document'
     targetURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_Genericode_code_list_document'
@@ -296,7 +296,7 @@
 -
     specificationID: CodeLists-4.0
     specificationSelector: CodeLists-4_0
-    classID: CodeLists
+    suiteID: CodeLists
     targetCode: CSV-CLD
     targetName: 'CSV code list document'
     targetURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_CSV_code_list_document'
@@ -305,7 +305,7 @@
 -
     specificationID: CodeLists-4.0
     specificationSelector: CodeLists-4_0
-    classID: CodeLists
+    suiteID: CodeLists
     targetCode: XSD
     targetName: 'code list-enabled schema document'
     targetURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list-enabled_schema_document'
@@ -314,7 +314,7 @@
 -
     specificationID: CodeLists-4.0
     specificationSelector: CodeLists-4_0
-    classID: CodeLists
+    suiteID: CodeLists
     targetCode: INS
     targetName: 'code list-enabled instance document'
     targetURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list-enabled_instance_document'
@@ -323,7 +323,7 @@
 -
     specificationID: CodeLists-4.0
     specificationSelector: CodeLists-4_0
-    classID: CodeLists
+    suiteID: CodeLists
     targetCode: VSET
     targetName: 'code list validation set'
     targetURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list_validation_set'
@@ -332,7 +332,7 @@
 -
     specificationID: JSON-4.0
     specificationSelector: JSON-4_0
-    classID: JSON
+    suiteID: JSON
     targetCode: STRICT
     targetName: 'NIEM JSON document strictly conformant to a schema'
     targetURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_NIEM_JSON_document_strictly_conformant_to_a_schema'
@@ -341,7 +341,7 @@
 -
     specificationID: JSON-4.0
     specificationSelector: JSON-4_0
-    classID: JSON
+    suiteID: JSON
     targetCode: LAX
     targetName: 'NIEM JSON document laxly conformant to a schema'
     targetURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_NIEM_JSON_document_laxly_conformant_to_a_schema'
@@ -350,7 +350,7 @@
 -
     specificationID: JSON-5.0
     specificationSelector: JSON-5_0
-    classID: JSON
+    suiteID: JSON
     targetCode: STRICT
     targetName: 'NIEM JSON document strictly conformant to a schema'
     targetURL: 'https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html#definition_NIEM_JSON_document_strictly_conformant_to_a_schema'
@@ -359,7 +359,7 @@
 -
     specificationID: JSON-5.0
     specificationSelector: JSON-5_0
-    classID: JSON
+    suiteID: JSON
     targetCode: LAX
     targetName: 'NIEM JSON document laxly conformant to a schema'
     targetURL: 'https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html#definition_NIEM_JSON_document_laxly_conformant_to_a_schema'

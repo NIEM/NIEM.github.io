@@ -1,7 +1,7 @@
 ---
   title: NIEM Code Lists Specification
   short: Code Lists
-  classID: CodeLists
+  suiteID: CodeLists
   description: The Code Lists Specification adds support for new capabilities of NIEM code lists beyond the basic enumeration representations provided by XML and JSON schema.  Key features include the definition of codes in CSV or Genericode files, dynamic code lists via run-time binding, and multi-column code table support.
   icon: fa-book
   links:
@@ -16,7 +16,7 @@ The **[Code Lists Specification]({{site.data.links.code_list_spec}})** adds supp
 
 ## Specification Resources
 
-{% include specs/specification-summary.html classID=page.classID %}
+{% include specs/specification-summary.html suiteID=page.suiteID %}
 
 ## Overview
 
@@ -162,7 +162,7 @@ The example below is an XML instance based on the schema snippet above:
 
 The Code Lists Specification includes the following conformance targets:
 
-{% include specs/targets-table.html url=site.data.links.ndr classID=page.classID %}
+{% include specs/targets-table.html url=site.data.links.ndr suiteID=page.suiteID %}
 
 ## FAQ
 

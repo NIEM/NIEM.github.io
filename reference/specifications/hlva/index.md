@@ -2,7 +2,7 @@
 title: NIEM High-Level Version Architecture (HLVA) Specification
 short: High-Level Version Architecture (HLVA)
 icon: fa-book
-classID: HLVA
+suiteID: HLVA
 description:  The NIEM High-Level Version Architecture (HLVA) Specification identifies the processes, artifacts, and responsibilities required to produce new releases of the NIEM model.  It also establishes a regular release cycle for predictable and manageable NIEM updates.
 ---
 
@@ -13,7 +13,7 @@ The **[NIEM High-Level Version Architecture (HLVA) Specification]({{ site.data.l
 
 ## Specification Resources
 
-{% include specs/specification-summary.html classID=page.classID %}
+{% include specs/specification-summary.html suiteID=page.suiteID %}
 
 ## Objectives
 

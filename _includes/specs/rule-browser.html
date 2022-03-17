@@ -4,13 +4,13 @@
 Creates a page to browse, search, and filter NIEM specification rules.
 
 Optional parameters:
-- "classID": "NDR" | "IEPD" | "CodeLists" | "CTAS" | "JSON"
+- "suiteID": "NDR" | "IEPD" | "CodeLists" | "CTAS" | "JSON"
 ***
 {% endcomment %}
 
-{% assign classID = include.classID | default: "NDR" %}
+{% assign suiteID = include.suiteID | default: "NDR" %}
 
-{% assign classes = site.data.specs.niem-spec-classes %}
+{% assign suites = site.data.specs.niem-suites %}
 {% assign specs = site.data.specs.niem-specs %}
 {% assign rules = site.data.specs.niem-rules %}
 {% assign targets = site.data.specs.niem-targets %}
@@ -25,9 +25,9 @@ Optional parameters:
       <span class="input-group-addon">
         <icon class="fa fa-book"/>
       </span>
-      <select id="selectClass" class="form-control">
-        {% for class in classes %}
-          <option value="{{class.id}}">{{ class.name }}</option>
+      <select id="selectSuite" class="form-control">
+        {% for suite in suites %}
+          <option value="{{suite.id}}">{{ suite.name }}</option>
         {% endfor %}
       </select>
     </div>
@@ -36,7 +36,7 @@ Optional parameters:
     <div class="input-group col-lg-3" style="display: inline-table; width: 25%;">
       <select id="selectVersion" class="form-control user-select" style="width: auto;">
         {% for spec in specs %}
-          <option class="class {{spec.classID}} {{spec.specStatus}}" value="{{spec.id}}">
+          <option class="suite {{spec.suiteID}} {{spec.specStatus}}" value="{{spec.id}}">
             Version {{ spec.specVersion }} {% if spec.specStatus %} - {{ spec.specStatus }}{% endif %}
           </option>
         {% endfor %}
@@ -99,15 +99,15 @@ Optional parameters:
           <option value="all">All targets</option>
 
           <!-- Set up special targets for the NDR -->
-          <option class="class NDR includes" value="REF">Includes REF</option>
-          <option class="class NDR includes" value="EXT">Includes EXT</option>
-          <option class="class NDR includes" value="SET">Includes SET</option>
-          <option class="class NDR includes" value="INS">Includes INS</option>
-          <option class="class NDR exact" value="ONLY REF">Only REF</option>
-          <option class="class NDR exact" value="ONLY EXT">Only EXT</option>
+          <option class="suite NDR includes" value="REF">Includes REF</option>
+          <option class="suite NDR includes" value="EXT">Includes EXT</option>
+          <option class="suite NDR includes" value="SET">Includes SET</option>
+          <option class="suite NDR includes" value="INS">Includes INS</option>
+          <option class="suite NDR exact" value="ONLY REF">Only REF</option>
+          <option class="suite NDR exact" value="ONLY EXT">Only EXT</option>
 
           {% for target in targets %}
-            {% if target.classID != "NDR" %}
+            {% if target.suiteID != "NDR" %}
               <!-- Targets for the rest of the specs -->
               <option class="spec {{target.specificationSelector}} exact" value="{{target.targetCode}}">
                 {{target.targetCode}}
@@ -209,15 +209,15 @@ Optional parameters:
 <script>
 
   let specificationSelector;
-  let classID;
+  let suiteID;
 
-  let classes = parseLiquidJSONArray(`{{ site.data.specs.niem-spec-classes }}`);
+  let suites = parseLiquidJSONArray(`{{ site.data.specs.niem-suites }}`);
   let specs = parseLiquidJSONArray(`{{ site.data.specs.niem-specs }}`);
   let targets = parseLiquidJSONArray(`{{ site.data.specs.niem-targets }}`);
 
   $(document).ready( function() {
-    // Initialize specification class
-    $("#selectClass").val("{{classID}}").change();
+    // Initialize specification suite
+    $("#selectSuite").val("{{suiteID}}").change();
   });
 
   $(document).keydown( function(event) {
@@ -227,30 +227,30 @@ Optional parameters:
     }
   })
 
-  $("#selectClass").change( function() {
+  $("#selectSuite").change( function() {
 
-    classID = this.value || "NDR";
+    suiteID = this.value || "NDR";
 
-    $(`.class`).hide();
-    $(`.class.${classID}`).show();
+    $(`.suite`).hide();
+    $(`.suite.${suiteID}`).show();
 
-    // After changing specification class, select the current version of the spec
-    $(`#selectVersion option.${classID}.current`).prop("selected", true).change();
+    // After changing specification suite, select the current version of the spec
+    $(`#selectVersion option.${suiteID}.current`).prop("selected", true).change();
 
   });
 
   $("#selectVersion").change( function() {
 
     let spec = specs.find( spec => spec.id == this.value );
-    let specClass = classes.find( specClass => specClass.id == classID )
+    let suite = suites.find( suite => suite.id == suiteID )
     specificationSelector = spec.specSelector;
 
     // Load spec description box
     $("#specURL").attr("href", spec.specURL);
-    $("#specDescription").text(specClass.description);
+    $("#specDescription").text(suite.description);
     $("#specPublished").text(spec.specYear);
     $("#specApplicableReleases").text((spec.specApplicableReleases || "null").replace("null", "pending"));
-    $("#specTutorial").attr("href", specClass.tutorialRelativeURL);
+    $("#specTutorial").attr("href", suite.tutorialRelativeURL);
 
     // Update conformance targets table and select targets
     $("#conformanceTargets").show();
@@ -266,7 +266,7 @@ Optional parameters:
     }
 
     // Disable version select box if only one version available
-    $("#selectVersion").prop("disabled", specClass.versionCount == 1);
+    $("#selectVersion").prop("disabled", suite.versionCount == 1);
 
     // Reset user filters
     $("#selectTargets").prop("selectedIndex", 0);
@@ -345,13 +345,13 @@ Optional parameters:
   function filterTargets() {
 
     let selectedTargets = $("#selectTargets").val().replace("ONLY ", "");
-    let classes = $("select[id='selectTargets'] :selected").attr("class");
+    let suites = $("select[id='selectTargets'] :selected").attr("class");
 
 
     if (selectedTargets == "all") {
       return;
     }
-    else if (classes.includes("exact")) {
+    else if (suites.includes("exact")) {
       // Hide rule targets that are not an exact match for the selected target
       $(`.rule:not('.targets-${selectedTargets}')`).hide();
     }
@@ -424,7 +424,7 @@ Optional parameters:
 
 <style>
 
-  #selectClass, #selectVersion {
+  #selectSuite, #selectVersion {
     font-weight: bold;
     /* border-radius: 4px;   Wasn't being added to the version box so apply manually */
   }

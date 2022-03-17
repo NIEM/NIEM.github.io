@@ -2,7 +2,7 @@
   title: NIEM Naming and Design Rules (NDR) Specification
   short: Naming and Design Rules (NDR)
   icon: fa-book
-  classID: NDR
+  suiteID: NDR
   description: The NIEM Naming and Design Rules (NDR) describe the architecture of the NIEM data model and its representation in XML.  It specifies principles and enforceable rules for NIEM data components and schemas.
   links:
     - url: /reference/specifications/ndr/changes/
@@ -29,7 +29,7 @@ NDR rules are intended to establish and, more importantly, enforce a degree of s
 
 ## Specification Resources
 
-{% include specs/specification-summary.html classID=page.classID %}
+{% include specs/specification-summary.html suiteID=page.suiteID %}
 
 ## Conformance Targets
 
@@ -37,7 +37,7 @@ The NDR describes and defines rules for four different kinds of documents, each 
 
 Refer to the section about the [Conformance Targets Attribute Specification]({{ site.data.pages.ctas | relative_url }}) for more information, including how to specify a conformance target in a NIEM schema.
 
-{% include specs/targets-table.html classID=page.classID %}
+{% include specs/targets-table.html suiteID=page.suiteID %}
 
 ### REF
 

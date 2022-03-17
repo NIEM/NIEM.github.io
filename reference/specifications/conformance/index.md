@@ -1,7 +1,7 @@
 ---
   title: NIEM Conformance Specification
   short: Conformance
-  classID: Conformance
+  suiteID: Conformance
   icon: fa-book
   description: The Conformance Specification specifies general conformance guidance, principles, and rules for NIEM.
 ---
@@ -17,7 +17,7 @@ System, tools, or databases may have capabilities designed to specifically suppo
 
 ## Specification Resources
 
-{% include specs/specification-summary.html classID=page.classID %}
+{% include specs/specification-summary.html suiteID=page.suiteID %}
 
 ## Conformance vs Compliance
 

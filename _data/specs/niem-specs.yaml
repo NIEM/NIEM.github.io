@@ -1,11 +1,11 @@
 -
     id: NDR-1.3
-    classID: NDR
-    className: 'NIEM Naming and Design Rules'
-    classRepo: 'https://github.com/NIEM/NIEM-NDR'
-    classLandingPage: 'https://niem.github.io/NIEM-NDR/'
-    classIssueTracker: 'https://github.com/NIEM/NIEM-NDR/projects/1'
-    classDescription: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
+    suiteID: NDR
+    suiteName: 'NIEM Naming and Design Rules'
+    suiteRepo: 'https://github.com/NIEM/NIEM-NDR'
+    suiteLandingPage: 'https://niem.github.io/NIEM-NDR/'
+    suiteIssueTracker: 'https://github.com/NIEM/NIEM-NDR/projects/1'
+    suiteDescription: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
     specID: NDR-1.3
     specCustomID: NDR
     specName: 'NIEM Naming and Design Rules'
@@ -23,12 +23,12 @@
     specTargetCount: 4
 -
     id: NDR-3.0
-    classID: NDR
-    className: 'NIEM Naming and Design Rules'
-    classRepo: 'https://github.com/NIEM/NIEM-NDR'
-    classLandingPage: 'https://niem.github.io/NIEM-NDR/'
-    classIssueTracker: 'https://github.com/NIEM/NIEM-NDR/projects/1'
-    classDescription: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
+    suiteID: NDR
+    suiteName: 'NIEM Naming and Design Rules'
+    suiteRepo: 'https://github.com/NIEM/NIEM-NDR'
+    suiteLandingPage: 'https://niem.github.io/NIEM-NDR/'
+    suiteIssueTracker: 'https://github.com/NIEM/NIEM-NDR/projects/1'
+    suiteDescription: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
     specID: NDR-3.0
     specCustomID: NDR
     specName: 'NIEM Naming and Design Rules'
@@ -46,12 +46,12 @@
     specTargetCount: 4
 -
     id: NDR-4.0
-    classID: NDR
-    className: 'NIEM Naming and Design Rules'
-    classRepo: 'https://github.com/NIEM/NIEM-NDR'
-    classLandingPage: 'https://niem.github.io/NIEM-NDR/'
-    classIssueTracker: 'https://github.com/NIEM/NIEM-NDR/projects/1'
-    classDescription: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
+    suiteID: NDR
+    suiteName: 'NIEM Naming and Design Rules'
+    suiteRepo: 'https://github.com/NIEM/NIEM-NDR'
+    suiteLandingPage: 'https://niem.github.io/NIEM-NDR/'
+    suiteIssueTracker: 'https://github.com/NIEM/NIEM-NDR/projects/1'
+    suiteDescription: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
     specID: NDR-4.0
     specCustomID: NDR
     specName: 'NIEM Naming and Design Rules'
@@ -69,12 +69,12 @@
     specTargetCount: 4
 -
     id: NDR-5.0
-    classID: NDR
-    className: 'NIEM Naming and Design Rules'
-    classRepo: 'https://github.com/NIEM/NIEM-NDR'
-    classLandingPage: 'https://niem.github.io/NIEM-NDR/'
-    classIssueTracker: 'https://github.com/NIEM/NIEM-NDR/projects/1'
-    classDescription: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
+    suiteID: NDR
+    suiteName: 'NIEM Naming and Design Rules'
+    suiteRepo: 'https://github.com/NIEM/NIEM-NDR'
+    suiteLandingPage: 'https://niem.github.io/NIEM-NDR/'
+    suiteIssueTracker: 'https://github.com/NIEM/NIEM-NDR/projects/1'
+    suiteDescription: 'The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).'
     specID: NDR-5.0
     specCustomID: NDR
     specName: 'NIEM Naming and Design Rules'
@@ -92,12 +92,12 @@
     specTargetCount: 4
 -
     id: MPD-3.0.1
-    classID: IEPD
-    className: 'NIEM Information Exchange Package Documentation'
-    classRepo: 'https://github.com/NIEM/MPD-Spec'
-    classLandingPage: 'https://reference.niem.gov/niem/specification/model-package-description/'
-    classIssueTracker: 'https://github.com/NIEM/MPD-Spec/projects/1'
-    classDescription: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.'
+    suiteID: IEPD
+    suiteName: 'NIEM Information Exchange Package Documentation'
+    suiteRepo: 'https://github.com/NIEM/MPD-Spec'
+    suiteLandingPage: 'https://reference.niem.gov/niem/specification/model-package-description/'
+    suiteIssueTracker: 'https://github.com/NIEM/MPD-Spec/projects/1'
+    suiteDescription: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.'
     specID: MPD-3.0.1
     specCustomID: MPD
     specName: 'Model Package Description'
@@ -115,12 +115,12 @@
     specTargetCount: 6
 -
     id: IEPD-5.0
-    classID: IEPD
-    className: 'NIEM Information Exchange Package Documentation'
-    classRepo: 'https://github.com/NIEM/MPD-Spec'
-    classLandingPage: 'https://reference.niem.gov/niem/specification/model-package-description/'
-    classIssueTracker: 'https://github.com/NIEM/MPD-Spec/projects/1'
-    classDescription: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.'
+    suiteID: IEPD
+    suiteName: 'NIEM Information Exchange Package Documentation'
+    suiteRepo: 'https://github.com/NIEM/MPD-Spec'
+    suiteLandingPage: 'https://reference.niem.gov/niem/specification/model-package-description/'
+    suiteIssueTracker: 'https://github.com/NIEM/MPD-Spec/projects/1'
+    suiteDescription: 'The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.'
     specID: IEPD-5.0
     specCustomID: IEPD
     specName: 'NIEM Information Exchange Package Documentation'
@@ -138,12 +138,12 @@
     specTargetCount: 7
 -
     id: CodeLists-4.0
-    classID: CodeLists
-    className: 'NIEM Code Lists Specification'
-    classRepo: 'https://github.com/NIEM/NIEM-Code-Lists-Spec'
-    classLandingPage: 'https://github.com/NIEM/NIEM-Code-Lists-Spec'
-    classIssueTracker: 'https://github.com/NIEM/NIEM-Code-Lists-Spec/projects/1'
-    classDescription: 'The Code Lists Specification adds support for new capabilities of NIEM code lists beyond the basic enumeration representations provided by XML and JSON schema.  Key features include the definition of codes in CSV or Genericode files, dynamic code lists via run-time binding, and multi-column code table support.'
+    suiteID: CodeLists
+    suiteName: 'NIEM Code Lists Specification'
+    suiteRepo: 'https://github.com/NIEM/NIEM-Code-Lists-Spec'
+    suiteLandingPage: 'https://github.com/NIEM/NIEM-Code-Lists-Spec'
+    suiteIssueTracker: 'https://github.com/NIEM/NIEM-Code-Lists-Spec/projects/1'
+    suiteDescription: 'The Code Lists Specification adds support for new capabilities of NIEM code lists beyond the basic enumeration representations provided by XML and JSON schema.  Key features include the definition of codes in CSV or Genericode files, dynamic code lists via run-time binding, and multi-column code table support.'
     specID: CodeLists-4.0
     specCustomID: CodeLists
     specName: 'NIEM Code Lists Specification'
@@ -161,12 +161,12 @@
     specTargetCount: 6
 -
     id: Conformance-1.0
-    classID: Conformance
-    className: 'NIEM Conformance Specification'
-    classRepo: 'https://github.com/NIEM/NIEM-Conformance-Spec'
-    classLandingPage: 'https://niem.github.io/NIEM-Conformance-Spec/'
-    classIssueTracker: null
-    classDescription: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
+    suiteID: Conformance
+    suiteName: 'NIEM Conformance Specification'
+    suiteRepo: 'https://github.com/NIEM/NIEM-Conformance-Spec'
+    suiteLandingPage: 'https://niem.github.io/NIEM-Conformance-Spec/'
+    suiteIssueTracker: null
+    suiteDescription: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
     specID: Conformance-1.0
     specCustomID: Conformance
     specName: 'NIEM Conformance Specification'
@@ -184,12 +184,12 @@
     specTargetCount: 0
 -
     id: Conformance-3.0
-    classID: Conformance
-    className: 'NIEM Conformance Specification'
-    classRepo: 'https://github.com/NIEM/NIEM-Conformance-Spec'
-    classLandingPage: 'https://niem.github.io/NIEM-Conformance-Spec/'
-    classIssueTracker: null
-    classDescription: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
+    suiteID: Conformance
+    suiteName: 'NIEM Conformance Specification'
+    suiteRepo: 'https://github.com/NIEM/NIEM-Conformance-Spec'
+    suiteLandingPage: 'https://niem.github.io/NIEM-Conformance-Spec/'
+    suiteIssueTracker: null
+    suiteDescription: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
     specID: Conformance-3.0
     specCustomID: Conformance
     specName: 'NIEM Conformance Specification'
@@ -207,12 +207,12 @@
     specTargetCount: 0
 -
     id: Conformance-5.0
-    classID: Conformance
-    className: 'NIEM Conformance Specification'
-    classRepo: 'https://github.com/NIEM/NIEM-Conformance-Spec'
-    classLandingPage: 'https://niem.github.io/NIEM-Conformance-Spec/'
-    classIssueTracker: null
-    classDescription: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
+    suiteID: Conformance
+    suiteName: 'NIEM Conformance Specification'
+    suiteRepo: 'https://github.com/NIEM/NIEM-Conformance-Spec'
+    suiteLandingPage: 'https://niem.github.io/NIEM-Conformance-Spec/'
+    suiteIssueTracker: null
+    suiteDescription: 'The NIEM Conformance Specification introduces the idea of NIEM conformance and provides a general normative definition for its meaning, how it applies, and to what it does and does not apply. It describes the benefits of conformance, and refers to sources of information, tools, and help.'
     specID: Conformance-5.0
     specCustomID: Conformance
     specName: 'NIEM Conformance Specification'
@@ -230,12 +230,12 @@
     specTargetCount: 0
 -
     id: CTAS-3.0
-    classID: CTAS
-    className: 'NIEM Conformance Targets Attribute Specification'
-    classRepo: 'https://github.com/NIEM/NIEM-Conformance-Targets-Attribute-Spec'
-    classLandingPage: 'https://reference.niem.gov/niem/specification/conformance-targets-attribute/'
-    classIssueTracker: null
-    classDescription: 'The Conformance Targets Attribute Specification (CTAS) defines how NIEM XML documents indicate what kind of artifact they are through the use of a conformance targets attribute.'
+    suiteID: CTAS
+    suiteName: 'NIEM Conformance Targets Attribute Specification'
+    suiteRepo: 'https://github.com/NIEM/NIEM-Conformance-Targets-Attribute-Spec'
+    suiteLandingPage: 'https://reference.niem.gov/niem/specification/conformance-targets-attribute/'
+    suiteIssueTracker: null
+    suiteDescription: 'The Conformance Targets Attribute Specification (CTAS) defines how NIEM XML documents indicate what kind of artifact they are through the use of a conformance targets attribute.'
     specID: CTAS-3.0
     specCustomID: CTAS
     specName: 'NIEM Conformance Targets Attribute Specification'
@@ -253,12 +253,12 @@
     specTargetCount: 0
 -
     id: JSON-4.0
-    classID: JSON
-    className: 'NIEM JSON Specification'
-    classRepo: 'https://github.com/NIEM/NIEM-JSON-Spec'
-    classLandingPage: 'https://niem.github.io/NIEM-JSON-Spec/'
-    classIssueTracker: 'https://github.com/NIEM/NIEM-JSON-Spec/projects/1'
-    classDescription: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
+    suiteID: JSON
+    suiteName: 'NIEM JSON Specification'
+    suiteRepo: 'https://github.com/NIEM/NIEM-JSON-Spec'
+    suiteLandingPage: 'https://niem.github.io/NIEM-JSON-Spec/'
+    suiteIssueTracker: 'https://github.com/NIEM/NIEM-JSON-Spec/projects/1'
+    suiteDescription: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
     specID: JSON-4.0
     specCustomID: JSON
     specName: 'NIEM JSON Specification'
@@ -276,12 +276,12 @@
     specTargetCount: 2
 -
     id: JSON-5.0
-    classID: JSON
-    className: 'NIEM JSON Specification'
-    classRepo: 'https://github.com/NIEM/NIEM-JSON-Spec'
-    classLandingPage: 'https://niem.github.io/NIEM-JSON-Spec/'
-    classIssueTracker: 'https://github.com/NIEM/NIEM-JSON-Spec/projects/1'
-    classDescription: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
+    suiteID: JSON
+    suiteName: 'NIEM JSON Specification'
+    suiteRepo: 'https://github.com/NIEM/NIEM-JSON-Spec'
+    suiteLandingPage: 'https://niem.github.io/NIEM-JSON-Spec/'
+    suiteIssueTracker: 'https://github.com/NIEM/NIEM-JSON-Spec/projects/1'
+    suiteDescription: 'The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).'
     specID: JSON-5.0
     specCustomID: JSON
     specName: 'NIEM JSON Specification'
@@ -298,25 +298,71 @@
     specSelector: JSON-5_0
     specTargetCount: 2
 -
+    id: HLVA-1.0
+    suiteID: HLVA
+    suiteName: 'NIEM High-Level Version Architecture Specification'
+    suiteRepo: null
+    suiteLandingPage: null
+    suiteIssueTracker: null
+    suiteDescription: 'The NIEM High-Level Version Architecture (HLVA) Specification identifies the processes, artifacts, and responsibilities required to produce new releases of the NIEM model. It also establishes a regular release cycle for predictable and manageable NIEM updates.'
+    specID: HLVA-1.0
+    specCustomID: HLVA
+    specName: 'NIEM High-Level Version Architecture Specification'
+    specVersion: '1.0'
+    specURL: 'https://reference.niem.gov/niem/specification/high-level-version-architecture/1.0/high-level-version-architecture-1.0.pdf'
+    specYear: '2008'
+    specApplicableReleases: 'NIEM 1.0 - NIEM 2.1'
+    specChangeHistory: null
+    specResources: null
+    specExamples: null
+    specStatus: null
+    specRuleCount: 0
+    specDefinitionCount: 0
+    specSelector: HLVA-1_0
+    specTargetCount: 0
+-
     id: HLVA-3.0
-    classID: HLVA
-    className: 'NIEM High-Level Version Architecture Specification'
-    classRepo: null
-    classLandingPage: null
-    classIssueTracker: null
-    classDescription: 'The NIEM High-Level Version Architecture (HLVA) Specification identifies the processes, artifacts, and responsibilities required to produce new releases of the NIEM model. It also establishes a regular release cycle for predictable and manageable NIEM updates.'
+    suiteID: HLVA
+    suiteName: 'NIEM High-Level Version Architecture Specification'
+    suiteRepo: null
+    suiteLandingPage: null
+    suiteIssueTracker: null
+    suiteDescription: 'The NIEM High-Level Version Architecture (HLVA) Specification identifies the processes, artifacts, and responsibilities required to produce new releases of the NIEM model. It also establishes a regular release cycle for predictable and manageable NIEM updates.'
     specID: HLVA-3.0
     specCustomID: HLVA
     specName: 'NIEM High-Level Version Architecture Specification'
     specVersion: '3.0'
     specURL: 'https://reference.niem.gov/niem/specification/high-level-version-architecture/3.0/high-level-version-architecture-3.0.html'
     specYear: '2015'
-    specApplicableReleases: 'NIEM 3.0 and later releases'
+    specApplicableReleases: 'NIEM 3.0 - NIEM 4.2'
+    specChangeHistory: null
+    specResources: null
+    specExamples: null
+    specStatus: null
+    specRuleCount: 0
+    specDefinitionCount: 0
+    specSelector: HLVA-3_0
+    specTargetCount: 0
+-
+    id: HLVA-5.0
+    suiteID: HLVA
+    suiteName: 'NIEM High-Level Version Architecture Specification'
+    suiteRepo: null
+    suiteLandingPage: null
+    suiteIssueTracker: null
+    suiteDescription: 'The NIEM High-Level Version Architecture (HLVA) Specification identifies the processes, artifacts, and responsibilities required to produce new releases of the NIEM model. It also establishes a regular release cycle for predictable and manageable NIEM updates.'
+    specID: HLVA-5.0
+    specCustomID: HLVA
+    specName: 'NIEM High-Level Version Architecture Specification'
+    specVersion: '5.0'
+    specURL: 'https://reference.niem.gov/niem/specification/high-level-version-architecture/5.0/NIEM_HLVA_5.0.pdf'
+    specYear: '2021'
+    specApplicableReleases: 'NIEM 5.0 and later releases'
     specChangeHistory: null
     specResources: null
     specExamples: null
     specStatus: current
     specRuleCount: 0
     specDefinitionCount: 0
-    specSelector: HLVA-3_0
+    specSelector: HLVA-5_0
     specTargetCount: 0

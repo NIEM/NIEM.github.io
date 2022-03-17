@@ -5,25 +5,25 @@ description: NIEM specifications provide rules and guidance in order to design c
 links:
 - url: /reference/specifications/rule-browser/
 - url: /reference/specifications/ndr/
-  classID: NDR
+  suiteID: NDR
   group: specs
 - url: /reference/specifications/iepd/
-  classID: IEPD
+  suiteID: IEPD
   group: specs
 - url: /reference/specifications/json/
-  classID: JSON
+  suiteID: JSON
   group: specs
 - url: /reference/specifications/conformance/
-  classID: Conformance
+  suiteID: Conformance
   group: specs
 - url: /reference/specifications/conformance-targets/
-  classID: CTAS
+  suiteID: CTAS
   group: specs
 - url: /reference/specifications/code-lists/
-  classID: CodeLists
+  suiteID: CodeLists
   group: specs
 - url: /reference/specifications/hlva/
-  classID: HLVA
+  suiteID: HLVA
   group: specs
 deferred:
 - SIX
@@ -45,9 +45,9 @@ View and search rules from the specifications below in the **[NIEM Specification
 > {{ announcement }}
 >
 > {% for draft in drafts %}
-> {% assign class = site.data.specs.niem-spec-classes | where: "id", draft.classID | first %}
-> - **[{{ class.name }}, Version {{ draft.specVersion }}]({{ draft.specURL }})**
->  <br/>See [changes]({{ draft.specChangeHistory }}). Submit feedback [here]({{ class.repo | append: "/issues/new" }}).<br/><br/>
+> {% assign suite = site.data.specs.niem-suites | where: "id", draft.suiteID | first %}
+> - **[{{ suite.name }}, Version {{ draft.specVersion }}]({{ draft.specURL }})**
+>  <br/>See [changes]({{ draft.specChangeHistory }}). Submit feedback [here]({{ suite.repo | append: "/issues/new" }}).<br/><br/>
 >
 >{% endfor %}
 {% endif %}

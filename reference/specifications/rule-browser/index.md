@@ -7,4 +7,4 @@ category: site
 redirect_from: /reference/specifications/normative_rules/
 ---
 
-{% include specs/rule-browser.html classID=page.classID %}
+{% include specs/rule-browser.html suiteID=page.suiteID %}
