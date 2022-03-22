@@ -7,7 +7,6 @@ links:
 - url: /community/milops/educational/
 - url: /community/milops/success-stories/
 - url: /community/milops/membership/
-- url: /community/milops/events/
 - url: /community/milops/meeting-notes/
 ---
 
