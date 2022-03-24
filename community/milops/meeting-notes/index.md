@@ -3,12 +3,26 @@ title: "Military Operations Meetings and Events"
 short: Meetings & Events
 ---
 
-## MilOps Meetings & Events
+## MilOps Briefs and Meeting Minutes
 
-The Military Operations Domain has regular meetings, typically via teleconference. Notes are archived here.
+The Military Operations Domain has *regular meetings the second Wednesday of each month*, typically via teleconference. Notes are archived here.
 
 |Date|Topic|Brief|Notes|
 |---|---|---|---|
 |March 2022|Brief|[MilOps March 2022 Meeting](NIEM_MilOps_09Mar22_StakeholderEngagement_v0.1.pdf)|[MilOps March 2022 Minutes](MILOPS-Domain-Mar-2022-Meeting-Notes.pdf)|
 |February 2022|Brief|[MilOps February 2022 Meeting](NIEM_MilOps_09Feb22_StakeholderEngagement_v0.1.pdf)|[MilOps February 2022 Minutes](MILOPS-Domain-Feb-2022-Meeting-Notes.pdf)|
 |January 2022|Brief|[MilOps January 2022 Meeting](NIEM_MilOps_12Jan22_StakeholderEngagement_v0.1.pdf)|[MilOps January 2022 Minutes](MILOPS-Domain-January-2022-Meeting-Notes.pdf)|
+
+## MilOps 2022 Upcoming Meetings
+
+|Date|Topic|
+|---|---|
+|04/13/22|April 2022 Monthly Meeting|
+|05/11/22|May 2022 Monthly Meeting|
+|06/08/22|June 2022 Monthly Meeting|
+|07/13/22|July 2022 Monthly Meeting|
+|08/10/22|August 2022 Monthly Meeting|
+|09/14/22|September 2022 Monthly Meeting|
+|10/12/22|October 2022 Monthly Meeting|
+|11/09/22|November 2022 Monthly Meeting|
+|12/14/22|December 2022 Monthly Meeting|
