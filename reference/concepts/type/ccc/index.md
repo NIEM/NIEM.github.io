@@ -54,7 +54,7 @@ Individual information exchanges can and often should have very precise cardinal
 
 ```xml
 <nc:PersonName>
-  <nc:PersonGivenName>Jane/nc:PersonGivenName>
+  <nc:PersonGivenName>Jane/<nc:PersonGivenName>
   <nc:PersonMiddleName>Elizabeth</nc:PersonMiddleName>
   <nc:PersonSurName>Smith</nc:PersonSurName>
 </nc:PersonName>

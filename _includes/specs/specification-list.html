@@ -16,7 +16,7 @@
         <span><strong><a href="{{spec.specURL}}">{{ spec.specName | default: spec.suiteName }}</a></strong>, </span>
         <span><strong>version {{ spec.specVersion }}</strong></span>
         <span class="text-muted"> [published {{ spec.specYear }}]</span>
-        <p style="padding: 5px 0;">{{ spec.classDescription }} <a href="{{ suite.tutorialRelativeURL | relative_url }}">Learn more...</a></p>
+        <p style="padding: 5px 0;">{{ spec.suiteDescription }} <a href="{{ suite.tutorialRelativeURL | relative_url }}">Learn more...</a></p>
       </li>
 
   {% endfor %}
