@@ -39,9 +39,9 @@ The release is currently in the pre-alpha stage and no updated schemas are avail
 
 Draft | Date | Issues | Description
 :------ |:---- |:------ |:-----------
-Alpha 1 | Apr 2022 |  | Major domain content submissions due.
-Beta 1 | June 2022 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
-Release Candidate (RC) 1 | Aug 2022 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
+Alpha 1 | Jul 2022 |  | Major domain content submissions due.
+Beta 1 | Aug 2022 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
+Release Candidate (RC) 1 | Oct 2022 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Fall 2022 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
 
 Additional phases (e.g., Beta 2) may be added as needed during the development process.
@@ -57,8 +57,6 @@ The following changes are expected to appear in NIEM 5.2:
 
 {:.box}
 - **Cyber** domain - new Cyber Physical System (CPS) content
-
-- **International Human Services** - new domain
 
 - **Learning and Development** - new domain
 
