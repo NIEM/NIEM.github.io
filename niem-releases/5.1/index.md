@@ -8,8 +8,6 @@
 {:toc}
 - TOC
 
-{% assign tag = site.data.release.tag %}
-
 NIEM 5.1 is a minor release, published December 2021.  This is the most current NIEM release.
 
 ## Resources

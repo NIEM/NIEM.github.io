@@ -5,32 +5,30 @@
   redirect_from: /niem-releases/draft/
 ---
 
-NIEM 5.2 will be a minor release and is currently under development.  Publication is scheduled for Fall 2022.
-
 {:toc}
 - TOC
 
 {% assign tag = site.data.release.tag %}
 
-<!--
-**[{{ site.data.release.description }}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{tag}})** is now available for review!
+{:.note}
+> **[{{ site.data.release.description }}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{tag}})** is now available for review!
+>
+> See the Resources section below for more. Please email feedback to  or submit a new [5.2 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.2) by the end of the day **{{ site.data.release.feedbackDue }}**.
 
-The release package is available at [NIEM-Releases](https://github.com/NIEM/NIEM-Releases/releases/tag/{{tag}}) on GitHub and may also be downloaded as a [zip file](https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip).  The package includes XML schemas, documentation spreadsheets, a change log, a JSON-LD context file, and a README.
-
-Please email feedback to  or submit a new [5.2 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.2) by the end of the day **{{ site.data.release.feedbackDue }}**.
--->
+NIEM 5.2 is a minor release and is currently under development.  Publication is scheduled for Fall 2022.
 
 ## Resources
 
-The release is currently in the pre-alpha stage and no updated schemas are available yet for review.
+- Download the full draft [release package](https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip) as a zip file
+
+- View schemas and documentation on [GitHub](https://github.com/NIEM/NIEM-Releases/tree/{{tag}})
+<!-- - View schemas and documentation on [release.niem.gov](https://release.niem.gov/niem/5.1) or [GitHub](https://github.com/NIEM/NIEM-Releases/tree/niem-5.1) -->
 
 - Submit a [new issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.2) or email feedback to <niem-comments@lists.gatech.edu>
 
 - View all [5.2 issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+label%3A5.2)
 
 - Track progress via the [5.2 project board](https://github.com/NIEM/NIEM-Releases/projects/7)
-
-- Review upcoming 5.2 draft schemas on the [dev branch]({{site.data.links.release_repo}}/tree/dev) on GitHub
 
 ## Schedule
 
@@ -39,8 +37,8 @@ The release is currently in the pre-alpha stage and no updated schemas are avail
 
 Draft | Date | Issues | Description
 :------ |:---- |:------ |:-----------
-Alpha 1 | Jul 2022 |  | Major domain content submissions due.
-Beta 1 | Aug 2022 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
+Alpha 1 | Aug 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+label%3A5.2+milestone%3Aniem-5.2alpha1) | Major domain content submissions due.
+Beta 1 | Sep 2022 |  | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
 Release Candidate (RC) 1 | Oct 2022 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Fall 2022 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
 
@@ -53,11 +51,13 @@ Additional phases (e.g., Beta 2) may be added as needed during the development p
 
 ## Highlights
 
-The following changes are expected to appear in NIEM 5.2:
+The following is a summary of the major changes made in this release:
 
 {:.box}
-- **Cyber** domain - new Cyber Physical System (CPS) content
-
-- **Learning and Development** - new domain
-
-- **MilOps** - new content from USMTF (US Message Text Format) messages about military operations, missions, resources, readiness, and training.
+- **Cyber domain**
+  - Added and modified content to support State, Local, Tribal, and Territorial (SLTT) Agency Cyber Incident Reporting Requirements (CIRR) and Cyber-Physical System (CPS) Incident Reporting Requirements ([#233](https://github.com/NIEM/NIEM-Releases/issues/233)).
+- **Learning and Development domain** (new)
+  - Added content about courses, course sections, students, and employment positions. ([#235](https://github.com/NIEM/NIEM-Releases/issues/235))
+- **MilOps domain**
+  - Added Minimum Essential Metadata (MEM) content ([#234](https://github.com/NIEM/NIEM-Releases/issues/234))
+  - Added U.S. Message Text Format (USMTF) content as a subdomain ([#236](https://github.com/NIEM/NIEM-Releases/issues/236))
