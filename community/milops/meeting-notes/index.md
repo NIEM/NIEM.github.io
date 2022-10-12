@@ -23,6 +23,6 @@ The Military Operations Domain has *regular meetings the second Wednesday of eac
 
 |Date|Topic|
 |---|---|
-|10/12/22|October 2022 Monthly Meeting|
+|*CANCELLED*|October 2022 Monthly Meeting|
 |11/09/22|November 2022 Monthly Meeting|
 |12/14/22|December 2022 Monthly Meeting|
