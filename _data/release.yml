@@ -8,11 +8,11 @@ current:
   releaseNumber: 5.1
 
 # Draft or announcement release tags
-tag: niem-5.2alpha1
-label: NIEM 5.2-alpha1
-description: NIEM 5.2 alpha 1
-feedbackDue: Friday, August 26, 2022
-elements: "18,992"
+tag: niem-5.2beta1
+label: NIEM 5.2-beta1
+description: NIEM 5.2 beta 1
+feedbackDue: Monday, November 14, 2022
+elements: "18,999"
 
 
 # Field description:
