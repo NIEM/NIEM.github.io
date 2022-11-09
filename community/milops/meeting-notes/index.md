@@ -10,7 +10,7 @@ The Military Operations Domain has *regular meetings the second Wednesday of eac
 |Date|Topic|Brief|Notes|
 |---|---|---|---|
 |November 2022|Brief|[MilOps November 2022 Meeting](NIEM_MilOps_09Nov22_StakeholderEngagement_v0.1.pdf)|TBD|
-|October 2022|Brief|Cancelled|Cacncelled|
+|October 2022|Brief|Cancelled|Cancelled|
 |September 2022|Brief|[MilOps September 2022 Meeting](NIEM_MilOps__14Sep22_StakeholderEngagement_v01.pdf)|[MilOps September 2022 Minutes](MILOPS-Domain-Sept-2022-Meeting-Notes.pdf)|
 |August 2022|Brief|[MilOps August 2022 Meeting](NIEM_MilOps_10Aug22_StakeholderEngagement.pdf)|[MilOps August 2022 Minutes](MILOPS-Domain-Aug-2022-Meeting-Notes.pdf)|
 |July 2022|Brief|[MilOps July 2022 Meeting](NIEM_MilOps_13July22_StakeholderEngagement.pdf)|[MilOps July 2022 Minutes](MILOPS-Domain-Minutes-13-July-2022.pdf)|
