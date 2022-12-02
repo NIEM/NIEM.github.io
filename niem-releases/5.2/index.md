@@ -39,7 +39,7 @@ Draft | Date | Issues | Description
 :------ |:---- |:------ |:-----------
 Alpha 1 | Aug 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+label%3A5.2+milestone%3Aniem-5.2alpha1) | Major domain content submissions due.
 Beta 1 | Oct 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+label%3A5.2+milestone%3Aniem-5.2beta1) | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
-Release Candidate (RC) 1 | Nov 2022 |  | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
+Release Candidate (RC) 1 | Nov 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=+is%3Aissue+milestone%3Aniem-5.2rc1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
 Release | Dec 2022 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
 
 Additional phases (e.g., Beta 2) may be added as needed during the development process.
@@ -64,4 +64,8 @@ The following is a summary of the major changes made in this release:
   - Updated the FBI's National Crime Information Center (NCIC) codes ([#239](https://github.com/NIEM/NIEM-Releases/issues/239))
 - **MilOps domain**
   - Added Minimum Essential Metadata (MEM) content ([#234](https://github.com/NIEM/NIEM-Releases/issues/234))
-  - Added U.S. Message Text Format (USMTF) content as a subdomain ([#236](https://github.com/NIEM/NIEM-Releases/issues/236))
+  - Added U.S. Message Text Format (USMTF) content as a subdomain, with information about military operations, missions, resources, readiness, and training ([#236](https://github.com/NIEM/NIEM-Releases/issues/236))
+- **FIPS county codes**
+  - Updated FIPS 3-digit and 5-digit county codes ([#243](https://github.com/NIEM/NIEM-Releases/issues/243))
+- **ISO 639-5 language family codes**
+  - Added the ISO 639-5 language family code set ([#240](https://github.com/NIEM/NIEM-Releases/issues/240))
