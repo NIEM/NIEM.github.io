@@ -15,7 +15,7 @@
 >
 > See the Resources section below for more. Please email feedback to [niem-comments@lists.gatech.edu](mailto:niem-comments@lists.gatech.edu) or submit a new [5.2 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.2) by the end of the day **{{ site.data.release.feedbackDue }}**.
 
-NIEM 5.2 is a minor release and is currently under development.  Publication is scheduled for Fall 2022.
+NIEM 5.2 is a minor release and is currently under development.  Publication is scheduled for December 2022.
 
 ## Resources
 
@@ -40,14 +40,26 @@ Draft | Date | Issues | Description
 Alpha 1 | Aug 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+label%3A5.2+milestone%3Aniem-5.2alpha1) | Major domain content submissions due.
 Beta 1 | Oct 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+label%3A5.2+milestone%3Aniem-5.2beta1) | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
 Release Candidate (RC) 1 | Nov 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=+is%3Aissue+milestone%3Aniem-5.2rc1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
+Release Candidate (RC) 2 | Dec 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=+is%3Aissue+milestone%3Aniem-5.2rc2) | Confirmation of updates applied based on RC1 feedback.
 Release | Dec 2022 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
 
 Additional phases (e.g., Beta 2) may be added as needed during the development process.
 
-<!--
 ### Recent changes
 
--->
+The following changes have been made to RC2 based on RC1 feedback:
+
+- Updated FBI's NCIC codes ([#244](https://github.com/NIEM/NIEM-Releases/issues/244))
+  - ncic:CountryCodeSimpleType
+  - ncic:IndianCodeSimpleType
+  - ncic:SMTCodeSimpleType
+  - ncic:TrailersCodeSimpleType
+  - ncic:TYPCodeSimpleType
+  - ncic:VMACodeSimpleType
+  - ncic:VMOCodeSimpleType
+- Added biom:DNAPedigree back to type biom:DNASampleType ([#245](https://github.com/NIEM/NIEM-Releases/issues/245))
+- Removed biom:DNADonorVitalityCode and replaced its use in type biom:DNADonorType with biom:SubjectExistentialStatusCode ([#246](https://github.com/NIEM/NIEM-Releases/issues/246))
+- Removed empty learn-dev EmploymentAssociation augmentation ([#247](https://github.com/NIEM/NIEM-Releases/issues/247))
 
 ## Highlights
 
