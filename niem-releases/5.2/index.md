@@ -18,7 +18,7 @@ NIEM 5.2 is a minor release, published December 2022.  This is the most current 
 
 - Use online tools to explore the contents of NIEM 5.2:
 
-  - <p markdown="1">[Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs </p>
+  - <p markdown="1">[Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs. <br/>*Note: The 5.2 update of the SSGT is still in progress and will be available soon.* </p>
 
   <!-- - <p markdown="1">[Movement](https://beta.movement.niem.gov) - search elements </p> -->
 
