@@ -1,18 +1,18 @@
 
 # Current release tags
 current:
-  tag: niem-5.1
-  label: NIEM 5.1
-  description: NIEM 5.1
-  page: /niem-releases/5.1/
-  releaseNumber: 5.1
+  tag: niem-5.2
+  label: NIEM 5.2
+  description: NIEM 5.2
+  page: /niem-releases/5.2/
+  releaseNumber: 5.2
 
 # Draft or announcement release tags
-tag: niem-5.2rc2
-label: NIEM 5.2-rc2
-description: NIEM 5.2 release candidate 2
-feedbackDue: Monday, December 19, 2022
-elements: "19,000"
+tag: niem-5.2
+label: NIEM 5.2
+description: NIEM 5.2
+# feedbackDue: Monday, December 19, 2022
+elements: "18,980"
 
 
 # Field description:

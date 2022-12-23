@@ -26,10 +26,12 @@ links:
     }
 </style>
 
+<!--
 {:.note}
 > **The [{{site.data.release.description}}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{site.data.release.tag}}) draft is now available for review!** <br/>
 >
 > Feedback is requested by end of the day on {{site.data.release.feedbackDue}}.  See the **[NIEM 5.2 info page](./draft/)** in this section for more.
+ -->
 
 NIEM publishes annual releases on a 3-year cycle.  A major release one year will be followed by minor releases the next two years.
 
@@ -56,22 +58,22 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
   <tbody>
     <tr>
       <td>
-        <b><a href="./5.2">{{ site.data.release.description }}</a></b><br><i>(under development)</i>
+        <b><a href="./5.2">NIEM 5.2</a></b>
+        <br><i>(current release)</i>
       </td>
       <td>
-        <a href="https://github.com/NIEM/NIEM-Releases/tree/{{tag}}">GitHub</a> <!--|
-        <span class="text-muted">pending final release</span>-->
+        <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.2">GitHub</a> |
+        <a href="https://release.niem.gov/niem/5.2/">release.niem.gov</a>
       </td>
       <td>2022</td>
-      <td><a href="https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip">Zip</a></td>
-      <td><a href="https://github.com/NIEM/NIEM-Releases/blob/{{tag}}/README.md">Readme</a></td>
-      <td>{{ site.data.release.elements }}</td>
+      <td><a href="https://github.com/NIEM/NIEM-Releases/archive/niem-5.2.zip">Zip</a></td>
+      <td><a href="https://github.com/NIEM/NIEM-Releases/blob/niem-5.2/README.md">Readme</a></td>
+      <td>18,980</td>
       <td><a href="{{site.data.links.ndr5}}">NDR 5.0</a></td>
     </tr>
     <tr>
       <td>
         <b><a href="./5.1">NIEM 5.1</a></b>
-        <br><i>(current release)</i>
       </td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.1">GitHub</a> |

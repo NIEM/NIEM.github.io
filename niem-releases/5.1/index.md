@@ -1,14 +1,13 @@
 ---
-  title: NIEM 5.1 Release (Current)
-  short: NIEM 5.1 (current)
+  title: NIEM 5.1 Release
+  short: NIEM 5.1
   description: An overview of the NIEM 5.1 release.
-  redirect_from: /niem-releases/current/
 ---
 
 {:toc}
 - TOC
 
-NIEM 5.1 is a minor release, published December 2021.  This is the most current NIEM release.
+NIEM 5.1 is a minor release, published December 2021.
 
 ## Resources
 

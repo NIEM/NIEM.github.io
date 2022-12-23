@@ -58,6 +58,11 @@ The following is a timeline that shows when new domains were added to NIEM or un
 - Controlled Unclassified Information (cui) - *added as auxiliary content*
 - Statistics content (stat) - *added as auxiliary content*
 
-**[NIEM 5.1](../5.1/)** (2021) - *current release*
+**[NIEM 5.1](../5.1/)** (2021)
 
 - Cyber domain (cyber)
+
+**[NIEM 5.2](../5.2/)** (2022) - *current release*
+
+- Learning and Development (lrn-dev)
+- MilOps USMTF subdomain (usmtf)

@@ -1,65 +1,32 @@
 ---
-  title: NIEM 5.2 Release (Draft)
-  short: NIEM 5.2 (draft)
-  description: An overview of the draft NIEM 5.2 release, currently under development.
-  redirect_from: /niem-releases/draft/
+  title: NIEM 5.2 Release (Current)
+  short: NIEM 5.2 (current)
+  description: An overview of the draft NIEM 5.2 release.
+  redirect_from: /niem-releases/current/
 ---
 
 {:toc}
 - TOC
 
-{% assign tag = site.data.release.tag %}
-
-{:.note}
-> **[{{ site.data.release.description }}](https://github.com/NIEM/NIEM-Releases/releases/tag/{{tag}})** is now available for review!
->
-> See the Resources section below for more. Please email feedback to [niem-comments@lists.gatech.edu](mailto:niem-comments@lists.gatech.edu) or submit a new [5.2 issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.2) by the end of the day **{{ site.data.release.feedbackDue }}**.
-
-NIEM 5.2 is a minor release and is currently under development.  Publication is scheduled for December 2022.
+NIEM 5.2 is a minor release, published December 2022.  This is the most current NIEM release.
 
 ## Resources
 
-- Download the full draft [release package](https://github.com/NIEM/NIEM-Releases/archive/{{tag}}.zip) as a zip file
+- Download the full [release package](https://github.com/NIEM/NIEM-Releases/archive/niem-5.2.zip) as a zip file
 
-- View schemas and documentation on [GitHub](https://github.com/NIEM/NIEM-Releases/tree/{{tag}})
-<!-- - View schemas and documentation on [release.niem.gov](https://release.niem.gov/niem/5.1) or [GitHub](https://github.com/NIEM/NIEM-Releases/tree/niem-5.1) -->
+- View schemas and documentation on [release.niem.gov](https://release.niem.gov/niem/5.2) or [GitHub](https://github.com/NIEM/NIEM-Releases/tree/niem-5.2)
 
-- Submit a [new issue](https://github.com/NIEM/NIEM-Releases/issues/new?labels=5.2) or email feedback to <niem-comments@lists.gatech.edu>
+- Use online tools to explore the contents of NIEM 5.2:
 
-- View all [5.2 issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aopen+is%3Aissue+label%3A5.2)
+  - <p markdown="1">[Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs </p>
 
-- Track progress via the [5.2 project board](https://github.com/NIEM/NIEM-Releases/projects/7)
+  <!-- - <p markdown="1">[Movement](https://beta.movement.niem.gov) - search elements </p> -->
 
-## Schedule
+- Download the [component spreadsheet](https://release.niem.gov/niem/5.2/xlsx/niem-5.2.xlsx) or the [code spreadsheet](https://release.niem.gov/niem/5.2/xlsx/niem-5.2-codes.xlsx) to explore the contents of NIEM 5.2 in Excel
 
-{:.note}
-> This schedule is subject to change.
+- Submit a [new issue](https://github.com/NIEM/NIEM-Releases/issues/new) or email feedback to <niem-comments@lists.gatech.edu>
 
-Draft | Date | Issues | Description
-:------ |:---- |:------ |:-----------
-Alpha 1 | Aug 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+label%3A5.2+milestone%3Aniem-5.2alpha1) | Major domain content submissions due.
-Beta 1 | Oct 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+label%3A5.2+milestone%3Aniem-5.2beta1) | Harmonize and refine alpha changes.  Smaller content submissions, code table updates, and new requests may still be addressed during this time.
-Release Candidate (RC) 1 | Nov 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=+is%3Aissue+milestone%3Aniem-5.2rc1) | QA and preparations for the release.  Only bug fixes are considered during this stage; other requests will be queued for the following release.
-Release Candidate (RC) 2 | Dec 2022 | [Issues](https://github.com/NIEM/NIEM-Releases/issues?q=+is%3Aissue+milestone%3Aniem-5.2rc2) | Confirmation of updates applied based on RC1 feedback.
-Release | Dec 2022 | | Publish release and update tools (SSGT, Movement,  Migration Tool)
-
-Additional phases (e.g., Beta 2) may be added as needed during the development process.
-
-### Recent changes
-
-The following changes have been made to RC2 based on RC1 feedback:
-
-- Updated FBI's NCIC codes ([#244](https://github.com/NIEM/NIEM-Releases/issues/244))
-  - ncic:CountryCodeSimpleType
-  - ncic:IndianCodeSimpleType
-  - ncic:SMTCodeSimpleType
-  - ncic:TrailersCodeSimpleType
-  - ncic:TYPCodeSimpleType
-  - ncic:VMACodeSimpleType
-  - ncic:VMOCodeSimpleType
-- Added biom:DNAPedigree back to type biom:DNASampleType ([#245](https://github.com/NIEM/NIEM-Releases/issues/245))
-- Removed biom:DNADonorVitalityCode and replaced its use in type biom:DNADonorType with biom:SubjectExistentialStatusCode ([#246](https://github.com/NIEM/NIEM-Releases/issues/246))
-- Removed empty learn-dev EmploymentAssociation augmentation ([#247](https://github.com/NIEM/NIEM-Releases/issues/247))
+- View all [5.2 issues](https://github.com/NIEM/NIEM-Releases/issues?q=is%3Aissue+label%3A5.2)
 
 ## Highlights
 
@@ -81,3 +48,15 @@ The following is a summary of the major changes made in this release:
   - Updated FIPS 3-digit and 5-digit county codes ([#243](https://github.com/NIEM/NIEM-Releases/issues/243))
 - **ISO 639-5 language family codes**
   - Added the ISO 639-5 language family code set ([#240](https://github.com/NIEM/NIEM-Releases/issues/240))
+
+## Specification Links
+
+{% include specs/specification-list.html specIDs = "NDR-5.0, IEPD-5.0, JSON-5.0, Conformance-5.0, CodeLists-4.0, CTAS-3.0, HLVA-3.0" %}
+
+## Release Stats
+
+The following are some basic statistics for the 5.1 release.
+
+{% include page/release-stats.html csv=site.data.model.stats.stats-5_2 %}
+
+<br/>
