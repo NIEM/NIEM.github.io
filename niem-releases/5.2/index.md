@@ -55,7 +55,7 @@ The following is a summary of the major changes made in this release:
 
 ## Release Stats
 
-The following are some basic statistics for the 5.1 release.
+The following are some basic statistics for the 5.2 release.
 
 {% include page/release-stats.html csv=site.data.model.stats.stats-5_2 %}
 
