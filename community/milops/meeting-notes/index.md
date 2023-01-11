@@ -27,7 +27,6 @@ The Military Operations Domain has *regular meetings the second Wednesday of eac
 
 |Date|Topic|
 |---|---|
-|01-11-2023|January MilOps Meeting|
 |02-08-2023|February MilOps Meeting|
 |03-08-2023|March MilOps Meeting|
 |04-12-2023|April MilOps Meeting|
