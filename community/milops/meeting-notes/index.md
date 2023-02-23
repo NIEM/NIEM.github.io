@@ -5,7 +5,7 @@ links:
 - url: /community/milops/meeting-notes/2022/
 ---
 
-## MilOps Briefs and Meeting Minutes
+## 2023 MilOps Briefs and Meeting Minutes
 
 The Military Operations Domain has *regular meetings the second Wednesday of each month*, typically via teleconference. Notes are archived here.
 
@@ -14,9 +14,9 @@ The Military Operations Domain has *regular meetings the second Wednesday of eac
 |February 2023|Brief|[MilOps February 2023 Meeting](NIEM_MilOps_08Feb23_StakeholderEngagement_v0.1.pdf)|[MilOps February 2023 Minutes](MILOPS_Meeting_Minutes_08FEB23.pdf)|
 |January 2023|Brief|[MilOps January 2023 Meeting](MILOPS_11_Jan_StakeholderEngagement.pdf)|[MilOps January 2023 Minutes](MILOPS_Meeting_Minutes_11JAN23.pdf)|
 
-*Looking for 2022 briefs and meeting minutes?* [View 2022 Archive](/community/milops/meeting-notes/2022)
+*Looking for 2022 briefs and meeting minutes?* [View 2022 Archive](/community/milops/meeting-notes/2022).
 
-## MilOps 2023 Upcoming Meetings
+## 2023 MilOps Upcoming Meetings
 
 |Date|Topic|
 |---|---|
