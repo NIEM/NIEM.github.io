@@ -1,6 +1,8 @@
 ---
 title: "Military Operations Meetings and Events"
 short: Meetings & Events
+links:
+- url: /community/milops/meeting-notes/2022/
 ---
 
 ## MilOps Briefs and Meeting Minutes
