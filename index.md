@@ -1,5 +1,5 @@
 ---
-title: NIEM - Our Sharing Spot
+title: NIEMOpen - An OASIS Open Project
 layout: 'home'
 ---
 
