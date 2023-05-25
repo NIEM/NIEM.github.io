@@ -16,6 +16,6 @@ This area will contain community/educational material.
 |[MilOps Domain Scope Summary 2.0](MilOps_Domain_Scope_Summary_2.0.pdf)|Artifact|03/2022|
 |[MilOps Strategic Plan V7](MilOpsStraPlanv7.pdf)|Artifact|03/2022|
 |[MilOps Adoption Process](NIEM_Adoption_Process.pdf)|Artifact|03/2022|
-|[MilOps Domain Governance](NIEM_Domain_Governance_1.0.pdf)|Artifact|03/2022|
+|[MilOps Domain Governance](NIEM_Domain_Governance_2.0.pdf)|Artifact|05/2023|
 |[MilOps Domain Charter](NIEM_MILOPS_Domain_Charter_Sep2016.pdf)|Artifact|03/2022|
 |[MilOps Domain Operations & Maintenance Plan](OM_Plan_Signed_2014.pdf)|Artifact|03/2022|
