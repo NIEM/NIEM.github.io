@@ -11,7 +11,7 @@ The Military Operations Domain has *regular meetings the second Wednesday of eac
 
 |Date|Topic|Brief|Notes|
 |---|---|---|---|
-|June 2023|Brief|[MilOps June 2023 Meeting](MILOPS_14June23_StakeholderEngagement_final.pdf)|[MilOps June 2023 Minutes](MILOPS_Meeting_Minutes _14Jun23.pdf)|
+|June 2023|Brief|[MilOps June 2023 Meeting](MILOPS_14June23_StakeholderEngagement_final.pdf)|[MilOps June 2023 Minutes](MILOPS_Meeting_Minutes_14Jun23.pdf)|
 |May 2023|Brief|TBD|TBD|
 |April 2023|Brief|[MilOps April 2023 Meeting](MILOPS_April2023_StakeholderEngagement.pdf)|TBD|
 |March 2023|Brief|[MilOps March 2023 Meeting](MILOPS_08_Mar_StakeholderEngagement.pdf)|[MilOps March 2023 Minutes](MILOPS_Meeting_Minutes_08Mar23.pdf)|
