@@ -3,10 +3,10 @@ niem_governance: https://www.niem.gov/about-niem/niem-governance
 nbac: https://www.niem.gov/about-niem/niem-governance
 ntac: https://www.niem.gov/about-niem/niem-governance
 
-release_repo:   https://github.com/NIEM/NIEM-Releases
-release_issues: https://github.com/NIEM/NIEM-Releases/issues
+release_repo:   https://github.com/niemopen/niem-model
+release_issues: https://github.com/niemopen/niem-model/issues
 
-niem_comments: mailto:niem-comments@lists.gatech.edu
+niem_comments: mailto:niemopen-comment@lists.oasis-open-projects.org
 
 niem_help_desk: https://www.niem.gov/contact-us
 

@@ -8,9 +8,9 @@ current:
   releaseNumber: 5.2
 
 # Draft or announcement release tags
-tag: niem-5.2
-label: NIEM 5.2
-description: NIEM 5.2
+tag: niem-6.0
+label: NIEM 6.0
+description: NIEM 6.0
 # feedbackDue: Monday, December 19, 2022
 elements: "18,980"
 

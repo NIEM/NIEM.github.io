@@ -1,7 +1,7 @@
 ---
 title: Map and Model
 icon: fa-map-signs
-description: Review the data requirements captured during the previous phase and discover if there are similar components in NIEM.  Document results in a mapping spreadsheet.  Begin modeling the data requirements without a match in NIEM; these will be later added added to the IEPD as extensions.
+description: Review the data requirements captured during the previous phase and discover if there are similar components in NIEM.  Document results in a mapping spreadsheet.  Begin modeling the data requirements without a match in NIEM; these will be later added to the IEPD as extensions.
 ---
 
 {{ page.description}}

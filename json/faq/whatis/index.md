@@ -2,10 +2,7 @@
 title: What is NIEM?
 ---
 
-NIEM is the acronym for the *National Information Exchange
-Model*. This implies that NIEM is a data model. While NIEM does in
-fact have a data model, there is much more to NIEM than that. This
-section will describe:
+NIEM is a data model and much more.  This section will describe:
 
 * [NIEM-based reusable data components](#components)
 * the [NIEM data model](#model)
