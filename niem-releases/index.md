@@ -2,6 +2,7 @@
 title: NIEM Releases
 description: Information and resources for each NIEM release.
 links:
+- url: /niem-releases/6.0/
 - url: /niem-releases/5.2/
 - url: /niem-releases/5.1/
 - url: /niem-releases/5.0/
@@ -37,9 +38,9 @@ NIEM publishes annual releases on a 3-year cycle.  A major release one year will
 
 Major releases allow content changes to NIEM Core and domains, plus architectural changes as specified by the NIEM Naming and Design Rules.  Minor releases allow for domain-related content changes only; Core and the architecture remain fixed.
 
-NIEM [release packages](../reference/release/) are available on both [GitHub](https://github.com/NIEM/NIEM-Releases) and [release.niem.gov](https://release.niem.gov/niem/) (the original publication site).
+NIEM [release packages](../reference/release/) are available on both [GitHub](https://github.com/niemopen/niem-model) and [release.niem.gov](https://release.niem.gov/niem/) (the original publication site).
 
-Please submit feedback to the NIEM releases [issue tracker](https://github.com/NIEM/NIEM-Releases/issues) (see [info](https://github.com/NIEM/NIEM-Releases/wiki/Issues) for help).
+Please submit feedback to the NIEM releases [issue tracker](https://github.com/niemopen/niem-model/issues) (see [info](https://github.com/niemopen/niem-model/wiki/Creating-issues) for help).
 
 {% assign tag = site.data.release.tag %}
 
@@ -56,6 +57,18 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/N
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>
+        <b><a href="./6.0">NIEM 6.0</a></b>
+        <br><i>(in development)</i>
+      </td>
+      <td><i>Coming soon</i></td>
+      <td>2023</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
     <tr>
       <td>
         <b><a href="./5.2">NIEM 5.2</a></b>
