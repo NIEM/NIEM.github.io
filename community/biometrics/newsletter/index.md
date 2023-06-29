@@ -12,19 +12,19 @@ The NBD produces Quarterly Newsletters to support the community. The publication
 |Time Period|Date Posted|
 |---|---|
 |Q2 2023|[Newsletter Q2 2023](OBIM_FI_NIEM_Biometrics_Newsletter_Q2_2023.pdf)|
-|Q4 2022|[Newsletter Q4 2022](OBIM FI NIEM Biometrics Newsletter Q4 2022.pdf)|
-|Q3 2022|[Newsletter Q3 2022](OBIM FI NIEM Biometrics Newsletter Q3 2022.pdf)|
-|Q4 2021|[Newsletter Q4 2021](OBIM FI NIEM Biometrics Newsletter Q4 2021.pdf)|
-|Q3 2021|[Newsletter Q3 2021](OBIM FI NIEM Biometrics Newsletter Q3 2021.pdf)|
-|Q2 2021|[Newsletter Q2 2021](OBIM FI NIEM Biometrics Domain Q2 2021 Newsletter.pdf)|
-|Q1 2021|[Newsletter Q1 2021](OBIM FI NIEM Biometrics Newsletter Q1 2021.pdf)|
-|Q4 2020|[Newsletter Q4 2020](OBIM FI NIEM Biometrics Newsletter Q4 2020 final.pdf)|
-|Q3 2020|[Newsletter Q3 2020](OBIM FI NIEM Biometrics Newsletter Q3 2020 final.pdf)|
-|Q2 2020|[Newsletter Q2 2020](OBIM FI NIEM Biometrics Newsletter Q2 2020_final.pdf)|
-|Q1 2020|[Newsletter Q1 2020](NIEM Newsletter Q1 2020 Final.pdf)|
-|Q4 2019|[Newsletter Q4 2019](Newsletter Q4 2019 published.pdf)|
-|Q3 2019|[Newsletter Q3 2019](Newsletter Q3 2019 published.pdf)|
-|Q2 2019|[Newsletter Q2 2019](Newsletter Q2 2019 published.pdf)|
-|Q1 2019|[Newsletter Q1 2019](Newsletter Q1 2019 published.pdf)|
+|Q4 2022|[Newsletter Q4 2022](OBIM_FI_NIEM_Biometrics_Newsletter_Q4_2022.pdf)|
+|Q3 2022|[Newsletter Q3 2022](OBIM_FI_NIEM_Biometrics_Newsletter_Q3_2022.pdf)|
+|Q4 2021|[Newsletter Q4 2021](OBIM_FI_NIEM_Biometrics_Newsletter_Q4_2021.pdf)|
+|Q3 2021|[Newsletter Q3 2021](OBIM_FI_NIEM_Biometrics_Newsletter_Q3_2021.pdf)|
+|Q2 2021|[Newsletter Q2 2021](OBIM_FI_NIEM_Biometrics_Domain_Q2_2021_Newsletter.pdf)|
+|Q1 2021|[Newsletter Q1 2021](OBIM_FI_NIEM_Biometrics_Newsletter_Q1_2021.pdf)|
+|Q4 2020|[Newsletter Q4 2020](OBIM_FI_NIEM_Biometrics_Newsletter_Q4_2020_final.pdf)|
+|Q3 2020|[Newsletter Q3 2020](OBIM_FI_NIEM_Biometrics_Newsletter_Q3_2020_final.pdf)|
+|Q2 2020|[Newsletter Q2 2020](OBIM_FI_NIEM_Biometrics_Newsletter_Q2_2020_final.pdf)|
+|Q1 2020|[Newsletter Q1 2020](NIEM_Newsletter_Q1_2020_Final.pdf)|
+|Q4 2019|[Newsletter Q4 2019](Newsletter_Q4_2019_published.pdf)|
+|Q3 2019|[Newsletter Q3 2019](Newsletter_Q3_2019_published.pdf)|
+|Q2 2019|[Newsletter Q2 2019](Newsletter_Q2_2019_published.pdf)|
+|Q1 2019|[Newsletter Q1 2019](Newsletter_Q1_2019_published.pdf)|
 
 ***Please contact the [NIEM Biometrics Team](mailto:OBIMFuturesIdentityNIEM@obim.dhs.gov) to become a member and receive updates and newsletters.***
