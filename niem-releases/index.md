@@ -62,12 +62,14 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/n
         <b><a href="./6.0">NIEM 6.0</a></b>
         <br><i>(in development)</i>
       </td>
-      <td><i>Coming soon</i></td>
+      <td>
+        <a href="https://github.com/niemopen/niem-model/tree/dev">GitHub (dev)</a>
+      </td>
       <td>2023</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://github.com/niemopen/niem-model/archive/refs/heads/dev.zip">Zip (dev)</a></td>
+      <td><a href="https://github.com/niemopen/niem-model/blob/dev/README.md">Readme (dev)</a></td>
+      <td>19,008</td>
+      <td><a href="https://github.com/niemopen/niem-naming-design-rules/blob/dev/niem-ndr.md">NDR 6.0 (dev)</a></td>
     </tr>
     <tr>
       <td>
@@ -229,5 +231,3 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/n
 There are also online tools available to search and view NIEM release content:
 
 - The [Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) can be used with any published release to search the model and build XML schema subsets for use in IEPDs.  Go to `Options` to choose a previous release.  *[Learn more]({{ site.data.pages.ssgt | relative_url }})*
-
-- [Movement]({{ site.data.links.movement }}) can be used with the current NIEM release to search the model.  *[Learn more]({{ site.data.pages.movement | relative_url }})*
