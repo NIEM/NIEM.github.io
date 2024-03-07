@@ -1,0 +1,61 @@
+{
+  "$id": "https://example.com/request",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "request:RequestMessage": {
+      "$ref": "#/definitions/request:RequestMessageType",
+      "description": "A request for the schedule of upcoming events in a court"
+    },
+    "request:RequestMessageType": {
+      "additionalProperties": false,
+      "description": "A request for the schedule of upcoming events in a court",
+      "properties": {
+        "request:CaseTypeCode": {
+          "description": "A certain case type.",
+          "type": "string",
+          "enum": ["civil", "criminal", "traffic"]
+        },
+        "request:CourtID": {
+          "description": "The identifier for a court of law in which the case is being tried.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9
+        },
+        "request:CourtName": {
+          "description": "A court of law in which the case is being tried.",
+          "type": "string"
+        },
+        "request:HearingDate": {
+          "description": "The requested date of the hearing.",
+          "type": "string",
+          "format": "date"
+        },
+        "request:InitialApperanceIndicator": {
+          "description": "Indicates whether this will be an initial appearance in this case.",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "request:CaseTypeCode",
+        "request:CourtID",
+        "request:CourtName",
+        "request:HearingDate",
+        "request:InitialApperanceIndicator"
+      ],
+      "type": "object"
+    }
+  },
+  "properties": {
+    "request:RequestMessage": {
+      "$ref": "#/definitions/request:RequestMessageType",
+      "description": "A request for the schedule of upcoming events in a court"
+    },
+    "@context": { }
+  },
+  "required": [
+    "@context",
+    "request:RequestMessage"
+  ]
+}
