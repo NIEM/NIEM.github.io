@@ -1,6 +1,10 @@
 ---
 title: "2024 Military Operations Meetings and Events"
 short: 2024 Meetings & Events
+links:
+- url: /community/milops/meeting-notes/2024/
+- url: /community/milops/meeting-notes/2023/
+- url: /community/milops/meeting-notes/2022/
 ---
 
 ## 2024 MilOps Briefs and Meeting Minutes
