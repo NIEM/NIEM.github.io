@@ -13,9 +13,9 @@ The Military Operations Domain has *regular meetings the second Wednesday of eac
 
 |Date|Topic|Brief|Notes|
 |---|---|---|---|
-|February 2025|Brief|[MilOps February 2025 Meeting]TBD|[MilOps February 2025 Minutes](2025/2025-02 MilOps Meeting Minutes - EMS CR.pdf)|
+|February 2025|Brief|TBD|[MilOps February 2025 Minutes](2025/2025-02 MilOps Meeting Minutes - EMS CR.pdf)|
 
-*Looking for past briefs and meeting minutes?* [View 2024 Archive](/community/milops/meeting-notes/2024). [View 2024 Archive](/community/milops/meeting-notes/2024).
+*Looking for past briefs and meeting minutes?* [View 2023 Archive](/community/milops/meeting-notes/2023). [View 2024 Archive](/community/milops/meeting-notes/2024).
 
 ## 2025 MilOps Upcoming Meetings
 
