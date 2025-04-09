@@ -1,0 +1,139 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>stix</title>
+	<meta charset="UTF-8"/>
+	<link media="screen" rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body><div class="header">
+<h2>
+stix.xsd</h2></div>
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;xs:schema
+&nbsp;&nbsp;targetNamespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/codes/stix/6.0/&quot;
+&nbsp;&nbsp;version=&quot;ps02&quot;
+&nbsp;&nbsp;xml:lang=&quot;en-US&quot;
+&nbsp;&nbsp;xsi:schemaLocation=&quot;https://docs.oasis-open.org/niemopen/ns/model/appinfo/6.0/ ../utility/appinfo.xsd https://docs.oasis-open.org/niemopen/ns/specification/conformanceTargets/6.0/ ../utility/conformanceTargets.xsd&quot;
+&nbsp;&nbsp;ct:conformanceTargets=&quot;https://docs.oasis-open.org/niemopen/ns/specification/XNDR/6.0/#ReferenceSchemaDocument&quot;
+&nbsp;&nbsp;xmlns:appinfo=&quot;https://docs.oasis-open.org/niemopen/ns/model/appinfo/6.0/&quot;
+&nbsp;&nbsp;xmlns:ct=&quot;https://docs.oasis-open.org/niemopen/ns/specification/conformanceTargets/6.0/&quot;
+&nbsp;&nbsp;xmlns:stix=&quot;https://docs.oasis-open.org/niemopen/ns/model/codes/stix/6.0/&quot;
+&nbsp;&nbsp;xmlns:structures=&quot;https://docs.oasis-open.org/niemopen/ns/model/structures/6.0/&quot;
+&nbsp;&nbsp;xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;
+&nbsp;&nbsp;xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Structured Threat Information Expression (STIX) codes</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;xs:import namespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/structures/6.0/&quot; schemaLocation=&quot;../utility/structures.xsd&quot;/&gt;
+&nbsp;&nbsp;&lt;xs:simpleType name=&quot;<a name="DiscoveryMethodCodeSimpleType"><font color="red">DiscoveryMethodCodeSimpleType</font></a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a method by which a cyber incident is discovered or detected</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction base=&quot;<a href="xs.html#token">xs:token</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;agent-disclosure&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was disclosed by the threat agent (e.g., public brag, private blackmail)</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;antivirus&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered by an antivirus system</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;audit&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered during an external security audit or scan</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;customer&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was reported by a customer or partner affected by the incident</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;external-fraud-detection&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered through external fraud detection means (e.g., Common Point of Purchase reporting)</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;financial-audit&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered during a financial audit and/or reconciliation process</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;hips&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered from host-based IDS or file integrity monitoring</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;incident-response&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered during the investigation of a separate incident</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;internal-fraud-detection&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered through internal fraud detection means</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;it-audit&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered by an internal IT audit or scan</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;law-enforcement&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was reported by law enforcement</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;log-review&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered during a log review process or by a Security Information and Event Management (SIEM) tool</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;monitoring-service&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was reported by a managed security event monitoring service</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;nids&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered by a network-based intrusion detection/prevention system</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;security-alarm&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was discovered by a physical security alarm</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;unknown&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">It is not known how this incident was discovered</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;unrelated-party&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was reported by an unrelated party</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;user&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The incident was reported by a user</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:restriction&gt;
+&nbsp;&nbsp;&lt;/xs:simpleType&gt;
+&nbsp;&nbsp;&lt;xs:complexType name=&quot;<a name="DiscoveryMethodCodeType"><font color="red">DiscoveryMethodCodeType</font></a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a method by which a cyber incident is discovered or detected</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:simpleContent&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;<a href="stix.html#DiscoveryMethodCodeSimpleType">stix:DiscoveryMethodCodeSimpleType</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attributeGroup ref=&quot;<a href="structures.html#SimpleObjectAttributeGroup">structures:SimpleObjectAttributeGroup</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;
+&nbsp;&nbsp;&lt;/xs:complexType&gt;
+&lt;/xs:schema&gt;
+</pre>
+</body>
+</html>

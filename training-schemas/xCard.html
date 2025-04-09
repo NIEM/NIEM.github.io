@@ -1,0 +1,105 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>xCard</title>
+	<meta charset="UTF-8"/>
+	<link media="screen" rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body><div class="header">
+<h2>
+xCard.xsd</h2></div>
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;xs:schema
+&nbsp;&nbsp;targetNamespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/codes/xCard/6.0/&quot;
+&nbsp;&nbsp;version=&quot;ps02&quot;
+&nbsp;&nbsp;xml:lang=&quot;en-US&quot;
+&nbsp;&nbsp;xsi:schemaLocation=&quot;https://docs.oasis-open.org/niemopen/ns/model/appinfo/6.0/ ../utility/appinfo.xsd https://docs.oasis-open.org/niemopen/ns/specification/conformanceTargets/6.0/ ../utility/conformanceTargets.xsd&quot;
+&nbsp;&nbsp;ct:conformanceTargets=&quot;https://docs.oasis-open.org/niemopen/ns/specification/XNDR/6.0/#ReferenceSchemaDocument&quot;
+&nbsp;&nbsp;xmlns:appinfo=&quot;https://docs.oasis-open.org/niemopen/ns/model/appinfo/6.0/&quot;
+&nbsp;&nbsp;xmlns:ct=&quot;https://docs.oasis-open.org/niemopen/ns/specification/conformanceTargets/6.0/&quot;
+&nbsp;&nbsp;xmlns:nc=&quot;https://docs.oasis-open.org/niemopen/ns/model/niem-core/6.0/&quot;
+&nbsp;&nbsp;xmlns:structures=&quot;https://docs.oasis-open.org/niemopen/ns/model/structures/6.0/&quot;
+&nbsp;&nbsp;xmlns:xCard=&quot;https://docs.oasis-open.org/niemopen/ns/model/codes/xCard/6.0/&quot;
+&nbsp;&nbsp;xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;
+&nbsp;&nbsp;xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">vCard XML representation, IETF RFC 6351</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:appinfo&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;appinfo:LocalTerm term=&quot;IETF&quot; literal=&quot;Internet Engineering Task Force&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;appinfo:LocalTerm term=&quot;vCard&quot; definition=&quot;vCard, also known as VCF (Virtual Contact File), is a file format standard for electronic business cards.&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:appinfo&gt;
+&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;xs:import namespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/niem-core/6.0/&quot; schemaLocation=&quot;../niem-core.xsd&quot;/&gt;
+&nbsp;&nbsp;&lt;xs:import namespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/structures/6.0/&quot; schemaLocation=&quot;../utility/structures.xsd&quot;/&gt;
+&nbsp;&nbsp;&lt;xs:simpleType name=&quot;<a name="TelephoneCategoryCodeSimpleType"><font color="red">TelephoneCategoryCodeSimpleType</font></a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a type of telephone.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction base=&quot;<a href="xs.html#token">xs:token</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;cell&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A cellular or mobile telephone</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;fax&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A facsimile-capable telephone</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;home&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A home telephone</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;pager&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A paging device</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;text&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A telephone that supports text messages (SMS)</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;textphone&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A telecommunication device for people with hearing or speech difficulties.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;video&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A video conferencing-capable telephone</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;voice&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A voice-capable telephone</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;work&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A work telephone</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:restriction&gt;
+&nbsp;&nbsp;&lt;/xs:simpleType&gt;
+&nbsp;&nbsp;&lt;xs:complexType name=&quot;<a name="TelephoneCategoryCodeType"><font color="red">TelephoneCategoryCodeType</font></a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a type of telephone.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:simpleContent&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;<a href="xCard.html#TelephoneCategoryCodeSimpleType">xCard:TelephoneCategoryCodeSimpleType</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attributeGroup ref=&quot;<a href="structures.html#SimpleObjectAttributeGroup">structures:SimpleObjectAttributeGroup</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;
+&nbsp;&nbsp;&lt;/xs:complexType&gt;
+&nbsp;&nbsp;&lt;xs:element name=&quot;<a name="TelephoneNumberCategoryCode"><font color="red">TelephoneNumberCategoryCode</font></a>&quot; type=&quot;<a href="xCard.html#TelephoneCategoryCodeType">xCard:TelephoneCategoryCodeType</a>&quot; substitutionGroup=&quot;<a href="nc.html#TelephoneNumberCategoryAbstract">nc:TelephoneNumberCategoryAbstract</a>&quot; nillable=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A kind of telephone number.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:element&gt;
+&lt;/xs:schema&gt;
+</pre>
+</body>
+</html>

@@ -1,0 +1,42 @@
+:root {
+	--main_background: #FFFFFF;
+	--quad_background: #EEEEEE;
+	--quadheader_background: #CCCCCC;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  float: right;
+  padding: 0px 0px;
+  background: transparent;
+  color: #000000;
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: "Atkinson-Hyperlegible-Regular";
+	src: url("/fonts/Atkinson-Hyperlegible-Regular-102.eot");
+	src: url("/fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
+		url("/fonts/Atkinson-Hyperlegible-Regular-102.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "monofur";
+	src: url("/fonts/monof55.ttf") format("truetype");
+}
+
+body {
+	font-size: 14pt;
+	line-height: 1.25;
+    font-family: Atkinson-Hyperlegible-Regular, Verdana, Arial, 'MS Sans Serif';
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+pre {
+
+    font-family: "Source Code Pro", monospace;
+
+}

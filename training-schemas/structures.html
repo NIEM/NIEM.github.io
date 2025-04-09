@@ -1,0 +1,114 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>structures</title>
+	<meta charset="UTF-8"/>
+	<link media="screen" rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body><div class="header">
+<h2>
+structures.xsd</h2></div>
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!--
+&nbsp;&nbsp;&nbsp;&nbsp; NIEM Model Version 6.0
+&nbsp;&nbsp;&nbsp;&nbsp; Project Specification 02
+&nbsp;&nbsp;&nbsp;&nbsp; 11 April 2024
+&nbsp;&nbsp;&nbsp;&nbsp; Copyright (c) OASIS Open 2024. All Rights Reserved.
+&nbsp;&nbsp;&nbsp;&nbsp; Source: https://docs.oasis-open.org/niemopen/niem-model/v6.0/ps01/xsd/
+&nbsp;&nbsp;&nbsp;&nbsp; Latest stage of narrative specification: https://docs.oasis-open.org/niemopen/niem-model/v6.0/niem-model-v6.0.html
+&nbsp;&nbsp;&nbsp;&nbsp; NIEMOpen IPR Statement: https://github.com/niemopen/oasis-open-project/blob/main/IPR-STATEMENT.md
+--&gt;
+&lt;xs:schema
+&nbsp;&nbsp;targetNamespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/structures/6.0/&quot;
+&nbsp;&nbsp;xmlns:structures=&quot;https://docs.oasis-open.org/niemopen/ns/model/structures/6.0/&quot;
+&nbsp;&nbsp;xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;
+&nbsp;&nbsp;version=&quot;ps02&quot;
+&nbsp;&nbsp;xml:lang=&quot;en-US&quot;&gt;
+&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">The structures namespace provides base types and other components for definition of NIEM-conformant XML schemas.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;xs:attributeGroup name=&quot;<a name="SimpleObjectAttributeGroup"><font color="red">SimpleObjectAttributeGroup</font></a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#id">structures:id</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#ref">structures:ref</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#uri">structures:uri</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:anyAttribute processContents=&quot;strict&quot; namespace=&quot;##other&quot;/&gt;
+&nbsp;&nbsp;&lt;/xs:attributeGroup&gt;
+&nbsp;&nbsp;&lt;xs:complexType name=&quot;<a name="AdapterType"><font color="red">AdapterType</font></a>&quot; abstract=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a type that contains a single non-conformant property from an external standard for use in NIEM.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;<a href="structures.html#ObjectAugmentationPoint">structures:ObjectAugmentationPoint</a>&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#appliesToParent">structures:appliesToParent</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#id">structures:id</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#ref">structures:ref</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#uri">structures:uri</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:anyAttribute processContents=&quot;strict&quot; namespace=&quot;##other&quot;/&gt;
+&nbsp;&nbsp;&lt;/xs:complexType&gt;
+&nbsp;&nbsp;&lt;xs:complexType name=&quot;<a name="AssociationType"><font color="red">AssociationType</font></a>&quot; abstract=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a relationship between two or more objects, including any properties of that relationship.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;<a href="structures.html#AssociationAugmentationPoint">structures:AssociationAugmentationPoint</a>&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#appliesToParent">structures:appliesToParent</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#id">structures:id</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#ref">structures:ref</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#uri">structures:uri</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:anyAttribute processContents=&quot;strict&quot; namespace=&quot;##other&quot;/&gt;
+&nbsp;&nbsp;&lt;/xs:complexType&gt;
+&nbsp;&nbsp;&lt;xs:complexType name=&quot;<a name="AugmentationType"><font color="red">AugmentationType</font></a>&quot; abstract=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a set of properties to be applied to a base type.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:complexType&gt;
+&nbsp;&nbsp;&lt;xs:complexType name=&quot;<a name="ObjectType"><font color="red">ObjectType</font></a>&quot; abstract=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a thing with its own lifespan that has some existence.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;<a href="structures.html#ObjectAugmentationPoint">structures:ObjectAugmentationPoint</a>&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#appliesToParent">structures:appliesToParent</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#id">structures:id</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#ref">structures:ref</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;<a href="structures.html#uri">structures:uri</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:anyAttribute processContents=&quot;strict&quot; namespace=&quot;##other&quot;/&gt;
+&nbsp;&nbsp;&lt;/xs:complexType&gt;
+&nbsp;&nbsp;&lt;xs:element name=&quot;<a name="AssociationAugmentationPoint"><font color="red">AssociationAugmentationPoint</font></a>&quot; abstract=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">An augmentation point for type structures:AssociationType.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:element&gt;
+&nbsp;&nbsp;&lt;xs:element name=&quot;<a name="ObjectAugmentationPoint"><font color="red">ObjectAugmentationPoint</font></a>&quot; abstract=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">An augmentation point for type structures:ObjectType.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:element&gt;
+&nbsp;&nbsp;&lt;xs:attribute name=&quot;<a name="appliesToParent"><font color="red">appliesToParent</font></a>&quot; type=&quot;<a href="xs.html#boolean">xs:boolean</a>&quot; default=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">True if this element is a property of its parent; false if it appears only to support referencing.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:attribute&gt;
+&nbsp;&nbsp;&lt;xs:attribute name=&quot;<a name="id"><font color="red">id</font></a>&quot; type=&quot;<a href="xs.html#ID">xs:ID</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A document-relative identifier for an XML element.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:attribute&gt;
+&nbsp;&nbsp;&lt;xs:attribute name=&quot;<a name="ref"><font color="red">ref</font></a>&quot; type=&quot;<a href="xs.html#IDREF">xs:IDREF</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A document-relative reference to an XML element.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:attribute&gt;
+&nbsp;&nbsp;&lt;xs:attribute name=&quot;<a name="uri"><font color="red">uri</font></a>&quot; type=&quot;<a href="xs.html#anyURI">xs:anyURI</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">An internationalized resource identifier or uniform resource identifier for a node or object.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:attribute&gt;
+&lt;/xs:schema&gt;
+</pre>
+</body>
+</html>

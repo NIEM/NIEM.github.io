@@ -1,0 +1,166 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>opm</title>
+	<meta charset="UTF-8"/>
+	<link media="screen" rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body><div class="header">
+<h2>
+opm.xsd</h2></div>
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;xs:schema
+&nbsp;&nbsp;targetNamespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/codes/opm/6.0/&quot;
+&nbsp;&nbsp;version=&quot;ps02&quot;
+&nbsp;&nbsp;xml:lang=&quot;en-US&quot;
+&nbsp;&nbsp;xsi:schemaLocation=&quot;https://docs.oasis-open.org/niemopen/ns/model/appinfo/6.0/ ../utility/appinfo.xsd https://docs.oasis-open.org/niemopen/ns/specification/conformanceTargets/6.0/ ../utility/conformanceTargets.xsd&quot;
+&nbsp;&nbsp;ct:conformanceTargets=&quot;https://docs.oasis-open.org/niemopen/ns/specification/XNDR/6.0/#ReferenceSchemaDocument&quot;
+&nbsp;&nbsp;xmlns:appinfo=&quot;https://docs.oasis-open.org/niemopen/ns/model/appinfo/6.0/&quot;
+&nbsp;&nbsp;xmlns:ct=&quot;https://docs.oasis-open.org/niemopen/ns/specification/conformanceTargets/6.0/&quot;
+&nbsp;&nbsp;xmlns:nc=&quot;https://docs.oasis-open.org/niemopen/ns/model/niem-core/6.0/&quot;
+&nbsp;&nbsp;xmlns:opm=&quot;https://docs.oasis-open.org/niemopen/ns/model/codes/opm/6.0/&quot;
+&nbsp;&nbsp;xmlns:structures=&quot;https://docs.oasis-open.org/niemopen/ns/model/structures/6.0/&quot;
+&nbsp;&nbsp;xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;
+&nbsp;&nbsp;xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">US Office of Personnel Management (OPM)</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;xs:import namespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/niem-core/6.0/&quot; schemaLocation=&quot;../niem-core.xsd&quot;/&gt;
+&nbsp;&nbsp;&lt;xs:import namespace=&quot;https://docs.oasis-open.org/niemopen/ns/model/structures/6.0/&quot; schemaLocation=&quot;../utility/structures.xsd&quot;/&gt;
+&nbsp;&nbsp;&lt;xs:simpleType name=&quot;<a name="EducationLevelCodeSimpleType"><font color="red">EducationLevelCodeSimpleType</font></a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a level of education reached by a person.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:restriction base=&quot;<a href="xs.html#token">xs:token</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;01&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">No formal education or some elementary school--did not complete. Elementary school means grades 1 through 8, or equivalent, not completed.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;02&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Elementary school completed--no high school. Grade 8 or equivalent completed.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;03&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Some high school--did not graduate. High school means grades 9 through 12, or equivalent.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;04&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">High school graduate or certificate of equivalency.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;05&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Terminal occupational program--did not complete. Program extending beyond grade 12, usually no more than three years; designed to prepare students for immediate employment in an occupation or cluster of occupations; not designed as the equivalent of the first two or three years of a baccalaureate degree program. Includes cooperative training or apprenticeship consisting of formal classroom instruction coupled with on-the-job training.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;06&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Terminal occupational program--certificate of completion, diploma or equivalent. See code 05 above for definition of terminal occupational program. Two levels are recognized: (1) The technical and/or semi-professional level preparing technicians or semiprofessional personnel in engineering and nonengineering fields; and (2) the craftsman/clerical level training artisans, skilled operators, and clerical workers.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;07&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Some college--less than one year. Less than 30 semester hours completed.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;08&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">One year college. 30-59 semester hours or 45-89 quarter hours completed.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;09&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Two years college. 60-89 semester hours or 90-134 quarter hours completed.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;10&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Associate Degree. 2-year college degree program completed.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;11&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Three years college. 90-119 semester hours or 135-179 quarter hours completed.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;12&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Four years college. 120 or more semester hours or 180 or more quarter hours completed--no baccalaureate (Bachelor's) degree.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;13&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Bachelor's degree. Requires completion of at least four, but no more than five, years of academic work; includes Bachelor's degree conferred in a cooperative plan or program that provides for alternate class attendance and employment in business, industry, or government to allow student to combine actual work experience with college studies.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;14&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Post-Bachelor's. Some work beyond (at a higher level than) the Bachelor's degree but no additional higher degree.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;15&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">First professional. Signifies the completion of academic requirements for selected professions that are based on programs requiring at least two academic years of previous college work for entrance and a total of at least six academic years of college work for completion, e.g., Dentistry (D.D.S. or D.M.D.), Law (LL. B. or J.D.), Medicine (M.D.), Theology (B.D.), Veterinary Medicine (D.V.M.), Chiropody or Podiatry (D.S.C. or D.P.), Optometry (O.D.), and Osteopathy (D.O.).</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;16&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Post-first professional. Some work beyond (at a higher level than) the first professional degree but no additional higher degree.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;17&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Master's degree. For liberal arts and sciences customarily granted upon successful completion of one (sometimes two) academic years beyond the Bachelor's degree. In professional fields, an advanced degree beyond the first professional but below the Ph.D., e.g., the LL.M.; M.S. in surgery following the M.D.; M.S.D., Master of Science in Dentistry; M.S.W., Master of Social Work.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;18&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Post-Master's. Some work beyond (at a higher level than) the Master's degree but no additional higher degree.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;19&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Sixth-year degree. Includes such degrees as Advanced Certificate in Education, Advanced Master of Education, Advanced Graduate Certificate, Advanced Specialist in Education Certificate, Certificate of Advanced Graduate Study, Certificate of Advanced Study, Advanced Degree in Education, Specialist in Education, Licentiate in Philosophy, Specialist in Guidance and Counseling, Specialist in Art, Specialist in Science, Specialist in School Administration, Specialist in School Psychology, Licentiate in Sacred Theology.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;20&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Post-sixth year. Some work beyond (at a higher level than) the sixth-year degree but no additional higher degree.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;21&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Doctorate degree. Includes such degrees as Doctor of Education, Doctor of Juridical Science, Doctor of Public Health, and the Ph.D. (or equivalent) in any field. Does not include a Doctor's degree that is a first professional degree, per code 15.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:enumeration value=&quot;22&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">Post-Doctorate. Work beyond the Doctorate.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:enumeration&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:restriction&gt;
+&nbsp;&nbsp;&lt;/xs:simpleType&gt;
+&nbsp;&nbsp;&lt;xs:complexType name=&quot;<a name="EducationLevelCodeType"><font color="red">EducationLevelCodeType</font></a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A data type for a level of education reached by a person.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:simpleContent&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;<a href="opm.html#EducationLevelCodeSimpleType">opm:EducationLevelCodeSimpleType</a>&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attributeGroup ref=&quot;<a href="structures.html#SimpleObjectAttributeGroup">structures:SimpleObjectAttributeGroup</a>&quot;/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:simpleContent&gt;
+&nbsp;&nbsp;&lt;/xs:complexType&gt;
+&nbsp;&nbsp;&lt;xs:element name=&quot;<a name="EducationLevelCode"><font color="red">EducationLevelCode</font></a>&quot; type=&quot;<a href="opm.html#EducationLevelCodeType">opm:EducationLevelCodeType</a>&quot; substitutionGroup=&quot;<a href="nc.html#EducationLevelRepresentation">nc:EducationLevelRepresentation</a>&quot; nillable=&quot;true&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:annotation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:documentation&gt;<font color="green">A level of education reached by a person.</font>&lt;/xs:documentation&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:annotation&gt;
+&nbsp;&nbsp;&lt;/xs:element&gt;
+&lt;/xs:schema&gt;
+</pre>
+</body>
+</html>
