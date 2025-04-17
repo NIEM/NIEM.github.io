@@ -1,5 +1,5 @@
 
-let endpoint = "https://api.github.com/search/issues?q=org:niemopen+state:open&per_page=100&page=";
+let endpoint = "https://api.github.com/search/issues?q=org:NIEM+state:open&per_page=100&page=";
 let totalCount = 0;
 let page = 1;
 
@@ -28,16 +28,14 @@ let allRepos = [];
 let currentRepos = [];
 
 /** @type {String[]} */
-let generalRepos = [];
+let activeRepos = [];
 
-let toolRepos = ["niem-api", "niem-api-db", "niem-toolbox", "cmftool", "mep-builder"];
-
-let specRepos = ["niem-model", "common-model-format", "niem-naming-design-rules", "niem-conformance-targets", "code-lists-specification", "conformance-specification"];
+let inactiveRepos = ["How-to-Upload-an-IEPD-to-GitHub", "Implementation-Cookbook", "Movement", "NBAC-NTAC-collaboration", "NIEM-UML", "Schematron-in-XSD-Spec"];
 
 /** @type {String[]} */
 let currentAssignees = [];
 
-let staffLogins = ["CB2", "cchipman6", "cdmgtri", "jasonlancaster", "iamdrscott", "markrdotson", "smrubin", "TomCarlson-NTAC", "webb", "sullivanstevem"];
+let staffLogins = ["CB2", "cchipman6", "cdmgtri", "jasonlancaster", "iamdrscott", "markrdotson", "smrubin", "TomCarlson-NTAC", "webb"];
 
 let $data = $("#data");
 let $labelFilter = $("#label-filter");
@@ -102,10 +100,8 @@ function processIssues() {
   $("#status-message").hide();
   $("#issue-header").show();
 
-  // Filter repo lists to only those repos that have open issues
-  toolRepos = allRepos.filter( repo => toolRepos.includes(repo) );
-  specRepos = allRepos.filter( repo => specRepos.includes(repo) );
-  generalRepos = allRepos.filter( repo => ! toolRepos.includes(repo) && ! specRepos.includes(repo) );
+  inactiveRepos = allRepos.filter( repo => inactiveRepos.includes(repo) );
+  activeRepos = allRepos.filter( repo => ! inactiveRepos.includes(repo) );
 
 }
 
@@ -225,14 +221,11 @@ function updateRepoFilter() {
     case "all":
       filterAllRepos();
       break;
-    case "general":
-      filterGeneralRepos();
+    case "active":
+      filterActiveRepos();
       break;
-    case "tool":
-      filterToolRepos();
-      break;
-    case "spec":
-      filterSpecRepos();
+    case "inactive":
+      filterInactiveRepos();
       break;
   }
 
@@ -255,27 +248,19 @@ function filterAllRepos() {
 }
 
 /**
- * Sets the issue filter so only issues from tool repos will be displayed
+ * Sets the issue filter so only issues from active repos will be displayed
  */
-function filterToolRepos() {
-  currentIssues = allIssues.filter( issue => toolRepos.includes(issue.repo) );
-  $labelFilter.show();
-}
-
-/**
- * Sets the issue filter so only issues from specification repos will be displayed
- */
-function filterSpecRepos() {
-  currentIssues = allIssues.filter( issue => specRepos.includes(issue.repo) );
+function filterActiveRepos() {
+  currentIssues = allIssues.filter( issue => activeRepos.includes(issue.repo) );
   $labelFilter.show();
 }
 
 /**
  * Sets the issue filter so only issues from repos designated at the top of this
- * file as general will be displayed
+ * file as inactive will be displayed
  */
-function filterGeneralRepos() {
-  currentIssues = allIssues.filter( issue => generalRepos.includes(issue.repo) );
+function filterInactiveRepos() {
+  currentIssues = allIssues.filter( issue => inactiveRepos.includes(issue.repo) );
   $labelFilter.show();
 }
 

@@ -1,13 +1,13 @@
 
 <!-- Loading message -->
-<p id="status-message" class="note">Status: <span id="status">Loading NIEMOpen issues from GitHub...</span></p>
+<p id="status-message" class="note">Status: <span id="status">Loading NIEM issues from GitHub...</span></p>
 
 <!-- Result counts message -->
 <div id="issue-header" style="display: none">
   <div id="status-counts">
     There are <span id="issue-count">##</span>
     <span id="label-filter" style="display: none"> filtered </span>
-    issues across <span id="repo-count">##</span> NIEMOpen GitHub repos.
+    issues across <span id="repo-count">##</span> NIEM GitHub repos.
   </div>
 
   <div id="issue-menu" class="pull-right">
@@ -26,10 +26,9 @@
     <div class="issue-menu-item">
       <label for="select-repos">Repos: </label>
       <select id="select-repos" onchange="displayResults()">
-        <option value="all" selected>All</option>
-        <option value="general">General</option>
-        <option value="tool">Tools</option>
-        <option value="spec">Specs</option>
+        <option value="all">All</option>
+        <option value="active" selected>Active</option>
+        <option value="inactive">Inactive</option>
       </select>
     </div>
 
@@ -96,4 +95,4 @@
   }
 </style>
 
-<script src="{{ '/assets/js/github-issues.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/github-issues-legacy.js' | relative_url }}"></script>
