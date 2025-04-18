@@ -9,6 +9,24 @@
   - url: /reference/tools/movement/json-schema-output/
 ---
 
+> **Movement is no longer being supported**
+>
+> NIEM model search functionality is available from the [Schema Subset Generation Tool (SSGT)]({{site.data.links.ssgt}}). Content can also be browsed from the [published schemas or documentation spreadsheets](https://github.com/niemopen/niem-model).
+>
+> New open source tools with search and subset functionality will be available mid-2025. These tools will add more detailed component information pages, multi-version NIEM support, and the ability to generate subsets in multiple formats, including XML Schema and JSON Schema.
+>
+> Movement was built by Deloitte as open source code under the DHS NIEM PMO. The code has been publicly available on GitHub since 2018 and can be installed and run locally. It is split across four repos, each under the MIT license:
+{:.box}
+
+| Repo     | Description |
+|:-------- |:------------|
+| Movement | Landing page for the code base. It is also used for documentation via the wiki and for issue tracking. |
+| Frontend | Web app and UI. Uses Angular (JavaScript frontend framework). |
+| Backend  | Backend. Used previously for partial JSON Schema subsets. Uses Express (Node.js web app framework). |
+| SOLR     | Used for search functionality. Stores a single version of NIEM schemas and metadata and has been updated to the latest with each NIEM release. Uses Apache SOLR. |
+
+<hr/>
+
 <div class="introducing-movement">
   <b><i>Movement</i> - an easier, simpler way to explore and use NIEM.</b>
 </div>
