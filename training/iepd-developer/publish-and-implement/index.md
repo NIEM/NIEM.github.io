@@ -12,7 +12,7 @@ The search, discovery, and reuse of IEPDs are necessary for effective informatio
 
 ## IEPD Repository
 
-Publish your IEPD to an appropriate [NIEM Community]({{ site.data.links.niem_communities }} "NIEM Community") repository.
+Publish your IEPD to an appropriate [NIEM Community]({{ site.data.links.communities }} "NIEM Community") repository.
 
 ## IEPD Implementation
 

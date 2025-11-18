@@ -14,7 +14,7 @@ redirect_from: /reference/specifications/ndr/oxygen-schematron/
 
 ## Setup
 
-Download the NDR schematron rules.  These are available in the [NDR zip file]({{ site.data.links.ndr_folder }}) and on the [NDR GitHub repo]({{ site.data.links.ndr_repo}}).
+Download the NDR schematron rules.  These are available on the [NDR directory listing]({{ site.data.links.ndr_directory }}) and on the [NDR GitHub repo]({{ site.data.links.ndr_repo}}).
 
 Schematron files have a `.sch` file extension.
 

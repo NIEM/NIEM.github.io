@@ -16,7 +16,7 @@ similar to the World Wide Web Consortium (W3C) or Open Geospatial Consortium
 its technical specifications, data model, etc. While there are of
 course important differences, some illustrative parallels are:
 
-| **Organization** | [NIEM](http://www.niem.gov) | [OGC](http://www.opengeospatial.org) |
+| **Organization** | [NIEM]({{ site.data.links.niemopen }}) | [OGC](http://www.opengeospatial.org) |
 | **Technical specifications** | [NIEM Naming and Design Rules](https://reference.niem.gov/niem/specification/naming-and-design-rules/), etc. | [Geography Markup Language (GML) Encoding Standard](http://portal.opengeospatial.org/files/?artifact_id=20509), etc. |
 | **Data model** | [XML schemas for NIEM model](http://niem.github.io/niem-releases/), etc. | [XML schemas for GML](http://schemas.opengis.net/gml/3.2.1), etc. |
 
@@ -234,7 +234,7 @@ non-voting observer.
 This page describes those aspects of the NIEM organization, model,
 process, and technical specifications that are most relevant to NIEM
 JSON. Much more information about NIEM is available at the
-[niem.gov](https://www.niem.gov) website.
+[NIEMOpen]({{ site.data.links.niemopen }}) website.
 
 <style type="text/css">
     .callout{

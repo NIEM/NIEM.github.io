@@ -29,7 +29,7 @@ Determine the information that would be useful to gather and the resources neede
 You decide that acquiring and distributing the super powered person's name is enough.
 
 {:.note}
->The NIEM data model is very large. It is highly likely that the type and format of the data you want to acquire and distribute is already defined. If not, then one of the several [NIEM Communities]({{ site.data.links.niem_communities }} "NIEM Communities") may have tackled a similar problem and developed an information exchange package (IEP) that comes close to meeting your needs. A search through their published resources can help.
+>The NIEM data model is very large. It is highly likely that the type and format of the data you want to acquire and distribute is already defined. If not, then one of the several [NIEM Communities]({{ site.data.links.communities }} "NIEM Communities") may have tackled a similar problem and developed an information exchange package (IEP) that comes close to meeting your needs. A search through their published resources can help.
 
 {:.example}
 >Scenario Information Acquisition and Flow
@@ -253,7 +253,7 @@ Once you have assembled all required artifacts, compress the root directory fold
 
 Once all artifacts have been assembled and you have compressed your IEPD to a single archive file, you can implement the IEPD into production and publish the IEPD for search, discovery, and reuse.
 
-Publish an IEPD to all repositories that are relevant to the exchange. Many of the [NIEM Communities]({{ site.data.links.niem_communities }} "NIEM Communities") have IEPD repositories where you can search for a package that is suitable or adaptable to your exchange. You may be able to find a home for your exchange with one of them.
+Publish an IEPD to all repositories that are relevant to the exchange. Many of the [NIEM Communities]({{ site.data.links.communities }} "NIEM Communities") have IEPD repositories where you can search for a package that is suitable or adaptable to your exchange. You may be able to find a home for your exchange with one of them.
 
 You may also wish to publish your IEPD on a service such as [github](https://github.com) for other interested parties to obtain your exchange.
 

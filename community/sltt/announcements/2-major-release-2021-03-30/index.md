@@ -26,6 +26,5 @@ Key changes to NIEM accomplished in version 5.0 can be viewed at https://release
 About the National Information Exchange Model
 
 The National Information Exchange Model (NIEM) provides a model framework with rules and guidance designed to develop consistent, well-defined, enterprise level information exchanges. For sixteen years, NIEM has successfully supported information communities of interest with a shared need to exchange data within the federal, state, local, tribal, and territorial agencies and organizations, the private sector, and internationally.
-To learn more, please visit www.NIEM.gov.
 
-#####
+To learn more, please visit <{{ site.data.links.niemopen }}>.

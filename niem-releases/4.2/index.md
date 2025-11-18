@@ -17,7 +17,7 @@ NIEM 4.2 is a minor release, published October 2019.
 
 - Use online tools to explore the contents of NIEM 4.2:
 
-  - [Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs
+  - [Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) - search or build XML schema subsets for use in IEPDs
     <br/><span class="text-muted">(go to `Options` in the menu bar to switch to the 4.2 release)</span>
 
   - [Model Viewer](https://niem.github.io/model/) - browse namespaces and their contents

@@ -2,7 +2,6 @@
 title: Non-Normative Guidance in Using NIEM with JSON
 short: Guidance
 layout: specification
-ndr-href: https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/NIEM-NDR-3.0-2014-07-31.html
 json-ld-api-href: http://www.w3.org/TR/json-ld-api/
 json-ld-href: http://www.w3.org/TR/json-ld/
 json-ld-name: "JSON-LD 1.0"
@@ -14,8 +13,8 @@ external: true
 
 {% capture abstract-text %}
 This document provides guidance from the [NIEM Technical Architecture
-Committee (NTAC)](https://www.niem.gov/about-niem/niem-governance) for using the
-National Information Exchange Model ([NIEM](http://www.niem.gov)) with
+Committee (NTAC)]({{ site.data.links.governance }}) for using the
+National Information Exchange Model ([NIEM]({{ site.data.links.niemopen }})) with
 JavaScript Object Notation (JSON).  NIEM provides a well-established
 standard for defining information exchanges. JSON is specified by
 [RFC4627](#bibrfc4627).
@@ -107,7 +106,7 @@ of this guidance are:
 
 ### The NIEM data model and RDF {#niem-and-rdf}
 
-The [NIEM Naming and Design Rules (NDR)]({{page.ndr-href}}) is the main document that
+The [NIEM Naming and Design Rules (NDR)]({{ site.data.links.ndr3 }}) is the main document that
 explains the meaning of NIEM&ndash;conformant XML schemas and XML instance
 documents. The framework that the NIEM NDR relies on for meaning is the Resource
 Description Framework (RDF), which defines a data model that is the basis for
@@ -124,17 +123,17 @@ this document explicitly requires are explained without requiring deep
 understanding of the underlying RDF concepts.
 
 The [NIEM NDR Section 5, &ldquo;The NIEM conceptual
-model&rdquo;]({{page.ndr-href}}#section_5) describes the conceptual
+model&rdquo;]({{ site.data.links.ndr3 }}#section_5) describes the conceptual
 model of NIEM, and provides a mapping between NIEM-conformant XML
 schemas and XML instance documents, and RDF. This section is the basis
 for much of what appears in this document. For example:
 
-* [Section 5.6.1, &ldquo;Resource IRIs for XML Schema components and information items&rdquo;]({{page.ndr-href}}#section_5.6.1)
+* [Section 5.6.1, &ldquo;Resource IRIs for XML Schema components and information items&rdquo;]({{ site.data.links.ndr3 }}#section_5.6.1)
   describes how to find an internationalized resource identifier (IRI) for a
   schema component or XML element or attribute, using the namespace name and
   local name of the component's qualified name (QName). This is the basis for
   the translation of element names into JSON-LD terms.
-* [Section 5.6.5.4, &ldquo;Element as a simple property of an object or association&rdquo;]({{page.ndr-href}}#section_5.6.5.4),
+* [Section 5.6.5.4, &ldquo;Element as a simple property of an object or association&rdquo;]({{ site.data.links.ndr3 }}#section_5.6.5.4),
   describes the RDF for an element of an object or association type. This is the
   basis for how a NIEM-conformant XML element is translated into corresponding
   JSON-LD.
@@ -232,7 +231,7 @@ RDF/XML or Turtle. This means that NIEM JSON-LD data may be processed
 using RDF techniques, such as SPARQL queries. This also means that
 there are now two methods of generating RDF from NIEM-conforming XML
 documents and schemas: the first defined in [NIEM NDR Section
-5]({{page.ndr-href}}#section_5), the second described by this
+5]({{ site.data.links.ndr3 }}#section_5), the second described by this
 guidance. The NTAC's intention is that the two methods produce
 consistent RDF; realizing this intention may require future changes to
 the NDR, this guidance, or both.
@@ -385,7 +384,7 @@ Each declared namespace prefix is converted into an `@context` entry:
 * The namespace name assigned to the prefix is converted into an IRI root.
 
 The rules for constructing IRIs from QNames are provided by
-[NDR section 5.6.1, &ldquo;Resource IRIs for XML Schema components and information items&rdquo;]({{page.ndr-href}}#section_5.6.1). This
+[NDR section 5.6.1, &ldquo;Resource IRIs for XML Schema components and information items&rdquo;]({{ site.data.links.ndr3 }}#section_5.6.1). This
 leads to the definition of IRI roots as follows:
 
 * If the namespace name ends with &ldquo;#&rdquo;, then the IRI root is the
@@ -651,7 +650,7 @@ one main value and one or more additional values providing context
 that qualifies the main value. Therefore, this
 guidance chooses `rdf:value` for the special key. This choice also makes
 the JSON-LD representation consistent with [NDR content of an
-element]({{page.ndr-href}}#section_5.6.5.2), which specifies that
+element]({{ site.data.links.ndr3 }}#section_5.6.5.2), which specifies that
 non-empty simple values are mapped in this way.
 
 Obviously this will break if an element in the IEP has `rdf:value` as
@@ -935,7 +934,7 @@ IEPD developers sometimes want to reuse schema components defined in
 an existing standard via a schema that does not conform to the NDR.
 The adapter elements defined in [NDR section 10.2.3, &ldquo;External
 adapter types and external
-components&rdquo;]({{page.ndr-href}}#section_10.2.3) are the NIEM
+components&rdquo;]({{ site.data.links.ndr3 }}#section_10.2.3) are the NIEM
 mechanism for including these external components in the IEPD.  For
 instance, in the following section of the sample IEP, the
 `geo:LocationGeospatialPoint` element is a NIEM-conforming
@@ -1293,7 +1292,7 @@ The following JSON data is a compact JSON-LD form of the full example from [Sect
 
 #### RDF {#rdf}
 
-The [NIEM conceptual model]({{page.ndr-href}}#section_5) is based on
+The [NIEM conceptual model]({{ site.data.links.ndr3 }}#section_5) is based on
 the RDF data model described in [RDF-Concepts](#bibrdfconcepts). NIEM
 defines a mapping from the XML components in IEPs and IEPD schemas to
 equivalent RDF triples. As of this writing, there is no automated
@@ -1308,10 +1307,10 @@ Turtle or RDF/XML and processed in that form.
 
 This establishes two paths from a NIEM IEP to RDF
 
-* Direct, using the mapping in the [NDR]({{page.ndr-href}}#section_5.6)
+* Direct, using the mapping in the [NDR]({{ site.data.links.ndr3 }}#section_5.6)
 * Indirect, first following the guidance in this document to produce a
   JSON-LD serialization, then converting that JSON-LD to RDF
 
 The NTAC intent is that the RDF created by both paths will be
 consistent. This may entail future revisions to the
-[NDR]({{page.ndr-href}}#section_5.6).
+[NDR]({{ site.data.links.ndr3 }}#section_5.6).

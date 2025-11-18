@@ -22,7 +22,7 @@ NIEM 4.0 is a major release, published June 2017.
 
 - Use online tools to explore the contents of NIEM 4.0:
 
-  - [Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs
+  - [Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) - search or build XML schema subsets for use in IEPDs
     <br/><span class="text-muted">(go to `Options` in the menu bar to switch to the 4.0 release)</span>
 
   - [Model Viewer](https://niem.github.io/model/) - browse namespaces and their contents

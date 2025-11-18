@@ -61,7 +61,7 @@ The NIEM data model is governed by the following groups:
 
 **Core Content**
 
-The NBAC is responsible for the content of Core and for the publication of major and minor releases and Core Supplements, along with the [NIEM Management Office]({{ site.data.links.niem_governance }}).
+The NBAC is responsible for the content of Core and for the publication of major and minor releases and Core Supplements, along with the [NIEM Management Office]({{ site.data.links.governance }}).
 
 **Domain Content**
 
@@ -107,7 +107,7 @@ Examples of content found in NIEM Core include:
 
 A NIEM domain is sometimes associated with or managed by an organization independent of NIEM, and may have its own rules, procedures, schedule, and priorities, subject to the NIEM principles that require openness, balance, due process, an appeals process, and consensus.
 
-Information about specific NIEM domains is available at <https://www.niem.gov/communities/niem-community>.
+Information about specific NIEM domains is available at <{{ site.data.links.communities }}>.
 
 ### Code tables
 

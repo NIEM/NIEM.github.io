@@ -1,11 +1,11 @@
 ---
-  title: NIEM 6.0 Version (Draft)
-  short: NIEM 6.0 (draft)
-  description: An overview of the draft NIEM 6.0 version, currently under development.
+  title: NIEM 6.0 Version (Current)
+  short: NIEM 6.0 (current)
+  description: An overview of the NIEM 6.0 version, now under NIEMOpen.
   redirect_from: /niem-releases/draft/
 ---
 
-NIEM 6.0 will be a major version and is currently under development.  Publication is scheduled for December 2023.
+NIEM 6.0 is a major version, published as an OASIS Open Project Specification in December 2023.
 
 {:toc}
 - TOC
@@ -22,9 +22,9 @@ Please email feedback to  or submit a new [6.0 issue](https://github.com/niemope
 
 ## Resources
 
-- Download the draft [model package](https://github.com/niemopen/niem-model/archive/refs/heads/dev.zip) as a zip file
+- Download the [model package](https://github.com/niemopen/niem-model/archive/refs/tags/6.0-ps02.zip) as a zip file
 
-- View draft schemas and documentation on the new [NIEMOpen model repo](https://github.com/niemopen/niem-model/tree/dev)
+- View schemas and documentation on the new [NIEMOpen model repo](https://github.com/niemopen/niem-model/tree/6.0-ps02)
 
 - Submit a [new issue](https://github.com/niemopen/niem-model/issues/new?labels=6.0) or email feedback to <{{site.data.links.niem_comments}}>.
 
@@ -43,11 +43,11 @@ Please email feedback to  or submit a new [6.0 issue](https://github.com/niemope
 
 | Draft | Date | Issues | Description |
 |:----- |:---- |:------ |:----------- |
-| ---   | Jun 2023 |  | Major domain content submissions due.
-|       | Sep 2023 |  | NBAC, NTAC, and community review of working draft.
-| PSD&nbsp;01 | Nov 2023 | [link](https://github.com/niemopen/niem-model/issues?q=is%3Aissue+label%3A6.0) | Project Specification Draft (PSD) 01
-| PS 01 | Dec 2023 |  | Project Specification (PS) 01.  Major version published and tools updated.
-| OS 01 | 2024 |  | OASIS Standard (OS) 01.
+| ---   | Jun 2023 |  | Major domain content submissions due. |
+|       | Sep 2023 |  | NBAC, NTAC, and community review of working draft. |
+| PSD&nbsp;01 | Nov 2023 | [link](https://github.com/niemopen/niem-model/issues?q=is%3Aissue+label%3A6.0) | Project Specification Draft (PSD) 01 |
+| PS 01 | Dec 2023 |  | Project Specification (PS) 01.  Major version published and tools updated. |
+| OS 01 | 2024 |  | OASIS Standard (OS) 01. |
 
 Additional phases may be added as needed during the development process.
 
@@ -65,7 +65,7 @@ The following is a summary of the major changes made in NIEM 6.0:
 
 - Updates to support the transition of NIEM to an OASIS Open Project, including namespace URI changes.
 
-- Updates to support upcoming [NIEM-NDR-v6.0] changes, including:
+- Updates to support [NIEM-NDR-v6.0] changes, including:
 
   - **Adapter changes** - New representation terms and a simpler type syntax.
 

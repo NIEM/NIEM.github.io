@@ -36,7 +36,7 @@ The goal of NIEM is to provide a common data model, architecture, and framework 
 
 The IEPD should include such things as schemas to enable message validation, well-named and well-defined components, and sample instances and other documentation that demonstrate and describe the format and requirements of the exchange.  This bundle of artifacts does not require any NIEM-specific tools or specifications to implement - NIEM is independent of any particular software or environment.
 
-See the [NIEM Tools Catalog](https://www.niem.gov/tools-catalog) for information about community and commercially-available tools.
+See the [NIEM Tools Catalog]({{ site.data.links.tools_catalog }}) for information about community and commercially-available tools.
 
 ## Other resources
 

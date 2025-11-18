@@ -13,7 +13,7 @@ The search, discovery, and reuse of IEPDs are necessary for effective informatio
 
 ## Publish
 
-Publish an IEPD to all repositories that are relevant to the exchange; the more exposure the better. Many of the [NIEM Communities]({{ site.data.links.niem_communities }} "NIEM Communities") have IEPD repositories where you can search for a package that is suitable or adaptable to your exchange. You may be able to find a home for your exchange with one of them.
+Publish an IEPD to all repositories that are relevant to the exchange; the more exposure the better. Many of the [NIEM Communities]({{ site.data.links.communities }} "NIEM Communities") have IEPD repositories where you can search for a package that is suitable or adaptable to your exchange. You may be able to find a home for your exchange with one of them.
 
 ## Implement
 

@@ -51,7 +51,7 @@ is a property of whatever contains it. The top concept is a motor vehicle crash.
 ## Define a NIEM exchange model
 
 Next, we search for these data requirements in the
-[NIEM Subset Schema Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/SSGT-Search.iepd),
+[NIEM Subset Schema Generation Tool (SSGT)]({{ site.data.links.ssgt }}),
 yielding a NIEM object model.
 
 {:.note}
@@ -66,7 +66,7 @@ We have searched for these data requirements in the SSGT and found corresponding
 NIEM elements.
 
 {: .note}
-> You may [download and save the resulting list of components](wantlist.xml) as a NIEM wantlist, which you may [load into the SSGT](https://tools.niem.gov/niemtools/ssgt/SSGT-Options.iepd).
+> You may [download and save the resulting list of components](wantlist.xml) as a NIEM wantlist, which you may [load into the SSGT]({{ site.data.links.ssgt }}) from the Options page.
 
 The NIEM representation of these data requirements contains more components than
 the list of source requirements above, due to the way NIEM structures its data:

@@ -188,7 +188,7 @@ Based on the FHIM class and element definitions, identify potential NIEM element
 - Option 1: View the UML model of each domain at <http://FHIMview.com/NIEMview>
 - Option 2: View the UML model of each domain using the Movement tool at <https://beta.movement.niem.gov/>
 - Option 3: Download the zip file of the schema for all data elements from <http://niem.github.io/niem-releases/>
-- Option 4: Search for matching NIEM elements using the NIEM Subset Schema Generator Tool at <https://tools.niem.gov/niemtools/ssgt/index.iepd>
+- Option 4: Search for matching NIEM elements using the NIEM Subset Schema Generator Tool at <{{ site.data.links.ssgt }}>
 
 If you find a similar pre-existing NIEM element, you will need to decide if the pre-existing element meets the original scenario requirements and health IT standard, with the preference for using the pre-existing NIEM domain element rather than creating a new element.
 
@@ -198,7 +198,7 @@ If you find a similar pre-existing NIEM element, you will need to decide if the 
 
 ## Generate NIEM IEPD Subset
 
-Using NIEM element mappings usually requires a number of supporting classes, types and elements defined across the NIEM domains. However, most IEPD implementations don’t require the full breadth and depth of all the NIEM domain schema definitions. To ease assembling the necessary subset of the NIEM XML schema definitions (XSD) for a compliant IEPD, you may use the NIEM Schema Subset Generator tool (SSGT) available at <https://tools.niem.gov/niemtools/ssgt/index.iepd>.
+Using NIEM element mappings usually requires a number of supporting classes, types and elements defined across the NIEM domains. However, most IEPD implementations don’t require the full breadth and depth of all the NIEM domain schema definitions. To ease assembling the necessary subset of the NIEM XML schema definitions (XSD) for a compliant IEPD, you may use the NIEM Schema Subset Generator tool (SSGT) available at <{{ site.data.links.ssgt }}>.
 
 The following figure shows the results for searching in the SSGT for the person class:
 
@@ -218,7 +218,7 @@ Finally, select "generate documents" from the upper right corner of the SSGT app
 
 Click on "save subset schema to a file," which will bring up a standard file save dialog screen. The resulting files will include a "wantlist" (manifest) of the schema types and elements required to completely define your subset schema and a spreadsheet view of your subset schema. The generate wantlist and general spreadsheet options are for advanced users that are generating a large subset schema incrementally over time.
 
-You now have the basic IEPD files generated and saved on your system. You may now further fill out documentation files in your IEPD folders and use the IEPD schema files to develop NIEM-compliant information exchange code. For more information on working with NIEM see <https://www.niem.gov/training>.
+You now have the basic IEPD files generated and saved on your system. You may now further fill out documentation files in your IEPD folders and use the IEPD schema files to develop NIEM-compliant information exchange code. For more information on working with NIEM see [training]({{ '/training/'  | relative_url }}).
 
 ## Map NIEM to Vocabulary Code Sets
 

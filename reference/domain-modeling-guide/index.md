@@ -200,7 +200,7 @@ with the Core (or with other domains if inputting a domain update).
 that illustrate NIEM techniques such as:  augmentation, association, role, references, metadata, abstract elements and substitution groups, type extension, type adapter, etc.
 - Review existing [release reference schemas](https://release.niem.gov/).
 - The [change request](https://reference.niem.gov/niem/resource/change-request/) contains examples.
-- Use the [reference tools](https://tools.niem.gov), e.g.,Schema Subset Generator, ConTesA, Code List Schema Generator, Migration Assistant, etc.
+- Use the [reference tools]({{ site.data.links.niem_tools }}), e.g.,Schema Subset Generator, ConTesA, Code List Schema Generator, Migration Assistant, etc.
 
 **During release cycle, provide initial input in NIEM-conformant**
 
@@ -329,13 +329,13 @@ Although this section does not address NIEM modeling specifically, given the lar
 
 ### Schema Subset Generation Tool (SSGT)
 
-The [Schema Subset Generation Tool](https://tools.niem.gov/niemtools/ssgt/index.iepd) (SSGT) is one way to search for NIEM data components.  This tool was designed to build and generate NIEM schema subsets.  However, SSGT also contains a convenient search engine that can be used alone.
+The [Schema Subset Generation Tool]({{ site.data.links.ssgt }}) (SSGT) is one way to search for NIEM data components.  This tool was designed to build and generate NIEM schema subsets.  However, SSGT also contains a convenient search engine that can be used alone.
 
 **Basic Search**
 
 SSGT provides a full text search capability for a NIEM release.  You can enter a search string into the criteria box and view a list of all NIEM data components that contain a lexical match to that string.  The default is to search all data component text records in a single release, including names, definitions, and other metadata text fields.  Namespaces are not part of the standard search.  This is because namespace prefixes are extremely prevalent throughout the model and would tend to clutter most search results.  As will be described later, the user can configure SSGT to search in particular ways.
 
-Search is case independent.  A search for <code>sonty</code> will return the data component <code>PersonType</code>.
+Search is case independent.  A search for <code>person type</code> will return the data component <code>PersonType</code>.
 
 SSGT can only search a single release (Later, we discuss a technique for searching multiple releases at once).  The default is to search the most recent (current) operational release.  If you need to search a previous NIEM release you must select it from the "options" menu.
 
@@ -352,7 +352,7 @@ Search results are displayed in a list of NIEM data component qualified names, i
 
 Depending on the outcome of a simple (default) search, a resulting list will have as many as three parts in this order:
 
-1. Exact match on name:  All data names for which the search criteria exactly matched that entire naem (excluding its namespace prefix).
+1. Exact match on name:  All data names for which the search criteria exactly matched that entire name (excluding its namespace prefix).
 2. Partial match on name:  All data names for which the search criteria matched a substring within that name (excluding its namespace prefix).
 3. Match on other metadata:  All data names for which the search criteria matched a substring within its associated data definition or other metadata (including namespace prefixes that may occur within the metadata).
 
@@ -365,8 +365,8 @@ Each data name is hyperlinked to its associated metadata and relationships.  For
 Note for MS Internet Explorer 11 users:  This browser must be reconfigured to "compatibility mode" (not its default) for SSGT to work correctly:
 
 1. In MS Internet Explorer 11, open Compatibility View (Tools / Compatibility View Settings).
-2. Add tools.niem.gov and/or niem.gov to Compatibility View.
-3. Go to <https://tools.niem.gov/> and SSGT Search will work normally.
+2. Add `{{ site.data.links.niem_tools }}` and/or `niemopen.org` to Compatibility View.
+3. Go to <{{ site.data.links.niem_tools }}> and SSGT Search will work normally.
 
 **Advanced Search**
 
@@ -392,11 +392,11 @@ You can enter multiple search terms separated by spaces in the search criteria b
 
 SSGT also has one simple wildcard character, an asterisk.  It can be used as many times as desired within the search criteria box.  For example, the following search criteria:
 
-	son\*nor\*sim\*yp
+	person*donor
 
 will return:
 
-	aamva\_d20:PersonOrganDonorCodeSimpleType
+	aamva_d20:PersonOrganDonorCodeSimpleType
 
 because this criteria matches this element name.  A single asterisk in the search criteria box will return all data components in the release.  (NOTE:  After a wildcard search SSGT replaces each asterisk in the criteria with a percent character.)
 
@@ -594,7 +594,7 @@ An "exact match" reuses a NIEM component as-is, and a "no match" generates a new
 
 However, partial semantic matches tend to be the norm.
 Sometimes they can be resolved by breaking down complex types into constituent components and subsequently mapping to them.
-However, most schemes and models for data representation have many dimensions that can complicate what would otherwise appear to be an exact or near exact match, including names, semantics, stucture, constraints, datatype, usage, and others.
+However, most schemes and models for data representation have many dimensions that can complicate what would otherwise appear to be an exact or near exact match, including names, semantics, structure, constraints, datatype, usage, and others.
 For this reason, sometimes treating a partial match as "no match" (and subsequently designing new NIEM components) may be more practical and productive.
 
 **[ More to follow, including examples, Change Request, Component Mapping Template ]**
@@ -654,30 +654,28 @@ For each potential NIEM Core data component (type/property):
 
 ### Regular meetings
 
-- __NIEM Business Architecture Committee (NBAC)__ &mdash; [NBAC](https://www.niem.gov/about-niem/niem-governance) meets (by teleconference) on the last Thursday of every month from 2:00-3:00pm.  Its primary missions are to identify the data requirements for NIEM, govern NIEM [Core], and assist the domains with the management of their models.  NBAC coordinates with NTAC, the PMO, and the domains.
+- __NIEM Business Architecture Committee (NBAC)__ &mdash; [NBAC]({{ site.data.links.governance }}) meets (by teleconference) on the last Thursday of every month from 2:00-3:00pm.  Its primary missions are to identify the data requirements for NIEM, govern NIEM [Core], and assist the domains with the management of their models.  NBAC coordinates with NTAC, the PMO, and the domains.
 - __NBAC Content Subcommittee__ &mdash; This group is a standing subcommittee under [NBAC][NBAC] that meets (by teleconference) as often as necessary to resolve issues, refactor (remodel) NIEM content, and harmonize. During a NIEM release cycle this subcommittee meets fairly regularly to prepare for the initial alpha release. Meeting times and dates are subject to change and are established by the lead developer in coordination with subcommittee members.
-- __NIEM Technical Architecture Committee (NTAC)__ &mdash; [NTAC](https://www.niem.gov/about-niem/niem-governance) meets (by teleconference) every other week on Wednesday from 1:30-3:00pm.  Its primary missions are to identify new NIEM technical requirements, govern the NIEM architecture (the structure of the model), oversee the NIEM technical specifications and the tool strategy. NTAC coordinates with NBAC, the PMO, and the domains.
-- __Program Management Office (PMO)__ &mdash; [PMO](https://www.niem.gov/about-niem/niem-governance) holds a regular coordination meeting (via teleconference) every other Monday from 1:00-2:00pm. This meeting is generally for the PMO staff, goverance committee co-chairs, lead developer, and key representatives of the largest domains.
+- __NIEM Technical Architecture Committee (NTAC)__ &mdash; [NTAC]({{ site.data.links.governance }}) meets (by teleconference) every other week on Wednesday from 1:30-3:00pm.  Its primary missions are to identify new NIEM technical requirements, govern the NIEM architecture (the structure of the model), oversee the NIEM technical specifications and the tool strategy. NTAC coordinates with NBAC, the PMO, and the domains.
+- __Program Management Office (PMO)__ &mdash; [PMO]({{ site.data.links.governance }}) holds a regular coordination meeting (via teleconference) every other Monday from 1:00-2:00pm. This meeting is generally for the PMO staff, governance committee co-chairs, lead developer, and key representatives of the largest domains.
 - A __Joint NTAC/NBAC Face-to-Face meeting__ is generally hosted twice a year by the PMO in the Washington DC area. Exact dates vary, but meetings are generally 2-3 days in Apr/May and Oct/Nov timeframes. Dates are usually timed to coincide with key milestones in a release cycle.  These meetings are generally for all NBAC and NTAC members, all domain stewards or representatives, the lead developer, and the PMO staff. These meetings have multiple purposes, including reviewing material for a developing release, technical updates, reviewing the previous year, planning the next year, coordination between NBAC and NTAC, etc.
 
 ### Email lists
 
 If you are a domain representative, an NBAC member, or an NTAC member you may want to register for one or more of the following resources in order to participate more fully in NIEM governance and its associated processes.
 
-- [NIEM Technical Architecture Committee](mailto:ntac@lists.gatech.edu (NTAC); [request to be added](mailto:ntac-request@lists.gatech.edu) (requires PMO approval).
+- [NIEM Technical Architecture Committee](mailto:ntac@lists.gatech.edu) (NTAC); [request to be added](mailto:ntac-request@lists.gatech.edu) (requires PMO approval).
 - [NIEM Business Architecture Committee](mailto:nbac@lists.gatech.edu) (NBAC); [request to be added](mailto:nbac-request@lists.gatech.edu) (requires PMO approval).
 - [NIEM Configuration Control Tool (NCCT)](https://niem.gtri.gatech.edu/ncct/); for PMO, governance, and domain staffs; [request account](mailto:pgmw-system@gtri.gatech.edu)
-- Collaboration zones for PMO, governance, and domain staffs; [request to be added](https://www.niem.gov/contact-us)
-- [Conformance Testing Assistant](https://tools.niem.gov/contesa/) (ConTesA); public; [request account](https://tools.niem.gov/contesa/registration)
+- Collaboration zones for PMO, governance, and domain staffs; [request to be added]({{ site.data.links.contact }})
+- [Conformance Testing Assistant]({{ site.data.links.contesa }}) (ConTesA); public; [request account]({{ site.data.links.contesa }}/registration)
 - [NIEM GitHub](https://niem.github.io/); public; [sign-up for GitHub account](https://github.com/)
 
 ### Questions and feedback
 
 If you are a domain representative developing NIEM content or maintaining your domain namespace, or if you are an NBAC or NTAC member, then please talk directly to the lead developer for technical assistance. This is your privilege as a member of NIEM governance. The lead developer (GTRI) participates in all NIEM governance meetings, so please don't hesitate to ask the lead developer for technical help. They will be happy to schedule a telephone appointment to talk with you. Asking questions, making suggestions or recommendations through these resources are more for your constituents. You can use these resources too, but for technical assistance it is usually faster to contact the lead developer directly.
 
-- General technical comments and feedback:  <niem-comments@lists.gatech.edu>
-- NIEM Contact Center:  <information@niem.gov>
-- NIEM Contact Center:  <https://www.niem.gov/contact-us>
+- NIEM Contact Center:  <{{ site.data.links.contact }}>
 
 ## Appendix B - Resources
 
@@ -712,12 +710,12 @@ Wantlist schemas (all versions)      | <https://reference.niem.gov/niem/resource
 
 **Reference Tools** | **URL/Email** | **Notes**
 ------------------- | ------------- | ---------
-NIEM online reference tools                | <https://tools.niem.gov/>                              |
-Schema Subset Generation Tool (SSGT) &nbsp;| <https://tools.niem.gov/niemtools/ssgt/index.iepd>     | Search, XML subsets
-Conformance Testing Assistant (ConTesA)    | <https://tools.niem.gov/contesa/>                      |
-Code List Schema Generator                 | <https://tools.niem.gov/niemtools/codelist/index.iepd> | Legacy; for NIEM 2.0
-NIEM GitHub                                | <https://niem.github.io/>                              |
-NIEM Releases Issue Tracker                | <https://github.com/niem/niem-releases/issues>         | For content-related issues
+NIEM online reference tools                | <{{ site.data.links.niem_tools }}> |
+Schema Subset Generation Tool (SSGT) &nbsp;| <{{ site.data.links.ssgt }}>     | Search, XML subsets
+Conformance Testing Assistant (ConTesA)    | <{{ site.data.links.contesa }}>  |
+Code List Schema Generator                 | <{{ site.data.links.niem_tools }}/niemtools/codelist/index.iepd> | Legacy; for NIEM 2.0
+NIEM GitHub                                | <https://niem.github.io/> |
+NIEM Releases Issue Tracker                | <{{ site.data.links.release_issues }}> | For content-related issues
 
 ----
 
@@ -735,8 +733,8 @@ Oxygen XML Editor                       | <https://www.oxygenxml.com/>          
 
 **Other Resources** | **URL** | **Notes**
 ------------------- | ------- | ---------
-NIEM home                              | <https://www.niem.gov/>                                             |
-Change request                         | <https://reference.niem.gov/niem/resource/change-request/>      |
+NIEM home                              | <{{ site.data.links.niemopen }}> |
+Change request                         | <https://reference.niem.gov/niem/resource/change-request/> |
 IEPD Clearinghouse                     | <https://www.it.ojp.gov/niss/> | mostly older IEPDs
 ISO/IEC Standard 11179 Information Technology -- Metadata Registries (MDR) | <http://metadata-standards.org/11179/> | guidance for names and definitions
 

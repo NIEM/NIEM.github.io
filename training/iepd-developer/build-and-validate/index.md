@@ -83,7 +83,7 @@ The NIEM Conformance Tool provides a summary report that lists the location of s
 
 {:.note}
 >
-> Contact the [NIEM Help Desk]({{ site.data.links.niem_help_desk }} "NIEM Help Desk") if you are unable to resolve conformance errors or need additional assistance.
+> Contact the [NIEM Help Desk]({{ site.data.links.contact }} "NIEM Help Desk") if you are unable to resolve conformance errors or need additional assistance.
 
 #### Manual Review Process
 

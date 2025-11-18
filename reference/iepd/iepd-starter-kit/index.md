@@ -17,8 +17,6 @@ A developer builds an IEPD by incorporating the necessary NIEM core and domain m
 
 In an era when return on investment has never been more important to government services, NIEM enables organizations to exchange information across all levels of government in a manner that is both effective and efficient.
 
-Be sure to check out the [NIEM Cost Model](https://www.niem.gov/about-niem/niem-cost-model), which allows users to quantify the associated costs of adopting NIEM.
-
 ## Links
 
 - [Search GitHub for NIEM IEPDs](https://github.com/search?q=NIEM+IEPD)

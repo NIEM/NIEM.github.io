@@ -59,22 +59,26 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/n
   <tbody>
     <tr>
       <td>
-        <b><a href="./6.0">NIEM 6.0</a></b>
-        <br><i>(in development)</i>
+        <b><a href="./6.0">NIEM 6.0 PS02</a></b>
+        <br><i>(current release)</i>
       </td>
       <td>
-        <a href="https://github.com/niemopen/niem-model/tree/dev">GitHub (dev)</a>
+        <a href="https://github.com/niemopen/niem-model/tree/6.0-ps02">GitHub</a> |
+        <a href="https://docs.oasis-open.org/niemopen/niem-model/v6.0/">OASIS Open</a>
       </td>
       <td>2023</td>
-      <td><a href="https://github.com/niemopen/niem-model/archive/refs/heads/dev.zip">Zip (dev)</a></td>
-      <td><a href="https://github.com/niemopen/niem-model/blob/dev/README.md">Readme (dev)</a></td>
+      <td><a href="https://github.com/niemopen/niem-model/archive/refs/tags/6.0-ps02.zip">Zip</a></td>
+      <td><a href="https://github.com/niemopen/niem-model/blob/6.0-ps02/README.md">Readme</a></td>
       <td>19,008</td>
-      <td><a href="https://github.com/niemopen/niem-naming-design-rules/blob/dev/niem-ndr.md">NDR 6.0 (dev)</a></td>
+      <td>
+        <span>NDR 6.0 PS01</span> <br/>
+        <a href="https://niemopen.github.io/niem-naming-design-rules/ndr-v6.0-ps01.html">HTML</a> |
+        <a href="https://github.com/niemopen/niem-naming-design-rules/blob/6.0-ps01/ndr6src.md">Markdown</a>
+      </td>
     </tr>
     <tr>
       <td>
         <b><a href="./5.2">NIEM 5.2</a></b>
-        <br><i>(current release)</i>
       </td>
       <td>
         <a href="https://github.com/NIEM/NIEM-Releases/tree/niem-5.2">GitHub</a> |
@@ -230,4 +234,4 @@ Please submit feedback to the NIEM releases [issue tracker](https://github.com/n
 
 There are also online tools available to search and view NIEM release content:
 
-- The [Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) can be used with any published release to search the model and build XML schema subsets for use in IEPDs.  Go to `Options` to choose a previous release.  *[Learn more]({{ site.data.pages.ssgt | relative_url }})*
+- The [Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) can be used with any published release before 6.0 to search the model and build XML schema subsets for use in IEPDs.  Go to `Options` to choose a previous release.  *[Learn more]({{ site.data.pages.ssgt | relative_url }})*

@@ -1,27 +1,40 @@
 
-niem_governance: https://www.niem.gov/about-niem/niem-governance
-nbac: https://www.niem.gov/about-niem/niem-governance
-ntac: https://www.niem.gov/about-niem/niem-governance
+# NIEMOpen website
+
+niemopen: https://niemopen.org
+
+governance: https://niemopen.org/about/governance/
+nbac: https://niemopen.org/about/governance/
+ntac: https://niemopen.org/about/governance/
+
+email: mailto:info@niemopen.org
+contact: https://niemopen.org/contact/
+
+about: https://niemopen.org/about/
+value: https://niemopen.org/about/value/
+communities: https://niemopen.org/community/
+tools_catalog: https://niemopen.org/tools-catalog/
+courses: https://niemopen.org/courses/
+training: https://niemopen.org/courses/
+
+# Model
 
 release_repo:   https://github.com/niemopen/niem-model
 release_issues: https://github.com/niemopen/niem-model/issues
 
 niem_comments: mailto:niemopen-comment@lists.oasis-open-projects.org
 
-niem_help_desk: https://www.niem.gov/contact-us
-
-niem_communities: https://www.niem.gov/communities
-
 # Specifications
 
-ndr: https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html
-ndr5: https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html
-ndr4: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html
-ndr3: https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html
-ndr1_3: https://reference.niem.gov/niem/specification/naming-and-design-rules/1.3/niem-ndr-1.3.pdf
-ndr_folder: https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/
-ndr_repo:   https://github.com/NIEM/NIEM-NDR/
-ndr_issues: https://github.com/NIEM/NIEM-NDR/issues
+ndr: https://niemopen.github.io/niem-naming-design-rules/ndr-v6.0-ps01.html
+ndr6: https://niemopen.github.io/niem-naming-design-rules/ndr-v6.0-ps01.html
+ndr5: https://niemopen.github.io/niem-naming-design-rules/web/5.0/niem-ndr.html
+ndr4: https://niemopen.github.io/niem-naming-design-rules/web/4.0/niem-ndr-doc.html
+ndr3: https://niemopen.github.io/niem-naming-design-rules/web/3.0/ndr-doc.html
+ndr1_3: https://niemopen.github.io/niem-naming-design-rules/web/1.3/niem-ndr-1.3.pdf
+ndr_directory: https://niemopen.github.io/niem-naming-design-rules/
+ndr_repo:   https://github.com/niemopen/niem-naming-design-rules/
+ndr_issues: https://github.com/niemopen/niem-naming-design-rules//issues
 
 code_list_spec:           https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html
 code_list_spec_folder:    https://reference.niem.gov/niem/specification/code-lists/4.0/
@@ -53,20 +66,20 @@ du: https://reference.niem.gov/niem/specification/domain-update/1.0/domain-updat
 
 # Tools
 
-tools_catalog: "https://www.niem.gov/tools-catalog"
+niem_tools: https://tools.niemopen.org
 
-ssgt: https://tools.niem.gov/niemtools/ssgt/index.iepd
-ssgt_api: https://reference.niem.gov/niem/specification/web-services-api/
+ssgt: https://tools.niemopen.org/niemtools/ssgt/index.iepd
 
 movement: https://beta.movement.niem.gov/#/
 
-migration: https://tools.niem.gov/niemtools/migration/index.iepd
+migration: https://tools.niemopen.org/niemtools/migration/index.iepd
 
-contesa: https://tools.niem.gov/contesa/
-contesa_old: https://tools.niem.gov/contesaNIEM/
+contesa: https://tools.niemopen.org/contesa/
 
 oxygen: https://www.oxygenxml.com/
 xmlspy: https://www.altova.com/xmlspy-xml-editor
+
+toolbox: https://niemopen.github.io/niem-toolbox
 
 # Core Supplements
 

@@ -15,7 +15,7 @@ NIEM 3.0 is a major release, published October 2013.
 
 - View schemas and documentation on [release.niem.gov](https://release.niem.gov/niem/3.0) or [GitHub](https://github.com/NIEM/NIEM-Releases/tree/niem-3.0)
 
-- Use the online [Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) to search or build XML schema subsets for use in IEPDs
+- Use the online [Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) to search or build XML schema subsets for use in IEPDs
   <br/><span class="text-muted">(go to `Options` in the menu bar to switch to the 3.0 release)</span>
 
 - Download the [component spreadsheet](https://release.niem.gov/niem/3.0/niem-3.0.xlsx) or the [code spreadsheet](https://release.niem.gov/niem/3.0/niem-3.0-codes.xlsx) to explore the contents of NIEM 3.0 in Excel

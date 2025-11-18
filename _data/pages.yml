@@ -34,3 +34,4 @@ releases: /reference/release/
 # Miscellaneous
 
 check-conformance: /reference/iepd/artifacts/extension-schema/#checking-conformance
+training: /training/

@@ -1,0 +1,40 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries: []
+words:
+  - Altova
+  - archivals
+  - Atri
+  - CIRR
+  - codelist
+  - Datatypes
+  - endcapture
+  - FIPS
+  - GML
+  - hackathon
+  - Halverson
+  - HLVA
+  - iamdrscott
+  - IEC
+  - IEP
+  - IRI
+  - Kamran
+  - leilatite
+  - mpd
+  - NCCT
+  - ndr
+  - Neoskizzle
+  - neoskizzles
+  - niemtools
+  - Openii
+  - PMO
+  - SLTT
+  - SOA
+  - SSN
+  - TCD
+  - Tite
+  - unece
+  - xmlspy
+ignoreWords: []
+import: []

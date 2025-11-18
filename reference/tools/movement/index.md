@@ -86,7 +86,7 @@ We want to hear from you!
 
 In the spirit of open-source tooling, we have provided a [Scrum board](https://github.com/NIEM/Movement/projects/1) that allows users to keep track of Movement's issues and enhancements. Anyone can [submit a new issue](https://github.com/NIEM/Movement/issues) for the tool for something they would like to see added or a bug. Once reviewed by the program office, issues will be added to the Scrum board's backlog. Developers and tool contributors can then address issues from the backlog and track their status using the Scrum board—providing an Agile approach to development and complete transparency to users.
 
-Don't have a GitHub account and want to provide input? Please use our <a href="https://www.niem.gov/contact-us">contact us page on NIEM.gov</a>.
+Don't have a GitHub account and want to provide input? Please use our [contact page on niemopen.org]({{ site.data.links.contact }}).
 
 ### How to contribute
 
@@ -105,7 +105,7 @@ NIEM has created an automated build pipeline to allow developers an easy way to 
 
 #### Tool Users
 
-We are very interested in hearing your vision for Movement as well as your general feedback on its capabilities. You can provide your feedback directly on <a href="https://github.com/NIEM/Movement/issues">GitHub</a> or though <a href="https://www.niem.gov/contact-us">NIEM.gov</a>.
+We are very interested in hearing your vision for Movement as well as your general feedback on its capabilities. You can provide your feedback directly on <a href="https://github.com/NIEM/Movement/issues">GitHub</a> or though [niemopen.org]({{ site.data.links.contact }}).
 
 ### Join the Movement
 Movement is an exciting glimpse into the future of NIEM, and we can't wait to see what the community accomplishes by using it. Join the movement today—visit <a href="https://beta.movement.niem.gov">beta.movement.niem.gov</a> to access the tool.

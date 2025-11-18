@@ -37,7 +37,7 @@ You can visit the 'My Subset Builder' page at any point to review your current s
 
 Here, a user can review the terms that have been added to their subset, remove any (or all) terms not needed, and click on the specific term's name to visit their Details page. As a user, you can export the JSON Schema format associated with the selected terms by clicking the 'Download JSON Schema' button at any time.
 
-Currently, the content in a user's 'My Subset Builder' is storied locally in the browser. Remember, we're in beta and looking for your feedback directly on [GitHub](https://github.com/NIEM/Movement/issues) or though [NIEM.gov](https://www.niem.gov/contact-us)!
+Currently, the content in a user's 'My Subset Builder' is storied locally in the browser. Remember, we're in beta and looking for your feedback directly on [GitHub](https://github.com/NIEM/Movement/issues) or though [niemopen.org]({{ site.data.links.contact }})!
 
 ## Header & Footer
 
@@ -45,10 +45,10 @@ Every page in Movement has a header and footer that remains consistent.
 
 The header contains a search bar that allows users to quickly search another keyword without going back to the Landing page. It also contains the 'My Subset Builder' button where you can access the subset currently being developed.
 
-There are several other useful links that you can access within the header and footer—you can visit the NIEM.gov website and contact us page using the 'NIEM.gov' and 'Contact Us' links respectively; access the open source GitHub repo using the 'Join the Project' button; go to the Movement Overview page by clicking the 'Learn More about Movement' link; and even download the latest version of the authoritative NIEM model by clicking the 'Download Current Model' link.
+There are several other useful links that you can access within the header and footer—you can visit the niemopen.org website and contact page using the 'NIEMOpen.org' and 'Contact Us' links respectively; access the open source GitHub repo using the 'Join the Project' button; go to the Movement Overview page by clicking the 'Learn More about Movement' link; and even download the latest version of the authoritative NIEM model by clicking the 'Download Current Model' link.
 
 ## 'Add to Subset' Button
 
 You'll notice that Movement only allows you to add certain terms to your subset. Based on user feedback, some business rules are built into the tool. The NIEM model has relationships that can be explained at a high level as parents (or complex types) and children (or simple types). Movement does not allow the selection of NIEM complex types—these cater to the structure and relationship of the model instead of the validation aspects needed from a schema. By allowing the user to only select NIEM simple types, the tool creates a more approachable environment for NIEM users and JSON users alike, while focusing on the intended JSON Schema solution.
 
-We've built the tool as much as we can without broad user feedback. We would like to start the conversation to find out what you'd like to add back—it's in Beta until we do. For example, if you think complex types are important for your schema output, we could use your help to identify the best way to include them, perhaps automatically in the schema output. You can provide your feedback directly on [GitHub](https://github.com/NIEM/Movement/issues) or though [NIEM.gov](https://www.niem.gov/contact-us). Ideally, we'll have multiple people who share the same idea and help us craft the business rules to hand it off to the development team or hold a hackathon to get it built!
+We've built the tool as much as we can without broad user feedback. We would like to start the conversation to find out what you'd like to add back—it's in Beta until we do. For example, if you think complex types are important for your schema output, we could use your help to identify the best way to include them, perhaps automatically in the schema output. You can provide your feedback directly on [GitHub](https://github.com/NIEM/Movement/issues) or though [niemopen.org]({{ site.data.links.contact }}). Ideally, we'll have multiple people who share the same idea and help us craft the business rules to hand it off to the development team or hold a hackathon to get it built!

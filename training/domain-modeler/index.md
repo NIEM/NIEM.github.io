@@ -11,10 +11,10 @@
   - url: /reference/tools/
   - url: /reference/domain-modeling-guide/
   externalLinks:
-  - url: https://www.niem.gov/communities/domain-governance
+  - url: https://niemopen.org/community/
     title: Domain Governance
     description: Learn about governance committees and domain content management on niem.gov.
-  - url: https://www.niem.gov/about-niem/niem-model
+  - url: https://niemopen.org/about/
     title: About the NIEM Model
     description: Review the NIEM model architecture and model management on niem.gov.
 ---

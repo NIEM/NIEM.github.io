@@ -17,7 +17,7 @@ NIEM 5.1 is a minor release, published December 2021.
 
 - Use online tools to explore the contents of NIEM 5.1:
 
-  - <p markdown="1">[Schema Subset Generation Tool (SSGT)](https://tools.niem.gov/niemtools/ssgt/index.iepd) - search or build XML schema subsets for use in IEPDs </p>
+  - <p markdown="1">[Schema Subset Generation Tool (SSGT)]({{ site.data.links.ssgt }}) - search or build XML schema subsets for use in IEPDs </p>
 
   - <p markdown="1">[Movement](https://beta.movement.niem.gov) - search elements </p>
 
